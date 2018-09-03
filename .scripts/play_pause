@@ -1,0 +1,24 @@
+#!/usr/bin/python3
+# Program made for some improvements
+
+import os
+
+with open("/home/sergio/bin/play_pause.config", "r") as fileobj:
+    # State 0 --> esta pausado, hay que reproducir
+    # State 1 --> se esta reproduciendo, hay que pausar
+
+    state = fileobj.read()
+
+    if state == "0":
+        os.system("playerctl play")
+        new_state = 1
+    elif state == "1":
+        os.system("playerctl pause")        
+        new_state = 0
+    else:
+        os.system("playerctl play")
+        new_state = 1
+        print("ERROR!")
+    
+with open("/home/sergio/bin/play_pause.config", "w") as fileobj:
+    fileobj.write(str(new_state))

@@ -1,0 +1,49 @@
+#!/usr/bin/python3.6
+# A simple program to make a slide wallpaper on i3-wm
+
+import time
+import random
+import os
+
+# Some functions
+def choose_random_wallpaper(dir, opts, last_img = None):
+    # The wallpaper img is chosen
+    opt = random.choice(opts)
+    img = dir + "/" + opt
+
+    # The same wallpaper is discarded
+    if img == last_img:
+        return choose_random_wallpaper(dir, opts, last_img)
+    else:
+        # The i3-wm command is launch
+        os.system("feh --bg-scale {}".format(img))
+        return img
+
+
+    
+
+# The data of the wallpaper images
+img_dir = "/home/sergio/GitProjects/misArchivos/Fondos_pantalla/LowPoly"
+opts = [
+    "low_poly_bird.png",
+    "low_poly_cat_1.png",
+    "low_poly_cat_2.png",
+    "low_poly_colors.jpg"
+]
+
+minute_change = 3   # Change the wallpaper every 3 mins
+seconds_change = minute_change * 60
+
+# The actual algorithm --> Daemon
+prev_img = choose_random_wallpaper(img_dir, opts)  # First time a wallpaper has to be chosen
+last_time = time.time()
+
+while True:
+    now = time.time()
+    key = input()
+
+    if now - last_time > seconds_change:
+        prev_img = choose_random_wallpaper(img_dir, opts, prev_img)
+        last_time = now
+    
+    
