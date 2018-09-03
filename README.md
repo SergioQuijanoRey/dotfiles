@@ -1,42 +1,41 @@
 # Sergio Quijano's Dotfiles
 
-## Progams need for working
+## Purpose
 
-| Name | Description | How to get |
-| ---  | ---         | ---        |
-| | |
+This github page was born due to some request on [this](https://www.reddit.com/r/unixporn/comments/9con7z/i3_simple_and_clean_workflow/) reddit post I made.
+
+It's my first time doing this, so if you have any advice please let me know
 
 ## Some tutorial on how to config (working on english version of it)
 
-* Para instalar `i3wm` en Ubuntu:
-	* `sudo apt install i3`
-* FEH
-	* Sirve para configurar el fondo de pantalla que deseemos
-	* `sudo apt install feh`
-	* Para colocar un fondo de pantalla:
-		* `feh --bg-scale {route}`, donde `route` es la ruta absoluta de la imagen
-* ARANDR
-	* Sirve para personalizar el monitor, con interfaz gráfica
-	* Especialmente útil si se quiere usar `i3-wm` con varios monitores
+* Base system
+	* `ubuntu 18.04 LTS`
+* Window manager
+	* `i3-wm`
+	* Once `ubuntu` is installed, make `sudo apt install i3` and reboot your system
+* Background slide
+	* `feh`
+	* Make `sudo apt install feh`
+	* One of my scripts make use of this
+* Multiple monitors
+	* `arandr`
+	* You should use it to manage multiple monitors
 	* `sudo apt install arandr`
-* FUENTES
-	* Instalación
-		* Creo un `.fonts` en `HOME`
-		* Descargo las fuentes, las descomprimo y muevo todos los `.ttf` al directorio
-	* Fonts Awesome
-		* Fuentes para poder colocar en los iconos de los workspaces
-		* Se pueden bajar de [github](https://github.com/FortAwesome/Font-Awesome)
-	* System San Francisco
-		* Fuentes de `MAC OS X`
-		* Se encuentra en [github](https://github.com/supermarin/YosemiteSanFranciscoFont)
-		* Hay que configurar el `config_file` de i3 para que el sistema las adapte
-* GTK THEME
-	* lxappearence
-		* `sudo apt install lxappearence`
-		* Para poder usar `default-fonts` en temas `GTK`, editamos:
-			* `~/.gtkrc-2.0`
-			* `~/.config/gtk-3.0/settings.ini`
-		* Para evitar esto últimon en `lxappearence` la fuente `System San Francisco` aparece abreviada como `SSFN Display`
+* Fonts
+	* How to use and install fonts
+		* Create `.fonts` at your home dir
+		* Download the fonts in zip files, uncompress it and move `*.tff` to fonts dir
+	* Fonts I'm using:
+		* `Font Awesome` for icons: [download](https://github.com/FortAwesome/Font-Awesome)
+		* `System San Francisco` for `MACOSX` font: [download](https://github.com/supermarin/YosemiteSanFranciscoFont)
+* GTK themes
+	* `lxappearence`
+	* For tweaking themes and fonts you downloaded
+	* `sudo apt install lxappearence`
+* Menu Launcher
+
+
+
 * LANZADOR DE MENUS
 	* ROFI
 		* `sudo apt install rofi`
