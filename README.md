@@ -6,7 +6,7 @@
 * It's my first time doing this, so if you have any advice please let me know
 * Heavily inspired on [this](https://www.youtube.com/watch?v=8-S0cWnLBKg&index=2&list=PL7DwkYSG4a4rXgz5G4LBWYfaBDFHYwbqB&t=1s), so check it out (*btw, great teacher*)
 
-## Some tutorial on how to config (working on english version of it)
+## Some tutorial on how to config
 
 * Base system
 	* `ubuntu 18.04 LTS`
