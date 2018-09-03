@@ -2,9 +2,9 @@
 
 ## Purpose
 
-This github page was born due to some request on [this](https://www.reddit.com/r/unixporn/comments/9con7z/i3_simple_and_clean_workflow/) reddit post I made.
-
-It's my first time doing this, so if you have any advice please let me know
+* This github page was born due to some request on [this](https://www.reddit.com/r/unixporn/comments/9con7z/i3_simple_and_clean_workflow/) reddit post I made.
+* It's my first time doing this, so if you have any advice please let me know
+* Heavily inspired on [this](https://www.youtube.com/watch?v=8-S0cWnLBKg&index=2&list=PL7DwkYSG4a4rXgz5G4LBWYfaBDFHYwbqB&t=1s), so check it out (*btw, great teacher*)
 
 ## Some tutorial on how to config (working on english version of it)
 
@@ -33,21 +33,14 @@ It's my first time doing this, so if you have any advice please let me know
 	* For tweaking themes and fonts you downloaded
 	* `sudo apt install lxappearence`
 * Menu Launcher
-
-
-
-* LANZADOR DE MENUS
-	* ROFI
-		* `sudo apt install rofi`
-* COMPOSITOR DE SISTEMA
-	* COMPTON
-		* `sudo apt install compton`
-* I3-BAR
-	* i3-blocks
-		* `sudo apt install i3blocks`
-		* Sirve para remplazar el `status_command i3status` con `status_command i3blocks`
-		* Conviene copiar la configuaración de `i3blocks` en el `home`: `cp /etc/i3blocks.conf .i3/i3blocks.conf`
-* VOLUME CONTROL
-	* pavu
-		* Menu gráfico para tener configuración del audio
-		* `sudo apt install pavucontrol`
+	* `rofi` is used as replace of `dmenu`
+	* It's configured on `~/.i3/config` file
+	* `sudo apt install rofi`
+* System Compositor
+	* `compton` allows transparencies and subtle transitions
+	* `sudo apt install compton`
+	* No config needed
+* Bar
+	* `i3blocks` as a replace of default `i3-bar`
+	* Configured on `~/.i3/i3blocks.conf`
+	* `sudo apt install i3blocks`
