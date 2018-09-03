@@ -1,3 +1,7 @@
 # Sergio Quijano's Dotfiles
 
-Some text
+## Progams need for working
+
+| Name | Description | How to get |
+| ---  | ---         | ---        |
+| | |
