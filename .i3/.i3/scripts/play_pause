@@ -3,7 +3,9 @@
 
 import os
 
-with open("/home/sergio/bin/play_pause.config", "r") as fileobj:
+config_file = "/home/sergio/.i3/scripts/play_pause.config"
+
+with open(config_file, "r") as fileobj:
     # State 0 --> esta pausado, hay que reproducir
     # State 1 --> se esta reproduciendo, hay que pausar
 
@@ -20,5 +22,5 @@ with open("/home/sergio/bin/play_pause.config", "r") as fileobj:
         new_state = 1
         print("ERROR!")
     
-with open("/home/sergio/bin/play_pause.config", "w") as fileobj:
+with open(config_file, "w") as fileobj:
     fileobj.write(str(new_state))
