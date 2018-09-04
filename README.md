@@ -6,6 +6,11 @@
 * It's my first time doing this, so if you have any advice please let me know
 * Heavily inspired on [this](https://www.youtube.com/watch?v=8-S0cWnLBKg&index=2&list=PL7DwkYSG4a4rXgz5G4LBWYfaBDFHYwbqB&t=1s), so check it out (*btw, great teacher*)
 
+# What you can find here
+
+* `.i3`: all my config files and scripts, so you just need to install apps and dependencies to imitate my system
+* `README.md`: it has the tutorial you see here 
+
 ## Some tutorial on how to config
 
 * Base system
@@ -32,9 +37,13 @@
 	* `lxappearence`
 	* For tweaking themes and fonts you downloaded
 	* `sudo apt install lxappearence`
+	* Themes I use:
+		* `Pop! theme` by *System76*: use it for icons
+		* `Arc theme`: use it for the rest
 * Menu Launcher
 	* `rofi` is used as replace of `dmenu`
 	* It's configured on `~/.i3/config` file
+	* Themes are put on `~/.i3/rofithemes`
 	* `sudo apt install rofi`
 * System Compositor
 	* `compton` allows transparencies and subtle transitions
