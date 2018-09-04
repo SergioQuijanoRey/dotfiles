@@ -23,7 +23,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # Rofi menu launcher
-set $rofi_theme "/home/sergio/.i3/rofithemes/flat-orange.rasi"
+set $rofi_theme "/home/sergio/.i3/rofithemes/flat-blue.rasi"
 bindsym $mod+d exec rofi -show run -config $rofi_theme
 bindsym $mod+Shift+d exec rofi -show window -config $rofi_theme
 
