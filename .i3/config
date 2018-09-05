@@ -107,6 +107,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 # Forcing apps on workspaces
 # Web apps
 assign [class="Firefox"] $workspace2
+assign [class="Google-chrome"] $workspace2
 # Coding apps
 assign [class="Atom"] $workspace3
 assign [class="Code"] $workspace3
@@ -204,6 +205,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Personal KeyBindings
 bindsym $mod+x exec i3lock --color "$bg-color"
 bindsym $mod+Shift+f exec firefox
+bindsm $mod+Shift+x exec shutdown -h now
 bindsym $mod+Shift+v exec code
 
 # Invert scrolling
@@ -212,8 +214,11 @@ exec_always --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
 
+# Remove green border on the left
+for_window [class="^.*"] border pixel 0
+
 # Apps on start
 exec_always choose_wallpaper
-
-# System compositor
 exec_always compton
+exec whatsapp
+exec telegram
