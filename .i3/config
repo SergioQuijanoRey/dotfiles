@@ -157,7 +157,8 @@ set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
-set $urgent-bg-color #E53935
+set $urgent-bg-color     #E53935
+set $blue-color          #5DA8F4
 
 # Window colors
 client.focused          $bg-color           $bg-color          $text-color          #00ff00
@@ -180,7 +181,7 @@ bar {
 		#                  border             background         text
 		focused_workspace  $bg-color          $bg-color          $text-color
 		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-	        urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+	        urgent_workspace   $blue-color   $blue-color   $text-color
         }
 }
 
