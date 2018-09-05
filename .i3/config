@@ -203,7 +203,8 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Personal KeyBindings
 bindsym $mod+x exec i3lock --color "$bg-color"
-bindsym $mod+Shift+x shutdown -h now
+bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+v exec code
 
 # Invert scrolling
 exec_always --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113 
