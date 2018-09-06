@@ -164,7 +164,7 @@ set $blue-color          #5DA8F4
 client.focused          $bg-color           $bg-color          $text-color          #00ff00
 client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+client.urgent           $blue-color    $blue-color   $text-color          #00ff00
 
 # i3wm bar
 bar {
@@ -221,5 +221,8 @@ for_window [class="^.*"] border pixel 0
 # Apps on start
 exec_always choose_wallpaper
 exec_always compton
+exec blueman
 exec whatsapp
 exec telegram
+
+
