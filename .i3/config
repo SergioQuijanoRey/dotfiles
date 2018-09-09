@@ -118,7 +118,8 @@ assign [class="Nautilus"] $workspace4
 assign [class="TelegramDesktop"] $workspace5
 assign [class="whatsapp-desktop"] $workspace5
 # Music apps
-assign [class="Spotify"] $workspace10
+#assign [class="Spotify"] $workspace10
+for_window [class="Spotify"] move to workspace $workspace10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -150,7 +151,6 @@ mode "resize" {
 
 # Resize binding
 bindsym $mod+r mode "resize"
-
 
 # Color config
 set $bg-color 	         #2f343f
@@ -206,8 +206,12 @@ bindsym XF86AudioPrev exec playerctl previous
 # Personal KeyBindings
 bindsym $mod+x exec i3lock --color "$bg-color"
 bindsym $mod+Shift+f exec firefox
+bindym exec google-chrome
+bindsym $mod+Shift+n exec google-chrome --incognito
 bindsm $mod+Shift+x exec shutdown -h now
 bindsym $mod+Shift+v exec code
+bindsym $mod+Shift+b exec blueman-manager
+bindsym Print exec gnome-screenshot
 
 # Invert scrolling
 exec_always --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113 
