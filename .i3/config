@@ -208,12 +208,11 @@ bindsym $mod+x exec i3lock --color "$bg-color"
 bindsym $mod+Shift+f exec firefox
 bindym exec google-chrome
 bindsym $mod+Shift+n exec google-chrome --incognito
-bindsm $mod+Shift+x exec shutdown -h now
+bindsym $mod+Shift+x exec shutdown -h now
 bindsym $mod+Shift+v exec code
 bindsym $mod+Shift+b exec blueman-manager
 bindsym Print exec gnome-screenshot
-bindsym $mod+Shift+p move workspace to output right     # Changing workspace to right
-bindsym $mod+Shift+o move workspace to output left      # Changing workspace to left
+bindsym $mod+Shift+p move workspace to left
 
 # Invert scrolling
 exec_always --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113 
