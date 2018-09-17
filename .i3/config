@@ -205,10 +205,10 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Personal KeyBindings
 bindsym $mod+x exec i3lock --color "$bg-color"
+bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'Shutdown system?' -b 'Yes' 'i3-msg shutdown -h now'"
 bindsym $mod+Shift+f exec firefox
 bindym exec google-chrome
 bindsym $mod+Shift+n exec google-chrome --incognito
-bindsym $mod+Shift+x exec shutdown -h now
 bindsym $mod+Shift+v exec code
 bindsym $mod+Shift+b exec blueman-manager
 bindsym Print exec gnome-screenshot
@@ -229,5 +229,5 @@ exec_always compton
 exec blueman
 exec whatsapp
 exec telegram
-
+exec nm-applet
 
