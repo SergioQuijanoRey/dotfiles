@@ -226,7 +226,6 @@ for_window [class="^.*"] border pixel 0
 # Apps on start
 exec_always choose_wallpaper
 exec_always compton
-exec blueman
 exec whatsapp
 exec telegram
 exec nm-applet
