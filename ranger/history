@@ -1,0 +1,50 @@
+rename dotfilesbackup
+rm
+move
+find .i3
+p
+find bin
+find i3
+open_with 
+search nvim
+find ne
+find con
+find nvim
+mkdir nvim
+touch init.vim
+open_with nvim
+shell bin_backup 
+shell dotfilesbackup 
+shell actualizarGit
+touch pruebas.py
+find pru
+shell py pruebas.py
+shell python3 pruebas.py
+shell py pruebas.py && wait 100
+find .vimrc
+find .vimr
+mkdir Codigos Ensamblador
+touch primer_codigo.s
+open_with vim
+shell bash
+touch pruebas.cpp
+1
+Q
+find .bash_aliases
+delete
+%f mv
+mv
+cut
+paste
+chmod u+x
+chmod 755
+find  .config
+wq
+find .config
+find rang
+find sc
+cd /home/sergio/.config/ranger
+open_with t vim
+open 
+open_with -t vim
+
