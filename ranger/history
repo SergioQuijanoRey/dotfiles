@@ -1,43 +1,3 @@
-rename dotfilesbackup
-rm
-move
-find .i3
-p
-find bin
-find i3
-open_with 
-search nvim
-find ne
-find con
-find nvim
-mkdir nvim
-touch init.vim
-open_with nvim
-shell bin_backup 
-shell dotfilesbackup 
-shell actualizarGit
-touch pruebas.py
-find pru
-shell py pruebas.py
-shell python3 pruebas.py
-shell py pruebas.py && wait 100
-find .vimrc
-find .vimr
-mkdir Codigos Ensamblador
-touch primer_codigo.s
-open_with vim
-shell bash
-touch pruebas.cpp
-1
-Q
-find .bash_aliases
-delete
-%f mv
-mv
-cut
-paste
-chmod u+x
-chmod 755
 find  .config
 wq
 find .config
@@ -47,4 +7,44 @@ cd /home/sergio/.config/ranger
 open_with t vim
 open 
 open_with -t vim
+mkdir pruebas
+touch some_file.txt
+touch other_file.txt
+dir_list.txt
+rename dir_list.txt
+rename bel_air_song.txt
+remove
+touch {0..10}.txt
+move
+delete
+rename Apuntes Álgebra - Pedro A. Sanchez.pdf
+-open-with vim
+-topen_with vim
+open_with vim t
+:
+open_with jupy
+shell jupy 
+find use
+open_with vim 
+open_with vim
+open_with 
+less
+open_with less
+rename Relación 1 - Eficiencia.pdf
+bulkrename 
+mkdir Retos
+mkdir Reto 1
+rename Reto 1 - Guión.pdf
+touch Reto 1 - Resultados.pdf
 
+rename Reto 1 - Resultados.md
+shell pandoc Reto\ 1\ -\ Resultados.md -o Reto\ 1\ -\ Resultados.pdf
+cut
+find Gi
+paste
+rename IDE Features.md
+find .c
+find .co
+find vim
+find .vim
+shell bash

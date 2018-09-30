@@ -208,7 +208,7 @@ bindsym $mod+x exec i3lock --color "$bg-color"
 bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'Shutdown system?' -b 'Yes' 'shutdown -h now'"
 bindsym $mod+Shift+f exec firefox
 bindym exec google-chrome
-bindsym $mod+Shift+n exec nautilus
+bindsym $mod+Shift+n exec sranger 
 bindsym $mod+Shift+v exec code
 bindsym $mod+Shift+b exec blueman-manager
 bindsym Print exec gnome-screenshot
