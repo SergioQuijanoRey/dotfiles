@@ -13,12 +13,12 @@ Plug 'junegunn/goyo.vim'			" ZenMode
 Plug 'ErichDonGubler/vim-sublime-monokai'	" Sublime theme
 Plug 'ctrlpvim/ctrlp.vim'			" For finding archives
 Plug 'Valloric/YouCompleteMe'			" Autocompletion for any language
+Plug 'kana/vim-smartinput'			" Autoclose brackets and parenthesis
 
 " Python IDE plugins
 Plug 'davidhalter/jedi-vim' 			" <ctr><space> for autocompletion
 						" <leader>g for goto definition
 						" K for show documentation
-
 call plug#end()
 
 " Leader letter
