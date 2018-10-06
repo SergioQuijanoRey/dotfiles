@@ -102,3 +102,5 @@ map <C-p> :CtrlP<Cr>
 map <C-Down> 3j
 map <C-Up> 3k
 
+" Capital w also saves
+map W w

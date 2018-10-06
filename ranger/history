@@ -1,32 +1,8 @@
-wq
-find .config
-find rang
-find sc
-cd /home/sergio/.config/ranger
-open_with t vim
-open 
-open_with -t vim
-mkdir pruebas
-touch some_file.txt
-touch other_file.txt
-dir_list.txt
-rename dir_list.txt
-rename bel_air_song.txt
-remove
-touch {0..10}.txt
-move
-delete
-rename Apuntes Álgebra - Pedro A. Sanchez.pdf
--open-with vim
--topen_with vim
-open_with vim t
-:
 open_with jupy
 shell jupy 
 find use
 open_with vim 
 open_with vim
-open_with 
 less
 open_with less
 rename Relación 1 - Eficiencia.pdf
@@ -35,16 +11,40 @@ mkdir Retos
 mkdir Reto 1
 rename Reto 1 - Guión.pdf
 touch Reto 1 - Resultados.pdf
-
 rename Reto 1 - Resultados.md
 shell pandoc Reto\ 1\ -\ Resultados.md -o Reto\ 1\ -\ Resultados.pdf
-cut
 find Gi
-paste
 rename IDE Features.md
 find .c
 find .co
 find vim
 find .vim
-shell bash
 shell vconf
+
+find or
+find .fonts
+find .config
+find .gtk
+find .gt
+rename gentable.py
+touch pruebas.c
+touch ejercicio2.c
+touch ejercici
+rename check_type.c
+touch ejercicio4.c
+delete
+mkdir Programas
+touch Módulo II - Sesión 2 - Resolución.md
+wq
+open_with t vim
+open_with t gnome-terminal vim
+open_with t gterm vim
+mkdir C**
+rename C++
+cut
+open_with 
+paste
+mkdir Python
+touch Stack.py
+touch main.py
+shell bash
