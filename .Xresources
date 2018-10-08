@@ -6,7 +6,7 @@
 ! description:
 ! 	X configuration for urxvt
 
-! General Configuration
+! General Configuration for URxvt
 !===============================================================================
 ! URxvt font
 URxvt.font: xft:monospace:size=11
@@ -20,11 +20,14 @@ URxvt.keysym.Control-Down:    \033[1;5B
 URxvt.keysym.Control-Left:    \033[1;5D
 URxvt.keysym.Control-Right:    \033[1;5C
 
+! Cursor blinking
+URxvt.cursorBlink:true
+
 ! Color scheme
 !===============================================================================
 ! special
 *.foreground:   #c5c8c6
-*.background:   #1d1f21
+*.background:	#1d1f21
 *.cursorColor:  #c5c8c6
  
 ! ! black
