@@ -36,7 +36,6 @@ open_with
 open_with vim
 cut
 paste
-delete
 touch FechaHistorica.h
 touch cronologia.h
 rename fechahistorica.h
@@ -48,3 +47,4 @@ touch mispru
 open_with t gedit
 open_with t vim
 shell bash
+delete
