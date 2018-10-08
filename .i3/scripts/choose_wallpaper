@@ -28,6 +28,8 @@ opts = [
     "low_poly_bird.png",
     "low_poly_cat_1.png",
     "low_poly_cat_2.png",
+    "low_poly_cat_3.png",
+    "low_poly_firefox.png",
     "low_poly_colors.jpg"
 ]
 

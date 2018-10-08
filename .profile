@@ -29,5 +29,10 @@ fi
 # My personal paths
 #==============================================================================
 PATH="$PATH:/home/sergio/.i3/scripts"
-TERM="gnome-terminal"
-TERMCMD="gnome-terminal"
+PATH="$PATH:/home/sergio/.launchers"
+
+# Enviroment vars
+#===============================================================================
+export EDITOR="vim"
+export TERM="xterm-256color"
+export COLORTERM="truecolor"

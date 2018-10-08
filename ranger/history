@@ -1,29 +1,3 @@
-open_with jupy
-shell jupy 
-find use
-open_with vim 
-open_with vim
-less
-open_with less
-rename Relación 1 - Eficiencia.pdf
-bulkrename 
-mkdir Retos
-mkdir Reto 1
-rename Reto 1 - Guión.pdf
-touch Reto 1 - Resultados.pdf
-rename Reto 1 - Resultados.md
-shell pandoc Reto\ 1\ -\ Resultados.md -o Reto\ 1\ -\ Resultados.pdf
-find Gi
-rename IDE Features.md
-find .c
-find .co
-find vim
-find .vim
-shell vconf
-
-find or
-find .fonts
-find .config
 find .gtk
 find .gt
 rename gentable.py
@@ -32,19 +6,45 @@ touch ejercicio2.c
 touch ejercici
 rename check_type.c
 touch ejercicio4.c
-delete
 mkdir Programas
 touch Módulo II - Sesión 2 - Resolución.md
-open_with t vim
 open_with t gnome-terminal vim
 open_with t gterm vim
 mkdir C**
 rename C++
-cut
-open_with 
-paste
 mkdir Python
 touch Stack.py
 touch main.py
-shell bash
 wq
+mkdir .launchers
+find .launchers
+touch .binaries
+mkdir .binaries
+find .bi
+w
+find lau
+touch minecraft
+chmod 755
+find .profile
+find .pr
+shell extract
+shell extract openjdk-11_linux-x64_bin.tar.gz
+deletye
+find .binaries
+rename minecraft.jar
+open_with 
+open_with vim
+cut
+paste
+delete
+touch FechaHistorica.h
+touch cronologia.h
+rename fechahistorica.h
+touch fechahistorica.cpp
+touch cronologia.cpp
+open_with t vi,
+
+touch mispru
+open_with t gedit
+open_with t vim
+shell bash

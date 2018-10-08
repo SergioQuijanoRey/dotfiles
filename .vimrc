@@ -70,7 +70,7 @@ set colorcolumn=80				" Show 80 col line
 map <leader>n <esc>:tabprevious<CR>
 map <leader>m <esc>:tabnext<CR>
 map <leader>t <esc>:tabnew<CR>
-map <leader>t! <esc>:tabclose<CR>
+map <leader>tq <esc>:tabclose<CR>
 
 
 " Vim theme
@@ -101,6 +101,3 @@ map <C-p> :CtrlP<Cr>
 " Some fast vertical movement
 map <C-Down> 3j
 map <C-Up> 3k
-
-" Capital w also saves
-map W w
