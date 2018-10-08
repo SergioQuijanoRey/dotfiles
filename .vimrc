@@ -76,7 +76,7 @@ map <leader>tq <esc>:tabclose<CR>
 " Vim theme
 "==============================================================================
 colorscheme sublimemonokai			" Monokai theme
-set termguicolors				" For best Monokai theme
+" set termguicolors				" For best Monokai theme --> disabled for urxvt
 
 " Plugins configuration
 "==============================================================================

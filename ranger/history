@@ -45,6 +45,6 @@ open_with t vi,
 
 touch mispru
 open_with t gedit
-open_with t vim
 shell bash
 delete
+open_with t vim
