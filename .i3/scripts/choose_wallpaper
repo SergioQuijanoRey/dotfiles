@@ -28,8 +28,6 @@ opts = [
     "low_poly_bird.png",
     "low_poly_cat_1.png",
     "low_poly_cat_2.png",
-    "low_poly_cat_3.png",
-    "low_poly_firefox.png",
     "low_poly_colors.jpg"
 ]
 
@@ -47,5 +45,3 @@ while True:
     if now - last_time > seconds_change:
         prev_img = choose_random_wallpaper(img_dir, opts, prev_img)
         last_time = now
-    
-    
