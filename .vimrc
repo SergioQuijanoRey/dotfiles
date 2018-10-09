@@ -92,8 +92,9 @@ nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 " Ctr-o to open tree view
 map <C-o> :NERDTreeToggle<CR> 		
 
-" Ctrl-f to go zen mode
-map <C-f> :Goyo<CR>		
+" Ctrl-f to go zen mode, Ctr-g to go out
+map <C-f> :Goyo 100<CR>		
+map <C-g> :Goyo<CR>
 
 " Ctr-p to find files
 map <C-p> :CtrlP<Cr>			
