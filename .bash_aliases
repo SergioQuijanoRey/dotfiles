@@ -6,3 +6,4 @@ alias vconf="vim .vimrc"
 alias pdc="pandoc --latex-engine=xelatex"
 alias diskspace="du -S | sort -n -r |more"      # Util para ver que es lo que esta ocu→
 alias v="vim"					# Util para abrir rápidamente VIM
+alias dasm="objdump -d"				# Util para desensamblar codigos ejecutables
