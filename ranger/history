@@ -1,4 +1,3 @@
-rename gentable.py
 touch ejercicio2.c
 touch ejercici
 rename check_type.c
@@ -41,10 +40,11 @@ open_with t vi,
 
 touch mispru
 open_with t gedit
-shell bash
 touch Tema 4 - Contenedores básicos en la STL.md
-open_with t vim
 touch pruebas.c
 wq
-delete
+touch Notas.md
 open_with t vim 
+delete
+open_with t vim
+shell bash
