@@ -93,8 +93,7 @@ nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 map <C-o> :NERDTreeToggle<CR> 		
 
 " Ctrl-f to go zen mode, Ctr-g to go out
-map <C-f> :Goyo 100<CR>		
-map <C-g> :Goyo<CR>
+map <C-f> :Goyo <CR>		
 
 " Ctr-p to find files
 map <C-p> :CtrlP<Cr>			
@@ -102,3 +101,6 @@ map <C-p> :CtrlP<Cr>
 " Some fast vertical movement
 map <C-Down> 3j
 map <C-Up> 3k
+
+" Spell checking
+map <F6> :setlocal spell! spelllang=es<CR>

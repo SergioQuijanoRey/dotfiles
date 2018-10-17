@@ -118,7 +118,6 @@ assign [class="Nautilus"] $workspace4
 assign [class="TelegramDesktop"] $workspace5
 assign [class="whatsapp-desktop"] $workspace5
 # Music apps
-#assign [class="Spotify"] $workspace10
 for_window [class="Spotify"] move to workspace $workspace10
 
 # reload the configuration file
@@ -229,4 +228,3 @@ exec_always compton
 exec whatsapp
 exec telegram
 exec nm-applet
-
