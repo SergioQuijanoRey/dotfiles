@@ -8,3 +8,4 @@ alias diskspace="du -S | sort -n -r |more"      # Util para ver que es lo que es
 alias v="vim"					# Util para abrir rápidamente VIM
 alias dasm="objdump -d"				# Util para desensamblar codigos ejecutables
 alias getsyscall="cat /usr/include/asm/unistd_32.h | egrep "
+alias release="lsb_release -a"

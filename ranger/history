@@ -1,7 +1,3 @@
-mkdir Python
-touch Stack.py
-touch main.py
-mkdir .launchers
 find .launchers
 touch .binaries
 mkdir .binaries
@@ -38,13 +34,17 @@ touch Tema 5 - Algoritmos de la STL.md
 touch ejercicio1.sç
 rename ejercicio1.s
 shell echo "a" >> ejercicio1.s
-cut
 touch CodigoEntrega
 mkdir CodigoEntrega
-paste
 shell bash
 delete
 rename sumasinsigno32b.s
 touch sumaconsigno32b.s
 shell echo "a" >> sumaconsigno32b.s
 open_with t vim
+she
+open_with google-chrome
+cut
+paste
+rename Sistema de calificación.pdf
+rename Guía Docente - Sistemas Operativos.pdf
