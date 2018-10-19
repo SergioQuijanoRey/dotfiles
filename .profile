@@ -1,4 +1,5 @@
 # ~/.profile: executed by the command interpreter for login shells.
+
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
 # exists.
 # see /usr/share/doc/bash/examples/startup-files for examples.
@@ -34,5 +35,7 @@ PATH="$PATH:/home/sergio/.launchers"
 # Enviroment vars
 #===============================================================================
 export EDITOR="vim"
+export TERMCMD="xterm-256color"
 export TERM="xterm-256color"
-export COLORTERM="truecolor"
+export COLORTERM="xterm-256color"
+#export COLORTERM="truecolor"
