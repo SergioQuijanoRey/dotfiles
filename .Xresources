@@ -23,9 +23,12 @@ URxvt.keysym.Control-Right:    \033[1;5C
 ! Cursor blinking
 URxvt.cursorBlink:true
 
-! Copy/Paste
+! Copy/Paste with <Ctrl-Alt-c> / <Ctrl-Alt-V>
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.perl-ext-common: default, clipboards
+
+! Mouse/Touchpad scrolling
+URxvt.perl-ext-common:vtewheel
 
 ! Color scheme
 !===============================================================================
