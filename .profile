@@ -35,7 +35,6 @@ PATH="$PATH:/home/sergio/.launchers"
 # Enviroment vars
 #===============================================================================
 export EDITOR="vim"
-export TERMCMD="xterm-256color"
-export TERM="xterm-256color"
-export COLORTERM="xterm-256color"
-#export COLORTERM="truecolor"
+export TERMCMD="urxvt"
+export TERM="urxvt"
+export COLORTERM="urxvt"

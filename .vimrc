@@ -1,4 +1,8 @@
+" Author:
+" 	Sergio Quijano Rey
 "	sergiquijano@gmail.com
+" Description:
+" 	VIM configuration
 " Version
 " 	v1.0 26/09/2018 - First functionaly version
 

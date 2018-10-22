@@ -74,7 +74,7 @@ set $workspace2 "2: Navigation "
 set $workspace3 "3: Code Editing "
 set $workspace4 "4: Folders "
 set $workspace5 "5: Texting "
-set $workspace6 "6"
+set $workspace6 "6: Documents "
 set $workspace7 "7"
 set $workspace8 "8"
 set $workspace9 "9"
@@ -116,7 +116,9 @@ assign [class="Gedit"] $workspace3
 assign [class="Nautilus"] $workspace4
 # Texting apps
 assign [class="TelegramDesktop"] $workspace5
-assign [class="whatsapp-desktop"] $workspace5
+assign [class="whatsapp-desktopo"] $workspace5
+# Document apps
+assign [class="Evince"] $workspace6
 # Music apps
 for_window [class="Spotify"] move to workspace $workspace10
 
