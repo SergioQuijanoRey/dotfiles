@@ -1,4 +1,3 @@
-touch fechahistorica.cpp
 touch cronologia.cpp
 open_with t vi,
 touch mispru
@@ -39,7 +38,6 @@ rename Práctica 3 - Mi código
 mkdir Práctica 3 - Archivos
 cut
 paste
-
 shell extract
 shell bash
 touch Práctica 3 - Notas de clase.md
@@ -47,4 +45,6 @@ shell echo "a" >> Práctica 3 - Notas de clase.md
 delete
 rename Práctica
 rename Práctica 3 - Notas de Clase.md
+touch Tema 6 - Árboles.md
+
 open_with t vim
