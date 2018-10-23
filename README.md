@@ -46,7 +46,7 @@
 	* Themes are put on `~/.i3/rofithemes`
 	* `sudo apt install rofi`
 * System Compositor
-	* `compton` allows transparencies and subtle transitions
+	* `compton` allows transparencies and subtle transitions on i3
 	* `sudo apt install compton`
 	* No config needed
 * Bar
