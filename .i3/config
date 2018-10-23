@@ -108,6 +108,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 # Web apps
 assign [class="Firefox"] $workspace2
 assign [class="Google-chrome"] $workspace2
+assign [class="brave"] $workspace3
 # Coding apps
 assign [class="Atom"] $workspace3
 assign [class="Code"] $workspace3

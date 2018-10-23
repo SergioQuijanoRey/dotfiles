@@ -1,0 +1,10 @@
+find .urxvt
+find .x
+find .co
+cut
+find .config
+find ra
+paste
+bulkrename 
+delete
+
