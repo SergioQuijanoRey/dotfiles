@@ -8,7 +8,7 @@
 
 " Plugins
 "==============================================================================
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugged') 
 
 " General purpose plugins
 Plug 'itchyny/lightline.vim'			" Status bar
@@ -108,3 +108,4 @@ map <C-Up> 3k
 
 " Spell checking
 map <F6> :setlocal spell! spelllang=es<CR>
+

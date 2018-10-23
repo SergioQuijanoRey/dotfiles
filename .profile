@@ -1,3 +1,10 @@
+# Author
+# 	Sergio Quijano Rey
+# 	sergiquijano@gmail.com
+# Description:
+# 	Customized .profile 
+# Version
+# 	v1.0 23/10/2018 - First functionally version
 # ~/.profile: executed by the command interpreter for login shells.
 
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
@@ -29,6 +36,7 @@ fi
 
 # My personal paths
 #==============================================================================
+PATH="$PATH:/home/sergio/bin"
 PATH="$PATH:/home/sergio/.i3/scripts"
 PATH="$PATH:/home/sergio/.launchers"
 
