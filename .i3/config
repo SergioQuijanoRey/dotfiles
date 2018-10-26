@@ -16,8 +16,8 @@ font pango:System San Francisco Display 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# Launch terminal
-bindsym $mod+Return exec urxvt
+# Launch terminal with name "ranger"
+bindsym $mod+Return exec urxvt 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -113,8 +113,10 @@ assign [class="brave"] $workspace3
 assign [class="Atom"] $workspace3
 assign [class="Code"] $workspace3
 assign [class="Gedit"] $workspace3
+assign [title="vim"] $workspace3
 # File apps
 assign [class="Nautilus"] $workspace4
+assign [title="ranger"] $workspace4
 # Texting apps
 assign [class="TelegramDesktop"] $workspace5
 assign [class="whatsapp-desktopo"] $workspace5
@@ -197,7 +199,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec /home/sergio/bin/toggletouchpad # toggle touchpad
+bindsym XF86TouchpadToggle exec /home/sergio/.i3/scripts/toggletouchpad # toggle touchpad
 
 # Music song controls
 bindsym XF86AudioPlay exec play_pause
@@ -208,10 +210,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Personal KeyBindings
 bindsym $mod+x exec i3lock --color "$bg-color"
 bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'Shutdown system?' -b 'Yes' 'shutdown -h now'"
-bindsym $mod+Shift+f exec firefox
-bindym exec google-chrome
-bindsym $mod+Shift+n exec sranger 
-bindsym $mod+Shift+v exec code
+bindsym $mod+Shift+n exec sranger
 bindsym $mod+Shift+b exec blueman-manager
 bindsym Print exec gnome-screenshot
 bindsym $mod+Shift+p move workspace to left

@@ -31,41 +31,119 @@ URxvt.perl-ext-common: default, clipboards
 ! Mouse/Touchpad scrolling
 URxvt.perl-ext-common:vtewheel
 
-! Color scheme
+! Color scheme: terminal.sexy
+!===============================================================================
+! ! special
+! *.foreground:   #c5c8c6
+! *.background:	#1d1f21
+! *.cursorColor:  #c5c8c6
+!  
+! ! black
+! *.color0:       #282a2e
+! *.color8:       #373b41
+!  
+! ! red
+! *.color1:       #a54242
+! *.color9:       #cc6666
+!  
+! ! green
+! *.color2:       #8c9440
+! *.color10:      #b5bd68
+! 
+! ! yellow
+! *.color3:       #de935f
+! *.color11:      #f0c674
+!  
+! ! blue
+! *.color4:       #5f819d
+! *.color12:      #81a2be
+! 
+! ! magenta
+! *.color5:       #85678f
+! *.color13:      #b294bb
+! 
+! ! cyan
+! *.color6:       #5e8d87
+! *.color14:      #8abeb7
+! 
+! ! white
+! *.color7:       #707880
+! *.color15:      #c5c8c6
+
+! Color scheme: monokai
+!===============================================================================
+! ! special
+! *.foreground:   #f1ebeb
+! *.background:   #272822
+! *.cursorColor:  #f1ebeb
+! 
+! ! black
+! *.color0:       #48483e
+! *.color8:       #76715e
+! 
+! ! red
+! *.color1:       #dc2566
+! *.color9:       #fa2772
+! 
+! ! green
+! *.color2:       #8fc029
+! *.color10:      #a7e22e
+! 
+! ! yellow
+! *.color3:       #d4c96e
+! *.color11:      #e7db75
+! 
+! ! blue
+! *.color4:       #55bcce
+! *.color12:      #66d9ee
+! 
+! ! magenta
+! *.color5:       #9358fe
+! *.color13:      #ae82ff
+! 
+! ! cyan
+! *.color6:       #56b7a5
+! *.color14:      #66efd5
+! 
+! ! white
+! *.color7:       #acada1
+! *.color15:      #cfd0c2
+
+! Color scheme: sergio-monokai
 !===============================================================================
 ! special
-*.foreground:   #c5c8c6
-*.background:	#1d1f21
-*.cursorColor:  #c5c8c6
- 
-! ! black
-*.color0:       #282a2e
-*.color8:       #373b41
- 
-! ! red
-*.color1:       #a54242
-*.color9:       #cc6666
- 
-! ! green
-*.color2:       #8c9440
-*.color10:      #b5bd68
+*.foreground:   #f1ebeb
+*.background:   #272822
+*.cursorColor:  #f1ebeb
+
+! black
+*.color0:       #48483e
+*.color8:       #76715e
+
+! red
+*.color1:       #dc2566
+*.color9:       #fa2772
+
+! green
+*.color2:       #8fc029
+*.color10:      #a7e22e
 
 ! yellow
-*.color3:       #de935f
-*.color11:      #f0c674
- 
+*.color3:       #d4c96e
+*.color11:      #e7db75
+
 ! blue
 *.color4:       #5f819d
 *.color12:      #81a2be
 
 ! magenta
-*.color5:       #85678f
-*.color13:      #b294bb
+*.color5:       #9358fe
+*.color13:      #ae82ff
 
 ! cyan
-*.color6:       #5e8d87
-*.color14:      #8abeb7
+*.color6:       #56b7a5
+*.color14:      #66efd5
 
 ! white
-*.color7:       #707880
-*.color15:      #c5c8c6
+*.color7:       #acada1
+*.color15:      #cfd0c2
