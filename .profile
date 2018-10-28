@@ -43,6 +43,7 @@ PATH="$PATH:/home/sergio/.launchers"
 # Enviroment vars
 #===============================================================================
 export EDITOR="vim"
+export VISUAL="vim"
 export TERMCMD="urxvt"
 export TERM="urxvt"
 export COLORTERM="urxvt"

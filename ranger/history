@@ -9,3 +9,4 @@ bulkrename
 delete
 
 qq
+open_with t vim
