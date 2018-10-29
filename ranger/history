@@ -1,12 +1,24 @@
 find .urxvt
 find .x
 find .co
-cut
 find .config
 find ra
-paste
 bulkrename 
-delete
-
 qq
+mkdir Archivos
+cut
+paste
+mkdir Mis codigos
+touch show_pid.c
+touch ejercicio1.c
+open_with t 
+touch ejercicio2.c
+open_with t vim 
+
+delete
+touch ejercicio3.c
+open_with 
+term
+terminal 
+find .i3
 open_with t vim

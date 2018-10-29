@@ -6,6 +6,7 @@
 # Version:
 #       v1.0: 04/09/2018 - First little rice. The config file is uncleaned
 #       v1.1: 04/09/2018 - Cleaning the config file
+#       v1.2: 29/10/2018 - Manjaro support added
 
 # Windows modkey
 set $mod Mod4
@@ -16,7 +17,7 @@ font pango:System San Francisco Display 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# Launch terminal with name "ranger"
+# Launch terminal 
 bindsym $mod+Return exec urxvt 
 
 # kill focused window
@@ -118,7 +119,8 @@ assign [class="Nautilus"] $workspace4
 assign [title="ranger"] $workspace4
 # Texting apps
 assign [class="TelegramDesktop"] $workspace5
-assign [class="whatsapp-desktopo"] $workspace5
+assign [class="whatsapp-desktop"] $workspace5
+assign [class="whats-app-nativefier-7bbd2c"] $workspace5
 # Document apps
 assign [class="Evince"] $workspace6
 # Music apps
@@ -172,7 +174,7 @@ client.urgent           $blue-color    $blue-color   $text-color          #00ff0
 # i3wm bar
 bar {
         # Bar program
-        status_command i3blocks -c ~/.i3/i3blocks.conf
+        status_command i3blocks -c /home/sergio/.i3/i3blocks.conf
         
         # Position of the bar
         position top
@@ -198,7 +200,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec /home/sergio/.i3/scripts/toggletouchpad # toggle touchpad
+# bindsym XF86TouchpadToggle exec /home/sergio/.i3/scripts/toggletouchpad # toggle touchpad -- No se necesita con libinput -- No se necesita con libinput
 
 # Music song controls
 bindsym XF86AudioPlay exec play_pause
@@ -211,11 +213,11 @@ bindsym $mod+x exec i3lock --color "$bg-color"
 bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'Shutdown system?' -b 'Yes' 'shutdown -h now'"
 bindsym $mod+Shift+n exec sranger
 bindsym $mod+Shift+b exec blueman-manager
-bindsym Print exec gnome-screenshot
+bindsym Print exec xfce4-screenshooter #gnome-screenshoot   
 bindsym $mod+Shift+p move workspace to left
 
 # Invert scrolling
-exec_always --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113 
+# exec_always --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113  -- No se necesita con libinput
 
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
@@ -227,5 +229,5 @@ for_window [class="^.*"] border pixel 0
 exec_always choose_wallpaper
 exec_always compton
 exec whatsapp
-exec telegram
+exec telegram-desktop
 exec nm-applet
