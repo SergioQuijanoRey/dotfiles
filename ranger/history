@@ -7,18 +7,33 @@ bulkrename
 qq
 mkdir Archivos
 cut
-paste
 mkdir Mis codigos
 touch show_pid.c
-touch ejercicio1.c
 open_with t 
 touch ejercicio2.c
 open_with t vim 
-
-delete
 touch ejercicio3.c
 open_with 
 term
-terminal 
 find .i3
+rename setmonitor
+open_with t
+rename Práctica 3
+d
+rename Archivos de la práctica
+mkdir Mis códigos
+mkdir Códigos entrega
+touch algo.c
+delete
+touch ejercicio1.c
+rename ejercicio1.s
+shell echo a >> ejercicio1.s
+rename ejercicio1convencion.s
+
+copy
+paste
+rename ejercicio2.s
+terminal 
+touch ejercicio3.s
+shell echo a >> ejercicio3.s
 open_with t vim

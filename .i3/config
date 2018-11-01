@@ -231,3 +231,4 @@ exec_always compton
 exec whatsapp
 exec telegram-desktop
 exec nm-applet
+exec pa-applet
