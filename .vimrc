@@ -100,7 +100,7 @@ map <C-o> :NERDTreeToggle<CR>
 map <C-f> :Goyo <CR>		
 
 " Ctr-p to find files
-map <C-p> :CtrlP<Cr>			
+map <C-p> :CtrlP<CR>			
 
 " Some fast vertical movement
 map <C-Down> 3j
@@ -109,3 +109,5 @@ map <C-Up> 3k
 " Spell checking
 map <F6> :setlocal spell! spelllang=es<CR>
 
+" Open a terminal
+map <C-k> :terminal<CR>
