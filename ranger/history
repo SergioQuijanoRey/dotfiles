@@ -28,8 +28,6 @@ touch ejercicio1.c
 rename ejercicio1.s
 shell echo a >> ejercicio1.s
 rename ejercicio1convencion.s
-copy
-paste
 rename ejercicio2.s
 touch ejercicio3.s
 shell echo a >> ejercicio3.s
@@ -43,3 +41,6 @@ touch Resumen.md
 shell pandoc "Resumen.md" -o "Resumen.pdf"
 delete
 terminal 
+copy
+paste
+rename ejercicio4set.cpp

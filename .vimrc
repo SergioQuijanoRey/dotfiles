@@ -22,7 +22,6 @@ Plug 'kana/vim-smartinput'			" Autoclose brackets and parenthesis
 " Python IDE plugins
 Plug 'davidhalter/jedi-vim' 			" <ctr><space> for autocompletion
 						" <leader>g for goto definition
-						" K for show documentation
 call plug#end()
 
 " Leader letter
@@ -68,6 +67,7 @@ set laststatus=2 				" For the lightline plugin
 set nowrap                      		" Don't wrap long lines
 set listchars=extends:→         		" Show arrow if line continues rightwards
 set colorcolumn=80				" Show 80 col line 
+let loaded_matchparen = 1			" No matching parenthesis/brakets/... highlight
 
 " Tabs control 
 "==============================================================================
@@ -75,7 +75,6 @@ map <leader>n <esc>:tabprevious<CR>
 map <leader>m <esc>:tabnext<CR>
 map <leader>t <esc>:tabnew<CR>
 map <leader>tq <esc>:tabclose<CR>
-
 
 " Vim theme
 "==============================================================================
