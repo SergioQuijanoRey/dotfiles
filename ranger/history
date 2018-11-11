@@ -1,46 +1,50 @@
-find .urxvt
-find .x
-find .co
-find .config
-find ra
-bulkrename 
-qq
-mkdir Archivos
-cut
-mkdir Mis codigos
-touch show_pid.c
-open_with t 
-touch ejercicio2.c
-open_with t vim 
-touch ejercicio3.c
-open_with 
-term
+touch ejercicio6.s
+shell echo "a" >> ejercicio6.s
+shell file vgcore.27970
+read
 find .i3
-rename setmonitor
-open_with t
-rename Práctica 3
-d
-rename Archivos de la práctica
-mkdir Mis códigos
-mkdir Códigos entrega
-touch algo.c
-touch ejercicio1.c
-rename ejercicio1.s
-shell echo a >> ejercicio1.s
-rename ejercicio1convencion.s
-rename ejercicio2.s
-touch ejercicio3.s
-shell echo a >> ejercicio3.s
-touch Práctica 2 - Explicación.md
-open_with t code
-open_with code
-touch algo.txt
-open_with t vim
+rename monodisplay
+rename dualdisplay
+rename dualdisplay - gnome
+touch lockscreen
+touch lockscreen2
+chmod 755
+open_with vim
+ejercicio4.c
+open_with t vo,
+open_with t 
+touch ejercicio6.c
+touch ejercicio7.c
+touch ejecutarprograma.c
+touch ejemplohilo.c
+touch find_init.c
+rename Práctica 4
+rename resumen_sergio_mianfg.md
+rename Ejemplo Examen.jpg
+rename Ejercicios Resueltos - Prácticas.pdf
+open_wit
+rename Práctica 6
 
-touch Resumen.md
-shell pandoc "Resumen.md" -o "Resumen.pdf"
-delete
-terminal 
+rename ejercicio1.c
+touch ejercicio2.c
+mkdir Archivos de Ejemplo
+cut
+mkdir Códigos
+touch ejercicio1.c
+rename ejercicio1-dup.c
 copy
 paste
-rename ejercicio4set.cpp
+rename ejercicio1-dup._
+rename ejercicio1-fcntl.c
+touch ejercicio2-c
+rename ejercicio2.c
+touch ejercicio5.c
+touch ejercicio3.c
+touch ejercicio4.c
+terminal 
+deete
+delete
+open_with t vim
+open_with
+open_with 
+open_with thunar

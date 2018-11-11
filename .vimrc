@@ -16,9 +16,9 @@ Plug 'scrooloose/nerdtree'			" File tree
 Plug 'junegunn/goyo.vim'			" ZenMode
 Plug 'ErichDonGubler/vim-sublime-monokai'	" Sublime theme
 Plug 'ctrlpvim/ctrlp.vim'			" For finding archives
-Plug 'Valloric/YouCompleteMe'			" Autocompletion for any language
 Plug 'kana/vim-smartinput'			" Autoclose brackets and parenthesis
-
+Plug 'nathanaelkane/vim-indent-guides'		" Indent Guidelines
+Plug 'Valloric/YouCompleteMe'			" Code completion
 " Python IDE plugins
 Plug 'davidhalter/jedi-vim' 			" <ctr><space> for autocompletion
 						" <leader>g for goto definition
@@ -40,7 +40,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-" Better copy/paste ---> WIP
+" Better copy/paste
 set pastetoggle=<F2>
 set clipboard=unnamed
 
@@ -79,7 +79,7 @@ map <leader>tq <esc>:tabclose<CR>
 " Vim theme
 "==============================================================================
 colorscheme sublimemonokai			" Monokai theme
-" set termguicolors				" For best Monokai theme --> disabled for urxvt
+"set termguicolors				" For best Monokai theme --> disabled for urxvt
 
 " Plugins configuration
 "==============================================================================
@@ -110,3 +110,6 @@ map <F6> :setlocal spell! spelllang=es<CR>
 
 " Open a terminal
 map <C-k> :terminal<CR>
+
+" Ctr-space for autocompletion
+imap <C-space> <C-p>

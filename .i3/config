@@ -209,7 +209,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Personal KeyBindings
-bindsym $mod+x exec i3lock --color "$bg-color"
+bindsym $mod+x exec lockscreen
 bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'Shutdown system?' -b 'Yes' 'shutdown -h now'"
 bindsym $mod+Shift+n exec sranger
 bindsym $mod+Shift+b exec blueman-manager
