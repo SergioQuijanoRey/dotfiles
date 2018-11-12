@@ -1,10 +1,3 @@
-touch ejercicio6.s
-shell echo "a" >> ejercicio6.s
-shell file vgcore.27970
-read
-find .i3
-rename monodisplay
-rename dualdisplay
 rename dualdisplay - gnome
 touch lockscreen
 touch lockscreen2
@@ -28,23 +21,30 @@ rename Práctica 6
 rename ejercicio1.c
 touch ejercicio2.c
 mkdir Archivos de Ejemplo
-cut
 mkdir Códigos
-touch ejercicio1.c
 rename ejercicio1-dup.c
-copy
-paste
 rename ejercicio1-dup._
 rename ejercicio1-fcntl.c
 touch ejercicio2-c
-rename ejercicio2.c
 touch ejercicio5.c
 touch ejercicio3.c
 touch ejercicio4.c
-terminal 
 deete
+open_with thunar
+mkdir Examen
+touch ejercicio1.c
+rename backup.c
+touch ejercicio2
+rename ejercicio2.c
+copy
+open_with 
+cut
+paste
+rename ejercicio1-2018.c
+rename ejercicio2-2018.c
 delete
 open_with t vim
 open_with
-open_with 
-open_with thunar
+open_with t libreof
+terminal 
+open_with libreoffice
