@@ -19,6 +19,7 @@ Plug 'ctrlpvim/ctrlp.vim'			" For finding archives
 Plug 'kana/vim-smartinput'			" Autoclose brackets and parenthesis
 Plug 'nathanaelkane/vim-indent-guides'		" Indent Guidelines
 Plug 'Valloric/YouCompleteMe'			" Code completion
+Plug 'w0rp/ale'					" Code linting
 
 " Python IDE plugins
 Plug 'davidhalter/jedi-vim' 			" <ctr><space> for autocompletion
@@ -90,6 +91,10 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 " Recompile the file for new diagnostics - YouCompleteMe
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
+
+" Run linter only when saving files
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
 
 " Keybindings
 "==============================================================================
