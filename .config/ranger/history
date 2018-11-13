@@ -1,20 +1,5 @@
-chmod 755
-open_with vim
-ejercicio4.c
-open_with t vo,
-open_with t 
-touch ejercicio6.c
-touch ejercicio7.c
-touch ejecutarprograma.c
-touch ejemplohilo.c
-touch find_init.c
-rename Práctica 4
-rename resumen_sergio_mianfg.md
-rename Ejemplo Examen.jpg
-rename Ejercicios Resueltos - Prácticas.pdf
 open_wit
 rename Práctica 6
-
 rename ejercicio1.c
 touch ejercicio2.c
 mkdir Archivos de Ejemplo
@@ -33,10 +18,7 @@ touch ejercicio1.c
 rename backup.c
 touch ejercicio2
 rename ejercicio2.c
-copy
-open_with 
 cut
-paste
 rename ejercicio1-2018.c
 rename ejercicio2-2018.c
 open_with
@@ -44,7 +26,25 @@ open_with t libreof
 open_with libreoffice
 open_with t nv
 tab_close 
-terminal 
-open_with t vim
 find .co
+touch Tema 6 - Organización de memoria.md
+shell echo "#" > Tema\ 6
+rename ejercicio7.c
+rename ejercicio8.c
+touch ejercicio9.c
+touch primeraversion.c
+open_with t vi,
+copy
+paste
+rename segundaversion.c
+open_with t vim
+terminal 
 delete
+cd /run/media
+rename Biblioteca de calibr
+find med
+find ru
+open_with media
+
+open_with 
+find .urxvt
