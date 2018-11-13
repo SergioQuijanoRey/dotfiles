@@ -42,9 +42,9 @@ cut
 paste
 rename ejercicio1-2018.c
 rename ejercicio2-2018.c
-delete
 open_with t vim
 open_with
 open_with t libreof
 terminal 
 open_with libreoffice
+delete

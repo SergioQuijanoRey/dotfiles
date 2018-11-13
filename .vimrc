@@ -19,6 +19,7 @@ Plug 'ctrlpvim/ctrlp.vim'			" For finding archives
 Plug 'kana/vim-smartinput'			" Autoclose brackets and parenthesis
 Plug 'nathanaelkane/vim-indent-guides'		" Indent Guidelines
 Plug 'Valloric/YouCompleteMe'			" Code completion
+
 " Python IDE plugins
 Plug 'davidhalter/jedi-vim' 			" <ctr><space> for autocompletion
 						" <leader>g for goto definition
