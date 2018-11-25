@@ -232,4 +232,4 @@ exec whatsapp
 exec telegram-desktop
 exec nm-applet
 exec pa-applet
-exec-always udiskie -a 
+exec udiskie -a 

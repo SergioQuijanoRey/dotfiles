@@ -126,6 +126,8 @@ fi
 
 # Scripts útiles
 #===============================================================================
+
+# Script para extraer todo tipo de archivos
 extract () {
    if [ -f $1 ] ; then
        case $1 in

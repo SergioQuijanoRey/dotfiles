@@ -1,50 +1,50 @@
-open_wit
-rename Práctica 6
-rename ejercicio1.c
-touch ejercicio2.c
-mkdir Archivos de Ejemplo
-mkdir Códigos
-rename ejercicio1-dup.c
-rename ejercicio1-dup._
-rename ejercicio1-fcntl.c
-touch ejercicio2-c
-touch ejercicio5.c
-touch ejercicio3.c
-touch ejercicio4.c
-deete
-open_with thunar
-mkdir Examen
-touch ejercicio1.c
-rename backup.c
-touch ejercicio2
-rename ejercicio2.c
-cut
-rename ejercicio1-2018.c
-rename ejercicio2-2018.c
-open_with
-open_with t libreof
-open_with libreoffice
-open_with t nv
-tab_close 
-find .co
-touch Tema 6 - Organización de memoria.md
-shell echo "#" > Tema\ 6
-rename ejercicio7.c
-rename ejercicio8.c
-touch ejercicio9.c
-touch primeraversion.c
-open_with t vi,
-copy
-paste
 rename segundaversion.c
-open_with t vim
-terminal 
-delete
 cd /run/media
 rename Biblioteca de calibr
 find med
 find ru
 open_with media
-
-open_with 
 find .urxvt
+e 
+mkdir Práctica 3 - Mi código
+mkdir src
+mkdir include
+mkdir obj
+mkdir bin
+mkdir lib
+mkdir datos
+copy
+shell touch pruebas{1..200}.a
+rename vectordinamico.cpp
+rename vectordinamico.h
+touch pilamax.h
+touch pilamax.cpp
+touch funcionamiento.cpp
+shell echo "#include <iostream>" >> funcionamiento.cpp
+open_with
+open_with code
+mkdir Módulo I
+mkdir Práctica 1
+touch automaticfedora.sh
+touch Apuntes útiles sobre administracion.md
+touch Docker cheatsheet.md
+open_with 
+mkdir Par
+psate
+open_with t vo,
+open_with t v
+terminal 
+find ind
+open_with thunar
+
+shell thunar
+delete
+rename Cuentas_Granad
+mkdir Cheatsheets
+cut
+paste
+touch Bash cheatsheet.md
+open_with t vim
+touch dcheatsheet
+chmod 755
+open_with vim
