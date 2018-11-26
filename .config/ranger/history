@@ -1,19 +1,6 @@
-rename segundaversion.c
-cd /run/media
-rename Biblioteca de calibr
-find med
-find ru
-open_with media
-find .urxvt
-e 
-mkdir Práctica 3 - Mi código
-mkdir src
-mkdir include
-mkdir obj
 mkdir bin
 mkdir lib
 mkdir datos
-copy
 shell touch pruebas{1..200}.a
 rename vectordinamico.cpp
 rename vectordinamico.h
@@ -33,18 +20,31 @@ mkdir Par
 psate
 open_with t vo,
 open_with t v
-terminal 
 find ind
 open_with thunar
-
 shell thunar
-delete
 rename Cuentas_Granad
 mkdir Cheatsheets
-cut
-paste
 touch Bash cheatsheet.md
-open_with t vim
 touch dcheatsheet
 chmod 755
 open_with vim
+rename Análisis I
+mkdir Práctica 2
+copy
+mkdir Práctica 4
+mkdir Práctica 5
+touch Notas de clase.md
+shell extract diccionario.tgz
+mkdir Mi código
+mkdir Archivos dados
+mkdir pilamax
+shell 
+
+shell bash
+cut
+paste
+touch Tema 7 - Tablas hash.md
+open_with t vim
+terminal 
+delete
