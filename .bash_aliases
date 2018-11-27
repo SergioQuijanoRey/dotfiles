@@ -12,3 +12,4 @@ alias dasm="objdump -d"				# Util para desensamblar codigos ejecutables
 alias getsyscall="cat /usr/include/asm/unistd_32.h | egrep "
 alias release="lsb_release -a"
 alias localssh="ssh sergio@192.168.1.13"
+alias remotessh="openvpn --config ~/.vpn/vpnbook-pl226-tcp80.ovpn"

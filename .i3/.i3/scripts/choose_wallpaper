@@ -19,9 +19,6 @@ def choose_random_wallpaper(dir, opts, last_img = None):
         os.system("feh --bg-scale {}".format(img))
         return img
 
-
-    
-
 # The data of the wallpaper images
 img_dir = "/home/sergio/GitProjects/misArchivos/Fondos_pantalla/LowPoly"
 opts = [
@@ -40,7 +37,6 @@ last_time = time.time()
 
 while True:
     now = time.time()
-    key = input()
 
     if now - last_time > seconds_change:
         prev_img = choose_random_wallpaper(img_dir, opts, prev_img)
