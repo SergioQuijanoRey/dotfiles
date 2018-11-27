@@ -1,7 +1,3 @@
-mkdir datos
-shell touch pruebas{1..200}.a
-rename vectordinamico.cpp
-rename vectordinamico.h
 touch pilamax.h
 touch pilamax.cpp
 touch funcionamiento.cpp
@@ -44,7 +40,11 @@ cut
 paste
 touch Tema 7 - Tablas hash.md
 [1;5B[1;5B
-terminal 
-delete
 touch test.md
+mkdir Práctica 3
+find .i
+find .git
+delete
+open_with t vun¡
+terminal 
 open_with t vim

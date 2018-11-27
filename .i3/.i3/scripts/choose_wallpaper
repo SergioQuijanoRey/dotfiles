@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
-# A simple program to make a slide wallpaper on i3-wm
 
-import time
+# Author:
+#     Sergio Quijano Rey
+#     sergiquijano@gmail.com
+# Description:
+#     A simple program to make a slide wallpaper on i3-wm
+# Version:
+#     v1.0 01/10/2018 - First version
+#     v2.0 27/11/2018 - Remove daemon utilitie and some bugs
+
 import random
 import os
 
@@ -28,16 +35,5 @@ opts = [
     "low_poly_colors.jpg"
 ]
 
-minute_change = 3   # Change the wallpaper every 3 mins
-seconds_change = minute_change * 60
-
-# The actual algorithm --> Daemon
+# The actual algorithm
 prev_img = choose_random_wallpaper(img_dir, opts)  # First time a wallpaper has to be chosen
-last_time = time.time()
-
-while True:
-    now = time.time()
-
-    if now - last_time > seconds_change:
-        prev_img = choose_random_wallpaper(img_dir, opts, prev_img)
-        last_time = now
