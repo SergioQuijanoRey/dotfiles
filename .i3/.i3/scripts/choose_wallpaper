@@ -9,27 +9,84 @@
 #     v1.0 01/10/2018 - First version
 #     v2.0 27/11/2018 - Remove daemon utilitie and some bugs
 #     v3.0 28/11/2018 - Just need to specify img dir
+#     v4.0 29/11/2018 - More sofisticated: input parameters allowed
 
 import random
 import os
+import sys
 
 # Some functions
-def choose_random_wallpaper(dir, opts, last_img = None):
+def choose_random_wallpaper(dir, opts):
+    """
+    Description:
+        Choose a random wallpaper
+    Parameters:
+        dir: path to the dir which contains all the possible images
+        opts: list containing all the possible images relative path inside dir
+    Returns:
+        None
+    """
     # The wallpaper img is chosen
     opt = random.choice(opts)
     img = dir + "/" + opt
 
-    # The same wallpaper is discarded
-    if img == last_img:
-        return choose_random_wallpaper(dir, opts, last_img)
-    else:
-        # The i3-wm command is launch
-        os.system("feh --bg-scale {}".format(img))
-        return img
+    # The wallpaper is set
+    choose_wallpaper(dir, opt)
+
+def choose_wallpaper(img_dir, img):
+    """
+    Description:
+        Chooses a wallpaper
+    Parameters:
+        img_dir: the path of the dir where the wallpaper is stored
+        img: the relative path of the wallpaper inside the dir
+    Returns:
+        None
+    """
+
+    # Image real path
+    img_absolute_path = img_dir + "/" + img
+    
+    # Changing the wallpaper
+    os.system("feh --bg-scale {}".format(img_absolute_path))
+
+def list_options(opts):
+    """
+    Description:
+        List all the available wallpapers to choose
+    Parameters:
+        opts: a list containing all the posible imgs (relative names)
+    Returns:
+        None
+    """
+    print("The posible images to choose as wallpaper are:")
+    for opt in opts:
+        print("\t{}".format(opt))
+
+# Scripts parameters
+img_dir = "/home/sergio/GitProjects/misArchivos/Fondos_pantalla/LowPoly"
+helptext = ""
+helptext = helptext + "How to use:\n"
+helptext = helptext + "\tNo parameters: choose a random wallpaper\n"
+helptext = helptext + "\t-h: shows this help\n"
+helptext = helptext + "\t-l: lists all the posible wallpapers to choose\n"
+helptext = helptext + "\t-c <wallpaper>: choose <wallpaper>\n"
 
 # The data of the wallpaper images
-img_dir = "/home/sergio/GitProjects/misArchivos/Fondos_pantalla/LowPoly"
 opts = os.listdir(img_dir)
 
-# The actual algorithm
-prev_img = choose_random_wallpaper(img_dir, opts)  # First time a wallpaper has to be chosen
+# Main program
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        prev_img = choose_random_wallpaper(img_dir, opts)  # First time a wallpaper has to be chosen
+    else:
+        if sys.argv[1] == "-h":
+            print(helptext)
+        elif sys.argv[1] == "-l":
+            list_options(opts)
+        elif sys.argv[1] == "-c":
+            if len(sys.argv) < 3:
+                print("One more parameter needed!")
+                print(helptext)
+            else:
+                choose_wallpaper(img_dir, sys.argv[2])

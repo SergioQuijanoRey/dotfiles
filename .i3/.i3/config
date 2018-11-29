@@ -217,6 +217,9 @@ bindsym $mod+Shift+b exec blueman-manager
 bindsym Print exec xfce4-screenshooter #gnome-screenshoot
 bindsym $mod+Shift+p move workspace to left
 bindsym $mod+Shift+g exec rofi-websearch
+bindsym $mod+t exec choose_wallpaper
+bindsym $mod+Shift+t exec choose_wallpaper -c lowpoly_elephant.jpg
+
 # Invert scrolling
 # exec_always --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113  -- No se necesita con libinput
 
