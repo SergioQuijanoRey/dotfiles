@@ -1,23 +1,3 @@
-touch pilamax.h
-touch pilamax.cpp
-touch funcionamiento.cpp
-shell echo "#include <iostream>" >> funcionamiento.cpp
-open_with
-open_with code
-mkdir Módulo I
-mkdir Práctica 1
-touch automaticfedora.sh
-touch Apuntes útiles sobre administracion.md
-touch Docker cheatsheet.md
-open_with 
-mkdir Par
-psate
-open_with t vo,
-open_with t v
-find ind
-open_with thunar
-shell thunar
-rename Cuentas_Granad
 mkdir Cheatsheets
 touch Bash cheatsheet.md
 touch dcheatsheet
@@ -36,15 +16,35 @@ mkdir pilamax
 shell 
 
 shell bash
-cut
-paste
 touch Tema 7 - Tablas hash.md
 [1;5B[1;5B
 touch test.md
 mkdir Práctica 3
 find .i
 find .git
-delete
 open_with t vun¡
 terminal 
 open_with t vim
+cut
+find .i3
+rename .git
+paste
+rename lowpoly_rocket.png
+rename lowpoly_bird.png
+rename lowpoly_cat_1.png
+rename lowpoly_cat_2.png
+rename lowpoly_colors.png
+rename lowpoly_cat2.png
+rename lowpoly_cat1.png
+rename lowpoly_rocket2.jpg
+rename lowpoly_rocket1.png
+rename lowpoly_wolf1.jpg
+rename lowpoly_bird1.jpg
+rename lowpoly_bird2.jpg
+rename lowpoly_bird1.png
+rename lowpoly_batman.jpg
+rename lowpoly_space1.jpg
+rename lowpoly_elephant.jpg
+rename lowpoly_fox.jpg
+rename lowpoly_lake.jpg
+delete

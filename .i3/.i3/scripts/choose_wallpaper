@@ -8,6 +8,7 @@
 # Version:
 #     v1.0 01/10/2018 - First version
 #     v2.0 27/11/2018 - Remove daemon utilitie and some bugs
+#     v3.0 28/11/2018 - Just need to specify img dir
 
 import random
 import os
@@ -28,12 +29,7 @@ def choose_random_wallpaper(dir, opts, last_img = None):
 
 # The data of the wallpaper images
 img_dir = "/home/sergio/GitProjects/misArchivos/Fondos_pantalla/LowPoly"
-opts = [
-    "low_poly_bird.png",
-    "low_poly_cat_1.png",
-    "low_poly_cat_2.png",
-    "low_poly_colors.jpg"
-]
+opts = os.listdir(img_dir)
 
 # The actual algorithm
 prev_img = choose_random_wallpaper(img_dir, opts)  # First time a wallpaper has to be chosen
