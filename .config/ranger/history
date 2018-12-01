@@ -1,4 +1,3 @@
-mkdir Cheatsheets
 touch Bash cheatsheet.md
 touch dcheatsheet
 chmod 755
@@ -24,7 +23,6 @@ find .i
 find .git
 open_with t vun¡
 terminal 
-open_with t vim
 cut
 find .i3
 rename .git
@@ -48,3 +46,5 @@ rename lowpoly_elephant.jpg
 rename lowpoly_fox.jpg
 rename lowpoly_lake.jpg
 delete
+touch Git cheatsheet.md
+open_with t vim

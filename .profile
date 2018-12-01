@@ -46,9 +46,9 @@ PATH="$PATH:/home/sergio/.launchers"
 # VIM + URXVT Stack
 export EDITOR="vim"
 export VISUAL="vim"
-export TERMCMD="xterm"
-export TERM="xterm"
-export COLORTERM="xterm"
+export TERMCMD="urxvt"
+export TERM="urxvt"
+export COLORTERM="urxvt"
 
 # SSH vars
 export RASPIP="192.168.1.13"
