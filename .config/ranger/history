@@ -1,19 +1,8 @@
-touch Bash cheatsheet.md
-touch dcheatsheet
-chmod 755
-open_with vim
-rename Análisis I
-mkdir Práctica 2
-copy
-mkdir Práctica 4
-mkdir Práctica 5
-touch Notas de clase.md
 shell extract diccionario.tgz
 mkdir Mi código
 mkdir Archivos dados
 mkdir pilamax
 shell 
-
 shell bash
 touch Tema 7 - Tablas hash.md
 [1;5B[1;5B
@@ -22,11 +11,8 @@ mkdir Práctica 3
 find .i
 find .git
 open_with t vun¡
-terminal 
-cut
 find .i3
 rename .git
-paste
 rename lowpoly_rocket.png
 rename lowpoly_bird.png
 rename lowpoly_cat_1.png
@@ -45,6 +31,20 @@ rename lowpoly_space1.jpg
 rename lowpoly_elephant.jpg
 rename lowpoly_fox.jpg
 rename lowpoly_lake.jpg
-delete
 touch Git cheatsheet.md
+rename 2018-12-02-post-pruebas.md
+mkdir Archivos Antonio
+execute_command libreoffice
+rename Documento de Entrega.md
+open_with 
+rename datos_paritycount.png
+rename grafica_paritycount.png
+
 open_with t vim
+terminal 
+mkdir Entrega
+copy
+mkdir Documentos
+cut
+paste
+delete
