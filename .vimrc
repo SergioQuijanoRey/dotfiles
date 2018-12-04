@@ -70,6 +70,7 @@ set nowrap                      		" Don't wrap long lines
 set listchars=extends:→         		" Show arrow if line continues rightwards
 set colorcolumn=80				" Show 80 col line 
 let loaded_matchparen = 1			" No matching parenthesis/brakets/... highlight
+set splitbelow splitright			" Spliting on righ instead of below
 
 " Tabs control 
 "==============================================================================

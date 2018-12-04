@@ -1,9 +1,3 @@
-shell extract diccionario.tgz
-mkdir Mi código
-mkdir Archivos dados
-mkdir pilamax
-shell 
-shell bash
 touch Tema 7 - Tablas hash.md
 [1;5B[1;5B
 touch test.md
@@ -45,6 +39,12 @@ terminal
 mkdir Entrega
 copy
 mkdir Documentos
+.pdf
+rename Tema 3 - Gestión de memoria - Diapositivas 01.pdf
+rename Tema 3 - Gestión de memoria - Diapositivas 02.pdf
+mkdir Tema 3 - Gestión de memoria - Archivos adicionales
+delete
+rename Tema 3 - Gestión de memoria - Diapositivas.pdf
 cut
 paste
-delete
+rename Tema 3 - Gestión de memoria - Ejercicios.pdf
