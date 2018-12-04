@@ -29,3 +29,4 @@ alias localssh="ssh sergio@192.168.1.13"
 
 # Others
 alias pdc="pandoc --latex-engine=xelatex"
+alias screensaver="cmatrix | lolcat 500"

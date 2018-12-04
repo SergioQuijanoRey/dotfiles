@@ -72,13 +72,6 @@ set colorcolumn=80				" Show 80 col line
 let loaded_matchparen = 1			" No matching parenthesis/brakets/... highlight
 set splitbelow splitright			" Spliting on righ instead of below
 
-" Tabs control 
-"==============================================================================
-map <leader>n <esc>:tabprevious<CR>
-map <leader>m <esc>:tabnext<CR>
-map <leader>t <esc>:tabnew<CR>
-map <leader>tq <esc>:tabclose<CR>
-
 " Vim theme
 "==============================================================================
 colorscheme sublimemonokai			" Monokai theme
@@ -96,6 +89,11 @@ nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 " Run linter only when saving files
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
+
+" Goyo's width will be the line limit in mutt.
+autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
+autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo
+
 
 " Keybindings
 "==============================================================================
