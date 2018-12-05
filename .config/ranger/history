@@ -33,7 +33,6 @@ open_with
 rename datos_paritycount.png
 rename grafica_paritycount.png
 
-open_with t vim
 terminal 
 mkdir Entrega
 copy
@@ -48,3 +47,4 @@ cut
 paste
 rename Tema 3 - Gestión de memoria - Ejercicios.pdf
 [1;5B
+open_with t vim
