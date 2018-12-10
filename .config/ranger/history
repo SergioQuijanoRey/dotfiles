@@ -1,21 +1,3 @@
-[1;5B[1;5B
-touch test.md
-mkdir Práctica 3
-find .i
-find .git
-open_with t vun¡
-find .i3
-rename .git
-rename lowpoly_rocket.png
-rename lowpoly_bird.png
-rename lowpoly_cat_1.png
-rename lowpoly_cat_2.png
-rename lowpoly_colors.png
-rename lowpoly_cat2.png
-rename lowpoly_cat1.png
-rename lowpoly_rocket2.jpg
-rename lowpoly_rocket1.png
-rename lowpoly_wolf1.jpg
 rename lowpoly_bird1.jpg
 rename lowpoly_bird2.jpg
 rename lowpoly_bird1.png
@@ -32,19 +14,37 @@ rename Documento de Entrega.md
 open_with 
 rename datos_paritycount.png
 rename grafica_paritycount.png
-
-terminal 
 mkdir Entrega
-copy
 mkdir Documentos
 .pdf
 rename Tema 3 - Gestión de memoria - Diapositivas 01.pdf
 rename Tema 3 - Gestión de memoria - Diapositivas 02.pdf
 mkdir Tema 3 - Gestión de memoria - Archivos adicionales
-delete
 rename Tema 3 - Gestión de memoria - Diapositivas.pdf
-cut
-paste
 rename Tema 3 - Gestión de memoria - Ejercicios.pdf
+find .i3
+rename Práctica 4 - Guión.pdf
+mkdir Diccionario
+mkdir Guia Telefonica
+shell bash
+cit
+touch diccionario.cpp
 [1;5B
+rename practica4r.zip
+rename Doxygen_Template.doxy
+rename template.doxy
+open_with t
+
+mkdir src
+mkdir include
+mkdir bin
+mkdir data
+mkdir obj
+mkdir lib
+mkdir doc
+cut
+copy
+paste
+terminal 
+delete
 open_with t vim

@@ -21,6 +21,7 @@ alias libinputconf="sudo vim /etc/X11/xorg.conf.d/30-touchpad.conf"
 
 # Administration aliases
 alias diskspace="du -d1 -lah"
+alias psearch="ps aux | egrep"
 alias release="lsb_release -a"
 alias web="google-chrome-stable"
 
@@ -29,4 +30,4 @@ alias localssh="ssh sergio@192.168.1.13"
 
 # Others
 alias pdc="pandoc --latex-engine=xelatex"
-alias screensaver="cmatrix | lolcat 500"
+alias screensaver="cmatrix | lolcat"
