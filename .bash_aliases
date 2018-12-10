@@ -18,6 +18,7 @@ alias getsyscall="cat /usr/include/asm/unistd_32.h | egrep "
 alias confi3="vim .i3/config"
 alias vconf="vim .vimrc"
 alias libinputconf="sudo vim /etc/X11/xorg.conf.d/30-touchpad.conf"
+alias reload="source .bashrc; source .bash_aliases; source .vimrc; xrdb .Xresources"
 
 # Administration aliases
 alias diskspace="du -d1 -lah"
