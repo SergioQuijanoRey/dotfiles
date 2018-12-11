@@ -1,50 +1,50 @@
-rename lowpoly_bird1.jpg
-rename lowpoly_bird2.jpg
-rename lowpoly_bird1.png
-rename lowpoly_batman.jpg
-rename lowpoly_space1.jpg
-rename lowpoly_elephant.jpg
-rename lowpoly_fox.jpg
-rename lowpoly_lake.jpg
-touch Git cheatsheet.md
-rename 2018-12-02-post-pruebas.md
-mkdir Archivos Antonio
-execute_command libreoffice
-rename Documento de Entrega.md
-open_with 
-rename datos_paritycount.png
-rename grafica_paritycount.png
-mkdir Entrega
-mkdir Documentos
-.pdf
-rename Tema 3 - Gestión de memoria - Diapositivas 01.pdf
-rename Tema 3 - Gestión de memoria - Diapositivas 02.pdf
-mkdir Tema 3 - Gestión de memoria - Archivos adicionales
-rename Tema 3 - Gestión de memoria - Diapositivas.pdf
-rename Tema 3 - Gestión de memoria - Ejercicios.pdf
-find .i3
-rename Práctica 4 - Guión.pdf
-mkdir Diccionario
 mkdir Guia Telefonica
 shell bash
 cit
-touch diccionario.cpp
 [1;5B
 rename practica4r.zip
 rename Doxygen_Template.doxy
 rename template.doxy
 open_with t
+mkdir bin
+mkdir doc
+mkdir Reto 4
+rename Reto 4 - Enunciado.pdf
+rename Escaneado_ 20181210-19.pdf
+rename Reto 4 - Solución.pdf
+mkdir Práctica Final
+mkdir Mi código
+rename practica_final_vfinal.pdf
+rename Práctica Final - Guión.pdf
+open_with 
+mkdir Archivos Dados
+cut
+delete
 
 mkdir src
 mkdir include
-mkdir bin
 mkdir data
 mkdir obj
 mkdir lib
-mkdir doc
-cut
+touch testdiccionario.cpp
+touch makefile
+open_with
+open_with vi,
+open_with vim
+touch testletras.cpp
+touch diccionario.cpp
+touch letra.cpp
+touch 
+touch diccionario.h
+touch letra.h
+open_with 
+rename diccionario.cpp
+rename testletra.cpp
+tab_clo
+read_text_file 
 copy
 paste
+touch Gametree.cpp
+touch Gametree.h
 terminal 
-delete
 open_with t vim
