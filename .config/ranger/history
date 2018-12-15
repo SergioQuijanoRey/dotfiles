@@ -1,6 +1,3 @@
-rename Doxygen_Template.doxy
-rename template.doxy
-open_with t
 mkdir bin
 mkdir doc
 mkdir Reto 4
@@ -38,13 +35,16 @@ touch Gametree.h
 touch Bolsaletras.h
 touch Bolsaletras.cpp
 touch testbolsa.cpp
-open_with t vim
 open_with calibre
 open_with 
 cut
 
-terminal 
 find Des
+delete
+open_with t 
+touch fedoraUML.sh
+terminal 
+open_with t vim
 copy
 paste
-delete
+rename Apuntes sobre administracion.md
