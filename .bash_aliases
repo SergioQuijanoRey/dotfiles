@@ -22,6 +22,7 @@ alias reload="source .bashrc; source .bash_aliases; source .vimrc; xrdb .Xresour
 
 # Administration aliases
 alias diskspace="du -d1 -lah"
+alias disksize="du -d0 -h"
 alias psearch="ps aux | egrep"
 alias release="lsb_release -a"
 alias web="google-chrome-stable"

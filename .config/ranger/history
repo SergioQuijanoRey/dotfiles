@@ -1,4 +1,3 @@
-mkdir bin
 mkdir doc
 mkdir Reto 4
 rename Reto 4 - Enunciado.pdf
@@ -36,15 +35,16 @@ touch Bolsaletras.h
 touch Bolsaletras.cpp
 touch testbolsa.cpp
 open_with calibre
-open_with 
 cut
 
 find Des
-delete
 open_with t 
 touch fedoraUML.sh
 terminal 
+open_with 
+open_with t v
 open_with t vim
 copy
 paste
+delete
 rename Apuntes sobre administracion.md
