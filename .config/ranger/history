@@ -1,23 +1,8 @@
-mkdir doc
-mkdir Reto 4
-rename Reto 4 - Enunciado.pdf
-rename Escaneado_ 20181210-19.pdf
-rename Reto 4 - Solución.pdf
-mkdir Práctica Final
-mkdir Mi código
-rename practica_final_vfinal.pdf
-rename Práctica Final - Guión.pdf
-mkdir Archivos Dados
-mkdir src
-mkdir include
 mkdir data
-mkdir obj
-mkdir lib
 touch testdiccionario.cpp
 touch makefile
 open_with
 open_with vi,
-open_with vim
 touch testletras.cpp
 touch diccionario.cpp
 touch letra.cpp
@@ -35,16 +20,31 @@ touch Bolsaletras.h
 touch Bolsaletras.cpp
 touch testbolsa.cpp
 open_with calibre
-cut
-
 find Des
 open_with t 
 touch fedoraUML.sh
-terminal 
 open_with 
 open_with t v
-open_with t vim
 copy
-paste
-delete
 rename Apuntes sobre administracion.md
+de
+mkdir Tree
+touch Makefile
+rename Makefile
+open_with vim
+mkdir source
+mkdir include
+rename src
+mkdir bin
+mkdir obj
+mkdir lib
+touch Tree.h
+touch Tree.cpp
+touch test.cpp
+terminal 
+dele
+delete
+cut
+paste
+
+open_with t vim
