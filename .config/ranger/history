@@ -1,4 +1,3 @@
-mkdir data
 touch testdiccionario.cpp
 touch makefile
 open_with
@@ -41,10 +40,11 @@ mkdir lib
 touch Tree.h
 touch Tree.cpp
 touch test.cpp
-terminal 
 dele
 delete
 cut
 paste
 
+open_with t vi
+terminal 
 open_with t vim
