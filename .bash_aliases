@@ -28,7 +28,7 @@ alias release="lsb_release -a"
 alias web="google-chrome-stable"
 
 # Server aliases
-alias localssh="ssh sergio@192.168.1.13"
+alias localssh="ssh sergio@192.168.1.5"
 
 # Others
 alias pdc="pandoc --latex-engine=xelatex"
