@@ -10,6 +10,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# Seccion por defecto
+#===============================================================================
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -123,6 +126,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# PS1 -- Prompt look
+#===============================================================================
+export PS1="\033[s\033[500C\033[5D \033[u\[\e[0;35m\]\u \[\e[0;37m\]at \[\e[0;36m\]\h \[\e[0;37m\]in \[\e[0;32m\]\w \[\e[0;37m\] \[\e[0;37m\]\n$ \[\e[0m\]"
 
 # Scripts útiles
 #===============================================================================
