@@ -41,10 +41,10 @@ touch Tree.h
 touch Tree.cpp
 touch test.cpp
 dele
-delete
 cut
 paste
 
 open_with t vi
 terminal 
+delete
 open_with t vim
