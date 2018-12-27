@@ -1,5 +1,3 @@
-touch testdiccionario.cpp
-touch makefile
 open_with
 open_with vi,
 touch testletras.cpp
@@ -22,7 +20,6 @@ open_with calibre
 find Des
 open_with t 
 touch fedoraUML.sh
-open_with 
 open_with t v
 copy
 rename Apuntes sobre administracion.md
@@ -30,7 +27,6 @@ de
 mkdir Tree
 touch Makefile
 rename Makefile
-open_with vim
 mkdir source
 mkdir include
 rename src
@@ -43,8 +39,12 @@ touch test.cpp
 dele
 cut
 paste
-
 open_with t vi
-terminal 
 delete
 open_with t vim
+terminal 
+touch testconjuntoletras.cpp
+touch letrasprueba.let
+open_with vim
+open_with 
+
