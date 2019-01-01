@@ -13,6 +13,7 @@ alias jupy="jupyter notebook"
 alias v="vim"								# Useful for fast open vim
 alias dasm="objdump -d"							# Useful for disassembly
 alias getsyscall="cat /usr/include/asm/unistd_32.h | egrep "
+alias findps="ps aux | egrep"
 
 # System config aliases
 alias confi3="vim .i3/config"
