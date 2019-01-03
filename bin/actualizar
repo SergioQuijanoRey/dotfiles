@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Autor:
+#   Sergio Quijano Rey
+#   sergiquijano@gmail.com
+# Version:
+#	v1.0 29 Agosto 2018: creo la version inicial para eliminar este progama
+#	de los aliases
+# Descripción:
+#	Actualiza el sistema UBUNTU
+#		* APT
+#		* SNAP
+# 	Actualizar el sistema ARCH
+# 		* pacman
+# 		* yaourt
+
+# APT upgrading
+# sudo apt update
+# sudo apt upgrade
+# sudo apt dist-upgrade
+# sudo apt auto-remove
+
+# SNAP upgrading
+# sudo snap refresh
+
+# PACMAN upgrading
+sudo pacman -Syu
+
+# YAOURT upgrading
+yaourt -Syu

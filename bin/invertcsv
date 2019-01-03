@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+
+# Author:
+#   Sergio Quijano Rey
+#   sergiquijano@gmail.com
+# Version:
+#   v1.0 03/10/2018 - First functionally version
+# Description:
+#   Reverses a whole csv table
+#   I am using it for "Evo Banco" .xls file, which cannot be reversed properly by date
+
+
+import os
+import sys
+
+if __name__ == "__main__":
+    # Checking the terminal arguments
+    if len(sys.argv) < 2:
+        print("Error, no parameters passed")
+        print("invertcsv csv_file_path {new_csv_path}")
+    else: 
+        # New file name is selected
+        if len(sys.argv) == 3:
+            new_file_name = sys.argv[2]
+        else:
+            new_file_name = "new_" + sys.argv[1]
+
+        # Reading the lines of the csv
+        file_name = sys.argv[1]
+        with open(file_name, "r") as fileobj:
+            lines = fileobj.readlines()
+        
+        # Header deleted to invert the csv file
+        header = lines.pop(0)
+
+        # The csv is changed and header is added
+        lines_inversed = lines[::-1]
+        lines_inversed.insert(0, header)
+
+        # The inverted csv is written to a file
+        with open(new_file_name, "w") as fileobj:
+            fileobj.writelines(lines_inversed)

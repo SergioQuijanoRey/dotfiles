@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# Autor:
+#   Sergio Quijano Rey
+#   sergiquijano@gmail.com
+# Version:
+#   v1.0 14 de Diciembre de 2017 Creo la versión inicial
+#   v1.2 20 de Diciembre de 2017 Cambio el programa, ahora no hace falta estar
+#   dentro del directorio de los repositorios para ejecutar el comando. Primero
+#   actualizo en remoto y luego en local
+#   v1.3: añado local y remoto a este archivo, asi no hay dependecias
+#   También añado gitsubir para no depender de aliases
+#   v1.4: añado informacion y hago uso de las funciones definidas que tengo
+# Descripción:
+#   Actualiza todos los repositorios, tanto en local como en remoto
+
+rutas="/home/sergio/.git_directories"
+
+
+# Funciones
+#===============================================================================
+function actualizarLocal(){
+  for directorio in $(cat $rutas)
+  do
+      cd $directorio 
+      gitsubir
+  done
+}
+
+function actualizarRemoto(){
+  for directorio in $(cat $rutas)
+  do
+      cd $directorio 
+      git pull 
+  done
+
+}
+
+function gitsubir(){
+  git pull
+  git add . 
+  git commit 
+  git push
+}
+
+# Se ejecutan los dos procesos
+#===============================================================================
+
+# Bajo los cambios desde los repositorios remotos
+echo "Bajando cambios de los repositorios"
+echo "================================================================================"
+actualizarRemoto 2> /dev/null
+echo""
+
+# Subo los cambios de los repositorios locales
+echo "Subiendo cambios hechos en local"
+echo "================================================================================"
+actualizarLocal 2> /dev/null
+

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Autor:
+#   Sergio Quijano Rey
+#   sergiquijano@gmail.com
+# Descripcion:
+#   Actualiza el directorio de sripts para subirlo a git
+# Version:
+#   v1.0 21 Septiembre 2018: Primera versión funcional
+#   v1.1 27 Noviembre 2018: Añado informacion
+
+bin_dir="/home/sergio/bin"
+backup_dir="/home/sergio/GitProjects/misArchivos/Linux/Scripts"
+
+echo "Eliminando archivos de " $backup_dir "..."
+rm $backup_dir/*
+echo "Archivos eliminados!"
+
+
+echo "Copiando archivos de " $bin_dir " a" $backup_dir
+cp $bin_dir/* $backup_dir
+echo "Archivos copiados con exito!"
