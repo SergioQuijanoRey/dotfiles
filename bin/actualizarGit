@@ -12,7 +12,7 @@
 #   También añado gitsubir para no depender de aliases
 #   v1.4: añado informacion y hago uso de las funciones definidas que tengo
 # Descripción:
-#   Actualiza todos los repositorios, tanto en local como en remoto
+#   Actualiza todos los repositorios, tanto en local como en remoto, para Git
 
 rutas="/home/sergio/.git_directories"
 
