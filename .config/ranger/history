@@ -33,7 +33,6 @@ dele
 touch testconjuntoletras.cpp
 touch letrasprueba.let
 open_with vim
-open_with 
 open_with t vi
 mkdir OBS
 mkdir Profiles
@@ -45,6 +44,7 @@ cut
 paste
 rename Tema 2 - Anillos, subanillos e ideales.pdf
 open_with code
+touch dias.md
 open_with t vim
 terminal 
-touch dias.md
+open_with 
