@@ -1,4 +1,3 @@
-touch letra.h
 open_with 
 rename diccionario.cpp
 rename testletra.cpp
@@ -37,14 +36,15 @@ open_with t vi
 mkdir OBS
 mkdir Profiles
 open_with parole
-delete
 mkdir Apuntes de los comañeros
-cut
 
-paste
 rename Tema 2 - Anillos, subanillos e ideales.pdf
 open_with code
 touch dias.md
+open_with 
+delete
+rename rae.dic
+cut
+paste
 open_with t vim
 terminal 
-open_with 
