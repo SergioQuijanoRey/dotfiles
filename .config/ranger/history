@@ -1,5 +1,3 @@
-open_with 
-rename diccionario.cpp
 rename testletra.cpp
 tab_clo
 read_text_file 
@@ -41,10 +39,12 @@ mkdir Apuntes de los comañeros
 rename Tema 2 - Anillos, subanillos e ideales.pdf
 open_with code
 touch dias.md
-open_with 
-delete
 rename rae.dic
 cut
 paste
 open_with t vim
+open_with t
+delete
+open_with 
 terminal 
+open_with thunar
