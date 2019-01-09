@@ -1,4 +1,3 @@
-rename testletra.cpp
 tab_clo
 read_text_file 
 touch Gametree.cpp
@@ -44,7 +43,8 @@ cut
 paste
 open_with t vim
 open_with t
-delete
 open_with 
 terminal 
 open_with thunar
+delete
+find ot
