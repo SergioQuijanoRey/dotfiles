@@ -51,4 +51,4 @@ export TERM="urxvt"
 export COLORTERM="urxvt"
 
 # SSH vars
-export RASPIP="192.168.1.13"
+export RASPIP="192.168.1.5"
