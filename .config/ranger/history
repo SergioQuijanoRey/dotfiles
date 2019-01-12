@@ -44,7 +44,7 @@ paste
 open_with t vim
 open_with t
 open_with 
-terminal 
 open_with thunar
 delete
 find ot
+terminal 
