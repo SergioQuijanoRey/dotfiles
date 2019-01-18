@@ -3,6 +3,7 @@
 # Variables basicas
 home="/home/sergio"
 dotfiles="$home/GitProjects/dotfiles"
+packages="$dotfiles/packages.sh"
 
 # Elimino los archivos originales
 rm -f $home/.bashrc
@@ -24,3 +25,7 @@ do
 	dest="$home/$file"
 	ln -s $origin $dest
 done
+
+# Instalo los programas
+chmod u+x $packages
+$packages

@@ -1,0 +1,4 @@
+whatsie
+spotify
+gotop
+google-chrome

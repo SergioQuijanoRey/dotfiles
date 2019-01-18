@@ -1,6 +1,3 @@
-rename Makefile
-mkdir source
-mkdir include
 rename src
 mkdir bin
 mkdir obj
@@ -32,7 +29,6 @@ mkdir Exámenes Pasados
 mkdir 2018 Enero
 rename 2018 Enero - Febrero
 terminal 
-delete
 rename Tema 0 - Presentación de la asignatura.pdf
 rename Tema 1 - Introducción.pdf
 rename Tema 2 - Programación básica ensamblador.pdf
@@ -44,7 +40,11 @@ rename Tema 6 - Alineamiento y Uniones.pdf
 mkdir Ejercicios
 mv
 move 
-cut
-paste
 find .ca
 find rang
+delete
+rename backgrounds
+find .i3
+mkdir Installation
+cut
+paste
