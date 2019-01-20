@@ -1,16 +1,3 @@
-mkdir Apuntes de los comañeros
-rename Tema 2 - Anillos, subanillos e ideales.pdf
-open_with code
-touch dias.md
-rename rae.dic
-open_with t vim
-open_with t
-open_with 
-open_with thunar
-find ot
-rename Tema.pdf
-mkdir Exámenes Pasados
-mkdir 2018 Enero
 rename 2018 Enero - Febrero
 rename Tema 0 - Presentación de la asignatura.pdf
 rename Tema 1 - Introducción.pdf
@@ -32,9 +19,7 @@ rename Tema 5 - Gestión de Entradas Salidas.pdf
 cut *
 mkdir Sin limpiar
 help
-terminal 
 deletwe
-delete
 mkdir Colas
 mkdir Pilas
 mkdir Arboles
@@ -45,6 +30,21 @@ mkdir Abstracción
 mkdir Ejercicios
 past
 mkdir Introducción
-paste
-cut
+mkdir Estructura de Datos Lineales
+mkdir Iteradores y punteros
+dele
+de
+mkdir Grafos
+mkdir STL
+open_with thunar
+open_with 
+execute_command extract examenes15-18.tgz
+exe
+terminal 
 
+rename Exámenes
+delete
+cut
+paste
+rename 
+rename Relaciones de Ejercicios
