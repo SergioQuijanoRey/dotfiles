@@ -26,6 +26,9 @@ do
 	ln -s $origin $dest
 done
 
+# Añado el crontab
+sudo crontab -u sergio $dotfiles/.crontab
+
 # Instalo los programas
 chmod u+x $packages
 $packages
