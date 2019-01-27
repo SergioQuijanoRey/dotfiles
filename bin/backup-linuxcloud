@@ -11,8 +11,8 @@
 
 # Variables
 #===============================================================================
-origin="/home/sergio/LinuxCloud"
-dest="sergio@$RASPIP:~/media/KINGSTONDATA/LinuxCloud"
+origin="/home/sergio/LinuxCloud/"
+dest="sergio@$RASPIP:~/media/TOSHIBADRIVE/LinuxCloud"
 
 # Main program
 #===============================================================================
