@@ -4,7 +4,7 @@ sudo
 base-devel
 telegram-desktop
 community/code
-yaourt
+yay
 valgrind
 tree
 top

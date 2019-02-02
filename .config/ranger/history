@@ -1,4 +1,3 @@
-help
 deletwe
 mkdir Colas
 mkdir Pilas
@@ -39,12 +38,13 @@ mkdir ABB
 passte
 mkdir AVL
 mkdir APO
-paste
 open_with t vim
 
 open_with thunar
 mkdir Cloud
 rename LinuxCloud
-cut
 delet
 delete
+cut
+paste
+rename IMG_20170707_201956.jpg

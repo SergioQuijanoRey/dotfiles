@@ -24,7 +24,7 @@ echo "Instalando los paquetes especificados en $aur_list ..."
 for package in $(cat $aur_list)
 do
 	echo "Instalando $packages..."
-	yaourt  -S $package --noconfirm
+	yay  -S $package --noconfirm
 	echo ""
 done
 
