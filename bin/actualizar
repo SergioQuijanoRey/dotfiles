@@ -27,4 +27,4 @@
 sudo pacman -Syu
 
 # YAOURT upgrading
-yaourt -Syu
+yay -Syu

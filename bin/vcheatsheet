@@ -1,3 +1,3 @@
 #!/bin/bash
 
-vim /home/sergio/GitProjects/misArchivos/Linux/Cheatsheets/"Vim cheatsheet.md"
+nvim /home/sergio/GitProjects/misArchivos/Linux/Cheatsheets/"Vim cheatsheet.md"

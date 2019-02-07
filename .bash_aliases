@@ -10,16 +10,17 @@
 alias val="valgrind --leak-check=full"
 alias py="python3"
 alias jupy="jupyter notebook"
-alias v="vim"								# Useful for fast open vim
+alias v="nvim"								# Useful for fast open vim
 alias dasm="objdump -d"							# Useful for disassembly
 alias getsyscall="cat /usr/include/asm/unistd_32.h | egrep "
 alias findps="ps aux | egrep"
 
 # System config aliases
-alias confi3="vim .i3/config"
-alias vconf="vim .vimrc"
-alias libinputconf="sudo vim /etc/X11/xorg.conf.d/30-touchpad.conf"
-alias reload="source .bashrc; source .bash_aliases; source .vimrc; xrdb .Xresources"
+alias confi3="nvim .i3/config"
+alias vconf="nvim .vimrc"
+alias nvconf="nvim .nvimrc"
+alias libinputconf="sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf"
+alias reload="source .bashrc; source .bash_aliases; source .profile ; source .vimrc; source .nvimrc ; xrdb .Xresources"
 
 # Administration aliases
 alias diskspace="du -d1 -lah"
@@ -29,7 +30,7 @@ alias release="lsb_release -a"
 alias web="google-chrome-stable"
 
 # Server aliases
-alias localssh="ssh sergio@192.168.1.5"
+alias localssh="ssh sergio@$RASPIP"
 
 # Others
 alias pdc="pandoc --latex-engine=xelatex"
