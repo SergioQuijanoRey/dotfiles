@@ -44,8 +44,8 @@ PATH="$PATH:/home/sergio/.launchers"
 #===============================================================================
 
 # VIM + URXVT Stack
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export TERMCMD="urxvt"
 export TERM="urxvt"
 export COLORTERM="urxvt"
