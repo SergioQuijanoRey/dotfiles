@@ -8,19 +8,32 @@
 
 " PLUGIN MANAGER
 "==============================================================================
-" nvim completion manager
-" asyncomplete
-" ale
-" Video de youtube to guapo
-" neomake
-" vim-plug
+" vim-multiple-cursors: como el sublimetext
 call plug#begin('~/.local/share/nvim/plugged')
 
-" General purpose
-Plug 'Shougo/deoplete.nvim'						" Autocomplete
-Plug 'fatih/molokai'							" Monokai color scheme
-Plug 'itchyny/lightline.vim'						" Status bar
-Plug 'junegunn/goyo.vim'						" Focus Mode
+	" General purpose
+	Plug 'scrooloose/nerdtree'	 					" File exploring
+	Plug 'ctrlpvim/ctrlp.vim'						" Fuzzy File Finder
+	Plug 'w0rp/ale'								" Real time linting
+	Plug 'vimlab/split-term.vim'						" Better Term
+
+	" Editor
+	Plug 'kana/vim-smartinput'						" Autoclose pairs
+	
+	" Visual
+	Plug 'itchyny/lightline.vim'						" Status bar
+	Plug 'junegunn/goyo.vim'						" Focus Mode
+
+	" Autocompleters
+	Plug 'Shougo/deoplete.nvim'						" Autocomplete
+	
+	" Linters
+	Plug 'neomake/neomake'							" Linting by typing :Neomake
+
+	" Color schemes
+	Plug 'sickill/vim-monokai'						" Monokai Theme
+	Plug 'morhetz/gruvbox'							" Gruvbox Theme
+	Plug 'gosukiwi/vim-atom-dark'
 
 
 call plug#end()
@@ -28,9 +41,6 @@ call plug#end()
 " LEADER KEY
 "==============================================================================
 let mapleader = ","
-
-" VISUAL SETTINGS
-"==============================================================================
 
 " EDITOR SETTINGS
 "==============================================================================
@@ -63,21 +73,20 @@ set noswapfile
 " Clipboard
 set clipboard+=unnamedplus
 
-" " Visual settings
-" "==============================================================================
-set number					" Show numbers
-syntax enable					" Show syntax
-syntax on					" Show syntax 
-set hlsearch 					" Higlights what we searched
-set laststatus=2 				" For the lightline plugin
-set nowrap                      		" Don't wrap long lines
-set listchars=extends:→         		" Show arrow if line continues rightwards
-set colorcolumn=80				" Show 80 col line 
-set splitbelow splitright			" Spliting on righ instead of below
+" VISUAL SETTINGS
+"==============================================================================
+set number									" Show numbers
+syntax enable									" Show syntax
+syntax on									" Show syntax 
+set hlsearch									" Higlights what we searched
+set laststatus=2								" For the lightline plugin
+set nowrap									" Don't wrap long lines
+set listchars=extends:→								" Show arrow if line continues rightwards
+set colorcolumn=80								" Show 80 col line 
+set splitbelow splitright							" Spliting on righ instead of below
 set guicursor=		" OLD CURSOR
-let loaded_matchparen = 1			" No matching parenthesis/brakets/... highlight
-colorscheme molokai
-
+let loaded_matchparen= 1							" No matching parenthesis/brakets/... highlight
+colorscheme gruvbox
 
 " Keybindings
 "==============================================================================
@@ -85,7 +94,7 @@ colorscheme molokai
 map <F6> :setlocal spell! spelllang=es<CR>
 " 
 " Open a terminal
-map <C-k> :terminal<CR>
+map <C-k> :Term<CR>
  
 " Ctr-space for autocompletion
 imap <C-space> <C-p>
@@ -93,7 +102,26 @@ imap <C-space> <C-p>
 " Focus mode
 map <C-f> :Goyo<CR>
 
+" Fuzzy File Finder
+map <C-p> :CtrlP<CR>
+
+" Open Nerd Tree
+map <C-o> :NERDTreeToggle<CR>
+
+" Goto Definition
+map <C-g> :ALEGoToDefinitionInSplit<CR>
+
 
 " PLUGINS CONFIGURATION
 "=============================================================================
+" Deoplete configuration
 let g:deoplete#enable_at_startup = 1
+
+" Nerd Tree opening on directories or plain nvim
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" ALE
+let g:ale_completion_enabled = 1	" ALE autocompletion
