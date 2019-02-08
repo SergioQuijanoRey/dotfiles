@@ -100,7 +100,7 @@ map <C-k> :Term<CR>
 imap <C-space> <C-p>
 
 " Focus mode
-map <C-f> :Goyo<CR>
+map <C-f> :Goyo 120x120<CR>
 
 " Fuzzy File Finder
 map <C-p> :CtrlP<CR>
