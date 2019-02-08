@@ -5,6 +5,7 @@
 " 	CONFIG FILE FOR NEOVIM
 " Version:
 " 	v1.0 06/02/2019 - First functionally version of the configuration
+" 	v1.1 08/02/2019 - More pulished configuration, better organized
 
 " PLUGIN MANAGER
 "==============================================================================
@@ -43,12 +44,12 @@ let mapleader = ","
 
 " EDITOR SETTINGS
 "==============================================================================
-set autoindent			" Sets autoindent
-set smartindent			" Set smartindent
-set smarttab			" Set smarttab
-set incsearch                   " Shows results while searching
-set wildmenu                    " Tab autocomplete in command mode
-set backspace=indent,eol,start	" Normal backspace
+set autoindent									" Sets autoindent
+set smartindent									" Set smartindent
+set smarttab									" Set smarttab
+set incsearch									" Shows results while searching
+set wildmenu									" Tab autocomplete in command mode
+set backspace=indent,eol,start							" Normal backspace (for VI specially)
 
 " Fast movement
 map <C-Down> 3j			
@@ -60,9 +61,9 @@ vnoremap > >gv
 
 " PERFORMANCE
 "==============================================================================
-set autoread                          	" Auto reload changed files
-autocmd! bufwritepost init.vim source %	" Auto compile when changing nvim config file
-autocmd! bufwritepost .nvimrc source %	" Auto compile when changing nvim config file
+set autoread									" Auto reload changed files
+autocmd! bufwritepost init.vim source %						" Auto compile when changing nvim config file
+autocmd! bufwritepost .nvimrc source %						" Auto compile when changing nvim config file
 
 " Get rid of swap/backup files
 set nobackup
@@ -83,7 +84,7 @@ set nowrap									" Don't wrap long lines
 set listchars=extends:→								" Show arrow if line continues rightwards
 set colorcolumn=80								" Show 80 col line 
 set splitbelow splitright							" Spliting on righ instead of below
-set guicursor=		" OLD CURSOR
+set guicursor=									" OLD CURSOR
 let loaded_matchparen= 1							" No matching parenthesis/brakets/... highlight
 colorscheme gruvbox
 
@@ -123,4 +124,4 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " ALE
-let g:ale_completion_enabled = 1	" ALE autocompletion
+let g:ale_completion_enabled = 1						" ALE autocompletion
