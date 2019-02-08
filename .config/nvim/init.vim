@@ -35,7 +35,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 	Plug 'morhetz/gruvbox'							" Gruvbox Theme
 	Plug 'gosukiwi/vim-atom-dark'
 
-
 call plug#end()
 
 " LEADER KEY
