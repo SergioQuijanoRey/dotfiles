@@ -32,3 +32,4 @@ pa-applet
 nm-applet
 evince
 parole
+termite

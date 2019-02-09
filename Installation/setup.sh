@@ -14,13 +14,14 @@ rm -f $home/.vimrc
 rm -rf $home/.i3
 rm -rf $home/.config/ranger
 rm -rf $home/.config/nvim
+rm -rf $home/.config/termite
 rm -rf $home/bin
 
 # Creo los enlaces simbolicos
 echo "Home: $home"
 echo "DOTFILES: $dotfiles"
 
-for file in .bashrc .bash_aliases .profile .Xresources .vimrc .i3 .config/ranger .config/nvim bin
+for file in .bashrc .bash_aliases .profile .Xresources .vimrc .i3 .config/ranger .config/nvim .config/termite bin
 do
 	origin="$dotfiles/$file"
 	dest="$home/$file"
