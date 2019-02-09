@@ -3,7 +3,7 @@
 # Variables basicas
 home="/home/sergio"
 dotfiles="$home/GitProjects/dotfiles"
-packages="$dotfiles/packages.sh"
+packages="$dotfiles/Installation/packages.sh"
 
 # Elimino los archivos originales
 rm -f $home/.bashrc

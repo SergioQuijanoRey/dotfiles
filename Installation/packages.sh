@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Variables basicas
-pacman_list="./package_list.txt"
-aur_list="./aur_list.txt"
+base_dir="/home/sergio/GitProjects/dotfiles/Installation/"
+pacman_list="$base_dir/package_list.txt"
+aur_list="$base_dir/aur_list.txt"
 
 # Actualizo el sistema
 echo "Actualizando el sistema por completo..."
