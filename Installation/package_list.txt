@@ -33,3 +33,6 @@ nm-applet
 evince
 parole
 termite
+kdenlive
+darktable
+gimp
