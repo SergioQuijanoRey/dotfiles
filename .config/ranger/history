@@ -1,5 +1,3 @@
-mkdir Introducción
-mkdir Estructura de Datos Lineales
 mkdir Iteradores y punteros
 dele
 de
@@ -46,5 +44,7 @@ paste
 open_with vim
 find nv
 open_with nvim
-delete
 find .co
+find .i3
+delete
+rename bigdisplay

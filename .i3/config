@@ -213,7 +213,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Personal KeyBindings
 bindsym $mod+x exec lockscreen
 bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'Shutdown system?' -b 'Yes' 'shutdown -h now'"
-bindsym $mod+Shift+n exec sranger
+bindsym $mod+Shift+n exec termite --exec=ranger --name=ranger
 bindsym $mod+Shift+b exec blueman-applet
 bindsym Print exec xfce4-screenshooter #gnome-screenshoot
 bindsym $mod+Shift+p move workspace to left
