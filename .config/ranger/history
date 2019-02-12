@@ -1,5 +1,3 @@
-mkdir Grafos
-mkdir STL
 execute_command extract examenes15-18.tgz
 exe
 rename Exámenes
@@ -30,7 +28,6 @@ delet
 rename IMG_20170707_201956.jpg
 [1;5B[1;5B
 rename Tema 3 - Z[i].pdf
-
 open_with 
 open_with vlc
 open_with kdenlive
@@ -42,9 +39,12 @@ open_with nvim
 find .co
 find .i3
 rename bigdisplay
-delete
 cut
 rename Relación Análisis Profesora III.pdf
-copy
 mkdir Pruebas
+find .confi
+
+copy
 paste
+delete
+rename alacritty

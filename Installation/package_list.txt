@@ -36,3 +36,4 @@ termite
 kdenlive
 darktable
 gimp
+alacritty

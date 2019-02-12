@@ -47,8 +47,8 @@ PATH="$PATH:/home/sergio/.launchers"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMCMD="termite"
-export TERM="termite"
-export COLORTERM="termite"
+export TERM="alacritty"
+export COLORTERM="alacritty"
 export PAGER="less"
 
 # SSH vars

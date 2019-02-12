@@ -21,7 +21,7 @@ rm -rf $home/bin
 echo "Home: $home"
 echo "DOTFILES: $dotfiles"
 
-for file in .bashrc .bash_aliases .profile .Xresources .vimrc .i3 .config/ranger .config/nvim .config/termite bin
+for file in .bashrc .bash_aliases .profile .Xresources .vimrc .i3 bin .config/ranger .config/nvim .config/alacritty 
 do
 	origin="$dotfiles/$file"
 	dest="$home/$file"

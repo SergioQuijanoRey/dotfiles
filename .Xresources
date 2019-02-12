@@ -9,7 +9,9 @@
 ! General Configuration for URxvt
 !===============================================================================
 ! URxvt font
-URxvt.font: xft:monospace:size=11
+! URxvt*font: xft:monospace:size=11 
+! URxvt*font: xft:monospace:size=11 \xft: Font Awesome 5 Free:style=regular:size=11
+URxvt*font: xft:monospace:size=11 \xft:Font Awesome 5 Brands:size=11
 
 ! Disabling scrollbar
 URxvt.scrollBar: false

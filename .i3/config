@@ -18,8 +18,8 @@ font pango:System San Francisco Display 8
 floating_modifier $mod
 
 # Launch terminal 
-bindsym $mod+Return exec termite
-bindsym $mod+Shift+Return exec termite
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return exec alacritty --config-file /home/sergio/.config/alacritty/gruvbox.yml
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -213,7 +213,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Personal KeyBindings
 bindsym $mod+x exec lockscreen
 bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'Shutdown system?' -b 'Yes' 'shutdown -h now'"
-bindsym $mod+Shift+n exec termite --exec=ranger --name=ranger
+bindsym $mod+Shift+n exec alacritty --exec=ranger --title=ranger
 bindsym $mod+Shift+b exec blueman-applet
 bindsym Print exec xfce4-screenshooter #gnome-screenshoot
 bindsym $mod+Shift+p move workspace to left
