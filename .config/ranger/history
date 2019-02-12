@@ -1,6 +1,3 @@
-mkdir Iteradores y punteros
-dele
-de
 mkdir Grafos
 mkdir STL
 execute_command extract examenes15-18.tgz
@@ -38,13 +35,16 @@ open_with
 open_with vlc
 open_with kdenlive
 rename Vlogs de pruebas
-cut
 mkdir Video
-paste
 open_with vim
 find nv
 open_with nvim
 find .co
 find .i3
-delete
 rename bigdisplay
+delete
+cut
+rename Relación Análisis Profesora III.pdf
+copy
+mkdir Pruebas
+paste

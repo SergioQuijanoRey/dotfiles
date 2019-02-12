@@ -43,12 +43,13 @@ PATH="$PATH:/home/sergio/.launchers"
 # Enviroment vars
 #===============================================================================
 
-# VIM + URXVT Stack
+# NVIM + URXVT Stack
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMCMD="urxvt"
-export TERM="urxvt"
-export COLORTERM="urxvt"
+export TERMCMD="termite"
+export TERM="termite"
+export COLORTERM="termite"
+export PAGER="less"
 
 # SSH vars
 export RASPIP="192.168.1.5"
