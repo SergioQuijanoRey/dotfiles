@@ -29,7 +29,6 @@ rename IMG_20170707_201956.jpg
 [1;5B[1;5B
 rename Tema 3 - Z[i].pdf
 open_with 
-open_with vlc
 open_with kdenlive
 rename Vlogs de pruebas
 mkdir Video
@@ -43,8 +42,9 @@ cut
 rename Relación Análisis Profesora III.pdf
 mkdir Pruebas
 find .confi
-
 copy
 paste
-delete
 rename alacritty
+
+open_with vlc
+delete

@@ -117,11 +117,5 @@ map <C-g> :ALEGoToDefinitionInSplit<CR>
 " Deoplete configuration
 let g:deoplete#enable_at_startup = 1
 
-" Nerd Tree opening on directories or plain nvim
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
 " ALE
 let g:ale_completion_enabled = 1						" ALE autocompletion
