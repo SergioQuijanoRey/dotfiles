@@ -1,26 +1,8 @@
-execute_command extract examenes15-18.tgz
-exe
-rename Exámenes
-rename 
-rename Relaciones de Ejercicios
-terminal 
-open_with libreoffice
-rename Codigo ejercicio arbol general.tgz
-rename Código TDA ABB.zip
-rename Código APO.zip
-mkdir Códigos
-rename Código AVL.zip
-rename Código Árbol Binario.tgz
-rename Código Árbol Binario II.tgz
-cit
-mkdir Árbol General
-mkdir Árbol Binario
 rename arbol_general.h
 mkdir ABB
 passte
 mkdir AVL
 mkdir APO
-open_with t vim
 open_with thunar
 mkdir Cloud
 rename LinuxCloud
@@ -34,17 +16,35 @@ rename Vlogs de pruebas
 mkdir Video
 open_with vim
 find nv
-open_with nvim
 find .co
 find .i3
 rename bigdisplay
-cut
 rename Relación Análisis Profesora III.pdf
-mkdir Pruebas
 find .confi
-copy
-paste
 rename alacritty
-
 open_with vlc
+mkdir Pruebas
+rename Pruebas
+de
+open_with nvim
+copy
+rename Sesi
+rename Sesión Fotos Granada 16-02-2019
+mkdir Sesiones Fotos
+
+mkdir Archivos sin clasificar
+mkdir Apuntes de clase
+mkdir Transparencias
+mkdir Prácticas
+rename PDO - Guía del profesor.pdf
+cut
+paste
+rename Consejos del profesor.pdf
+rename DeepSpace - Descripción del juego.pdf
+rename Temporización de las prácticas.pdf
+rename 
+rename Práctica 1 - Guión.pdf
+open_with t nvim
+open_with t vim
+terminal 
 delete

@@ -115,6 +115,7 @@ assign [class="Atom"] $workspace3
 assign [class="Code"] $workspace3
 assign [class="Gedit"] $workspace3
 assign [title="vim"] $workspace3
+assign [class="Apache NetBeans IDE 10.0"] $workspace3
 # File apps
 assign [class="Nautilus"] $workspace4
 assign [title="ranger"] $workspace4

@@ -40,13 +40,17 @@ PATH="$PATH:/home/sergio/bin"
 PATH="$PATH:/home/sergio/.i3/scripts"
 PATH="$PATH:/home/sergio/.launchers"
 
+# Ruby path for nvim
+PATH="$PATH:/home/sergio/.gem/ruby/2.6.0/bin"
+PATH="$PATH:/root/.gem/ruby/2.6.0/bin"
+
 # Enviroment vars
 #===============================================================================
 
 # NVIM + URXVT Stack
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMCMD="termite"
+export TERMCMD="alacritty"
 export TERM="alacritty"
 export COLORTERM="alacritty"
 export PAGER="less"
