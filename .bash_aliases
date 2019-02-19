@@ -36,3 +36,5 @@ alias localssh="ssh sergio@$RASPIP"
 # Others
 alias pdc="pandoc --latex-engine=xelatex"
 alias screensaver="cmatrix | lolcat"
+alias mine="java -Xmx1024M -Xms1024M -jar ~/Servidor/server.jar nogui"
+
