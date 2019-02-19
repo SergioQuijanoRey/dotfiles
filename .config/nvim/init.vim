@@ -78,6 +78,9 @@ set clipboard+=unnamedplus
 set number									" Show numbers
 syntax enable									" Show syntax
 syntax on									" Show syntax 
+filetype on									" Checks automatically for filetype
+filetype indent on    								" Identation dependent of filetype
+filetype plugin on   								" Plugins dependent of filetype
 set hlsearch									" Higlights what we searched
 set laststatus=2								" For the lightline plugin
 set nowrap									" Don't wrap long lines
