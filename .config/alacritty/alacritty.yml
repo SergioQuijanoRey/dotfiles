@@ -35,7 +35,7 @@ tabspaces: 8
 
 # Font configuration
 font:
-  size: 10.0
+  size: 11.0
   offset:
     x: 0
     y: 0
