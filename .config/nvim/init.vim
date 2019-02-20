@@ -96,7 +96,7 @@ colorscheme gruvbox
 map <F6> :setlocal spell! spelllang=es<CR>
 " 
 " Open a terminal
-map <C-K> :vsp<CR>:terminal<CR>A
+map <C-K> :sp<CR>:terminal<CR>A
  
 " Ctr-space for autocompletion
 imap <C-space> <C-p>

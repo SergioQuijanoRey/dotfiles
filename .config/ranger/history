@@ -1,4 +1,3 @@
-rename IMG_20170707_201956.jpg
 [1;5B[1;5B
 rename Tema 3 - Z[i].pdf
 open_with 
@@ -44,7 +43,8 @@ touch Tema 1 - Eficiencia de algoritmos.md
 
 rename Glosario de la asignatura.pdf
 mkdir Apuntes de clase
-cut
-paste
 touch Tema 1 - Introducción a la programación orientada a objetos.md
 open_with t nvim
+cut
+mkdir Mis códigos
+paste
