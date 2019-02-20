@@ -16,7 +16,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 	Plug 'scrooloose/nerdtree'	 					" File exploring
 	Plug 'ctrlpvim/ctrlp.vim'						" Fuzzy File Finder
 	Plug 'w0rp/ale'								" Real time linting
-	Plug 'vimlab/split-term.vim'						" Better Term
 
 	" Editor
 	Plug 'kana/vim-smartinput'						" Autoclose pairs
@@ -97,7 +96,7 @@ colorscheme gruvbox
 map <F6> :setlocal spell! spelllang=es<CR>
 " 
 " Open a terminal
-map <C-k> :Term<CR>
+map <C-K> :vsp<CR>:terminal<CR>A
  
 " Ctr-space for autocompletion
 imap <C-space> <C-p>
