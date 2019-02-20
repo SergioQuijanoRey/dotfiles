@@ -57,3 +57,7 @@ export PAGER="less"
 
 # SSH vars
 export RASPIP="192.168.1.5"
+
+rmd(){
+	pandoc $1 | lynx -stdin
+}
