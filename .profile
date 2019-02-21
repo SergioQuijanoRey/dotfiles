@@ -57,6 +57,7 @@ export PAGER="less"
 
 # SSH vars
 export RASPIP="192.168.1.5"
+export usr="@atcgrid.ugr.es"
 
 rmd(){
 	pandoc $1 | lynx -stdin
