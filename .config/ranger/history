@@ -1,8 +1,3 @@
-rename Tema 3 - Z[i].pdf
-open_with 
-open_with kdenlive
-rename Vlogs de pruebas
-mkdir Video
 open_with vim
 find nv
 find .co
@@ -37,7 +32,6 @@ rename
 rename Notes for Professionals - Java.pdf
 dele
 touch Tema 1 - Eficiencia de algoritmos.md
-
 rename Glosario de la asignatura.pdf
 mkdir Apuntes de clase
 touch Tema 1 - Introducción a la programación orientada a objetos.md
@@ -46,5 +40,11 @@ cut
 mkdir Mis códigos
 paste
 extract
-terminal 
+mkdir Playground
+touch pruebna
+
 delete
+open_with libreoffice
+open_with t libreoffice
+open_with lac
+terminal 

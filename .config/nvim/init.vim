@@ -14,6 +14,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 	" General purpose
 	Plug 'scrooloose/nerdtree'	 					" File exploring
+	Plug 'ryanoasis/vim-devicons'						" Icons for NerdTree
 	Plug 'ctrlpvim/ctrlp.vim'						" Fuzzy File Finder
 	Plug 'w0rp/ale'								" Real time linting
 
