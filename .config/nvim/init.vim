@@ -9,13 +9,11 @@
 
 " PLUGIN MANAGER
 "==============================================================================
-" vim-multiple-cursors: como el sublimetext
 call plug#begin('~/.local/share/nvim/plugged')
 
 	" General purpose
 	Plug 'scrooloose/nerdtree'	 					" File exploring
-	Plug 'ryanoasis/vim-devicons'						" Icons for NerdTree
-	Plug 'ctrlpvim/ctrlp.vim'						" Fuzzy File Finder
+	Plug 'junegunn/fzf.vim'							" Fuzzy Finder
 	Plug 'w0rp/ale'								" Real time linting
 
 	" Editor
@@ -50,6 +48,7 @@ set smarttab									" Set smarttab
 set incsearch									" Shows results while searching
 set wildmenu									" Tab autocomplete in command mode
 set backspace=indent,eol,start							" Normal backspace (for VI specially)
+set mouse=a									" Allow mouse control
 
 " Fast movement
 map <C-Down> 3j			
@@ -106,7 +105,7 @@ imap <C-space> <C-p>
 map <C-f> :Goyo 120x120<CR>
 
 " Fuzzy File Finder
-map <C-p> :CtrlP<CR>
+map <C-p> :FZF<CR>
 
 " Open Nerd Tree
 map <C-o> :NERDTreeToggle<CR>

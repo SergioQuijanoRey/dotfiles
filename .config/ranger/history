@@ -1,13 +1,8 @@
-find .i3
-rename bigdisplay
-rename Relación Análisis Profesora III.pdf
-find .confi
 rename alacritty
 open_with vlc
 mkdir Pruebas
 rename Pruebas
 de
-open_with nvim
 copy
 rename Sesi
 rename Sesión Fotos Granada 16-02-2019
@@ -32,19 +27,24 @@ touch Tema 1 - Eficiencia de algoritmos.md
 rename Glosario de la asignatura.pdf
 mkdir Apuntes de clase
 touch Tema 1 - Introducción a la programación orientada a objetos.md
-cut
 mkdir Mis códigos
 paste
 extract
 mkdir Playground
 touch pruebna
-
-delete
 open_with libreoffice
 open_with t libreoffice
 open_with lac
-terminal 
 mkdi
 touch Apuntes de clases Prácticas.md
 open_with 
+rename Resolución Final Beca MECD 2019.pdf
+cut
+
+mkdir utils
+rename utilities
+touch check
+open_with nvim
 open_with t nvim
+delete
+terminal 
