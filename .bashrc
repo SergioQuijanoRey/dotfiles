@@ -160,3 +160,11 @@ extract () {
        echo "'$1' is not a valid file!"
    fi
  }
+
+# Script para tener fzf con cd
+cdf() {
+  local dir
+  dir=$(find ${1:-.} -path '*/\.*' -prune \
+                  -o -type d -print 2> /dev/null | fzf +m) &&
+  cd "$dir"
+}
