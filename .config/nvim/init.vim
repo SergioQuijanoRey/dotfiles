@@ -94,7 +94,10 @@ colorscheme gruvbox
 "==============================================================================
 " Spell checking
 map <F6> :setlocal spell! spelllang=es<CR>
-" 
+map <F7> :setlocal spell! spelllang=en<CR>
+ 
+" Code Linting
+map <F5> :Neomake<CR>
 " Open a terminal
 map <C-K> :sp<CR>:terminal<CR>A
  

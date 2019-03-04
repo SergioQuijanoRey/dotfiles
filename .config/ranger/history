@@ -1,4 +1,3 @@
-rename Temporización de las prácticas.pdf
 rename Práctica 1 - Guión.pdf
 open_with t vim
 rename GitProjects
@@ -21,12 +20,10 @@ open_with lac
 mkdi
 touch Apuntes de clases Prácticas.md
 rename Resolución Final Beca MECD 2019.pdf
-
 mkdir utils
 rename utilities
 touch check
 open_with nvim
-open_with t nvim
 open_with firefox
 open_with google-chrome-stable
 mkdir Fotos Rumanía 2019
@@ -40,11 +37,14 @@ rename Fotografías Viaje Sevilla 2017
 rename Fotografías Viaje Marrakech 2018
 apste
 rename Vlogs Viaje Rumanía 2019
-open_with 
 find Ru
 mkdir Fotos Temporales Preferidas
+open_with shotwell
+
+open_with t nvim
+open_with 
+open_with t nvi
+terminal 
+delete
 cut
 paste
-delete
-open_with shotwell
-terminal 
