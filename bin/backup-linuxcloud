@@ -11,7 +11,7 @@
 
 # Variables
 #===============================================================================
-RASPIP="192.168.1.5"
+RASPIP="192.168.1.8"
 origin="/home/sergio/LinuxCloud/"
 dest="sergio@$RASPIP:~/media/KINGSTONDATA/LinuxCloud"
 
