@@ -53,10 +53,9 @@ export VISUAL="nvim"
 export TERMCMD="alacritty"
 export TERM="alacritty"
 export COLORTERM="alacritty"
-export PAGER="less"
 
 # SSH vars
-export RASPIP="192.168.1.5"
+export RASPIP="192.168.1.8"
 export usr="@atcgrid.ugr.es"
 
 rmd(){

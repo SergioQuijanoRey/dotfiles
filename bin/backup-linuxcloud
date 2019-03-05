@@ -13,7 +13,7 @@
 #===============================================================================
 RASPIP="192.168.1.8"
 origin="/home/sergio/LinuxCloud/"
-dest="sergio@$RASPIP:~/media/KINGSTONDATA/LinuxCloud"
+dest="sergio@$RASPIP:~/media/TOSHIBADRIVE/LinuxCloud"
 
 # Main program
 #===============================================================================
