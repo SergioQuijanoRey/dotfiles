@@ -129,11 +129,12 @@ fi
 
 # PS1 -- Prompt look
 #===============================================================================
-# export PS1="\033[s\033[500C\033[5D \033[u\[\e[0;35m\]\u \[\e[0;37m\]at \[\e[0;36m\]\h \[\e[0;37m\]in \[\e[0;32m\]\w \[\e[0;37m\] \[\e[0;37m\]\n$ \[\e[0m\]"
 export PS1="\033[s\033[500C\033[5D \033[u\[\e[0;35m\]\u \[\e[0;37m\]at \[\e[0;36m\]\h \[\e[0;37m\]in \[\e[0;32m\]\w \[\e[0;37m\] \[\e[0;37m\]\n \[\e[0m\]"
 
-# Practicas
-#export PS1="SergioQuijanoRey \u@\h:\w] \D{%F %A}\n$"
+# Practicas ATC
+change_prompt(){
+	export PS1="SergioQuijanoRey \u@\h:\w] \D{%F %A}\n$"
+}
 
 
 # Scripts útiles
