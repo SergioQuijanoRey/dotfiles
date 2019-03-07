@@ -1,4 +1,3 @@
-touch Tema 1 - Introducción a la programación orientada a objetos.md
 mkdir Mis códigos
 extract
 mkdir Playground
@@ -47,4 +46,5 @@ paste
 delet
 
 delete
+touch Apuntes de prácticas.md
 open_with t nvim

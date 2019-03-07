@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-mega-sync /path/to/local/folder /folder/in/mega
-

@@ -11,49 +11,48 @@
 #   v1.3: añado local y remoto a este archivo, asi no hay dependecias
 #   También añado gitsubir para no depender de aliases
 #   v1.4: añado informacion y hago uso de las funciones definidas que tengo
+#   v2.0: cambio por completo el código. La funcionalidad es la misma
+#   Ya no hace falta usar un archivo .git_directories para especificar los repositorios
+#   Se actualizan todos los repositorios dentro de carpetas especificadas, a la vez
 # Descripción:
 #   Actualiza todos los repositorios, tanto en local como en remoto, para Git
 
-rutas="/home/sergio/.git_directories"
-
-
-# Funciones
+# Some parameters
 #===============================================================================
-function actualizarLocal(){
-  for directorio in $(cat $rutas)
-  do
-      cd $directorio 
-      gitsubir
-  done
-}
+directories=(
+	"/home/sergio/GitProjects"
+)
 
-function actualizarRemoto(){
-  for directorio in $(cat $rutas)
-  do
-      cd $directorio 
-      git pull 
-  done
-
-}
-
-function gitsubir(){
-  git pull
-  git add . 
-  git commit 
-  git push
-}
-
-# Se ejecutan los dos procesos
+# Functions
 #===============================================================================
 
-# Bajo los cambios desde los repositorios remotos
-echo "Bajando cambios de los repositorios"
-echo "================================================================================"
-actualizarRemoto 2> /dev/null
-echo""
+# Given a absolute path to the directorie of a repo, it syncs it, that's to say
+# Pull all changes from the remote server, and then add, commit and push to the 
+# remote server
+function sync_git(){
+	echo "Syncything $1 repo"
+	echo "================================================================================"
+	cd $1
 
-# Subo los cambios de los repositorios locales
-echo "Subiendo cambios hechos en local"
-echo "================================================================================"
-actualizarLocal 2> /dev/null
+	# Pulling changes
+	git pull
 
+	# Pushing changes
+	git add .
+	git commit
+	git push 
+
+	echo ""
+}
+
+# Main program
+#===============================================================================
+for base_dir in $directories
+do
+	for repo in $(ls $base_dir)
+	do
+		absolute_path="$base_dir/$repo"
+		cd $absolute_path
+		sync_git $absolute_path
+	done
+done
