@@ -48,7 +48,7 @@ set smarttab									" Set smarttab
 set incsearch									" Shows results while searching
 set wildmenu									" Tab autocomplete in command mode
 set backspace=indent,eol,start							" Normal backspace (for VI specially)
-set mouse=a									" Allow mouse control
+set mouse=n									" Allow mouse control
 
 " Fast movement
 map <C-Down> 3j			

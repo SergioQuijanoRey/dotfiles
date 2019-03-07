@@ -1,12 +1,3 @@
-rename GitProjects
-mkdir Bibliografía Adicional
-past
-rename Notes for Professionals - Ruby.pdf
-rename Notes for Professionals - Java.pdf
-dele
-touch Tema 1 - Eficiencia de algoritmos.md
-rename Glosario de la asignatura.pdf
-mkdir Apuntes de clase
 touch Tema 1 - Introducción a la programación orientada a objetos.md
 mkdir Mis códigos
 extract
@@ -37,14 +28,23 @@ rename Vlogs Viaje Rumanía 2019
 find Ru
 mkdir Fotos Temporales Preferidas
 open_with shotwell
-
 open_with 
 open_with t nvi
-cut
-paste
 mkdir Game of life Java
 touch Grid.java
 open_with nvim
+mkdir Práctica 0
+mkdir Práctica 1
+mkdir Práctica 2
+mkdir Pr
+mkdir Sesiones
+rename Apuntes Prácticas Arquitectura de Computadores.md
+open_with t 
 open_with t nvim
+mkdir bp0
 terminal 
+cut
+paste
+delet
+
 delete
