@@ -40,7 +40,6 @@ mkdir Pr
 mkdir Sesiones
 rename Apuntes Prácticas Arquitectura de Computadores.md
 open_with t 
-open_with t nvim
 mkdir bp0
 terminal 
 cut
@@ -48,3 +47,4 @@ paste
 delet
 
 delete
+open_with t nvim
