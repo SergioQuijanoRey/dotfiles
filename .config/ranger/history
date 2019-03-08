@@ -1,4 +1,3 @@
-mkdir Mis códigos
 extract
 mkdir Playground
 touch pruebna
@@ -47,4 +46,5 @@ delet
 
 touch Apuntes de prácticas.md
 open_with t nvim
+rename OBS
 delete
