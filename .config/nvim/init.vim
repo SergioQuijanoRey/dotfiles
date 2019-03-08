@@ -45,10 +45,11 @@ let mapleader = ","
 set autoindent									" Sets autoindent
 set smartindent									" Set smartindent
 set smarttab									" Set smarttab
+set tabstop=4									" Visually, 4 spaces
 set incsearch									" Shows results while searching
 set wildmenu									" Tab autocomplete in command mode
-set backspace=indent,eol,start							" Normal backspace (for VI specially)
-set mouse=n									" Allow mouse control
+set backspace=indent,eol,start					" Normal backspace (for VI specially)
+set mouse=n										" Allow mouse control
 
 " Fast movement
 map <C-Down> 3j			

@@ -1,9 +1,3 @@
-extract
-mkdir Playground
-touch pruebna
-open_with libreoffice
-open_with t libreoffice
-open_with lac
 mkdi
 touch Apuntes de clases Prácticas.md
 rename Resolución Final Beca MECD 2019.pdf
@@ -27,10 +21,8 @@ find Ru
 mkdir Fotos Temporales Preferidas
 open_with shotwell
 open_with 
-open_with t nvi
 mkdir Game of life Java
 touch Grid.java
-open_with nvim
 mkdir Práctica 0
 mkdir Práctica 1
 mkdir Práctica 2
@@ -39,12 +31,20 @@ mkdir Sesiones
 rename Apuntes Prácticas Arquitectura de Computadores.md
 open_with t 
 mkdir bp0
-terminal 
 cut
-paste
 delet
-
 touch Apuntes de prácticas.md
-open_with t nvim
-rename OBS
+open_with netbeans
+nv
+open_with nvim
+mkdir utilities
+copy
+paste
 delete
+
+open_with t nvim
+Term
+term
+touch Makefile
+terminal 
+open_with t nvi
