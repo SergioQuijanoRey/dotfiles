@@ -41,7 +41,7 @@ PATH="$PATH:/root/.gem/ruby/2.6.0/bin"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMCMD="alacritty"
-export TERM="alacritty"
+# export TERM="alacritty" WIP -- Aqui esta el fallo
 export COLORTERM="alacritty"
 
 # SSH vars

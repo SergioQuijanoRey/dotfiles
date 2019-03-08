@@ -21,8 +21,7 @@ alias confi3="nvim .i3/config"
 alias vconf="nvim .vimrc"
 alias nvconf="nvim .nvimrc"
 alias libinputconf="sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf"
-alias reload="source .bashrc; source .bash_aliases; source .profile ; source .vimrc; source .nvimrc ; xrdb .Xresources"
-
+alias reload="source .bashrc; source .bash_aliases; source .profile"
 # Administration aliases
 alias disksize="du -d0 -h"
 alias release="lsb_release -a"

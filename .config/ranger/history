@@ -45,6 +45,6 @@ cut
 paste
 delet
 
-delete
 touch Apuntes de prácticas.md
 open_with t nvim
+delete
