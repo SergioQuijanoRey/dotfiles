@@ -30,7 +30,7 @@ directories=(
 # Pull all changes from the remote server, and then add, commit and push to the 
 # remote server
 function sync_git(){
-	echo "Syncything $1 repo"
+	echo "Syncing $1 repo"
 	echo "================================================================================"
 	cd $1
 

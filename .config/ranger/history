@@ -1,4 +1,3 @@
-mkdi
 touch Apuntes de clases Prácticas.md
 rename Resolución Final Beca MECD 2019.pdf
 mkdir utils
@@ -40,7 +39,6 @@ open_with nvim
 mkdir utilities
 copy
 paste
-delete
 
 open_with t nvim
 Term
@@ -48,3 +46,5 @@ term
 touch Makefile
 terminal 
 open_with t nvi
+delete
+rename OBS
