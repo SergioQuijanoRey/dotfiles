@@ -169,3 +169,8 @@ cdf() {
                   -o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
 }
+
+nvf(){
+		file=$(fzf)
+		nvim "$file"
+}

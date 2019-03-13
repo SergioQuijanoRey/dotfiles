@@ -1,27 +1,3 @@
-touch Apuntes de clases Prácticas.md
-rename Resolución Final Beca MECD 2019.pdf
-mkdir utils
-rename utilities
-touch check
-open_with firefox
-open_with google-chrome-stable
-mkdir Fotos Rumanía 2019
-open_with vlc
-rename Plano_brasov.mts
-rename 
-rename Plano_brasov.MTS
-mkdir Fotografías
-rename Fotografías Viaje Rumanía 2019
-rename Fotografías Viaje Sevilla 2017
-rename Fotografías Viaje Marrakech 2018
-apste
-rename Vlogs Viaje Rumanía 2019
-find Ru
-mkdir Fotos Temporales Preferidas
-open_with shotwell
-open_with 
-mkdir Game of life Java
-touch Grid.java
 mkdir Práctica 0
 mkdir Práctica 1
 mkdir Práctica 2
@@ -30,21 +6,45 @@ mkdir Sesiones
 rename Apuntes Prácticas Arquitectura de Computadores.md
 open_with t 
 mkdir bp0
-cut
 delet
 touch Apuntes de prácticas.md
 open_with netbeans
 nv
 open_with nvim
 mkdir utilities
-copy
-paste
 
-open_with t nvim
 Term
-term
 touch Makefile
-terminal 
 open_with t nvi
-delete
 rename OBS
+term
+mkdir ejer5
+rename BP0_QuijanoReySergio.pdf
+rename Cuaderno de prácticas 0.pdf
+rename Prácticas
+touch Práctica 1 - Parte Individual.tex
+touch algoritmo1.cpp
+open_with t nivm
+open_with sasdfaf
+open_with t
+copy 
+paste bubble_sort.c
+copy
+rename bubble_sort.c
+terminal 
+mkdir Apuntes Adicionales
+shell
+rename Resumen Tema 1 - Wuohla.pdf
+rename Soluciones Parcial Tema 1.pdf
+rename Soluciones Parcial Tema 1 - Examen 2.pdf
+delete
+open_with thunar
+rename Exámenes Pasados Resueltos.pdf
+rename 
+rename Resumen Tema 1 - Paula Villegas.pdf
+rename Resumen Tema 1 - Paula Villanueva.pdf
+open_with t nvim
+rename Libro Mancia.pdf
+cut
+paste
+rename Arquitectura de Computadores - Relación Tema 1 - Ejercicios Resueltos.pdf

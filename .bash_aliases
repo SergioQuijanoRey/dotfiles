@@ -12,7 +12,6 @@ alias py="python3"
 alias jupy="jupyter notebook"
 alias v="nvim"									# Useful for fast open nvim
 alias nv="nvim"									# Useful for fast open nvim
-alias nvf="nvim \$(fzf)"							# Useful for opening nvim with fzf finder
 alias dasm="objdump -d"								# Useful for disassembly
 alias getsyscall="cat /usr/include/asm/unistd_32.h | egrep "
 
