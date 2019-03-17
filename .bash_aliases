@@ -28,7 +28,7 @@ alias web="google-chrome-stable"
 alias findps="ps aux | egrep"
 
 # Server aliases
-alias localssh="ssh sergio@$RASPIP"
+alias localssh="ssh sergio@$SERVERIP"
 alias atcssh="ssh $atc_usr@atcgrid.ugr.es"
 
 # Others

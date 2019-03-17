@@ -44,7 +44,7 @@ export TERMCMD="alacritty"
 export COLORTERM="alacritty"
 
 # SSH vars
-export RASPIP="192.168.1.8"
+export SERVERIP="192.168.1.8"
 export atc_usr="E2estudiante9"
 export atc_addr="$atc_usr@atcgrid.ugr.es"
 export atc_pwd="gdpthgbcbp"

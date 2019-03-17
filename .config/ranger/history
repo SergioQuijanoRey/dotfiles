@@ -1,23 +1,7 @@
-mkdir Práctica 0
-mkdir Práctica 1
-mkdir Práctica 2
-mkdir Pr
-mkdir Sesiones
-rename Apuntes Prácticas Arquitectura de Computadores.md
-open_with t 
-mkdir bp0
-delet
-touch Apuntes de prácticas.md
-open_with netbeans
-nv
-open_with nvim
-mkdir utilities
-
 Term
 touch Makefile
 open_with t nvi
 rename OBS
-term
 mkdir ejer5
 rename BP0_QuijanoReySergio.pdf
 rename Cuaderno de prácticas 0.pdf
@@ -29,22 +13,38 @@ open_with sasdfaf
 open_with t
 copy 
 paste bubble_sort.c
-copy
 rename bubble_sort.c
-terminal 
 mkdir Apuntes Adicionales
 shell
 rename Resumen Tema 1 - Wuohla.pdf
 rename Soluciones Parcial Tema 1.pdf
 rename Soluciones Parcial Tema 1 - Examen 2.pdf
-delete
-open_with thunar
 rename Exámenes Pasados Resueltos.pdf
-rename 
 rename Resumen Tema 1 - Paula Villegas.pdf
 rename Resumen Tema 1 - Paula Villanueva.pdf
-open_with t nvim
 rename Libro Mancia.pdf
-cut
-paste
 rename Arquitectura de Computadores - Relación Tema 1 - Ejercicios Resueltos.pdf
+touch Tema 2.md
+rename Práctica 1 - Directivas OpenMP.pdf
+rename 
+rename Práctica 0 - Entorno de programación.pdf
+rename Práctica 2 - Claúsulas OpenMP.pdf
+rename Práctica 3 - Interacción con OpenMP y evaluación de prestaciones.pdf
+rename Práctica 4 - Código en arquitecturas ILP.pdf
+rename Referencias a lenguajes
+rename Cuaderno de la práctica 0.odt
+mkdir Archivos dados
+past
+
+mkdir Pruebas
+copy
+paste
+open_with thunar
+te
+term
+cut
+delete
+mkdir Graficas
+terminal 
+nv
+open_with t nvim
