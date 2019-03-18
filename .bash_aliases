@@ -29,6 +29,7 @@ alias findps="ps aux | egrep"
 
 # Server aliases
 alias localssh="ssh sergio@$SERVERIP"
+alias remotessh="ssh sergio@$REMOTEIP"
 alias atcssh="ssh $atc_usr@atcgrid.ugr.es"
 
 # Others

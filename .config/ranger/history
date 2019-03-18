@@ -41,10 +41,10 @@ term
 cut
 mkdir Graficas
 nv
-open_with t nvim
 
 open_with google-chrome-stable
 rename Cuentas_Granada
-terminal 
 delete
 open_with libreoffice
+terminal 
+open_with t nvim
