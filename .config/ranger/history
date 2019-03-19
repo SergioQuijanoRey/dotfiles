@@ -1,5 +1,3 @@
-rename OBS
-mkdir ejer5
 rename BP0_QuijanoReySergio.pdf
 rename Cuaderno de prácticas 0.pdf
 rename Prácticas
@@ -33,18 +31,20 @@ rename Cuaderno de la práctica 0.odt
 mkdir Archivos dados
 past
 mkdir Pruebas
-copy
-paste
 open_with thunar
 te
 term
-cut
 mkdir Graficas
 nv
-
 open_with google-chrome-stable
 rename Cuentas_Granada
-delete
 open_with libreoffice
-terminal 
+c
 open_with t nvim
+mkdir Sin clasificar
+
+copy
+cut
+paste
+delete
+terminal 
