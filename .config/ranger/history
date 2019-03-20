@@ -1,9 +1,7 @@
-rename BP0_QuijanoReySergio.pdf
 rename Cuaderno de prácticas 0.pdf
 rename Prácticas
 touch Práctica 1 - Parte Individual.tex
 touch algoritmo1.cpp
-open_with t nivm
 open_with sasdfaf
 open_with t
 copy 
@@ -47,4 +45,6 @@ copy
 cut
 paste
 delete
+Term
 terminal 
+open_with t nivm

@@ -79,7 +79,7 @@ set $workspace5 "5: Texting "
 set $workspace6 "6: Documents "
 set $workspace7 "7"
 set $workspace8 "8"
-set $workspace9 "9: Servers "
+set $workspace9 "9: Server "
 set $workspace10 "10: Music "
 
 # switch to workspace
