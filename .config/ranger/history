@@ -1,50 +1,50 @@
-rename Cuaderno de prácticas 0.pdf
-rename Prácticas
-touch Práctica 1 - Parte Individual.tex
-touch algoritmo1.cpp
-open_with sasdfaf
-open_with t
-copy 
-paste bubble_sort.c
-rename bubble_sort.c
-mkdir Apuntes Adicionales
-shell
-rename Resumen Tema 1 - Wuohla.pdf
-rename Soluciones Parcial Tema 1.pdf
-rename Soluciones Parcial Tema 1 - Examen 2.pdf
-rename Exámenes Pasados Resueltos.pdf
-rename Resumen Tema 1 - Paula Villegas.pdf
-rename Resumen Tema 1 - Paula Villanueva.pdf
-rename Libro Mancia.pdf
-rename Arquitectura de Computadores - Relación Tema 1 - Ejercicios Resueltos.pdf
-touch Tema 2.md
-rename Práctica 1 - Directivas OpenMP.pdf
-rename 
-rename Práctica 0 - Entorno de programación.pdf
-rename Práctica 2 - Claúsulas OpenMP.pdf
-rename Práctica 3 - Interacción con OpenMP y evaluación de prestaciones.pdf
-rename Práctica 4 - Código en arquitecturas ILP.pdf
 rename Referencias a lenguajes
 rename Cuaderno de la práctica 0.odt
 mkdir Archivos dados
 past
 mkdir Pruebas
-open_with thunar
 te
 term
 mkdir Graficas
-nv
 open_with google-chrome-stable
 rename Cuentas_Granada
 open_with libreoffice
 c
-open_with t nvim
 mkdir Sin clasificar
-
-copy
-cut
-paste
-delete
 Term
-terminal 
 open_with t nivm
+rename busquedabinaria_lucia.csv
+rename busquedabinaria_sergio.csv_
+rename busquedabinaria_miguel.csv
+open_with shotwell
+Trm
+open_with nautilus
+rename Practica1_parte_grupal.zip
+open_with thunar
+open_with 
+mkdir Algoritmica
+rename bucleforModificado.c
+rename sectionsModificado.c
+delete
+mkdir bp1
+make ejer1
+mkdir ejer1
+mkdir ejer2
+mkdir ejer3
+cut
+open_with
+
+rename singleModificado2.c
+nv
+abort 
+copy
+mkdir ejer5
+paste
+rename SumaVectoresC..c
+rename SumaVectoresC.c
+rename 
+rename SumaVectoresCGlobales.c
+open_with t nvim
+mkdir Práctica 2
+touch
+terminal 
