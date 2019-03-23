@@ -1,6 +1,3 @@
-rename Referencias a lenguajes
-rename Cuaderno de la práctica 0.odt
-mkdir Archivos dados
 past
 mkdir Pruebas
 te
@@ -25,7 +22,6 @@ open_with
 mkdir Algoritmica
 rename bucleforModificado.c
 rename sectionsModificado.c
-delete
 mkdir bp1
 make ejer1
 mkdir ejer1
@@ -33,7 +29,6 @@ mkdir ejer2
 mkdir ejer3
 cut
 open_with
-
 rename singleModificado2.c
 nv
 abort 
@@ -44,7 +39,12 @@ rename SumaVectoresC..c
 rename SumaVectoresC.c
 rename 
 rename SumaVectoresCGlobales.c
-open_with t nvim
 mkdir Práctica 2
 touch
+touch heap_sort.cpp
+open_with t nvim
+rename merge_sortc.cpp
+
+mkdir Musica
 terminal 
+delete

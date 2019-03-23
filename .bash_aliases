@@ -29,9 +29,6 @@ alias web="firefox"
 alias findps="ps aux | egrep"
 
 # Server aliases
-alias localssh="ssh sergio@$SERVERIP"
+alias localssh="ssh sergio@$LOCALIP"
 alias remotessh="ssh sergio@$REMOTEIP"
 alias atcssh="ssh $atc_usr@atcgrid.ugr.es"
-
-# Others
-alias mine="java -Xmx1024M -Xms1024M -jar ~/Servidor/server.jar nogui"

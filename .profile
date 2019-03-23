@@ -44,7 +44,7 @@ export TERMCMD="alacritty"
 export COLORTERM="alacritty"
 
 # SSH vars
-export SERVERIP="192.168.1.8"
+export LOCALIP="192.168.1.8"
 export REMOTEIP="sergioquijano.duckdns.org"
 export atc_usr="E2estudiante9"
 export atc_addr="$atc_usr@atcgrid.ugr.es"
