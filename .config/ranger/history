@@ -1,4 +1,3 @@
-past
 mkdir Pruebas
 te
 term
@@ -48,3 +47,4 @@ rename merge_sortc.cpp
 mkdir Musica
 terminal 
 delete
+bulkrename 
