@@ -15,11 +15,9 @@ conky
 rsync
 feh
 compton
-i3blocks
 pavucontrol
 blueman
 ranger
-rxvt-unicode
 gedit
 evince
 rsync
@@ -30,10 +28,7 @@ community/lxappearance
 rofi
 pa-applet
 nm-applet
-evince
 parole
-termite
 kdenlive
-darktable
 gimp
 alacritty

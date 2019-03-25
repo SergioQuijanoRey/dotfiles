@@ -1,10 +1,3 @@
-mkdir Pruebas
-te
-term
-mkdir Graficas
-open_with google-chrome-stable
-rename Cuentas_Granada
-open_with libreoffice
 c
 mkdir Sin clasificar
 Term
@@ -26,25 +19,32 @@ make ejer1
 mkdir ejer1
 mkdir ejer2
 mkdir ejer3
-cut
 open_with
 rename singleModificado2.c
 nv
 abort 
 copy
 mkdir ejer5
-paste
 rename SumaVectoresC..c
 rename SumaVectoresC.c
-rename 
 rename SumaVectoresCGlobales.c
 mkdir Práctica 2
 touch
 touch heap_sort.cpp
-open_with t nvim
 rename merge_sortc.cpp
 
 mkdir Musica
 terminal 
-delete
 bulkrename 
+rename 5.-Elementos de Agrupacion - Paquetes y modulos
+rename 5.-Elementos de Agrupacion - Paquetes y modulos.pdf
+cut
+paste
+rename 6.-Diagrama de clases.pdf
+rename 7.-UML_ diagramas de secuencia.pdf
+rename 
+rename 7.Diagramas de Secuencia.pdf
+open_with t 
+rename Tema 6 - UML.md
+open_with t nvim
+delete
