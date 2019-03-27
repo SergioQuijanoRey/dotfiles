@@ -1,5 +1,3 @@
-c
-mkdir Sin clasificar
 Term
 open_with t nivm
 rename busquedabinaria_lucia.csv
@@ -10,7 +8,6 @@ Trm
 open_with nautilus
 rename Practica1_parte_grupal.zip
 open_with thunar
-open_with 
 mkdir Algoritmica
 rename bucleforModificado.c
 rename sectionsModificado.c
@@ -32,19 +29,22 @@ mkdir Práctica 2
 touch
 touch heap_sort.cpp
 rename merge_sortc.cpp
-
 mkdir Musica
-terminal 
 bulkrename 
 rename 5.-Elementos de Agrupacion - Paquetes y modulos
 rename 5.-Elementos de Agrupacion - Paquetes y modulos.pdf
-cut
-paste
 rename 6.-Diagrama de clases.pdf
 rename 7.-UML_ diagramas de secuencia.pdf
-rename 
 rename 7.Diagramas de Secuencia.pdf
 open_with t 
 rename Tema 6 - UML.md
-open_with t nvim
+rename Práctica 2 - Diagrama Clases UML.pdf
+rename 
+rename Práctica 2 - Guión.pdf
+open_with 
+
 delete
+open_with t nvim
+terminal 
+cut
+paste
