@@ -14,6 +14,7 @@ alias v="nvim"									# Useful for fast open nvim
 alias nv="nvim"									# Useful for fast open nvim
 alias dasm="objdump -d"								# Useful for disassembly
 alias getsyscall="cat /usr/include/asm/unistd_32.h | egrep "
+alias gitsubir="git add . ; git commit ; git push"
 
 # System config aliases
 alias confi3="nvim .i3/config"

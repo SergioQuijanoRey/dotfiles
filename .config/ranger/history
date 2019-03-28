@@ -1,7 +1,3 @@
-Term
-open_with t nivm
-rename busquedabinaria_lucia.csv
-rename busquedabinaria_sergio.csv_
 rename busquedabinaria_miguel.csv
 open_with shotwell
 Trm
@@ -20,7 +16,6 @@ open_with
 rename singleModificado2.c
 nv
 abort 
-copy
 mkdir ejer5
 rename SumaVectoresC..c
 rename SumaVectoresC.c
@@ -42,9 +37,14 @@ rename Práctica 2 - Diagrama Clases UML.pdf
 rename 
 rename Práctica 2 - Guión.pdf
 open_with 
+open_with t nv
+rename seguridad_definitiva.zip
+cut
+copy
+paste
+ter
 
 delete
+r
 open_with t nvim
 terminal 
-cut
-paste
