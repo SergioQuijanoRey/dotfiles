@@ -46,5 +46,5 @@ ter
 
 delete
 r
-open_with t nvim
 terminal 
+open_with t nvim
