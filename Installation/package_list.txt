@@ -1,34 +1,55 @@
-firefox
-vim
-nvim
+# Author:
+# 		Sergio Quijano Rey
+# 		sergiquijano@gmail.com
+# Description:
+# 		Package list of pacman, to install automatically
+# Version:
+# 		v1.0 - 29/03/2019: First documented version
+
+# System administration
+#===============================================================================
+yay
 sudo
 base-devel
-telegram-desktop
-community/code
-yay
-valgrind
-tree
 top
 htop
-neofetch
-conky
 rsync
+tree
+cronie
+alacritty
+
+# Programming
+#===============================================================================
+vim
+nvim
+community/code
+gedit
+valgrind
+ranger
+
+# Media
+#===============================================================================
+gimp
+obs-studio
+kdenlive
+vlc
+
+# i3 components
+#===============================================================================
+conky
 feh
 compton
-pavucontrol
+rofi
 blueman
-ranger
-gedit
-evince
-rsync
-cronie
-obs-studio
 aranrd
 community/lxappearance
-rofi
-pa-applet
-nm-applet
-parole
-kdenlive
-gimp
-alacritty
+neofetch
+pavucontrol
+pa-applet		# Volume control (pavucontrol)
+nm-applet		# Network manager
+
+# Others
+#===============================================================================
+firefox
+telegram-desktop
+evince

@@ -1,4 +1,17 @@
+# Author:
+# 		Sergio Quijano Rey
+# 		sergiquijano@gmail.com
+# Description:
+# 		Package list of AUR, to install automatically
+# Version:
+# 		v1.0 - 29/03/2019: First documented version
+
+# System administration
+#===============================================================================
+gotop
+
+# Others
+#===============================================================================
 whatsie
 spotify
-gotop
 google-chrome
