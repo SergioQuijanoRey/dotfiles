@@ -1,23 +1,30 @@
 #!/bin/bash
 
-# Variables basicas
+# Author:
+# 		Sergio Quijano Rey
+# 		sergiquijano@gmail.com
+# Description:
+# 		Setups my whole system
+# Version:
+# 		v1.0 - 29/03/2019: First documented version
+
+# Script Parameters
 home="/home/sergio"
 dotfiles="$home/GitProjects/dotfiles"
 packages="$dotfiles/Installation/packages.sh"
 
-# Elimino los archivos originales
+# Original files are removed
 rm -f $home/.bashrc
 rm -f $home/.bash_aliases
 rm -f $home/.profile
-rm -f $home/.Xresources
 rm -f $home/.vimrc
 rm -rf $home/.i3
 rm -rf $home/.config/ranger
 rm -rf $home/.config/nvim
-rm -rf $home/.config/termite
+rm -rf $home/.cofig/alacritty
 rm -rf $home/bin
 
-# Creo los enlaces simbolicos
+# Symbolic links are set
 echo "Home: $home"
 echo "DOTFILES: $dotfiles"
 
@@ -28,9 +35,9 @@ do
 	ln -s $origin $dest
 done
 
-# Añado el crontab
+# Custom crontab is added
 sudo crontab -u sergio $dotfiles/.crontab
 
-# Instalo los programas
+# Packages are installed
 chmod u+x $packages
 $packages
