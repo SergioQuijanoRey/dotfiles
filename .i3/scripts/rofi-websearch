@@ -18,5 +18,5 @@
 
 # set your browser (uncomment if needed, some GUI does not detect browser variable)
 BROWSER=firefox
-rofi_theme="/home/sergio/.i3/rofithemes/flat-blue.rasi"
+rofi_theme="/home/sergio/.i3/rofithemes/side.rasi"
 surfraw -browser=$BROWSER $(sr -elvi | awk -F'-' '{print $1}' | sed '/:/d' | awk '{$1=$1};1' | rofi -config $rofi_theme -kb-row-select "Tab" -kb-row-tab "Control+space" -dmenu -mesg ">>> Tab = Autocomplete" -i -p "rofi-surfraw-websearch: ")
