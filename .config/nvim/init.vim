@@ -25,7 +25,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 	" Autocompleters
 	Plug 'Shougo/deoplete.nvim'						" Autocomplete
-    Plug 'davidhalter/jedi-vim' 					" <ctr><space> for autocompletion
 	
 	" Linters
 	Plug 'neomake/neomake'							" Linting by typing :Neomake
