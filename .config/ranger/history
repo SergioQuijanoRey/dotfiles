@@ -1,50 +1,50 @@
-rename bucleforModificado.c
-rename sectionsModificado.c
-mkdir bp1
-make ejer1
-mkdir ejer1
-mkdir ejer2
-mkdir ejer3
-open_with
-rename singleModificado2.c
-nv
-abort 
-mkdir ejer5
-rename SumaVectoresC..c
-rename SumaVectoresC.c
-rename SumaVectoresCGlobales.c
-mkdir Práctica 2
-touch
-touch heap_sort.cpp
-rename merge_sortc.cpp
-mkdir Musica
-bulkrename 
-rename 5.-Elementos de Agrupacion - Paquetes y modulos
-rename 5.-Elementos de Agrupacion - Paquetes y modulos.pdf
-rename 6.-Diagrama de clases.pdf
-rename 7.-UML_ diagramas de secuencia.pdf
-rename 7.Diagramas de Secuencia.pdf
-open_with t 
-rename Tema 6 - UML.md
 rename Práctica 2 - Diagrama Clases UML.pdf
 rename Práctica 2 - Guión.pdf
-open_with 
 open_with t nv
 rename seguridad_definitiva.zip
-cut
 ter
-delete
 r
-open_with firefox
-
 mkdir ejer10
 cop
 rename SumaVectoresFor.c
-rename 
 rename SumaVectoresSections.c
+rename SumaVectoresLineal.c
+open_with t n
+open_with firefox
+open_with 
+open_with google-chrome-stable
+mkdir Modelos Matematicos
+mkdir Transparencias
+mkdir Relaciones de ejercicios
+rename Relación 1.pdf
+rename Relación 2.pdf
+rename Transparencias - Tema 1.pdf
+rename 
+rename Transparencias - Tema 2.pdf
+touch Tema 7 - Herencia.md
+d
+rename functions.h
+rename merge.cpp
+touh
+m
+open_with jupyter
+open_with j
+open_with jupyter-notebook
+mkdir Graficas
+touch Errores.md
+cut
+rename merge_iter_funcion.png
+rename transpose_dyv.csv
+open_with libreoffice
+touch arreglar.py
+terminal 
+open_with t nvim
+rename Práctica 2 - Cuaderno.odt
+mkdir Codigos
+mkdir bp2
+
+open_with
+open_with nvim
 copy
 paste
-rename SumaVectoresLineal.c
-terminal 
-open_with t n
-open_with t nvim
+delete
