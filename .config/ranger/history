@@ -1,7 +1,3 @@
-rename Práctica 2 - Diagrama Clases UML.pdf
-rename Práctica 2 - Guión.pdf
-open_with t nv
-rename seguridad_definitiva.zip
 ter
 r
 mkdir ejer10
@@ -37,14 +33,18 @@ rename merge_iter_funcion.png
 rename transpose_dyv.csv
 open_with libreoffice
 touch arreglar.py
-terminal 
-open_with t nvim
 rename Práctica 2 - Cuaderno.odt
 mkdir Codigos
 mkdir bp2
-
 open_with
 open_with nvim
+terminal 
+touch pruebas.txt
+open_with t nvim
 copy
+mkdir 
+find .ga
+
+mkdir PS2Games
 paste
 delete
