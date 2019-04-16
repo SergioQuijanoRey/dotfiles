@@ -8,10 +8,10 @@
 
 # System administration
 #===============================================================================
+git
 yay
 sudo
 base-devel
-top
 htop
 rsync
 tree
@@ -37,18 +37,17 @@ vlc
 
 # i3 components
 #===============================================================================
-i3-wm
-conky
-feh
-compton
-rofi
-blueman
-aranrd
-community/lxappearance
-neofetch
-pavucontrol
-pa-applet		# Volume control (pavucontrol)
-nm-applet		# Network manager
+i3-wm					# The preferred wm
+feh						# To set the background
+compton					# i3 compositor
+rofi					# Program launcher
+blueman					# To use bluetooth
+aranrd					# To control multiple displays
+community/lxappearance	# To set the theme
+neofetch				# To show system information
+pavucontrol				# Volume control 
+pa-applet				# Volume control (pavucontrol)
+nm-applet				# Network manager
 
 # Others
 #===============================================================================
