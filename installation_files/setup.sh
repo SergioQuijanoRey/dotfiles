@@ -45,7 +45,7 @@ ln -s -f $dotfiles/.bashrc $home/.bashrc
 ln -s -f $doftiles/.bash_profile $home/.bash_profile
 ln -s -f $doftiles/.bash_aliases $home/.bash_aliases
 ln -s -f $dotfiles/.vimrc $home/.vimrc
-ln -s -f $dotfiles/.config/nvim $home/config/nvim
-ln -s -f $dotfiles/.config/alacritty $home/config/alacritty
-ln -s -f $dotfiles/.config/ranger $home/config/ranger
+ln -s -f $dotfiles/.config/nvim $home/.config/nvim
+ln -s -f $dotfiles/.config/alacritty $home/.config/alacritty
+ln -s -f $dotfiles/.config/ranger $home/.config/ranger
 ln -s -f $dotfiles/bin $home/bin
