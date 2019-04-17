@@ -40,11 +40,11 @@ open_with
 open_with nvim
 terminal 
 touch pruebas.txt
-open_with t nvim
-copy
 mkdir 
 find .ga
-
 mkdir PS2Games
-paste
 delete
+
+copy
+paste
+open_with t nvim

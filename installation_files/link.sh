@@ -24,6 +24,7 @@ echo "Executing linker!"
 ln -s -f $dotfiles/.bashrc $home/.bashrc
 ln -s -f $doftiles/.bash_profile $home/.bash_profile
 ln -s -f $doftiles/.bash_aliases $home/.bash_aliases
+ln -s -f $dotfiles/.bash_functions $home/.bash_aliases
 ln -s -f $dotfiles/.vimrc $home/.vimrc
 ln -s -f $dotfiles/touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
