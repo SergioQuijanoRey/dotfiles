@@ -15,16 +15,15 @@ home="/home/sergio"
 base_dir="$home/GitProjects/dotfiles"
 dotfiles="$base_dir/config_files"
 package_installer="$base_dir/installation_files/packages.sh"
+linker="$base_dir/installation_files/link.sh"
 
-ln -s -f $dotfiles/.i3 $home/.i3
-ln -s -f $dotfiles/.bashrc $home/.bashrc
-ln -s -f $doftiles/.bash_profile $home/.bash_profile
-ln -s -f $doftiles/.bash_aliases $home/.bash_aliases
-ln -s -f $dotfiles/.vimrc $home/.vimrc
-ln -s -f $dotfiles/.config/nvim $home/.config/nvim
-ln -s -f $dotfiles/.config/alacritty $home/.config/alacritty
-ln -s -f $dotfiles/.config/ranger $home/.config/ranger
-ln -s -f $dotfiles/bin $home/bin
+# Script process
+#===============================================================================
 
+# Linking all the files
+chmod u+x $linker
+$linker
+
+# Installing all the packages
 chmod u+x $package_installer
 $package_installer
