@@ -1,0 +1,63 @@
+# *****Yosa Max Icon Theme*****
+
+## v1.0.0 (Oct 23 2017)
+### The first release of Yosa Mix Icon Theme.
+
+## v1.0.1 (Dec 31 2017)
+### Minor fix to the network manager icon on the panel when using dial-up/broadband connection (changed the icon so it doesn't looked transparent).
+
+## v1.2 (Jul 08 2018)
+### From now on, "Yosa Mix" will continue as "Yosa Max", as I'm trying to make it more "original" by adding more and more new icons :).
+
+### Changed some System Settings icons : preferences-desktop, preferences-desktop-plasma, preferences-desktop-theme, preferences-desktop-icons, preferences-desktop-activities, preferences-desktop-effects, plasma, plasma-media-center; Changed some devices icons : audio-headphones, audio-input-microphones, audio-speakers, computer, computer-laptop; Changed Places : user-desktop; etc.
+
+### More new icons will be coming soon (hopefully) as I'm a bit busy with my work right now, until then keep the love by using this icon theme ;))
+
+## v1.3 (Jul 31 2018)
+### Changed into new icons : chrome, chrome-beta, chrome-dev, chrome-unstable, chromium, google-chrome-symbolic, firefox-symbolic, firefox, firefox-beta, audacious, cantata, uget, bluetooth, bluetooth-inactive, preferences-system-bluetooth, network-manager, preferences-desktop-display, input-touchpad, android-device, multimedia-player, video-television, emblem-web, preferences-desktop-display-symbolic, web-browser-symbolic, preferences-system-privacy-symbolic, gitg-symbolic, etc.
+
+### Improved/modified some "places" and "devices" icons.
+
+
+## v1.4 (Aug 16 2018)
+### Changed into new icons : gnome-tweaks, web-browser, filezilla, help, system-help, start-here-gnome, remote-desktop, yast-remote, chrome-remote-desktop, preferences-desktop-remote-desktop, krdc, kuickshow, kate, kwrite.
+
+### Improved/modified : uget, cantata, some "places/16x16" icons.
+
+
+## v1.5 (Mar 7 2019)
+### Fresh update of 2019!
+### After quite a long time this is my first update in 2019. This time I redesigned/reworked many existing icons to make the design more consistent across the whole system. Other than that my main objective now is to simplify the icons, as an effort to make the set looks cleaner and straight to the point.
+
+### Redesigned/changed into new icons :
+
+### Apps : kleopatra, kate, kwrite, gnome-tweaks, tagaini-jisho,okular, libreoffice-main, libreoffice-base, libreoffice-calc, libreoffice-draw, libreoffice-impress, libreoffice-template, libreoffice-math, libreoffice-writer, kget, gparted, preferences-system-sharing, preferences-desktop-display, preferences-desktop-peripherals, preferences-system-notifications, preferences-desktop-launch-feedback, system-software-update, preferences-system-time, preferences-desktop-keyboard, preferences-system-sound, firefox, firefox-trunk, yast-sound, applications-multimedia, applications-education, preferences-system-power-management, preferences-desktop-icons, plasma-media-center, system-help, preferences-desktop-effects, preferences-desktop-activities, preferences-desktop-theme, preferences-desktop-plasma, plasma, preferences-desktop, applications-internet, preferences-desktop-default-applications, preferences-system-network, bluetooth, preferences-system-session-services, kget, preferences-system-network-sharing, yakuake, utilities-log-viewer, yast-users, preferences-desktop-user, etc.
+
+### Actions : document-decrypt, document-encrypted, dialog-scripts, configure-toolbars, bitmap-trace, sort-name.
+
+### Devices : audio-headphones, audio-input-microphone,audio-speakers, battery, computer, computer-laptop, cpu, input-touchpad, input-tablet, smartphone, tablet.
+
+### Improved/Fixed :
+### Apps : gimp, inkscape, krita, chromium, google-chrome, usb-creator, yandex-browser, audacious, kdenlive, system-run, ktorrent, kwalletmanager, ksysguard, ark, ibus, uget, preferences-desktop-display-color, preferences-desktop-font, preferences-system, preferences-system-login, etc.
+
+
+## v1.6 (Mar 28 2019)
+### New design for mimetype icons. Almost all mimetype icons has been changed to a new design.
+
+### Redesigned/changed into new icons :
+
+### Apps : octopi, octopi_red, octopi_yellow, okular, plasma-media-center, theme-config, preferences-system-sound, preferences-system-sharing, syste-help, stock_keyring, password, utilities-energy-monitor, etc.
+
+### Actions : dialog-messages, view-calendar-month, view-calendar-week, view-calendar-list, view-calendar-special-occasion, view-calendar-upcoming-events, jump-today, etc.
+
+### Status : dialog-password, dialog-question, firewall-applet, security-high, security-medium, security-low.
+
+
+## v1.7 (Apr 16 2019)
+### Added a dark variant.
+
+### Redesigned/changed "places/16x16" icons into glyph style.
+
+### Added more mimetype icons, Apps : openra-ra, openra-d2k, openra-cnc.
+
+### Fixed missing symlink.

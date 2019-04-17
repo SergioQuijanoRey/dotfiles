@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg13"
+   version="1.1"
+   width="48"
+   height="48">
+  <metadata
+     id="metadata19">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs17">
+    <linearGradient
+       y2="501.2316"
+       y1="542.79797"
+       x2="409.93887"
+       x1="409.57144"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.93164067,0,0,1.0102253,-410.94685,-504.33804)"
+       id="a-6">
+      <stop
+         id="stop10"
+         stop-color="#197cf1"
+         offset="0" />
+      <stop
+         id="stop12"
+         stop-color="#20bcfa"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="501.2316"
+       x2="409.93887"
+       y1="542.79797"
+       x1="409.57144"
+       gradientTransform="matrix(0.93164058,0,0,1.0102252,-415.82818,-514.90994)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient880"
+       xlink:href="#a-7" />
+    <linearGradient
+       y2="501.2316"
+       y1="542.79797"
+       x2="409.93887"
+       x1="409.57144"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0523327,0,0,1.0276135,-72.567725,-8.693152)"
+       id="a-7">
+      <stop
+         id="stop2-5"
+         stop-color="#197cf1"
+         offset="0" />
+      <stop
+         id="stop4-3"
+         stop-color="#20bcfa"
+         offset="1" />
+    </linearGradient>
+  </defs>
+  <linearGradient
+     y2="502.9836729252"
+     y1="544.227537992278"
+     x2="409.537251898256"
+     x1="409.537251898256"
+     gradientUnits="userSpaceOnUse"
+     id="a">
+    <stop
+       id="stop2"
+       stop-color="#0a80fd"
+       offset="0" />
+    <stop
+       id="stop4"
+       stop-color="#56c5fa"
+       offset="1" />
+  </linearGradient>
+  <path
+     id="rect4148-2"
+     d="m 2.7586205,3.5172413 c -0.4203047,0 -0.7586207,0.3383449 -0.7586207,0.7586207 v 38.689655 0.758621 c 0,0.420276 0.338316,0.758621 0.7586207,0.758621 H 3.5172412 45.241379 C 45.661684,44.482759 46,44.144414 46,43.724138 V 4.275862 C 46,3.8555862 45.661684,3.5172413 45.241379,3.5172413 H 3.5172412 Z"
+     style="fill:#34495e;fill-opacity:1;stroke:none;stroke-width:0.75862068" />
+  <g
+     style="fill:#ff5555"
+     transform="matrix(0.98892453,0,0,0.98892453,62.738697,6.745991)"
+     id="g873">
+    <circle
+       style="opacity:1;fill:#ff5555;fill-opacity:1;stroke:none;stroke-opacity:1"
+       id="path4155-0"
+       cx="-20.3729"
+       cy="-0.7965467"
+       r="1" />
+    <circle
+       style="opacity:1;fill:#ff5555;fill-opacity:1;stroke:none;stroke-opacity:1"
+       id="circle858"
+       cx="-23.75263"
+       cy="-0.7965467"
+       r="1" />
+    <circle
+       style="opacity:1;fill:#ff5555;fill-opacity:1;stroke:none;stroke-opacity:1"
+       id="circle860"
+       cx="-27.204269"
+       cy="-0.86845589"
+       r="1" />
+    <circle
+       r="1"
+       cy="-0.7965467"
+       cx="-27.13236"
+       id="circle856"
+       style="opacity:1;fill:#ff5555;fill-opacity:1;stroke:none;stroke-opacity:1" />
+  </g>
+  <g
+     transform="translate(0,10.571935)"
+     id="g1052">
+    <g
+       transform="translate(59.186439)"
+       id="g1062">
+      <rect
+         rx="1.6334354"
+         style="fill:url(#linearGradient880);stroke-width:0.99346393"
+         height="34.347656"
+         ry="1.6334354"
+         width="40.992188"
+         x="-55.682533"
+         y="-1.9195915"
+         id="rect7-5" />
+      <path
+         style="fill:#def3fe;stroke-width:1"
+         d="m -37.581147,5.6610167 h 4.789411 v 7.1985153 h 7.198515 v 4.789411 h -7.198515 v 7.198515 h -4.789411 v -7.198515 h -7.198514 v -4.789411 h 7.198514 m 0,-7.1985153"
+         id="path17-9" />
+    </g>
+  </g>
+</svg>

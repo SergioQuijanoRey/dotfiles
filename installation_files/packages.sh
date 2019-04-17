@@ -9,11 +9,14 @@
 # 		v1.0 - 29/03/2019: First documented version
 
 # Script parameters
+#===============================================================================
 base_dir="/home/sergio/GitProjects/dotfiles/installation_files/"
 pacman_list="$base_dir/package_list.txt"
 aur_list="$base_dir/aur_list.txt"
 aur_manager="yay"
 
+# Script process
+#===============================================================================
 # System update
 echo "Uptading and upgrading the system"
 sudo pacman -Syyu

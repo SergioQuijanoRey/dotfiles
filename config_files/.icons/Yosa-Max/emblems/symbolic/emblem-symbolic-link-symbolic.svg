@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 22 22"
+   version="1.1"
+   id="svg4359"
+   height="22"
+   width="22">
+  <defs
+     id="defs4361" />
+  <metadata
+     id="metadata4364">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-26)"
+     id="layer1">
+    <rect
+       ry="3"
+       y="29"
+       x="2"
+       height="16"
+       width="18"
+       id="rect4152"
+       style="opacity:1;fill:#0193d8;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       ry="2"
+       y="30"
+       x="3"
+       height="14"
+       width="16.000002"
+       id="rect4154"
+       style="opacity:1;fill:#19b5fe;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       id="path4180"
+       transform="translate(0,26)"
+       d="M 5 8 C 4.446 8 4 8.446 4 9 L 4 13 C 4 13.554 4.446 14 5 14 L 9 14 C 9.554 14 10 13.554 10 13 L 10 12 L 12 12 L 12 13 C 12 13.554 12.446 14 13 14 L 17 14 C 17.554 14 18 13.554 18 13 L 18 9 C 18 8.446 17.554 8 17 8 L 13 8 C 12.446 8 12 8.446 12 9 L 12 10 L 10 10 L 10 9 C 10 8.446 9.554 8 9 8 L 5 8 z M 5 9.0429688 L 9 9.0429688 L 9 10 C 8.446 10 8 10.446 8 11 C 8 11.554 8.446 12 9 12 L 9 13.042969 L 5 13.042969 L 5 9.0429688 z M 13 9.0429688 L 17 9.0429688 L 17 13.042969 L 13 13.042969 L 13 12 C 13.554 12 14 11.554 14 11 C 14 10.446 13.554 10 13 10 L 13 9.0429688 z "
+       style="opacity:1;fill:#ecf0f1;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   version="1.1"
+   height="64"
+   id="svg18"
+   sodipodi:docname="start-here-kde.svg"
+   inkscape:version="0.92.2 2405546, 2018-03-11">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="699"
+     id="namedview20"
+     showgrid="false"
+     inkscape:zoom="7.609375"
+     inkscape:cx="32"
+     inkscape:cy="32"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs5455" />
+  <metadata
+     id="metadata5458">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="matrix(1 0 0 1 -384.57143 -483.798)">
+    <flowRoot
+       line-height="125%"
+       style="font-size:32.500004;font-family:sans-serif"
+       id="flowRoot4170">
+      <flowRegion
+         id="flowRegion4172">
+        <rect
+           width="87.75001"
+           x="452.32144"
+           y="489.79807"
+           height="48.750004"
+           id="rect4174" />
+      </flowRegion>
+      <flowPara
+         id="flowPara4176">Plasm</flowPara>
+    </flowRoot>
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#3b3f42;fill-rule:evenodd"
+       id="path4422"
+       d="m 425.57143,489.29799 -6,6 11,11 -11,11 6,6 17,-17 z" />
+    <rect
+       ry="3.12501"
+       width="6.2500191"
+       x="400.32141"
+       y="490.29797"
+       rx="3.12501"
+       height="6.2500191"
+       style="fill:#fa8865"
+       id="rect4119" />
+    <rect
+       ry="4.4999952"
+       width="9.00002"
+       x="390.57141"
+       y="509.7988"
+       rx="4.4999952"
+       height="8.9999914"
+       style="fill:#63c605"
+       id="rect4308" />
+    <rect
+       ry="6.4999981"
+       width="12.999995"
+       x="403.57144"
+       y="529.29803"
+       rx="6.4999981"
+       height="12.999995"
+       style="fill:#1b89f3"
+       id="rect4312" />
+  </g>
+</svg>
