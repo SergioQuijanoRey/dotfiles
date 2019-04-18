@@ -14,13 +14,17 @@ home="/home/sergio"
 base_dir="$home/GitProjects/dotfiles"
 dotfiles="$base_dir/config_files"
 
+echo "home: $home"
+echo "base dir: $base_dir"
+echo "dotfiles: $dotfiles"
+
 # Script process
 #===============================================================================
 echo "Executing linker!"
 
 # Linking config files
 ln -s -v -f $dotfiles/.bashrc $home/.bashrc
-ln -s -v -f $doftiles/.bash_profile $home/.bash_profile
+ln -s -v -f $dotfiles/.bash_profile $home/.bash_profile
 ln -s -v -f $doftiles/.bash_aliases $home/.bash_aliases
 ln -s -v -f $dotfiles/.bash_functions $home/.bash_functions
 ln -s -v -f $dotfiles/.vimrc $home/.vimrc
