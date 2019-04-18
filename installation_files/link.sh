@@ -19,21 +19,21 @@ dotfiles="$base_dir/config_files"
 echo "Executing linker!"
 
 # Linking config files
-ln -s -f $dotfiles/.bashrc $home/.bashrc
-ln -s -f $doftiles/.bash_profile $home/.bash_profile
-ln -s -f $doftiles/.bash_aliases $home/.bash_aliases
-ln -s -f $dotfiles/.bash_functions $home/.bash_functions
-ln -s -f $dotfiles/.vimrc $home/.vimrc
-ln -s -f $dotfiles/touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+ln -s -v -f $dotfiles/.bashrc $home/.bashrc
+ln -s -v -f $doftiles/.bash_profile $home/.bash_profile
+ln -s -v -f $doftiles/.bash_aliases $home/.bash_aliases
+ln -s -v -f $dotfiles/.bash_functions $home/.bash_functions
+ln -s -v -f $dotfiles/.vimrc $home/.vimrc
+ln -s -v -f $dotfiles/touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
 # Linking folders
-ln -s -f $dotfiles/.i3 $home/.i3
-ln -s -f $dotfiles/.config/nvim $home/.config/nvim
-ln -s -f $dotfiles/.config/alacritty $home/.config/alacritty
-ln -s -f $dotfiles/.config/ranger $home/.config/ranger
-ln -s -f $dotfiles/bin $home/bin
-ln -s -f $dotfiles/.icons $home/.icons
-ln -s -f $dotfiles/.fonts $home/.fonts
+ln -s -v -f $dotfiles/.i3 $home/.i3
+ln -s -v -f $dotfiles/.config/nvim $home/.config/nvim
+ln -s -v -f $dotfiles/.config/alacritty $home/.config/alacritty
+ln -s -v -f $dotfiles/.config/ranger $home/.config/ranger
+ln -s -v -f $dotfiles/bin $home/bin
+ln -s -v -f $dotfiles/.icons $home/.icons
+ln -s -v -f $dotfiles/.fonts $home/.fonts
 
 echo "================================================================================"
 echo "Linker executed succesfully"
