@@ -31,13 +31,13 @@ ln -s -v -f $dotfiles/.vimrc $home/.vimrc
 ln -s -v -f $dotfiles/touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
 # Linking folders
-ln -s -v -f -T $dotfiles/.i3 $home/.i3
-ln -s -v -f -T $dotfiles/.config/nvim $home/.config/nvim
-ln -s -v -f -T $dotfiles/.config/alacritty $home/.config/alacritty
-ln -s -v -f -T $dotfiles/.config/ranger $home/.config/ranger
-ln -s -v -f -T $dotfiles/bin $home/bin
-ln -s -v -f -T $dotfiles/.icons $home/.icons
-ln -s -v -f -T $dotfiles/.fonts $home/.fonts
+ln -s -n -v -f -T $dotfiles/.i3 $home/.i3
+ln -s -n -v -f -T $dotfiles/.config/nvim $home/.config/nvim
+ln -s -n -v -f -T $dotfiles/.config/alacritty $home/.config/alacritty
+ln -s -n -v -f -T $dotfiles/.config/ranger $home/.config/ranger
+ln -s -n -v -f -T $dotfiles/bin $home/bin
+ln -s -n -v -f -T $dotfiles/.icons $home/.icons
+ln -s -n -v -f -T $dotfiles/.fonts $home/.fonts
 
 echo "================================================================================"
 echo "Linker executed succesfully"
