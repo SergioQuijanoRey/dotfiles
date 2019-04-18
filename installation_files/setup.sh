@@ -16,6 +16,7 @@ base_dir="$home/GitProjects/dotfiles"
 dotfiles="$base_dir/config_files"
 package_installer="$base_dir/installation_files/packages.sh"
 linker="$base_dir/installation_files/link.sh"
+git_installer="$base_dir/installation_files/git.sh"
 
 # Script process
 #===============================================================================
@@ -27,3 +28,7 @@ $linker
 # Installing all the packages
 chmod u+x $package_installer
 $package_installer
+
+# Cloning github repos
+chmod u+x $git_installer
+$git_installer
