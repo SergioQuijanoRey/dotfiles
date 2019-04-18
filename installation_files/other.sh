@@ -10,3 +10,8 @@
 
 # Install vim plug for neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Install neovim dependencies
+gem install neovim
+sudo pip install --upgrade --user pynvim
+sudo pip2 install --upgrade --user pynvim

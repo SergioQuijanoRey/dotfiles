@@ -1,1 +1,0 @@
-../Yosa-Max/Credits.md
