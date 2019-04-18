@@ -17,6 +17,7 @@ dotfiles="$base_dir/config_files"
 package_installer="$base_dir/installation_files/packages.sh"
 linker="$base_dir/installation_files/link.sh"
 git_installer="$base_dir/installation_files/git.sh"
+other_installer="$base_dir/installation_files/other.sh"
 
 # Script process
 #===============================================================================
@@ -32,3 +33,7 @@ $package_installer
 # Cloning github repos
 chmod u+x $git_installer
 $git_installer
+
+# Final things
+chmod u+x $other_installer
+$other_installer
