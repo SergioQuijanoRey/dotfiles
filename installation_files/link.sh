@@ -8,6 +8,21 @@
 # Version:
 # 		v1.0 - 17/04/2019: First documented version
 
+# Script functions
+#===============================================================================
+# Description:
+# 		Creates a link to a dir
+# 		If the dir already exists, it creates a backup of it and then makes the link
+# Parameters:
+# 		$1: the absolute path to the source dir
+# 		$2: the absolute path to the destination dir
+# 		$3: the backup suffix (~ by default)
+func link_dir(){
+		echo $1
+		echo $2
+		echo $3
+}
+
 # Script parameters
 #===============================================================================
 home="/home/sergio"
@@ -31,13 +46,13 @@ ln -s -v -f $dotfiles/.vimrc $home/.vimrc
 ln -s -v -f $dotfiles/touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
 # Linking folders
-ln -s -n -v -f -T $dotfiles/.i3 $home/.i3
-ln -s -n -v -f -T $dotfiles/.config/nvim $home/.config/nvim
-ln -s -n -v -f -T $dotfiles/.config/alacritty $home/.config/alacritty
-ln -s -n -v -f -T $dotfiles/.config/ranger $home/.config/ranger
-ln -s -n -v -f -T $dotfiles/bin $home/bin
-ln -s -n -v -f -T $dotfiles/.icons $home/.icons
-ln -s -n -v -f -T $dotfiles/.fonts $home/.fonts
+link_dir $dotfiles/.i3 $home/.i3
+link_dir $dotfiles/.config/nvim $home/.config/nvim
+link_dir $dotfiles/.config/alacritty $home/.config/alacritty
+link_dir $dotfiles/.config/ranger $home/.config/ranger
+link_dir $dotfiles/bin $home/bin
+link_dir $dotfiles/.icons $home/.icons
+link_dir $dotfiles/.fonts $home/.fonts
 
 echo "================================================================================"
 echo "Linker executed succesfully"
