@@ -17,7 +17,7 @@
 # 		$1: the absolute path to the source dir
 # 		$2: the absolute path to the destination dir
 # 		$3: the backup suffix (~ by default)
-func link_dir(){
+func link_dir{
 		echo $1
 		echo $2
 		echo $3
