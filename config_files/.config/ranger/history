@@ -1,4 +1,3 @@
-mkdir ejer10
 cop
 rename SumaVectoresFor.c
 rename SumaVectoresSections.c
@@ -43,8 +42,9 @@ find .ga
 mkdir PS2Games
 delete
 
-open_with t nvim
 find .bash_f
 copy
 past
 paste
+touch Makefile
+open_with t nvim

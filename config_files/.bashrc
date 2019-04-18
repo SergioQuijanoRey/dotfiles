@@ -138,4 +138,4 @@ change_prompt(){
 }
 
 # Importo mis funciones
-source .bash_functions
+source ~/.bash_functions
