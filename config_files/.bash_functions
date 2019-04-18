@@ -41,3 +41,8 @@ nvf(){
 		file=$(fzf)
 		nvim "$file"
 }
+
+# Practicas ATC
+change_prompt(){
+	export PS1="SergioQuijanoRey \u@\h:\w] \D{%F %A}\n$"
+}

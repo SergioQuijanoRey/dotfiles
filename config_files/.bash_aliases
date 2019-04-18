@@ -15,6 +15,7 @@ alias nv="nvim"									# Useful for fast open nvim
 alias dasm="objdump -d"								# Useful for disassembly
 alias getsyscall="cat /usr/include/asm/unistd_32.h | egrep "
 alias gitsubir="git add . ; git commit ; git push"
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # System config aliases
 alias confi3="nvim .i3/config"
@@ -28,6 +29,8 @@ alias disksize="du -d0 -h"
 alias release="lsb_release -a"
 alias web="firefox"
 alias findps="ps aux | egrep"
+alias ll='ls -alF'
+alias la='ls -A'
 
 # Server aliases
 alias localssh="ssh sergio@$LOCALIP"
