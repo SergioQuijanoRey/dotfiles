@@ -59,6 +59,7 @@ link_dir $dotfiles/.config/ranger $home/.config/ranger "~"
 link_dir $dotfiles/bin $home/bin "~" 
 link_dir $dotfiles/.icons $home/.icons "~" 
 link_dir $dotfiles/.fonts $home/.fonts "~"
+link_dir $dotfiles/.games $home/.games "~"
 
 echo "================================================================================"
 echo "Linker executed succesfully"
