@@ -1,4 +1,3 @@
-cop
 rename SumaVectoresFor.c
 rename SumaVectoresSections.c
 rename SumaVectoresLineal.c
@@ -35,7 +34,6 @@ mkdir Codigos
 mkdir bp2
 open_with
 open_with nvim
-terminal 
 touch pruebas.txt
 mkdir 
 find .ga
@@ -48,3 +46,5 @@ past
 paste
 touch Makefile
 open_with t nvim
+mkdir .games
+terminal 
