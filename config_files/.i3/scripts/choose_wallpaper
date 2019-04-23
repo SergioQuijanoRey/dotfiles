@@ -64,7 +64,7 @@ def list_options(opts):
         print("\t{}".format(opt))
 
 # Scripts parameters
-img_dir = "/home/sergio/GitProjects/dotfiles/backgrounds"
+img_dir = "/home/sergio/GitProjects/dotfiles/config_files/backgrounds"
 helptext = ""
 helptext = helptext + "How to use:\n"
 helptext = helptext + "\tNo parameters: choose a random wallpaper\n"
