@@ -53,6 +53,7 @@ pa-applet				# Volume control (pavucontrol)
 nm-applet				# Network manager
 scrot					# For locking the screen
 i3lock					# For locking the screen
+xfce4-screenshooter
 
 # Others
 #===============================================================================

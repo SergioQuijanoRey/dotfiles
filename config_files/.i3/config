@@ -216,7 +216,7 @@ bindsym $mod+x exec lockscreen
 bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'Shutdown system?' -b 'Yes' 'shutdown -h now'"
 bindsym $mod+Shift+n exec alacritty --title ranger -e ranger
 bindsym $mod+Shift+b exec blueman-applet
-bindsym Print exec xfce4-screenshooter #gnome-screenshoot
+bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to left
 bindsym $mod+Shift+g exec rofi-websearch
 bindsym $mod+t exec choose_wallpaper 
