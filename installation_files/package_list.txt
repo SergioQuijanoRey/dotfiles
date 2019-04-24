@@ -36,6 +36,7 @@ gimp
 obs-studio
 kdenlive
 vlc
+playerctl
 
 # i3 components
 #===============================================================================
