@@ -44,12 +44,17 @@ let mapleader = ","
 "==============================================================================
 set autoindent															" Sets autoindent
 set smartindent															" Set smartindent
-set smarttab															" Set smarttab
-set tabstop=4															" Visually, 4 spaces
 set incsearch															" Shows results while searching
 set wildmenu															" Tab autocomplete in command mode
 set backspace=indent,eol,start											" Normal backspace (for VI specially)
 set mouse=n																" Allow mouse control
+
+" Four spaces instead of tab
+filetype plugin indent on
+set smarttab															" Set smarttab
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " Fast movement
 map <C-Down> 3j			
@@ -79,7 +84,6 @@ set number																	" Show numbers
 syntax enable																" Show syntax
 syntax on																	" Show syntax 
 filetype on																	" Checks automatically for filetype
-filetype indent on															" Identation dependent of filetype
 filetype plugin on															" Plugins dependent of filetype
 set hlsearch																" Higlights what we searched
 set laststatus=2															" For the lightline plugin
