@@ -1,0 +1,103 @@
+[15:38:58] [Client thread/INFO]: Setting user: Demonscript
+[15:39:02] [Client thread/INFO]: LWJGL Version: 3.2.1 build 12
+[15:39:06] [Client thread/WARN]: ERROR : Couldn't load Narrator library : Unable to load library 'fliteWrapper': Native library (linux-x86-64/libfliteWrapper.so) not found in resource path (/home/sergio/.minecraft/libraries/com/mojang/laulib/1.0/laulib-1.0.jar:/home/sergio/.minecraft/libraries/com/mojang/patchy/1.1/patchy-1.1.jar:/home/sergio/.minecraft/libraries/oshi-project/oshi-core/1.1/oshi-core-1.1.jar:/home/sergio/.minecraft/libraries/net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar:/home/sergio/.minecraft/libraries/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar:/home/sergio/.minecraft/libraries/com/ibm/icu/icu4j-core-mojang/51.2/icu4j-core-mojang-51.2.jar:/home/sergio/.minecraft/libraries/com/mojang/javabridge/1.0.22/javabridge-1.0.22.jar:/home/sergio/.minecraft/libraries/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/home/sergio/.minecraft/libraries/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final.jar:/home/sergio/.minecraft/libraries/com/google/guava/guava/21.0/guava-21.0.jar:/home/sergio/.minecraft/libraries/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/home/sergio/.minecraft/libraries/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/sergio/.minecraft/libraries/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/sergio/.minecraft/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar:/home/sergio/.minecraft/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar:/home/sergio/.minecraft/libraries/com/mojang/brigadier/1.0.17/brigadier-1.0.17.jar:/home/sergio/.minecraft/libraries/com/mojang/datafixerupper/2.0.24/datafixerupper-2.0.24.jar:/home/sergio/.minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/home/sergio/.minecraft/libraries/com/mojang/authlib/1.5.25/authlib-1.5.25.jar:/home/sergio/.minecraft/libraries/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar:/home/sergio/.minecraft/libraries/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/home/sergio/.minecraft/libraries/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/home/sergio/.minecraft/libraries/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/home/sergio/.minecraft/libraries/it/unimi/dsi/fastutil/8.2.1/fastutil-8.2.1.jar:/home/sergio/.minecraft/libraries/org/apache/logging/log4j/log4j-api/2.8.1/log4j-api-2.8.1.jar:/home/sergio/.minecraft/libraries/org/apache/logging/log4j/log4j-core/2.8.1/log4j-core-2.8.1.jar:/home/sergio/.minecraft/libraries/com/mojang/realms/1.14.13/realms-1.14.13.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl/3.2.1/lwjgl-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-jemalloc/3.2.1/lwjgl-jemalloc-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-openal/3.2.1/lwjgl-openal-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-opengl/3.2.1/lwjgl-opengl-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-glfw/3.2.1/lwjgl-glfw-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-stb/3.2.1/lwjgl-stb-3.2.1.jar:/home/sergio/.minecraft/libraries/com/mojang/text2speech/1.11.3/text2speech-1.11.3.jar:/home/sergio/.minecraft/versions/1.14/1.14.jar)
+[15:39:06] [Client thread/INFO]: Built for minecraft version 1.14
+[15:39:07] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[15:39:28] [Client thread/INFO]: OpenAL initialized.
+[15:39:28] [Client thread/INFO]: Sound engine started
+[15:39:29] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[15:39:30] [Client thread/INFO]: Created: 256x256 textures/particle-atlas
+[15:39:30] [Client thread/INFO]: Created: 256x256 textures/painting-atlas
+[15:39:30] [Client thread/INFO]: Created: 256x128 textures/mob_effect-atlas
+[15:41:05] [Client thread/INFO]: Built for minecraft version 1.14
+[15:41:05] [Client thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:41:05] [Client thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:41:05] [Client thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:41:05] [Client thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:41:05] [Client thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:41:05] [Server thread/INFO]: Starting integrated minecraft server version 1.14
+[15:41:05] [Server thread/INFO]: Generating keypair
+[15:41:06] [Server thread/INFO]: Found new data pack vanilla, loading it automatically
+[15:41:06] [Server thread/INFO]: Reloading ResourceManager: Default
+[15:41:07] [Server thread/INFO]: Loaded 6 recipes
+[15:41:08] [Server thread/INFO]: Loaded 811 advancements
+[15:41:10] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:41:10] [Client thread/INFO]: Preparing spawn area: 1%
+[15:41:13] [Client thread/INFO]: Preparing spawn area: 1%
+[15:41:13] [Client thread/INFO]: Preparing spawn area: 1%
+[15:41:13] [Client thread/INFO]: Preparing spawn area: 1%
+[15:41:13] [Client thread/INFO]: Preparing spawn area: 1%
+[15:41:13] [Client thread/INFO]: Preparing spawn area: 1%
+[15:41:13] [Client thread/INFO]: Preparing spawn area: 1%
+[15:41:14] [Client thread/INFO]: Preparing spawn area: 6%
+[15:41:14] [Client thread/INFO]: Preparing spawn area: 8%
+[15:41:15] [Client thread/INFO]: Preparing spawn area: 9%
+[15:41:15] [Client thread/INFO]: Preparing spawn area: 9%
+[15:41:19] [Client thread/INFO]: Preparing spawn area: 9%
+[15:41:19] [Client thread/INFO]: Preparing spawn area: 9%
+[15:41:19] [Client thread/INFO]: Preparing spawn area: 9%
+[15:41:19] [Client thread/INFO]: Preparing spawn area: 9%
+[15:41:19] [Client thread/INFO]: Preparing spawn area: 9%
+[15:41:19] [Client thread/INFO]: Preparing spawn area: 9%
+[15:41:22] [Client thread/INFO]: Preparing spawn area: 54%
+[15:41:22] [Client thread/INFO]: Preparing spawn area: 54%
+[15:41:22] [Client thread/INFO]: Preparing spawn area: 54%
+[15:41:22] [Client thread/INFO]: Preparing spawn area: 54%
+[15:41:22] [Client thread/INFO]: Preparing spawn area: 55%
+[15:41:22] [Client thread/INFO]: Preparing spawn area: 55%
+[15:41:22] [Client thread/INFO]: Preparing spawn area: 55%
+[15:41:23] [Client thread/INFO]: Preparing spawn area: 79%
+[15:41:23] [Client thread/INFO]: Preparing spawn area: 79%
+[15:41:23] [Client thread/INFO]: Preparing spawn area: 84%
+[15:41:24] [Client thread/INFO]: Preparing spawn area: 85%
+[15:41:25] [Client thread/INFO]: Preparing spawn area: 89%
+[15:41:25] [Client thread/INFO]: Preparing spawn area: 89%
+[15:41:25] [Client thread/INFO]: Preparing spawn area: 89%
+[15:41:26] [Client thread/INFO]: Preparing spawn area: 99%
+[15:41:26] [Client thread/INFO]: Time elapsed: 15572 ms
+[15:41:27] [Server thread/INFO]: Demonscript[local:E:7ee9212f] logged in with entity id 19 at (135.5, 4.0, -14.5)
+[15:41:27] [Server thread/INFO]: Demonscript joined the game
+[15:41:27] [Server thread/INFO]: Saving and pausing game...
+[15:41:27] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:overworld
+[15:41:28] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_end
+[15:41:28] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_nether
+[15:42:33] [Client thread/INFO]: Loaded 0 advancements
+[15:42:34] [Server thread/INFO]: Saving and pausing game...
+[15:42:34] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:overworld
+[15:42:34] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_end
+[15:42:35] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_nether
+[15:42:38] [Server thread/INFO]: Saving and pausing game...
+[15:42:38] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:overworld
+[15:42:38] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_end
+[15:42:38] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_nether
+[15:42:56] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2163ms or 43 ticks behind
+[15:43:22] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 10839ms or 216 ticks behind
+[15:43:42] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5500ms or 110 ticks behind
+[15:43:45] [Server thread/INFO]: Saving and pausing game...
+[15:43:45] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:overworld
+[15:43:45] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_end
+[15:43:45] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_nether
+[15:43:46] [Server thread/INFO]: Saving and pausing game...
+[15:43:46] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:overworld
+[15:43:46] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_end
+[15:43:46] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_nether
+[15:43:47] [Server thread/INFO]: Demonscript lost connection: Disconnected
+[15:43:47] [Server thread/INFO]: Demonscript left the game
+[15:43:47] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[15:43:47] [Server thread/INFO]: Stopping server
+[15:43:47] [Server thread/INFO]: Saving players
+[15:43:47] [Server thread/INFO]: Saving worlds
+[15:43:47] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:overworld
+[15:43:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (Pruebas): All chunks are saved
+[15:43:47] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_end
+[15:43:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:43:47] [Server thread/INFO]: Saving chunks for level 'Pruebas'/minecraft:the_nether
+[15:43:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:43:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (Pruebas): All chunks are saved
+[15:43:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (Pruebas): All chunks are saved
+[15:43:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:43:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:43:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:43:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:43:47] [Client thread/INFO]: Built for minecraft version 1.14
+[15:43:50] [Client thread/INFO]: Stopping!

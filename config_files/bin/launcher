@@ -1,3 +1,3 @@
 #!/bin/bash
 
-thunar ~/.games/launcher.jar
+java -jar ~/.games/Minecraft/Launcher.jar
