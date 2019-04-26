@@ -1,5 +1,3 @@
-mkdir Transparencias
-mkdir Relaciones de ejercicios
 rename Relación 1.pdf
 rename Relación 2.pdf
 rename Transparencias - Tema 1.pdf
@@ -22,7 +20,6 @@ touch arreglar.py
 rename Práctica 2 - Cuaderno.odt
 mkdir Codigos
 mkdir bp2
-open_with
 open_with nvim
 touch pruebas.txt
 mkdir 
@@ -32,7 +29,6 @@ find .bash_f
 past
 touch Makefile
 mkdir .games
-open_with 
 open_with libre
 open_with libassuan-config
 tem
@@ -41,10 +37,14 @@ find Comm
 open_with t nvi
 open_with libreoffice
 copyt
+
+term
+touch Tema 8 - Especificadores de acceso.md
+open_with 
+open_with
+p
+delete
 copy
 paste
-
-delete
-open_with t nvim
-term
 terminal 
+open_with t nvim

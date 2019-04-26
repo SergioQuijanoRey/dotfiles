@@ -19,7 +19,7 @@ bobView:true
 mouseSensitivity:0.5
 fov:1.0
 gamma:1.0
-renderDistance:12
+renderDistance:10
 guiScale:3
 particles:0
 maxFps:120
