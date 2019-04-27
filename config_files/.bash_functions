@@ -7,7 +7,7 @@
 # 		v1.0 - 17/04/2019: First documented version
 
 # Script para extraer todo tipo de archivos
-extract () {
+function extract(){
    if [ -f $1 ] ; then
        case $1 in
            *.tar.bz2)   tar xvjf $1    ;;
@@ -29,7 +29,7 @@ extract () {
  }
 
 # Script para tener fzf con cd
-cdf() {
+function cdf(){
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
@@ -37,12 +37,12 @@ cdf() {
 }
 
 # Script para tener fzf con neovim
-nvf(){
+function nvf(){
 		file=$(fzf)
 		nvim "$file"
 }
 
 # Practicas ATC
-change_prompt(){
+function change_prompt(){
 	export PS1="SergioQuijanoRey \u@\h:\w] \D{%F %A}\n$"
 }

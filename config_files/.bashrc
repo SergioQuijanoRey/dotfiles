@@ -8,7 +8,6 @@
 
 # Default section
 #===============================================================================
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -90,17 +89,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# PS1 -- Prompt look
-#===============================================================================
-export PS1="\033[s\033[500C\033[5D \033[u\[\e[0;35m\]\u \[\e[0;37m\]at \[\e[0;36m\]\h \[\e[0;37m\]in \[\e[0;32m\]\w \[\e[0;37m\] \[\e[0;37m\]\n \[\e[0m\]"
-
-
 # Importing external files
 #===============================================================================
 # Bash profile
 if [ -f ~/.bash_profile ]
 then
-		. ~/.bash_profile
+		source ~/.bash_profile
 else
 		echo "Missing ~/.bash_profile"
 fi
@@ -108,7 +102,7 @@ fi
 # Bash aliases
 if [ -f ~/.bash_aliases ]
 then
-		. ~/.bash_aliases
+		source ~/.bash_aliases
 else
 		echo "Missing ~/.bash_aliases"
 fi
@@ -116,7 +110,16 @@ fi
 # Bash functions
 if [ -f ~/.bash_functions ]
 then
-		. ~/.bash_functions
+		source ~/.bash_functions
 else
 		echo "Missing ~/.bash_functions"
+fi
+
+# Bash prompt
+if [ -f ~/.bash_prompt ]
+then
+    source ~/.bash_prompt
+else
+    echo "Missing ~/.bash_prompt, using default prompt!"
+    export PS1="\u at \h in \W\n$ "
 fi
