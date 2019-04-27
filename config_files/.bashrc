@@ -115,11 +115,11 @@ else
 		echo "Missing ~/.bash_functions"
 fi
 
-# Bash prompt
+# Bash Prompt
 if [ -f ~/.bash_prompt ]
 then
     source ~/.bash_prompt
 else
-    echo "Missing ~/.bash_prompt, using default prompt!"
+    echo "Missing ~/.bash_prompt, using default prompt"
     export PS1="\u at \h in \W\n$ "
 fi
