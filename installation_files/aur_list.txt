@@ -16,3 +16,7 @@ whatsie
 spotify
 google-chrome
 discord
+
+# i3
+#===============================================================================
+aur/system-san-francisco-font-git   # MacOS font

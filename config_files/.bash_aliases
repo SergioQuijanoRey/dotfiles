@@ -25,7 +25,7 @@ alias libinputconf="sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf"
 alias reload="source .bashrc; source .bash_aliases; source .profile"
 
 # Administration aliases
-alias disksize="du -d0 -h"
+alias ds="du -d0 -h"
 alias release="lsb_release -a"
 alias web="firefox"
 alias findps="ps aux | egrep"

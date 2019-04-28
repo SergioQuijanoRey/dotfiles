@@ -55,6 +55,7 @@ scrot					# For locking the screen
 i3lock					# For locking the screen
 xfce4-screenshooter     # For making screenshoots
 surfraw                 # For rofi websearch
+inconsolata             # Best font
 
 # Others
 #===============================================================================
