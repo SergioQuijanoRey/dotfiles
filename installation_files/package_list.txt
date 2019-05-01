@@ -62,4 +62,9 @@ inconsolata             # Best font
 firefox
 telegram-desktop
 evince
-pandoc
+
+# Office
+#===============================================================================
+libreoffice             # For writting documents
+pandoc                  # For converting documents formats
+texlive-core            # For writting basic latex documents
