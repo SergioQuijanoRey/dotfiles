@@ -1,12 +1,3 @@
-open_with jupyter-notebook
-mkdir Graficas
-touch Errores.md
-rename merge_iter_funcion.png
-rename transpose_dyv.csv
-touch arreglar.py
-rename Práctica 2 - Cuaderno.odt
-mkdir Codigos
-mkdir bp2
 open_with nvim
 touch pruebas.txt
 mkdir 
@@ -21,7 +12,6 @@ open_with libassuan-config
 tem
 find Comm
 open_with t nvi
-open_with libreoffice
 copyt
 term
 touch Tema 8 - Especificadores de acceso.md
@@ -29,7 +19,6 @@ open_with
 open_with
 p
 open_with net
-terminal 
 mkdir Geometría III
 mkdir Apuntes
 mkdir Relaciones de Ejercicios
@@ -40,11 +29,22 @@ rename Geometría III - Relación 3.pdf
 rename Geometría III - Guia Docente.pdf
 cut
 rename Geometría III - Apuntes.pdf
+open_with netbeans
+rename 7.-Diagramas de Secuencia.pdf
+touch 
+open_with t libreoffice
+rename Práctica 3 - Cuaderno.odt
+open_with libreoffice
+mkdir bp3
+rename captura02.png
+touch Práctica 3 - Tablas.odt
+rename 
+rename Práctica 3 - Tablas.
+delete
+mkdir ejer2
 
+terminal 
+mkdir ejer3
 copy
 paste
-open_with netbeans
 open_with t nvim
-rename 7.-Diagramas de Secuencia.pdf
-delete
-touch 
