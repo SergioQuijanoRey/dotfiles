@@ -6,6 +6,7 @@
 " Version:
 "     v1.0 06/02/2019 - First functionally version of the configuration
 "     v1.1 08/02/2019 - More pulished configuration, better organized
+"     v1.2 02/05/2019 - Tags changed by spaces and idention corrected
 
 " PLUGIN MANAGER
 "==============================================================================
@@ -13,6 +14,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
     " General purpose
     Plug 'scrooloose/nerdtree'          " File exploring
+    v1.2 02/05/2019 - Tags changed by spaces and idention corrected
     Plug 'junegunn/fzf.vim'             " Fuzzy Finder
     Plug 'w0rp/ale'                     " Real time linting
 
