@@ -56,6 +56,7 @@ i3lock					# For locking the screen
 xfce4-screenshooter     # For making screenshoots
 surfraw                 # For rofi websearch
 inconsolata             # Best font
+xfce4-notifyd           # Avoids notify bugs
 
 # Others
 #===============================================================================
