@@ -1,6 +1,3 @@
-open_with libassuan-config
-tem
-find Comm
 open_with t nvi
 copyt
 term
@@ -20,7 +17,6 @@ rename Geometría III - Guia Docente.pdf
 rename Geometría III - Apuntes.pdf
 open_with netbeans
 rename 7.-Diagramas de Secuencia.pdf
-touch 
 open_with t libreoffice
 rename Práctica 3 - Cuaderno.odt
 open_with libreoffice
@@ -31,20 +27,24 @@ rename
 rename Práctica 3 - Tablas.
 mkdir ejer2
 
-terminal 
 mkdir ejer3
 copy
-open_with t nvim
 rename Transparencias - Tema 3.pdf
 rename Relación 3.pdf
 rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 7.pdf
 rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 8.pdf
 rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 9.pdf
 rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 10.pdf
-cut
-paste
 rename Relación Tema 3 - Ejercicio 3 Resuelto.pdf
 mkdir Práctica 4
 tou
 delete
 mkdir Códigos
+mkdir Practica3
+mkdir Codigos
+touch 
+touch tsp_common.hpp
+terminal 
+cut
+paste
+open_with t nvim

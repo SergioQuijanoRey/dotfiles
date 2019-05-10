@@ -123,6 +123,7 @@ assign [title="ranger"] $workspace4
 assign [class="TelegramDesktop"] $workspace5
 assign [class="whatsapp-desktop"] $workspace5
 assign [class="whats-app-nativefier-7bbd2c"] $workspace5
+assign [class="whats-app-nativefier-d52542"] $workspace5
 assign [class="Whatsie"] $workspace5
 # Document apps
 assign [class="Evince"] $workspace6
