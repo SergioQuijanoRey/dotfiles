@@ -1,5 +1,3 @@
-open_with t nvi
-copyt
 term
 touch Tema 8 - Especificadores de acceso.md
 open_with 
@@ -28,7 +26,6 @@ rename Práctica 3 - Tablas.
 mkdir ejer2
 
 mkdir ejer3
-copy
 rename Transparencias - Tema 3.pdf
 rename Relación 3.pdf
 rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 7.pdf
@@ -44,7 +41,10 @@ mkdir Practica3
 mkdir Codigos
 touch 
 touch tsp_common.hpp
-terminal 
 cut
+rename Glosario de la asignaturad .pdf
+copy
+mkdir Datos
 paste
+terminal 
 open_with t nvim

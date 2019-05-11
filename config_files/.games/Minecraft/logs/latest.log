@@ -1,7 +1,47 @@
-[15:04:18] [Client thread/INFO]: Setting user: Demonscript
-[15:04:22] [Client thread/WARN]: Skipping bad option: lastServer:
-[15:04:22] [Client thread/INFO]: LWJGL Version: 3.2.1 build 12
-[15:04:25] [Client thread/WARN]: ERROR : Couldn't load Narrator library : Unable to load library 'fliteWrapper': Native library (linux-x86-64/libfliteWrapper.so) not found in resource path (/home/sergio/.minecraft/libraries/com/mojang/laulib/1.0/laulib-1.0.jar:/home/sergio/.minecraft/libraries/com/mojang/patchy/1.1/patchy-1.1.jar:/home/sergio/.minecraft/libraries/oshi-project/oshi-core/1.1/oshi-core-1.1.jar:/home/sergio/.minecraft/libraries/net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar:/home/sergio/.minecraft/libraries/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar:/home/sergio/.minecraft/libraries/com/ibm/icu/icu4j-core-mojang/51.2/icu4j-core-mojang-51.2.jar:/home/sergio/.minecraft/libraries/com/mojang/javabridge/1.0.22/javabridge-1.0.22.jar:/home/sergio/.minecraft/libraries/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/home/sergio/.minecraft/libraries/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final.jar:/home/sergio/.minecraft/libraries/com/google/guava/guava/21.0/guava-21.0.jar:/home/sergio/.minecraft/libraries/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/home/sergio/.minecraft/libraries/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/sergio/.minecraft/libraries/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/sergio/.minecraft/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar:/home/sergio/.minecraft/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar:/home/sergio/.minecraft/libraries/com/mojang/brigadier/1.0.17/brigadier-1.0.17.jar:/home/sergio/.minecraft/libraries/com/mojang/datafixerupper/2.0.24/datafixerupper-2.0.24.jar:/home/sergio/.minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/home/sergio/.minecraft/libraries/com/mojang/authlib/1.5.25/authlib-1.5.25.jar:/home/sergio/.minecraft/libraries/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar:/home/sergio/.minecraft/libraries/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/home/sergio/.minecraft/libraries/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/home/sergio/.minecraft/libraries/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/home/sergio/.minecraft/libraries/it/unimi/dsi/fastutil/8.2.1/fastutil-8.2.1.jar:/home/sergio/.minecraft/libraries/org/apache/logging/log4j/log4j-api/2.8.1/log4j-api-2.8.1.jar:/home/sergio/.minecraft/libraries/org/apache/logging/log4j/log4j-core/2.8.1/log4j-core-2.8.1.jar:/home/sergio/.minecraft/libraries/com/mojang/realms/1.14.14/realms-1.14.14.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl/3.2.1/lwjgl-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-jemalloc/3.2.1/lwjgl-jemalloc-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-openal/3.2.1/lwjgl-openal-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-opengl/3.2.1/lwjgl-opengl-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-glfw/3.2.1/lwjgl-glfw-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-stb/3.2.1/lwjgl-stb-3.2.1.jar:/home/sergio/.minecraft/libraries/com/mojang/text2speech/1.11.3/text2speech-1.11.3.jar:/home/sergio/.minecraft/versions/1.14/1.14.jar)
-[15:04:25] [Client thread/INFO]: Built for minecraft version 1.14
-[15:04:26] [Client thread/INFO]: Stopping!
-[15:04:26] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[18:37:51] [Client thread/INFO]: Setting user: Demonscript
+[18:37:55] [Client thread/WARN]: Skipping bad option: lastServer:
+[18:37:56] [Client thread/INFO]: LWJGL Version: 3.2.1 build 12
+[18:37:58] [Client thread/WARN]: ERROR : Couldn't load Narrator library : Unable to load library 'fliteWrapper': Native library (linux-x86-64/libfliteWrapper.so) not found in resource path (/home/sergio/.minecraft/libraries/com/mojang/laulib/1.0/laulib-1.0.jar:/home/sergio/.minecraft/libraries/com/mojang/patchy/1.1/patchy-1.1.jar:/home/sergio/.minecraft/libraries/oshi-project/oshi-core/1.1/oshi-core-1.1.jar:/home/sergio/.minecraft/libraries/net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar:/home/sergio/.minecraft/libraries/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar:/home/sergio/.minecraft/libraries/com/ibm/icu/icu4j-core-mojang/51.2/icu4j-core-mojang-51.2.jar:/home/sergio/.minecraft/libraries/com/mojang/javabridge/1.0.22/javabridge-1.0.22.jar:/home/sergio/.minecraft/libraries/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/home/sergio/.minecraft/libraries/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final.jar:/home/sergio/.minecraft/libraries/com/google/guava/guava/21.0/guava-21.0.jar:/home/sergio/.minecraft/libraries/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/home/sergio/.minecraft/libraries/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/sergio/.minecraft/libraries/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/sergio/.minecraft/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar:/home/sergio/.minecraft/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar:/home/sergio/.minecraft/libraries/com/mojang/brigadier/1.0.17/brigadier-1.0.17.jar:/home/sergio/.minecraft/libraries/com/mojang/datafixerupper/2.0.24/datafixerupper-2.0.24.jar:/home/sergio/.minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/home/sergio/.minecraft/libraries/com/mojang/authlib/1.5.25/authlib-1.5.25.jar:/home/sergio/.minecraft/libraries/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar:/home/sergio/.minecraft/libraries/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/home/sergio/.minecraft/libraries/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/home/sergio/.minecraft/libraries/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/home/sergio/.minecraft/libraries/it/unimi/dsi/fastutil/8.2.1/fastutil-8.2.1.jar:/home/sergio/.minecraft/libraries/org/apache/logging/log4j/log4j-api/2.8.1/log4j-api-2.8.1.jar:/home/sergio/.minecraft/libraries/org/apache/logging/log4j/log4j-core/2.8.1/log4j-core-2.8.1.jar:/home/sergio/.minecraft/libraries/com/mojang/realms/1.14.14/realms-1.14.14.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl/3.2.1/lwjgl-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-jemalloc/3.2.1/lwjgl-jemalloc-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-openal/3.2.1/lwjgl-openal-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-opengl/3.2.1/lwjgl-opengl-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-glfw/3.2.1/lwjgl-glfw-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-stb/3.2.1/lwjgl-stb-3.2.1.jar:/home/sergio/.minecraft/libraries/com/mojang/text2speech/1.11.3/text2speech-1.11.3.jar:/home/sergio/.minecraft/versions/1.14/1.14.jar)
+[18:37:58] [Client thread/INFO]: Built for minecraft version 1.14
+[18:37:59] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[18:38:18] [Client thread/INFO]: OpenAL initialized.
+[18:38:18] [Client thread/INFO]: Sound engine started
+[18:38:18] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[18:38:19] [Client thread/INFO]: Created: 256x256 textures/particle-atlas
+[18:38:19] [Client thread/INFO]: Created: 256x256 textures/painting-atlas
+[18:38:19] [Client thread/INFO]: Created: 256x128 textures/mob_effect-atlas
+[18:39:53] [Client thread/INFO]: Connecting to sergioquijano.duckdns.org, 25565
+[18:40:05] [Client thread/INFO]: Loaded 159 advancements
+[18:40:06] [Client thread/INFO]: [CHAT] megabentilad joined the game
+[18:42:29] [Client thread/INFO]: Loaded 159 advancements
+[18:42:52] [Client thread/INFO]: Loaded 159 advancements
+[18:43:14] [Client thread/INFO]: Loaded 177 advancements
+[18:44:24] [Client thread/INFO]: Loaded 183 advancements
+[18:44:36] [Client thread/INFO]: [CHAT] [Server: Made Demonscript a server operator]
+[18:44:43] [Client thread/INFO]: [CHAT] Incorrect argument for command
+[18:44:43] [Client thread/INFO]: [CHAT] /locate village<--[HERE]
+[18:44:52] [Client thread/INFO]: [CHAT] The nearest Village is at [-1824, ~, 256] (516 blocks away)
+[18:45:26] [Client thread/INFO]: [CHAT] <Demonscript> -1824 ~ 256
+[18:45:34] [Client thread/INFO]: Loaded 183 advancements
+[18:49:10] [Client thread/WARN]: Unable to play empty soundEvent: minecraft:entity.tropical_fish.ambient
+[18:49:15] [Client thread/INFO]: Loaded 183 advancements
+[18:50:23] [Client thread/INFO]: Loaded 183 advancements
+[18:51:12] [Client thread/INFO]: [CHAT] Saved screenshot as 2019-05-11_18.51.11.png
+[18:52:37] [Client thread/INFO]: Connecting to sergioquijano.duckdns.org, 25565
+[18:57:15] [Client thread/INFO]: Connecting to sergioquijano.duckdns.org, 25565
+[18:59:36] [Client thread/INFO]: Connecting to sergioquijano.duckdns.org, 25565
+[18:59:43] [Client thread/INFO]: Loaded 193 advancements
+[18:59:43] [Client thread/INFO]: [CHAT] megabentilad joined the game
+[18:59:48] [Client thread/INFO]: [CHAT] megabentilad has made the advancement [Episodio de playa]
+[19:01:08] [Client thread/INFO]: [CHAT] Demonscript has made the advancement [Episodio de playa]
+[19:01:08] [Client thread/INFO]: Loaded 195 advancements
+[19:01:53] [Client thread/WARN]: Unable to play empty soundEvent: minecraft:entity.cod.ambient
+[19:01:55] [Client thread/INFO]: Loaded 195 advancements
+[19:02:11] [Client thread/INFO]: [CHAT] megabentilad left the game
+[19:02:14] [Client thread/INFO]: [CHAT] The nearest Village is at [-1824, ~, 256] (480 blocks away)
+[19:03:08] [Client thread/WARN]: Unable to play empty soundEvent: minecraft:entity.puffer_fish.ambient
+[19:04:14] [Client thread/WARN]: Unable to play empty soundEvent: minecraft:entity.salmon.ambient
+[19:07:08] [Client thread/INFO]: Loaded 195 advancements
+[19:07:47] [Client thread/INFO]: Loaded 196 advancements
+[19:09:07] [Client thread/INFO]: Built for minecraft version 1.14
+[19:09:08] [Client thread/INFO]: Stopping!

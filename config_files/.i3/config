@@ -231,7 +231,7 @@ for_window [class="^.*"] border pixel 0
 
 # Apps on start
 exec choose_wallpaper -c landscape.jpg # Quitar -c sudo.png para que elija al inicio un fondo aleatoriamente
-exec compton
+exec compton --blur-blackground
 exec whatsapp
 exec telegram-desktop
 exec nm-applet
