@@ -1,4 +1,4 @@
-version:1952
+version:1957
 autoJump:false
 autoSuggestions:true
 chatColors:true

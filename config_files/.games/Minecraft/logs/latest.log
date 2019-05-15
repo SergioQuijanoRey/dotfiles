@@ -1,331 +1,81 @@
-[21:01:36] [Client thread/INFO]: Setting user: Demonscript
-[21:01:40] [Client thread/WARN]: Skipping bad option: lastServer:
-[21:01:40] [Client thread/INFO]: LWJGL Version: 3.2.1 build 12
-[21:01:42] [Client thread/WARN]: ERROR : Couldn't load Narrator library : Unable to load library 'fliteWrapper': Native library (linux-x86-64/libfliteWrapper.so) not found in resource path (/home/sergio/.minecraft/libraries/com/mojang/laulib/1.0/laulib-1.0.jar:/home/sergio/.minecraft/libraries/com/mojang/patchy/1.1/patchy-1.1.jar:/home/sergio/.minecraft/libraries/oshi-project/oshi-core/1.1/oshi-core-1.1.jar:/home/sergio/.minecraft/libraries/net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar:/home/sergio/.minecraft/libraries/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar:/home/sergio/.minecraft/libraries/com/ibm/icu/icu4j-core-mojang/51.2/icu4j-core-mojang-51.2.jar:/home/sergio/.minecraft/libraries/com/mojang/javabridge/1.0.22/javabridge-1.0.22.jar:/home/sergio/.minecraft/libraries/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/home/sergio/.minecraft/libraries/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final.jar:/home/sergio/.minecraft/libraries/com/google/guava/guava/21.0/guava-21.0.jar:/home/sergio/.minecraft/libraries/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/home/sergio/.minecraft/libraries/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/sergio/.minecraft/libraries/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/sergio/.minecraft/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar:/home/sergio/.minecraft/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar:/home/sergio/.minecraft/libraries/com/mojang/brigadier/1.0.17/brigadier-1.0.17.jar:/home/sergio/.minecraft/libraries/com/mojang/datafixerupper/2.0.24/datafixerupper-2.0.24.jar:/home/sergio/.minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/home/sergio/.minecraft/libraries/com/mojang/authlib/1.5.25/authlib-1.5.25.jar:/home/sergio/.minecraft/libraries/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar:/home/sergio/.minecraft/libraries/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/home/sergio/.minecraft/libraries/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/home/sergio/.minecraft/libraries/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/home/sergio/.minecraft/libraries/it/unimi/dsi/fastutil/8.2.1/fastutil-8.2.1.jar:/home/sergio/.minecraft/libraries/org/apache/logging/log4j/log4j-api/2.8.1/log4j-api-2.8.1.jar:/home/sergio/.minecraft/libraries/org/apache/logging/log4j/log4j-core/2.8.1/log4j-core-2.8.1.jar:/home/sergio/.minecraft/libraries/com/mojang/realms/1.14.15/realms-1.14.15.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl/3.2.1/lwjgl-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-jemalloc/3.2.1/lwjgl-jemalloc-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-openal/3.2.1/lwjgl-openal-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-opengl/3.2.1/lwjgl-opengl-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-glfw/3.2.1/lwjgl-glfw-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-stb/3.2.1/lwjgl-stb-3.2.1.jar:/home/sergio/.minecraft/libraries/com/mojang/text2speech/1.11.3/text2speech-1.11.3.jar:/home/sergio/.minecraft/versions/1.14.1/1.14.1.jar)
-[21:01:42] [Client thread/INFO]: Built for minecraft version 1.14.1
-[21:01:43] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[21:01:59] [Client thread/INFO]: OpenAL initialized.
-[21:01:59] [Client thread/INFO]: Sound engine started
-[21:02:00] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[21:02:00] [Client thread/INFO]: Created: 256x256 textures/particle-atlas
-[21:02:00] [Client thread/INFO]: Created: 256x256 textures/painting-atlas
-[21:02:00] [Client thread/INFO]: Created: 256x128 textures/mob_effect-atlas
-[21:02:42] [Client thread/INFO]: Connecting to sergioquijano.duckdns.org, 25565
-[21:04:25] [Client thread/INFO]: Connecting to sergioquijano.duckdns.org, 25565
-[21:04:33] [Client thread/INFO]: Connecting to sergioquijano.duckdns.org, 25565
-[21:04:34] [Client thread/INFO]: Loaded 196 advancements
-[21:05:19] [Client thread/INFO]: [CHAT] Teleported Demonscript to -1199.5, 87.0, 600.5
-[21:05:24] [Client thread/WARN]: Block entity invalid: minecraft:mob_spawner @ ev{x=-897, y=26, z=108}
-[21:05:24] [Client thread/WARN]: Block entity invalid: minecraft:chest @ ev{x=-1017, y=19, z=-38}
-[21:05:24] [Client thread/WARN]: Block entity invalid: minecraft:mob_spawner @ ev{x=-1015, y=19, z=-40}
-[21:05:24] [Client thread/WARN]: Block entity invalid: minecraft:chest @ ev{x=-1017, y=19, z=-42}
-[21:05:24] [Client thread/WARN]: Block entity invalid: minecraft:chest @ ev{x=-965, y=57, z=-47}
-[21:05:24] [Client thread/WARN]: Block entity invalid: minecraft:mob_spawner @ ev{x=-967, y=57, z=-48}
-[21:05:24] [Client thread/WARN]: Block entity invalid: minecraft:chest @ ev{x=-895, y=26, z=109}
-[21:05:24] [Client thread/WARN]: Block entity invalid: minecraft:mob_spawner @ ev{x=-871, y=29, z=58}
-[21:05:24] [Client thread/WARN]: Block entity invalid: minecraft:chest @ ev{x=-868, y=29, z=57}
-[21:05:24] [Client thread/WARN]: Block entity invalid: minecraft:chest @ ev{x=-1198, y=16, z=-64}
-[21:05:24] [Client thread/WARN]: Block entity invalid: minecraft:mob_spawner @ ev{x=-1199, y=16, z=-67}
-[21:06:40] [Client thread/INFO]: Loaded 196 advancements
-[21:07:34] [Client thread/INFO]: Loaded 196 advancements
-[21:08:28] [Client thread/INFO]: [CHAT] megabentilad joined the game
-[21:08:41] [Client thread/INFO]: [CHAT] <Demonscript> Buenos dias
-[21:08:46] [Client thread/INFO]: [CHAT] <megabentilad> holo
-[21:08:51] [Client thread/INFO]: [CHAT] <Demonscript> He encontrado la sabana
-[21:08:52] [Client thread/INFO]: [CHAT] <megabentilad> aquí no está tu gato
-[21:08:53] [Client thread/INFO]: [CHAT] <Demonscript> Y a salem
-[21:08:58] [Client thread/INFO]: [CHAT] <Demonscript> Lo tengo yo
-[21:09:01] [Client thread/INFO]: [CHAT] <megabentilad> maravilloso
-[21:09:04] [Client thread/INFO]: [CHAT] <Demonscript> Perfecto
-[21:09:10] [Client thread/INFO]: [CHAT] <megabentilad> estupendo
-[21:09:14] [Client thread/INFO]: [CHAT] <Demonscript> El GOTY solo por el puto gato
-[21:09:29] [Client thread/INFO]: [CHAT] <megabentilad> let's nya! all the day
-[21:09:43] [Client thread/INFO]: [CHAT] <Demonscript> Donde estas=
-[21:09:43] [Client thread/INFO]: [CHAT] <Demonscript> ?
-[21:09:48] [Client thread/INFO]: [CHAT] <megabentilad> llendo
-[21:10:04] [Client thread/INFO]: [CHAT] <Demonscript> Yo estoy en la colina
-[21:10:12] [Client thread/INFO]: [CHAT] <megabentilad> la del gato?
-[21:10:16] [Client thread/INFO]: [CHAT] <Demonscript> Creo que si
-[21:10:20] [Client thread/INFO]: [CHAT] <Demonscript> Donde el barcow
-[21:10:22] [Client thread/INFO]: [CHAT] <megabentilad> vuelvo pues
-[21:10:30] [Client thread/INFO]: [CHAT] <Demonscript> Te veo
-[21:10:31] [Client thread/INFO]: [CHAT] <megabentilad> usap
-[21:10:35] [Client thread/INFO]: [CHAT] <Demonscript> arriba
-[21:10:37] [Client thread/INFO]: [CHAT] <Demonscript> Como mi españiota
-[21:10:42] [Client thread/INFO]: [CHAT] <Demonscript> Sube
-[21:10:47] [Client thread/INFO]: [CHAT] <megabentilad> salta que te coj.... okay
-[21:10:55] [Client thread/INFO]: [CHAT] <Demonscript> Que yo creo que podemos hacer la casa detras de esta colina
-[21:10:59] [Client thread/INFO]: [CHAT] <megabentilad> pto pez globo
-[21:11:19] [Client thread/INFO]: [CHAT] <Demonscript> Follow me
-[21:11:35] [Client thread/INFO]: [CHAT] <megabentilad> en breve iré a cenar
-[21:11:38] [Client thread/INFO]: [CHAT] <Demonscript> Yo haria la casa aqui
-[21:11:41] [Client thread/INFO]: [CHAT] <Demonscript> Yo tambien
-[21:11:44] [Client thread/INFO]: [CHAT] <Demonscript> Tenemos acceso al mar
-[21:11:52] [Client thread/INFO]: [CHAT] <megabentilad> me parece correcto
-[21:11:55] [Client thread/INFO]: [CHAT] <Demonscript> El rio se puede soterrar para tener una buena llanura
-[21:12:06] [Client thread/INFO]: [CHAT] <megabentilad> o usarlo para calamares
-[21:12:08] [Client thread/INFO]: [CHAT] <Demonscript> Las colinas aunque las podemos eliminar pueden dar algo de juego
-[21:12:20] [Client thread/WARN]: Unable to play empty soundEvent: minecraft:entity.salmon.ambient
-[21:12:24] [Client thread/INFO]: [CHAT] <megabentilad> mmmmmmmm
-[21:12:26] [Client thread/INFO]: [CHAT] <Demonscript> peces para mi ejercito de gatos
-[21:12:31] [Client thread/INFO]: [CHAT] <megabentilad> aaaaaro
-[21:12:43] [Client thread/INFO]: [CHAT] <Demonscript> Entonces donde hacemos la casa
-[21:12:54] [Client thread/INFO]: [CHAT] <megabentilad> me gustaría encontrar un hueco entre tres colinas
-[21:13:00] [Client thread/INFO]: [CHAT] <megabentilad> royo paredes naturales
-[21:13:11] [Client thread/INFO]: [CHAT] <Demonscript> Uff yo eso ni puta idea de como hacerlo
-[21:13:13] [Client thread/INFO]: [CHAT] <Demonscript> Podemos hacer
-[21:13:19] [Client thread/INFO]: [CHAT] <Demonscript> Una base mas sosa
-[21:13:26] [Client thread/INFO]: [CHAT] <Demonscript> Rollo todo plano y funcional
-[21:13:33] [Client thread/INFO]: [CHAT] <Demonscript> Y luego hacer cada uno sus movidas
-[21:13:37] [Client thread/INFO]: [CHAT] <megabentilad> y decorrar el sitio final despues
-[21:13:39] [Client thread/INFO]: [CHAT] <megabentilad> eso eso
-[21:13:40] [Client thread/INFO]: [CHAT] <Demonscript> Rollo que esto sea el centro
-[21:13:44] [Client thread/INFO]: [CHAT] <Demonscript> O si no podriamos
-[21:13:53] [Client thread/INFO]: [CHAT] <Demonscript> Hacer ahora todo plano y funcional
-[21:13:58] [Client thread/INFO]: [CHAT] <megabentilad> aro aro
-[21:14:03] [Client thread/INFO]: [CHAT] <Demonscript> Y luego incluso con un programa hacer una orografia chula
-[21:14:10] [Client thread/INFO]: [CHAT] <megabentilad> aaaaaaaro
-[21:14:19] [Client thread/INFO]: [CHAT] <megabentilad> que es una orografía? xD
-[21:14:24] [Client thread/INFO]: [CHAT] <Demonscript> Pues yo empezaria donde estas tu ahi
-[21:14:30] [Client thread/INFO]: [CHAT] <Demonscript> Rollo montañas rios...
-[21:14:40] [Client thread/INFO]: [CHAT] <megabentilad> dame paja
-[21:15:02] [Client thread/INFO]: [CHAT] <Demonscript> Me he hecho pan con el resto de cosas
-[21:15:03] [Client thread/INFO]: [CHAT] <megabentilad> necesito 9 xD
-[21:15:12] [Client thread/INFO]: [CHAT] <Demonscript> Pues estamos jodiod
-[21:15:15] [Client thread/INFO]: [CHAT] <Demonscript> Jodidos
-[21:15:41] [Client thread/INFO]: [CHAT] <megabentilad> bue, voy a preguntar por la cena, ahora vengo y te digo
-[21:15:45] [Client thread/INFO]: [CHAT] <Demonscript> Vale
-[21:15:52] [Client thread/INFO]: [CHAT] <Demonscript> Yo tampoco es que vaya a estar aqui demasiado
-[21:16:06] [Client thread/INFO]: [CHAT] <megabentilad> estoy yo un rato y aplano ligeramente
-[21:16:25] [Client thread/INFO]: [CHAT] <Demonscript> Otra cosa que creo que hice mal la otra vez
-[21:16:32] [Client thread/INFO]: [CHAT] <Demonscript> Es no centrarme en matar al dragon
-[21:16:34] [Client thread/INFO]: [CHAT] <Demonscript> Granjas
-[21:16:44] [Client thread/INFO]: [CHAT] <megabentilad> a mi me lo vas a decir? xD
-[21:16:46] [Client thread/INFO]: [CHAT] <Demonscript> Y luego ya una locura de planicie con beacons
-[21:16:49] [Client thread/INFO]: [CHAT] <Demonscript> XDDD
-[21:16:58] [Client thread/INFO]: [CHAT] <megabentilad> bueh, ahora vengo
-[21:17:12] [Client thread/INFO]: [CHAT] <megabentilad> salgo para que duermas
-[21:17:15] [Client thread/INFO]: [CHAT] megabentilad left the game
-[21:17:24] [Client thread/INFO]: [CHAT] Set the time to 0
-[21:18:13] [Client thread/INFO]: [CHAT] megabentilad joined the game
-[21:18:17] [Client thread/INFO]: [CHAT] <megabentilad> vale
-[21:18:22] [Client thread/INFO]: [CHAT] <megabentilad> tardo 15 minutos
-[21:18:28] [Client thread/INFO]: [CHAT] <megabentilad> como mucho
-[21:18:31] [Client thread/INFO]: [CHAT] <Demonscript> Si luego salgo
-[21:18:36] [Client thread/INFO]: [CHAT] <Demonscript> Te lo dejo abierto?
-[21:18:50] [Client thread/INFO]: [CHAT] <megabentilad> oki, te doy un toque cuando lo deje
-[21:18:56] [Client thread/INFO]: [CHAT] megabentilad left the game
-[21:21:04] [Client thread/WARN]: Received passengers for unknown entity
-[21:25:00] [Client thread/INFO]: Loaded 198 advancements
-[21:27:55] [Client thread/INFO]: Loaded 200 advancements
-[21:28:23] [Client thread/INFO]: Loaded 200 advancements
-[21:28:24] [Client thread/INFO]: Loaded 201 advancements
-[21:29:13] [Client thread/INFO]: Loaded 210 advancements
-[21:29:26] [Client thread/INFO]: [CHAT] Demonscript has made the advancement [Acquire Hardware]
-[21:29:26] [Client thread/INFO]: Loaded 234 advancements
-[21:29:32] [Client thread/INFO]: [CHAT] Demonscript has made the advancement [Isn't It Iron Pick]
-[21:29:32] [Client thread/INFO]: Loaded 238 advancements
-[21:30:06] [Client thread/INFO]: [CHAT] Demonscript was slain by Zombie
-[21:30:19] [Client thread/INFO]: Loaded 248 advancements
-[21:30:25] [Client thread/INFO]: [CHAT] Demonscript was blown up by Creeper
-[21:31:30] [Client thread/INFO]: Loaded 258 advancements
-[21:31:39] [Client thread/INFO]: Loaded 258 advancements
-[21:31:40] [Client thread/INFO]: Loaded 259 advancements
-[21:33:05] [Client thread/INFO]: Connecting to sergioquijano.duckdns.org, 25565
-[21:48:33] [Client thread/INFO]: [CHAT] megabentilad joined the game
-[21:48:38] [Client thread/INFO]: [CHAT] <megabentilad> PENE
-[21:48:41] [Client thread/INFO]: [CHAT] <Demonscript> Holo
-[21:48:44] [Client thread/INFO]: [CHAT] <Demonscript> Estoy en unas minas
-[21:48:49] [Client thread/INFO]: [CHAT] <Demonscript> Tengo dos de diamante
-[21:48:54] [Client thread/INFO]: [CHAT] <megabentilad> YO RODEADO DE MOUNSTRUOS Xd
-[21:49:06] [Client thread/INFO]: [CHAT] <Demonscript> Disfruta
-[21:49:08] [Client thread/INFO]: [CHAT] <megabentilad> no cenaste?
-[21:49:19] [Client thread/INFO]: [CHAT] <Demonscript> Se ha puesto natalia un rato a jugar
-[21:49:28] [Client thread/INFO]: [CHAT] <Demonscript> Y hasta que no termine un trabajo no cenamos
-[21:49:32] [Client thread/INFO]: [CHAT] <megabentilad> oh, curioso
-[21:49:38] [Client thread/INFO]: [CHAT] <megabentilad> ánimo de mi parte xD
-[21:51:54] [Client thread/INFO]: [CHAT] <Demonscript> Como vas?
-[21:52:01] [Client thread/INFO]: [CHAT] <megabentilad> madereando
-[21:52:13] [Client thread/INFO]: [CHAT] <Demonscript> Bien
-[21:52:21] [Client thread/INFO]: [CHAT] <megabentilad> oye, se me ha ocurrido hacer un resource pack que solo cambie las canciones de los discos xD
-[21:52:32] [Client thread/INFO]: [CHAT] <Demonscript> Lo bueno de que el unico truco que hagamos sea el keepInventory es que tenemos gratis backs a casa
-[21:52:42] [Client thread/INFO]: [CHAT] <megabentilad> aaaaaaro
-[21:52:57] [Client thread/INFO]: [CHAT] <Demonscript> De rendimiento lag como lo ves?
-[21:53:05] [Client thread/INFO]: [CHAT] <megabentilad> genialoso
-[21:53:32] [Client thread/INFO]: [CHAT] <Demonscript> Voy a hacer una cosa
-[21:53:34] [Client thread/INFO]: [CHAT] <Demonscript> Igual peta
-[21:53:38] [Client thread/INFO]: [CHAT] <megabentilad> maybe
-[21:53:42] [Client thread/INFO]: [CHAT] <Demonscript> Le voy a dar maxima prioridad al servidor en mi linux
-[21:53:51] [Client thread/INFO]: [CHAT] <megabentilad> que miedo xD
-[21:54:02] [Client thread/INFO]: [CHAT] <megabentilad> te cargas a alexa
-[21:54:10] [Client thread/INFO]: [CHAT] <megabentilad> a no, en lynux dices
-[21:54:39] [Client thread/INFO]: [CHAT] <Demonscript> Ahora me dices si notas mejoria
-[21:55:10] [Client thread/INFO]: [CHAT] <megabentilad> es que ya iba muy bien xD
-[21:55:23] [Client thread/INFO]: [CHAT] <Demonscript> Ahora deberia ir mejor
-[21:55:41] [Client thread/INFO]: [CHAT] <megabentilad> cuando vea mobs moviéndose, te digo
-[21:55:43] [Client thread/INFO]: [CHAT] <Demonscript> El tema de lag no se puede mejorar
-[21:55:46] [Client thread/INFO]: [CHAT] <megabentilad> eeeeee
-[21:55:49] [Client thread/INFO]: [CHAT] <Demonscript> Porque depende del router
-[21:55:50] [Client thread/INFO]: [CHAT] <megabentilad> un señor de alpacas
-[21:55:55] [Client thread/INFO]: [CHAT] <Demonscript> encierralo
-[21:56:02] [Client thread/INFO]: [CHAT] <megabentilad> procedo
-[21:57:10] [Client thread/INFO]: [CHAT] <megabentilad> nada interesante
-[22:00:29] [Client thread/INFO]: [CHAT] <megabentilad> el del creeper fuiste tu?
-[22:00:33] [Client thread/INFO]: [CHAT] <Demonscript> Creo que si
-[22:00:36] [Client thread/INFO]: [CHAT] <megabentilad> xD
-[22:00:42] [Client thread/INFO]: [CHAT] <megabentilad> voy a lavarme los dientes
-[22:00:45] [Client thread/INFO]: [CHAT] megabentilad left the game
-[22:00:47] [Client thread/INFO]: [CHAT] Demonscript was slain by Zombie
-[22:00:49] [Client thread/INFO]: [CHAT] Demonscript has made the advancement [Diamonds!]
-[22:00:49] [Client thread/INFO]: Loaded 286 advancements
-[22:01:21] [Client thread/INFO]: Loaded 300 advancements
-[22:02:34] [Client thread/INFO]: Loaded 303 advancements
-[22:03:23] [Client thread/INFO]: Loaded 315 advancements
-[22:03:38] [Client thread/INFO]: Loaded 317 advancements
-[22:04:50] [Client thread/INFO]: [CHAT] megabentilad joined the game
-[22:04:57] [Client thread/INFO]: [CHAT] <megabentilad> jo jo
-[22:05:17] [Client thread/INFO]: [CHAT] <Demonscript> Holo
-[22:05:22] [Client thread/INFO]: [CHAT] <Demonscript> Me mato un creeper
-[22:05:28] [Client thread/INFO]: [CHAT] <megabentilad> buena
-[22:05:38] [Client thread/INFO]: [CHAT] <Demonscript> Estaba sin comida jajajajaj
-[22:05:44] [Client thread/INFO]: Loaded 319 advancements
-[22:05:48] [Client thread/INFO]: [CHAT] <megabentilad> jajajajajaja
-[22:07:52] [Client thread/INFO]: [CHAT] <megabentilad> mi objetivo de vida es vivir en una seta ENORME solo para mi
-[22:07:58] [Client thread/INFO]: [CHAT] <Demonscript> Jajajaja
-[22:08:03] [Client thread/INFO]: [CHAT] <Demonscript> Te lo puedes hacer facilmente
-[22:08:06] [Client thread/INFO]: [CHAT] <megabentilad> royo decenas de stacks
-[22:08:12] [Client thread/INFO]: [CHAT] <Demonscript> Habria que delimitar la casa
-[22:08:19] [Client thread/INFO]: [CHAT] <Demonscript> Para empezar a hacer cultivos basicos
-[22:08:21] [Client thread/INFO]: [CHAT] <megabentilad> de momento no hay casa dijimos
-[22:08:34] [Client thread/INFO]: [CHAT] <Demonscript> Base rollo sin casa?
-[22:08:42] [Client thread/INFO]: [CHAT] <megabentilad> si
-[22:08:46] [Client thread/INFO]: [CHAT] <megabentilad> esplanada to rica
-[22:09:09] [Client thread/INFO]: [CHAT] <Demonscript> Me parece maravilloso
-[22:09:36] [Client thread/INFO]: [CHAT] megabentilad has made the advancement [Suit Up]
-[22:09:36] [Client thread/INFO]: [CHAT] megabentilad has made the advancement [Isn't It Iron Pick]
-[22:09:48] [Client thread/INFO]: [CHAT] Demonscript has made the advancement [Suit Up]
-[22:09:48] [Client thread/INFO]: Loaded 319 advancements
-[22:09:52] [Client thread/INFO]: [CHAT] <Demonscript> Nais
-[22:10:00] [Client thread/INFO]: [CHAT] <megabentilad> UwU noises
-[22:10:18] [Client thread/INFO]: [CHAT] <megabentilad> por donde es la mina?
-[22:10:31] [Client thread/INFO]: [CHAT] <megabentilad> ffine
-[22:10:33] [Client thread/INFO]: [CHAT] <Demonscript> Yo he venido por aqui
-[22:10:35] [Client thread/INFO]: [CHAT] <Demonscript> Es enorme
-[22:10:44] [Client thread/INFO]: [CHAT] <Demonscript> Hago los cultivos y empiezo con la artificial
-[22:10:44] [Client thread/INFO]: [CHAT] <megabentilad> como mi ejem
-[22:10:52] [Client thread/INFO]: [CHAT] <Demonscript> Vas de sobrado o que?
-[22:10:58] [Client thread/INFO]: [CHAT] <Demonscript> espera
-[22:11:01] [Client thread/INFO]: [CHAT] <megabentilad> quien, yo? naaaaa
-[22:11:02] [Client thread/INFO]: [CHAT] <Demonscript> Bajate una cama
-[22:11:13] [Client thread/INFO]: [CHAT] <megabentilad> procedo
-[22:11:34] [Client thread/INFO]: [CHAT] Demonscript has made the advancement [A Seedy Place]
-[22:11:34] [Client thread/INFO]: Loaded 319 advancements
-[22:12:00] [Client thread/INFO]: [CHAT] <megabentilad> er gato
-[22:12:01] [Client thread/INFO]: [CHAT] <Demonscript> ra
-[22:12:09] [Client thread/INFO]: [CHAT] <Demonscript> Habria que hacer un par extra
-[22:12:15] [Client thread/INFO]: [CHAT] <megabentilad> por?
-[22:12:15] [Client thread/INFO]: [CHAT] <Demonscript> Para que te la bajes
-[22:12:17] [Client thread/INFO]: [CHAT] <megabentilad> ah
-[22:13:03] [Client thread/INFO]: [CHAT] <Demonscript> Habia una errabine que se veia desde arriba
-[22:13:09] [Client thread/INFO]: [CHAT] <megabentilad> un rabete
-[22:13:11] [Client thread/INFO]: [CHAT] <Demonscript> rollo millones de bloques de caida
-[22:13:15] [Client thread/INFO]: [CHAT] <Demonscript> Y cai con water drop
-[22:13:19] [Client thread/INFO]: [CHAT] <megabentilad> voy de cabeza
-[22:13:28] [Client thread/INFO]: [CHAT] <Demonscript> A ver si la encuentras
-[22:16:02] [Client thread/INFO]: [CHAT] <megabentilad> que guapo esto :o
-[22:16:06] [Client thread/INFO]: [CHAT] <Demonscript> El que?=
-[22:16:14] [Client thread/INFO]: [CHAT] <megabentilad> una formación
-[22:17:44] [Client thread/INFO]: [CHAT] <megabentilad> no veo ningún rabete
-[22:17:59] [Client thread/INFO]: [CHAT] <Demonscript> :\
-[22:18:06] [Client thread/INFO]: [CHAT] <megabentilad> no sería en la aldea?
-[22:18:10] [Client thread/INFO]: [CHAT] <Demonscript> Noooo
-[22:18:15] [Client thread/INFO]: [CHAT] <Demonscript> Explorando las minas se encuentra
-[22:18:18] [Client thread/INFO]: [CHAT] <Demonscript> Pero da igual
-[22:18:21] [Client thread/INFO]: [CHAT] <Demonscript> Tu explora y pica
-[22:18:27] [Client thread/INFO]: [CHAT] <megabentilad> hi hi
-[22:18:29] [Client thread/INFO]: [CHAT] <Demonscript> Si encuentras otro diamante podemos ya ir al infierno
-[22:18:36] [Client thread/INFO]: [CHAT] <megabentilad> podemos ir ya
-[22:18:43] [Client thread/INFO]: [CHAT] <megabentilad> solo hace falta 3 de hierro para eso
-[22:19:23] [Client thread/INFO]: [CHAT] <megabentilad> ay!
-[22:19:33] [Client thread/INFO]: [CHAT] <Demonscript> Que?
-[22:19:37] [Client thread/INFO]: [CHAT] <megabentilad> pum
-[22:19:49] [Client thread/INFO]: [CHAT] <Demonscript> Ya he escuchado algo
-[22:19:58] [Client thread/INFO]: [CHAT] megabentilad has made the advancement [Not Today, Thank You]
-[22:21:26] [Client thread/INFO]: [CHAT] megabentilad fell from a high place
-[22:21:29] [Client thread/INFO]: [CHAT] <megabentilad> casi
-[22:21:41] [Client thread/INFO]: [CHAT] <megabentilad> me cuadró un lagazo xD
-[22:21:41] [Client thread/INFO]: [CHAT] <Demonscript> Jajajaja
-[22:21:49] [Client thread/INFO]: [CHAT] <Demonscript> Patata no tenemos?
-[22:21:54] [Client thread/INFO]: [CHAT] <megabentilad> nope
-[22:21:57] [Client thread/INFO]: [CHAT] <megabentilad> ya baje :D
-[22:22:08] [Client thread/INFO]: [CHAT] <Demonscript> Vamos a necesitar para el futuro breeder
-[22:22:22] [Client thread/INFO]: [CHAT] <megabentilad> ya llegará
-[22:22:29] [Client thread/INFO]: [CHAT] <megabentilad> en la aldea no había?
-[22:22:37] [Client thread/INFO]: [CHAT] <Demonscript> Si pero soy tonto y no cigo nada
-[22:22:43] [Client thread/INFO]: [CHAT] <megabentilad> XDDD
-[22:22:47] [Client thread/INFO]: [CHAT] <megabentilad> pues ya sabes
-[22:22:47] [Client thread/INFO]: [CHAT] <Demonscript> Tambien es mejor comer patata que comer trigo
-[22:22:57] [Client thread/INFO]: [CHAT] <megabentilad> tenemos setas
-[22:23:35] [Client thread/INFO]: [CHAT] <megabentilad> voy a sacar al perro
-[22:23:37] [Client thread/INFO]: [CHAT] <Demonscript> A dormir
-[22:23:39] [Client thread/INFO]: [CHAT] <Demonscript> Valeee
-[22:23:41] [Client thread/INFO]: [CHAT] <megabentilad> ahora vengo por 4º vez
-[22:23:47] [Client thread/INFO]: [CHAT] <Demonscript> Jajajaja
-[22:23:48] [Client thread/INFO]: [CHAT] <Demonscript> Dale
-[22:23:49] [Client thread/INFO]: [CHAT] megabentilad left the game
-[22:25:58] [Client thread/INFO]: Connecting to sergioquijano.duckdns.org, 25565
-[22:25:58] [Client thread/INFO]: Loaded 319 advancements
-[22:26:00] [Client thread/WARN]: Received passengers for unknown entity
-[22:26:00] [Client thread/WARN]: Received passengers for unknown entity
-[22:28:46] [Client thread/INFO]: [CHAT] megabentilad joined the game
-[22:28:59] [Client thread/INFO]: [CHAT] <megabentilad> hii
-[22:29:05] [Client thread/INFO]: [CHAT] <Demonscript> Hello gain'
-[22:29:10] [Client thread/INFO]: [CHAT] <megabentilad> UuU
-[22:35:15] [Client thread/INFO]: [CHAT] <Demonscript> Dormicion
-[22:35:34] [Client thread/INFO]: [CHAT] <megabentilad> Ya toy
-[22:35:43] [Client thread/INFO]: [CHAT] <Demonscript> Nice one
-[22:35:47] [Client thread/INFO]: [CHAT] <Demonscript> Que estas en la mina?
-[22:36:09] [Client thread/INFO]: [CHAT] <megabentilad> subiendo
-[22:36:53] [Client thread/INFO]: Loaded 320 advancements
-[22:37:34] [Client thread/INFO]: [CHAT] megabentilad has made the advancement [Diamonds!]
-[22:37:47] [Client thread/INFO]: [CHAT] <Demonscript> Buena
-[22:37:55] [Client thread/INFO]: [CHAT] <megabentilad> xD
-[22:38:10] [Client thread/INFO]: [CHAT] <Demonscript> Necesito algo de cobble
-[22:38:54] [Client thread/INFO]: [CHAT] <Demonscript> Buena
-[22:39:10] [Client thread/INFO]: [CHAT] <megabentilad> y esto?
-[22:39:28] [Client thread/INFO]: [CHAT] <Demonscript> Buenisima
-[22:39:35] [Client thread/INFO]: [CHAT] <Demonscript> El bloque
-[22:39:42] [Client thread/INFO]: [CHAT] <megabentilad> que cosa más rara
-[22:39:43] [Client thread/INFO]: [CHAT] <Demonscript> The block
-[22:39:51] [Client thread/INFO]: [CHAT] <Demonscript> Esta buggeadisimo el puto juego
-[22:39:57] [Client thread/INFO]: [CHAT] <megabentilad> no no
-[22:40:00] [Client thread/INFO]: [CHAT] <megabentilad> es un crafteo
-[22:40:04] [Client thread/INFO]: [CHAT] <Demonscript> Aaaa
-[22:41:19] [Client thread/INFO]: [CHAT] megabentilad has made the advancement [A Seedy Place]
-[22:41:39] [Client thread/INFO]: [CHAT] <megabentilad> voy a por patata?
-[22:41:54] [Client thread/INFO]: [CHAT] <Demonscript> Voy yo si quieres
-[22:42:04] [Client thread/INFO]: [CHAT] <megabentilad> voy y así veo el pueblo
-[22:42:33] [Client thread/INFO]: [CHAT] <Demonscript> Tendriamos que colocar cofres
-[22:42:40] [Client thread/INFO]: [CHAT] <megabentilad> correcto xD
-[22:43:20] [Client thread/INFO]: [CHAT] megabentilad has made the advancement [The Parrots and the Bats]
-[22:44:41] [Client thread/INFO]: [CHAT] megabentilad has reached the goal [Reproduciros y morid]
-[22:44:47] [Client thread/INFO]: [CHAT] <Demonscript> Buena mateo
-[22:44:51] [Client thread/INFO]: [CHAT] <megabentilad> XDDD
-[22:44:51] [Client thread/INFO]: [CHAT] <Demonscript> Juegas contigo mismo
-[22:44:59] [Client thread/INFO]: [CHAT] <megabentilad> exacto
-[22:45:07] [Client thread/INFO]: [CHAT] <megabentilad> porque tu no lo haces :'v
-[22:45:27] [Client thread/INFO]: Loaded 322 advancements
-[22:46:38] [Client thread/INFO]: Loaded 323 advancements
-[22:46:40] [Client thread/INFO]: Loaded 331 advancements
-[22:46:57] [Client thread/WARN]: Received passengers for unknown entity
-[22:47:10] [Client thread/INFO]: [CHAT] <megabentilad> mimir
-[22:47:14] [Client thread/WARN]: Received passengers for unknown entity
-[22:47:17] [Client thread/INFO]: [CHAT] <Demonscript> Done
-[22:51:29] [Client thread/INFO]: [CHAT] <Demonscript> Tengo que irme
-[22:51:35] [Client thread/INFO]: [CHAT] <megabentilad> yo también
-[22:51:37] [Client thread/INFO]: [CHAT] <Demonscript> Vale
-[22:51:38] [Client thread/INFO]: [CHAT] <megabentilad> cierra si quieres
-[22:51:40] [Client thread/INFO]: [CHAT] <Demonscript> Pues apago
-[22:51:43] [Client thread/INFO]: [CHAT] <Demonscript> Hasta otro rato
-[22:51:46] [Client thread/INFO]: Built for minecraft version 1.14.1
-[22:51:48] [Client thread/INFO]: Stopping!
+[15:25:40] [Client thread/WARN]: Skipping bad option: lastServer:
+[15:25:40] [Client thread/INFO]: LWJGL Version: 3.2.1 build 12
+[15:25:42] [Client thread/WARN]: ERROR : Couldn't load Narrator library : Unable to load library 'fliteWrapper': Native library (linux-x86-64/libfliteWrapper.so) not found in resource path (/home/sergio/.minecraft/libraries/com/mojang/laulib/1.0/laulib-1.0.jar:/home/sergio/.minecraft/libraries/com/mojang/patchy/1.1/patchy-1.1.jar:/home/sergio/.minecraft/libraries/oshi-project/oshi-core/1.1/oshi-core-1.1.jar:/home/sergio/.minecraft/libraries/net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar:/home/sergio/.minecraft/libraries/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar:/home/sergio/.minecraft/libraries/com/ibm/icu/icu4j-core-mojang/51.2/icu4j-core-mojang-51.2.jar:/home/sergio/.minecraft/libraries/com/mojang/javabridge/1.0.22/javabridge-1.0.22.jar:/home/sergio/.minecraft/libraries/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/home/sergio/.minecraft/libraries/io/netty/netty-all/4.1.25.Final/netty-all-4.1.25.Final.jar:/home/sergio/.minecraft/libraries/com/google/guava/guava/21.0/guava-21.0.jar:/home/sergio/.minecraft/libraries/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/home/sergio/.minecraft/libraries/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/sergio/.minecraft/libraries/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/sergio/.minecraft/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar:/home/sergio/.minecraft/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar:/home/sergio/.minecraft/libraries/com/mojang/brigadier/1.0.17/brigadier-1.0.17.jar:/home/sergio/.minecraft/libraries/com/mojang/datafixerupper/2.0.24/datafixerupper-2.0.24.jar:/home/sergio/.minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/home/sergio/.minecraft/libraries/com/mojang/authlib/1.5.25/authlib-1.5.25.jar:/home/sergio/.minecraft/libraries/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar:/home/sergio/.minecraft/libraries/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/home/sergio/.minecraft/libraries/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/home/sergio/.minecraft/libraries/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/home/sergio/.minecraft/libraries/it/unimi/dsi/fastutil/8.2.1/fastutil-8.2.1.jar:/home/sergio/.minecraft/libraries/org/apache/logging/log4j/log4j-api/2.8.1/log4j-api-2.8.1.jar:/home/sergio/.minecraft/libraries/org/apache/logging/log4j/log4j-core/2.8.1/log4j-core-2.8.1.jar:/home/sergio/.minecraft/libraries/com/mojang/realms/1.14.15/realms-1.14.15.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl/3.2.1/lwjgl-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-jemalloc/3.2.1/lwjgl-jemalloc-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-openal/3.2.1/lwjgl-openal-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-opengl/3.2.1/lwjgl-opengl-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-glfw/3.2.1/lwjgl-glfw-3.2.1.jar:/home/sergio/.minecraft/libraries/org/lwjgl/lwjgl-stb/3.2.1/lwjgl-stb-3.2.1.jar:/home/sergio/.minecraft/libraries/com/mojang/text2speech/1.11.3/text2speech-1.11.3.jar:/home/sergio/.minecraft/versions/1.14.1/1.14.1.jar)
+[15:25:42] [Client thread/INFO]: Built for minecraft version 1.14.1
+[15:25:43] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[15:26:02] [Client thread/INFO]: OpenAL initialized.
+[15:26:02] [Client thread/INFO]: Sound engine started
+[15:26:02] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[15:26:03] [Client thread/INFO]: Created: 256x256 textures/particle-atlas
+[15:26:03] [Client thread/INFO]: Created: 256x256 textures/painting-atlas
+[15:26:03] [Client thread/INFO]: Created: 256x128 textures/mob_effect-atlas
+[15:26:12] [Client thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:26:12] [Client thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:26:12] [Client thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:26:12] [Client thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:26:12] [Client thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:26:12] [Server thread/INFO]: Starting integrated minecraft server version 1.14.1
+[15:26:12] [Server thread/INFO]: Generating keypair
+[15:26:12] [Server thread/INFO]: Reloading ResourceManager: Default
+[15:26:13] [Server thread/INFO]: Loaded 6 recipes
+[15:26:14] [Server thread/INFO]: Loaded 811 advancements
+[15:26:14] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:26:15] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:21] [Client thread/INFO]: Preparing spawn area: 0%
+[15:26:22] [Client thread/INFO]: Preparing spawn area: 8%
+[15:26:22] [Client thread/INFO]: Preparing spawn area: 35%
+[15:26:23] [Client thread/INFO]: Preparing spawn area: 62%
+[15:26:23] [Client thread/INFO]: Preparing spawn area: 92%
+[15:26:24] [Client thread/INFO]: Time elapsed: 9371 ms
+[15:26:24] [Server thread/INFO]: Changing view distance to 6, from 10
+[15:26:25] [Server thread/INFO]: Demonscript[local:E:6b52f31c] logged in with entity id 137 at (-266.05533893635067, 54.0, -219.8333892236203)
+[15:26:25] [Server thread/INFO]: Demonscript joined the game
+[15:26:29] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 4068ms or 81 ticks behind
+[15:26:29] [Server thread/INFO]: Saving and pausing game...
+[15:26:29] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:the_nether
+[15:26:29] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:overworld
+[15:26:32] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:the_end
+[15:26:33] [Client thread/INFO]: Loaded 319 advancements
+[15:26:38] [Server thread/INFO]: Saving and pausing game...
+[15:26:38] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:the_nether
+[15:26:38] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:overworld
+[15:26:39] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:the_end
+[15:26:49] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2006ms or 40 ticks behind
+[15:27:03] [Server thread/INFO]: Saving and pausing game...
+[15:27:03] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:the_nether
+[15:27:03] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:overworld
+[15:27:05] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:the_end
+[15:27:10] [Server thread/INFO]: Saving and pausing game...
+[15:27:10] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:the_nether
+[15:27:10] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:overworld
+[15:27:11] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:the_end
+[15:27:11] [Server thread/INFO]: Demonscript lost connection: Disconnected
+[15:27:11] [Server thread/INFO]: Demonscript left the game
+[15:27:11] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[15:27:11] [Server thread/INFO]: Stopping server
+[15:27:11] [Server thread/INFO]: Saving players
+[15:27:11] [Server thread/INFO]: Saving worlds
+[15:27:11] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:the_nether
+[15:27:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:27:11] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:overworld
+[15:27:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (Granada): All chunks are saved
+[15:27:12] [Server thread/INFO]: Saving chunks for level 'Granada'/minecraft:the_end
+[15:27:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:27:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:27:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (Granada): All chunks are saved
+[15:27:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:27:12] [Client thread/INFO]: Built for minecraft version 1.14.1
+[15:27:12] [Client thread/INFO]: Stopping!

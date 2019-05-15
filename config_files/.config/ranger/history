@@ -1,6 +1,3 @@
-open_with
-p
-open_with net
 mkdir Geometría III
 mkdir Apuntes
 mkdir Relaciones de Ejercicios
@@ -39,12 +36,15 @@ touch
 touch tsp_common.hpp
 rename Glosario de la asignaturad .pdf
 mkdir Datos
-copy
 rename tsp_perturbation.cpp
-delete
 cut
-paste
 w
 open_with r t nvim
+open_with t nv
 terminal 
+delete
+mkdir ejer4
+mkdir ejer5
+copy
+paste
 open_with t nvim
