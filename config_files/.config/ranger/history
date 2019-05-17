@@ -1,5 +1,3 @@
-mkdir Geometría III
-mkdir Apuntes
 mkdir Relaciones de Ejercicios
 dlete
 pate
@@ -10,7 +8,6 @@ rename Geometría III - Apuntes.pdf
 open_with netbeans
 rename 7.-Diagramas de Secuencia.pdf
 open_with t libreoffice
-rename Práctica 3 - Cuaderno.odt
 open_with libreoffice
 mkdir bp3
 rename captura02.png
@@ -27,9 +24,7 @@ rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 8.pdf
 rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 9.pdf
 rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 10.pdf
 rename Relación Tema 3 - Ejercicio 3 Resuelto.pdf
-mkdir Práctica 4
 tou
-mkdir Códigos
 mkdir Practica3
 mkdir Codigos
 touch 
@@ -41,10 +36,15 @@ cut
 w
 open_with r t nvim
 open_with t nv
-terminal 
 delete
 mkdir ejer4
 mkdir ejer5
-copy
-paste
+terminal 
 open_with t nvim
+copy
+mkdir Práctica 4
+paste
+rename Práctica 3 - Cuaderno.odt
+mkdir Ejer
+mkdir bp4
+mkdir Códigos
