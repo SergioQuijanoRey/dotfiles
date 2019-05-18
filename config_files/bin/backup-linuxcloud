@@ -11,9 +11,10 @@
 
 # Variables
 #===============================================================================
-SERVERIP="192.168.1.8"
+REMOTEIP="sergioquijano.duckdns.org"
 origin="/home/sergio/LinuxCloud/"
-dest="sergio@$SERVERIP:~/LinuxCloud"
+dest="sergio@$REMOTEIP:~/LinuxCloud"
+log_file="/home/sergio/.logs/backup-linuxcloud.log"
 
 # Main program
 #===============================================================================
@@ -21,7 +22,9 @@ dest="sergio@$SERVERIP:~/LinuxCloud"
 notify-send --urgency=low -i terminal "Starting files backup to the raspberry server..." 
 
 # Doing the backup
-rsync -zaP $origin $dest 
+echo "Backup done at $(date)" >> $log_file 
+echo "================================================================================" >> $log_file
+rsync -zaP $origin $dest 1>> $log_file 2>> $log_file
 
 # We show that we've finished
 notify-send --urgency=low -i terminal "Files backup done!" 
