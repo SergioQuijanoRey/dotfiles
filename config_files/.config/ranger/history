@@ -1,5 +1,3 @@
-mkdir Relaciones de Ejercicios
-dlete
 pate
 rename Geometría III - Relación 2.pdf
 rename Geometría III - Relación 3.pdf
@@ -36,11 +34,9 @@ cut
 w
 open_with r t nvim
 open_with t nv
-delete
 mkdir ejer4
 mkdir ejer5
 terminal 
-open_with t nvim
 copy
 mkdir Práctica 4
 paste
@@ -48,3 +44,7 @@ rename Práctica 3 - Cuaderno.odt
 mkdir Ejer
 mkdir bp4
 mkdir Códigos
+terminal
+open_with net
+delete
+open_with t nvim

@@ -14,7 +14,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
     " General purpose
     Plug 'scrooloose/nerdtree'          " File exploring
-    v1.2 02/05/2019 - Tags changed by spaces and idention corrected
     Plug 'junegunn/fzf.vim'             " Fuzzy Finder
     Plug 'w0rp/ale'                     " Real time linting
 
