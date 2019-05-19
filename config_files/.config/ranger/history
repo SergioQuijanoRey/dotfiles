@@ -1,5 +1,3 @@
-pate
-rename Geometría III - Relación 2.pdf
 rename Geometría III - Relación 3.pdf
 rename Geometría III - Guia Docente.pdf
 rename Geometría III - Apuntes.pdf
@@ -15,8 +13,6 @@ rename Práctica 3 - Tablas.
 mkdir ejer2
 
 mkdir ejer3
-rename Transparencias - Tema 3.pdf
-rename Relación 3.pdf
 rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 7.pdf
 rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 8.pdf
 rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 9.pdf
@@ -30,7 +26,6 @@ touch tsp_common.hpp
 rename Glosario de la asignaturad .pdf
 mkdir Datos
 rename tsp_perturbation.cpp
-cut
 w
 open_with r t nvim
 open_with t nv
@@ -39,12 +34,17 @@ mkdir ejer5
 terminal 
 copy
 mkdir Práctica 4
-paste
 rename Práctica 3 - Cuaderno.odt
 mkdir Ejer
 mkdir bp4
 mkdir Códigos
 terminal
 open_with net
-delete
 open_with t nvim
+rename Transparencias - Tema 3.pdf
+rename Transparencias - Tema 4.pdf
+delete
+cut
+paste
+rename Relación 3.pdf
+rename Relación 4.pdf
