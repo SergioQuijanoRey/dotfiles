@@ -51,6 +51,7 @@ ln -s -v -f $dotfiles/.bash_aliases $home/.bash_aliases
 ln -s -v -f $dotfiles/.bash_functions $home/.bash_functions
 ln -s -v -f $dotfiles/.bash_prompt $home/.bash_prompt
 ln -s -v -f $dotfiles/.vimrc $home/.vimrc
+ln -s -v -f $dotfiles/.gitconfig $home/.gitconfig
 ln -s -v -f $dotfiles/touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
 # Linking folders

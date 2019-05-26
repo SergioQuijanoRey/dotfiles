@@ -1,0 +1,28 @@
+# Author:
+#     Sergio Quijano Rey
+#     sergiquijano@gmail.com
+# Description:
+#     Git configuration file
+# Version:
+#     v1.0 - 26/05/2019 - First documented and personalized version
+
+[user]
+	email = sergiquijano@gmail.com
+	name = Sergio Quijano Rey
+
+# Store the passwords
+[credential]
+	helper = store
+
+[core]
+    editor = nvim
+
+[diff]
+    tool = vimdiff
+
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+
+[difftool]
+    prompt = 0
