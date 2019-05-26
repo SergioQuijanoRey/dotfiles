@@ -1,9 +1,3 @@
-mkdir Practica3
-mkdir Codigos
-touch 
-touch tsp_common.hpp
-rename Glosario de la asignaturad .pdf
-mkdir Datos
 rename tsp_perturbation.cpp
 w
 open_with r t nvim
@@ -29,11 +23,9 @@ rename Práctica 4 - Diagrama de Clases UML.pdf
 rename Codigos_Cuarta_Parte.zip
 rename billete-bus.pdf
 touch Tema 15 - Copia de objetos.md
-
 mkdir eher1
 rename ejer1
 touch suma_vectores.c
-terminal 
 mkdir Examenes Pasados
 rename Prueba 2017.pdf
 rename Prueba 2018.pdf
@@ -45,6 +37,14 @@ rename Arquitectura de Computadores - Transparencias Tema 4 - Parte 1.pdf
 cut
 paste
 rename Arquitectura de Comp
-delete
-open_with t nvim
 rename deepspace0
+mkdir ejer2
+touch daxpy.c
+open_with t nvim
+delete
+terminal 
+open_with nautilus
+open_with ark
+de
+
+open_with 
