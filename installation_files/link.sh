@@ -33,6 +33,7 @@ link_dir(){
 #===============================================================================
 home="/home/sergio"
 base_dir="$home/GitProjects/dotfiles"
+git_folder="$home/GitProjects"
 dotfiles="$base_dir/config_files"
 
 echo "home: $home"
@@ -61,6 +62,7 @@ link_dir $dotfiles/bin $home/bin "~"
 link_dir $dotfiles/.icons $home/.icons "~" 
 link_dir $dotfiles/.fonts $home/.fonts "~"
 link_dir $dotfiles/.games $home/.games "~"
+link_dir $git_folder/games $home/.games "~"
 
 echo "================================================================================"
 echo "Linker executed succesfully"
