@@ -1,21 +1,3 @@
-rename Geometría III - Apuntes.pdf
-open_with netbeans
-rename 7.-Diagramas de Secuencia.pdf
-open_with t libreoffice
-open_with libreoffice
-mkdir bp3
-rename captura02.png
-touch Práctica 3 - Tablas.odt
-rename 
-rename Práctica 3 - Tablas.
-mkdir ejer2
-mkdir ejer3
-rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 7.pdf
-rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 8.pdf
-rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 9.pdf
-rename Arquitectura de Computadores - Transparencias Tema 3 - Lección 10.pdf
-rename Relación Tema 3 - Ejercicio 3 Resuelto.pdf
-tou
 mkdir Practica3
 mkdir Codigos
 touch 
@@ -38,13 +20,31 @@ terminal
 open_with net
 rename Transparencias - Tema 3.pdf
 rename Transparencias - Tema 4.pdf
-delete
-cut
-paste
 rename Relación 3.pdf
 rename Relación 4.pdf
 touch Presentacion.tex
-terminal 
-
 open_with t 
+rename Práctica 4 - Guión.pdf
+rename Práctica 4 - Diagrama de Clases UML.pdf
+rename Codigos_Cuarta_Parte.zip
+rename billete-bus.pdf
+touch Tema 15 - Copia de objetos.md
+
+mkdir eher1
+rename ejer1
+touch suma_vectores.c
+terminal 
+mkdir Examenes Pasados
+rename Prueba 2017.pdf
+rename Prueba 2018.pdf
+rename Prueba 2016.pdf
+rename Arquitectura de Computadores - Transparencias Tema 4 - Parte 12.pdf
+rename 
+rename Arquitectura de Computadores - Transparencias Tema 4 - Parte 2.pdf
+rename Arquitectura de Computadores - Transparencias Tema 4 - Parte 1.pdf
+cut
+paste
+rename Arquitectura de Comp
+delete
 open_with t nvim
+rename deepspace0
