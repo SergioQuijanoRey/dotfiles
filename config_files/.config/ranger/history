@@ -1,10 +1,3 @@
-rename tsp_perturbation.cpp
-w
-open_with r t nvim
-open_with t nv
-mkdir ejer4
-mkdir ejer5
-copy
 mkdir Práctica 4
 rename Práctica 3 - Cuaderno.odt
 mkdir Ejer
@@ -31,20 +24,27 @@ rename Prueba 2017.pdf
 rename Prueba 2018.pdf
 rename Prueba 2016.pdf
 rename Arquitectura de Computadores - Transparencias Tema 4 - Parte 12.pdf
-rename 
 rename Arquitectura de Computadores - Transparencias Tema 4 - Parte 2.pdf
 rename Arquitectura de Computadores - Transparencias Tema 4 - Parte 1.pdf
-cut
-paste
 rename Arquitectura de Comp
 rename deepspace0
 mkdir ejer2
 touch daxpy.c
+open_with nautilus
+de
+_
+rename Práctica 5 - Guión.pdf
+rename Práctica 5 - Turorial - Diagramas UML.pdf
+rename 
+rename Práctica 5 - Tutorial - Guión.pdf
+
+rename Códigos_QUintar_Parte_Tutorial.zip
+open_with ar
+open_with ark
+open_with 
+terminal 
+cut
+paste
+touch Tema 17 - Algunos ejemplos.md
 open_with t nvim
 delete
-terminal 
-open_with nautilus
-open_with ark
-de
-
-open_with 

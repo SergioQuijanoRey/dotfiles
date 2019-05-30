@@ -25,4 +25,4 @@
     conflictstyle = diff3
 
 [difftool]
-    prompt = 0
+    #prompt = 0
