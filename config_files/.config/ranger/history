@@ -1,50 +1,50 @@
-mkdir Práctica 4
-rename Práctica 3 - Cuaderno.odt
-mkdir Ejer
-mkdir bp4
-mkdir Códigos
-terminal
-open_with net
-rename Transparencias - Tema 3.pdf
-rename Transparencias - Tema 4.pdf
-rename Relación 3.pdf
-rename Relación 4.pdf
-touch Presentacion.tex
-open_with t 
-rename Práctica 4 - Guión.pdf
-rename Práctica 4 - Diagrama de Clases UML.pdf
-rename Codigos_Cuarta_Parte.zip
-rename billete-bus.pdf
-touch Tema 15 - Copia de objetos.md
-mkdir eher1
-rename ejer1
-touch suma_vectores.c
-mkdir Examenes Pasados
-rename Prueba 2017.pdf
-rename Prueba 2018.pdf
-rename Prueba 2016.pdf
-rename Arquitectura de Computadores - Transparencias Tema 4 - Parte 12.pdf
-rename Arquitectura de Computadores - Transparencias Tema 4 - Parte 2.pdf
-rename Arquitectura de Computadores - Transparencias Tema 4 - Parte 1.pdf
-rename Arquitectura de Comp
-rename deepspace0
-mkdir ejer2
-touch daxpy.c
-open_with nautilus
-de
-_
-rename Práctica 5 - Guión.pdf
-rename Práctica 5 - Turorial - Diagramas UML.pdf
-rename 
-rename Práctica 5 - Tutorial - Guión.pdf
-
-rename Códigos_QUintar_Parte_Tutorial.zip
-open_with ar
-open_with ark
+touch Tema 17 - Algunos ejemplos.md
+rename TestP2.java
+search SpaceCit
+q
 open_with 
+rename SpaceCity.java
+search Space
+search SpaceCity
+search SpaceCity.java
+search SpaceStation
+search betta
+open_with t 
+open_with t n
+term
+
+rename Pruebas
+temr
+terminal
+mkdir ExamenUSB
+terminal m
+cop
+past
+open_with
+rename PracticaConjunta
+rename PracticaSolitario
+dele
+Delete
+rename PracticasConjuntas
+rename PracticasSolitario
+copy
+pastwe
+touch diario 2019 05 - Mayo.md
+_
+rename Diario 2019 05 - Mayo.md
 terminal 
+mkdir Capitulo 7
 cut
 paste
-touch Tema 17 - Algunos ejemplos.md
-open_with t nvim
 delete
+rename Tema 18 no jeje.pdf
+rename Tema 18.pdf
+rename Tema 19.pdf
+rename Tema 20.pdf
+mkdir Algoritmos
+mkdir Busqueda
+touch busq
+mkdir Ordenacion
+touch selection_sort.pseudo
+touch selection_sort.py
+open_with t nvim

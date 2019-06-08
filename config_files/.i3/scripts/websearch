@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Author:
+#     Sergio Quijano Rey
+#     sergiquijano@gmail.com
+# Description:
+#     Rofi web search, based on gotbletu websearch script
+# Version:
+#     v1.0 - 04/06/2019 - First documented an functional version
+
+# set your browser (uncomment if needed, some GUI does not detect browser variable)
+BROWSER=firefox
+rofi_theme="/home/sergio/.i3/rofithemes/side.rasi"
+#surfraw -browser=$browser $(sr -elvi | awk -f'-' '{print $1}' | sed '/:/d' | awk '{$1=$1};1' | rofi -config $rofi_theme -kb-row-select "tab" -kb-row-tab "control+space" -dmenu -mesg ">>> tab = autocomplete" -i -p "rofi-surfraw-websearch: ")
+surfraw -browser=$browser $(rofi -config $rofi_theme "rofi-surfraw-websearch: ")
+#surfraw -browser=$BROWSER
