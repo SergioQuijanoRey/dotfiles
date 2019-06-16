@@ -1,4 +1,3 @@
-rename TestP2.java
 search SpaceCit
 q
 open_with 
@@ -11,7 +10,6 @@ search betta
 open_with t 
 open_with t n
 term
-
 rename Pruebas
 temr
 terminal
@@ -31,9 +29,7 @@ pastwe
 touch diario 2019 05 - Mayo.md
 _
 rename Diario 2019 05 - Mayo.md
-terminal 
 mkdir Capitulo 7
-delete
 rename Tema 18 no jeje.pdf
 rename Tema 18.pdf
 rename Tema 19.pdf
@@ -45,6 +41,10 @@ mkdir Ordenacion
 touch selection_sort.pseudo
 touch selection_sort.py
 open_with t nvim
+rename Análisis Matemático II - LibreIM.pdf
+mkdir Examenes
 cut
 paste
-rename Análisis Matemático II - LibreIM.pdf
+terminal 
+
+delete
