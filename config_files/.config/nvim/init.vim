@@ -34,6 +34,9 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'sickill/vim-monokai'          " Monokai Theme
     Plug 'morhetz/gruvbox'              " Gruvbox Theme
 
+    " Kotlin development
+    Plug 'udalov/kotlin-vim'            " For basic kotlin suport
+
 call plug#end()
 
 " LEADER KEY
