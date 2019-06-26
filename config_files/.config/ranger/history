@@ -1,6 +1,3 @@
-search SpaceCit
-q
-open_with 
 rename SpaceCity.java
 search Space
 search SpaceCity
@@ -20,7 +17,6 @@ past
 open_with
 rename PracticaConjunta
 rename PracticaSolitario
-dele
 Delete
 rename PracticasConjuntas
 rename PracticasSolitario
@@ -43,8 +39,12 @@ touch selection_sort.py
 open_with t nvim
 rename Análisis Matemático II - LibreIM.pdf
 mkdir Examenes
+
+abort 
+open_with libreoffice
 cut
 paste
-terminal 
-
+rename Análisis Matemático II - Juan Carlos Cabello.pdf
+dele
 delete
+terminal 

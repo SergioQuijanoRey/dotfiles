@@ -67,6 +67,13 @@ map <C-Up> 3k
 vnoremap < <gv
 vnoremap > >gv
 
+" Remember folds made on a file
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
+
 " PERFORMANCE
 "==============================================================================
 set autoread                                " Auto reload changed files
