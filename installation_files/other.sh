@@ -13,5 +13,5 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 
 # Install neovim dependencies
 gem install neovim
+sudo pip3 install --upgrade --user pynvim
 sudo pip install --upgrade --user pynvim
-sudo pip2 install --upgrade --user pynvim
