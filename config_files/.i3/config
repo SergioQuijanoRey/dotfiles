@@ -207,8 +207,8 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 # bindsym XF86TouchpadToggle exec /home/sergio/.i3/scripts/toggletouchpad # toggle touchpad -- No se necesita con libinput -- No se necesita con libinput
 
 # Music song controls
-bindsym XF86AudioPlay exec play_pause
-bindsym XF86AudioPause exec play_pause
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
