@@ -41,6 +41,7 @@ playerctl
 # i3 components
 #===============================================================================
 i3-wm					# The preferred wm
+i3blocks                # The preferred status bar
 feh						# To set the background
 compton					# i3 compositor
 rofi					# Program launcher
