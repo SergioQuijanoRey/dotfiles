@@ -1,5 +1,3 @@
-open_with t 
-open_with t n
 term
 rename Pruebas
 temr
@@ -38,7 +36,6 @@ open_with libreoffice
 rename Análisis Matemático II - Juan Carlos Cabello.pdf
 dele
 rename Legend of Zelda Ocarina of time.rom
-cut
 find .ga
 terminal 
 rename 
@@ -47,4 +44,7 @@ rename The legend of Zelda Ocarina of time.iso
 copy
 mkdir Rooms
 rename GameCube Rooms
+cut
+mkdir Matrícula Tercer Cruso
 paste
+rename Inscripción matrícula 2019 - 2020.pdf
