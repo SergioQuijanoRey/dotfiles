@@ -1,7 +1,0 @@
-#!/bin/bash
-game_path="/home/sergio/.wine/drive_c/Program\ Files\ \(x86)/The\ Sims\ 4/Game/Bin"
-game_name="TS4_x64.exe"
-launcher="wine"
-
-cd $game_path
-$launcher $game_name
