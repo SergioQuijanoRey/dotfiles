@@ -25,7 +25,7 @@ bindsym $mod+Shift+Return exec alacritty --config-file /home/sergio/.config/alac
 bindsym $mod+Shift+q kill
 
 # Rofi menu launcher
-set $rofi_theme "/home/sergio/.i3/rofithemes/Pop-Dark.rasi"
+set $rofi_theme "/home/sergio/.i3/rofithemes/sidetab.rasi"
 bindsym $mod+d exec rofi -show run -config $rofi_theme
 bindsym $mod+Shift+d exec rofi -show window -config $rofi_theme
 
