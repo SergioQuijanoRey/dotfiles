@@ -6,7 +6,7 @@
 " Version:
 "     v1.0 06/02/2019 - First functionally version of the configuration
 "     v1.1 08/02/2019 - More pulished configuration, better organized
-"     v1.2 02/05/2019 - Tags changed by spaces and idention corrected
+"     v1.2 02/05/2019 - Tabs changed by spaces and idention corrected
 
 " PLUGIN MANAGER
 "==============================================================================
