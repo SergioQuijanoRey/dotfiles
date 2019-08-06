@@ -51,6 +51,8 @@ set incsearch                           " Shows results while searching
 set wildmenu                            " Tab autocomplete in command mode
 set backspace=indent,eol,start          " Normal backspace (for VI specially)
 set mouse=n                             " Allow mouse control
+set undofile                            " Persisten undos (I can undo even if I closed the file)
+set encoding=utf-8                      " Type of encoding
 
 " Four spaces instead of tab
 filetype plugin indent on
@@ -131,7 +133,6 @@ map <C-o> :NERDTreeToggle<CR>
 " Goto Definition
 map <C-g> :ALEGoToDefinitionInSplit<CR>
 
-
 " PLUGINS CONFIGURATION
 "=============================================================================
 " Deoplete configuration
@@ -143,3 +144,4 @@ let g:ale_completion_enabled = 1        " ALE autocompletion
 " TODO:
 "=============================================================================
 "   * See how can I name the folds i made
+"   * Mark trailing spaces
