@@ -138,10 +138,9 @@ map <C-g> :ALEGoToDefinitionInSplit<CR>
 " Deoplete configuration
 let g:deoplete#enable_at_startup = 1
 
-" ALE
-let g:ale_completion_enabled = 1        " ALE autocompletion
 
 " TODO:
 "=============================================================================
 "   * See how can I name the folds i made
 "   * Mark trailing spaces
+"   * See how to properly configure Deoplete
