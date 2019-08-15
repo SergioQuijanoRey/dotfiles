@@ -1,15 +1,3 @@
-term
-rename Pruebas
-temr
-terminal
-mkdir ExamenUSB
-terminal m
-cop
-past
-open_with
-rename PracticaConjunta
-rename PracticaSolitario
-Delete
 rename PracticasConjuntas
 rename PracticasSolitario
 pastwe
@@ -30,21 +18,33 @@ touch selection_sort.py
 open_with t nvim
 rename Análisis Matemático II - LibreIM.pdf
 mkdir Examenes
-
 abort 
 open_with libreoffice
 rename Análisis Matemático II - Juan Carlos Cabello.pdf
 dele
 rename Legend of Zelda Ocarina of time.rom
 find .ga
-terminal 
 rename 
-delete
 rename The legend of Zelda Ocarina of time.iso
 copy
 mkdir Rooms
 rename GameCube Rooms
-cut
 mkdir Matrícula Tercer Cruso
-paste
 rename Inscripción matrícula 2019 - 2020.pdf
+search Polonia
+
+open_with shotwell
+open_with 
+rename Final Fantasy IX CD 1.iso
+rename Final Fantasy IX CD 1.bin
+rename Animal Crossing.iso
+mkdir Nuevo
+find 
+rename FFIX Disc1.bin
+terminal 
+cut
+paste
+delete
+mkdir Memory Card
+touch mainmemcard
+rename mainmemcard.mcr
