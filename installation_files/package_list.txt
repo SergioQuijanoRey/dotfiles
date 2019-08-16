@@ -59,7 +59,8 @@ xfce4-notifyd           # Avoids notify bugs
 
 # Others
 #===============================================================================
-firefox
+firefox                 # Primary browser
+brave                   # Secondary browser
 telegram-desktop
 evince
 
