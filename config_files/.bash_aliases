@@ -23,8 +23,7 @@ alias glog="git log | nvim"
 
 # System config aliases
 alias confi3="nvim .i3/config"
-alias vconf="nvim .vimrc"
-alias nvconf="nvim .nvimrc"
+alias nvconf="nvim .config/nvim/init.vim"
 alias libinputconf="sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf"
 alias reload="source .bashrc; source .bash_aliases; source .profile"
 
@@ -40,8 +39,3 @@ alias unterminal="bg %1 && disown %1"
 # Server aliases
 alias localssh="ssh sergio@$LOCALIP"
 alias remotessh="ssh sergio@$REMOTEIP"
-alias atcssh="ssh $atc_usr@atcgrid.ugr.es"
-
-# Others
-alias sims="cd /home/sergio/.wine/drive_c/Program\ Files\ \(x86\)/The\ Sims\ 4/Game/Bin && wine ./TS4_x64.exe"
-
