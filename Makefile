@@ -21,6 +21,11 @@ packages:
 	./installation_files/packages.sh
 
 download:
+	@echo "Downloading the files from git to the system"
+	./installation_files/download.sh
 
 upload:
+	@echo "Uploading the files from the system to git repository"
+	@echo "A git push need to be done manually"
+	./installation_files/upload.sh
 
