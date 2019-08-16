@@ -10,27 +10,27 @@
 
 # Script parameters
 #===============================================================================
-base_dir="/home/sergio/GitProjects/dotfiles/installation_files/"
+base_dir="$HOME/GitProjects/dotfiles/installation_files/"
 pacman_list="$base_dir/package_list.txt"
 aur_list="$base_dir/aur_list.txt"
 aur_manager="yay"
 
 # Script process
 #===============================================================================
-# # System update
-# echo "Uptading and upgrading the system"
-# sudo pacman -Syyu
-# echo "Update done!"
-# echo ""
-# 
-# # Pacman packages are installed
-# echo "Installing pacman packages specified at $pacman_list ..."
-# for package in $(cat $pacman_list | grep -o '^[^#]*')
-# do
-# 	echo "Installing $package..."
-# 	sudo pacman -S $package --noconfirm
-# 	echo ""
-# done
+# System update
+echo "Uptading and upgrading the system"
+sudo pacman -Syyu
+echo "Update done!"
+echo ""
+
+# Pacman packages are installed
+echo "Installing pacman packages specified at $pacman_list ..."
+for package in $(cat $pacman_list | grep -o '^[^#]*')
+do
+	echo "Installing $package..."
+	sudo pacman -S $package --noconfirm
+	echo ""
+done
 
 # AUR packages are installed
 echo "Installing AUR packages specified at $aur_list ..."
