@@ -28,4 +28,3 @@ upload:
 	@echo "Uploading the files from the system to git repository"
 	@echo "A git push need to be done manually"
 	./installation_files/upload.sh
-

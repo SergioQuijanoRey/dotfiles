@@ -45,25 +45,8 @@ echo "dotfiles: $dotfiles"
 echo "Executing linker!"
 
 # Linking config files
-ln -s -v -f $dotfiles/.bashrc $home/.bashrc
-ln -s -v -f $dotfiles/.bash_profile $home/.bash_profile
-ln -s -v -f $dotfiles/.bash_aliases $home/.bash_aliases
-ln -s -v -f $dotfiles/.bash_functions $home/.bash_functions
-ln -s -v -f $dotfiles/.bash_prompt $home/.bash_prompt
-ln -s -v -f $dotfiles/.vimrc $home/.vimrc
-ln -s -v -f $dotfiles/.gitconfig $home/.gitconfig
 ln -s -v -f $dotfiles/touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
-# Linking folders
-link_dir $dotfiles/.i3 $home/.i3 "~"
-link_dir $dotfiles/.config/nvim $home/.config/nvim "~"
-link_dir $dotfiles/.config/alacritty $home/.config/alacritty "~"
-link_dir $dotfiles/.config/ranger $home/.config/ranger "~" 
-link_dir $dotfiles/bin $home/bin "~" 
-link_dir $dotfiles/.icons $home/.icons "~" 
-link_dir $dotfiles/.fonts $home/.fonts "~"
-link_dir $dotfiles/.games $home/.games "~"
-link_dir $git_folder/games $home/.games "~"
 
 echo "================================================================================"
 echo "Linker executed succesfully"
