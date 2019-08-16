@@ -13,3 +13,4 @@ config_files_dir="$HOME/GitProjects/dotfiles/config_files/"
 # Script running the instructions
 #===============================================================================
 rsync -zaP $config_files_dir $HOME
+sudo rsync -zaP $config_files_dir/touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf    # For having nice touchpad setting
