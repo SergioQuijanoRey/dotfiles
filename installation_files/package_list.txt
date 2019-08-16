@@ -20,10 +20,8 @@ alacritty
 
 # Programming
 #===============================================================================
-vim
 nvim
 community/code
-gedit
 jupyter
 valgrind
 ranger
