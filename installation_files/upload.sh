@@ -25,7 +25,7 @@ rsync -zaP $HOME/.icons $config_files_dir
 rsync -zaP $HOME/bin $config_files_dir
 
 # Syncing folders in $HOME/.config
-for folder in nvim alacritty ranger
+for folder in nvim termite ranger
 do
     rsync -zaP $HOME/.config/$folder $config_files_dir/.config
 done
