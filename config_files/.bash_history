@@ -1,373 +1,3 @@
-mkdir GitProjects
-cd GitProjects/
-git clone http://github.com/sergioquijanorey/dotfiles
-ls
-git clone git@gitlab.com:SergioQuijano/Universidad.git
-ssh-keygen 
-git clone git@gitlab.com:SergioQuijano/Universidad.git
-cat ~/.ssh/id_rsa.pub 
-git clone git@gitlab.com:SergioQuijano/Universidad.git
-ls
-git
-sudo pacman -Syyu
-cd GitProjects/
-ls
-rm -r dotfiles/
-rm -rf dotfiles/
-git clone git@github.com:SergioQuijanoRey/dotfiles.git
-cat ~/.ssh/id_rsa.pub 
-cd GitProjects/
-ls
-git clone git@gitlab:SergioQuijano/Universidad.git
-git clone git@gitlab.com:SergioQuijano/Universidad.git
-l
-ls
-pacman -Q | grep i3
-htop
-sudo pacman -Syyu
-sudo pacman -Syyu
-cd GitProjects/dotfiles/
-ls
-cd installation_files/
-ls
-vimdot 
-vim git.sh 
-cat noname.gv 
-rm noname.gv 
-ls
-vi packages.sh 
-sudo ./setup.sh 
-ls
-ls
-cd .i3/scripts/
-ls
-./dualdisplay 
-nv
-cd .bashrc 
-sudo pacman -Ss nvim
-sudo pacman -Ss neovim
-sudo pacman -S neovim
-cd GitProjects/dotfiles/installation_files/
-ls
-nv git.sh 
-ls
-sudo ./setup.sh 
-ls
-sudo ./package
-sudo ./packages.sh º
-nvim 
-nvim packages.sh 
-./packages.sh 
-whatsapp 
-monodisplay 
-dualdisplay 
-nvim
-./other.sh 
-sudo pacman -S pip2
-sudo pacman -Ss pip2
-sudo pacman -Ss pip
-sudo pacman -Ss extra/python-pip
-sudo pacman -Ss python-pip
-pip2
-pip
-nv other.sh 
-./other.sh 
-sudo pacman -S gem
-sudo pacman -Ss gem
-sudo pacman -S ruby+
-sudo pacman -S ruby
-./other.sh 
-nv
-nvim .config/alacritty/alacritty.yml 
-actualizarGit
-cd GitProjects/games
-ls
-rm *~
-ls
-la
-rm .*~
-la
-dualdisplay 
-la
-cat .profile 
-rm .profile 
-rm /tmp/Alacritty-1431.log 
-ls
-cd .i3/
-ls
-cd scripts/
-ls
-websearch 
-whatsapp 
-whatis 
-whatis firefox
-ls
-whatis bigdisplay 
-man whatis
-whatis ls
-whatis man
-whatis fzf
-ls
-play_pause
-man playerctl
-cd .i3/scripts/
-ls
-rm play_pause.config 
-rm play_pause 
-nv .config/
-nv .config/i
-nv .config/i3
-confi3 
-i3blocks
-sudo pacman -Ss i3blocks
-sudo pacman -S i3blocks
-nvf
-cd GitProjects/dotfiles/
-gitpush
-gpush 
-ls
-cd 
-cd .config/alacritty
-LS
-ls
-cd alacritty
-ls
-cd alacritty
-ls
-cd alacritty
-cd ..
-ls
-rm -rf alacritty alacritty~
-ln - "/home/sergio/GitProjects/dotfiles/config_files/.config/alacritty/" "/home/sergio/.config/alacritty"
-ln -s "/home/sergio/GitProjects/dotfiles/config_files/.config/alacritty/" "/home/sergio/.config/alacritty"
-ls
-ks
-cd .config/alacritty
-ls
-cd ~/GitProjects/dotfiles/
-cd .con
-la
-cd config_files/
-la
-cd .config/
-ls
-cd alacritty/
-ls
-cat alacritty
-rm alacritty
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd installation_files/
-ls
-nv link.sh 
-sudo link.sh 
-sudo ./link.sh 
-actualizarGit
-confi23
-confi3
-dualdisplay 
-man rofi
-pacman -Ss dolphin
-sudo pacman -S community/dolphin-emu
-dualdisplay 
-actualizar
-actualizarGit
-echo $ALACRITTY_LOG
-nvim $ALACRITTY_LOG
-cat $ALACRITTY_LOG
-cp ~/.config/alacritty/alacritty.yml .
-cp ~/.config/alacritty/gruvbox.yml .
-ls
-rm bin~
-ls
-la
-rm -r .*~
-la
-ls
-sudo pacman -Rns alacritty
-ls
-rm -r .config/alacritty
-rm -r .config/alacritty~/
-rm -r .config/alacritty~
-ls
-ls -a .config/
-rm -r .config/*~
-ls -a .config/
-cat .config/manjaro-hello.json 
-ls .config/manjaro
-nv .config/manjaro/manjaro-settings-manager-Notifier.conf 
-ls
-uname -a
-ls .config/
-sudo pacman -S alacritty
-ls
-cd .config/alacritty/
-ls
-nv alacritty.yml 
-ls
-la
-cp alacritty.yml backup.yml
-htop
-cd GitProjects/dotfiles/
-ls
-cd config_files/
-ls
-cd backgrounds/
-ls
-glog
-alias
-git log --oneline | nv
-cd GitProjects/dotfiles/
-git checkout 05840fa7b3747b9f18315d818807a8808279cc7d
-cd config_files/.config/alacritty/
-ls
-cd alacritty
-ls
-git checkout 65290723295dbec89d3197c51efd739e742b9ada
-ls
-la
-cd alacritty
-ls
-cd ..
-ls
-cd ..
-ls
-ls alacritty/
-git checkout 3f1cb773d06f2754683b4f1afbf23b5f5c566bcb
-ls
-cd alacritty/
-ls
-la
-cd 
-cd GitProjects/dotfiles/
-ls
-cd config_files/
-ls
-la
-cd .ala
-cd .config/alacritty/
-ls
-ls alacritty
-ls alacritty/alacritty/alacritty/alacritty/alacritty/alacritty/alacritty
-git checkout https://github.com/SergioQuijanoRey/dotfiles/commit/c6f3ea176ee6bbd68ff1859d155f7c00c39113ca
-ls
-cd ..
-git checkout https://github.com/SergioQuijanoRey/dotfiles/commit/c6f3ea176ee6bbd68ff1859d155f7c00c39113ca
-git checkout c6f3ea176ee6bbd68ff1859d155f7c00c39113ca
-cd .config/alacritty/
-ls
-cat gruvbox.yml º
-cat gruvbox.yml 
-git checkout HEAD
-git checkout e5098e3
-git status
-git add .
-git commit
-git config --global user.email "sergiquijano@gmail.com"
-git config --global user.name "Sergio Quijano Rey"
-git commit
-git push
-git push origin master
-git ckeckout e5098e3
-git checkout e5098e3
-cd ..
-git add . ; git commit
-git push
-git push origin master
-git status
-git checkout e5098e3
-cd .config/alacritty/
-ls
-cat alacritty.yml 
-nv alacritty.yml 
-cat alacritty.yml > ~/.config/alacritty/alacritty.yml 
-alais
-alias
-ls
-cat .bashrc
-cd GitProjects/dotfiles/
-ls
-git log
-git checkout HEAD
-ls
-alias
-git checkout 
-1
-5
-    0
-git checkout ac46a41f792b6319d57e922e2d94e063c13e3a2c
-git status
-git add .
-git commit
-ls
-rm colors.yml 
-nvim alacritty.yml 
-rm alacritty.yml 
-nvim alacritty.yml 
-rm .config/alacritty/alacritty.yml 
-ls GitProjects/dotfiles/config_files/.config/alacritty
-cd GitProjects/dotfiles/
-ls
-cd config_files/
-ls
-cd .config/
-ls
-cd alacritty/
-ls
-cd ~/.config/alacritty
-nvim alacritty.yml
-ls
-mv alacritty.yml colors.yml
-mv backup.yml alacritty.yml
-nv
-ls
-htop
-dualdisplay 
-sudo pacman -Ss volume-icon
-yay -Ss volume-icon
-pacman -Ss volume
-confi3
-confi
-confi3
-ls
-confi3
-dual
-dualdisplay 
-dual
-dualdisplay 
-ls
-la
-mkdir LinuxCloud
-mkdir media
-watch du -d0 -h LinuxCloud/
-ls
-la
-cd .ssh/
-sl
-ls
-cd 
-ls
-lsblk
-sudo mkdir /media
-sudo mkdir /media/USB
-ln -s "/media/USB/" "/home/sergio/media"
-sudo mount /dev/sdb1 /media/USB/
-cd media/USB
-ls
-cd 
-ls
-rsync -zaP /media/USB/LinuxCloud/ LinuxCloud/
-lsblk
-sudo mount /dev/sdc1 /media/USB/
-sudo pacman -Ss shotwell
-sudo pacman -S shotwell
-vlc VID_20180718_131927.mp4 
-vlc/home/sergio/LinuxCloud/Fotografias/Fotografías Viaje Marrakech 2018/VID_20180718_183507.mp4
 vlc /home/sergio/LinuxCloud/Fotografias/Fotografías Viaje Marrakech 2018/VID_20180718_183507.mp4
 vlc VID_20180718_183519.mp4
 vlc VID_20180721_200717.mp4
@@ -861,3 +491,64 @@ mv config_files/upload.sh installation_files/upload.sh
 nv .bash_aliases 
 make upload
 chmod u+x installation_files/upload.sh 
+make download
+ranger
+nv .config/alacritty/alacritty.yml 
+:q
+ls
+ll
+:q
+pacman -Ss tmux
+sudo pacman -S tmux
+tmux
+sudo pacman -Rns tmux
+tmux
+ls
+sudo pacman -S termite
+man termite
+nv .config/termite/termite.conf
+htop
+ls
+htop
+file backgrounds/
+ls -l
+cd GitProjects/dotfiles/
+ls
+cd 
+mv .config/termite/termite.conf .config/termite/config
+ls
+htop
+nv
+ranger
+ls
+htop
+cd .config/
+ls
+cd 
+ls
+man termite
+nvim
+ls
+cd .config/
+ls
+mkdir termite
+cd termite/
+ls
+confi3
+cd
+confi3
+cd 
+nvf
+v
+man termite
+pacman -Rns alacritty
+sudo pacman -Rns alacritty
+confi3
+htop
+ls
+htop
+nv .config/termite/config 
+actualizar
+actualizarGit
+ls
+gcommit
