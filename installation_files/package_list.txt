@@ -45,6 +45,8 @@ feh						# To set the background
 compton					# i3 compositor
 rofi					# Program launcher
 blueman					# To use bluetooth
+bluez-utils             # For command line bluetooth administration
+bluez-tools             # For command line bluetooth administration
 aranrd					# To control multiple displays
 community/lxappearance	# To set the theme
 neofetch				# To show system information
