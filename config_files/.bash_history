@@ -552,3 +552,119 @@ actualizar
 actualizarGit
 ls
 gcommit
+cd .fonts/
+ls
+extract Inconsolata.zip 
+confi3
+htop
+fc-list
+fc-list | grep inconsolata
+ls .local/share/fonts
+mkdir .local/share/fonts
+cp .fonts/* .local/share/fonts/
+history
+q
+fc-list | grep inconsolata
+fc-list
+fc-list | monaco
+fc-list | grep monaco
+fc-list | grep mono
+file psx2_001.bmp 
+cd GitProjects/dotfiles/
+ls
+cd config_files/
+ls
+cd .config/
+ls
+rm -r alacritty/
+gcommit
+git status
+ls
+cd ..
+ls
+cd ..
+ls
+nv
+cd 
+cd GitProjects/dotfiles/
+gpush
+ls
+cd 
+cd GitProjects/dotfiles/
+ls
+make 
+make upload
+gpush
+ls
+ll
+cd ..
+ds dotfiles/
+fclist
+fc-list
+htop
+nv .config/termite/config 
+ls
+ls .fonts/
+ls .local/share/fonts/
+nv .config/termite/config 
+htop
+nv .config/termite/config 
+fc-list
+fc-list | grep sourcecodepro
+fc-list | grep Droid
+fc-list | grep In
+fc-list | nv
+nv .bash_prompt 
+actualizarGit
+nv pruebas.md
+ls
+car pruebas.md 
+cat pruebas.md 
+file pruebas.md 
+ls
+rm pruebas.md 
+ls
+actualizar
+pacman -Ss bluezutils
+pacman -Ss bluez
+pacman -Ss bluez | nv
+sudo pacman -S bluez-utils bluez-tools
+bluetoothctl 
+ls
+nv .config/termite/config 
+actualizarGit
+pacman -Ss bluez
+pacman -Ss bluez | nv
+ls
+nv GitProjects/dotfiles/installation_files/package_list.txt 
+nvf
+bluetoothctl 
+bluetooth 
+man bluetooth
+bluetoothctl 
+man bluetoothctl
+bluetoothctl 
+ls
+actualizar
+ls
+htop
+actualizar
+ls
+htop
+actualizar
+nv
+actualizarGit
+cd GitProjects/
+cd dotfiles/
+git push
+git status
+git push
+cd ..
+ls
+cd misArchivos/
+git push
+actualizarGit
+cd /etc/udev/rules.d/
+ls
+la
+sudo nvim 10-local.rules

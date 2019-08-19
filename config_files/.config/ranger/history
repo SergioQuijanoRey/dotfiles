@@ -1,4 +1,3 @@
-_
 rename Diario 2019 05 - Mayo.md
 mkdir Capitulo 7
 rename Tema 18 no jeje.pdf
@@ -46,5 +45,6 @@ dele
 c
 search .bashaliases
 search alias
-delete
+search .fonts
 terminal 
+delete

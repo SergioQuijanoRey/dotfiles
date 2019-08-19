@@ -1,9 +1,9 @@
 # Fonts
 #===============================================================================
 [options]
-font = SouceCodePro-regular 10
-font = Droid Sans Mono 10
-font = Monospace 10
+font = Font Awesome 12
+font = Inconsolata 12
+#font = Monospace 10
 
 # Colors
 #===============================================================================

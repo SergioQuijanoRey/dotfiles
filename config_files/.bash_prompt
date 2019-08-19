@@ -27,4 +27,4 @@ NC='\[\033[0m\]'
 
 # Changing prompt
 #===============================================================================
-export PS1="$purple\u ${white}at $green$cyan\h ${white}in $WHITE$green\w\n$NC "
+export PS1="$purple\u ${white}at $green$cyan\h ${white}in $WHITE$green\w\n$NC$ "
