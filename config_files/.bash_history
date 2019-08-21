@@ -732,3 +732,71 @@ glogone
 nv ~/.bash_aliases 
 source ~/.bash_aliases 
 glogone
+cd GitProjects/
+ls
+cd dotfiles/
+ls
+git pull
+make upload
+make download
+cd
+ls
+cd bin/
+ls
+chmod u
+chmod u+x updateRepo 
+mv updateRepo updateDotfiles
+cd
+updateDotfiles 
+gcommit -m "Añado el diario del 14 de Agosto"
+gcommit -m "Añado el diario del 13 de Agosto"
+gcommit -m "Añado el diario del 12 de Agosto"
+git commit -m "Corrijo una metedura de pata con los dias de la semana"
+git push
+git commit -m "Corrijo una metedura de pata con los dias de la semana"
+gcommit -m "Corrijo una metedura de pata con los dias de la semana"
+gcommit -m "Añado el diario del 11 de Agosto"
+gcommit -m "Añado el diario del 10 de Agosto"
+git push origin master
+gcommit -m "Añado el diario del 9 de Agosto"
+ls
+py protocol.py 
+gcommit -m "Añado el diario del 8 de Agosto"
+py protocol.py 
+gcommit -m "Añado el diario del 7 de Agosto"
+git push origin master
+gcommit -m "Añado el diario del 6 de Agosto"
+gcommit -m "Añado el diario del 5 de Agosto"
+htop
+gotop
+top
+nv protocol.py
+cat protocol.py 
+nv protocol.py 
+ls
+htop
+gcommit -m "Añado todos los diarios que me faltaban para completar lo que llevamos del mes de Agosto" 
+git push origin master
+pandoc "Diario 2019 08 - Agosto.md" -o "Diario.pdf"
+evince Diario.pdf &
+gpush
+ls
+cd GitProjects/
+cd misArchivos/Di
+cd misArchivos/Diarios/
+ls
+nv
+ls
+git stauts
+git status
+ls
+rm *.pdf
+ls
+git stauts
+git status
+ls
+touch "Diario 2019 07 - Julio.md"
+nv 
+ls
+git status
+ls -l
