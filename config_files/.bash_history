@@ -800,3 +800,13 @@ nv
 ls
 git status
 ls -l
+actualizarGit
+cd GitProjects/dotfiles/
+make upload
+gpush
+ls
+cd config_files/bin/
+ls
+rm updateRepo 
+gpush
+ls ~/.local/share/fonts/

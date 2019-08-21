@@ -20,7 +20,7 @@ rsync -zaP $HOME/.gitconfig $config_files_dir
 
 # Syncing single folders
 rsync -zaP $HOME/.i3 $config_files_dir
-rsync -zaP $HOME/.fonts $config_files_dir
+rsync -zaP $HOME/.local/share/fonts $config_files_dir
 rsync -zaP $HOME/.icons $config_files_dir
 rsync -zaP $HOME/bin $config_files_dir
 
