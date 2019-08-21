@@ -20,7 +20,7 @@
 # Some parameters
 #===============================================================================
 directories=(
-	"$HOME/GitProjects"
+	"/home/sergio/GitProjects"
 )
 
 # Functions

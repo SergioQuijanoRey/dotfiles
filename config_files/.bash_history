@@ -668,3 +668,67 @@ cd /etc/udev/rules.d/
 ls
 la
 sudo nvim 10-local.rules
+actualizar
+cd GitProjects/dotfiles/
+make
+make upload
+gcommit
+git push
+ls
+cd 
+ls
+sudo reboot
+nvconf 
+cd /etc/udev/rules.d/
+sudo nv 10-local.rules 
+sudo nvim 10-local.rules 
+sudo reboot
+bluetoothctl  --agent menu power on
+cd /etc/bluetooth/
+ls
+sudo nvim main.conf 
+sudo reboot
+cd GitProjects/
+ls
+cd misArchivos/
+ls
+cd Otros/
+ls
+mv DIarios ..
+mv Diarios ..
+cd ..
+ls
+cd Diarios
+ls
+nv "Diario 2019 08 - Agosto.md
+"
+ls
+mv 'Diario 2019 08 - Agosto.md
+' "Diario 2019 08 - Agosto.md"
+nv Diario\ 2019\ 08\ -\ Agosto.md 
+gpush
+cd 
+actualizarGit
+actualizar
+nvf
+actualizarGit
+cd GitProjects/dotfiles/
+cd 
+cdf
+cd 
+cdf
+ls
+gpush
+actualizarGit
+actualizar
+ls
+file *.bmp
+gcommit
+git push origin master
+glog
+nv ~/.bash_aliases 
+source ~/.bash_aliases 
+glogone
+nv ~/.bash_aliases 
+source ~/.bash_aliases 
+glogone

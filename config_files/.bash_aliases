@@ -20,6 +20,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias gcommit="git add . ; git commit"
 alias gpush="git add . ; git commit ; git push"
 alias glog="git log | nvim"
+alias glogone="git log --oneline | nvim"
 
 # System config aliases
 alias confi3="nvim .i3/config"
