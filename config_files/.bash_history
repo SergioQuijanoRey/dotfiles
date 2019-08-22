@@ -810,3 +810,34 @@ ls
 rm updateRepo 
 gpush
 ls ~/.local/share/fonts/
+actualizar
+nv bin/actualizarGit 
+cd GitProjects/dotfiles/
+ls
+cd config_files/
+ls
+la
+rm .fonts/
+rm -r .fonts/
+ls
+cd ..
+cd installation_files/
+ls
+nv
+cd ..
+make upload
+gpush
+cd GitProjects/misArchivos/
+gpush
+py protocol.py 
+nvf
+py protocol.py 
+nvf
+cdf
+gpush
+nv protocol.py 
+cat protocol.py 
+nv protocol.py 
+htop
+neofetch 
+updateDotfiles 

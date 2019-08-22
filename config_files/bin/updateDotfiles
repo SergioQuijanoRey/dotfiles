@@ -10,11 +10,12 @@
 
 # Script parameters
 #===============================================================================
-dotfiles_dir="$HOME/GitProject/dotfiles"
+dotfiles_dir="$HOME/GitProjects/dotfiles"
 
 # Running the script
 #===============================================================================
 cd $dotfiles_dir        # We get into the repo
 make upload             # Using the makefile, we get the config files from the system to the repo
+git add .               # Adding the changes to stagin area
 git commit              # Commit changes
 git push origin master  # Push changes
