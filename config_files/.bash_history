@@ -841,3 +841,44 @@ nv protocol.py
 htop
 neofetch 
 updateDotfiles 
+nv .i3/i3blocks.conf 
+updateDotfiles 
+nv bin/updateDotfiles 
+ls
+actualizar
+actualizarGit
+nv bin/actualizarGit
+ac
+actualizarGit
+top
+htop
+cmatrix
+nv .config/nvim/
+gotop
+py VaginaAsesina.py 
+ls
+nv VaginaAsesina.py
+rm V
+rm VaginaAsesina.py 
+ls
+cat protocol.py 
+wifictl
+nv
+neofetch
+actualizar
+actualizarGit
+nv .bashrc
+source .bashrc
+nv .bashrc
+gpus
+gpush
+cdf
+gpush
+neofetch 
+htop
+neofetch 
+gpush
+nvf
+cdf
+gpush
+nvf

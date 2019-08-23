@@ -49,7 +49,7 @@ function sync_git(){
 #===============================================================================
 for base_dir in $directories
 do
-	for repo in $base_dir/*
+    for repo in $(ls $base_dir)
 	do
 		absolute_path="$base_dir/$repo"
 		cd $absolute_path
