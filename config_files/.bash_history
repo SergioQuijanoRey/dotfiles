@@ -882,3 +882,7 @@ nvf
 cdf
 gpush
 nvf
+nv .bash_functions 
+cdf
+make upload
+gpush
