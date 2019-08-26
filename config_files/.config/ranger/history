@@ -1,4 +1,3 @@
-rename Diario 2019 05 - Mayo.md
 mkdir Capitulo 7
 rename Tema 18 no jeje.pdf
 rename Tema 18.pdf
@@ -46,5 +45,6 @@ c
 search .bashaliases
 search alias
 search .fonts
-terminal 
 delete
+rename Manjaro-ARM-minimal.img
+terminal 

@@ -886,3 +886,68 @@ nv .bash_functions
 cdf
 make upload
 gpush
+nv .bash_functions 
+updateDotfiles 
+cdf
+ls
+extract Manjaro-ARM-minimal-rpi4-19.08.img.xz 
+file Manjaro-ARM-minimal-rpi4-19.08.img.xz 
+untar Manjaro-ARM-minimal-rpi4-19.08.img.xz 
+tar -xcvz Manjaro-ARM-minimal-rpi4-19.08.img.xz 
+ls
+source ~/.bash_functions 
+extract Manjaro-ARM-minimal-rpi4-19.08.img.xz 
+tar -xf Manjaro-ARM-minimal-rpi4-19.08.img.xz 
+file Manjaro-ARM-minimal-rpi4-19.08.img.xz 
+unxz
+unxz Manjaro-ARM-minimal-rpi4-19.08.img.xz 
+ls
+file Manjaro-ARM-minimal-rpi4-19.08.img 
+range
+ranger
+cdf OS
+cdf
+ls
+lsblk
+watch lsblk
+lsblk
+sudo dd if="Manjaro-ARM-minimal.img" of="/dev/sdb" bs=4M progress=status
+sudo dd if="Manjaro-ARM-minimal.img" of="/dev/sdb" bs=4M progres=status
+sudo dd if="Manjaro-ARM-minimal.img" of="/dev/sdb" bs=4M status=progress
+watch lsblk
+lsblk
+cdf
+ls
+lsblkl -f
+lsblkl -a
+lsblkl f
+lsblk
+lsblk -f
+sudo dd if="Manjaro-ARM-minimal.img" of="/dev/sdb" bs=4M status=progress
+actualizarGit
+actualizar
+nv pruebas.py
+rm pr
+rm pruebas.py 
+actualizarGit
+actualizar
+gpush
+cdf
+ls
+nv
+/usr/lib/i3blocks/battery 
+ls /usr/lib/i3blocks/
+neofetch 
+nv .i3/i3blocks.conf 
+sudo pacman -S i3blocks
+acpi
+man acpi
+acpi -b
+acpi -b1
+acpi -t
+bc
+upower
+pacman -Qi upower
+nv .i3/i3blocks.conf 
+ls .i3/scripts/
+chmod u+x .i3/scripts/*
