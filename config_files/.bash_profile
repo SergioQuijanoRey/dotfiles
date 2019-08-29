@@ -32,8 +32,8 @@ PATH="$PATH:/root/.gem/ruby/2.6.0/bin"
 # NVIM + URXVT Stack
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMCMD="alacritty"
-export COLORTERM="alacritty"
+export TERMCMD="termite"
+export COLORTERM="termite"
 
 # SSH vars
 export LOCALIP="192.168.1.13"

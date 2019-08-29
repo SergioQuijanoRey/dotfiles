@@ -1,11 +1,3 @@
-mkdir Capitulo 7
-rename Tema 18 no jeje.pdf
-rename Tema 18.pdf
-rename Tema 19.pdf
-rename Tema 20.pdf
-mkdir Algoritmos
-mkdir Busqueda
-touch busq
 mkdir Ordenacion
 touch selection_sort.pseudo
 touch selection_sort.py
@@ -19,13 +11,11 @@ rename Legend of Zelda Ocarina of time.rom
 find .ga
 rename 
 rename The legend of Zelda Ocarina of time.iso
-copy
 mkdir Rooms
 rename GameCube Rooms
 mkdir Matrícula Tercer Cruso
 rename Inscripción matrícula 2019 - 2020.pdf
 search Polonia
-
 open_with shotwell
 open_with 
 rename Final Fantasy IX CD 1.iso
@@ -34,8 +24,6 @@ rename Animal Crossing.iso
 mkdir Nuevo
 find 
 rename FFIX Disc1.bin
-cut
-paste
 mkdir Memory Card
 touch mainmemcard
 rename mainmemcard.mcr
@@ -45,6 +33,18 @@ c
 search .bashaliases
 search alias
 search .fonts
-delete
 rename Manjaro-ARM-minimal.img
+s
+rename Cuentas Mama - Junio.ods
+rename Cuentas Mama - Junio.pdf
+cu
+cut
+mkdir Cuentas Granada
+
+copy
+paste
+rename Cuentas Mama - Julio.ods
+rename Cuentas Mama - Julio.pdf
+delete
+open_with
 terminal 

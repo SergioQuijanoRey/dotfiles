@@ -951,3 +951,50 @@ pacman -Qi upower
 nv .i3/i3blocks.conf 
 ls .i3/scripts/
 chmod u+x .i3/scripts/*
+rm .i3/scripts/battery-plus 
+updateDotfiles 
+nv .i3/i3blocks.conf 
+nvf
+nv pruebas.py
+rm pruebas.py
+actualizarGit
+actualizar
+ls
+rm touchpad.conf 
+gpush
+cdf
+nv *Agosto*
+cdf
+gpush
+nv .bash_profile 
+ranger
+ls
+invertcsv Movimientos.csv 
+ls
+rm Movimientos.csv 
+ls
+libreoffice new_Movimientos.csv 
+v
+ls
+gpush
+nvf
+gpush
+ls
+gpush
+cd ..
+ls
+cdf
+gpush
+less protocol.py 
+actualizar
+actualizarGit
+ls
+rm protocol.py 
+ls
+actualizar
+gpush
+cdf
+nv 
+py protocol.py 
+py -i protocol.py 
+nv protocol.py

@@ -14,7 +14,8 @@ for percentage in re.findall('(\d+)%', acpi):
 
 icon = ''
 output = icon + '  '
-output += ' / '.join(percentages)
+output += ' / '.join(percentages) 
+output += '%'
 
 print(output)
 if is_charging:
