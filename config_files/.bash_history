@@ -998,3 +998,27 @@ nv
 py protocol.py 
 py -i protocol.py 
 nv protocol.py
+nv .i3/scripts/battery 
+actualizarDot
+updateDotfiles 
+actualizarGit
+actualizar
+gpush
+cdf 
+git pull
+nv *Agosto*
+actualizar
+actualizarGit
+update
+updateGit 
+cd bin/
+ls
+mv actualizar update
+mv actualizarGit updateGit
+cdf
+nv
+goush
+gpush
+cdf
+ls
+nv "Diario 2019 09 - Septiembre.md"
