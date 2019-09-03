@@ -200,11 +200,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
-
-# Touchpad controls
-# bindsym XF86TouchpadToggle exec /home/sergio/.i3/scripts/toggletouchpad # toggle touchpad -- No se necesita con libinput -- No se necesita con libinput
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20        # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20      # decrease screen brightness
 
 # Music song controls
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -214,12 +211,11 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Personal KeyBindings
 bindsym $mod+x exec lockscreen
-bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'Shutdown system?' -b 'Yes' 'shutdown -h now'"
 bindsym $mod+Shift+n exec termite --exec="ranger" --name=ranger
-bindsym $mod+Shift+b exec blueman-applet
 bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to left
 bindsym $mod+Shift+g exec rofi-websearch
+bindsym $mod+Shift+b exec firefox
 bindsym $mod+t exec choose_wallpaper 
 bindsym $mod+Shift+t exec choose_wallpaper -c landscape.jpg
 

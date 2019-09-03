@@ -1,20 +1,3 @@
-mkdir Ordenacion
-touch selection_sort.pseudo
-touch selection_sort.py
-open_with t nvim
-rename Análisis Matemático II - LibreIM.pdf
-mkdir Examenes
-abort 
-open_with libreoffice
-rename Análisis Matemático II - Juan Carlos Cabello.pdf
-rename Legend of Zelda Ocarina of time.rom
-find .ga
-rename 
-rename The legend of Zelda Ocarina of time.iso
-mkdir Rooms
-rename GameCube Rooms
-mkdir Matrícula Tercer Cruso
-rename Inscripción matrícula 2019 - 2020.pdf
 search Polonia
 open_with shotwell
 open_with 
@@ -27,7 +10,6 @@ rename FFIX Disc1.bin
 mkdir Memory Card
 touch mainmemcard
 rename mainmemcard.mcr
-del
 dele
 c
 search .bashaliases
@@ -38,13 +20,31 @@ s
 rename Cuentas Mama - Junio.ods
 rename Cuentas Mama - Junio.pdf
 cu
-cut
 mkdir Cuentas Granada
-
-copy
-paste
 rename Cuentas Mama - Julio.ods
 rename Cuentas Mama - Julio.pdf
-delete
 open_with
+open_with libassuan-config
 terminal 
+copy
+rename Cuentas Mama - Agosto.ods
+rename Cuentas Mama - Agosto.pdf
+cut
+paste
+del
+mkdir 3º Curso
+mkdir 
+mkdir 1º Cuatrimestre
+mkdir 2º Cuatrimestre
+mkdir 3º Curso - 1º Cuatrimestre
+touch Horarios 1º Cuatrimestre.ods
+open_with libreoffice
+
+delete
+mkdir Fundamentos de Bases de Datos
+mkdir Ecuaciones Diferenciales I
+mkdir Sistemas Concurrentes y Distribuidos
+mkdir Modelos de Computación
+mkdir Fundamentos de Redes
+rename Fundamentos de Redes
+mkdir Probabilidad

@@ -1022,3 +1022,94 @@ gpush
 cdf
 ls
 nv "Diario 2019 09 - Septiembre.md"
+updateDotfiles 
+gpush
+cdf 
+ls
+nv
+ls
+update
+updateGit
+htop
+gotop
+update
+updateGit
+pacman -Ss kitty
+pacman -Ss alacritty
+neofetch 
+update
+updateGit
+py protocol.py 
+py -i protocol.py 
+rofi 
+rofi .show run -config pruebas.rasi
+man rofi
+confi3
+ls
+rofi -show run -config pruebas.rasi
+ls
+rm pruebas.rasi 
+ls
+nv protocol.py 
+rm protocol.py 
+ls
+update
+ls
+nvconf 
+nv
+gpush
+ls
+cat *Septiembre+
+cat *Septiembre
+cat *Septiembre*
+less *Septiembre*
+less *Agosto*
+gpush 
+cdf
+ls
+nv
+cd
+nv
+updateGit
+localssh 
+ssh root@$LOCALSSH
+ssh root@$LOCALIP
+ls
+invertcsv 
+invertcsv --help
+nv ~/bin/invertcsv 
+invertcsv Movimientos.csv Movimientos.csv 
+nv Movimientos.csv 
+libreoffice Movimientos.csv & ; disown %1
+libreoffice Movimientos.csv ; disown %1
+invertcsv 
+invertcsv Movimientos.csv 
+ls
+jupyter
+man jupyter
+pacman -Qi jupyter
+nvf
+gpush
+ranger
+range
+ranger
+updateGit
+glog
+cd GitProjects/Universidad/
+glog
+cd ..
+ds Universidad/
+cd Universidad/
+ls
+ds Asignaturas/
+ds Documentos/
+ds Horarios/
+ds .ig
+ds .git
+du -h
+du -h0
+du -h -d0
+du -h -d1
+htop
+update
+updateGit
