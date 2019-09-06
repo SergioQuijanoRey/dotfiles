@@ -121,8 +121,8 @@ map <C-K> :sp<CR>:terminal<CR>A
 " Ctr-space for autocompletion
 imap <C-space> <C-p>
 
-" Focus mode
-map <C-f> :Goyo 120x120<CR>
+" Focus mode for writting
+map <C-f> :Goyo 120x120<CR>:set wrap<CR>:set linebreak<CR>
 
 " Fuzzy File Finder
 map <C-p> :FZF<CR>

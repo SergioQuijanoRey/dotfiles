@@ -1113,3 +1113,52 @@ du -h -d1
 htop
 update
 updateGit
+confi3
+updateDotfiles 
+updateGit
+ls
+nv ALSA_NATALIA.csv 
+cmatrix
+matrix
+ls
+alias
+alias | less
+alias | nv
+nv $(alias)
+nv <(alias)
+libreoffice ; unterminal
+libreoffice
+unterm
+unterminal 
+nv Reflexiones.zip 
+unzip Reflexiones.zip 
+thunar Reflexiones.zip 
+ranger
+nvf
+v .config/nvim/init.vim 
+nv
+nv
+gpush
+ls
+htop
+nv
+cdf
+ls
+nv
+nv 
+ls
+pacman -Ss gnome-boxes
+pacman -Ss qemu
+sudo pacman -S qemu
+qemu
+qemu-img 
+qemu-img --help
+qemu-io 
+sudo pacman -Rns qemu
+sudo pacman -S gnome-boxes
+pacman -Qi gnome-boxes
+updateGit
+BV
+NV
+nv
+updateGit

@@ -1,4 +1,3 @@
-search Polonia
 open_with shotwell
 open_with 
 rename Final Fantasy IX CD 1.iso
@@ -25,7 +24,6 @@ rename Cuentas Mama - Julio.ods
 rename Cuentas Mama - Julio.pdf
 open_with
 open_with libassuan-config
-terminal 
 copy
 rename Cuentas Mama - Agosto.ods
 rename Cuentas Mama - Agosto.pdf
@@ -40,7 +38,6 @@ mkdir 3º Curso - 1º Cuatrimestre
 touch Horarios 1º Cuatrimestre.ods
 open_with libreoffice
 
-delete
 mkdir Fundamentos de Bases de Datos
 mkdir Ecuaciones Diferenciales I
 mkdir Sistemas Concurrentes y Distribuidos
@@ -48,3 +45,6 @@ mkdir Modelos de Computación
 mkdir Fundamentos de Redes
 rename Fundamentos de Redes
 mkdir Probabilidad
+terminal 
+Delete
+delete
