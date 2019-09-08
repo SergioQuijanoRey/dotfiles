@@ -1162,3 +1162,44 @@ BV
 NV
 nv
 updateGit
+update
+ls
+lsssss
+updateDotfiles 
+actualizar
+update
+updateGit
+ls
+rm -r VirtualBox\ VMs/
+ls
+lsblk
+sudo umount /media/USB/
+lsblk
+lsblk -f
+watch lsblk -f
+lsblk -f
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+ls
+ls ~/.ssh/id_rsa.pub 
+cp .ssh/id_rsa.pub media/USB/portatil.pub
+ranger
+localssh 
+remotessh 
+localssh 
+localssh 
+neofetch 
+battery 
+acpi
+htop
+updateGit
+update
+goto
+gotop
+findps qemu
+htop
+gotop
+htop
+actualizarGit
+updateGit
+update
