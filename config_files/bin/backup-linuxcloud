@@ -19,7 +19,7 @@ log_file="/home/sergio/.logs/backup-linuxcloud.log"
 # Main program
 #===============================================================================
 # We show that we're making a backup
-notify-send --urgency=low -i terminal "Starting files backup to the raspberry server..." 
+notify-send --urgency=low -i terminal "Starting files backup to the lenovo server..." 
 
 # Doing the backup
 echo "Backup done at $(date)" >> $log_file 

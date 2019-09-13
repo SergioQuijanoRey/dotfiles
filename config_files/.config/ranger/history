@@ -1,34 +1,7 @@
-open_with shotwell
-open_with 
-rename Final Fantasy IX CD 1.iso
-rename Final Fantasy IX CD 1.bin
-rename Animal Crossing.iso
-mkdir Nuevo
-find 
-rename FFIX Disc1.bin
-mkdir Memory Card
-touch mainmemcard
-rename mainmemcard.mcr
-dele
-c
-search .bashaliases
-search alias
-search .fonts
-rename Manjaro-ARM-minimal.img
-s
-rename Cuentas Mama - Junio.ods
-rename Cuentas Mama - Junio.pdf
-cu
-mkdir Cuentas Granada
-rename Cuentas Mama - Julio.ods
-rename Cuentas Mama - Julio.pdf
-open_with
 open_with libassuan-config
 copy
 rename Cuentas Mama - Agosto.ods
 rename Cuentas Mama - Agosto.pdf
-cut
-paste
 del
 mkdir 3º Curso
 mkdir 
@@ -37,7 +10,6 @@ mkdir 2º Cuatrimestre
 mkdir 3º Curso - 1º Cuatrimestre
 touch Horarios 1º Cuatrimestre.ods
 open_with libreoffice
-
 mkdir Fundamentos de Bases de Datos
 mkdir Ecuaciones Diferenciales I
 mkdir Sistemas Concurrentes y Distribuidos
@@ -45,6 +17,34 @@ mkdir Modelos de Computación
 mkdir Fundamentos de Redes
 rename Fundamentos de Redes
 mkdir Probabilidad
-terminal 
 Delete
+open_with shotwell
+[1;5B
+mkdir Fotografías Viaje Córdoba
+DELETE
+delete 
+mkdir Relaciones
+rename Relación 1.pdf
+rename 
+rename Tema 1.pdf
+rename Tema 1 - Introduccion a la computacion.pdf
+rename Guía Docente.pdf
+rename Tema 0 - Presentacion.pdf
+rename Tema 1 - Introduccion.pdf
+mkdir Transparencias
+mkdir Material Prácticas
+mkdir Prácticas
+rename Presentación de la asignatura.pdf
+mkdir Práctica 1
+open_with vim
+rename Práctica 1 - Apuntes.pdf
+mkdir Fuentes
+
+cit
+t
+cut
+paste
+terminal 
 delete
+rename Tema 1 - Transparencias Largas.pdf
+rename Tema 1 - Transparencias Cortas.pdf

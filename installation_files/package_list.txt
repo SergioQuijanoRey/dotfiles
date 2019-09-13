@@ -36,6 +36,7 @@ obs-studio
 kdenlive
 vlc
 playerctl
+ristretto               # For displaying images
 
 # i3 components
 #===============================================================================

@@ -1203,3 +1203,140 @@ htop
 actualizarGit
 updateGit
 update
+ls
+man less
+less .logs/backup-linuxcloud.log 
+findps box
+findps qemu
+rsync -zaP LinuxCloud/OS\ Images/Manjaro-ARM-minimal.img sergio@$LOCALIP:~/LinuxCloud/OS\ Images
+localssh 
+nv bin/
+rm bin/binbackup 
+updateDotfiles 
+ls
+cdf
+ls
+rm binbackup 
+ls
+cd
+ls
+cd bin
+ls
+nv backup-linuxcloud 
+backup-linuxcloud 
+ls
+nv backup-linuxcloud 
+mkdir ~/.logs
+backup-linuxcloud 
+nv ~/.logs/backup-linuxcloud.log 
+nv backup-linuxcloud 
+cd
+backup-linuxcloud 
+ls
+cd 
+rsync -zaP --dry-run LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud
+rsync -zaP --dry-run LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud | nv
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud
+fg %1
+py
+unzip takeout-20190907T214453Z-001.zip && rm takeout-20190907T214453Z-001.zip 
+ds Takeout/
+ranger
+localssh 
+remotessh 
+localssh 
+remotessh 
+man ssh
+ssh sergio@$LOCALIP /bin/sh
+localssh 
+remotessh 
+gpush
+cdf
+git pull
+v
+xprop 
+ds PSX/
+cd /media/USB/LinuxCloud/
+ls
+cd Fotografias/
+ls
+delete
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+sudo mount /dev/sdb1 /media/USB/ -o umask=000
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+pacman -Ss ntfs-3g
+ntfsfix /dev/sdb1
+sudo ntfsfix /dev/sdb1
+sudo mount /dev/sdb1 /media/USB/
+rsync -zaP --dry-run /media/USB/LinuxCloud/ ~/LinuxCloud/ | nv
+rsync -zaP --dry-run /media/USB/LinuxCloud/ ~/LinuxCloud/ >> drive_to_laptop.log
+less drive_to_laptop.log 
+rsync -zaP --dry-run LinuxCloud/ /media/USB/LinuxCloud/ | nv
+rsync -zaP LinuxCloud/ /media/USB/LinuxCloud/
+rsync -zap /media/USB/LinuxCloud/ LinuxCloud/
+lslbk
+lsblk 
+rsync -zaP /media/USB/LinuxCloud/ LinuxCloud/
+rsync -zaP LinuxCloud/ /media/USB/LinuxCloud/
+rsync -zaP --delete --dry-run LinuxCloud/ /media/USB/LinuxCloud/ | nv
+sudo umount /media/USB/
+rmdir /media/CDROM/
+sudo rmdir /media/CDROM/
+ls /media/
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+lsblk
+cdf
+ls
+rm drive-download-20190718T194746Z-001.zip 
+ls
+mkdir "Fotografías Viaje Córdoba 2019"
+rsync -zaP /media/USB/DCIM/101MSDCF/ "Fotografías Viaje Córdoba 2019"
+sudo umount /media/USB/
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+ls
+rsync -zaP LinuxCloud/ /media/USB/LinuxCloud/
+rsync -zaP /media/USB/LinuxCloud/ LinuxCloud/
+rsync -zaP --delete --dry-run LinuxCloud/ /media/USB/LinuxCloud/ | nv
+rsync -zaP --delete LinuxCloud/ /media/USB/LinuxCloud/
+ls
+rsync -zaP --delete LinuxCloud/ /media/USB/LinuxCloud/
+rsync -zaP /media/USB/LinuxCloud/ LinuxCloud/
+rsync -zaP --delete LinuxCloud/ /media/USB/LinuxCloud/
+rsync -zaP /media/USB/LinuxCloud/ LinuxCloud/
+ranger
+sudo umount /media/USB/
+lsblk
+man hier
+update
+updateGit
+nvf
+update
+sudo pacman -Rns google-chrome
+sudo pacman -Ss brave
+sudo pacman -S brave
+update
+unzip Seminario\ 1.\ Introducción\ a\ la\ programación\ mutihebra\ usando\ semáforos-20190913.zip 
+extract scd-s1-fuentes.zip 
+unzip Tema\ 1.\ Introducción\ a\ la\ Programación\ Concurrente-20190913.zip 
+tcpdump
+pacman -S tcpdump
+sudo pacman -S tcpdump
+pacman -Ss wireshark
+sudo pacman -S wireshark
+sudo pacman -S wireshark-*
+sudo pacman -S wireshark-cli wireshark-qt
+wireshark 
+wireshark-cli
+tcpdump 
+sudo tcpdump 
+mysql
+sudo pacman -S mysql sqlite
+mysql
+sqlite3 
+updateGit
+nv .bash_aliases 
+nvf
