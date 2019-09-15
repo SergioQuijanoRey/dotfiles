@@ -1340,3 +1340,148 @@ sqlite3
 updateGit
 nv .bash_aliases 
 nvf
+nv bin/backup-linuxcloud 
+feh .
+feh . --scale-down --auto-zoom
+shotwell .
+shotwell ./*
+man shotwell
+sudo pacman -Rns shotwell
+sudo pacman -S ristretto
+ristretto .
+alias
+unterminal 
+mkdir Instagram
+ristretto .
+gimp
+gimp .
+nfv
+nvf
+updateDotfiles 
+nv .bash_aliases 
+updateDotfiles 
+cdf
+cp DSC01488.JPG ~/Instagram/
+ls
+cd
+cdf
+cp DSC01488.JPG ~/Instagram/
+cp DSC01671.JPG ~/Instagram/
+cp z.JPG ~/Instagram/
+mv z.JPG DSC01671.JPG
+cp DSC01978.JPG ~/Instagram/
+sudo pacman -S mirage
+sudo pacman -Ss mirage
+yay -Ss mirage
+ranger
+updateGit
+update
+cd GitProjects/
+git clone git@github.com:DGIIMUnderground/DGIIM3.git
+ls
+cd DGIIM3/
+tree
+nvf
+cd 
+ls
+htop
+ls
+gpush
+nvf deudas_nata.csv
+nv deudas_nata.csv
+ls
+cat deudas_nata.csv 
+rm deudas_nata.csv 
+ls
+cat ALSA_NATALIA.csv 
+ds
+du -h
+du *
+du -h *
+gpush
+ls
+nv
+nvf
+cdf
+ls
+nv
+updateGit
+cdf
+cd GitProjects/DGIIM3/
+ls
+glog
+ls
+nv .gitignore 
+update
+ls
+updateDotfiles 
+ls
+htop
+top
+echo $LOCALIP
+nv
+source .bash_profile 
+localssh 
+ssh sergio@192.168.1.7
+ls
+rsync Manjaro-ARM-minimal.img sergio@192.168.1.7:~/minimal.iso
+echo $LOCALIP
+localssh 
+localssh 
+ssh sergio@sergioquijano.duckdns.org
+localssh 
+ssh sergio@sergioquijano.duckdns.org
+nv .ssh/known_hosts 
+ssh sergio@sergioquijano.duckdns.org
+localssh 
+localssh 
+sudo pacman -Rns gnome-boxes
+ls
+ds
+du
+ds -h -d0
+cd ..
+ds sergio/
+cd 
+ranger
+ls
+ds LinuxCloud/
+gpush
+localssh 
+rsync -zaP LinuxCloud/ sergio@$REMOTEIP:~/LinuxCloud/
+gpush
+cdf
+ls
+git pull
+nv
+py pruebas.py 
+ls
+file pruebas.
+file pruebas.db
+py pruebas.py 
+file pruebas.db
+py pruebas.py
+file pruebas.py
+file pruebas.db
+cat pruebas.db
+nv pruebas.db
+nv pruebas.py
+rm pruebas.db
+pacman -Qi poppler
+poppler
+pacman -Qi atool
+pacman -S atool
+sudo pacman -S atool
+sudo pacman -S libcaca
+ranger
+sudo pacman -S hightlight
+sudo pacman -S highlight
+ranger
+rsync -zaP LinuxCloud/ sergio@$REMOTEIP:~/LinuxCloud/
+unterminal 
+localssh 
+update
+updateGit
+nv .bash_profile 
+localssh 
+remotessh 

@@ -27,7 +27,7 @@ bindsym $mod+Shift+q kill
 set $rofi_theme "/home/sergio/.i3/rofithemes/sidetab.rasi"
 bindsym $mod+d exec rofi -show run -config $rofi_theme
 bindsym $mod+Shift+d exec rofi -show window -config $rofi_theme
-bindsym $mod+u exec --no-startup-id "rofi -show drun -font \\"DejaVu 9\\" -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'"
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
