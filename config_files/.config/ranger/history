@@ -1,4 +1,3 @@
-open_with libassuan-config
 copy
 rename Cuentas Mama - Agosto.ods
 rename Cuentas Mama - Agosto.pdf
@@ -48,3 +47,4 @@ delete
 rename Tema 1 - Transparencias Largas.pdf
 rename Tema 1 - Transparencias Cortas.pdf
 terminal 
+rename manjaro-raspberry.img

@@ -1485,3 +1485,114 @@ updateGit
 nv .bash_profile 
 localssh 
 remotessh 
+nv .i3/config 
+updateDotfiles 
+localssh 
+remotessh 
+ssh sergio@192.168.1.9
+ssh sergio@192.168.1.8
+remotessh 
+ssh sergio@192.168.1.8
+ls
+lsblk
+lsblk -f
+sync
+man sync
+ranger
+lsblk
+cdf
+sudo dd if="Manjaro-ARM-minimal-rpi4-19.08.img" of="/dev/sdb1" bs=4M status=progress
+extract Manjaro-ARM-minimal-rpi4-19.08.img.xz 
+extract ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz 
+watch lsblk
+lsblk
+ls
+cdf
+ls
+sudo dd if="Manjaro-ARM-minimal.img" of="/dev/sdb" bs=4M status=progress
+watch lsblk
+sudo gnome-disks
+pacman -Ss noobs
+yay -Ss noobs
+lsblk
+parted /dev/sdb
+sudo parted /dev/sdb
+ls
+lsblk
+lsblk -f
+sudo mkfs.fat /dev/sdb1 
+lslbk
+lsblk -f
+ls
+unzip NOOBS_lite_v3_2.zip 
+ls
+mkdir NOOBS
+mv * NOOBS
+mv *.dtb NOOBS/
+ls
+cd NOOBS/
+ls
+mv *.img ../
+ls
+mv *.iso ../
+rm *.zip
+ls
+ls os
+cd ..
+ls
+mv recovery* NOOBS/
+ls
+lsblk
+sudo dd if="ubuntu-raspberry.img" of="/dev/sdb" bs=32M status=progress
+cd
+ssh 192.168.1.9 
+ssh ubuntu@192.168.1.9 
+ssh root@192.168.1.9 
+ssh ubuntu@192.168.1.9 
+nmap
+pacman -S nmap
+sudo 1!
+sudo sudo 1!
+sudo pacman -S nmap
+nmap
+nmap -v -sn 192.168.1.0
+nmap -v -sn 192.168.0.0
+ssh ubuntu@192.168.1.9 
+ssh sergio@192.168.1.9 
+ssh ubuntu@192.168.1.9 
+ssh sergio@192.168.1.9 
+nvf
+update
+updateGit
+nv .bash_profile
+source .bash_profile
+ssh sergio@$RASPIP
+update
+updateGit
+ssh sergio@$RASPIP
+source .bash_profile 
+ssh sergio@$RASPIP
+gpush
+extract Manjaro-ARM-minimal-rpi4-19.08.img.xz 
+gpush
+cdf
+ls
+nv 
+ranger
+updateGit
+update
+gpush
+cdf
+nv
+nv candidatos.txt
+cd GitProjects/Universidad/
+ls
+nv .gitignore 
+git add .
+git commit
+unzip captura.zip 
+file FR
+file FR.ova
+cat FR.ova
+chmod u+x bin/*
+fastman service
