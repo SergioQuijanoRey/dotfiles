@@ -122,7 +122,7 @@ map <C-K> :sp<CR>:terminal<CR>A
 imap <C-space> <C-p>
 
 " Focus mode for writting
-map <C-f> :Goyo 120x120<CR>:set wrap<CR>:set linebreak<CR>
+map <C-f> :Goyo 120x120<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>
 
 " Fuzzy File Finder
 map <C-p> :FZF<CR>

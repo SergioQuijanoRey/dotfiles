@@ -1596,3 +1596,140 @@ file FR.ova
 cat FR.ova
 chmod u+x bin/*
 fastman service
+cat candidatos.txt 
+curl cheat.sh/service
+ls /etc/init.d
+ls /etc/init.d
+curl cheat.sh/systemctl
+nv .bash_aliases 
+nv bin/fastman
+service
+man service
+pacman -Ss service
+pdftex
+update
+updateDotfiles 
+updateGit
+gpush
+cdf
+git pull
+nv
+ds Virtual\ Machines/
+cat candidatos.txt 
+ranger
+rm candidatos.txt 
+ls
+cat pruebas.py 
+rm pruebas.py 
+ls
+rm -r Instagram*
+ls
+ls -a
+gpush
+cdf 
+ls
+nv 
+ls
+git pull
+nv
+ranger
+updateGit
+update
+mysql
+man mysql
+mariadb
+man mariadb
+cdf
+ls
+nv AP
+nv Apuntes\ de\ clase.md 
+gpush
+ranger
+py pruebas.py 
+p
+py
+l
+ls
+pacman -Qi vala
+nv pruebas.py
+update
+nvf
+pacgraph
+sudo pacman -S pacgraph
+pacgraph
+ls
+feh pacgraph.png 
+nvf
+cdf
+cd ~/bin
+ls
+nv .config/nvim/init.vim 
+docker run ubuntu:bash
+sudo pacman -S docker
+docker run ubuntu:bash
+systemctl enable dockerd
+gpush
+cdf
+ls
+gpush
+nvf
+pacman -Ss virtualbox
+updateGit
+update
+sync
+pacman -Ss virt-manager
+pacman -S community/virt-manager
+sudo pacman -S community/virt-manager
+nvf
+sudo pacman -Rns virt-manager
+sims
+ranger
+cdf
+ls
+gpush
+cd ..
+ls
+gpush
+cmatrix
+nvf
+ranger
+unzip scd-s1-fuentes.zip 
+g++ ejemplo01.cpp -o ejemplo1 
+g++ ejemplo01.cpp -o ejemplo1 -std=c++11 
+g++ ejemplo01.cpp -o ejemplo1 -std=c++11 -lpthread
+./ejemplo1 
+val ejemplo1
+val ./ejemplo1
+compile
+nv .bash_aliases 
+pacman -Ss jed
+jed
+cd 
+ls
+compile pruebas.cpp -o pruebas
+val ./pruebas
+rm ~/pruebas
+rm ~/pruebas.cpp
+ls #
+ls ~
+rm ~/manu.db 
+ls
+ls ~
+rm ~/pacgraph.*
+ls ~
+cd ~
+nvf
+source ~/.bash_aliases 
+alias
+compile ejemplo02.cpp -o ejemplo1 && ./ejemplo1
+compile ejemplo02.cpp -o ejemplo1 && ./ejemplo1 | less
+rm ejemplo1
+ls
+compile ejemplo03.cpp -o ejemplo && ./ejemplo
+nv pruebas.cpp
+gpush
+nv Apuntes\ de\ clase.md 
+compile actividad_pi.cpp -o actividad && val ./actividad
+gcommit
+compile actividad_pi.cpp -o actividad && val ./actividad
+nv

@@ -1,50 +1,50 @@
-copy
-rename Cuentas Mama - Agosto.ods
-rename Cuentas Mama - Agosto.pdf
-del
-mkdir 3º Curso
-mkdir 
-mkdir 1º Cuatrimestre
-mkdir 2º Cuatrimestre
-mkdir 3º Curso - 1º Cuatrimestre
-touch Horarios 1º Cuatrimestre.ods
-open_with libreoffice
-mkdir Fundamentos de Bases de Datos
-mkdir Ecuaciones Diferenciales I
-mkdir Sistemas Concurrentes y Distribuidos
-mkdir Modelos de Computación
-mkdir Fundamentos de Redes
-rename Fundamentos de Redes
-mkdir Probabilidad
-Delete
-open_with shotwell
-[1;5B
 mkdir Fotografías Viaje Córdoba
 DELETE
 delete 
 mkdir Relaciones
 rename Relación 1.pdf
 rename 
-rename Tema 1.pdf
 rename Tema 1 - Introduccion a la computacion.pdf
 rename Guía Docente.pdf
 rename Tema 0 - Presentacion.pdf
 rename Tema 1 - Introduccion.pdf
-mkdir Transparencias
 mkdir Material Prácticas
-mkdir Prácticas
 rename Presentación de la asignatura.pdf
 mkdir Práctica 1
 open_with vim
 rename Práctica 1 - Apuntes.pdf
 mkdir Fuentes
-
 cit
 t
-cut
-paste
-delete
 rename Tema 1 - Transparencias Largas.pdf
 rename Tema 1 - Transparencias Cortas.pdf
-terminal 
 rename manjaro-raspberry.img
+mkdir Prácticas
+p
+mkdir VirtualImages
+rename Seminario 0 - Planificación.pdf
+mkdir Materiales
+mkdir 
+
+rename Seminario 1.pdf
+mkdir Apuntes de clase
+rename Tema 1.md
+open_with t nvim
+mkdir Transparencias
+rename Tema 1.pdf
+mkdir Apuntes de Clase
+touch Tema 1.md
+touch Apuntes de clase.md
+mkdir Seminarios
+mkdir Seminario 1
+mkdir Códigos Ejemplo
+c
+cut
+rename Seminario 1 - Diapositivas.pdf
+delete
+mkdir Actividades
+copy
+paste
+rename actividad_pi.cpp
+open_with t 
+terminal 
