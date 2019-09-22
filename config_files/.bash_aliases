@@ -33,7 +33,6 @@ alias reload="source .bashrc; source .bash_aliases; source .profile"
 alias ds="du -d0 -h"
 alias release="lsb_release -a"
 alias web="firefox"
-alias findps="ps aux | egrep"
 alias ll='ls -alF'
 alias la='ls -A'
 alias unterminal="bg %1 && disown %1"

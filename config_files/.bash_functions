@@ -43,7 +43,7 @@ function nvf(){
 		nvim "$file"
 }
 
-# Practicas ATC
-function change_prompt(){
-	export PS1="SergioQuijanoRey \u@\h:\w] \D{%F %A}\n$"
+# Script para buscar procesos
+function findps(){
+    ps aux | egrep $1 | egrep -v egrep | egrep $1
 }

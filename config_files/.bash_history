@@ -1733,3 +1733,210 @@ compile actividad_pi.cpp -o actividad && val ./actividad
 gcommit
 compile actividad_pi.cpp -o actividad && val ./actividad
 nv
+nvconf 
+updateDotfiles 
+gpush
+cd ..
+ds misArchivos/
+cdf
+ls
+git pull
+nv
+ls
+compile actividad_pi.cpp -o actividad && val ./actividad
+compile clean.cpp -o clean && val ./clean
+py
+compile clean.cpp -o clean && val ./clean
+compile clean.cpp -o clean && ./clean
+free
+free -h
+rm clean actividad
+ls
+gcommit
+gotop
+ls
+compile actividad_pi.cpp -o actividad && val ./actividad
+compile actividad_pi.cpp -o actividad && ./actividad
+gcommit
+git status
+gpush
+compile actividad_pi.cpp -o actividad && ./actividad
+gcommit
+glog
+compile actividad_pi.cpp -o actividad && ./actividad
+gcommit
+rm clean.cpp 
+ls
+compile actividad_pi.cpp -o actividad
+compile actividad_pi.cpp -o actividad && ./actividad
+gotop
+pacman -Ss gnome | grep monitor
+sudo pacman -S extra/gnome-system-monitor
+./actividad 
+gpush
+ls
+pandoc Memoria.md -o Memoria.pdf
+nv .bash_alias
+nv .bash_aliases 
+less Memoria.
+less Memoria.pdf
+pdftotext Memoria.pdf | less
+pdftotext Memoria.
+pdftotext Memoria.pdf
+pandoc Memoria.md -o Memoria.pdf
+ls
+nv Memoria.md 
+ls
+rm *.tex *.txt
+ls
+rm Memoria.pdf 
+gpush
+nv *.cpp
+remotessh 
+yay -S google-chrome
+ranger
+update
+uptime
+neofetch 
+updateGit
+find . -name vgcore*
+find /home/sergio/ -name *vgcore*
+find /home/sergio/ -name *vgcore.*
+find /home/sergio/GitProjects/ -name *vgcore.*
+find /home/sergio/GitProjects/ -name vgcore.*
+gcommit
+compile ejemplo09.cpp -o ejemplo && ./ejemplo
+rm ejemplo
+evince Memoria.pdf &
+unterminal 
+pandoc Memoria.md -o Memoria.tex
+ls
+rm Memoria.{log,tex}
+ls
+nv
+nv 
+ls
+xprop
+sudo pacman -Rns qpdfview
+cdf
+ls
+nv Ranger\ cheatsheet.md 
+remotessh 
+localssh 
+ds LinuxCloud/Virtual\ Machines/
+htop
+gotop
+remotessh 
+nv
+lsblk
+lsblk -f
+ls
+nv Tema\ 1.md 
+cdf
+ls
+ds FR
+ds FR*
+sudo xfce4-settings
+sudo xfce4-settings-manager 
+sudo xfce4-settings-manager
+xfce4-settings-manager
+gpush
+cd
+nv
+pacman -Ss emule
+yay -Ss emule
+pacman -Ss virtualbox
+uname -a
+remotessh 
+rsync LinuxCloud/ sergio@$REMOTEIP:~/LinuxCloud/
+rsync -zaP LinuxCloud/ sergio@$REMOTEIP:~/LinuxCloud/
+gotop
+route -n
+sudo pacman -S net-tools
+route -n
+ping google.es
+remotessh 
+sudo wireshark
+nc
+pacman -S nc
+sudo pacman -S nc
+nv Apuntes\ de\ prácticas.md 
+update
+updateGit
+curl ifconfig.me
+ifconfig
+gpush
+cdf
+nv
+nvf
+ls
+mkdir Imagenes
+gcommit
+git push
+nv Apuntes\ de\ prácticas.md 
+ls
+cd GitProjects/
+ls
+cd ~/LinuxCloud/
+ls
+cd Games
+ls
+cd SheikahServer/
+ls
+ls -l
+tree Hyrule/
+tree logs
+cd ..
+ls
+cd SheikahServer/
+rsync -zaP . sergio@$LOCALIP:~/Minecraft
+ls
+cd
+ls
+rsync server.jar sergio@$LOCALIP:~/Minecraft_Server/server.jar
+nv bin/launcher 
+ls .games
+ls
+nv bin/launcher 
+nv .bash_profile 
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+rsync -zaP --dry-run /media/USB/LinuxCloud/ LinuxCloud/
+rsync -zaP --dry-run /media/USB/LinuxCloud/ LinuxCloud/ | less
+rsync -zaP /media/USB/LinuxCloud/ LinuxCloud/ 
+man rsync
+rsync -zaP LinuxCloud/ /media/USB/LinuxCloud/
+rsync -zaP /media/USB/LinuxCloud/ LinuxCloud/
+sudo rsync -zaP /media/USB/LinuxCloud/ LinuxCloud/
+sudo umount /media/USB/
+sync
+sudo umount /media/USB/
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/ --dry-run | less
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+sudo rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+localssh 
+localssh 
+sudo umount /media/USB
+sudo umount -f //media/USB
+sudo umount -f /media/USB
+man umount
+sudo umount --force /media/USB 
+lsblk
+sudo mount /dev/sdc1 /media/USB 
+sudo umount /media/USB 
+sudo mount /dev/sdc1 /media/USB 
+sudo gnome-disks
+localssh 
+ls
+scp server.jar sergio@$LOCALIP:~/Minecraft_Server/server.jar
+nv .bash_functions 
+findps termite
+nv .bash_functions 
+findps termite
+nv .bash_functions 
+findps termite
+findps fi
+findps firefox
+man grep
+nv .bash_functions 
+findps firefox
