@@ -45,5 +45,5 @@ function nvf(){
 
 # Script para buscar procesos
 function findps(){
-    ps aux | egrep $1 | egrep -v egrep | egrep $1
+    ps aux | egrep $1 | egrep -v egrep | egrep -v grep | egrep $1
 }

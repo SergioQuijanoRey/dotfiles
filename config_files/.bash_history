@@ -1,233 +1,3 @@
-vlc /home/sergio/LinuxCloud/Fotografias/Fotografías Viaje Marrakech 2018/VID_20180718_183507.mp4
-vlc VID_20180718_183519.mp4
-vlc VID_20180721_200717.mp4
-dualdisplay 
-actualizar
-actualizarGit
-ranger
-ls
-actualizar
-actualizarGit
-sudo pacman -Qi dolphin
-sudo pacman -Ss dolphin
-sudo pacman -S community/dolphin-emu
-choose_wallpaper -c stranger.jpg
-actualizarGit
-choose_wallpaper -c sudo.png
-actualizar
-sudo pacman -Ss arandr
-sudo pacman -S arandr
-ls /home/sergio/.i3/rofithemes/
-cat .i3/rofithemes/side
-cat .i3/rofithemes/side.rasi
-rofi
-rofi -show run
-rofi -show drun run
-actualizar
-confi3
-actualizarGit
-ls .i3/rofithemes/
-confi3
-rm .i3/scripts/toggletouchpad 
-nvf
-sudo pacman -S xbacklight
-sudo pacman -Ss xbacklight
-sudo pacman -S extra/xorg-xbacklight
-confi3 
-actualizarGit
-cd GitProjects/dotfiles/
-git push origin HEAD:master
-git status
-ls /etc
-ls
-choose_wallpaper -c landscape.jpg
-actualizarGit
-r
-pacman -Q 
-pacman -Q | egrep what
-pacman -Q | grep what
-pacman -Ss whatsapp
-yay -Ss whatsapp
-yay -S aur/whatsapp-nativefier
-ls
-actualizarGit
-actualizar
-actualizarGit
-ls
-lsblk
-ls
-htop
-kill
-choose_wallpaper -c landscape.jpeg
-choose_wallpaper -c landscape.jpg
-confi3
-choose_wallpaper -c landscape.jpg
-file partidazelda.sav 
-nv partidazelda.sav 
-pacman -Ss xinput
-cd GitProjects/dotfiles/
-git pull origin master
-git push origin master
-git status
-git add .
-git commit
-git checkout HEAD
-git status
-git checkout ac46a41
-git status
-actualizarGit
-actualizar
-cd GitProjects/
-choose_wallpaper -c landscape.jpg
-confi3
-cd GitProjects/dotfiles/
-git branck temp
-git checkout -b temp
-git checkout master
-git checkout
-git checkout temp
-git status
-git add .
-git commit
-git push origin temp
-git checkout master
-git merge temp
-git push origin master
-nvf
-cd 
-nvf
-cd GitProjects/
-cd GitProjects/dotfiles/
-git status
-git add .
-git commit
-git push origin master
-git status
-git branch -d temp
-git add .
-git commit
-git push origin master
-cd ../Universidad/
-git log --one-line
-git log --oneline
-actualizarGit
-cd GitProjects/dotfiles/
-git push origin HEAD:master
-git push origin HEAD:master --force
-git status
-git clone git@gitlab.com:SergioQuijano/misArchivos.git
-nvf
-cd GitProjects/dotfiles/
-ls
-cd 
-actualizarGit
-cd GitProjects/Universidad/
-git log --oneline
-ls
-evince mozilla.pdf 
-ranger
-actualizarGit 
-cd /run/user/1000/gvfs/
-ls
-usb-devices 
-usb-devices | egrep "xiaomi2
-usb-devices | egrep "xiaomi"
-usb-devices | egrep "android"
-usb-devices | nv 
-ls
-rsync -zaP ../Familia/ ~/LinuxCloud/Fotografias/Familia/
-cd LinuxCloud/Fotografias/Sesiones\ Fotos/Sesión\ Fotos\ Granada\ 16-02-2019/
-ls
-ls | egrep DSC00265.JPG
-ls | grep DSC00265.JPG
-thunar .
-cd LinuxCloud/
-ls
-lsblk
-sudo mount /dev/sdb1 /media/USB/
-ls
-lsblk
-ls /media/USB/LinuxCloud/
-rsync -zaP ~/LinuxCloud/ /media/USB/LinuxCloud/
-ls
-rsync -zaP /media/USB/LinuxCloud/ /home/sergio/LinuxCloud/
-ds /media/USB/LinuxCloud/
-watch echo "Disco Duro\n" ; du -d0 -h /media/USB/
-watch du -d0 -h /media/USB/
-watch du -d0 -h /media/USB/LinuxCloud/
-ds ~/LinuxCloud/
-watch du -d0 -h ~/LinuxCloud/
-pacman -Ss nemo
-sudo pacman -S nemo
-actualizar
-sudo pacman -S nemo
-lsblk
-sudo gnome-disks
-pacman -Ss gnome-disks
-pacman -Ss gnome-disk-utilites
-pacman -Ss gnome | grep util
-sudo pacman -S extra/gnome-disk-utility
-gnome-disks 
-lsblk
-gnome-disk
-gnome-disks
-lsblk
-sudo fdisk /dev/sdb
-lsblk
-gnome-disks
-lsblk
-sudo pacman -Syyu
-actualizarGit
-actualizar
-cd Downloads/
-ls
-cd ..
-cd Documents/
-ls
-cd ..
-ls
-la
-actualizar
-pacman -Ss pxs
-pacman -Ss psx
-actualizarGit
-actualizar
-ls
-cat partidazelda.sav 
-file partidazelda.sav 
-sudo pacman -Rns rofi
-sudo pacman -S rofi
-rofi 
-rofi -show window
-rofi -show ssh
-ssh $(rofi -show ssh)
-rofi 
-rofi -show run
-ls
-nvim "Diario Julio.md"
-nv
-ls
-rofi -show run
-curl cheat.sh/ls
-curl cheat.sh/dd
-actualizarGit
-actualizar
-man rofi
-py
-actualizar
-actualizarGit
-confi3
-cd ~
-cd GitProjects/
-ls
-cd dotfiles/
-gitpush
-gpush
-confi3 
-cd .i3/rofithemes/
-ls
-nv side.rasi
-man rofi
 confi3
 cd .i3/rofithemes/
 nv side
@@ -1940,3 +1710,291 @@ findps firefox
 man grep
 nv .bash_functions 
 findps firefox
+localssh 
+findps rsync
+nv .bash_functions 
+findps rsync
+updateDotfiles
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+localssh 
+sudo shutdown -h now
+localssh 
+man groupmod
+man groudadd
+man addgroup
+curl cheat.sh/groupmod
+curl cheat.sh/groupade
+curl cheat.sh/groupadd
+curl cheat.sh/chmod
+localssh 
+nvf
+fastman adduser
+man adduser
+man useradd
+updateGit
+ls
+update
+gpush
+cdf
+git pull
+nv
+update
+updateGit
+cd GitProjects/
+ls
+clone git@gitlab.com:SergioQuijano/ApuntesUniversidad
+git clone git@gitlab.com:SergioQuijano/ApuntesUniversidad
+ls
+cd ApuntesUniversidad/
+ls
+ls -a
+nv README.md
+gpush
+glog
+git log --one-line
+git log -one-line
+git log --oneline
+cdf
+ls
+gpush
+tree
+open
+xdg-open 2º\ Curso/1º\ Cuatrimestre/Analisis\ II.pdf 
+nv ~/bin/open
+less ~/.bash_functions 
+nv ~/bin/open
+gpush
+cdf
+ls
+gpush
+updateGit
+update
+gpush
+cd ../2º\ Cuatrimestre/
+ls
+gpuhs
+gpush
+nv
+tmp
+temp
+update
+updateGit
+gotop
+ls
+nv pruebas.txt
+gpush
+v Tema\ 1.md 
+ls
+rm Scre_2019-09-25_16-59-11.png 
+s
+ls
+gcommit
+gpush
+rm *.pdf
+gpush
+nv
+curl ifconfig.me
+curl ifconfig.me/all
+gpush
+updateGit
+g++ -I. ejemplo13-s.cpp Semaphore.cpp -lpthread -o pruebas
+val ./pruebas 
+./pruebas 
+./pruebas | less
+nv
+ls
+nv Especificacion Tarea.md
+nv "Especificacion Tarea.md"
+update
+updateGit
+pacman -Ss ace of spades
+yay -Ss ace of spades
+update
+gpush
+cdf
+git pull
+nv
+uname .a
+uname -a
+sudo pacman -S linux52
+yay -S openspades
+xtra/linux52-virtualbox-guest-modules 6.0.10-13 (linux52-extramodules)
+extra/linux52-virtualbox-host-modules 6.0.10-13 (linux52-extramodules)
+sudo pacman -S linux52-virtualbox-guest-modules 
+sudo pacman -S linux52-virtualbox-host-modules 
+uname -a
+pacman -Ss virtualbox
+pacman -Ss linux52*virtualbox
+pacman -Ss linux52virtualbox
+pacman -Ss linux52
+pacman -Ss virtualbox | nv
+sudo /sbin/vboxconfig
+sudo /bin/vboxconfig
+vboxconfig
+sudo vboxreload
+yay -S openspades
+ls
+pacman -Ss virtualbox
+ping google.es
+nv Tema\ 1.md 
+gpush
+nv pruebas.md
+nv bin/prevmark
+chmod u+x bin/*
+prevmark pruebas.md 
+ls
+rm pruebas.md 
+ls
+yay -Ss paint
+yay -Ss tuxpaint
+sudo pacman -S gnu-paint
+sudo pacman -S gnupaint
+sudo pacman -Ss gnupaint
+sudo pacman -Ss paint
+sudo pacman -S krita
+sudo pacman -Rns krita
+brave Apuntes\ de\ prácticas.md &
+unterm
+unterminal 
+nv Apuntes\ de\ prácticas.md 
+nv
+prevmark Apuntes\ de\ prácticas.md 
+updateGit
+s
+ls
+cat ALSA_NATALIA.csv 
+sha256sum ALSA_NATALIA.csv 
+file ALSA_NATALIA.csv 
+mv ALSA_NATALIA.pdf
+mv ALSA_NATALIA.csv ALSA_NATALIA.pdf
+file ALSA_NATALIA.pdf 
+mv ALSA_NATALIA.pdf ALSA_NATALIA.csv
+gpush
+v
+pacman -Ss zathura
+sudo pacman -S zathura
+update
+updateGit
+localssh 
+localssh 
+ifconfig
+localssh 
+update
+updateGit
+cdf
+nv
+gpush
+cd ..
+ds misArchivos/
+gpush
+gpush 
+cdf
+nv
+py
+extract Practica1
+extract Practica1-fuentes.zip 
+cd
+cd GitProjects/Universidad/
+gpush
+nv
+gcommit
+localssh 
+localssh 
+findps minecraft
+sudo kill -9 27982
+htop
+updateGit
+nvf
+update
+lsblk
+update
+lsblk
+lsblk -f
+cd Downloads/
+ls
+ranger
+make pc
+ls
+val productorconsumidor_exe 
+val ./productorconsumidor_exe 
+ls
+make pc
+ls
+rm productorconsumidor
+rm productorconsumidor_exe 
+make val_productorconsumidor
+gcommit
+gpush
+nv
+sudo nemo
+lsblk
+sudo gnome-disks
+lsblk
+sudo gnome-disks
+make val_productorconsumidor
+cdf
+ls
+cd Mi\ código/
+ls
+ranger
+update
+updateGit
+make val_productorconsumidor
+compile clean.cpp -o clean
+val ./clean
+gcommit
+rm vgcore.10515 
+gcommit
+compile clean.cpp -o clean 
+val ./clean
+echo $?
+./clean 
+echo $?
+compile clean.cpp -o clean 
+val ./clean
+compile clean.cpp -o clean && val ./clean
+gcommit
+compile -I./ Semaphore.cpp clean.cpp -o clean && val ./clean
+gcommit
+compile -I./ Semaphore.cpp clean.cpp -o clean && val ./clean
+glog
+compile -I./ Semaphore.cpp clean.cpp -o clean && val ./clean
+gcommit
+git push origin master
+gcommit
+gpush
+compile -I./ productorconsumidor.cpp Semaphore.cpp -o productorconsumidor && val ./productorconsumidor
+ls
+htop
+gotop
+compile -I./ productorconsumidor.cpp Semaphore.cpp -o productorconsumidor && ./productorconsumidor
+compile -I./ clean.cpp Semaphore.cpp -o clean && val ./clean
+compile -I./ productorconsumidor.cpp Semaphore.cpp -o productorconsumidor && val ./productorconsumidor
+gcommit
+compile -I./ productorconsumidor.cpp Semaphore.cpp -o productorconsumidor && val ./productorconsumidor
+gpush
+ls
+rm clean productorconsumidor
+ls
+gpush
+nv
+ls
+nv productorconsumidor.cpp
+nv
+htop
+nvconf 
+gpush
+ds .git/
+ds 2º\ Curso/
+ds
+ds *
+ds *.*
+ds *
+for file in ls -al ; do ds $file ; dole
+for file in ls -al ; do ds $file ; done
+for file in $(ls -a) ; do ds $file ; done
+for file in $(ls -a) ; do ds "$file" ; done
+ls
+ds .git/
+ds 2º\ Curso/

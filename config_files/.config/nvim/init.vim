@@ -108,30 +108,26 @@ let loaded_matchparen= 1            " No matching parenthesis/brakets/... highli
 colorscheme gruvbox                 " Default color scheme
 
 " Keybindings
-"==============================================================================
+"===============================================================================
 " Spell checking
 map <F6> :setlocal spell! spelllang=es<CR>
 map <F7> :setlocal spell! spelllang=en<CR>
  
 " Code Linting
 map <F5> :Neomake<CR>
-" Open a terminal
-map <C-K> :sp<CR>:terminal<CR>A
- 
-" Ctr-space for autocompletion
-imap <C-space> <C-p>
 
+" Open a terminal (horizontal or vertical)
+map <leader>k :sp<CR>:terminal<CR>A
+map <leader><S-k> :vsp<CR>:terminal<CR>A
+ 
 " Focus mode for writting
-map <C-f> :Goyo 120x120<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>
+map <leader>f :Goyo 120x120<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>
 
 " Fuzzy File Finder
-map <C-p> :FZF<CR>
+map <leader>p :FZF<CR>
 
 " Open Nerd Tree
-map <C-o> :NERDTreeToggle<CR>
-
-" Goto Definition
-map <C-g> :ALEGoToDefinitionInSplit<CR>
+map <leader>o :NERDTreeToggle<CR>
 
 " PLUGINS CONFIGURATION
 "=============================================================================
