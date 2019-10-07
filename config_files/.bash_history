@@ -1,266 +1,3 @@
-confi3
-cd .i3/rofithemes/
-nv side
-nv side.rasi 
-ls
-ls .i3/rofithemes/
-ls
-rm .i3/rofithemes/gruvbox-common.inc 
-ls
-ls .i3/rofithemes/
-rofi -show run -config .i3/rofithemes/gruvbox-dark-hard.rasi 
-ls
-rofi -show run -config .i3/rofithemes/gruvbox-dark-hard.rasi 
-cd .i3/rofithemes/
-ls
-mv gruvbox-common.inc gruvbox-common.inc.rasi
-ls
-cd .i3/rofithemes/
-ls
-rm *
-ls
-ls .i3/rofithemes/
-rm Mon
-rm .i3/rofithemes/Monokai.rasi 
-confi3
-ls .i3/rofithemes/
-rm .i3/rofithemes/material.rasi 
-cd .i3/rofithemes/
-ls
-rm onedark.rasi sidetab-adapta.rasi 
-ls
-rm Diario\ Julio.md 
-ls
-cd bin
-ls
-cd 
-cd bin
-ls
-rm sims
-ls
-cd 
-confi3
-actualizarGit
-history | grep curl
-curl cheat.sh/rofi
-confi3
-actualizarGIt
-actualizarGit
-rofi-theme-selector +
-rofi-theme-selector 
-confi3
-rofi -show drun -font \\"DejaVu 9\\" -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'
-cd .i3/rofithemes/
-ls
-mv sidetab.rasi sidetab_backup.rasi 
-cd GI
-cd GitProjects/
-ls
-git clone git@gitlab.com:SergioQuijano/misArchivos.git
-actualizar
-actualizarGit
-actualizarGIt
-actualizarGit
-nvf
-xprop
-file .config/gtk-2.0/gtkfilechooser.ini
-nv .config/gtk-2.0/gtkfilechooser.ini
-cd .i3/rofithemes/
-nv
-actualizarGIt
-actualizarGit
-xprop
-confi3
-actualizarGit
-actualizar
-bigdisplay 
-nv .profile
-nv .bash_pro
-nv .bash_profile 
-nv .profile 
-actualizar
-actualizarGit
-nv
-nv .nvimrc
-nv .vimrc 
-la
-nvconf
-cd .config/
-ls
-cd nvim
-ls
-cd nvim
-ls
-nv init.vim 
-actualizarGit
-nvf
-vconf 
-nvconf 
-nv 
-ls
-htop
-actualizarGit
-nvconf
-nv .config/nvim/init.vim 
-actualizarGit
-ls
-nvim pruebas.py
-ls
-rm pruebas.py 
-nv
-actualizar
-actualizarGit
-lsblk
-sudo mount /dev/sdb1 /media/USB/
-rsync -zaP /home/sergio/LinuxCloud/ /media/USB/LinuxCloud/
-sudo umount /media/USB/
-lsblk
-sudo gnome-disks
-actualizar
-actualizarGit
-actualizar
-ls
-ds partidazelda.sav 
-htop
-gotop
-pacman -Ss psx
-pacman -Ss ps1
-yay -Ss psx
-yay -Ss psx | nv
-actualizarGit
-yay -S psx
-yay -Ss psx | nv
-yay -S epsxe
-unrar  65-px-f-f-9-c1.rar 
-unrar 65-px-f-f-9-c1.rar 
-extract 65-px-f-f-9-c1.rar 
-file 65-px-f-f-9-c1.bin 
-htop
-unzip F1n4l.F4nt4sy.IX\ \[Esp\ -\ PAL\].zip 
-extract part2.rar 
-extract *.zip
-unzip *.zip
-for file in *; do unzip $file; done
-for file in *; do unrar $file; done
-extract F1n4l.F4nt4sy.IX\ \[Esp\ -\ PAL\]\ www.emu-games.com.part1.rar
-file F1n4l.F4nt4sy.IX\ \[Esp\ -\ PAL\]\ www.emu-games.com.part1.rar 
-mv F1n4l.F4nt4sy.IX\ \[Esp\ -\ PAL\]\ www.emu-games.com.part1.rar part1.rar
-mv F1n4l.F4nt4sy.IX\ \[Esp\ -\ PAL\]\ www.emu-games.com.part2.rar part2.rar
-extract part1.rar 
-mkdir /media/CDROM
-sudo mkdir /media/CDROM
-sudo mount Final\ Fantasy\ IX\ CD\ 1.bin /media/CDROM/
-sudo mount Final\ Fantasy\ IX\ CD\ 1.bin /media/CDROM/ -o umask=000
-cd LinuxCloud/Games/
-ls
-cd PSX/ROMS/FFIX/
-ls
-cd Final\ Fantasy\ IX\ CD\ 1/
-ls
-sudo mount "Final Fantasy IX CD 1.bin" /media/CDROM/
-sudo mount "Final Fantasy IX CD 1.bin" /media/USB/
-file "FI
-file "Final Fantasy IX CD 1.bin" 
-cat Final\ Fantasy\ IX\ CD\ 1.bin 
-cd .
-cd 
-cdf
-cd ..
-ls
-htop
-actualizar
-cd LinuxCloud/Games/PSX/ROMS/FFIX/
-ls
-cd 65-px-f-f-9-c1/65-px-f-f-9-c1/
-ls
-file *.bin
-sudo mount 65-px-f-f-9-c1.bin /media/CDROM/
-ls
-cd ..
-ls
-nv *.zip
-yay -S pcsxr
-rm -r Influensiando/
-ls
-yay -Ss psx | nv
-sudo pacman -Rns pcsxr 
-pacman -Rns epsxe
-sudo pacman -Rns epsxe
-epsxe
-
-history | grep yay
-htop
-yay -S psx
-sudo pacman -S libpng14
-yay -S psx
-yay -S epsxe
-htop
-extract 4n1m4l.Cr0s1ng\ \[PAL\]\ www.emu-games.com.rar 
-unrar 4n1m4l.Cr0s1ng\ \[PAL\]\ www.emu-games.com.rar 
-mv 4n1m4l.Cr0s1ng\ \[PAL\]\ www.emu-games.com.rar animal.rar
-unrar animal.rar 
-extract animal.rar 
-ls
-extract Final\ Fantasy\ IX\ \(S\)\ \(Disc\ 1\)\ \[SLES-02969\].rar 
-mv Final\ Fantasy\ IX\ \(S\)\ \(Disc\ 1\)\ \[SLES-02969\].rar f.rar
-extract f.rar 
-yay -S psx
-extract SCPH7502.zip 
-ls
-ls /home/sergio/.epsxe/bios/scph1001.bin
-ls /home/sergio/.epsxe/bios/
-htop
-extract 65-px-f-f-9-c1.rar 
-cd GitProjects/
-gpush
-ls
-cd dotfiles/
-gpush
-actualizar
-actualizarGit
-nvf
-gcommit
-pacman -S community/virtualbox
-sudo pacman -S community/virtualbox
-make 
-make packages
-ls
-gcommit
-gpush 
-git push origin experimental
-actualizar
-pacman -Ss brave
-pacman -Ss virtualbox
-uname -u
-uname -a
-pacman -Ss 419-virtualbox
-sudo pacman -S extra/linux419-virtualbox-guest-modules virtualbox
-sudo pacman -S extra/linux419-virtualbox-guest-modules
-pacman -Ss virtualbox | nv
-ls
-pacman -S 419-virtualbox
-sudo pacman -S 419-virtualbox
-sudo pacman -Ss 419-virtualbox
-sudo pacman -Ss extra/linux419-virtualbox-host-modules
-sudo pacman -S extra/linux419-virtualbox-host-modules
-virtualbox
-sudo pacman -S virtualbox
-ds *.vdi
-gcommit
-chmod u+x download.sh 
-make download
-nvconf 
-gcommit
-rm installation_files/link.sh 
-ls
-gcommit
-git push origin experimental
-gcommit
-make upload
-mv config_files/upload.sh installation_files/upload.sh
-nv .bash_aliases 
-make upload
-chmod u+x installation_files/upload.sh 
 make download
 ranger
 nv .config/alacritty/alacritty.yml 
@@ -1998,3 +1735,266 @@ for file in $(ls -a) ; do ds "$file" ; done
 ls
 ds .git/
 ds 2º\ Curso/
+updateDotfiles
+nvf
+update
+updateGit
+fuse
+pacman -Ss fues
+pacman -Ss fuse
+gcommit
+ls
+htop
+gpush
+nv
+pacman -Ss named
+pacman -Ss name
+pacman -Ss name | grep dns
+yay -Ss named
+yay -Ss named | grep dns
+whois google.com
+whois
+pacman -S whois
+sudo pacman -S whois
+whois google.es
+whois google.com
+man whois
+ipaddr google.es
+man 2 gethostbyname
+man gethostbyname
+hostnme
+hostname
+
+hostnme -d
+hostnme -D
+hostname -D
+hostname -d
+sudo nvim /etc/resolv.conf 
+pacman -Ss mdless
+pacman -S mdless
+sudo pacman -S mdless
+yay -Ss mdless
+yay -S mdless
+yay -S ruby-mdless
+mdless
+mdless Tema\ 2.md 
+cdf
+mdless Tema\ 2.md 
+sudo pacman -Rns mdless
+sudo pacman -Rns ruby-mdless
+pacman -Ss mdp
+pacman -S mdp
+sudo pacman -S mdp
+ls
+mdp Tema\ 2
+mdp Tema\ 2.md 
+sudo pacman -Rns mdp
+pacman -Ss mad
+yay -Ss mad
+yay -Ss mad | nv
+pacman -Ss mdr
+mdv Tema\ 2
+mdv Tema\ 2.md 
+pacman -Ss mdv
+yay -Ss mdv
+yay -S aur/python-mdv-git
+mdv
+mdv "Tema 2
+cdf
+mdv Tema\ 2.md 
+mdv Tema\ 2.md | less
+mdv Tema\ 2.md | more
+mdv
+mdv Tema\ 2.md 
+yay -Rns aur/python-mdv-git
+sudo pacman -Rns python-mdv-git
+pacman -Q 
+pacman -Q | grep m*
+pacman -Q | grep m
+pacman -Q | grep m+
+pacman -Q | grep m*
+sudo wireshark &
+unterminal 
+findps wireshark
+htop
+sudo wireshark
+unterminal 
+ls /usr/doc/
+sudo ls /usr/doc/
+nslookup
+sudo pacman -S nslookup
+pacman -Ss network tools
+net-tools
+nslookup
+pacman -Ss nslookup
+yay -Ss nslookup
+resolver
+man resolver
+gotop
+gpush
+nvf
+ls
+mv clean_productorconsumidor.cpp onelifo.cpp
+gcommit
+git push
+ls
+mv onelifo.cpp clean_onelifo.cpp
+mv productorconsumidor.cpp onelifo.cpp
+gcommit
+ls
+compile onefifo.cpp Semaphore.cpp -o onefifo && val ./onefifo
+git status
+ls
+rm clean_onelifo.cpp 
+ls
+mv fumadores-plantilla.cpp onefumadores.cpp
+ls
+rm onefifo
+gcommit
+git push
+ls
+cp onefifo.cpp morefifo.cpp
+cp onelifo.cpp morelifo.cpp
+gcommit
+ls
+cp onefumadores.cpp morefumadores.cpp
+gcommit
+nv
+fzf
+cdf
+cd
+ls
+nv
+ls
+ls -a
+nv .dir_colors 
+ls
+ls -a
+cdf
+ls
+brave Tema\ 2.md &
+ls
+pandoc "Tema 2.md" -o "Tema 2.tex" 
+pandoc "Tema 2.md" -o "Tema 2.pdf" 
+ls
+less *.tex
+ls
+nv pruebas.md
+nv
+nv
+update
+gpush
+cdf
+git pull
+nv
+updateGit
+gcommit
+gcommit -m "Añado mensajes mas apropiados para morelifo.cpp"
+ls
+compile morelifo.cpp Semaphore.cpp -o morelifo && val ./morelifo
+gcommit
+git push
+ls
+./morelifo 
+ls
+rm morelifo
+compile onefifo.cpp Semaphore.cpp -o onefifo
+val ./onefifo
+gcommiut
+gcommit
+ls
+ñsa
+ls
+rm onefifo
+compile morefifo.cpp Semaphore.cpp -o morefifo && val ./morefifo
+rm morefifo
+ls
+gcommit
+git push
+gcommit
+glog
+findps
+findps spotify
+sudo kill -9 7472
+gcommit
+ls
+compile onefumadores.cpp Semaphore.cpp -o fumadores && val ./fumadores
+compile -g onefumadores.cpp Semaphore.cpp -o fumadores && val ./fumadores
+gcommit
+rm vgcore.*
+gcommit
+rm vgcore.*
+compile -g onefumadores.cpp Semaphore.cpp -o fumadores && val ./fumadores
+rm onefumadores.cpp 
+ls
+cat onefumadores.cpp 
+ls
+rm fumadores 
+gcommit
+git push
+cat onefumadores.cpp > morefumadores.cpp 
+gcommit
+ls
+compile morefumadores.cpp Semaphore.cpp -o morefumadores && val ./morefumadores
+gcommit
+nv
+ranger
+ristretto . &
+unterminal 
+ristretto 
+ristretto &
+unterminal
+ristretto . &
+nvf
+ping google.es
+update
+updateGit
+rm pruebas.md 
+invertcsv Movimientos.csv intercambio.csv
+man modprobe
+gpush
+git log
+glog
+nvconf 
+zip -r practicas.zip .
+ls
+htop
+dunst
+pacman -Ss dunst
+nv
+update
+nvconf 
+nv apuntesclase.md
+fastman ifconfig
+ifconfig
+update
+updateGit
+ls
+rm intercambio.csv Movimientos.csv practicas.zip 
+ls
+rm -r Fotos\ Nata/
+ls
+ls Cuentas\ Granada/
+ls
+ls Cuentas\ Granada/
+rm -r Cuentas\ Granada/
+ls
+pacman -Ss calendar
+pacman -Ss calendar | grep google
+yay -Ss calendar | grep google
+updateGit
+update
+gpush
+cdf
+nv
+gpush
+ls
+fastman emacs
+fastman vim
+update
+updateGit
+update
+gpush
+cdf
+nv
+updateGit

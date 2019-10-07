@@ -1,8 +1,3 @@
-open_with vim
-open_with
-mkdir Actividad1
-rename ejemplo09.cpp
-mkdir Memoria.md
 touch Memoria.md
 rename 
 rename Seminario 1 - Guía de trabajo.pdf
@@ -20,14 +15,11 @@ rename Tema 2 - Servicios y protocolos de Internet.pdf
 rename Enunciados.pdf
 touch Tema 2.md
 m
-touch 
 open_with t n
 term
-terminal m
 open_with brave
 open_with gim
 open_with gimp
-
 mk
 rename Actividad 1 
 mkdir Práctica - Parte 1
@@ -35,16 +27,24 @@ mkdir Práctica 1
 rename Actividad
 mkdir Seminarios
 mkdir Prácticas
-open_with 
 mkdir Mi
 cu
-delete
 mkdir Plantilla de código
-cut
 mkdir Mi código
-copy
-paste
 rename Práctica 1 - Guión.pdf
 Term
 wq
+tem
+terminal m
+touch 
+open_with libreoffice
+
+delete
+cut
 terminal 
+open_with 
+paste Relación 1 - Mis ejercicios.pdf
+rename Relación 1 - Mis ejercicios.pdf
+copy
+paste
+rename Relación 2 - Mis ejercicios.pdf

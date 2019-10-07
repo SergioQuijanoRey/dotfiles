@@ -122,6 +122,7 @@ map <leader><S-k> :vsp<CR>:terminal<CR>A
  
 " Focus mode for writting
 map <leader>f :Goyo 120x120<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>
+map <leader><S-f> :Goyo<CR>:set nowrap<CR>:set number<CR>
 
 " Fuzzy File Finder
 map <leader>p :FZF<CR>
