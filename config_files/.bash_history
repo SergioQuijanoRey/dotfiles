@@ -1,126 +1,3 @@
-make download
-ranger
-nv .config/alacritty/alacritty.yml 
-:q
-ls
-ll
-:q
-pacman -Ss tmux
-sudo pacman -S tmux
-tmux
-sudo pacman -Rns tmux
-tmux
-ls
-sudo pacman -S termite
-man termite
-nv .config/termite/termite.conf
-htop
-ls
-htop
-file backgrounds/
-ls -l
-cd GitProjects/dotfiles/
-ls
-cd 
-mv .config/termite/termite.conf .config/termite/config
-ls
-htop
-nv
-ranger
-ls
-htop
-cd .config/
-ls
-cd 
-ls
-man termite
-nvim
-ls
-cd .config/
-ls
-mkdir termite
-cd termite/
-ls
-confi3
-cd
-confi3
-cd 
-nvf
-v
-man termite
-pacman -Rns alacritty
-sudo pacman -Rns alacritty
-confi3
-htop
-ls
-htop
-nv .config/termite/config 
-actualizar
-actualizarGit
-ls
-gcommit
-cd .fonts/
-ls
-extract Inconsolata.zip 
-confi3
-htop
-fc-list
-fc-list | grep inconsolata
-ls .local/share/fonts
-mkdir .local/share/fonts
-cp .fonts/* .local/share/fonts/
-history
-q
-fc-list | grep inconsolata
-fc-list
-fc-list | monaco
-fc-list | grep monaco
-fc-list | grep mono
-file psx2_001.bmp 
-cd GitProjects/dotfiles/
-ls
-cd config_files/
-ls
-cd .config/
-ls
-rm -r alacritty/
-gcommit
-git status
-ls
-cd ..
-ls
-cd ..
-ls
-nv
-cd 
-cd GitProjects/dotfiles/
-gpush
-ls
-cd 
-cd GitProjects/dotfiles/
-ls
-make 
-make upload
-gpush
-ls
-ll
-cd ..
-ds dotfiles/
-fclist
-fc-list
-htop
-nv .config/termite/config 
-ls
-ls .fonts/
-ls .local/share/fonts/
-nv .config/termite/config 
-htop
-nv .config/termite/config 
-fc-list
-fc-list | grep sourcecodepro
-fc-list | grep Droid
-fc-list | grep In
-fc-list | nv
 nv .bash_prompt 
 actualizarGit
 nv pruebas.md
@@ -1998,3 +1875,126 @@ gpush
 cdf
 nv
 updateGit
+updateDotfiles
+nvconf 
+update
+updateGit
+gpush
+nv
+ping google.es
+
+rm *.tex
+nv
+update
+updateGit
+gpush
+htop
+cdf
+nv
+update
+gpush
+ssh localhost
+ssh localhost -p 25
+man ssh
+updateGit
+cdf
+nv
+cdf
+nv
+ls
+nv
+vi
+ls
+nvim
+nv
+bash
+update
+gpush
+nv
+vim
+cdf
+vi
+vim
+neovim
+nvim
+htop
+gotop
+pacman -S ftp
+sudo pacman -S ftp
+systemctl status xinetd
+sudo systemctl status xinetd
+ls /etc/ | grep inet
+cd /etc/xinetd.d/
+ls
+nv rsync 
+nv telnet
+pacman -Qi xinetd
+man vsftpd.conf
+man vsftpd
+man telnetd.conf
+man telnet.conf
+man telnet
+man man
+man 5 rsync 
+man 5 sshd
+man 5 ssh
+man 5 openssh
+man ftp
+info ftp
+man xinetd
+pacman -Qi xinetd
+sudo shutdown -h now
+nv
+ls
+cd
+cd GitProjects/
+git clone git@github.com:SergioQuijanoRey/TrabajoFundamentosRedes.git
+cd TrabajoFundamentosRedes/
+ls
+git add README.md 
+git commit
+git push
+gpush
+ls
+cd Documento/
+make
+cd Documento/
+make
+cd Documento/
+make
+cd Documento/
+ls
+make pdf
+ls
+evince Trabajo.pdf &
+make pdf
+cd Documento/
+make pdf
+cd Documento/
+make pdf
+pdflatex Trabajo.
+cd Documento/
+make pdf
+evince Trabajo.pdf (
+evince Trabajo.pdf &
+cd Documento/
+ls
+make deepclean
+ls
+make pdf
+ls
+less Trabajo.pdf
+more Trabajo.pdf
+man less
+pdfless
+pacman -Ss pdfless
+pacman -Ss pdf less
+ls
+make deepclean
+ls
+gpush
+ls
+nv 
+gpush
+nv pruebas.txt
+nv pruebas.md

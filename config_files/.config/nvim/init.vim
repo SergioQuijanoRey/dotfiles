@@ -130,6 +130,8 @@ map <leader>p :FZF<CR>
 " Open Nerd Tree
 map <leader>o :NERDTreeToggle<CR>
 
+tnoremap <leader><Esc> <C-\><C-n>>
+
 " PLUGINS CONFIGURATION
 "=============================================================================
 " Deoplete configuration
