@@ -26,6 +26,7 @@ community/code
 jupyter
 valgrind
 ranger
+w3m                     # Ranger needs this for displaying pdfs
 fzf
 python3
 
