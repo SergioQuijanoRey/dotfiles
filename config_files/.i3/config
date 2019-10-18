@@ -216,8 +216,7 @@ bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to left
 bindsym $mod+Shift+g exec rofi-websearch
 bindsym $mod+Shift+b exec firefox
-bindsym $mod+t exec choose_wallpaper 
-bindsym $mod+Shift+t exec choose_wallpaper -c landscape.jpg
+bindsym $mod+t exec wallpaper 
 
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
@@ -226,7 +225,7 @@ exec syndaemon -i 0.3 -t -K -R
 for_window [class="^.*"] border pixel 0
 
 # Apps on start
-exec choose_wallpaper -c landscape.jpg # Quitar -c sudo.png para que elija al inicio un fondo aleatoriamente
+exec feh --bg-scale "/home/sergio/backgrounds/landscape.jpg"
 exec compton --blur-blackground
 exec whatsapp-nativefier
 exec telegram-desktop

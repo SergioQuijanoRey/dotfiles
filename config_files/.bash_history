@@ -1,4 +1,3 @@
-actualizar
 gpush
 cdf
 ls
@@ -1998,3 +1997,4 @@ wallpaper
 nv 
 nv .i3/scripts/choose_wallpaper 
 cat wallpaper.log 
+rsync -zaP --delete . ~/backgrounds/

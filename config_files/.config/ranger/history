@@ -1,8 +1,3 @@
-rename Enunciados.pdf
-touch Tema 2.md
-m
-open_with t n
-term
 open_with brave
 open_with gim
 open_with gimp
@@ -34,12 +29,10 @@ mkdir Relaciones de Ejercicios
 rename Relación 00 - Preeliminares.pdf
 rename Relación 01 - Tema 1.pdf
 rename Apuntes Tema 1 - Variable Aleatoria Continua.pdf
-rename 
 rename Apuntes Tema 0 - Preeliminares - Distribuciones Discretas.pdf
 rename Apuntes Tema 0 - Preeliminares.pdf
 mkdir Exámenes Pasados
 
-delete
 Term
 copy
 rename Examen
@@ -47,4 +40,11 @@ mkdir Seminario 2
 rename Seminario 2 - Transparencias.pdf
 cut
 paste
+rename lowpoly_bird.png
+rename 
+rename stars.jpg
+rename autumn_house.jpg
+delete
+rename dinner.jpg
+rename autumn_cascade.jpg
 terminal 
