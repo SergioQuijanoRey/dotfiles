@@ -1,319 +1,3 @@
-nv .bash_prompt 
-actualizarGit
-nv pruebas.md
-ls
-car pruebas.md 
-cat pruebas.md 
-file pruebas.md 
-ls
-rm pruebas.md 
-ls
-actualizar
-pacman -Ss bluezutils
-pacman -Ss bluez
-pacman -Ss bluez | nv
-sudo pacman -S bluez-utils bluez-tools
-bluetoothctl 
-ls
-nv .config/termite/config 
-actualizarGit
-pacman -Ss bluez
-pacman -Ss bluez | nv
-ls
-nv GitProjects/dotfiles/installation_files/package_list.txt 
-nvf
-bluetoothctl 
-bluetooth 
-man bluetooth
-bluetoothctl 
-man bluetoothctl
-bluetoothctl 
-ls
-actualizar
-ls
-htop
-actualizar
-ls
-htop
-actualizar
-nv
-actualizarGit
-cd GitProjects/
-cd dotfiles/
-git push
-git status
-git push
-cd ..
-ls
-cd misArchivos/
-git push
-actualizarGit
-cd /etc/udev/rules.d/
-ls
-la
-sudo nvim 10-local.rules
-actualizar
-cd GitProjects/dotfiles/
-make
-make upload
-gcommit
-git push
-ls
-cd 
-ls
-sudo reboot
-nvconf 
-cd /etc/udev/rules.d/
-sudo nv 10-local.rules 
-sudo nvim 10-local.rules 
-sudo reboot
-bluetoothctl  --agent menu power on
-cd /etc/bluetooth/
-ls
-sudo nvim main.conf 
-sudo reboot
-cd GitProjects/
-ls
-cd misArchivos/
-ls
-cd Otros/
-ls
-mv DIarios ..
-mv Diarios ..
-cd ..
-ls
-cd Diarios
-ls
-nv "Diario 2019 08 - Agosto.md
-"
-ls
-mv 'Diario 2019 08 - Agosto.md
-' "Diario 2019 08 - Agosto.md"
-nv Diario\ 2019\ 08\ -\ Agosto.md 
-gpush
-cd 
-actualizarGit
-actualizar
-nvf
-actualizarGit
-cd GitProjects/dotfiles/
-cd 
-cdf
-cd 
-cdf
-ls
-gpush
-actualizarGit
-actualizar
-ls
-file *.bmp
-gcommit
-git push origin master
-glog
-nv ~/.bash_aliases 
-source ~/.bash_aliases 
-glogone
-nv ~/.bash_aliases 
-source ~/.bash_aliases 
-glogone
-cd GitProjects/
-ls
-cd dotfiles/
-ls
-git pull
-make upload
-make download
-cd
-ls
-cd bin/
-ls
-chmod u
-chmod u+x updateRepo 
-mv updateRepo updateDotfiles
-cd
-updateDotfiles 
-gcommit -m "Añado el diario del 14 de Agosto"
-gcommit -m "Añado el diario del 13 de Agosto"
-gcommit -m "Añado el diario del 12 de Agosto"
-git commit -m "Corrijo una metedura de pata con los dias de la semana"
-git push
-git commit -m "Corrijo una metedura de pata con los dias de la semana"
-gcommit -m "Corrijo una metedura de pata con los dias de la semana"
-gcommit -m "Añado el diario del 11 de Agosto"
-gcommit -m "Añado el diario del 10 de Agosto"
-git push origin master
-gcommit -m "Añado el diario del 9 de Agosto"
-ls
-py protocol.py 
-gcommit -m "Añado el diario del 8 de Agosto"
-py protocol.py 
-gcommit -m "Añado el diario del 7 de Agosto"
-git push origin master
-gcommit -m "Añado el diario del 6 de Agosto"
-gcommit -m "Añado el diario del 5 de Agosto"
-htop
-gotop
-top
-nv protocol.py
-cat protocol.py 
-nv protocol.py 
-ls
-htop
-gcommit -m "Añado todos los diarios que me faltaban para completar lo que llevamos del mes de Agosto" 
-git push origin master
-pandoc "Diario 2019 08 - Agosto.md" -o "Diario.pdf"
-evince Diario.pdf &
-gpush
-ls
-cd GitProjects/
-cd misArchivos/Di
-cd misArchivos/Diarios/
-ls
-nv
-ls
-git stauts
-git status
-ls
-rm *.pdf
-ls
-git stauts
-git status
-ls
-touch "Diario 2019 07 - Julio.md"
-nv 
-ls
-git status
-ls -l
-actualizarGit
-cd GitProjects/dotfiles/
-make upload
-gpush
-ls
-cd config_files/bin/
-ls
-rm updateRepo 
-gpush
-ls ~/.local/share/fonts/
-actualizar
-nv bin/actualizarGit 
-cd GitProjects/dotfiles/
-ls
-cd config_files/
-ls
-la
-rm .fonts/
-rm -r .fonts/
-ls
-cd ..
-cd installation_files/
-ls
-nv
-cd ..
-make upload
-gpush
-cd GitProjects/misArchivos/
-gpush
-py protocol.py 
-nvf
-py protocol.py 
-nvf
-cdf
-gpush
-nv protocol.py 
-cat protocol.py 
-nv protocol.py 
-htop
-neofetch 
-updateDotfiles 
-nv .i3/i3blocks.conf 
-updateDotfiles 
-nv bin/updateDotfiles 
-ls
-actualizar
-actualizarGit
-nv bin/actualizarGit
-ac
-actualizarGit
-top
-htop
-cmatrix
-nv .config/nvim/
-gotop
-py VaginaAsesina.py 
-ls
-nv VaginaAsesina.py
-rm V
-rm VaginaAsesina.py 
-ls
-cat protocol.py 
-wifictl
-nv
-neofetch
-actualizar
-actualizarGit
-nv .bashrc
-source .bashrc
-nv .bashrc
-gpus
-gpush
-cdf
-gpush
-neofetch 
-htop
-neofetch 
-gpush
-nvf
-cdf
-gpush
-nvf
-nv .bash_functions 
-cdf
-make upload
-gpush
-nv .bash_functions 
-updateDotfiles 
-cdf
-ls
-extract Manjaro-ARM-minimal-rpi4-19.08.img.xz 
-file Manjaro-ARM-minimal-rpi4-19.08.img.xz 
-untar Manjaro-ARM-minimal-rpi4-19.08.img.xz 
-tar -xcvz Manjaro-ARM-minimal-rpi4-19.08.img.xz 
-ls
-source ~/.bash_functions 
-extract Manjaro-ARM-minimal-rpi4-19.08.img.xz 
-tar -xf Manjaro-ARM-minimal-rpi4-19.08.img.xz 
-file Manjaro-ARM-minimal-rpi4-19.08.img.xz 
-unxz
-unxz Manjaro-ARM-minimal-rpi4-19.08.img.xz 
-ls
-file Manjaro-ARM-minimal-rpi4-19.08.img 
-range
-ranger
-cdf OS
-cdf
-ls
-lsblk
-watch lsblk
-lsblk
-sudo dd if="Manjaro-ARM-minimal.img" of="/dev/sdb" bs=4M progress=status
-sudo dd if="Manjaro-ARM-minimal.img" of="/dev/sdb" bs=4M progres=status
-sudo dd if="Manjaro-ARM-minimal.img" of="/dev/sdb" bs=4M status=progress
-watch lsblk
-lsblk
-cdf
-ls
-lsblkl -f
-lsblkl -a
-lsblkl f
-lsblk
-lsblk -f
-sudo dd if="Manjaro-ARM-minimal.img" of="/dev/sdb" bs=4M status=progress
-actualizarGit
-actualizar
-nv pruebas.py
-rm pr
-rm pruebas.py 
-actualizarGit
 actualizar
 gpush
 cdf
@@ -1998,3 +1682,319 @@ nv
 gpush
 nv pruebas.txt
 nv pruebas.md
+nv
+cd
+nv .config/nvim/init.vim 
+updateDotfiles 
+ls
+!
+ping google.es
+man alacritty
+man termite
+termite -c .config/termite/config 
+cdf
+ls
+git pull
+git log
+gpush
+nv
+pdftotex
+pdftotext
+pdftoppm
+man pdftoppm
+ls ~/.cache/ranger
+w3mimgdisplay
+pacman -Ss $>r
+pacman -Ss $>
+pacman -Ss w3mimgdisplay
+pacman -Ss w3m
+sudo pacman -S extra/w3m
+nvf
+alacritty
+ranger
+sudo pacman -S urxvt
+sudo pacman -Ss urxvt
+sudo pacman -S rxvt-unicode 9.22-9
+community/rxvt-unicode-terminfo 9.22-9
+community/urxvt-perls 2.2-2
+sergio at asus-portatil in ~
+$ sudo pacman -S 
+$ sudo pacman -S rxvt-unicode
+$ sudo pacman -S community/rxvt-unicode
+sudo pacman -S community/rxvt-unicode
+cdf
+cd .config/ranger/
+s
+nv
+git pull
+gpush
+cdf
+ls
+nv 
+gpush
+cd
+cd GitProjects/Y
+cd GitProjects/Universidad/
+gpush
+findps urxvt
+findps discord
+sudo kill -9 1724
+updateGit
+update
+fastman ufw
+cdf
+gpuhs
+gpush
+nvf
+update
+updateGit
+cdf
+glog
+ranger
+update
+updateGit
+gpush
+cdf
+git pull
+nv
+cdf
+gpush
+updateGit
+update
+updateGit
+gpush
+cdf
+ls
+nv
+unzip ExamenSCD.zip 
+cd
+cd GitProjects/Universidad/
+gpush
+compile onefumadores.cpp Semaphore.cpp -o onefumadores && val ./onefumadores
+gcommit
+rm onefumadores
+compile morefumadores.cpp Semaphore.cpp -o exe && val ./exe
+ls
+rm exe 
+ls
+gcommit
+ls
+compile onelifo.cpp Semaphore.cpp -o exe 
+val ./exe 
+file exe
+./exe
+ls
+compile morelifo.cpp Semaphore.cpp -o exe
+val ./exe
+./exe 
+compile morelifo.cpp Semaphore.cpp -o exe
+./exe 
+compile morefifo.cpp Semaphore.cpp -o exe
+val ./exe
+./exe
+compile morefifo.cpp Semaphore.cpp -o exe && val ./exe
+compile morelifo.cpp Semaphore.cpp -o exe && val ./exe
+gpush
+gcommit
+git push
+compile morelifo.cpp Semaphore.cpp -o exe && val ./exe
+compile morefifo.cpp Semaphore.cpp -o exe && val ./exe
+gotop
+htop
+ls
+less fallos.log 
+compile onefifo.cpp Semaphore.cpp -o exe && val ./exe
+compile morefifo.cpp Semaphore.cpp -o exe && val ./exe
+compile morelifo.cpp Semaphore.cpp -o exe && val ./exe
+compile onelifo.cpp Semaphore.cpp -o exe && val ./exe
+./exe
+compile onefifo.cpp Semaphore.cpp -o exe && val ./exe
+./exe
+compile morefifo.cpp Semaphore.cpp -o exe && val ./exe
+gcommit
+git push
+compile morefifo.cpp Semaphore.cpp -o exe && val ./exe
+for i in {0..200}; do ./exe 1> /dev/null 2>> fallos.log; done
+ls
+cat fallos.log 
+rm fallos.log 
+less fallos.log 
+compile morefifo.cpp Semaphore.cpp -o exe && val ./exe
+for i in {0..50}; do echo "Ejecucion $i"
+for i in {0..50}; do echo "Ejecucion $i" >> fallos.log; ./exe 1> /dev/null 2>> fallos.log; done
+rm fallos.log 
+compile morefifo.cpp Semaphore.cpp -o exe && val ./exe
+py
+compile morefifo.cpp Semaphore.cpp -o exe && val ./exe
+py
+compile morefifo.cpp Semaphore.cpp -o exe && val ./exe
+gcommit
+git push
+compile morefifo.cpp Semaphore.cpp -o exe && val ./exe
+compile morelifo.cpp Semaphore.cpp -o exe && val ./exe
+gpush
+compile onefumadores.cpp Semaphore.cpp -o exe && val ./exe
+cat onefumadores.cpp 
+less onefumadores.cpp 
+compile onefumadores.cpp Semaphore.cpp -o exe && val ./exe
+gcommit
+git push
+cp morefumadores.cpp morefumadoresunicos.cpp
+compile morefumadoresunicos.cpp Semaphore.cpp -o exe && val ./exe
+gcommit
+compile morefumadores.cpp Semaphore.cpp -o exe && val ./exe
+for i in {0..100}; do ./exe; done
+compile morefumadores.cpp Semaphore.cpp -o exe && val ./exe
+for i in {0..100}; do ./exe; done
+ls
+compile morefumadores.cpp Semaphore.cpp -o exe && val ./exe
+ls
+compile mo
+compile onefumadores.cpp Semaphore.cpp -o exe && val ./exe
+./exe
+for i in {0..9}; do ./exe; done
+compile onefifo.cpp Semaphore.cpp -o exe
+val ./exe
+./exe
+compile morefifo.cpp Semaphore.cpp -o exe
+val ./exe
+./exe
+compile morefumadoresunicos.cpp Semaphore.cpp -o exe && val ./exe
+for i in {0..14}; do ./exe; done
+nv
+cd
+updateGit
+cdf
+ls
+rm vgcore.*
+ls
+cds
+cd
+updateGit
+gpush
+cdf
+ls
+git pull
+nv
+update
+gotop
+gpush
+nv
+nv .i3/scripts/lockscreen 
+nv
+actualizarGit
+nvim
+vim
+pandoc Tema\ 2.md -o "Tema 2.pdf"
+ls
+pandoc Tema\ 2.md -o "Tema 2.pdf"
+ls
+pandoc "Tema 2.md" -o "Tema 2.tex"
+ls
+pandoc "Tema 2.tex" -o "Tema 2.pdf"
+ls
+nv Tema\ 2.tex
+n
+nv
+ls
+zip -r version1.zip
+zip -r version1.zip .
+nv version1.zip 
+cp version1.zip ~
+mv version1.zip ~
+ls
+compile estancos2.cpp Semaphore.cpp -o exe && val ./exe
+./exe
+ls
+compile estancos2.cpp Semaphore.cpp -o exe && val ./exe
+zip -r version2_entregable.zip -
+zip -r version2_entregable.zip .
+mv version2_entregable.zip ~
+ls
+compile estancos2.cpp Semaphore.cpp -o exe && val ./exe
+./exe
+compile estancos2.cpp Semaphore.cpp -o exe && val ./exe
+zip -r version3.zip .
+mv version3.zip ~
+compile estancos2.cpp Semaphore.cpp -o exe && val ./exe
+ls
+zip -r version4.zip . ; mv version4.zip ~
+ls
+compile estancos2.cpp Semaphore.cpp -o exe && val ./exe
+zip -r version5.zip . ; mv version5.zip ~
+compile estancos2.cpp Semaphore.cpp -o exe && val ./exe
+zip -r version6.zip .
+mv version6.zip ~
+rm exe
+ls
+ls
+nv
+cd Examen/
+ls
+rm exe more*
+ls
+rm onefifo.cpp onelifo.cpp TODO.md 
+ls
+rm makefile 
+ls
+mv onefumadores.cpp estancos2.cpp
+ls
+compile estancos2.cpp Semaphore.cpp -o exe
+./exe
+lsblk
+cat ~/Apuntes\ de\ clase.md >> Apuntes\ de\ clase.md 
+mkdir Archivos de Ejemplo
+rmdir Archivos de Ejemplo
+mkdir "Archivos de Ejemplo"
+mv scd-s2-fuentes.zip Archivos\ de\ Ejemplo/
+ls
+cd Archivos\ de\ Ejemplo/
+ls
+unzip scd-s2-fuentes.zip 
+rm *.zip
+alias compile
+pacman -Qi g++
+man g++
+cdf
+ls
+nv Apuntes\ de\ clase.md 
+update
+gotop
+updateGit
+gotop
+gpush
+nv
+nv
+choose_wallpaper 
+choose_wallpaper -l
+choose_wallpaper -c otoño1.jpg
+updateDotfiles
+choose_wallpaper -c otoño1.jpg
+cdf
+ls
+git pull
+nv *Oc*
+update
+updateGit
+gpush
+cdf
+ls
+nv
+chmod u+x .i3/scripts/*
+wallpaper
+echo $ROFI_THEME
+wallpaper
+man rofi
+wallpaper
+ls 
+wallpaper
+~/backgrounds/
+ls ~/backgrounds/
+ls ~/backgrounds
+wallpaper
+rm .i3/scripts/choose_wallpaper 
+wallpaper
+wallpaper 
+nv 
+nv .i3/scripts/choose_wallpaper 
+cat wallpaper.log 

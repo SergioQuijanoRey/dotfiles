@@ -39,3 +39,7 @@ export COLORTERM="termite"
 export LOCALIP="192.168.1.8"
 export REMOTEIP="sergioquijano.duckdns.org"
 export RASPIP="192.168.1.9"
+
+# I3WM vars
+export ROFI_THEME=".i3/rofithemes/sidetab.rasi"
+export BROWSER="firefox"

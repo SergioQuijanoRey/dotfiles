@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Author:
+#     Sergio Quijano Rey
+#     sergiquijano@gmail.com
+# Description:
+#     Chooses a wallpaper at i3wm
+# Version:
+#     v1.0: first version, moved from python to bash
+# Dependencies:
+#     feh
+#     rofi
+
+# Script parameters
+#===============================================================================
+source "/home/sergio/.bash_profile"
+wallpaper_folder="$HOME/backgrounds/"
+
+# The script
+#===============================================================================
+
+# The image is selected from the wallpaper folder
+image=$(ls $wallpaper_folder | rofi -e "Choose a wallpaper:" -dmenu -config $ROFI_THEME)
+
+# The wallpaper is set using feh
+feh --bg-scale $wallpaper_folder/$image
