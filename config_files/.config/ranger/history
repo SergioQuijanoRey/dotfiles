@@ -1,11 +1,3 @@
-open_with brave
-open_with gim
-open_with gimp
-mk
-rename Actividad 1 
-mkdir Práctica - Parte 1
-mkdir Práctica 1
-rename Actividad
 mkdir Seminarios
 mkdir Prácticas
 mkdir Mi
@@ -32,19 +24,27 @@ rename Apuntes Tema 1 - Variable Aleatoria Continua.pdf
 rename Apuntes Tema 0 - Preeliminares - Distribuciones Discretas.pdf
 rename Apuntes Tema 0 - Preeliminares.pdf
 mkdir Exámenes Pasados
-
-Term
-copy
 rename Examen
 mkdir Seminario 2
 rename Seminario 2 - Transparencias.pdf
-cut
-paste
 rename lowpoly_bird.png
 rename 
 rename stars.jpg
 rename autumn_house.jpg
-delete
 rename dinner.jpg
 rename autumn_cascade.jpg
+t
+mkdir Actividades
+open_with nemo
+rename Prácticas
+rename Entregas
+mkdir Práctica 2
+term
+
+copy
+Term
+delete
+cut
+p
+paste
 terminal 

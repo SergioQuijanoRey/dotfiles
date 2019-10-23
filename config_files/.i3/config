@@ -225,7 +225,7 @@ exec syndaemon -i 0.3 -t -K -R
 for_window [class="^.*"] border pixel 0
 
 # Apps on start
-exec feh --bg-scale "/home/sergio/backgrounds/landscape.jpg"
+exec feh --bg-scale "/home/sergio/backgrounds/autumn_house.jpg"
 exec compton --blur-blackground
 exec whatsapp-nativefier
 exec telegram-desktop

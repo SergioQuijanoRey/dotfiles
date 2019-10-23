@@ -1,353 +1,3 @@
-gpush
-cdf
-ls
-nv
-/usr/lib/i3blocks/battery 
-ls /usr/lib/i3blocks/
-neofetch 
-nv .i3/i3blocks.conf 
-sudo pacman -S i3blocks
-acpi
-man acpi
-acpi -b
-acpi -b1
-acpi -t
-bc
-upower
-pacman -Qi upower
-nv .i3/i3blocks.conf 
-ls .i3/scripts/
-chmod u+x .i3/scripts/*
-rm .i3/scripts/battery-plus 
-updateDotfiles 
-nv .i3/i3blocks.conf 
-nvf
-nv pruebas.py
-rm pruebas.py
-actualizarGit
-actualizar
-ls
-rm touchpad.conf 
-gpush
-cdf
-nv *Agosto*
-cdf
-gpush
-nv .bash_profile 
-ranger
-ls
-invertcsv Movimientos.csv 
-ls
-rm Movimientos.csv 
-ls
-libreoffice new_Movimientos.csv 
-v
-ls
-gpush
-nvf
-gpush
-ls
-gpush
-cd ..
-ls
-cdf
-gpush
-less protocol.py 
-actualizar
-actualizarGit
-ls
-rm protocol.py 
-ls
-actualizar
-gpush
-cdf
-nv 
-py protocol.py 
-py -i protocol.py 
-nv protocol.py
-nv .i3/scripts/battery 
-actualizarDot
-updateDotfiles 
-actualizarGit
-actualizar
-gpush
-cdf 
-git pull
-nv *Agosto*
-actualizar
-actualizarGit
-update
-updateGit 
-cd bin/
-ls
-mv actualizar update
-mv actualizarGit updateGit
-cdf
-nv
-goush
-gpush
-cdf
-ls
-nv "Diario 2019 09 - Septiembre.md"
-updateDotfiles 
-gpush
-cdf 
-ls
-nv
-ls
-update
-updateGit
-htop
-gotop
-update
-updateGit
-pacman -Ss kitty
-pacman -Ss alacritty
-neofetch 
-update
-updateGit
-py protocol.py 
-py -i protocol.py 
-rofi 
-rofi .show run -config pruebas.rasi
-man rofi
-confi3
-ls
-rofi -show run -config pruebas.rasi
-ls
-rm pruebas.rasi 
-ls
-nv protocol.py 
-rm protocol.py 
-ls
-update
-ls
-nvconf 
-nv
-gpush
-ls
-cat *Septiembre+
-cat *Septiembre
-cat *Septiembre*
-less *Septiembre*
-less *Agosto*
-gpush 
-cdf
-ls
-nv
-cd
-nv
-updateGit
-localssh 
-ssh root@$LOCALSSH
-ssh root@$LOCALIP
-ls
-invertcsv 
-invertcsv --help
-nv ~/bin/invertcsv 
-invertcsv Movimientos.csv Movimientos.csv 
-nv Movimientos.csv 
-libreoffice Movimientos.csv & ; disown %1
-libreoffice Movimientos.csv ; disown %1
-invertcsv 
-invertcsv Movimientos.csv 
-ls
-jupyter
-man jupyter
-pacman -Qi jupyter
-nvf
-gpush
-ranger
-range
-ranger
-updateGit
-glog
-cd GitProjects/Universidad/
-glog
-cd ..
-ds Universidad/
-cd Universidad/
-ls
-ds Asignaturas/
-ds Documentos/
-ds Horarios/
-ds .ig
-ds .git
-du -h
-du -h0
-du -h -d0
-du -h -d1
-htop
-update
-updateGit
-confi3
-updateDotfiles 
-updateGit
-ls
-nv ALSA_NATALIA.csv 
-cmatrix
-matrix
-ls
-alias
-alias | less
-alias | nv
-nv $(alias)
-nv <(alias)
-libreoffice ; unterminal
-libreoffice
-unterm
-unterminal 
-nv Reflexiones.zip 
-unzip Reflexiones.zip 
-thunar Reflexiones.zip 
-ranger
-nvf
-v .config/nvim/init.vim 
-nv
-nv
-gpush
-ls
-htop
-nv
-cdf
-ls
-nv
-nv 
-ls
-pacman -Ss gnome-boxes
-pacman -Ss qemu
-sudo pacman -S qemu
-qemu
-qemu-img 
-qemu-img --help
-qemu-io 
-sudo pacman -Rns qemu
-sudo pacman -S gnome-boxes
-pacman -Qi gnome-boxes
-updateGit
-BV
-NV
-nv
-updateGit
-update
-ls
-lsssss
-updateDotfiles 
-actualizar
-update
-updateGit
-ls
-rm -r VirtualBox\ VMs/
-ls
-lsblk
-sudo umount /media/USB/
-lsblk
-lsblk -f
-watch lsblk -f
-lsblk -f
-lsblk
-sudo mount /dev/sdb1 /media/USB/
-ls
-ls ~/.ssh/id_rsa.pub 
-cp .ssh/id_rsa.pub media/USB/portatil.pub
-ranger
-localssh 
-remotessh 
-localssh 
-localssh 
-neofetch 
-battery 
-acpi
-htop
-updateGit
-update
-goto
-gotop
-findps qemu
-htop
-gotop
-htop
-actualizarGit
-updateGit
-update
-ls
-man less
-less .logs/backup-linuxcloud.log 
-findps box
-findps qemu
-rsync -zaP LinuxCloud/OS\ Images/Manjaro-ARM-minimal.img sergio@$LOCALIP:~/LinuxCloud/OS\ Images
-localssh 
-nv bin/
-rm bin/binbackup 
-updateDotfiles 
-ls
-cdf
-ls
-rm binbackup 
-ls
-cd
-ls
-cd bin
-ls
-nv backup-linuxcloud 
-backup-linuxcloud 
-ls
-nv backup-linuxcloud 
-mkdir ~/.logs
-backup-linuxcloud 
-nv ~/.logs/backup-linuxcloud.log 
-nv backup-linuxcloud 
-cd
-backup-linuxcloud 
-ls
-cd 
-rsync -zaP --dry-run LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud
-rsync -zaP --dry-run LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud | nv
-rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud
-fg %1
-py
-unzip takeout-20190907T214453Z-001.zip && rm takeout-20190907T214453Z-001.zip 
-ds Takeout/
-ranger
-localssh 
-remotessh 
-localssh 
-remotessh 
-man ssh
-ssh sergio@$LOCALIP /bin/sh
-localssh 
-remotessh 
-gpush
-cdf
-git pull
-v
-xprop 
-ds PSX/
-cd /media/USB/LinuxCloud/
-ls
-cd Fotografias/
-ls
-delete
-lsblk
-sudo mount /dev/sdb1 /media/USB/
-sudo mount /dev/sdb1 /media/USB/ -o umask=000
-lsblk
-sudo mount /dev/sdb1 /media/USB/
-pacman -Ss ntfs-3g
-ntfsfix /dev/sdb1
-sudo ntfsfix /dev/sdb1
-sudo mount /dev/sdb1 /media/USB/
-rsync -zaP --dry-run /media/USB/LinuxCloud/ ~/LinuxCloud/ | nv
-rsync -zaP --dry-run /media/USB/LinuxCloud/ ~/LinuxCloud/ >> drive_to_laptop.log
-less drive_to_laptop.log 
-rsync -zaP --dry-run LinuxCloud/ /media/USB/LinuxCloud/ | nv
-rsync -zaP LinuxCloud/ /media/USB/LinuxCloud/
-rsync -zap /media/USB/LinuxCloud/ LinuxCloud/
-lslbk
-lsblk 
-rsync -zaP /media/USB/LinuxCloud/ LinuxCloud/
-rsync -zaP LinuxCloud/ /media/USB/LinuxCloud/
-rsync -zaP --delete --dry-run LinuxCloud/ /media/USB/LinuxCloud/ | nv
 sudo umount /media/USB/
 rmdir /media/CDROM/
 sudo rmdir /media/CDROM/
@@ -1998,3 +1648,353 @@ nv
 nv .i3/scripts/choose_wallpaper 
 cat wallpaper.log 
 rsync -zaP --delete . ~/backgrounds/
+ls backgrounds/ | rofi 
+ls backgrounds/ | rofi -show run
+ls backgrounds/ | rofi -dmenu
+wallpaper
+nv .i3/scripts/wallpaper 
+wallpaper 
+nv .i3/scripts/wallpaper 
+updateDotfiles
+confi3
+updateDotfiles
+nv
+nv .config/ranger/
+openssl
+man openssl
+pacman -Ss lightdm-webkit-theme-litarvan
+sudo pacman -S lightdm-webkit-theme-litarvan
+sudo nvim /etc/lightdm/lightdm.conf
+sudo nvim /etc/lightdm/lightdm-webkit.conf
+rm pruebas.cpp 
+nv
+nv pruebas
+rm pruebas*
+ls
+less Apuntes\ de\ clase.md 
+confi3
+sudo nvim 
+sudo nvim /etc/lightdm/lightdm-webkit.conf
+sudo rm /etc/lightdm/lightdm-webkit.conf
+sudo nvim /etc/lightdm/lightdm.conf
+systemctl status lightdm
+sudo systemctl status lightdm
+sudo systemctl restart lightdm
+sudo pacman -Rns lightdm-webkit-theme-litarvan
+lightdm
+sudo lightdm
+man lightdm
+lightdm -c
+lightdm -d
+lightdm --test-mode
+nv /etc/host.conf 
+:q
+pacman -Ss dnscheff
+yay -Ss dnscheff
+yay -Ss dns chef
+yay -Ss dns cheff
+nvim pruebas.py
+nv
+ls
+pacman -Ss nextcloud
+curl google.es
+curl cheat.sh/ls
+curl cheat.sh/curl
+ls
+nv Ideas\ para\ el\ trabajo.md 
+nv
+ls+
+ls
+nv Correo\ solicitud\ para\ el\ profesor.md 
+updateGit
+gpush
+nv
+gush
+gpush
+nv
+nv
+pacman -Ss tux-kart
+pacman -Ss tux
+sudo pacman -S community/supertuxkart
+updateGit
+openssl
+OPENSSL
+sha512sum .bashrc
+ls
+vi
+ls
+man enc
+openssl enc -aes-128-cbc -in FR1.txt -out enFR1.txt
+cat enFR1.txt 
+openssl enc -d -aes-128-cbc -in enFR1.txt -out deenFR1.txt
+ls
+cat deenFR1.txt 
+openssl enc -d -aes-128-cbc -in enFR1.txt -out deenFR1.txt
+cat deenFR1.txt 
+openssl enc -d -aes-128-cbc -in enFR1.txt -out deenFR1.txt
+cat deenFR1.txt 
+openssl enc -d -aes-128-cbc -in enFR1.txt -out deenFR1.txt
+cat deenFR1.txt 
+diff FR1.txt deenFR1.txt 
+cmp FR1.txt deenFR1.txt 
+nvim
+vim
+cd .ssh/
+ls
+cd ..
+nv
+openssl genpkey -algorithm RSA -out privkey
+cat privkey 
+openssl pkey -in privkey -pubout pubkey
+ls
+openssl pkey -in privkey -pubout -out pubkey
+cat pubkey 
+sudo clave.txt
+nv clave.txt
+openssl pkeyutl -pubin -enc -in clave.txt -out clave.enc -inkey pubkey 
+openssl pkeyutl -pubin -encrypt -in clave.txt -out clave.enc -inkey pubkey 
+ls
+cat clave.enc
+openssl pkeyutl -decrypt -in clave.enc -out clave.dec -inkey privkey 
+cat clave.dec 
+sha512sum .bashrc
+sha512sum clave.
+sha512sum clave.enc 
+openssl dgst -sha256 -sign privkey -out FR1.dgst FR1.txt
+openssl dgst -sha256 -verify pubkey -signature FR1.dgst FR1.txt 
+sha256sum FR1.txt 
+openssl dgst -sha256 -out FR1.dgst FR1.txt 
+cat FR1.dgst 
+openssl req -new -out csr
+openssl req -text -verify -in csr
+ls
+cat privkey
+cat privkey.pem
+cat privkey.pem | wc -w
+cat privkey.pem | wc -l
+cat privkey.pem | wc -c
+openssl req -in csr -noout -pubkey
+req -in csr -noout -pubkey
+openssl x509 -req -days 365 -in csr -signkey privkey -out crt
+cat crt 
+yay -S spotify
+yay -S League of legends
+yay -S League 
+yay -Ss League of legends 
+yay -Ss ms office
+ranger
+update
+updateGit
+gpush
+nv
+cdf
+ls
+nv *Oc*
+nv
+ls
+rm Apuntes\ de\ clase.md 
+nv
+nvf
+gpush
+updateGit
+update
+gpush
+cdf
+ls
+nv *Oc*
+cd
+cd GitProjects/TrabajoFundamentosRedes/
+ls
+cat Correo\ solicitud\ para\ el\ profesor.md 
+compile monitor_em.cpp Semaphore.cpp HoareMonitor.cpp -o exe && val ./exe
+./exe
+compile monitor_em.cpp Semaphore.cpp HoareMonitor.cpp -o exe && val ./exe
+ls
+ls
+less HoareMonitor.
+less HoareMonitor.h 
+ls
+nv Semaphore.h 
+nv monitor_em.cpp 
+ls
+cd ~
+ls
+compile pruebas.cpp -o exe && ./exe
+cd ~
+ls
+compile -g pruebas.cpp -o exe && val ./exe
+cd ~ ; compile -g pruebas.cpp -o exe && val ./exe 
+:w
+cd ~ ; compile -g pruebas.cpp -o exe && val ./exe 
+gpush
+bv
+nv
+updateGit
+update
+gpush
+cdf
+ls
+nv 
+ls
+compile -g pruebas.cpp -o exe && val . 
+compile -g pruebas.cpp -o exe && val ./exe
+alias compile
+compile -g pruebas.cpp -o exe 
+val ./exe
+compile -g pruebas.cpp -o exe 
+val ./exe
+compile -g pruebas.cpp -o exe 
+val ./exe
+compile -g pruebas.cpp -o exe && val ./exe
+n
+v
+gpush
+rm vgcore.*
+gpush
+cp prodcons1_sc.cpp productor_consumidor_varios_sc.cpp
+gpush
+make
+ls
+cat makefile 
+rm makefile 
+make
+gcommit
+git push
+gpush
+gcommit
+gcommiyt
+gcommit
+ls
+alias compile
+make
+make clean
+ls
+make
+make varios_sc
+g`
+g++
+make varios_sc
+g++ -std=c++11 -lpthread -g productor_consumidor_varios_sc.cpp -o varios_sc
+ls
+make exe_varios_sc
+valgrind
+make exe_varios_sc
+ls
+val ./varios_sc 
+ls
+compile productor_consumidor_varios_sc.cpp -o varios_sc && val ./varios_sc 
+ls
+unzip Export-7b3ab3e3-2f7d-455d-b172-9310e5577937.zip 
+compile productor_consumidor_varios_sc.cpp -o varios_sc && val ./varios_sc 
+gcommit
+git push
+compile productor_consumidor_varios_sc.cpp -o varios_sc && val ./varios_sc 
+doxygen
+gpush
+ls
+rm pr
+rm pruebas.cpp 
+gcommit -m "Elimino el archivo de pruebas"
+ls
+cp productor_consumidor_varios_sc.cpp productor_consumidor_varios_su.cpp 
+gcommit -m "Creo una primera version de la semantica SU copiando el codigo de SC"
+ds Telegram\ Desktop/
+pacman -Ss notion
+yay -Ss notion
+yay -S aur/notion-app
+sudo pacman -Rns notion-app
+ls
+compile productor_consumidor_varios_su.cpp -o varios_su && val ./varios_su
+compile productor_consumidor_varios_su.cpp HoareMonitor.cpp -o varios_su && val ./varios_su
+compile productor_consumidor_varios_su.cpp HoareMonitor.cpp Semaphore.cpp -o varios_su && val ./varios_su
+gcommit
+compile productor_consumidor_varios_su.cpp HoareMonitor.cpp Semaphore.cpp -o varios_su && val ./varios_su
+compile -g productor_consumidor_varios_su.cpp HoareMonitor.cpp Semaphore.cpp -o varios_su && val ./varios_su
+cd Des
+cd Downloads/
+ls
+ls -l scd-s2-fuentes.zip 
+unzip scd-s2-fuentes.zip 
+ls
+gcommit
+compile pruebas.cpp HoareMonitor.cpp Semaphore.cpp -o prueba && val ./prueba
+compile productor_consumidor_varios_su.cpp HoareMonitor.cpp Semaphore.cpp -o prueba && val ./prueba
+gpush
+cdf
+ls
+nv Apuntes\ de\ clase.md 
+gpush
+rm vgcore.*
+gpush
+ls
+l
+ls
+delete barrera*
+rm barrera*
+ls
+rm exe 
+rm monitor_em.cpp 
+ls
+rm prodcons1_sc.cpp 
+ls
+gpush
+nv
+updateGit
+update
+cdf
+gpush
+ls
+unzip Ex
+unzip Export-eeb97422-2e24-4f54-a7c6-fbb24d769a03.zip 
+ls
+rm Export-eeb97422-2e24-4f54-a7c6-fbb24d769a03.zip 
+nv 22
+ls
+rm 22-10-2019-Lunes-4caaa439-a948-47da-8ac4-4fccc4715f92.md 
+ls
+cat ALSA_NATALIA.csv 
+compile productor_consumidor_varios_su.cpp Semaphore.cpp HoareMonitor.cpp -o su && val ./su
+compile -g -I./ productor_consumidor_varios_su.cpp Semaphore.cpp HoareMonitor.cpp -o pruebas && val ./pruebas 
+compile productor_consumidor_varios_su.cpp Semaphore.cpp HoareMonitor.cpp -o pruebas && val ./pruebas
+gcommit
+rm vgcore.*
+ls
+rm prueba su varios_su 
+ls
+compile productor_consumidor_varios_su.cpp Semaphore.cpp HoareMonitor.cpp -o pruebas && val ./pruebas
+./pruebas
+val ./pruebas
+make varios_sc
+make exe_varios_sc
+compile productor_consumidor_varios_su.cpp Semaphore.cpp HoareMonitor.cpp -o pruebas && val ./pruebas 
+ls
+rm pruebas.cpp 
+ls
+make clean
+gcommit
+git push origin master
+ls
+rm varios_su 
+ls
+make clean
+ls
+rm pruebas
+make
+make exe_varios_sc
+ls
+make clean
+ls
+make exe_varios_sc
+ls
+make clean
+make exe_varios_sc
+ls
+make exe_varios_sc
+make exe_varios_su
+ls
+compile -g pruebas.cpp HoareMonitor.cpp Semaphore.cpp -o pruebas && val ./pruebas
+./pruebas
+compile -g pruebas.cpp HoareMonitor.cpp Semaphore.cpp -o pruebas && val ./pruebas
+nv
+gpush
+wallpaper -c autumn_cascade.jpg

@@ -4,4 +4,4 @@
 xrandr --output HDMI2 --mode 1680x1050 --pos 0x0 --rotate normal --output HDMI1 --off --output DP1 --off --output eDP1 --primary --mode 1366x768 --pos 1680x0 --rotate normal --output VIRTUAL1 --off
 
 # Vuelvo a cargar el fondo de pantalla predeterminado
-choose_wallpaper -c landscape.jpg
+wallpaper -c autumn_house.jpg

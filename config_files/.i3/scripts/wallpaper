@@ -7,6 +7,7 @@
 #     Chooses a wallpaper at i3wm
 # Version:
 #     v1.0: first version, moved from python to bash
+#     v1.1: added a choose option as a command parameter
 # Dependencies:
 #     feh
 #     rofi
@@ -16,11 +17,34 @@
 source "/home/sergio/.bash_profile"
 wallpaper_folder="$HOME/backgrounds/"
 
+# Script functions
+#===============================================================================
+function show_help() {
+    echo "wallpaper"
+    echo "\tWithout parameters: open ROFI to choose a wallpaper inside $wallpaper_folder"
+    echo "\twallpaper -c <wallpaper>: chooses <wallpaper> as a wallpaper"
+}
+
 # The script
 #===============================================================================
 
-# The image is selected from the wallpaper folder
-image=$(ls $wallpaper_folder | rofi -e "Choose a wallpaper:" -dmenu -config $ROFI_THEME)
+if [ $# == 0 ]
+then
+    # The image is selected from the wallpaper folder
+    image=$(ls $wallpaper_folder | rofi -e "Choose a wallpaper:" -dmenu -config $ROFI_THEME)
+else
+    # We have a parameter, so we process it
+    case "$1" in
+        "-c")
+            image=$2
+            ;;
+        *)
+            echo "Bad parameter!"
+            show_help
+            exit
+            ;;
+    esac
+fi
 
 # The wallpaper is set using feh
 feh --bg-scale $wallpaper_folder/$image
