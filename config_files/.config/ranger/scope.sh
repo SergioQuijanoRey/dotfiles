@@ -83,7 +83,7 @@ case "$extension" in
 	#evince-thumbnailer -s 400 "$path" "${cached/.jpg}" && exit 6;;
 	#try pdftoppm -jpeg -singlefile "$path" "${cached//.jpg}" && exit 6 || exit 1;;
     #    try pdftotext -l 10 -nopgbrk -q "$path" - && \{ dump | trim | fmt -s -w $width; exit 0; } || exit 1;;
-        try pdftoppm -jpeg -singlefile "$path" "${cached//.jpg}" && exit 6 || exit 1;;
+        #try pdftoppm -jpeg -singlefile "$path" "${cached//.jpg}" && exit 6 || exit 1;;
 
                 # BitTorrent Files
     torrent)

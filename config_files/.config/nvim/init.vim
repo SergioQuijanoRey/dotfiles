@@ -130,13 +130,17 @@ map <leader>p :FZF<CR>
 " Open Nerd Tree
 map <leader>o :NERDTreeToggle<CR>
 
+" For exiting the terminal mode
 tnoremap <leader><Esc> <C-\><C-n>>
+
+" For avoid shifting
+map <S-Up> <C-Up> 
+map <S-Down> <C-Down>
 
 " PLUGINS CONFIGURATION
 "=============================================================================
 " Deoplete configuration
 let g:deoplete#enable_at_startup = 1
-
 
 " TODO:
 "=============================================================================

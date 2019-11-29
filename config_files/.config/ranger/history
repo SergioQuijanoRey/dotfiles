@@ -1,50 +1,50 @@
-mkdir Seminarios
-mkdir Prácticas
-mkdir Mi
-cu
-mkdir Plantilla de código
-mkdir Mi código
-rename Práctica 1 - Guión.pdf
-wq
-tem
-terminal m
-touch 
-open_with libreoffice
-open_with 
-paste Relación 1 - Mis ejercicios.pdf
-rename Relación 1 - Mis ejercicios.pdf
-rename Relación 2 - Mis ejercicios.pdf
-mkdir Transparencias
-rename Guía Docente - Probabilidad.pdf
-rename Presentación de la asignatura.pdf
-mkdir Relaciones de Ejercicios
-rename Relación 00 - Preeliminares.pdf
-rename Relación 01 - Tema 1.pdf
-rename Apuntes Tema 1 - Variable Aleatoria Continua.pdf
-rename Apuntes Tema 0 - Preeliminares - Distribuciones Discretas.pdf
-rename Apuntes Tema 0 - Preeliminares.pdf
-mkdir Exámenes Pasados
-rename Examen
-mkdir Seminario 2
-rename Seminario 2 - Transparencias.pdf
-rename lowpoly_bird.png
+delet
+mkdir Práctica 3
+rename Práctica 3 - Seminario-pdf
 rename 
-rename stars.jpg
-rename autumn_house.jpg
-rename dinner.jpg
-rename autumn_cascade.jpg
-t
-mkdir Actividades
-open_with nemo
-rename Prácticas
-rename Entregas
-mkdir Práctica 2
+rename Práctica 3 - Seminario.pdf
+mkdir Seminario
+rename Códigos Seminario
+mkdir Códigos Base Práctica
+rename Práctica 3 - Especificación problema.pdf
+d
+tern
+rename Transparencias.md
+patse
+open_with t nvim
+mkdir Cuaderno
+mkdir Cuadernos de prácticas
+rename Cuaderno 01.pdf
 term
-
-copy
+mkdir Ejercicio5
+touch Cliente.java
+touch Servidor.java
+touch Mensajes.cs
+rename Mensajes.csv
+touch Codop.java
+touch Bingo.java
+t
+mkdir Códigos
+rename Codigos
+touch Tema 4 - Parte 2.md
+ter
 Term
-delete
+mkdir Databases
+mkdir Scripts
+[1;5A
+oa
+rename primera_practica.db
 cut
-p
-paste
+delete
+rename Cuaderno de prácticas.pdf
+rename Tema 4 - Parte 1.mdf
+rename Tema 4 - Parte 1.md
+touch Tema 4 - Parte 3.md
+open_with nvim
+[1;5B[1;5B[1;5B[1;5B[1;5B[1;5B[1;5B[1;5B[1;5B[1;5B[1;5B
+open_with 
+mkdir Codigo
 terminal 
+copy
+paste
+

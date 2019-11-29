@@ -8,6 +8,7 @@
 
 # Programming aliases
 alias val="valgrind --leak-check=full"
+alias hval="valgrind --tool=helgrind --leak-check=full"
 alias py="python3"
 alias jupy="jupyter notebook"
 alias v="nvim"                                              # Useful for fast open nvim

@@ -38,7 +38,7 @@ export COLORTERM="termite"
 # SSH vars
 export LOCALIP="192.168.1.8"
 export REMOTEIP="sergioquijano.duckdns.org"
-export RASPIP="192.168.1.9"
+export RASPIP="danielsergio.duckdns.org"
 
 # I3WM vars
 export ROFI_THEME=".i3/rofithemes/sidetab.rasi"
