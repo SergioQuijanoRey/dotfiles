@@ -88,7 +88,7 @@ set nowritebackup
 set noswapfile
 
 " Clipboard
-set clipboard+=unnamedplus
+set clipboard+=unnamedplus 
 
 " VISUAL SETTINGS
 "==============================================================================
@@ -144,6 +144,7 @@ let g:deoplete#enable_at_startup = 1
 
 " TODO:
 "=============================================================================
-"   * See how can I name the folds i made
-"   * Mark trailing spaces
-"   * See how to properly configure Deoplete
+"   [ ] Name the folds I made
+"   [ ] Mark trailing spaces
+"   [ ] Configure Deoplete
+"   [ ] Configure the clipboard
