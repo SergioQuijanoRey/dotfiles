@@ -137,6 +137,8 @@ tnoremap <leader><Esc> <C-\><C-n>>
 map <S-Up> <C-Up> 
 map <S-Down> <C-Down>
 
+" Tab Navigation
+
 " PLUGINS CONFIGURATION
 "=============================================================================
 " Deoplete configuration
@@ -147,4 +149,4 @@ let g:deoplete#enable_at_startup = 1
 "   [ ] Name the folds I made
 "   [ ] Mark trailing spaces
 "   [ ] Configure Deoplete
-"   [ ] Configure the clipboard
+"   [ ] Keybindings for tabs

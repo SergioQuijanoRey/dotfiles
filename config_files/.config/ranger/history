@@ -1,30 +1,5 @@
-rename Relación 04 - Independencia.pdf
-rename Relación 02 - Tema 2 - Parte 1.pdf
-mkdir PracticasSQL
-Term
-mkdir Examen
-rename camarero4.cpp
-rename nofunciona.cpp
-mkdir Práctica LEX
-d
-mkdir Ficheros de prueba
-copy
-rename ejemplo_jugadores.txt
-mkdir Codigo
-rename Tema 5 - Autómatas con pila.pdf
-rename Práctica 3 - Sesión 2.pdf
-rename Práctica 3 - Sesión 1.pdf
-touch Tema 3.md
-touch Tema 4.md
-[1;5B
-rename Tema 3 - Transparencias Largas.pdf
-rename Tema 3 - Transparencias Cortas.pdf
-rename Tema 4 - Trasnparencias.pdf
-mkdir Práctica 4
-rename Práctica 4 - Especificación del problema.pdf
 mkdir Codigo Base
 Delete
-open_with 
 rename Relación 4.pdf
 rename Relación 5.pdf
 mkdir Documento
@@ -35,16 +10,41 @@ rename consulta.png
 rename test_files
 rename jugadores.text
 rename jugadores.txt
-rename 
 rename jugadores_switch.txt
 rename empresas.txt
 ter
 open_with nemo
 open_with emgrampa
-cut
-paste
 t
-terminal 
-
 open_with engrampa
+rename DNI_trasero
+rename DNI_delantero
+rename bases_datos
+search instant
+rename prueas
+3
+3g
+3G
+delet
+rename pruebas
+open_with 
+rename Tema 6 - Propiedades de los lenguajes libres de contexto.pdf
+mkdir Libro
+1
+rename Libro de la asignatura
+bulkrename 
+rename Fundametos de Redes - Transparencias Tema 1a.pdf
+rename Formulario.pdf
+rename 
+q
+rename Tema 4 - Apartado 1.pdf
+rename Tema 4 - Apartado 2.pdf
+rename Tema 4 - Apartado 3.pdf
+open_with brave
+cut
+rename Relaciones Resueltas - Adrián Rodríguez.pdf
+
 delete
+copy
+paste
+terminal 

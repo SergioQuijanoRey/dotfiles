@@ -768,3 +768,486 @@ update
 echo $DISPLAY
 man DISPLAY
 nvf
+ls
+ll
+ls
+htop
+nv Downloads/config.txt 
+pacman -Qi clip
+pacman -Qi clip*
+pacman -Qi *clip*
+pacman -Qi xclip
+pacman -Qi 
+pacman -Qi
+pacman -Q
+pacman -Q | grep clip
+pacman -Ss xclip
+sudo pacman -S xclip
+xclip
+updateDotfiles 
+confi3
+man termite
+ls
+ls Downloads/
+termite -c ./Downloads/config.txt 
+ls
+cd Downloads/
+nv
+cd 
+termite -c ./Downloads/config.txt 
+ls
+cd Downloads/
+ls
+rm config.txt 
+nvconf 
+ds Fotografias/
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+lsblk
+sudo umount /media/USB/
+sudo umount -f /media/USB/
+ds LinuxCloud/
+rsync -zaP --dry-run /media/USB/LinuxCloud/ LinuxCloud/
+rsync -zaP --dry-run ~/LinuxCloud/ /media/USB/LinuxCloud/
+rsync -zaP /media/USB/
+rsync -zaP /media/USB/LinuxCloud/ ~/LinuxCloud/
+
+rsync -zaP --dry-run /media/USB/LinuxCloud/ ~/LinuxCloud/
+lsblk
+sudo mount /dev/sdc1 /media/USB 
+ds LinuxCloud/
+cdf
+ls
+cat *Dic*
+update
+updateGit
+ls
+ls -a
+cd /root
+ls
+sudo cd /root
+ls
+sudo su
+cwd
+cw
+pwd
+mariadb
+mysql -u root -p
+sudo pacman -S mysql
+mysql -u root -p
+sudo mysql_secure_installation 
+sudo systemctl status mariadb.service
+sudo systemctl start mariadb
+sudo systemctl start mariadbd
+sudo systemctl start mariadb.service
+mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+mysql -u root -p
+sudo mysql -u root -p
+mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+mysql_upgrade 
+sudo mysql_upgrade 
+sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+sudo mysql_upgrade
+sudo systemctl start mariadb
+sudo mysql_upgrade
+mysql -u root -p
+sudo mysql -u root -p
+cdf
+s
+ls
+cd ..
+ls
+mkdir MariaDatabases
+cd MariaDatabases/
+sudo mysql -u root -p
+ls
+tar -xvf pcc-appcenter-9.1.3-dbschema.tar
+ls
+ls -a
+ls
+sudo mysql -u root -p
+man mariadb
+mariadb
+mariadb -p root
+sudo mariadb -p root
+sudo mariadb -u root 
+sudo mariadb -u root empresas
+sudo mariadb
+mariadb
+mariadb -p
+mariadb -u sergio -p
+sudo mariadb -u root
+mariadb
+mariadb -p
+sudo mariad
+sudo mariadb
+mysql
+mysql -p
+sudo maridb
+sudo mariadb
+mariadb
+mariadb -p
+sudo vi /etc/pacman.conf
+cdrf
+cdf
+ls
+cd
+cdf
+ls
+mysql -p empresas
+yay -Ss sqlplus
+yay -S aur/oracle-instantclient-sqlplus
+sudo pacman -Syyu
+yay -S aur/oracle-instantclient-sqlplus
+pacman -Ss sqlplus
+sudo pacman -S oracle/oracle-instantclient-sqlplus
+sqlplus 
+man sqlplus
+help sqlplus
+man -k sqlplus
+info sqlplus
+info
+pacman -Ss sqldeveloper
+sudo pacman -S oracle/oracle-sqldeveloper
+sudo pacman -Rns oracle/oracle-sqldeveloper
+ls
+sqlplus 
+sudo sqlplus
+lf
+pacman -Ss lf
+sqlplus x2103503@practbd.oracle0.ugr.es
+sqlplus x2103503@oracle0.ugr.es
+sqlplus oracle0.ugr.es@practbd.oracle0.ugr.es
+extract instantclient-basic-linux.x64-19.5.0.0.0dbru.zip 
+unzip instantclient-sqlplus-windows.x64-19.5.0.0.0dbru.zip 
+ls 
+chmod u+x bases_datos 
+nv bases_datos 
+./bases_datos 
+nv bases_datos 
+bases_datos 
+unzip instantclient-basic-linux.x64-19.5.0.0.0dbru.zip 
+bases_datos 
+nv
+bases_datos 
+gpush
+cdf
+cat *Dic*
+pacman -Ss sql-developer
+pacman -Ss oracle-developer
+pacman -Ss sql
+sudo pacman -S oracle/oracle-sqldeveloper oracle/oracle-instantclient-tools
+sudo pacman -S oracle/oracle-instantclient-tools
+bases_datos 
+gpush
+gotop
+cdf
+nv
+bases_datos 
+sqlplus /nolog
+sqlplus 
+sqlplus /nolog
+ls
+cd bin/
+ls
+nv bases_datos 
+base
+bases_datos 
+nv bases_datos 
+gpush
+cdf
+ls
+nv
+gcommit
+terminator
+cdf
+ls
+cdf
+ls
+cd Scripts/
+ls
+nv ejercicio_24.sql
+ifconfig
+wifi
+man wifi
+wifi off
+sudo wifi off
+sudo wifi on
+gpush
+gcommit
+cdf
+nv
+gpush
+cdf Diarios
+cdf 
+ls
+nv
+gpush
+update
+updateGit
+update
+py
+ls
+unzip
+unzip FR_TemasTeoria.zip 
+cd ..
+cd ,,
+cd ..
+gpush
+pandoc Tema\ 1.md -o ~/Tema\ 1.pdf
+ls ~
+brave Tema\ 1.md &
+unterminal
+ds VirtualImages/
+man puts 
+man socket
+man 2 socket
+htop
+cd GitProjects/
+ls
+cd PracticasLEX/
+ls
+zip -r ~/lucia.zip .
+gpush
+cdf
+ls
+nv
+htop
+ls
+rm lucia.zip 
+gpush
+cdf
+ls
+nv
+htop
+gcommit
+cdf
+ls
+nv
+update
+nv
+gpush
+snap
+pacman -Ss snap
+gpuhs
+gpush
+cdf
+ls
+nv
+ping google.es
+updateGIt
+updateGig
+updateGit
+pacman -Ss mastodon
+yay -Ss mastodon
+actualizar
+update
+updateGit
+gpush
+cdf
+ls
+nv *Ener*
+touch "Diario 2020 01 - Enero.md"
+nv 
+gpush
+cdf
+ls
+nv
+unzip *.zip
+for file in *.zip; do unzip $file; done
+for file in *.zip; do unzip $file; done
+updateGit
+update
+gpush
+cdf
+ls
+nv
+charges
+pacman -Ss charges
+yay -Ss charges
+update
+updateGit
+gpush
+cdf
+nv
+updateGit
+update
+gpush
+cdf
+ls
+nv
+update
+updateGit
+find ~ -name *.mp4
+ls
+ls -a
+cd .cache/
+ls
+cd ..
+ls
+find ~ -name *whatsapp*
+cd /home/sergio/.cache/yay/whatsapp-nativefier
+ls
+ls PKGBUILD 
+cat PKGBUILD 
+find ~ -name *.avi
+find ~ -name *.dvi
+man find
+htop
+update
+updateGit
+gpush
+cdf
+ls
+nv
+gpush
+cdf
+ls
+nv
+update
+updateGit
+findps firefox
+killall firefox
+gpush
+cdf
+nv
+man sendmail
+man sendiso
+ls
+cdf
+updateGit
+update
+updateGit
+pdate
+update
+gpush
+cdf
+ls
+nv
+range
+ranger 
+whois 78.31.8.101
+whois -b 78.31.8.101
+whois 172.194.34.206
+whois 150.214.204.25
+iptables
+iptables show
+iptables -h
+ifconfig
+man dd
+ping google.es
+cdf
+git log
+git show b6a9bf432c5adea62aaae032db88462c29e23d98
+q
+man git show
+gpush
+cdf
+nv
+gpush
+cdf
+ls
+nv
+cdf
+nv 
+updateGit
+gpush
+cdf
+nv
+update
+ls -a
+caat steam.desktop 
+cat steam.desktop 
+man xargs
+*
+cat *
+echo *
+echo * \n
+ls | reverse
+ls | sort -r 
+ls | sort -r | cat
+ls | sort -r | xargs cat 
+1;120;120;1;0x1;1;120;120;1;0x65;1;9c0$y
+$(ls -r)
+car $(ls -r)
+cat $(ls -r)
+echo $(ls -r)
+ulimit -s
+for file in *; do echo "$file" > "${file}.pruebas"; done
+ls
+ls *.pruebas
+rm *.pruebas
+ls
+ls -a
+for file in $(ls -a); do echo "$file"; done
+update
+nv
+updateGit
+gpush
+cdf
+nv
+cdf
+ls
+nv
+extract Relaciones\ Resueltas.zip 
+extract "Relaciones\ Resueltas.zip"
+unzip "Relaciones Resueltas.zip" 
+update
+updateGit
+gpush
+cdf
+gpush
+cdf
+nvf
+ls
+cd
+ls
+cd bin
+ls
+cat bases_datos 
+bases_datos 
+nv bin/bases_datos 
+nv
+sqlite3 Databases/empresas.db 
+sqlplus 
+ls
+bases_datos 
+sqlite3 Databases/empresas.db 
+cdf
+ls
+cat README.md 
+cd PR
+cd PracticasSQL/
+ls
+cat algebraCalculo_eje6.md 
+nv algebraCalculo_eje6.md 
+bases_datos 
+cat bin/bases_datos 
+sqlplus conn x2103503/x2103503@//oracle0.ugr.es:1521/practbd.oracle0.ugr.es
+sqlplus x2103503/x2103503@//oracle0.ugr.es:1521/practbd.oracle0.ugr.es
+nv bin/bases_datos 
+ls
+sqlite3 Databases/empresas.db 
+bases_datos 
+cd Scripts/
+bases_datos 
+gpush
+git add Apuntes\ SQL.md 
+git commit
+git push
+gpush
+git pull
+git add .
+git commit
+git push
+nv
+nvconf 
+bases_datos 
+ls
+cd Scripts/
+ls
+bases_datos 
+ls
+bases_datos 
