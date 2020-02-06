@@ -1,24 +1,3 @@
-cat *Nov*
-nv *Nov*
-gedit *Nov*
-nv
-cat *Dic*
-py 
-gcommit -m "Añado la plantilla de los filosofos"
-gcommit -m "Formateo el codigo de la plantilla"
-git push
-gcommit
-git push
-make filosofos
-make exe_filosofos
-sudo make exe_filosofos
-make exe_filosofos
-gcommit
-git push
-make exe_filosofos
-htop
-rm filosofos
-make exe_filosofos
 make filosofos
 mpirun -np 4 --oversubscribe ./filosofos
 make exe_filosofos
@@ -1251,3 +1230,771 @@ ls
 bases_datos 
 ls
 bases_datos 
+nvconf 
+updateDotfiles 
+cdf
+cd ..
+ls
+nv
+gpush
+cdf
+nv
+cdf
+ls
+git pull
+glog
+git show b1406e4508ece36baf9dd27f73a75b52884b2172
+cd PracticasSQL/
+s
+ls
+vi capitulo3.sql 
+nv capitulo3.sql 
+cd .i3/scripts/
+ls
+rm dualdisplay
+mv dualdisplay.sh dualdisplay
+ls
+ls -a
+ls -la
+ls
+cdf
+git pull
+glog
+git show d86270978ceb9636c1ce7da220e71e7f57d05
+glog
+git show e9dd86270978ceb9636c1ce7da220e71e7f57d05
+:q
+killall fir
+killall firefox
+nvf
+pwd
+ls
+mkdir Scripts/Ejercicios
+mv Scripts/ejercicio_* Scripts/Ejercicios/
+ls
+ls Scripts/
+mkdir Scripts/Ejemplos
+rmdir Scripts/Ejemplos/
+rm Scripts/ejemplo_3_18.sql 
+ls
+,
+cdf
+ls
+pandoc "Apuntes SQL.md" -o "Apuntes SQL.pdf"
+evince Apuntes\ SQL.pdf &
+unterm
+unterminal 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_1.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_2.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_3.sql 
+sqlite3 Databases/empresas.db "SELECT * FROM pieza"
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_4.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_5.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_6.sql
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_7.sql
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_9.sql
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_10.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_11.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_12.sql 
+cdf
+ls
+cd 
+cdf
+ls
+cdf
+ls
+sqlite3 empresas.db ~/GitProjects/DGIIM3/C1/FBD/PracticasSQL/capitulo3.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_14.sql 
+
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_14.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_16.sql 
+nv
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_21.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_23.sql 
+sqlite3 Databases/empresas.db "SELECT codpie, peso FROM pieza;"
+ls
+sqlite3 Databases/empresas.db < ~/pruebas.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_28.sql 
+sqlite3 Databases/empresas.db < ~/pruebas.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_30.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_31.sql 
+sqlite3 Databases/empresas.db < ~/pruebas.sql 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_36.sql 
+sqlite3 Databases/empresas.db 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_36.sql 
+sqlite3 Databases/empresas.db 
+sqlite3 Databases/empresas.db < Scripts/Ejercicios/ejercicio_3_36.sql 
+sqlite3 Databases/empresas.db 
+py
+bv
+nv
+cdf
+ls
+nv capitulo3.sql 
+gpush
+updateGit
+update
+mimetype 
+mimetype arrimadas.jpeg 
+mimetype .sqlite
+mimetype .sqliterc 
+mimetype .profile
+man mimetyope
+man mimetype
+gpush
+cdf
+ls
+nv
+gpush
+cdf
+ls
+nv
+sudo pacman -S audacity
+ls
+py 
+N
+nv pruebas.code
+ls
+gpc
+man pascal
+nv pruebas.code
+update
+updateGit
+py
+gpush
+cdf
+nv
+nv pruebas.cv
+nv pruebas.csv
+ls
+cd GitProjects/dotfiles/
+ls
+cd installation_files/
+ls
+nv 
+update
+updateGit
+py
+dijkstra 
+man dijkstra
+size LinuxCloud/
+ls
+ds LinuxCloud/
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+lsblk
+rsync -zaP /run/media/sergio/TOSHIBADRIVE/LinuxCloud/ ~/LinuxCloud/
+sudo rsync -zaP /run/media/sergio/TOSHIBADRIVE/LinuxCloud/ ~/LinuxCloud/
+killall kdenlive
+gpush
+cdf
+ls
+nv
+localssh 
+nv .profile
+localssh 
+nv Vlogs\ Viaje\ Rumanía\ 2019.zip 
+unzip Vlogs\ Viaje\ Rumanía\ 2019.zip 
+nv
+ds LinuxCloud/
+ssh $LOCALIP
+nv
+ssh $LOCALIP
+localssh 
+rclone
+man rclone
+cd .i3/scripts/
+ls
+rm bigdisplay
+mv bigdisplay.sh bigdisplay
+ls
+make mandelbrot && ./mandelbrot 
+g++ sdl2-config --libs --cflags mandelbrot.cpp -o mandelbrot
+pacman -Ss sdl
+pacman -Ss sdl | nv
+sdl2-config 
+man sdl2
+info sdl
+info sdl2
+make mandelbrot && ./mandelbrot 
+hg
+man hg
+py pruebas.py 
+ls
+man hg
+py pruebas.py 
+py
+py pruebas.py 
+py pruebas.p
+py pruebas.py
+py
+py pruebas.py
+sdl
+sudo find / -name sdl
+qt
+qt5ct 
+py pruebas.py
+cdf
+ls
+nv Cpp\ Cheatsheet.md 
+ls
+mv pruebas.py mandelbrot.py
+gcc mandelbrot.cpp -lSDL2 -lSDL2main -o sdl2minimal
+g++ mandelbrot.cpp -o mandelbrot
+g++ -lSD2main mandelbrot.cpp -o mandelbrot
+g++ -lstdc++ mandelbrot.cpp -o mandelbrot
+g++ -lstd mandelbrot.cpp -o mandelbrot
+g++ -lstdc mandelbrot.cpp -o mandelbrot
+g++ -lstdc++ mandelbrot.cpp -o mandelbrot
+man sdl
+man stdl
+g++ mandelbrot.cpp -o mandelbrot sdl2-config --cflags --libs
+g++  sdl2-config --cflags --libs mandelbrot.cpp -o mandelbrot
+g++  sdl2-config mandelbrot.cpp -o mandelbrot
+g++  "sdl2-config" mandelbrot.cpp -o mandelbrot
+make pruebas
+rm pruebas
+rm pruebas*
+ls
+ls
+make mandelbrot && ./mandelbrot 
+nv
+man shutdown
+sudo shutdown +25
+ls
+make mandelbrot && ./mandelbrot
+ls
+cat points.csv 
+rm points.csv 
+make mandelbrot && ./mandelbrot
+cat points.csv 
+py pruebas.py 
+py
+py pruebas.py 
+make mandelbrot && ./mandelbrot
+py pruebas.py 
+make mandelbrot && ./mandelbrot
+cat points.csv 
+head -5 points.csv 
+py pruebas.py 
+make mandelbrot && ./mandelbrot
+py pruebas.py 
+nv mandelbrot.cpp 
+git clone git@github.com:SergioQuijanoRey/MandelbrotVisualizer.git
+gpush
+make mandelbrot
+./mandelbrot 
+make mandelbrot
+./mandelbro
+./mandelbrot
+cat points.csv 
+grep points.csv 0
+grep 0 points.csv
+grep 100 points.csv
+nv points.csv 
+make mandelbrot
+./mandelbrot
+nv points.csv 
+rm points.csv 
+./mandelbrot
+nv points.csv 
+ls
+py visualizer.py 
+head -4 points.csv 
+py visualizer.py 
+make mandelbrot
+./mandelbrot 
+ks
+rm points.csv 
+./mandelbrot 
+cat points.csv 
+py visualizer.py 
+ls
+py mandelbrot.py
+less points_prueba.csv 
+py visualizer.py 
+py mandelbrot.py
+make mandelbrot
+ls
+rm *.csv
+./mandelbrot 
+cat points.csv 
+py visualizer.py 
+make mandelbrot && ./mandelbrot 
+make mandelbrot && ./mandelbrot | grep 2
+make mandelbrot && ./mandelbrot | grep 3
+make mandelbrot && ./mandelbrot | grep 20
+make mandelbrot && ./mandelbrot | nv -
+make mandelbrot && ./mandelbrot 
+rm points.csv 
+make mandelbrot && ./mandelbrot 
+head -10 points.csv 
+nv points.csv 
+                           make mandelbrot && ./mandelbrot 
+ls
+rm points.csv 
+make mandelbrot && ./mandelbrot 
+head -10 points.csv 
+py visualizer.py 
+make mandelbrot && ./mandelbrot 
+py visualizer.py 
+gpush
+py mandelbrot.
+py mandelbrot.py
+nv mandelbrot
+gpush
+nv
+htop
+killall kdenlive
+htop
+psfind kdenlive
+pgrep kdenlive
+sudo kill -9 1444
+gpush
+gpushj
+gpush
+pydoc3.8 mandelbrot.py 
+pydoc mandelbrot.py 
+pydoc -w mandelbrot
+py mandelbrot.p
+py mandelbrot.py
+gpush
+ls
+ls -a
+rm -rf __pycache__/
+ls
+gpush
+ls
+make mandelbrot
+./mandelbrot 
+py visualizer.py 
+ls
+rm mandelbrot points.csv 
+ls
+gpush
+gpush 
+gpush
+ls
+pandoc README.md -o README.pdf
+ls
+evince README.
+evince README.pdf 
+gpush
+pandoc README.md -o README.pdf
+gpush
+pandoc README.md -o README.pdf
+gpush
+nv
+gpush
+updateGit
+update
+ffmpeg -i foobar.mkv -vcodec copy -acodec copy foobar.mp4
+for file in * do; ffmpeg -i $file -vcodec copy -acodec copy $file.mp4
+for file in * do; ffmpeg -i $file  $file.mp4
+basename parte_1.mkv 
+basename parte_1.mkv .mkv
+for file in * ; do f="$(basename $file .mkv)
+ffmpeg -i $file "$f.mp4"
+done
+done
+;
+ffmpeg -i parte_1.mkv parte_1.mp4 
+ls
+rm *.mp4
+ls
+cdf
+ls
+nv Cpp\ Cheatsheet.md 
+nv Bash\ cheatsheet.md 
+py pruebas.py 
+nv pruebas.py
+ls
+rm pruebas.py 
+nv pruebas.py
+py pruebas.py 
+pip3.8 install numpy
+sudo pip3.8 install numpy
+py pruebas.py 
+matplotlib
+sudo pip3.8 install matplotlib
+py pruebas.py 
+py
+sudo pip3.8 install scipy
+py pruebas.py 
+rm pruebas.py 
+localssh 
+rsync LinuxCloud/EditingProjects/ sergio@$LOCALIP:~/LinuxCloud/EditingProjects/
+rsync -zaP LinuxCloud/EditingProjects/ sergio@$LOCALIP:~/LinuxCloud/EditingProjects/
+localssh 
+ranger
+localssh 
+gpush
+cdf
+ls
+nv
+cd ..
+s
+ls
+cd ..
+ls
+gpush
+localssh 
+nv fallos.txt
+localssh 
+ls
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+ls
+rm fallos.txt 
+cdf
+ls
+vlc parte_1.mp4 
+vlc parte_1.mkv 
+localssh 
+gpush
+cd Des
+cd Downloads/
+ls
+ds Telegram\ Desktop/
+gpush
+localssh 
+nv fallos.txt
+ls
+localssh 
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+localssh 
+cdf
+ls
+vlc parte_2.mp4 
+localssh 
+localssh 
+man kdenlive_render 
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+cdf
+ls
+vlc parte_2.m
+vlc parte_2.mp4 
+vlc parte_3.mp4 
+vlc parte_4.m
+vlc parte_4.mp4 
+localssh 
+gpush
+cdf
+ls
+nv
+cdf
+ls
+kdenlive_render part1_project_script.mlt 
+kdenlive_render src part1_project_script.mlt 
+kdenlive_render render part1_project_script.mlt 
+ls
+nv part1_project_script.mlt 
+ls
+cd ..
+ls
+cd Projects/
+ls
+cd SnippetsOfCode01/
+ls
+nv part1_project.kdenlive 
+cd ..
+ls
+cd ..
+cd Scripts/
+ls
+rm *
+ls
+cd ..
+ls 
+tree Finals/
+tree Projects/
+ls
+tree Sources/
+cd ..
+ls
+cd 
+ls
+cd kdenlive-renderqueue/
+ls
+ls -a
+cd ..
+rm kdenlive-renderqueue/
+rmdir kdenlive-renderqueue/
+localssh 
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+cd 
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+localssh 
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+localssh 
+py
+htop
+cdf
+ls
+ls 
+ls
+htop
+localssh 
+cd
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+localssh
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+localssh 
+ls
+ping google.es
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+htop
+cdf
+ls
+melt part2_project_script.mlt 
+ls
+cd ..
+ls
+cd Finals/
+ls
+vlc part2_project.mp4 
+htop
+jobs
+psfind
+findps
+findps *
+ls
+htop
+gotop
+localssh 
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+ls
+cdf
+cd ..
+ls
+cd Finals/
+ds part2_project.mp4 
+vlc part2_project.mp4 
+localssh 
+ls
+vlc part1_project.mp4 
+vlc SnippetsOfCode01_part1.mp4 
+diff part1_project.mp4 SnippetsOfCode01_part1.mp4 
+diff part1_project.mp4 part2_project.mp4 
+rm part1_project.mp4 
+ls
+file part2_project.mp4 
+mime part2_project.mp4 
+mimetype part2_project.mp4 
+man mimeopen
+mimeopen part2_project.mp4 
+ls
+rm part2_project.mp4 
+localssh 
+ping google.es
+localssh 
+cdf
+cd
+cdf
+ls
+vlc part2_project.mp4 
+ls
+rm part1_project.mp4 
+cd
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+cdf
+ls
+rm part2_project.mp4 
+cd
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+ls
+ls kdenlive-renderqueue/
+cdf
+ls
+cp ~/kdenlive-renderqueue/part3_project_script.mlt .
+ls
+cd
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+localssh 
+localssh 
+htop
+findps melt
+findps
+findps melt
+localssh 
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+cdf
+ls
+cdf
+ls
+vlc part2_project.mp4 
+rm part2_project.mp4 
+ls
+vlc part3_project.mp4 
+rm part3_project.mp4 
+man nohup
+cdf
+localssh 
+localssh 
+localssh
+localssh 
+ls
+cd titles
+ls
+cd ..
+ls
+ls kdenlive-renderqueue/
+ls -a kdenlive-renderqueue/
+ls
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+rsync -zaP titles/ sergio@$LOCALIP:~
+localssh 
+find /home/sergio/ -name *Aclaración*
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+cdf
+ls
+cd
+cdf
+ls
+vlc part2_project.mp4 
+vlc part3_project.mp4 
+localssh 
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+cdf
+ls
+cd
+cdf
+ls
+vlc part2_project.mp4 
+gpush
+localssh 
+updateGit
+cdf
+ls
+nv
+update
+htop
+man kdenlive-renderqueue/
+man kdenlive_render/
+info kdenlive_render
+gpush
+pandoc Libro.md -o Libro.epub --css styles.css --table-of-contents
+ls
+kindlegen Libro.epub 
+ls
+gpush
+lsblk
+rsync -zaP ~/LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+localssh 
+ls
+melt part3_cut_project_script.mlt 
+sudo pacman -S nautilus
+nv
+localssh 
+cdf
+ls
+scp Libro.* sergio@$LOCALIP:~
+pandoc Libro.md -o Libro.epub --css styles.css --table-of-contents
+cdf
+nv
+ls
+scp Historia\ de\ la\ locura\ -\ Sergio\ Quijano\ Rey.mobi sergio@$LOCALIP:~
+localssh 
+sudo kdenlive
+findps kdenlive
+touch "Diario 2020 02 - Febrero.md"
+gpush
+ºcdf
+cdf
+ls
+nv
+nv .bash_profi
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+localssh 
+remotessh 
+localssh 
+rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+localssh 
+htop
+local
+localssh 
+rsync -zaP sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+cd
+rsync -zaP --delete --dry-run LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/ | nv -
+rsync -zaP --delete --dry-run LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/ 
+rsync -zaP --delete LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/ 
+localssh 
+cdf
+ls
+rm -rf DGIIM3/
+updateGit
+update
+gpush
+cdf
+ls
+nv
+gpush
+cdf
+ls
+nv
+lsblk
+cdf
+ls
+ds Fotografias/
+cdf
+ls
+ds Video/
+localssh 
+
+rsync -zaP --delete --dry-run LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+rsync -zaP --delete --dry-run sergio@$LOCALIP:~/LinuxCloud/ LinuxCloud/
+rsync -zaP --delete --dry-run LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+rsync -zaP --delete LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+lsblk
+ls /media/
+sudo mount /dev/sdb1 /media/USB/
+ls
+cd
+ls
+rsync -zaP LinuxCloud/ /media/USB/LinuxCloud/
+rsync -zaP --dry-run /media/USB/LinuxCloud/ LinuxCloud/ | nv -
+rsync -zaP --dry-run /media/USB/LinuxCloud/ LinuxCloud/
+rsync -zaP --delete --dry-run LinuxCloud/ /media/USB/LinuxCloud/ | nv -
+rsync -zaP --delete --dry-run LinuxCloud/ /media/USB/LinuxCloud/
+
+rsync -zaP --delete LinuxCloud/ /media/USB/LinuxCloud/
+lsblk
+sudo umount /media/USB/
+lsblk
+ds LinuxCloud/
+ds *
+cd
+rsync -zaP --delete --dry-run LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+rsync -zaP --delete LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
+nv pasos.md
+ls
+rm pasos.md 
+cdf
+ls
+nv Bash\ cheatsheet.md 
+gpush
+localssh 
+localssh 
+ds LinuxCloud/Fotografias/
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+lsblk -f
+cp .games/Minecraft/Launcher.jar /media/USB/Launcher.jar
+sudo cp .games/Minecraft/Launcher.jar /media/USB/Launcher.jar
+ranger
+sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf 
+confi3 
+cdf
+ls
+cat touchpad.conf 
+cd .
+cd ..
+ls
+cd installation_files/
+ls
+less setup.sh 
+ls
+nv other.sh 
+nv
+nv ../config_files/touchpad.conf 

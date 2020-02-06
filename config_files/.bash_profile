@@ -36,7 +36,7 @@ export TERMCMD="termite"
 export COLORTERM="termite"
 
 # SSH vars
-export LOCALIP="192.168.1.8"
+export LOCALIP="192.168.1.10"
 export REMOTEIP="sergioquijano.duckdns.org"
 export RASPIP="danielsergio.duckdns.org"
 

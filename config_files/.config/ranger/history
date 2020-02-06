@@ -1,39 +1,3 @@
-mkdir Codigo Base
-Delete
-rename Relación 4.pdf
-rename Relación 5.pdf
-mkdir Documento
-touch
-touch Documento.md
-mkdir Imagenes
-rename consulta.png
-rename test_files
-rename jugadores.text
-rename jugadores.txt
-rename jugadores_switch.txt
-rename empresas.txt
-ter
-open_with nemo
-open_with emgrampa
-t
-open_with engrampa
-rename DNI_trasero
-rename DNI_delantero
-rename bases_datos
-search instant
-rename prueas
-3
-3g
-3G
-delet
-rename pruebas
-open_with 
-rename Tema 6 - Propiedades de los lenguajes libres de contexto.pdf
-mkdir Libro
-1
-rename Libro de la asignatura
-bulkrename 
-rename Fundametos de Redes - Transparencias Tema 1a.pdf
 rename Formulario.pdf
 rename 
 q
@@ -41,10 +5,46 @@ rename Tema 4 - Apartado 1.pdf
 rename Tema 4 - Apartado 2.pdf
 rename Tema 4 - Apartado 3.pdf
 open_with brave
-cut
 rename Relaciones Resueltas - Adrián Rodríguez.pdf
-
-delete
 copy
+:
+te
+open_with t
+open_with t 
+open_with t brave
+! brave "Apuntes SQL.md2
+!brave "Apuntes SQL.md" &
+shell brave Apuntes\ de\ clase.md&
+shell brave Apuntes\ SQL.md &
+open_with vi
+shell brave Apuntes\ SQL.md > /dev/null &
+dl
+delet
+mkdir Pruebas
+
+touch mandelbrot.cpp
+open_with firefox
+delegte
+mkdir 3º Curso
+mkdir 1º Cuatrimestre
+rename Fundamentos de Bases de Datos.pdf
+rename Ecuaciones Diferenciales I.pdf
+rename Sistemas Concurrentes y Distribuidos.pdf
+mkdir Finals
+mkdir Scripts
+elete
+rename SnippetsOfCode01_part1.mp4
+rename part3_cut_project_script.mlt
+mkdir Titles
+d
+open_with 
+cut
 paste
+rename part2_project-2rt2_project_script.mlt
+rename part2_project_script.mlt
+rename SnippetsOfCode01_part2.mp4
+rename SnippetsOfCode01_part3.mp4
+de
+delete
 terminal 
+find 
