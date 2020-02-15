@@ -232,3 +232,8 @@ exec telegram-desktop
 exec nm-applet
 exec pa-applet
 exec blueman-applet
+
+# I3blocs events
+#===============================================================================
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks    # CAPS indicator
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks    # CAPS indicator
