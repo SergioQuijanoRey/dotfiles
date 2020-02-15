@@ -1,27 +1,6 @@
-rename Formulario.pdf
-rename 
-q
-rename Tema 4 - Apartado 1.pdf
-rename Tema 4 - Apartado 2.pdf
-rename Tema 4 - Apartado 3.pdf
-open_with brave
-rename Relaciones Resueltas - Adrián Rodríguez.pdf
-copy
-:
-te
-open_with t
-open_with t 
-open_with t brave
-! brave "Apuntes SQL.md2
-!brave "Apuntes SQL.md" &
-shell brave Apuntes\ de\ clase.md&
-shell brave Apuntes\ SQL.md &
-open_with vi
-shell brave Apuntes\ SQL.md > /dev/null &
 dl
 delet
 mkdir Pruebas
-
 touch mandelbrot.cpp
 open_with firefox
 delegte
@@ -38,13 +17,34 @@ rename part3_cut_project_script.mlt
 mkdir Titles
 d
 open_with 
-cut
-paste
 rename part2_project-2rt2_project_script.mlt
 rename part2_project_script.mlt
 rename SnippetsOfCode01_part2.mp4
 rename SnippetsOfCode01_part3.mp4
 de
-delete
-terminal 
 find 
+mkdir Ingeniería de Servidores
+mkdir Prácticas
+rename Guía y Planificación de Prácticas.pdf
+mkdir Guiones
+rename Práctica 1 - Guión.pdf
+rename Variable Compleja I - Rafael Paya.pdf
+mkdir Partes del Libro
+cut
+past
+delete
+copy
+paste
+mkdir Inteligencia Artificial
+mkdir Apuntes de clase
+
+touch Presentación de la asignatura.md
+touch Tema 1.md
+touch 
+mkdir Apuntes de sesiones
+touch Sesión 01.md
+rename Práctica 01.md
+mkdir Fundamentos de Ingeniería del Software
+mkdir Apuntes de Clase
+touch Presentación.md
+terminal 

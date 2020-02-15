@@ -1,376 +1,3 @@
-make filosofos
-mpirun -np 4 --oversubscribe ./filosofos
-make exe_filosofos
-htop
-rm filosofos
-ls
-gcommit
-git push
-make camareros
-make exe_camareros
-gcommit -m "Soluciono un error logico"
-make camareros
-mpirun -np 10 --oversubscribe ./camareros
-mpirun -np 5 --oversubscribe ./camareros
-make camareros
-mpirun -np 5 --oversubscribe ./camareros
-gcommit -m "La solucion con camareros produce un interbloqueo muy raro"
-git push
-nv
-nv camareros
-nv
-update
-updateGit
-gpush
-cdf
-ls
-nv
-cat *Dic*
-make camareros
-mpirun --np 5 ./camareros
-mpirun --np 5 --oversubscribe ./camareros
-make camareros && mpirun -np 5 --oversubscribe ./camareros
-gcommit
-git push
-glog
-gcommit
-gpush
-make camareros && mpirun -np 5 --oversubscribe ./camareros
-make camareros && mpirun -np 7 --oversubscribe ./camareros
-make exe_camareros
-rm camareros
-ls
-rm traza_bloqueante.png 
-gpush
-nv
-ls
-ls Scripts/
-ls
-sqlite3 Databases/empresas.db 
-sqlite3 Databases/empresas.db < Scripts/ejercicio_3_9.sql 
-sqlite3 Databases/empresas.db 
-sqlite3 Databases/empresas.db < Scripts/ejercicio_3_9.sql 
-sqlite3 Databases/empresas.db < Scripts/ejercicio_3_10.sql 
-sqlite3 Databases/empresas.db < Scripts/ejercicio_3_11.sql 
-sqlite3 Databases/empresas.db < "SELECT COUNT(*) FROM proveedor";
-sqlite3 Databases/empresas.db < "SELECT COUNT(*) FROM proveedor;"
-sqlite3 Databases/empresas.db < echo "SELECT COUNT(*) FROM proveedor;"
-sqlite3 Databases/empresas.db < $(echo "SELECT COUNT(*) FROM proveedor;")
-sqlite3 Databases/empresas.db <(echo "SELECT COUNT(*) FROM proveedor;")
-sqlite3 Databases/empresas.db "SELECT COUNT(*) from proveedor;
-"
-sqlite3 Databases/empresas.db "SELECT COUNT(*) from proveedor;"
-sqlite3 Databases/empresas.db "SELECT * from proveedor;"
-sqlite3 Databases/empresas.db "SELECT * from ventas, proveedor WHERE ventas.codpro == proveedor.codpro;"
-sqlite3 Databases/empresas.db "SELECT ventas.codpro, codpie, codpj, cantidad, fecha, nompro, status from ventas, proveedor WHERE ventas.codpro == proveedor.codpro;"
-sqlite3 Databases/empresas.db 
-sqlite3 Databases/empresas.db "
-SELECT ventas.codpro, ventas.codpie, ventas.codpj
-FROM ventas, proveedor, proyecto, pieza
-WHERE 
-ventas.codpro == proveedor.codpro AND 
-ventas.codpie == pieza.codpie AND
-ventas.codpj == proyecto.codpj AND
-pieza.ciudad == proveedor.ciudad AND
-proveedor.ciudad == proyecto.ciudad;
-"
-SELECT codpie, codpro, codpj
-sqlite3 Databases/empresas.db "
-SELECT codpie, codpro, codpj
-FROM pieza, proveedor, proyecto
-WHERE
-pieza.ciudad == proveedor.ciudad AND
-proveedor.ciudad == proyecto.ciudad;
-"
-SELECT ciudad FROM pieza WHERE codpie=="P2";
-sqlite3 Databases/empresas.db "
-SELECT codpie, codpro, codpj
-FROM pieza, proveedor, proyecto
-WHERE
-pieza.ciudad == proveedor.ciudad AND
-proveedor.ciudad == "Londres" AND;
-"
-sqlite3 Databases/empresas.db 
-nv *SQL*
-cdf
-gpush
-nv
-touch "Tema 5 - Diagramas UML.md"
-nv 
-pacman -Ss nn
-pacman -Ss nnn
-sudo pacman -S nnn
-nnn
-nv
-ranger
-nv
-font
-ffprobe 
-nv .config/termite/config 
-ls
-pacman -Ss source-code-pro
-sudo pacman -S extra/adobe-source-code-pro-fonts
-nv .config/termite/config 
-fc-list
-fc-list | grep source
-fc-list | grep source | nv -
-nv
-nv Tema\ 4.md 
-nv
-gcommit
-make exe_propia
-ls
-make exe_propia
-make propia
-mpirun -np 4 --oversubscribe ./propia
-rm propia
-gcommit
-git push
-update
-updateGit
-gpush
-cd
-cdf
-ls
-nv *Dic*
-cat *Dic*
-invertcsv Movimientos.csv Movimientos.csv 
-gpush
-nv
-sqlite3 Databases/empresas.db 
-sqlite3 Databases/empresas.db
-nv
-gpush
-cdf
-ls
-nv
-cat *Dic*
-gpush
-cdf
-ls
-nv
-cat *Dic*
-sqlite3 Databases/empresas.db 
-nv
-nv
-findps discrod
-findps discord
-pacman -Ss unity
-pacman -Ss unity web
-pacman -Ss unity | nv
-aur -Ss unity
-yay -Ss unity
-yay -Ss unity web
-yay -Ss unity | nv
-pacman -Qi firefox
-update
-updateGit
-gpush
-cdf
-ls
-nv
-cat *Dic*
-gpuhs
-gpush
-cdf
-nv
-cat *Dic*
-cdf
-gpush
-sqlite3 Databases/empresas.db 
-nv
-nv
-:w
-nv
-:wq
-gpush
-cdf
-nv
-cat *Dic*
-findps firefox
-sudo kill -9 5522
-findps firefox
-findps
-findps exile
-findps steam
-sudo killall steam
-htop
-gpuhs
-gpush
-update
-cdf
-ls
-nv
-ls
-cat *Dic*
-ranger
-pacman -Qi python
-gcommit
-git push
-make
-make exe_productor
-mpirun -np 3 --oversubscribe ./productor
-make productor
-mpirun -np 3 --oversubscribe ./productor
-make productor
-mpirun -np 3 --oversubscribe ./productor
-make
-make exe_productor
-ls
-make clean
-ls
-gpush
-gcommit
-make exe_filosofos
-make filosofos
-mpirun -np 4 --oversubscribe ./filosofos
-ls
-make clean
-ls
-gpush
-make exe_propia
-make propia
-mpirun -np 4 --oversubscribe ./propia
-gcommit
-git push
-ls
-make clean
-make exe_camareros
-mpirun -np 5 --oversubscribe ./camareros
-make clean
-gpuhs
-gpush
-nv
-pacman -Qi ranger
-sudo pacman -S ranger
-ranger
-cd ..
-ls
-cd ..
-gpush
-sqlite3 Databases/empresas.db 
-nv
-nv
-sqlite3 Databases/empresas.db 
-gpush
-printf '\e]50;# LibreBaskerville\a'
-printf '\e]50;# Source Code Pro\a'
-traceroute google.es
-pacman -Ss traceroute
-sudo pacman -S core/traceroute
-traceroute google.es
-traceroute google.jp
-man traceroute
-traceroute danielsergio.duckdns.org
-arp
-nv
-:wq
-tetris
-mpicxx camarero4.cpp -o camarero && mpirun -np 9 --oversubscribe ./camarero
-mpicxx camarero4.cpp -o camarero && mpirun -np 11 --oversubscribe ./camarero
-mpicxx camarero4.cpp -o camarero
-mpirun -np 11 --oversubscribe ./camarero
-mpicxx camarero4.cpp -o camarero && mpirun -np 11 --oversubscribe ./camarero
-ls
-mpicxx camarero4.cpp -o camarero && mpirun -np 11 --oversubscribe ./camarero
-nv
-update
-updateGit
-nvf
-cdf
-nv
-htop
-gotop
-lex pruebas.lex 
-lex pruebas.lex pruebas.lex 
-lex pruebas.lex < pruebas.lex
-ls
-gcc lex.yy.c -o pruebas -ll
-ls 
-gcc lex.yy.c -o pruebas -lfl
-ls
-./pruebas pruebas.lex
-rm pruebas.*
-ls
-rm *.yy.c
-ls
-rm pruebas
-ls
-flex
-pacman -Qi flex
-flex pruebas.lex 
-ls
-gcc lex.yy.c -o decimales -lfl
-ls
-./decimales pruebas.lex 
-flex pruebas.lex 
-gcc lex.yy.c -o decimales -lfl
-flex pruebas.lex 
-gcc lex.yy.c -o decimales -lfl
-flex pruebas.lex 
-gcc lex.yy.c -o decimales -lfl
-./decimales pruebas.lex 
-cdf
-las
-ls
-cd ..
-ls
-sqlite3 Databases/empresas.db 
-sqlite3 Databases/baloncesto.db 
-cdf
-cd ..
-ls
-ls Scripts/
-sqlite3 Databases/baloncesto.db Scripts/insert_values_baloncesto.sql 
-sqlite3 Databases/baloncesto.db ./Scripts/insert_values_baloncesto.sql 
-sqlite3 Databases/baloncesto.db < Scripts/insert_values_baloncesto.sql 
-sqlite3 Databases/baloncesto.db 
-man sqlite
-man sqlite3
-sqlite3 Databases/baloncesto.db 
-sqlite3 Databases/baloncesto.db s
-sqlite3 Databases/baloncesto.db
-.tables
-sqlite3 Databases/baloncesto.db
-cdf
-ls
-sqlite3 Databases/baloncesto.db
-ls
-file baloncesto.db 
-sqlite3 baloncesto.db 
-sqlite3 empresas.db 
-git clone git@github.com:SergioQuijanoRey/PracticasLEX.git
-ls
-cd PracticasLEX/
-ls
-nv README.md
-gpush
-nv pruebas.lex
-ls
-flex procesador.lex 
-g++ lex.yy.c -o pruebas -lfl
-flex procesador.lex 
-g++ lex.yy.c -o pruebas -lfl
-flex procesador.lex 
-g++ lex.yy.c -o pruebas -lfl
-flex procesador.lex 
-g++ lex.yy.c -o pruebas -lfl
-g++ lex.yy.c -o pruebas -ll
-g++ lex.yy.c -o pruebas -lfl
-flex procesador.lex 
-g++ lex.yy.c -o pruebas -lfl
-gcc lex.yy.c -o pruebas -lfl
-flex procesador.lex 
-gcc lex.yy.c -o pruebas -lfl
-flex procesador.lex 
-gcc lex.yy.c -o pruebas -lfl
-./pruebas pruebas
-flex procesador.lex 
-gcc lex.yy.c -o pruebas -lfl
-g++ lex.yy.c -o pruebas -lfl
-man flex
-lex
-flex++ procesador.lex 
 ls
 g++ lex.yy.cc -lfl -o pruebas
 flex++ procesador.lex 
@@ -1998,3 +1625,376 @@ ls
 nv other.sh 
 nv
 nv ../config_files/touchpad.conf 
+rm bin/bases_datos 
+updateDotfiles 
+gpush
+cdf
+ls
+nv
+updateGit
+pacman -Ss scratch
+jupyter-notebook 
+update
+yay -Ss scratch
+ranger
+sudo killall firefox
+gpush
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+cd media/USB
+ls
+ls a
+ls -a
+cd
+sudo umount /media/USB/
+lsblk
+gpush
+cdf
+ls
+nv
+gpush
+cdf
+ls
+nv
+py pruebas.py 
+gpush
+ls
+ls -a
+rm -rf __pycache__
+gpush
+cdf
+ls
+nv 
+ls
+invertcsv Movimientos.csv 
+cdf
+ls
+nv
+updateGit
+update
+pdfunite 
+man pdfunite
+cdf
+mkdir Pruebas
+cp * Pruebas/
+cd Pruebas/
+ls
+for file in *; do pdfunite current.pdf $file current.pdf; done
+ls
+pdfunite Tema1.pdf Tema2.pdf 
+ls
+evince Tema1.pdf 
+evince Tema2.pdf 
+cd ..
+ls
+rm -rf Pruebas/
+evince Tema2.pdf 
+ls
+mkdir Pruebas
+cp * Pruebas/
+cd Pruebas/
+ls
+pdfunite 
+pdfunite -h
+touch current.pdf
+for file in Tema*; do pdfunite current.pdf $file current.pdf ; done
+ls
+evince current.pdf 
+ls
+evince Tema1.pdf 
+ls
+rm current.pdf 
+pdfunite Tema1.pdf Tema2.pdf Tema3.pdf Tema4.pdf Tema5.pdf Tema6.pdf Tema7.pdf Tema8.pdf Tema9.pdf Tema10.pdf Tema11.pdf Tema12.pdf Tema13.pdf Tema14.pdf Tema15.pdf Libro.pdf
+ls
+pdfunite "Portada Variable Compleja.pdf" Libro.pdf "Libro Definitivo.pdf"
+lsblk
+mount /dev/sdb1 /media/USB/
+sudo mount /dev/sdb1 /media/USB/
+cdf
+ls
+cd Libros/
+ls
+cp Variable\ Compleja\ I\ -\ Rafael\ Paya.pdf /media/USB/
+sudo cp Variable\ Compleja\ I\ -\ Rafael\ Paya.pdf /media/USB/
+updateGit
+py pruebas.py 
+nv
+cdf
+nv
+gpush
+ranger
+nv
+man namespace
+ping google.es
+cdf
+gpush
+cdf
+ranger
+gpush
+cdf
+ls
+nv
+update
+yay -Ss visualparadigm
+yay -Ss visual-paradigm
+yay -S aur/visual-paradigm-community
+ls
+sudo pacman -Rns visual-paradigm
+nv
+htop
+sims
+killall sims
+findps Sims
+cd media/USB
+ls
+cd PartidasGuardadas/
+ls
+cd Los\ Sims\ 4/
+ls
+rsync -zaP --delete /media/USB/PartidasGuardadas/Los\ Sims\ 4/saves/ ~/Electronic\ Arts/Los\ Sims\ 4/saves/
+cd ..
+ls
+cd ..
+ls
+cd NatiGames/
+ls
+cd SimsPirata/
+ls
+find . -name save
+ls 
+cd ..
+ls
+cd ..
+ls
+cd Program\ Files\ \(x86\)/
+ls
+cd Origin\ Games/
+ls
+ls -a
+cd ..
+ls
+pwd
+cd ..
+ls
+cd SIMSPIRATAISO/
+ls
+cd ..
+ls
+cd LinuxCloud/
+ls
+cd Games/
+ls
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+lsblk
+cd /media/USB/
+ls
+cd S
+cd SIMSPIRATAISO/
+ls
+mkdir /media/CDROM
+sudo mkdir /media/CDROM
+sudo mount The\ Sims\ 4.iso /media/CDROM/
+cd /media/CDROM/
+ls
+wine setup.exe 
+pacman -S wine
+sudo pacman -S wine
+pacman -Qi wine
+ls
+wine setup.exe 
+ls
+cd
+sudo umount /media/CDROM/
+ls
+ls -a
+cd .wine
+ls
+cd
+alias sims="cd /home/sergio/.wine/drive_c/Program\ Files\ \(x86\)/The\ Sims\ 4/Game/Bin && wine ./TS4_x64.exe"
+sims 
+cd .wine
+ls
+cd drive_c/
+cd Program\ Files\ \(x86\)/
+ls
+ls 
+cd ..
+ls
+cd Games/
+ls
+cd The\ Sims\ 4/
+ls
+cd Data/
+ls
+cd Client/
+ls
+cd ..
+ls
+cd ..
+ls
+cd Game/Bin/
+ls
+wine TS4_x64.exe 
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd Games/The\ Sims\ 4/
+ls
+cd Data/
+ls
+cd Client/
+ls
+cd ..
+ls
+ls Shared/
+ls Shared/Worlds/
+ls Shared/Worlds/Areas/
+cd ..
+ls
+ls Delta/
+ls Delta/GP01/
+ls
+ls Game/
+ls
+ls Game/Bin/
+ls
+find . -name clientDB.package
+find . -name Config.log
+find . -name saves
+tree . | grep saves
+tree . 
+ls
+tree . > ~/antiguo.log
+ls
+cd Delta/
+ls
+cd ..
+ls
+wine Game/Bin/TS4_x64.exe 
+cd 
+ls
+rm antiguo.log 
+ls
+mkdir CopiaSeguridad
+rsync -zaP Electronic\ Arts/Los\ Sims\ 4/saves/ CopiaSeguridad/
+ls Electronic\ Arts/Los\ Sims\ 4/
+cd Mo
+cd Electronic\ Arts/Los\ Sims\ 4/Mods/
+ls
+vi Resource.cfg 
+cd .wine/drive_c/
+ls
+cd Games/The\ Sims\ 4/Game/Bin/
+ls
+wine TS4_x64.exe 
+cd 
+sudo mount /dev/sdb1 /media/USB/
+lsblk
+sudo mount /dev/sdc1 /media/USB/
+rsync /media/USB/saves/ ~/Electronic\ Arts/Los\ Sims\ 4/saves/
+rsync -zaP /media/USB/saves/ ~/Electronic\ Arts/Los\ Sims\ 4/saves/
+cd .wine/drive_c/Games/The\ Sims\ 4/Game/Bin/
+ls
+wine TS4_x64.exe 
+ls
+cd Electronic\ Arts/
+ls
+cd Los\ Sims\ 4/
+ls
+rsync -zaP --delete /media/USB/PartidasGuardadas/Los\ Sims\ 4/ ~/Electronic\ Arts/Los\ Sims\ 4/
+cd ~/.wine/drive_c/Games/The\ Sims\ 4/Game/Bin/
+ls
+wine TS4_x64.exe 
+rm -rf ~/Electronic\ Arts/Los\ Sims\ 4/*
+wine TS4_x64.exe 
+ranger
+rsync -zaP Electronic\ Arts/Los\ Sims\ 4/saves/ LinuxCloud/Games/Sims\ Natalia/
+update
+updateGit
+nv
+killall firefox
+pacman -Qqme
+pacman -Qqem
+pacman -Qqen
+pacman -Qqe
+man pacman
+cdf
+ls
+nv Pacman\ cheatsheet.md 
+gpush
+gpus
+gpush 
+cdf
+ls
+nv 
+systemctl status NetworkManager
+sudo systemctl status NetworkManager
+nv /etc/NetworkManager/NetworkManager.conf
+sudo manjaro-settings-manager 
+echo $BLOCK_NAME
+volume
+ls /usr/lib
+ls /usr/lib | grep i3
+man i3blocks
+sudo pacman -S i3blocks
+ls /usr/lib/i3blocks
+find / -name i3blocks
+sudo find / -name i3blocks
+ls /usr/bin/i3blocks 
+ls /usr/bin/i3blocks/
+file /usr/bin/i3blocks
+cd /usr/share/bash-completion/completions/i3blocks
+file /usr/share/bash-completion/completions/i3blocks
+find / -name i3blocks -t d 
+find / -t d -name i3blocks 
+find -t d / -name i3blocks 
+find -type d / -name i3blocks 
+cdf
+nv Bash\ cheatsheet.md 
+man find
+find -type d /
+find -type d -name pruebas /
+find / -type d -name "i3blocks" 
+sudo find / -type d -name "i3blocks" 
+sudo find / -type d -name "i3*" 
+sudo find / -type d -name "i3*" | grep blocks
+cd /var/lib/pacman/local/i3blocks-1.5-3
+ls
+cat files
+ls /usr/bin/i3blocks
+ls
+cd .i3/
+ls
+cd scripts/
+ls
+mkdir i3blocks_scripts
+mv battery i3blocks_scripts/
+ls
+cat volumebar 
+mv volumebar i3blocks_scripts/
+ls
+ls i3blocks_scripts/
+cd i3blocks_scripts/
+pwd
+ls
+chmod u+x *
+ls
+yay -Ss fontawesome
+yay -Ss ttf-fontawesome
+yay -Ss ttf-font
+yay -Ss ttf-font | grep aw
+yay -S aur/ttf-font-awesome-4
+yay -S aur/ttf-font-awesome
+yay -S aur/ttf-font-awesome-4
+yay -S aur/ttf-font-awesome
+sudo yay -S aur/ttf-font-awesome
+pacman -Ss ttf-font-awesome
+sudo pacman -S ttf-font-awesome
+acpi
