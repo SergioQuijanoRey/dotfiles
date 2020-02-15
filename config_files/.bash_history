@@ -1,33 +1,3 @@
-ls
-g++ lex.yy.cc -lfl -o pruebas
-flex++ procesador.lex 
-g++ lex.yy.cc -lfl -o pruebas
-flex++ procesador.lex 
-g++ lex.yy.cc -lfl -o pruebas
-flex++ procesador.lex 
-g++ lex.yy.cc -lfl -o pruebas
-flex++ procesador.lex 
-flex procesador.lex 
-gcc lex.yy.c -o pruebas -lfl
-ls
-./pruebas
-make
-make exe
-make
-ls
-./pruebas
-make
-ls
-make clean
-ls
-rm 
-rm *.cc
-ls
-make exe
-make exe > pruebas.txt
-cat pruebas.txt 
-rm pruebas.txt 
-make exe
 ./procesador ../Ficheros\ de\ prueba/ejemplo_jugadores.txt 
 make exe
 make clean
@@ -1998,3 +1968,33 @@ sudo yay -S aur/ttf-font-awesome
 pacman -Ss ttf-font-awesome
 sudo pacman -S ttf-font-awesome
 acpi
+cd .i3/scripts/i3blocks_scripts/
+ls
+rm batterybar 
+ls
+rm battery_pruebas 
+diff battery battery2
+cat battery
+cat battery2
+rm battery
+mv battery2 battery
+updateDotfiles
+ls
+updateDotfiles 
+chmod u+x *
+rm calendar
+ls
+chmod u+x *
+updateDotfiles 
+ls
+chmod u+x *
+ls
+bc
+rm cpu_util_detailed 
+chmod u+x *
+disk
+ls
+./disk 
+ls
+nv disk 
+gpush
