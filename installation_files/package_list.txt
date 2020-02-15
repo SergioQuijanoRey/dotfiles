@@ -75,3 +75,7 @@ evince
 libreoffice             # For writting documents
 pandoc                  # For converting documents formats
 texlive-core            # For writting basic latex documents
+
+# I3 blocks dependencies
+#===============================================================================
+sysstat                 # For CPU Usage
