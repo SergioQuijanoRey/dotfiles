@@ -1,113 +1,3 @@
-rm procesador
-make exe
-ls
-./procesador ../Ficheros\ de\ prueba/piezas.txt 
-make procesador
-./procesador ../Ficheros\ de\ prueba/piezas.txt 
-cd
-cdf
-ls
-sqlite3 
-ls
-sqlite3 empresas.db 
-nv pruebas.sql
-nvf
-nv
-cd ..
-gpush
-cdf
-nvf
-cat *Dic*
-ls
-sqlite3 Databases/empresas.db 
-nv
-nv
-cdf
-ls
-nv .bash_functions 
-gpush
-cdf
-ls
-nv
-cat *Dic*
-man route
-route
-nv /etc/network/interfaces
-sudo nv /etc/network/interfaces
-sudo nvim /etc/network/interfaces
-ping google.es
-sqlite3 Databases/empresas.db 
-nv
-update
-nv .config/nvim/init.vim 
-cdf
-cd .i3/
-ls
-nv i3blocks.conf 
-date
-sudo pacman -S ntp
-sudo timedatectl set-ntp true
-gpush
-ranger
-gpush
-cdf
-ls
-nv
-cat *Dic*
-nv
-cat *Dic*
-uname -a
-ip a
-echo $0
-echo $0
-ls
-ls -a
-source .bashrc
-ls
-pwd
-ls -a
-source .bashrc 
-source .bash_aliases 
-sh
-echo $0
-nv .config/vifm/vifmrc 
-pacman -Ss vifm
-sudo pacman -S vifm
-vifm
-> file
-ls
-cat file
-rm file
-< steam.desktop 
-cat steam.desktop 
-< steam.desktop 
-$<(steam.desktop)
-updateGit
-update
-extract scd-p4-fuentes.zip 
-update
-updateGit
-gpush
-cdf
-cat *Dic*
-lsblk
-cat *Dic*
-cdf
-ls
-nv 
-cat *Dic*
-gpush
-cdf
-ls
-nv
-cat *Dic*
-updateGit
-gotop
-man xz
-update
-compile ejecutivo1.cpp -o pruebas
-./pruebas
-nv
 ls
 compile ejecutivo1-compr.cpp -o pruebas
 ./pruebas
@@ -1998,3 +1888,113 @@ sudo pip3.8 uninstall tkinter
 pip3.8 
 pip3.8 list | grep tk
 pip3.8 search tkinter 
+nvf
+yad
+pacman -Ss yad
+sudo pacman -S yad
+xdotool
+sudo pacman -S xdotool
+.i3/scripts/i3blocks_scripts/calendar
+sudo pacman -Rns xdotool
+sudo pacman -Rns yad
+mpstat
+sudo pacman -Ss mpstat
+sudo pacman -S mpstat
+sudo pacman -S sysstat
+cal
+cd .i3/scripts/i3blocks_scripts/
+updateDotfiles
+chmod u+x *
+LS 
+ls
+./keyindicator 
+nv ~/.i3/config 
+updateDotfiels
+updateDotfiles
+ls
+cat volumebar 
+ls
+chmod u+x *
+ls
+./memory 
+rm memory 
+ls
+chmod u+x *
+ls
+./monitor_manager 
+sudo pacman -S tkinter
+pip3 install tkinter
+sudo pip3 install tkinter
+pacman -Ss tkinter
+pip3 search tkinter
+sudo pacman -S tkinter
+sudo pip3.8 install tkinter
+.
+./monitor_manager 
+sudo pip3 install python-tk
+sudo pip3.8 install python-tk
+sudo pip3.8 install Tkinter
+vi monitor_manager 
+./monitor_manager 
+sudo pacman -Ss python-tk
+sudo pacman -Ss python-tkinter
+rm monitor_manager 
+ls
+chmod u+x *
+ls
+rm i3blocks.conf
+chmod u+x *
+./shutdown_menu 
+mv shutdown_menu ..
+chmod u+x *
+ls
+./usb 
+udev
+pacman -Ss udev
+ls
+./usb 
+nv usb 
+chmod u+x *
+./volume
+rm volumebar volume-pulseaudio 
+ls
+updateDotfiles 
+chmod u+x *
+./wiwi
+./wifi
+rm wifi 
+ls
+make bandwidth2
+rm *.c
+ls
+chmod u+x * 
+ls
+./brightness 
+rm brightness 
+chmod u+x * 
+./display 
+rm dis
+ls
+chmod u+x *  
+./playerctl 
+rm playerctl 
+chmod u+x *  
+./usb 
+rm usb 
+ls
+mv bandwidth2 bandwidth
+ls
+updateDotfiles 
+ls
+chmod u+x *  
+ls
+./wifi 
+cat wifi
+ls
+./wifi
+rm wifi
+ls
+rm rofi-calendar 
+ls
+:w
+updateDotfiles
