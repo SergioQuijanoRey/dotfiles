@@ -1,9 +1,3 @@
-./procesador ../Ficheros\ de\ prueba/ejemplo_jugadores.txt 
-make exe
-make clean
-ls
-rm procesador
-make exe
 rm procesador
 make exe
 ls
@@ -1998,3 +1992,9 @@ ls
 ls
 nv disk 
 gpush
+py
+pip3.8
+sudo pip3.8 uninstall tkinter
+pip3.8 
+pip3.8 list | grep tk
+pip3.8 search tkinter 
