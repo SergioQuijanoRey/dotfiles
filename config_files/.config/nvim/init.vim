@@ -23,6 +23,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     " Visual
     Plug 'itchyny/lightline.vim'        " Status bar
     Plug 'junegunn/goyo.vim'            " Focus Mode
+    Plug 'ryanoasis/vim-devicons'       " Icons for NerdTree
 
     " Autocompleters
     Plug 'Shougo/deoplete.nvim'         " Autocomplete
@@ -150,3 +151,7 @@ let g:deoplete#enable_at_startup = 1
 "   [ ] Mark trailing spaces
 "   [ ] Configure Deoplete
 "   [ ] Keybindings for tabs
+"   [ ] YouCompleteMe
+"   [ ] map <leader>h :wincmd h<CR>
+"   [ ] Ycm GoTo
+"   [ ] COC for autocompletion

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Path to project
+path="/home/sergio/GitProjects/Universidad/Asignaturas/3º Curso/2º Cuatrimestre/Inteligencia Artificial/Prácticas/Práctica 1"
+
+# Docker build to incorporate changes
+sudo docker build -t ubuntuesp "$path"
+
+# Docker runs the app
+sudo docker run -it --rm ubuntuesp
