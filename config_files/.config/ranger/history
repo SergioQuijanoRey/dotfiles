@@ -1,4 +1,3 @@
-mkdir Práctica 0
 rename Presentación de la asignatura.pdf
 rename Práctica 0 - Guión.pdf
 mkdir Archivos
@@ -45,6 +44,7 @@ Term
 mkdir Code
 cut
 paste
-delete
 t
+delete
+ter
 terminal 

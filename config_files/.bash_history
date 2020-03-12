@@ -928,3 +928,28 @@ cdf
 ls
 nov
 nv
+updateDotfiles 
+nvf
+sudo systemctl start 
+sudo systemctl start docker
+applaunchbind 
+chatbot
+updateGit
+update
+nv
+confi3 
+update
+gpush
+cdf
+ls
+nv
+date
+history | grep locale
+sudo localectl set-locale LANG=LC_NAME=en_US.UTF-8
+locale
+sudo localectl set-locale LANG=LC_NAME=en_US.UTF-8 | grep *nv*
+sudo localectl set-locale LANG=LC_NAME=en_US.UTF-8 | grep nv
+history | grep locale | grep *nv*
+history | grep locale | grep nv
+sudo nvim /etc/locale.conf
+chatbot
