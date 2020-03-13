@@ -15,3 +15,7 @@ gotop
 whatsie
 spotify
 discord
+
+# Fonts
+#===============================================================================
+nerd-fonts-complete
