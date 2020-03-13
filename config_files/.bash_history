@@ -953,3 +953,118 @@ history | grep locale | grep *nv*
 history | grep locale | grep nv
 sudo nvim /etc/locale.conf
 chatbot
+nvcconf
+nvconf
+updateDotfiles
+chatbo
+ls
+gpush
+chatbot
+gcommit -m "AIML: Escribo las cinco preguntas de la entrevisa
+Tengo que implementar la logica para dar flexibilidad en las la formulacion de las preguntas"
+git push
+chatbot
+sudo systemctl start docker
+applaunch
+applaunchbind 
+chatbot
+gcommit -m "Escribo variaciones para la primera pregunta"
+gpush
+chatbot
+gpush
+nv
+history | grep yay
+history | grep yay
+pacman -Rns aur/nerd-fonts-source-code-pr
+sudo pacman -Rns aur/nerd-fonts-source-code-pr
+nvf
+:q
+nv
+:Q
+update
+nv
+nv pruebas.xml
+nvf
+cd Desktop/
+ls
+cd --
+cd Downloads/
+lw
+ls
+unzip programAB_JUANJO_nuevo.zip 
+s
+ls
+cd programAB_
+cd programAB_nuevo/
+ls
+cd programAB/
+ls
+nvim
+ls
+cd ..
+ls
+cd ..
+ls
+rm *.zip
+zip -r programa.zip programAB_nuevo/
+cat /proc/cpuinfo 
+lscpu
+cat /proc/meminfo 
+lsmem
+nvim pruebas.xml
+history | grep yay
+ttf
+tff
+fontinst 
+ls .fonts/
+htop
+ls
+tft
+lolcat
+compiz
+pacman -Ss compiz
+fc-list
+fc-list | grep nerd
+grep /fonts ~/.local/share/xorg/Xorg.0.log
+cat /fon
+cat /fonts
+ls /fonts
+cd /etc/fonts/
+ls
+sudo nvim fonts.conf 
+ls
+ls conf.
+ls conf.avail/
+ls conf.avail/ | grep nerd
+cd ~/.config/alacritty/
+ls
+nv alacritty.yml 
+cd ../termite/
+ls
+nv config 
+i3con
+confi3
+fc-list 
+fc-list | grep nerd
+fc-list | grep nerd | grep complete
+fc-list | grep nerd | grep complete | nv -
+fc-list | grep Inconsolata | nv -
+fc-list | grep monaco | nv -
+fc-list | grep monaco 
+fc-list | grep dejavu
+fc-list | grep deja
+fc-list
+fc-list | grep source | grep code | grep pro
+fc-list | grep source | grep code | grep pro | nv
+nv
+man nano
+ls -l .ssh/
+gcommit
+gpush
+gpush
+update
+updateGit
+gpush
+cdf
+ls
+nv
