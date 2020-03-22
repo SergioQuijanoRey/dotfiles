@@ -1,26 +1,6 @@
-rename Presentación de la asignatura.pdf
-rename Práctica 0 - Guión.pdf
-mkdir Archivos
-open_with%spacem 
-delete Visual_Paradigm_16.0
-mkdir Programs
-touch Tema 2.md
-te
-mkdir Imagenes
-oaste
-open_with libreoffice
-rename Práctica 01.md
-mkdir Trabajo Final de Grado
-rename Charla 3º - Trabajo Final de Grado.pdf
-mkdir Libros
-touch Práctica 02.md
-d
-delet
-rename Práctica 2 - Guión.pdf
 touch dockerfile
 mkdir Prácticas
 mkdir Documentación
-rename Práctica 1 - Guión.pdf
 rename Práctica 1 - Seminario.pdf
 rename PPráctica 1 - Anexo 2.pdf
 rename PPráctica 1 - Anexo 1.pdf
@@ -35,16 +15,36 @@ rename Práctica 1 - Anexo 4 - Documentación Utilidades2020AIML.pdf
 touch ejercicios.aiml
 rename Practica 1
 rename Práctica 1
-
 copy
 terminal m
-mkdir Práctica 1
 touch Apuntes sesión.md
 Term
 mkdir Code
 t
 ter
+mkdir Práctica 1
+rename Práctica 1 - Guión.pdf
+mkdir Transparencias
+mkdir Relaciones de Ejercicios
+rename Tema 1 - Relación de Ejercicios.pdf
+rename Tema 1 - Relación de ejercicios - Desastres Software.pdf
+rename Tema 1 - Transparencias.pdf
+rename Ingeniería de requisitos (Tema 2, 2.1).pdf
+rename Tema 2 - Parte 1 - Transparencias.pdf
+patse
+rename Tema 2 - Parte 2 - Transparencias.pdf
+rename Tema 2 - Parte 2 - Relación de ejercicios.pdf
+rename Tema 2 - Parte 2 - Ejemplo lista estructura de Requisitos.pdf
+rename Tema 2 - Parte 3 - Transparencias.pdf
+rename Tema 2 - Parte 3 - Ejemplo Modelo de caso de uso.pdf
 cut
 paste
-delete
+rename Tema 2 - Parte 3 - Relación de ejercicios.pdf
+te
+[1;5B
+delet
 terminal 
+deelte
+
+mkdir CoverNata
+delete

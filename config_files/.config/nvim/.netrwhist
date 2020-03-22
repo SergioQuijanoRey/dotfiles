@@ -1,3 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/sergio/GitProjects/Universidad/Asignaturas/3º Curso/2º Cuatrimestre/Inteligencia Artificial/Prácticas/Práctica 1/AIML/bots/mybot/maps'
 let g:netrw_dirhist_1='/home/sergio/GitProjects/Universidad/Asignaturas/3º Curso/1º Cuatrimestre/Sistemas Concurrentes y Distribuidos/Prácticas'

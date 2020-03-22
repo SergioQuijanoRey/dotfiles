@@ -1068,3 +1068,320 @@ gpush
 cdf
 ls
 nv
+updateDotfiles
+lsblk
+confi3
+date
+chatbot
+gpush
+cdf
+ls
+nv
+gcommit
+gcommit -m "AIML: añado un set que pasa de mes en nombre a mes en numero"
+ls
+chatbot
+chat
+chatbot 
+gcommit -m "AIML: añado una funcionalidad que dado un mes lo convierte a numero"
+chatbot
+gcommit
+chatbot
+gcommit
+git status
+git push origin master
+chatbot
+chatbot 
+gpush
+git blame
+git blame aiml/nivel1
+git blame aiml/nivel1.aiml 
+chatbot
+chatbot 
+gpush
+pacman -Ss skype
+yay -Ss skype
+yay -S aur/skypeforlinux-stable-bin+
+yay -S aur/skypeforlinux-stable-bin
+nv
+gpush
+cdf
+ls
+nv
+gpush
+chatbot
+PRUEBAS 20 Febrero 20
+chatbot
+gpush
+chatbot
+gcommit
+gpuhs
+gpush
+cd ..
+gpuhs
+gpush
+cdf
+ls
+nv
+pacman -Ss cmap
+yay -Ss cmap
+yay -S aur/cmaptools
+sudo pacman -Rns cmaptools
+updateGit
+gpush
+upadte
+update
+gpush
+cdf
+nv
+gcommit
+chatbot
+gcommit
+chatbot 
+chatbot
+gpush
+chatbot
+gpush
+chatbot
+nv
+updateGit
+py 
+gpush
+cdf
+ls
+nv
+gcommit
+chatbot
+gcommit
+git push origin master
+chatbot
+gcommit
+git push origin master
+chatbot
+gcommit
+chatbot
+gcommit
+git push origin master push
+git push
+git push origin master push
+chatbot
+gcommit
+git puhs
+git push
+gpush
+ls
+git blame aiml/nivel
+git blame aiml/nivel1.aiml 
+nv
+ranger
+gpush
+cdf
+ls
+nv
+gcommit
+git pull
+chatbot
+gpush
+chatbot 
+chatbot
+gcommit
+chatbot
+updateGir
+updateGit
+uptime
+who
+who -w
+update
+man sar
+sar
+sudo sar
+ls /var/log/sa
+ls /var/log/
+ls /var/log/sa
+ls -a /var/log/sa
+lsof
+erf
+perf
+check_http
+ck_http
+pacman -Ss naemon
+pacman -Ss shinken
+gpush
+time
+man python
+gpusj
+gpush
+cdf
+s
+ls
+nv
+chatbot
+gcommit
+git push
+chatbot
+gpush
+chatbot
+gpush
+chatbot
+gcommit
+chatbot
+gcommit
+git push
+gcommit
+chatbot
+gpush
+glog
+gcommit
+git push
+gcommit
+chatbot
+gcommit
+git push origin maste
+git push origin master
+sims
+gpush
+cdf
+ls
+nv
+gcommit
+chatbot
+gcommit
+git push
+chatbot
+gcommit
+chatbot
+gpush
+gcommit
+cat sets/complemento.txt 
+chatbot
+man rsync
+gcommit
+chatbot
+gcommit
+git push
+chatbot
+gcommit
+git push origin master
+ls
+nv
+gpush
+cdf
+ls
+cdf
+ls
+nv
+nvf
+chatbot
+chatbot
+gcommit
+nv
+fg
+htop
+killall dolphin
+pacman -Ss dolphin
+findps dolphin
+sudo kill -9 3077
+pacman -Ss dxbx
+yay -Ss dxbx
+yay -Ss cxbx
+yay -Ss xbox
+unrar *.rar
+extract imars-fh2rpk.rar 
+pacman -Ss xenia
+yay -Ss xenia
+yay -S aur/xenia-git
+findps xenia
+xenia
+sudo xenia
+sudo pacman -Rns xenia
+sudo pacman -Qi | grep xenai
+sudo pacman -Qi | grep xenia
+sudo pacman -Rns xenia-git
+extract 94-px-g-t-2-pa-es.rar 
+HTOP
+htop
+pacman -Qi xenia
+pacman -Q | grep xen
+gpush
+cdf
+nv
+nv pruebas.py
+rm pruebas.py 
+nv pruebas.cpp
+nv pruebas.cpp 
+:q
+cdf
+nvf
+cd .config/nvim/
+ls
+ls -a
+cat .netrwhist 
+cd spell/
+ls
+cd
+ls -a
+ls -a | grep com
+ls -a | grep vim
+cat .viminfo 
+sudo python3 -m pip install --user --upgrade pynvim
+sudo python2 -m pip install --user --upgrade pynvim
+pynvim
+py pynvim
+pip3 install pynvim
+sudo pip3 install pynvim
+nv
+py
+sudo python3 -m pip install --user --upgrade pynvim
+pip installing pynvim
+pip3 install pynvim
+sudo pip3 uninstall nvim
+sudo pip3 uninstall neovim
+sudo pip3 uninstall pynvim
+sudo pip uninstall pynvim
+sudo pip2 uninstall pynvim
+pip3
+pip3.8 
+sudo pip3.8 install pynvim
+sudo pip3 install pynvim
+which python
+python3.8
+pip search greenlet
+sudo pip install greenlet
+python
+pip3 uninstall neovim
+pip3 uninstall pynvim
+sudo
+sudo pip3 uninstall neovim
+sudo pip3 uninstall pynvim
+sudo pip3 install pynvim
+py
+pip3 uninstall greenlet
+sudo pip3 uninstall greenlet
+sudo pip3 install greenlet
+pip3 install greenlet
+py
+cd .config/
+ls
+cd rclone/
+ls
+ls -a
+cd .
+cd ..
+cd nvim/
+ls
+ls -a
+cd .vim
+cd 
+cd .viminfo 
+cd .vim
+find . -name install.py
+cd ./.local/share/nvim/plugged/YouCompleteMe/install.py
+ls
+cd .local/share/nvim/plugged/YouCompleteMe/install.py
+.local/share/nvim/plugged/YouCompleteMe/install.py --all
+nvconf 
+nvconf
+nv pruebas.cpp 
+rm pruebas.cpp 
+nv pruebas.py
+rm pruebas.py 
