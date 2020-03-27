@@ -173,9 +173,15 @@ map <leader><Right> :wincmd l<CR>
 map <leader><Up> :wincmd k<CR>
 map <leader><down> :wincmd j<CR>
 
+" Go to Definition
+map <leader>d :YcmCompleter GoToDefinition<CR>
+
 " PLUGINS CONFIGURATION
 "=============================================================================
 
 " YOU AUTOCOMPLETE ME
 " Autocompletions are automatically shown. Set to 0 to disable this (Control-Space to show suggestions)
 let g:ycm_auto_trigger = 1
+
+" Autoclose the preview documentation window
+let g:ycm_autoclose_preview_window_after_insertion = 1

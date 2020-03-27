@@ -1,922 +1,3 @@
-sudo docker run chrisdaish/google-chrome
-sudo docker images
-sudo systemctl stop docker
-htop
-cdf
-nv Docker\ cheatsheet.md 
-gpush
-unrar Curso\ 2019-2020-Doble-Grado.rar 
-unrar "Curso 2019-2020-Doble-Grado.rar"
-ls
-extract "Curso 2019-2020-Doble-Grado.rar" 
-file "*.rar*
-file "*.rar*"
-file *.rar
-engrampa 
-engrampa Curso\ 2019-2020-Doble-Grado.rar 
-cd ~/Downloads/
-ls
-mv Curso\ 2019-2020-Doble-Grado.rar Curso.rar
-unrar Curso.rar 
-unrar Curso.rar .
-extract Curso.rar 
-extract Agentes.rar 
-pacman -Ss virtualbox
-uname .a
-uname -a
-pacman -Qi | grep virtual
-cd ..
-gpush
-rm -rf __pycache__/
-ls
-py pruebas.py 
-gpush
-ls
-rm -rf __pycache__/
-ls
-ls -a
-gpush
-nv
-ping google.es
-zip -r ia.zip .
-mv ia.zip ~/ia.zip
-cd .wine/drive_c/
-ls
-cd The\ Sims\ 2\ Ultimate\ Collection/
-ls
-tree | grep *.exe
-find . -name *.exe
-cd The\ Sims\ 2
-ls
-cd TSBin/
-ls
-wine Sims2.exe 
-ls
-wine TS2UPD0.exe 
-wine TS2UPD.exe 
-cd ..
-ls
-cd TSData/
-ls
-cd Control/
-ls
-cd ..
-ls
-cd ..
-ls
-cat BodyShop.ico 
-file *.ico
-ls
-find . -name *.exe -r
-find -r  . -name *.exe
-find . -name *.exe
-tree 
-tree | grep exe
-ls
-cd The\ Sims\ 2\ Apartment\ Life/
-ls
-cd CSBin/
-ls
-wine TS2BodyShop.exe 
-findps wine
-killall wine
-killall wineserver
-findps wine
-ls 
-wine PackageInstaller.exe 
-findps wine
-ls 
-cd ..
-ls
-TSBin/
-ls
-cd TSBin/
-ls
-wine Sims2Launcher.exe 
-ls 
-cd ..
-ls ..
-ls
-cd ..
-ls
-cd Redist/
-ls
-cd ..
-cd The\ Sims\ 2
-ls
-tree
-tree | grep exe
-ls
-cd TSData/
-ls
-tree | grep exe
-cd ..
-ls
-cd TSBin/
-ls
-wine Sims2.exe 
-wine TS2UPD.exe 
-ls
-cd ..
-ls
-cd CSBin/
-ls
-wine PackageInstaller.exe 
-ls
-wine PackageInstaller.exe 
-ls
-cd ..
-ls
-cd Games/
-ls
-cd 
-wine uninstaller
-ls
-ls CopiaSeguridad/
-rm -rf CopiaSeguridad/ ia.zip 
-ls
-cd E
-cd EA\ Games/
-ñls
-ls
-cd --
-rm -rf "EA Games"
-ls
-gpush
-nv
-gpush
-ranger
-ping 10.0.2.15
-ifconfig -a
-ping 192.168.56.10
-pvdisplay 
-sudo pvdisplay 
-df -h
-nv
-gpush
-cd GI
-cd GitProjects/
-
-git clone git@github.com:DGIIMUnderground/DGIIM3.git
-ls
-unzip Practica1.zip 
-rm *.zip
-gpush
-nv
-file run.bat 
-ls
-pacman -Ss aiml
-yay -Ss aiml
-unzip programAB.zip 
-cd ..
-ls
-ls -a
-tree
-ls 
-cd ..
-ls
-cd ..
-ls
-cd ..
-cd A
-cd AIML/
-ls
-run.s
-chmod u+x run.
-chmod u+x run.sh 
-ls
-./run.sh 
-chatbot
-nv bin/chatbot
-chmod u+x bin/*
-chatbot
-nv bin/chatbot 
-chatbot 
-nv bin/chatbot 
-chatbot 
-chatbot
-gpush
-nv utilidades
-ls
-nv primero.aiml
-pwd
-cd .wine/drive_c/
-ls
-cd Games/
-ls
-cd The\ Sims\ 4/Game/Bin/
-ls
-pwd
-nv bin/sims
-chmod u+x bin/*
-sims
-htop
-sims
-gpush
-cdf
-ls
-nv
-update
-updateGit
-htop
-sims
-gpush
-whois 8.8.8.8
-gpush
-nv
-ifconfig -a
-ping 192.168.55.1
-ping 192.168.56.20
-gpush
-cdf
-nmv
-nv
-hwd
-mhwd
-updateGit
-update
-ifconfig -a
-ping 10.0.2.15
-pacman -Ss ifconfig
-yay -Ss ifconfig
-pacman -Ss net-nootls
-pacman -Ss net-tools
-ping 10.0.2.15
-ifconfig -a
-ping 10.0.2.15
-gpush
-ping 192.168.56.10
-ifconfig -a
-vgdisplay 
-sudo vgdisplay 
-nv /etc/fstab 
-gpush
-nv
-gpush
-glog
-updateGit
-gpush
-update
-cdf
-gpush
-cdf
-ls
-nv
-gpush
-cdf
-ls
-nv
-pacman -Ss transmission
-sudo pacman -S extra/transmission-gtk
-transmission-cli 
-transmission-cli magnet:?xt=urn:btih:58B400B79EFDE68E124EE78459A09D0C0457B1A4&dn=EPL_Armas_de_destruccion_matematica&tr=http://tracker.tfile.me/announce&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://tracker.openbittorrent.com:80&tr=udp://tracker.publicbt.com:80&tr=udp://open.demonii.com:1337/announce
-gpush
-cdf
-ls
-nv
-cd /etc/pacman
-ls
-cd /etc/pacman.d/
-ls
-sudo nv mirrorlist 
-sudo nvim mirrorlist 
-ls
-tree gnupg/
-cd ..
-ls *pacman*
-sudo nvim pacman.conf
-nv /etc/pacman.conf
-pacman -Qi sql
-pacman -Qi sqlplus
-pacman -Q | grep sql
-sudo pacman -Rns oracle-instantclient-sqlplus
-pacman -Q 
-pacman -Q | wc -l
-pacman -Ss visual-paradigm
-yay -Ss visual-paradigm
-yay -S aur/visual-paradigm-community
-htop
-yay -Ss visual-paradigm
-yay -S aur/visual-paradigm
-extract Visual_Paradigm_16_0_20200201_Linux64_InstallFree.tar.gz 
-ds Visual_Paradigm_16.0/
-mv *.sh script.sh
-ls
-chmod u+x script.sh 
-cat script.sh | wc -l
-./script.sh 
-pacman -Q | grep visual
-sudo pacman -Rns visual-paradigm-community
-update
-ls
-yay -Ss visual-paradigm
-yay -S aur/visual-paradigm
-updateGit
-nv
-file *.pdf
-gpush
-man d
-fastman dd
-gpush
-nv
-gpush
-cdf
-ls
-nv
-updateGit
-ls
-cd Programs/
-ls
-cd VisualParadigm/
-ls
-ls bin/
-./bin/Visual_Paradigm
-updateGit
-df
-df -h
-localssh 
-remotessh 
-nv
-gpush
-glog
-gpush
-ranger
-gpush
-cdf
-ls
-nv
-update
-git clone git@github.com:SergioQuijanoRey/numericalMethods.git
-gpush
-py tests.py 
-gpush
-ls
-py tests.py 
-gpush
-mv pruebas.py tests.py
-ls
-nv tests.py 
-gpush
-cdf
-ls
-nv
-touch "Diario 2020 03 - Marzo.md"
-nv
-pandoc Práctica\ 01.md -o "Práctica 1.pdf"
-ls /boot
-ls /boot | grep vmlinuz
-file /boot/vmlinuz-5.5-x86_64 
-uname .a
-uname -a
-ifconfig -a
-ping 192.168.56.10
-ping 192.168.56.13
-ssh 192.168.56.13
-update
-updateGit
-nv
-py tests.py 
-gpush
-py tests.py 
-gpush
-py tests.py 
-py -i tests.py 
-gpush
-cdf
-nv
-ifconfig
-ifconfig -a
-ipaddress
-ip addr
-ping 192.168.56.21
-ssh 192.168.56.21
-alias fastman
-alias manfast
-alias | grep man
-alias
-ls bin/
-cat bin/fastman 
-ls
-ls -a
-cd ..
-gpush
-ssh 192.168.1.17 
-localssh 
-ssh 192.168.56.21
-ssh 192.168.1.17
-py tests.py 
-gpush
-touch "SignChangesMethods.py"
-py tests.py 
-gpush
-py tests.py 
-gpush
-nv
-updateGit
-gpush
-cdf
-nv
-update
-ping 192.168.56.10
-ssh 192.168.56.10
-ping 192.168.56.20
-ping 192.168.56.13
-ping 192.168.56.11
-ip addr
-yes
-ping 192.168.56.101
-nv
-ping 192.168.56.101
-py tests.py 
-gpush
-py tests.py 
-gpush
-py tests.py 
-gpush
-py tests.py 
-gpush
-cdf
-ls
-nv
-ping 192.168.56.10
-ipaddr
-ip addr
-ssh 192.168.56.10
-ping ping 192.168.56.20
-ping 192.168.56.20
-ssh 192.168.56.20
-ip addr
-cdf
-nvf
-brave Práctica\ 01.md & unterminal ; exit
-unterminal 
-uptime
-uptime -h
-uptime -p
-alias remotessh
-remotessh 
-ssh sergio@192.168.1.17
-ssh 192.168.56.20
-ssh 192.168.1.17
-ssh 192.168.1.101
-ping 192.168.1.1
-curl 192.168.1.1
-curl cheat.sh/curl
-ssh sergio@192.168.1.101
-remotessh 
-ls
-remotessh 
-nv .profile 
-localssh 
-remotessh 
-nv
-gpush
-nv
-remotessh 
-hash 
-man has
-man hash
-man tasksel
-tasksel
-pacman -Ss tasksel
-yay -Ss tasksel
-ls .ssh
-cat .ssh/kw
-cat ~/.ssh/known_hosts 
-man ssh
-remotessh 
-ping 192.168.56.20
-gpush
-ping 192.168.56.20
-remotessh
-alias
-ls
-source .bash_profile
-alias
-source .bash_alias
-source .bash_aliases 
-ls
-alias
-remotessh 
-gpush
-cdf
-ls
-nv
-gpush
-cd
-ls
-ls -a
-remotessh 
-remotessh 
-rm .ssh/known_hosts 
-remotessh 
-remotessh 
-nv .bash_rc
-ds GitProjects/Universidad/
-ds GitProjects/Universidad/.git
-touch "Tema 2.md"
-gpush
-lsblk
-pwd
-cd ..
-gpush
-git add .
-git commit
-gpush
-nv
-ip addr
-ip adr
-ip addr
-rsync -zaP GitProjects/Universidad/ sergio@$REMOTEIP:~/GitProjects/Universidad/
-rsync -zaP --delete GitProjects/Universidad/ sergio@$REMOTEIP:~/GitProjects/Universidad/
-remotessh 
-pacman -Ss freeglut3
-yay -Ss freeglut3
-unzip
-unzip programAB.zip 
-chmod u+x *.sh
-alias 
-ls ~/bin/
-chat
-chatboy
-chatbot
-yay -Ss glut | grep free
-nv
-./run.sh 
-ls .ssh
-ssh sergio@192.168.1.101
-ssh sergio@192.168.56.101
-ssh sergio@192.168.56.101 -p 22232
-ssh sergio@192.168.56.101 -p 22
-ssh sergio@192.168.56.101
-ssh sergio@192.168.56.101 "ls -l"
-ssh sergio@192.168.56.101 ls -a
-ssh sergio@192.168.56.101
-ssh root@192.168.56.101
-ssh 192.168.56.101
-scp .ssh/id_rsa.pub sergio@192.168.56.101:~/sergio.pub
-ssh sergio@192.168.56.101
-cat .profile 
-cat .bash_profile 
-ssh 192.168.56.101
-ssh 192.168.56.102
-ssh root@192.168.56.102
-ssh 192.168.56.102
-scp .ssh/id_rsa.pub sergio@192.168.56.101:~/sergio.pub
-scp .ssh/id_rsa.pub sergio@192.168.56.102:~/sergio.pub
-ssh sergio@192.168.56.102
-scp .ssh/id_rsa.pub sergio@192.168.56.102:~/sergio.pub
-ssh sergio@192.168.56.102
-ssh 192.168.56.102
-nv
-ssh 192.168.56.102
-pacman -Ss snap
-snap
-rsync -zaP --delete GitProjects/Universidad/ sergio@$REMOTEIP:~/GitProjects/Universidad/
-cd GitProjects/Universidad/
-cd ..
-ds Universidad/
-nvf
-localssh 
-nv
-pacman -Ss docker
-sudo pacman -S community/docker-compose
-curl cheat.sh(docker-compose 
-curl cheat.sh/docker-compose 
-sudo pacman -Rns docker-compose
-sudo systemctl start docker
-sudo docker build -t UbuntuSpanish:1 
-man docker build
-man docker build -f ./dockerfile 
-docker build -f dockerfile 
-docker build -f ./dockerfile 
-doker build --help
-docker build --help
-mv dockerfile Dockerfile
-sudo docker build -t "UbuntuSpanish"
-sudo docker build -t "ubuntuSpanish"
-sudo docker build -t ubuntuSpanish
-sudo docker build
-sudo docker build .
-systemctl status docker
-sudo docker build -t ubuspanish:1 .
-vi Dockerfile 
-sudo docker build -t ubuspanish:1 .
-nvf
-sudo docker -it run ubuntu bash
-sudo docker run -it run ubuntu bash
-sudo docker run run ubuntu bash
-gpush
-cdf
-ls
-nv
-invertcsv Movimientos.csv 
-invertcsv Movimientos-1.csv 
-ls *.csv
-libreoffice new_Movimientos-1.csv & ;  unterminal
-libreoffice new_Movimientos-1.csv & ; unterminal
-libreoffice new_Movimientos-1.csv &
-unterminal 
-cdf
-nv
-gpush
-cat /etc/locale.conf 
-cat /etc/locale.gen
-sudo systemctl start docker
-sudo docker run -it manjaro bash
-sudo docker search manjaro
-sudo docker run -it jonathonf/manjaro bash
-sudo docker search ubuntu
-sudo docker run -it ubuntu bash
-gpush
-cdf
-ls
-nv
-lsblk
-lsblk -a
-lsblk -f
-localssh 
-lsblk
-rsync -zaP LinuxCloud/ sergio@$LOCALIP:~
-rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
-echo $LOCALIP
-rsync -zaP LinuxCloud/ sergio@$LOCALIP:~/LinuxCloud/
-rsync -zaP --dry-run sergio@$LOCALIP:~/LinuxCloud/ ~/LinuxCloud/ 
-ssh sergio@$LOCALIP
-ls .ssh/
-scp .ssh/id_rsa.pub sergio@$LOCALIP:~/sergio.pub
-py
-htop
-nv
-cd ~/GitProjects/Universidad/
-gpush
-:q
-ls -a | grep x
-nv .xinitrc 
-locale
-locale -a
-man locale
-sudo systemctl start docker
-sudo docker run -it manjaro bash
-sudo docker run -it ubuntu bash
-sudo systemctl stop docker
-sudo systemctl status docker
-locale
-sudo su
-locale
-sudo localectl set-locale LANG=LC_NAME=es_ES.UTF-8
-date
-history | grep locale
-chatbot 
-nvf
-chatbot 
-ls
-ls aiml
-chatbot 
-date
-chatbot 
-nv
-pwd
-nv bin/chatbot 
-ranger
-chatbot
-sudo localectl set-locale LANG=LC_NAME=en_EN.UTF-8
-DATE
-date
-locale -a
-locale a
-locale
-sudo localectl set-locale LANG=LC_NAME=en_US.UTF-8
-date
-sudo nvim /etc/locale.conf 
-date
-sudo docker build -t ubuntuesp .
-lang
-locale
-sudo su
-history | grep locale
-chatbot
-gpush
-updateGit
-sudo systemctl start docker
-ls
-cd Downloads
-ls
-sudo docker run -it ubuntu bash
-cd 
-sudo docker ps -a
-sudo docker images
-sudo docker run -it ubuntuesp bash
-sudo docker search ubuntu java
-sudo docker search ubuntu
-nvf
-sudo docker ps -a
-sudo docker rm *
-sudo docker ps -a | awk ~1
-sudo docker ps -a | awk $1
-man docker rm
-for container in sudo docker ps -a ; do echo $container; done
-for container in $(sudo docker ps -a) ; do echo $container; done
-sudo docker ps -a
-sudo docker rm a9069c257ddd 0516e5e23b88 06733eb150c3 4b361c7174ae 66a0eb87aefc 88b5265f37d7 68c55282cb14 3ff3855f52c0 0a3dcb13941d cdaa572aa9e3 d5ef345698d4 cabdada5a1bd 64981b78a6fb b79fd724a25e 9725b33518e0 c7135de99709 abe2f9fee26a 50f5d0c36dbd b611fe279cf3 f7361573a5b5 
-sudo docker ps -a
-history | grep mount
-history | grep docker
-sudo docker images
-sudo docker rmi 89c8a82b8804
-localssh 
-nvf
-sudo docker run -it ubuntuesp bash -v ./AIML:/AIML
-sudo docker run -it ubuntuesp bash -v AIML:/AIML
-pwd
-sudo docker run -it ubuntuesp bash -v "$(pwd)/AIML:/AIML"
-pwd
-sudo docker run -it ubuntuesp bash -v "$(pwd)/AIML/:/AIML"
-pwd
-ls
-sudo docker run -it ubuntuesp bash -v "$(pwd)/AIML/:/AIML"
-sudo docker run -it ubuntuesp bash -v "~/AIML:/AIML"
-sudo docker run -it ubuntuesp bash -v "~/AIML"
-ls
-cd AIML/
-ls
-sudo docker build -t ubuntuesp .
-cd ..
-ls
-sudo docker build -t ubuntuesp .
-sudo docker run -it ubuntuesp
-sudo docker run -it ubuntuesp bash
-sudo docker build -t ubuntuesp .
-sudo docker run -it ubuntuesp bash
-sudo docker build -t ubuntuesp .
-sudo docker images
-sudo docker run -it --rm ubuntuesp bash
-sudo docker build -t ubuntuesp .
-sudo docker run -it --rm ubuntuesp
-sudo docker build -t ubuntuesp .
-sudo docker run -it --rm ubuntuesp
-sudo docker build -t ubuntuesp .
-sudo docker run -it --rm ubuntuesp
-sudo docker build -t ubuntuesp .
-sudo docker run -it --rm ubuntuesp
-sudo docker run -it --rm --mount type=bind,source=./AIML/,target=/app2,readonly bash
-sudo docker run -it --rm --mount type=bind,source="$(pwd)/AIML/",target=/app2,readonly bash
-sudo docker run -it --rm --mount type=bind,source="$(pwd)/AIML/",target=/app2,readonly ubuntuesp bash
-sudo docker run -it --rm --mount type=bind,source="$(pwd)/AIML/",target=/app2,readonly ubuntuesp --entrypoint="bash"
-sudo docker run -it --rm --mount type=bind,source="$(pwd)/AIML/",target=/app2,readonly ubuntuesp --entrypoint="/bin/bash"
-sudo docker run -it --rm --entrypoint=/bin/bash --mount type=bind,source="$(pwd)/AIML/",target=/app2,readonly ubuntuesp
-sudo docker run -it --rm --entrypoint=/bin/bash --mount type=bind,source="$(pwd)/AIML/",target=/app2 ubuntuesp
-cd 
-cd GitProjects/Universidad/
-gpush
-nvim bin/
-chmod +x bin/launcher 
-chmod +x launchapp 
-mv launchapp bin/applaunch
-applaunch 
-sudo docker run --it --rm --mount src=../../../AIML/,dst=/app ubuntuesp
-sudo docker run -it --rm --mount src=../../../AIML/,dst=/app ubuntuesp
-sudo docker run -it --rm --mount src="$(pwd)/../../../AIML/",dst=/app ubuntuesp
-cd ..
-ls
-sudo docker run -it --rm --mount src="$(pwd)/AIML/",dst=/app ubuntuesp
-sudo docker run -it --rm --mount sourc="$(pwd)/AIML/",target=/app ubuntuesp
-sudo docker run -it --rm --mount type=bind,source="$(pwd)/AIML/",target=/app ubuntuesp
-pwd
-applaunch 
-applaunch bash
-export LC_TIME=es_MX
-export LC_TIME=es_ES
-sudo export LC_TIME=es_ES
-sudo export LC_TIME=es_ES.UTF8
-export LC_TIME=es_ES.UTF8
-date
-ls
-cd ..
-ls
-cd mybot/
-ls
-rm entrevista.aiml 
-cd ..
-ls
-cd ..
-ls
-.
-./run.sh 
-export LC_TIME=es_ES.ISO
-date
-export LC_TIME=es_ES.UTF8
-ls
-date
-./run.sh 
-gpush
-sudo nvim /etc/locale.gen
-nvin bin/applaunchbind
-nvim bin/applaunchbind
-chmod +x bin/*
-applaunchbind 
-nvim bin/applaunchbind
-applaunchbind 
-applaunch 
-pwd
-cd ..
-ls
-cd ..
-ls
-pwd
-applaunchbind 
-sudo docker ps -a
-applaunchbind 
-gpush
-applaunchbind 
-gpush
-applaunchbind 
-gcommit -m "Corrijo errores en las propiedades del bot"
-applaunchbind 
-gpush
-nv
-ranger
-cd bots/mybot/
-ls
-nv
-nv Dockerfile 
-date
-cdf
-ls
-./run.sh 
-gpush
-cd
-gpush
-updateGIt
-updateGit
-history
-history | grep locale
-sudo localectl set-locale LANG=LC_NAME=en_US.UTF-8
-date
-gpush
-cdf
-ls
-nv
-applaunch
-sudo systemctl start docker
-applaunch
-gpush
-applaunchbind 
-nvf
-nvconf 
-applaunchbind 
-gpush
-applaunchbind 
-gpush
-gpush
-update
-pwd
-ls
-gotop
-sudo pip install anaconda
-py
-ruby
-pythn
-py
-sudo pip3 install numpy
-sudo pip3 install simpy
-man pip
-man pip 
-sudo pip uninstall simpy
-sudo pip3 install sympy
-py pruebas.py 
-rm pruebas.py 
-nv pruebas.py
-nv *.ipynb
-nv
-jupyter --notebook
-jupy
-jupy .
-update
-sudo systemctl start docker
-applaunchbind 
-nv
-nvf
-nvconf 
-nvconf
-updateGIt
-updateGit
-nv
-locale
-chatbot
-nv pruebas.cpp
-nvf
-nvconf
-nv
-gpush
-nv
-yay -Ss nerd-fonts
-yay -Ss nerd-fonts | source
-yay -Ss nerd-fonts | grep source
-yay -S aur/nerd-fonts-source-code-pr
-nv
-yay -Ss nerd-fonts | grep complete
-yay -S aur/nerd-fonts-complete
 nv
 cdf
 ls
@@ -1385,3 +466,166 @@ nv pruebas.cpp
 rm pruebas.cpp 
 nv pruebas.py
 rm pruebas.py 
+mkdir GitProjects
+cd GI
+cd GitProjects/
+ls
+git
+git clone git@github.com:SergioQuijanoRey/dotfiles.git
+cd ..
+cd .ssh/
+ls
+ls -l
+chmod 700 *
+cd ..
+cd GitProjects/
+git clone git@github.com:SergioQuijanoRey/dotfiles.git
+cd Do
+cd dotfiles/
+ls
+make
+make setup 
+ls
+nvim Makefile 
+vi Makefile 
+cd installation_files/
+ls
+vi setup.sh 
+vim setup.sh 
+sudo pacman -S neovim
+nvim
+cd ..
+make
+make setup
+make setup
+pacman -Qi 
+pacman -Qi
+pacman -Q
+pacman -Q | wc -l
+sudo pacman -S termite
+htop
+sudo python3 -m pip install --user --upgrade pynvim
+py
+pip install pynvim
+py
+termite
+sudo pacman -Rns ristretto
+pacman -Qi scrot
+systat
+sysstat
+pacman -Ss sysstat
+pacman -Qi playerctl
+ls
+rm touchpad.conf 
+ls -a
+cd GitProjects/
+ls
+ds Universidad/
+lsblk
+sudo mkdir /media
+sudo mkdir /media/US
+sudo mkdir /media/USB
+sudo rmidr /media/US
+sudo rmdir /media/US
+sudo mount /dev/sdb1 /media/USB/
+vim
+nvim
+ls .con
+ls .config
+cd 
+ls .config/
+ls Kv
+ls
+cd .config/nvim/
+ls
+ls .a
+ls -a
+cd 
+cd .local/
+ls
+find . -name install.py
+cd ./share/nvim/plugged/YouCompleteMe/
+ls
+sudo ./install.py --all
+sudo py install.py --all
+sudo python3 install.py --all
+sudo pacman -S base-devel
+sudo python3 install.py --all
+cmake
+pacman -Ss cmake
+sudo pacman -S extra/cmake
+cd 
+nvim
+cdf
+ls
+cd 
+cdf
+ls
+tree
+nvim 
+cd ..
+gpush
+cd dotfiles/
+gpush
+ls
+nv TODO.md 
+gpush
+s
+ls
+cd
+sudo pacman -S dolphin
+pacman -Ss dolphin
+sudo pacman -S community/dolphin-emu
+lsblk
+sudo mount /dev/sdc1 /media/USB/
+lsblk -f
+LS
+htop
+htop
+ds LinuxCloud/
+ds /media/USB/SystemBackup/LinuxCloud/
+ds LinuxCloud/
+sudo pacman -S virtualbox
+pacman -Qi | grep fonts
+pacman -Q | grep fonts
+pacman -Ss nerdfonts
+pacman -Ss fonts
+pacman -Ss fonts | nv
+sudo pacman -S community/nerd-fonts-noto-sans-mono
+cd /media/USB/SystemBackup/
+ls
+rsync -zaP LinuxCloud/ ~/LinuxCloud
+ls
+ls -a
+ds GitProjects/Universidad/
+rsync -zaP --dry-run GitProjects/Universidad/ /home/sergio/GitProjects/Universidad/
+rsync -zaP --dry-run GitProjects/Universidad/ /home/sergio/GitProjects/Universidad/ | nv
+rsync -zaP GitProjects/Universidad/ /home/sergio/GitProjects/Universidad/
+ls -a
+cp *.pdf ~/
+dualdisplay 
+ls backgrounds/
+history | grep pacman
+pacman -Q | grep inconsolata
+cd GitProjects/
+ls
+cd dotfiles/
+ls
+git pull
+cd 
+nvconf 
+lsblk
+sudo mount /dev/sdb1 /media/USB/
+lsblk
+cp /media/USB/SystemBackup/.config/nvim/init.vim ~/pruebas.vim
+nvim pruebas.vim 
+diff pruebas.vim .config/nvim/init.vim 
+nvconf
+rm .config/nvim/init.vim 
+mv pruebas.vim .config/nvim/init.vim
+nvim
+nvconf 
+history | grep pacman
+nv
+pacman -Q | grep francisco
+pacman -Q | grep system

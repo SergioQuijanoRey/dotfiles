@@ -78,3 +78,8 @@ texlive-core            # For writting basic latex documents
 # I3 blocks dependencies
 #===============================================================================
 sysstat                 # For CPU Usage
+
+# Fonts
+#===============================================================================
+community/nerd-fonts-noto-sans-mono     # The system icons relies on this fonts
+
