@@ -16,7 +16,7 @@ base_dir="$HOME/GitProjects/dotfiles/installation_files"
 
 # Script process
 #===============================================================================
-base_dir/git.sh
-base_dir/packages.sh
-base_dir/download.sh
-base_dir/other.sh
+$base_dir/git.sh
+$base_dir/packages.sh
+$base_dir/download.sh
+$base_dir/other.sh
