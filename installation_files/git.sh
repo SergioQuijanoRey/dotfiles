@@ -15,9 +15,6 @@ project_folder="/home/sergio/GitProjects"
 # Script process
 #===============================================================================
 cd $project_folder
-
 git clone git@gitlab.com:SergioQuijano/Universidad.git
 git clone git@gitlab.com:SergioQuijano/misArchivos.git
-git clone git@gitlab.com:SergioQuijano/games.git
-
 git clone git@github.com:SergioQuijanoRey/dotfiles.git
