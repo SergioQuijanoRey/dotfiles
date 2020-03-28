@@ -210,7 +210,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Personal KeyBindings
 bindsym $mod+x exec lockscreen
-bindsym $mod+Shift+n exec alacritty --config-file ~/.config/alacritty/alacritty.yml -e ranger -t ranger
+bindsym $mod+Shift+n exec alacritty --config-file ~/.config/alacritty/alacritty.yml -t ranger -e ranger 
 bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to left
 bindsym $mod+Shift+g exec rofi-websearch

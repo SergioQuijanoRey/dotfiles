@@ -1,28 +1,3 @@
-touch dockerfile
-mkdir Prácticas
-mkdir Documentación
-rename Práctica 1 - Seminario.pdf
-rename PPráctica 1 - Anexo 2.pdf
-rename PPráctica 1 - Anexo 1.pdf
-rename Práctica 1 - Anexo 1.pdf
-rename Práctica 1 - Anexo 4.pdf
-rename Práctica 1 - Anexo 3.pdf
-rename Práctica 1 - Anexo 2.pdf
-rename Práctica 1 - Guión y Anexo 1.pdf
-rename Práctica 1 - Anexo 2 - Extensión Estructuras de Datos.pdf
-rename Práctica 1 - Anexo 3 - Documentación UtilidadesAIML.pdf
-rename Práctica 1 - Anexo 4 - Documentación Utilidades2020AIML.pdf
-touch ejercicios.aiml
-rename Practica 1
-rename Práctica 1
-copy
-terminal m
-touch Apuntes sesión.md
-Term
-mkdir Code
-t
-ter
-mkdir Práctica 1
 rename Práctica 1 - Guión.pdf
 mkdir Transparencias
 mkdir Relaciones de Ejercicios
@@ -37,14 +12,39 @@ rename Tema 2 - Parte 2 - Relación de ejercicios.pdf
 rename Tema 2 - Parte 2 - Ejemplo lista estructura de Requisitos.pdf
 rename Tema 2 - Parte 3 - Transparencias.pdf
 rename Tema 2 - Parte 3 - Ejemplo Modelo de caso de uso.pdf
-cut
-paste
 rename Tema 2 - Parte 3 - Relación de ejercicios.pdf
 te
 [1;5B
 delet
-terminal 
 deelte
-
 mkdir CoverNata
+search launcher
+rename Práctica 2 - Git-pdf
+rename Práctica 2 - Guión - Git-pdf
+rename Práctica 2 - Lección 3 - Auto.pdf
+rename Práctica 2 - Lección 2 - Auto.pdf
+rename Práctica 2 - Lección 3.pdf
+! chmod 644
+shell chmod 644
+open_with evince
+rename Práctica 2 - Guión General.pdf
 delete
+rename Práctica 2 - Lección 2 desarrollada.pdf
+rename Práctica 2 - Lección 3 desarrollada.pdf
+open_with 
+open_with libreoffice
+rename Práctica 2 - Guión - Git.pdf
+rename Práctica 2 - Lección 2 - Transparencias Git.pdf
+rename Práctica 2 - Lección 2 Desarrollada.pdf
+rename Práctica 2 - Lección 3 Desarrollada.pdf
+copy
+mkdir P2
+
+rename Miguel Angel.md
+cut
+paste
+rename 
+rename Práctica 2 - Miguel Angel.md
+rename Práctica 02.md
+w
+terminal 

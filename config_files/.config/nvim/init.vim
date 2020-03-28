@@ -157,6 +157,7 @@ map <S-Down> <C-Down>
 
 " Tab Navigation
 map <leader>t :tabnew<CR>
+map <leader>T :tabnew<CR>:terminal<CR>A
 map <leader>1 1gt
 map <leader>2 2gt
 map <leader>3 3gt
