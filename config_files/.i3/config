@@ -26,7 +26,6 @@ bindsym $mod+Shift+q kill
 # Rofi menu launcher
 set $rofi_theme "/home/sergio/.i3/rofithemes/sidetab.rasi"
 bindsym $mod+d exec rofi -show run -config $rofi_theme
-bindsym $mod+Shift+d exec rofi -show window -config $rofi_theme
 
 # change focus
 bindsym $mod+j focus left
@@ -211,7 +210,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Personal KeyBindings
 bindsym $mod+x exec lockscreen
-bindsym $mod+Shift+n exec alacritty --config-file ~/.config/alacritty/alacritty.yml -e ranger
+bindsym $mod+Shift+n exec alacritty --config-file ~/.config/alacritty/alacritty.yml -e ranger -t ranger
 bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to left
 bindsym $mod+Shift+g exec rofi-websearch
