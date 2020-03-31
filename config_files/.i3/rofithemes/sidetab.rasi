@@ -14,9 +14,7 @@ Version:
 // My code
 //==============================================================================
 configuration {
-	display-drun:    "Activate";
-	display-run:     "Execute";
-	display-window:  "Window";
+    modi: "window,run,ssh";
 	show-icons:      true;
 	sidebar-mode:    true;
 }

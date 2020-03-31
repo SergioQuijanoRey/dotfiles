@@ -25,7 +25,7 @@ bindsym $mod+Shift+q kill
 
 # Rofi menu launcher
 set $rofi_theme "/home/sergio/.i3/rofithemes/sidetab.rasi"
-bindsym $mod+d exec rofi -show run -config $rofi_theme
+bindsym $mod+d exec bash -c "rofi -show run -config $rofi_theme"
 
 # change focus
 bindsym $mod+j focus left
