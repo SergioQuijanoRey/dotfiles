@@ -18,8 +18,10 @@ config_files_dir="$HOME/GitProjects/dotfiles/config_files"
 # Running the script
 #===============================================================================
 
-# Syncing single files at $HOME
-rsync -zaP $HOME/.bash* $config_files_dir --exclude "$HOME/.bash_logout" "$HOME/.bash_history"
+# Syncing bash config files
+rsync -zaP "$HOME/.bash_history" "$HOME/.bash*" "$config_files_dir/" 
+
+# Syncing git config files
 rsync -zaP $HOME/.gitconfig $config_files_dir
 
 # Syncing single folders
@@ -32,3 +34,9 @@ for folder in nvim alacritty ranger
 do
     rsync -zaP $HOME/.config/$folder $config_files_dir/.config
 done
+
+# Removing trash files
+rm "$config_files_dir/.bash_history"
+rm "$config_files_dir/.bash_logout"
+rm "$config_files_dir/.config/ranger/bookmarks"
+rm "$config_files_dir/.config/ranger/history"

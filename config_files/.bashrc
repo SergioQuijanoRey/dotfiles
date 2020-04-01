@@ -91,12 +91,11 @@ fi
 
 # Importing external files
 #===============================================================================
+
 # Bash profile
-if [ -f ~/.bash_profile ]
+if [ -f "$HOME/.bash_profile" ]
 then
-		source ~/.bash_profile
-else
-		echo "Missing ~/.bash_profile"
+    source  "$HOME/.bash_profile" 
 fi
 
 # Bash aliases
