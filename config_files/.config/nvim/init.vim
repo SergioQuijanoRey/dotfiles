@@ -24,7 +24,7 @@
 "   [ ] Snippet tool
 "   [ ] YCM
 "       [ ] Disturbing documentation splits automatically created
-"       [ ] Goto Definition
+"   [ ] Look Coc.nvim as an alternative to YouCompleteMe
 
 " PLUGIN MANAGER
 "==============================================================================

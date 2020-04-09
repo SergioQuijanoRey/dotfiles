@@ -43,11 +43,6 @@ scrolling:
   # Number of lines the viewport will move for every line scrolled when
   multiplier: 3
 
-  auto_scroll: false # TODO: This wasnt in the defaults
-
-# Spaces per tab
-tabspaces: 8
-
 # Font configuration
 font:
   size: 10.0
