@@ -74,6 +74,7 @@ evince                  # PDF viewer of preference
 # Office
 #===============================================================================
 libreoffice             # For writting documents
+onlyoffice              # For writting documents in Microsoft Office Format
 pandoc                  # For converting documents formats
 texlive-core            # For writting basic latex documents
 
