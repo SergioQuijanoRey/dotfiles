@@ -16,6 +16,7 @@
 #===============================================================================
 source "/home/sergio/.bash_profile"
 wallpaper_folder="$HOME/backgrounds/"
+ROFI_THEME="/home/sergio/.i3/rofithemes/sidetab.rasi"
 
 # Script functions
 #===============================================================================
