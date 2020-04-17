@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Author:
+#     - Sergio Quijano Rey
+#     - sergiquijano@gmail.com
+# Description:
+#     - Script to push my local files to a cloud storage solution
+#     - In this case, I am using Google Drive
+#     - The cloud storage solution has to be previously configured in rclone
+# Version:
+#     - v1.0 - 17/04/2020 - First documented version
+
+# Remote name
+remote="Drive"
+
+# Updating the changes
+rclone sync --progress ~/LinuxCloud ${remote}:LinuxCloud
+rclone sync --progress ~/GitProjects/Universidad ${remote}:Universidad
