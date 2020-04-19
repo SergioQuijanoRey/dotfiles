@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#/!/usr/bin/env sh
 
 # ranger supports enhanced previews.  If the option "use_preview_script"
 # is set to True and this file exists, this script will be called and its
@@ -82,6 +82,8 @@ case "$extension" in
     pdf)
 	#evince-thumbnailer -s 400 "$path" "${cached/.jpg}" && exit 6;;
 	#try pdftoppm -jpeg -singlefile "$path" "${cached//.jpg}" && exit 6 || exit 1;;
+    try pdftoppm -jpeg -singlefile "$path" "${cached//.jpg}" && exit 6 || exit 1;; # Nueva linea
+
     #    try pdftotext -l 10 -nopgbrk -q "$path" - && \{ dump | trim | fmt -s -w $width; exit 0; } || exit 1;;
         #try pdftoppm -jpeg -singlefile "$path" "${cached//.jpg}" && exit 6 || exit 1;;
 
