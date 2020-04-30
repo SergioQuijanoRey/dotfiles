@@ -50,7 +50,7 @@ rofi					# Program launcher
 blueman					# To use bluetooth
 bluez-utils             # For command line bluetooth administration ==> bluetoothctl
 bluez-tools             # For command line bluetooth administration ==> bluetooth
-aranrd					# To control multiple displays
+arandr					# To control multiple displays
 community/lxappearance	# To set the system theme
 neofetch				# To show system information
 pavucontrol				# Volume control 
