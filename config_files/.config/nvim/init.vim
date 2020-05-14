@@ -34,6 +34,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     "===========================================================================
     Plug 'scrooloose/nerdtree'          " File exploring
     Plug 'junegunn/fzf.vim'             " Fuzzy Finder
+    Plug 'tpope/vim-fugitive'           " Git Integration
 
     " Editor
     "===========================================================================
@@ -68,7 +69,7 @@ let mapleader = ","
 set autoindent                          " Sets autoindent
 set smartindent                         " Set smartindent
 set incsearch                           " Shows results while searching
-set wildmenu                            " Tab autocomplete in command mode
+" set wildmenu                            " Tab autocomplete in command mode
 set backspace=indent,eol,start          " Normal backspace (for VI specially)
 set mouse=n                             " Allow mouse control
 set undofile                            " Persisten undos (I can undo even if I closed the file)
