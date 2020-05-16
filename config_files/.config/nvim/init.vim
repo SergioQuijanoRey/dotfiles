@@ -15,6 +15,7 @@
 "                       Some keybindings added for changing vim working dir
 "                       and for Vim Fugitive
 "                       Lightline configured, now displaying git branch
+"                       auto-pairs instead of bloated smart-input
 
 " TODO:
 "=============================================================================
@@ -38,8 +39,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 
     " Editor
     "===========================================================================
-    Plug 'kana/vim-smartinput'          " Autoclose pairs ==> DONT KNOW IF IT WORKS
-   
+    Plug 'jiangmiao/auto-pairs'         " Autoclose brackets, parenthesis...
+    
     " Visual
     "===========================================================================
     Plug 'itchyny/lightline.vim'        " Status bar. Airline is to heavy for me
