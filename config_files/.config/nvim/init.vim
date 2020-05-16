@@ -11,6 +11,10 @@
 "                       Deoplete removed, YouCompleteMe is used instead
 "                       YouCompleteMe added
 "                       NeoMake removed, I was not using it (ALE does all the work)
+"     v2.1 15/05/2020 - Added Vim Fugitive
+"                       Some keybindings added for changing vim working dir
+"                       and for Vim Fugitive
+"                       Lightline configured, now displaying git branch
 
 " TODO:
 "=============================================================================
@@ -18,12 +22,8 @@
 "   [ ] Add code to a fold, without 1. Deleting old fold 2. Creating new fold (ask on reddit)
 "   [ ] Mark trailing spaces
 "   [ ] Autoremove trailing spaces
-"   [ ] GIT plugin ==> Vim Fugitive
 "   [ ] RipGrep ==> Like FZF but for text inside files
-"   [ ] ALE go to definition ?? YCM has Go to Definition
 "   [ ] Snippet tool
-"   [ ] YCM
-"       [ ] Disturbing documentation splits automatically created
 "   [ ] Look Coc.nvim as an alternative to YouCompleteMe
 
 " PLUGIN MANAGER
@@ -42,7 +42,7 @@ call plug#begin('~/.local/share/nvim/plugged')
    
     " Visual
     "===========================================================================
-    Plug 'itchyny/lightline.vim'        " Status bar
+    Plug 'itchyny/lightline.vim'        " Status bar. Airline is to heavy for me
     Plug 'junegunn/goyo.vim'            " Focus Mode
     Plug 'ryanoasis/vim-devicons'       " Icons for NerdTree
 
@@ -69,7 +69,6 @@ let mapleader = ","
 set autoindent                          " Sets autoindent
 set smartindent                         " Set smartindent
 set incsearch                           " Shows results while searching
-" set wildmenu                            " Tab autocomplete in command mode
 set backspace=indent,eol,start          " Normal backspace (for VI specially)
 set mouse=n                             " Allow mouse control
 set undofile                            " Persisten undos (I can undo even if I closed the file)
@@ -178,12 +177,28 @@ map <leader><down> :wincmd j<CR>
 " Go to Definition
 map <leader>d :YcmCompleter GoToDefinition<CR>
 
+" Git integration. Open Git Status in vertical split
+map <leader>g :vertical Git<CR>
+
+" Change NVIM Working Directory
+" Usefull when using fzf to open a file and instantly change NVIM working dir
+map <leader>cd :cd %:p:h<CR>:pwd<CR>
+
 " PLUGINS CONFIGURATION
 "=============================================================================
 
-" YOU AUTOCOMPLETE ME
+" You Autocomplete Me
 " Autocompletions are automatically shown. Set to 0 to disable this (Control-Space to show suggestions)
 let g:ycm_auto_trigger = 1
 
-" Autoclose the preview documentation window
-let g:ycm_autoclose_preview_window_after_insertion = 1
+" Lightline Configuration
+" Added Git Branch in the status bar
+let g:lightline = {
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste' ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'FugitiveHead'
+    \ },
+\ }
