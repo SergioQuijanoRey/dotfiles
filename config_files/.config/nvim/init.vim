@@ -179,7 +179,8 @@ map <leader><down> :wincmd j<CR>
 map <leader>d :YcmCompleter GoToDefinition<CR>
 
 " Git integration. Open Git Status in vertical split
-map <leader>g :vertical Git<CR>
+map <leader>g :Git<CR>
+map <leader>G :vertical Git<CR>
 
 " Change NVIM Working Directory
 " Usefull when using fzf to open a file and instantly change NVIM working dir
@@ -190,7 +191,10 @@ map <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " You Autocomplete Me
 " Autocompletions are automatically shown. Set to 0 to disable this (Control-Space to show suggestions)
-let g:ycm_auto_trigger = 1
+"let g:ycm_auto_trigger = 1
+
+" You Autocomplete Me autoclose documentation splits
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " Lightline Configuration
 " Added Git Branch in the status bar
