@@ -45,7 +45,7 @@ scrolling:
 
 # Font configuration
 font:
-  size: 10.0
+  size: 11.0
   offset:
     x: 0
     y: 0
@@ -53,6 +53,15 @@ font:
     x: 0
     y: 0
   use_thin_strokes: true
+  normal:
+      family: Source Code Pro Medium
+      style: Regular
+  bold:
+      family: Source Code Pro Medium
+      style: Bold
+  italic:
+      family: Source Code Pro Medium
+      style: Italic
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true

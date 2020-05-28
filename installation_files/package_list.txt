@@ -85,5 +85,4 @@ sysstat                 # For CPU Usage
 
 # Fonts
 #===============================================================================
-community/nerd-fonts-noto-sans-mono     # The system icons relies on this fonts
-inconsolata                             # System Font
+adobe-source-code-pro-fonts             # Best font for my system
