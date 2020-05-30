@@ -85,4 +85,5 @@ sysstat                 # For CPU Usage
 
 # Fonts
 #===============================================================================
-adobe-source-code-pro-fonts             # Best font for my system
+adobe-source-code-pro-fonts             # Fancy font
+community/ttf-inconsolata               # Preferred font
