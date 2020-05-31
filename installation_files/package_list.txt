@@ -85,5 +85,4 @@ sysstat                 # For CPU Usage
 
 # Fonts
 #===============================================================================
-adobe-source-code-pro-fonts             # Fancy font
-community/ttf-inconsolata               # Preferred font
+community/ttf-jetbrains-mono    # Preferred font
