@@ -57,7 +57,7 @@ call plug#begin('~/.local/share/nvim/plugged')
                                         
     " Color schemes
     "===========================================================================
-    Plug 'morhetz/gruvbox'              " Gruvbox Theme
+    Plug 'gruvbox-community/gruvbox'    " Gruvbox Theme updated 
 
 call plug#end()
 
