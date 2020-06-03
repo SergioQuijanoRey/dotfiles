@@ -40,7 +40,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     " Editor
     "===========================================================================
     Plug 'jiangmiao/auto-pairs'         " Autoclose brackets, parenthesis...
-    
+
     " Visual
     "===========================================================================
     Plug 'itchyny/lightline.vim'        " Status bar. Airline is to heavy for me
@@ -50,14 +50,14 @@ call plug#begin('~/.local/share/nvim/plugged')
     " Autocompleters
     "===========================================================================
     Plug 'ycm-core/YouCompleteMe'       " Code Autocompletion
-    
+
     " Linters
     "===========================================================================
     Plug 'w0rp/ale'                     " Real time linting
-                                        
+
     " Color schemes
     "===========================================================================
-    Plug 'gruvbox-community/gruvbox'    " Gruvbox Theme updated 
+    Plug 'gruvbox-community/gruvbox'    " Gruvbox Theme updated
 
 call plug#end()
 
@@ -89,6 +89,9 @@ augroup remember_folds
   autocmd BufWinEnter * silent! loadview
 augroup END
 
+" Remove trailing white spaces
+autocmd BufWritePre * %s/\s\+$//e
+
 " PERFORMANCE
 "==============================================================================
 set autoread                                " Auto reload changed files
@@ -101,20 +104,20 @@ set nowritebackup
 set noswapfile
 
 " Clipboard
-set clipboard+=unnamedplus 
+set clipboard+=unnamedplus
 
 " VISUAL SETTINGS
 "==============================================================================
 set number                          " Show numbers
 syntax enable                       " Show syntax
-syntax on                           " Show syntax 
+syntax on                           " Show syntax
 filetype on                         " Checks automatically for filetype
 filetype plugin on                  " Plugins dependent of filetype
 set hlsearch                        " Higlights what we searched
 set laststatus=2                    " For the lightline plugin
 set nowrap                          " Don't wrap long lines
 set listchars=extends:→             " Show arrow if line continues rightwards
-set colorcolumn=80                  " Show 80 col line 
+set colorcolumn=80                  " Show 80 col line
 set splitbelow splitright           " Spliting on righ instead of below
 set guicursor=                      " Block cursor
 let loaded_matchparen= 1            " No matching parenthesis/brakets/... highlight
@@ -124,7 +127,7 @@ colorscheme gruvbox                 " Default color scheme
 " Keybindings
 "===============================================================================
 " Fast movement
-map <C-Down> 3j            
+map <C-Down> 3j
 map <C-Up> 3k
 
 " Whole block identation
@@ -138,7 +141,7 @@ map <F7> :setlocal spell! spelllang=en<CR>
 " Open a terminal (horizontal or vertical)
 map <leader>k :sp<CR>:terminal<CR>A
 map <leader>K :vsp<CR>:terminal<CR>A
- 
+
 " Focus mode for writting
 map <leader>f :Goyo 120x120<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>
 map <leader><S-f> :Goyo<CR>:set nowrap<CR>:set number<CR>
@@ -153,7 +156,7 @@ map <leader>o :NERDTreeToggle<CR>
 tnoremap <leader><Esc> <C-\><C-n>>
 
 " For avoid shifting
-map <S-Up> <C-Up> 
+map <S-Up> <C-Up>
 map <S-Down> <C-Down>
 
 " Tab Navigation
