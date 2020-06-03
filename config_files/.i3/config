@@ -13,11 +13,11 @@ set $mod Mod4
 
 # Fonts
 font pango:Inconsolata-Regular 8
- 
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# Launch terminal 
+# Launch terminal
 bindsym $mod+Return exec alacritty --config-file ~/.config/alacritty/alacritty.yml
 
 # kill focused window
@@ -182,10 +182,10 @@ client.urgent           $blue-color    $blue-color   $text-color          #00ff0
 bar {
         # Bar program
         status_command i3blocks -c /home/sergio/.i3/i3blocks.conf
-        
+
         # Position of the bar
         position top
-        
+
         # Bar colors
         colors {
 		background $bg-color
@@ -214,12 +214,12 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Personal KeyBindings
 bindsym $mod+x exec lockscreen
-bindsym $mod+Shift+n exec alacritty --config-file ~/.config/alacritty/alacritty.yml -t ranger -e ranger 
+bindsym $mod+Shift+n exec alacritty --config-file ~/.config/alacritty/alacritty.yml -t ranger -e ranger
 bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to left
 bindsym $mod+Shift+g exec rofi-websearch
 bindsym $mod+Shift+b exec firefox
-bindsym $mod+t exec wallpaper 
+bindsym $mod+t exec wallpaper
 
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
@@ -229,12 +229,12 @@ for_window [class="^.*"] border pixel 0
 
 # Apps on start
 exec feh --bg-scale "/home/sergio/backgrounds/iceberg.jpg"
-exec compton --blur-blackground
 exec whatsapp-nativefier
 exec telegram-desktop
 exec nm-applet
 exec pa-applet
 exec blueman-applet
+exec autodisplay        # Set the display configuration at startup
 
 # I3blocs events
 #===============================================================================

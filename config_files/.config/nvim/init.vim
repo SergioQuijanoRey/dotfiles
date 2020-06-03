@@ -135,8 +135,8 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Spell checking
-map <F6> :setlocal spell! spelllang=es<CR>
-map <F7> :setlocal spell! spelllang=en<CR>
+map <F5> :setlocal spell! spelllang=es<CR>
+map <F6> :setlocal spell! spelllang=en<CR>
 
 " Open a terminal (horizontal or vertical)
 map <leader>k :sp<CR>:terminal<CR>A
