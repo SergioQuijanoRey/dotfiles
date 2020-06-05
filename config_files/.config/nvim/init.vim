@@ -21,11 +21,7 @@
 "=============================================================================
 "   [ ] Name the folds I made
 "   [ ] Add code to a fold, without 1. Deleting old fold 2. Creating new fold (ask on reddit)
-"   [ ] Mark trailing spaces
-"   [ ] Autoremove trailing spaces
 "   [ ] RipGrep ==> Like FZF but for text inside files
-"   [ ] Snippet tool
-"   [ ] Look Coc.nvim as an alternative to YouCompleteMe
 
 " PLUGIN MANAGER
 "==============================================================================
@@ -49,7 +45,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 
     " Autocompleters
     "===========================================================================
-    Plug 'ycm-core/YouCompleteMe'       " Code Autocompletion
+    "Plug 'ycm-core/YouCompleteMe'      " Code Autocompletion -> Now i use coc.nvim
+    Plug 'neoclide/coc.nvim'            " Code Autocompletion
 
     " Linters
     "===========================================================================

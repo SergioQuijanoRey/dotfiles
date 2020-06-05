@@ -109,29 +109,16 @@ bindsym $mod+Shift+y move scratchpad
 bindsym $mod+y scratchpad show
 
 # Forcing apps on workspaces
-# Web apps
-assign [class="Firefox"] $workspace2
-assign [class="brave-browser"] $workspace2
-for_window [title="Save As"] floating disable   # For fixing size problems
-# Coding apps
-assign [class="Atom"] $workspace3
-assign [class="Code"] $workspace3
-assign [class="Gedit"] $workspace3
-assign [title="vim"] $workspace3
-assign [class="Apache NetBeans IDE 10.0"] $workspace3
-# File apps
-assign [class="Nautilus"] $workspace4
-assign [title="ranger"] $workspace4
-# Texting apps
-assign [class="TelegramDesktop"] $workspace5
-assign [class="whatsapp-desktop"] $workspace5
-assign [class="whats-app-nativefier-7bbd2c"] $workspace5
-assign [class="whats-app-nativefier-d52542"] $workspace5
-assign [class="Whatsie"] $workspace5
-# Document apps
-assign [class="Evince"] $workspace6
-# Music apps
-for_window [class="Spotify"] move to workspace $workspace10
+assign [class="Firefox"] $workspace2                        # Web App
+assign [class="brave-browser"] $workspace2                  # Web App
+for_window [title="Save As"] floating disable               # For fixing size problems
+assign [class="Nautilus"] $workspace4                       # Files
+assign [title="ranger"] $workspace4                         # Files
+assign [title="Nemo"] $workspace4                           # Files
+assign [class="TelegramDesktop"] $workspace5                # Texting
+assign [class="WhatsApp"] $workspace5                       # Texting
+assign [class="Evince"] $workspace6                         # Documents
+for_window [class="Spotify"] move to workspace $workspace10 # Media
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -198,9 +185,9 @@ bar {
 }
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%   #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%   #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle         # mute sound
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20        # increase screen brightness
@@ -228,13 +215,13 @@ exec syndaemon -i 0.3 -t -K -R
 for_window [class="^.*"] border pixel 0
 
 # Apps on start
-exec feh --bg-scale "/home/sergio/backgrounds/iceberg.jpg"
+exec autodisplay        # Set the display configuration at startup
 exec whatsapp-nativefier
 exec telegram-desktop
 exec nm-applet
 exec pa-applet
 exec blueman-applet
-exec autodisplay        # Set the display configuration at startup
+exec feh --bg-scale "/home/sergio/backgrounds/iceberg.jpg"
 
 # I3blocs events
 #===============================================================================
