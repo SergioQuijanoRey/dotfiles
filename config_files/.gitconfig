@@ -26,3 +26,5 @@
 
 [difftool]
     #prompt = 0
+[pull]
+	rebase = false

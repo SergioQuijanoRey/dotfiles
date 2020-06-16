@@ -80,11 +80,11 @@ set shiftwidth=4
 set expandtab
 
 " Remember folds made on a file
-augroup remember_folds
-  autocmd!
-  autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * silent! loadview
-augroup END
+" augroup remember_folds
+"   autocmd!
+"   autocmd BufWinLeave * mkview
+"   autocmd BufWinEnter * silent! loadview
+" augroup END
 
 " Remove trailing white spaces
 autocmd BufWritePre * %s/\s\+$//e
@@ -175,8 +175,11 @@ map <leader><Right> :wincmd l<CR>
 map <leader><Up> :wincmd k<CR>
 map <leader><down> :wincmd j<CR>
 
-" Go to Definition
-map <leader>d :YcmCompleter GoToDefinition<CR>
+" Go to Definition -- uses coc.nvim
+map<leader>d <Plug>(coc-definition)
+
+" Renaming -- Uses coc.nvim
+map<leader>r <Plug>(coc-rename)
 
 " Git integration. Open Git Status in vertical split
 map <leader>g :Git<CR>
@@ -188,13 +191,6 @@ map <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " PLUGINS CONFIGURATION
 "=============================================================================
-
-" You Autocomplete Me
-" Autocompletions are automatically shown. Set to 0 to disable this (Control-Space to show suggestions)
-"let g:ycm_auto_trigger = 1
-
-" You Autocomplete Me autoclose documentation splits
-let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " Lightline Configuration
 " Added Git Branch in the status bar
