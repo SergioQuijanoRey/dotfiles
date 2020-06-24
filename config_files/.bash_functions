@@ -38,7 +38,7 @@ function cdf(){
 }
 
 # Script para tener fzf con neovim
-function nvf(){
+function vf(){
 		file=$(fzf)
 		nvim "$file"
 }
