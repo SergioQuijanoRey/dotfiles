@@ -28,8 +28,8 @@ PATH="$PATH:/home/sergio/.i3/scripts"
 # NVIM + URXVT Stack
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMCMD="termite"
-export COLORTERM="termite"
+export TERMCMD="alacritty"
+export COLORTERM="alacritty"
 
 # I3WM vars
 export BROWSER="firefox"

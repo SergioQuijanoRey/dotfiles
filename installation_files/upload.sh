@@ -20,6 +20,7 @@ config_files_dir="$HOME/GitProjects/dotfiles/config_files"
 
 # Syncing bash config files
 rsync -zaP "$HOME/.bash*" "$config_files_dir/"
+rsync -zaP "$HOME/.bash_*" "$config_files_dir/"
 
 # Syncing git config files
 rsync -zaP $HOME/.gitconfig $config_files_dir
