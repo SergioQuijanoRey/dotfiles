@@ -16,11 +16,12 @@
 "                       and for Vim Fugitive
 "                       Lightline configured, now displaying git branch
 "                       auto-pairs instead of bloated smart-input
+"    v3.0 24/06/2020 - Replace YouCompleteMe with Coc.nvim
+"                      Configured Coc.nvim (I don't like the amount of config
+"                      code that I need to add to this file)
 
 " TODO:
 "=============================================================================
-"   [ ] Name the folds I made
-"   [ ] Add code to a fold, without 1. Deleting old fold 2. Creating new fold (ask on reddit)
 "   [ ] RipGrep ==> Like FZF but for text inside files
 
 " PLUGIN MANAGER
@@ -45,7 +46,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
     " Autocompleters
     "===========================================================================
-    "Plug 'ycm-core/YouCompleteMe'      " Code Autocompletion -> Now i use coc.nvim
     Plug 'neoclide/coc.nvim'            " Code Autocompletion
 
     " Linters
@@ -55,6 +55,9 @@ call plug#begin('~/.local/share/nvim/plugged')
     " Color schemes
     "===========================================================================
     Plug 'gruvbox-community/gruvbox'    " Gruvbox Theme updated
+
+    " Concrete language plugins
+    "===========================================================================
 
 call plug#end()
 
@@ -126,6 +129,8 @@ colorscheme gruvbox                 " Default color scheme
 " Fast movement
 map <C-Down> 3j
 map <C-Up> 3k
+map <C-j> 3j
+map <C-k> 3k
 
 " Whole block identation
 vnoremap < <gv
@@ -193,6 +198,7 @@ map <leader>cd :cd %:p:h<CR>:pwd<CR>
 "=============================================================================
 
 " Lightline Configuration
+"========================
 " Added Git Branch in the status bar
 let g:lightline = {
     \ 'active': {
@@ -203,3 +209,49 @@ let g:lightline = {
     \   'gitbranch': 'FugitiveHead'
     \ },
 \ }
+
+" COC Config
+"===============================================================================
+" TextEdit might fail if hidden is not set.
+set hidden
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+
+" Go To
+map <leader>qd <Plug>(coc-definition)
+
+" show documentation in preview window.
+map <leader>qk :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+" Renaming
+map <leader>qr <Plug>(coc-rename)
+
+" Autofix
+map <leader>qf  <Plug>(coc-fix-current)
+
+" Add `:Format` command to format current buffer.
+command! -nargs=0 Format :call CocAction('format')
