@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Author:
+#     Sergio Quijano Rey
+#     sergiquijano@gmail.com
+# Description:
+#     Script to save my Sims 4 game
+# Version:
+#     v1.0 - 26/06/2020: first documented version
+
+# Script parameters
+origin="$HOME/Electronic Arts/Los Sims 4/"
+dest="$HOME/LinuxCloud/Games/PC/Sims Backup/"
+
+# Saving the game
+rsync -zaP --delete "$origin" "$dest"
