@@ -11,6 +11,7 @@
 #                         folders, which are useless, are not copied. Termite
 #                         changed for Alacritty
 #     v3.0 - 28/06/2020 - Added --delete to rsync operations to get rid of some trash
+#                         Added ssh config
 
 # Script parameters
 #===============================================================================
@@ -20,11 +21,17 @@ config_files_dir="$HOME/GitProjects/dotfiles/config_files"
 #===============================================================================
 
 # Syncing bash config files
-rsync -zaP "$HOME/.bash*" "$config_files_dir"
-rsync -zaP "$HOME/.bash_*" "$config_files_dir"
+echo "DEBUG: home is $HOME"
+for file in $HOME/.bash*
+do
+    rsync -zaP $file $config_files_dir/
+done
 
 # Syncing git config files
 rsync -zaP $HOME/.gitconfig $config_files_dir
+
+# Syncing ssh config files
+rsync -zaP $HOME/.ssh/config $config_files_dir/.ssh/
 
 # Syncing single folders
 rsync -zaP --delete $HOME/.i3 $config_files_dir
