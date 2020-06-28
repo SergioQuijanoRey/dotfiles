@@ -1,5 +1,0 @@
-#!/bin/bash
-
-path="/home/sergio/GitProjects/Universidad/Asignaturas/3º Curso/2º Cuatrimestre/Inteligencia Artificial/Prácticas/Práctica 1/AIML"
-cd "$path"
-./run.sh

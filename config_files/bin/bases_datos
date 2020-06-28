@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# Conexion a la base de datos de la ETSIIT
-# Hace falta tener la VPN de la UGR activada para acceder a la base de datos
-sqlplus x2103503/x2103503@//oracle0.ugr.es:1521/practbd.oracle0.ugr.es

@@ -27,7 +27,7 @@ rsync -zaP $HOME/.gitconfig $config_files_dir
 
 # Syncing single folders
 rsync -zaP $HOME/.i3 $config_files_dir
-rsync -zaP $HOME/bin $config_files_dir
+rsync -zaP --delete $HOME/bin $config_files_dir/
 rsync -zaP $HOME/backgrounds $config_files_dir
 
 # Syncing folders in $HOME/.config

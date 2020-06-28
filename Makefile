@@ -5,7 +5,7 @@
 # 		Makefile to run different installers
 # Version:
 # 		v1.0 - 18/04/2019: First documented version
-# 		v1.1 - 16/08/2019: Makefile for the second version of the dotfiles using 
+# 		v1.1 - 16/08/2019: Makefile for the second version of the dotfiles using
 # 						   rsync instead of links
 
 # Makefile parameters

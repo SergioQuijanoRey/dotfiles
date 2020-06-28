@@ -27,7 +27,7 @@ directories=(
 #===============================================================================
 
 # Given a absolute path to the directorie of a repo, it syncs it, that's to say
-# Pull all changes from the remote server, and then add, commit and push to the 
+# Pull all changes from the remote server, and then add, commit and push to the
 # remote server
 function sync_git(){
 	echo "Syncing $1 repo"
@@ -40,7 +40,7 @@ function sync_git(){
 	# Pushing changes
 	git add .
 	git commit
-	git push 
+	git push
 
 	echo ""
 }

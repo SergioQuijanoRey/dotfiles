@@ -1,4 +1,0 @@
-#!/bin/bash
-
-path="/home/sergio/GitProjects/Universidad/Asignaturas/3º Curso/2º Cuatrimestre/Inteligencia Artificial/Prácticas/Práctica 1"
-sudo docker run -it --rm --mount type=bind,source="${path}/AIML",target="/app" ubuntuesp
