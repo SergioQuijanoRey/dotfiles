@@ -10,30 +10,31 @@
 #                         are not uploaded to the git repo. Also fonts and icons
 #                         folders, which are useless, are not copied. Termite
 #                         changed for Alacritty
+#     v3.0 - 28/06/2020 - Added --delete to rsync operations to get rid of some trash
 
 # Script parameters
 #===============================================================================
-config_files_dir="$HOME/GitProjects/dotfiles/config_files"
+config_files_dir="$HOME/GitProjects/dotfiles/config_files/"
 
 # Running the script
 #===============================================================================
 
 # Syncing bash config files
-rsync -zaP "$HOME/.bash*" "$config_files_dir/"
-rsync -zaP "$HOME/.bash_*" "$config_files_dir/"
+rsync -zaP "$HOME/.bash*" "$config_files_dir"
+rsync -zaP "$HOME/.bash_*" "$config_files_dir"
 
 # Syncing git config files
 rsync -zaP $HOME/.gitconfig $config_files_dir
 
 # Syncing single folders
-rsync -zaP $HOME/.i3 $config_files_dir
-rsync -zaP --delete $HOME/bin $config_files_dir/
-rsync -zaP $HOME/backgrounds $config_files_dir
+rsync -zaP --delete $HOME/.i3 $config_files_dir
+rsync -zaP --delete $HOME/bin $config_files_dir
+rsync -zaP --delete $HOME/backgrounds $config_files_dir
 
 # Syncing folders in $HOME/.config
 for folder in nvim alacritty ranger
 do
-    rsync -zaP $HOME/.config/$folder $config_files_dir/.config
+    rsync -zaP --delete $HOME/.config/$folder $config_files_dir/.config
 done
 
 # Removing trash files
