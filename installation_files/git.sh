@@ -17,4 +17,3 @@ project_folder="/home/sergio/GitProjects"
 cd $project_folder
 git clone git@gitlab.com:SergioQuijano/Universidad.git
 git clone git@gitlab.com:SergioQuijano/misArchivos.git
-git clone git@github.com:SergioQuijanoRey/dotfiles.git
