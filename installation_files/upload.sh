@@ -12,6 +12,7 @@
 #                         changed for Alacritty
 #     v3.0 - 28/06/2020 - Added --delete to rsync operations to get rid of some trash
 #                         Added ssh config
+#     v3.1 - 04/07/2020 - Fixed some errors
 
 # Script parameters
 #===============================================================================
@@ -21,11 +22,7 @@ config_files_dir="$HOME/GitProjects/dotfiles/config_files"
 #===============================================================================
 
 # Syncing bash config files
-echo "DEBUG: home is $HOME"
-for file in $HOME/.bash*
-do
-    rsync -zaP $file $config_files_dir/
-done
+cp $HOME/.bash* $config_files_dir/
 
 # Syncing git config files
 rsync -zaP $HOME/.gitconfig $config_files_dir
@@ -39,9 +36,10 @@ rsync -zaP --delete $HOME/bin $config_files_dir
 rsync -zaP --delete $HOME/backgrounds $config_files_dir
 
 # Syncing folders in $HOME/.config
+mkdir -p "$config_files_dir/.config" # Make sure .config folder exists in dotfiles repo
 for folder in nvim alacritty ranger
 do
-    rsync -zaP --delete $HOME/.config/$folder/ $config_files_dir/.config/$folder/
+    rsync -zaP "$HOME/.config/$folder/" "$config_files_dir/.config/$folder"
 done
 
 # Removing trash files

@@ -16,3 +16,4 @@ remote="Drive"
 # Updating the changes
 rclone sync --progress ~/LinuxCloud ${remote}:LinuxCloud
 rclone sync --progress ~/GitProjects/Universidad ${remote}:Universidad
+rclone sync --progress ~/GitProjects/apuntesuniversidad ${remote}:apuntesuniversidad
