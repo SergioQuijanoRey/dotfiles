@@ -32,6 +32,9 @@ window:
   # Window title
   title: Alacritty
 
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: true
+
   # GTK theme variant (Linux/BSD only)
   gtk_theme_variant: dark
 
@@ -81,9 +84,6 @@ selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
   save_to_clipboard: false
 
-# Allow terminal applications to change Alacritty's window title.
-dynamic_title: true
-
 # Live config reload (changes require restart)
 live_config_reload: true
 
@@ -98,7 +98,7 @@ alt_send_esc: true
 #   primary:
 #     background: '0x272822'
 #     foreground: '0xf1ebeb'
-# 
+#
 #   # Normal colors
 #   normal:
 #     black:   '0x48483e'
@@ -109,7 +109,7 @@ alt_send_esc: true
 #     magenta: '0x9358fe'
 #     cyan:    '0x56b7a5'
 #     white:   '0xacada1'
-# 
+#
 #   # Bright colors
 #   bright:
 #     black:   '0x76715e'
@@ -120,8 +120,8 @@ alt_send_esc: true
 #     magenta: '0xae82ff'
 #     cyan:    '0x66efd5'
 #     white:   '0xcfd0c2'
-# 
-# 
+#
+#
 #   indexed_colors: []
 
 # GRUVBOX DARK THEME
@@ -157,7 +157,7 @@ colors:
 
 indexed_colors: []
 
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
   color: '0xffffff'
