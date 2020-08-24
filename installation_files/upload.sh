@@ -37,7 +37,7 @@ rsync -zaP --delete $HOME/backgrounds $config_files_dir
 
 # Syncing folders in $HOME/.config
 mkdir -p "$config_files_dir/.config" # Make sure .config folder exists in dotfiles repo
-for folder in nvim alacritty ranger
+for folder in nvim alacritty ranger polybar
 do
     rsync -zaP "$HOME/.config/$folder/" "$config_files_dir/.config/$folder"
 done

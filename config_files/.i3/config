@@ -69,16 +69,16 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # Workspace naming
-set $workspace1 "1: Terminal "
-set $workspace2 "2: Navigation "
-set $workspace3 "3: Code Editing "
-set $workspace4 "4: Folders "
-set $workspace5 "5: Texting "
-set $workspace6 "6: Documents "
+set $workspace1 "1: "
+set $workspace2 "2: "
+set $workspace3 "3: "
+set $workspace4 "4: "
+set $workspace5 "5: "
+set $workspace6 "6: "
 set $workspace7 "7"
 set $workspace8 "8"
-set $workspace9 "9: Server "
-set $workspace10 "10: Music "
+set $workspace9 "9: "
+set $workspace10 "10: "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -165,25 +165,6 @@ client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-col
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $blue-color    $blue-color   $text-color          #00ff00
 
-# i3wm bar
-bar {
-        # Bar program
-        status_command i3blocks -c /home/sergio/.i3/i3blocks.conf
-
-        # Position of the bar
-        position top
-
-        # Bar colors
-        colors {
-		background $bg-color
-	    	separator #757575
-		#                  border             background         text
-		focused_workspace  $bg-color          $bg-color          $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-	        urgent_workspace   $blue-color   $blue-color   $text-color
-        }
-}
-
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%   #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%   #decrease sound volume
@@ -215,15 +196,13 @@ exec syndaemon -i 0.3 -t -K -R
 for_window [class="^.*"] border pixel 0
 
 # Apps on start
-exec autodisplay        # Set the display configuration at startup
+exec autodisplay                                            # Set the display configuration at startup
 exec whatsapp-nativefier
 exec telegram-desktop
 exec nm-applet
-exec pa-applet
 exec blueman-applet
-exec feh --bg-scale "/home/sergio/backgrounds/iceberg.jpg"
+exec feh --bg-scale "/home/sergio/backgrounds/iceberg.jpg"  # Set the wallpaper
 
-# I3blocs events
+# Polybar launcher
 #===============================================================================
-bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks    # CAPS indicator
-bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks    # CAPS indicator
+exec_always --no-startup-id $HOME/.config/polybar/launcher
