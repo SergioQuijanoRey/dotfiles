@@ -52,9 +52,6 @@ font-0 = "JetBrains Mono:size=8;1"
 font-1 = "NotoSansMono Nerd Font:style=Regular:size=8;1"
 font-2 = "JetBrains Mono:style=Regular:size=8;1"
 font-3 = "JetBrains Mono:style=Regular:size=8;1"
-; font-1 = fixed:pixelsize=10;1
-; font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
-; font-3 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = powermenu
@@ -106,7 +103,9 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+format-prefix = "FILESYSTEM "
+;label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = :%percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -153,7 +152,7 @@ label-urgent-padding = 2
 type = internal/xbacklight
 
 format = <label> <bar>
-label = BL
+label = 
 
 bar-width = 10
 bar-indicator = |
@@ -245,11 +244,12 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume =  墳 %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇 muted
-label-muted-foreground = #666
+label-muted = 婢
+label-muted-foreground = #FFFFFF
+
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
