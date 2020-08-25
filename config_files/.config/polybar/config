@@ -54,8 +54,9 @@ font-2 = "JetBrains Mono:style=Regular:size=8;1"
 font-3 = "JetBrains Mono:style=Regular:size=8;1"
 
 modules-left = i3
-modules-center = powermenu
-modules-right = filesystem xbacklight pulseaudio xkeyboard cpu wlan eth battery date
+modules-center = xbacklight pulseaudio
+modules-right = xkeyboard filesystem cpu wlan eth battery date
+; modules sin usar = powermenu
 
 tray-position = right
 tray-padding = 2
@@ -85,17 +86,19 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
+format-prefix =
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
 
-label-layout = %layout%
+label-layout =
 label-layout-underline = ${colors.secondary}
 
-label-indicator-padding = 2
-label-indicator-margin = 1
+label-indicator-padding = 0
+label-indicator-margin = 0
 label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.secondary}
+
+label-indicator-on-capslock = בּ CAPS
 
 [module/filesystem]
 type = internal/fs
@@ -103,7 +106,7 @@ interval = 25
 
 mount-0 = /
 
-format-prefix = "FILESYSTEM "
+;format-prefix = ""
 ;label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-mounted = :%percentage_used%%
 label-unmounted = %mountpoint% not mounted
@@ -141,7 +144,7 @@ label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %index%
+label-urgent = %name%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
@@ -165,16 +168,12 @@ bar-empty = ─
 bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
 
-[module/backlight-acpi]
-inherit = module/xbacklight
-type = internal/backlight
-card = intel_backlight
-
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU 💻 "
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix = " "
+;format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = #FFFFFF
 format-underline = #f90000
 label = %percentage:2%%
 
@@ -191,9 +190,12 @@ type = internal/network
 interface = wlp3s0
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
+; I don't want to see the ramp indicator
+;format-connected = <ramp-signal> <label-connected>
+format-connected = <label-connected>
 format-connected-underline = #9f78e1
-label-connected = %essid%
+;label-connected = %essid%
+label-connected =   %local_ip%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -206,7 +208,8 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
+;ramp-signal-foreground = ${colors.foreground-alt}
+ramp-signal-foreground = #FFFFFF
 
 [module/eth]
 type = internal/network
@@ -216,7 +219,7 @@ interval = 3.0
 format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
+label-connected =  %local_ip%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -243,41 +246,19 @@ label = %date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <ramp-volume> <bar-volume>
 label-volume =  墳 %percentage%%
 label-volume-foreground = ${root.foreground}
 
+format-muted = <label-muted> <bar-volume>
 label-muted = 婢
 label-muted-foreground = #FFFFFF
 
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
-
-[module/alsa]
-type = internal/alsa
-
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
-label-volume-foreground = ${root.foreground}
-
-format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 墳
+ramp-volume-3 = 
+ram-volume-foreground = #FFFFFF
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -305,29 +286,39 @@ full-at = 98
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = #ffb52a
 
-format-discharging = <animation-discharging> <label-discharging>
+;format-discharging = <animation-discharging> <label-discharging>
+format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+;ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-foreground = #FFFFFF
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+;animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-foreground = #FFFFFF
 animation-charging-framerate = 750
 
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
-animation-discharging-foreground = ${colors.foreground-alt}
-animation-discharging-framerate = 750
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-3 = 
+animation-discharging-4 = 
+;animation-discharging-foreground = ${colors.foreground-alt}
+animation-discharging-foreground = #FFFFFF
+animation-discharging-framerate = 500
 
 [module/temperature]
 type = internal/temperature
