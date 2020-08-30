@@ -19,6 +19,7 @@
 dual_display="$HOME/.i3/scripts/dualdisplay"
 mono_display="$HOME/.i3/scripts/monodisplay"
 error_log="$HOME/autodisplay.error"
+reload_polybar_script="$HOME/.config/polybar/launcher"
 
 # Var to hold the number of available displays
 result=$(xrandr | grep -w "connected" | wc -l)
@@ -35,3 +36,6 @@ else
     echo "No configuration available for this number of displays" >> $error_log
     echo "" >> $errro_log
 fi
+
+# Reload system bar
+$reload_polybar_script

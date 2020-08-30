@@ -78,10 +78,6 @@ cursor-scroll = ns-resize
 ; MODULES
 ;===============================================================================
 
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
@@ -108,7 +104,7 @@ mount-0 = /
 
 ;format-prefix = ""
 ;label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-label-mounted = :%percentage_used%%
+label-mounted = : %percentage_used%% | %used%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -237,8 +233,9 @@ date-alt = "%d/%m/%Y"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix = 
+;format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = #FFFFFF
 format-underline = #0a6cf5
 
 label = %date% %time%
@@ -281,7 +278,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/battery
 battery = BAT0
 adapter = ADP1
-full-at = 98
+full-at = 96
 
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = #ffb52a
@@ -291,7 +288,8 @@ format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground-alt}
+;format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-prefix-foreground = #FFFFFF
 format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
