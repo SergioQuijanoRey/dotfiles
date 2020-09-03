@@ -10,7 +10,7 @@
 
 # Script parameters
 #===============================================================================
-project_folder="/home/sergio/GitProjects"
+project_folder="$HOME/GitProjects"
 
 # Script process
 #===============================================================================
