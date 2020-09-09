@@ -28,3 +28,6 @@
     #prompt = 0
 [pull]
 	rebase = false
+[filesystem "N/A|11.0.8|/dev/sda2"]
+	timestampResolution = 16000 nanoseconds
+	minRacyThreshold = 5320 microseconds

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/sergio/GitProjects/TrabajoEstructurasDatosUNED/src/es/uned/lsi/eped/EvalSept2020'
 let g:netrw_dirhist_4='/home/sergio/GitProjects/PracticaIA2'
 let g:netrw_dirhist_3='/home/sergio/GitProjects/Universidad/Asignaturas/3º Curso/2º Cuatrimestre/Métodos Numéricos II/Prácticas'
 let g:netrw_dirhist_2='/home/sergio/GitProjects/Universidad/Asignaturas/3º Curso/2º Cuatrimestre/Inteligencia Artificial/Prácticas/Práctica 1/AIML/bots/mybot/maps'

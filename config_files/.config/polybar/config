@@ -54,7 +54,7 @@ font-2 = "JetBrains Mono:style=Regular:size=8;1"
 font-3 = "JetBrains Mono:style=Regular:size=8;1"
 
 modules-left = i3
-modules-center = xbacklight pulseaudio
+modules-center = xbacklight pulseaudio github
 modules-right = xkeyboard filesystem cpu wlan eth battery date
 ; modules sin usar = powermenu
 
@@ -249,7 +249,7 @@ label-volume-foreground = ${root.foreground}
 
 format-muted = <label-muted> <bar-volume>
 label-muted = 婢
-label-muted-foreground = #FFFFFF
+label-muted-foreground = ${colors.alert}
 
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -278,7 +278,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/battery
 battery = BAT0
 adapter = ADP1
-full-at = 96
+full-at = 98
 
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = #ffb52a
@@ -365,6 +365,36 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/github]
+type = internal/github
+
+format =  <label>
+format-offline = 
+label = %notifications%
+format-offline-foreground = ${colors.alert}
+format-foreground = #FFFFFF
+
+; Accessing an access token stored in file
+token = ${file:/home/sergio/.config/github/polybartoken}
+
+; Accessing an access token stored in an environment variable
+;token = ${env:GITHUB_ACCESS_TOKEN}
+;
+;; The github user for the token (unreleased)
+;; If not specified, this module uses the deprecated method of accessing your
+;; notifications, which may stop working at some point.
+user = github_user
+;
+;; Whether empty notifications should be displayed or not
+empty-notifications = false
+;
+;; Number of seconds in between requests
+interval = 10
+;
+;; Github API URL (unreleased)
+;; Default: https://api.github.com/
+api-url = https://hub.example.org/api/v3/
 
 [settings]
 screenchange-reload = true

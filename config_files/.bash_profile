@@ -2,7 +2,7 @@
 # 	Sergio Quijano Rey
 # 	sergiquijano@gmail.com
 # Description:
-# 	Customized .bash_profile 
+# 	Customized .bash_profile
 # Version
 # 	v1.0 23/10/2018 - First functionally version
 #   v2.0 01/04/2020 - Trash is cleaned
