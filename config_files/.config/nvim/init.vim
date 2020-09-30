@@ -21,11 +21,11 @@
 "                      code that I need to add to this file)
 
 " TODO:
-"=============================================================================
+"===============================================================================
 "   [ ] RipGrep ==> Like FZF but for text inside files
 
 " PLUGIN MANAGER
-"==============================================================================
+"===============================================================================
 call plug#begin('~/.local/share/nvim/plugged')
 
     " General purpose
@@ -58,7 +58,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
     " Concrete language plugins
     "===========================================================================
-
+    Plug 'keith/swift.vim'
 call plug#end()
 
 " LEADER KEY
@@ -255,3 +255,5 @@ map <leader>qf  <Plug>(coc-fix-current)
 
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
+
+" Hello my name is sergio and i am doing some tests on how to use vim autocommand for not going further than 80 characters xdd los ladas eiqw epoqwjpeoqwpoeja jlsd lñjas edpojqww peoujasjd paojs d poujqw ep

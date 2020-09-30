@@ -26,7 +26,7 @@ alias glogone="git log --oneline | nvim"
 
 # System config aliases
 alias confi3="nvim .i3/config"
-alias nvconf="nvim .config/nvim/init.vim"
+alias vconf="nvim .config/nvim/init.vim"
 alias libinputconf="sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf"
 alias reload="source .bashrc; source .bash_aliases; source .profile"
 

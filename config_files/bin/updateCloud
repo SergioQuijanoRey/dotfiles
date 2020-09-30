@@ -9,9 +9,11 @@
 #     - The cloud storage solution has to be previously configured in rclone
 # Version:
 #     - v1.0 - 17/04/2020 - First documented version
+#     - v2.0 - 30/09/2020 - Change Google Drive to Google Drive Encrypted
+#                           Slower but much safer
 
 # Remote name
-remote="Drive"
+remote="DriveCrypt"
 
 # Updating the changes
 rclone sync --progress ~/LinuxCloud ${remote}:LinuxCloud
