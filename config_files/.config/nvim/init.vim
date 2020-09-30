@@ -43,6 +43,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'itchyny/lightline.vim'        " Status bar. Airline is to heavy for me
     Plug 'junegunn/goyo.vim'            " Focus Mode
     Plug 'ryanoasis/vim-devicons'       " Icons for NerdTree
+    Plug 'ap/vim-css-color'             " Color hex rgb codes
 
     " Autocompleters
     "===========================================================================

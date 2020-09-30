@@ -158,12 +158,12 @@ set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 set $blue-color          #5DA8F4
+set $preview-color       $blue-color
 
-# Window colors
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $blue-color    $blue-color   $text-color          #00ff00
+client.focused          $bg-color           $blue-color         $text-color             $preview-color
+client.unfocused        $inactive-bg-color  $inactive-bg-color  $inactive-text-color    $preview-color
+client.focused_inactive $inactive-bg-color  $inactive-bg-color  $inactive-text-color    $preview-color
+client.urgent           $blue-color         $blue-color         $text-color             $preview-color
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%   #increase sound volume
@@ -192,8 +192,8 @@ bindsym $mod+t exec wallpaper
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
 
-# Remove green border on the left
-for_window [class="^.*"] border pixel 0
+# Windows have a border pixel of 1
+new_window pixel 1
 
 # Apps on start
 exec autodisplay                                            # Set the display configuration at startup
