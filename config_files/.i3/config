@@ -7,6 +7,9 @@
 #       v1.0: 04/09/2018 - First little rice. The config file is uncleaned
 #       v1.1: 04/09/2018 - Cleaning the config file
 #       v1.2: 29/10/2018 - Manjaro support added
+#       v2.0: 29/09/2020 -  Elegant way of solving green border problem (changing color config)
+#                           Blue borders on focused windows
+#                           pactl changed to amixer, whichs works with bluetooth audio properly
 
 # Windows modkey
 set $mod Mod4
@@ -157,6 +160,7 @@ set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
+#set $blue-color          #5DA8F4
 set $blue-color          #5DA8F4
 set $preview-color       $blue-color
 
@@ -166,9 +170,11 @@ client.focused_inactive $inactive-bg-color  $inactive-bg-color  $inactive-text-c
 client.urgent           $blue-color         $blue-color         $text-color             $preview-color
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%   #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%   #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle         # mute sound
+# Using amixer because works nice when using bluetooth headphones
+# When using pactl, keys won't change bluetooth headphones volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+   # Increase volume
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-   # Lower volume
+bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle     # Mute sound
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20        # increase screen brightness
