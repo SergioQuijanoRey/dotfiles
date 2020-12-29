@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Author:
+#   - Sergio Quijano Rey
+#   - sergiquijano@gmail.com
+# Description:
+#   - Custom command to launch scrot
+# Version:
+#   - v0.1 - 29/12/2020 - First documented version
+
+# The destination file
+dest_file="$HOME/Scrots/%d-%m-%Y::%H:%M:%S.png"
+
+# The command
+scrot -s "$dest_file"

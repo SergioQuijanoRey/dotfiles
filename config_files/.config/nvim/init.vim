@@ -20,9 +20,6 @@
 "                      Configured Coc.nvim (I don't like the amount of config
 "                      code that I need to add to this file)
 
-" TODO:
-"===============================================================================
-"   [ ] RipGrep ==> Like FZF but for text inside files
 
 " PLUGIN MANAGER
 "===============================================================================
@@ -33,6 +30,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'scrooloose/nerdtree'          " File exploring
     Plug 'junegunn/fzf.vim'             " Fuzzy Finder
     Plug 'tpope/vim-fugitive'           " Git Integration
+    Plug 'jremmen/vim-ripgrep'          " Searching into multiple files
 
     " Editor
     "===========================================================================
@@ -43,11 +41,10 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'itchyny/lightline.vim'        " Status bar. Airline is to heavy for me
     Plug 'junegunn/goyo.vim'            " Focus Mode
     Plug 'ryanoasis/vim-devicons'       " Icons for NerdTree
-    Plug 'ap/vim-css-color'             " Color hex rgb codes
 
     " Autocompleters
     "===========================================================================
-    Plug 'neoclide/coc.nvim'            " Code Autocompletion
+    Plug 'neoclide/coc.nvim'            " Code Autocompletion and other utils
 
     " Linters
     "===========================================================================
@@ -57,9 +54,6 @@ call plug#begin('~/.local/share/nvim/plugged')
     "===========================================================================
     Plug 'gruvbox-community/gruvbox'    " Gruvbox Theme updated
 
-    " Concrete language plugins
-    "===========================================================================
-    Plug 'keith/swift.vim'
 call plug#end()
 
 " LEADER KEY

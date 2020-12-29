@@ -6,14 +6,12 @@
 # Version:
 #   v1.0 29 Agosto 2018: creo la version inicial para eliminar este progama de los aliases
 #   v1.1 - 26/06/2019: database update added, comments changed to more clean version
+#   v2.0 - 22/10/2020: yay takes care of both Pacman Packages and AUR packages
 # Descripción:
 #   Upgrades the packages of both pacman and AUR
 
 # Update parameters
 update_params="-Syyu"
 
-# PACMAN upgrading
-sudo pacman $update_params
-
-# AUR upgrading
+# Pacman and AUR upgrade
 yay $update_params

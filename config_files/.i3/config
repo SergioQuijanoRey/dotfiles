@@ -113,6 +113,7 @@ bindsym $mod+y scratchpad show
 
 # Forcing apps on workspaces
 assign [class="Firefox"] $workspace2                        # Web App
+assign [class="Brave"] $workspace2                          # Web App
 assign [class="brave-browser"] $workspace2                  # Web App
 for_window [title="Save As"] floating disable               # For fixing size problems
 assign [class="Nautilus"] $workspace4                       # Files
@@ -192,7 +193,7 @@ bindsym $mod+Shift+n exec alacritty --config-file ~/.config/alacritty/alacritty.
 bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to left
 bindsym $mod+Shift+g exec rofi-websearch
-bindsym $mod+Shift+b exec firefox
+bindsym $mod+Shift+b exec brave
 bindsym $mod+t exec wallpaper
 
 # Disable tap while typing
@@ -207,7 +208,7 @@ exec whatsapp-nativefier
 exec telegram-desktop
 exec nm-applet
 exec blueman-applet
-exec feh --bg-scale "/home/sergio/backgrounds/iceberg.jpg"  # Set the wallpaper
+exec feh --bg-scale "/home/sergio/backgrounds/sudo.png"  # Set the wallpaper
 
 # Polybar launcher
 #===============================================================================

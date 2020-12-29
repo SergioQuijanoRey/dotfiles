@@ -36,3 +36,6 @@ alias ds="du -d0 -h"
 alias unterminal="bg %1 && disown %1"
 alias ls="exa"                          # Exa is a good replacement for ls
 alias la="exa -a"
+
+# Some nice colors hex values
+alias palette_green="echo '#A6B290'"

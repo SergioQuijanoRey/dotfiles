@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/sergio/GitProjects/SistemasInformacionSeminario2/src'
 let g:netrw_dirhist_6='/home/sergio/GitProjects/Exercism/go/luhn'
 let g:netrw_dirhist_5='/home/sergio/GitProjects/TrabajoEstructurasDatosUNED/src/es/uned/lsi/eped/EvalSept2020'
 let g:netrw_dirhist_4='/home/sergio/GitProjects/PracticaIA2'
