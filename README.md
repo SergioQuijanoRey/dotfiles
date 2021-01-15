@@ -9,6 +9,7 @@
 
 # TODO
 
+* [ ] Rewrite all the scripts in a more modular and clean way
 * [ ] Rewrite `README.md`, It's quite deprecated
 * [ ] Write some test to the installer
     * [ ] Docker based testing
