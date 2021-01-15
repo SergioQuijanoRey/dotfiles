@@ -9,7 +9,7 @@
 # What you can find here
 
 * `.i3`: all my config files and scripts, so you just need to install apps and dependencies to imitate my system
-* `README.md`: it has the tutorial you see here 
+* `README.md`: it has the tutorial you see here
 
 ## Some tutorial on how to config
 
@@ -53,3 +53,8 @@
 	* `i3blocks` as a replace of default `i3-bar`
 	* Configured on `~/.i3/i3blocks.conf`
 	* `sudo apt install i3blocks`
+
+# TODO
+
+* [ ] Rewrite `README.md`, It's quite deprecated
+* [ ] Write some test to the installer
