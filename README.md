@@ -7,6 +7,13 @@
     * Some scripts parameters
 * Pull request and issues are wellcome!
 
+# Prerequisites
+
+* In order to use the `Makefile` installer you need to have already installed:
+    * `git`: to clone this repo
+    * `make`: to execute the `Makefile` commands
+* If you're using `Arch`/`Manjaro`, you can install them with: `sudo pacman -S git make`
+
 # TODO
 
 * [ ] Rewrite all the scripts in a more modular and clean way
