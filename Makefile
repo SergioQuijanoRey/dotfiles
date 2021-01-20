@@ -21,6 +21,7 @@ help:
 	@echo "	make packages: installs the packages of the system"
 	@echo "	make download: gets the dotfiles from git into the host system"
 	@echo "	make upload: uploads the dotfiles in the system to the git repository"
+	@echo "	make podman_rootless: config podman to run in rootless mode"
 	@echo "	make other: executes other scripts"
 
 setup:
@@ -43,6 +44,11 @@ upload:
 	@echo "Uploading the files from the system to git repository"
 	@echo "A git push need to be done manually"
 	$(FOLDER)/upload.sh
+
+podman_rootless:
+	@echo "Configurating podman rootless mode"
+	chmod $(FOLDER)/podman_rootless.sh
+	$(FOLDER)/podman_rootless.sh
 
 other:
 	@echo "Executing other scripts"

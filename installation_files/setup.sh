@@ -19,4 +19,5 @@ base_dir="$HOME/GitProjects/dotfiles/installation_files"
 $base_dir/git.sh
 $base_dir/packages.sh
 $base_dir/download.sh
+$base_dir/podman_rootless.sh
 $base_dir/other.sh

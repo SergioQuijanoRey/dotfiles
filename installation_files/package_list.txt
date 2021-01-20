@@ -33,6 +33,9 @@ python3                 # TODO ==> Probably is a dependency for other packages, 
 community/python-pipenv # Python package and enviroment management
 clang                   # For autocompletion in Coc.nvim for C / C++
 jq                      # Command line JSON pretty printer
+podman                  # Container technology
+docker                  # Container technology
+crun                    # Needed for running podman rootless
 
 # Media
 #===============================================================================
