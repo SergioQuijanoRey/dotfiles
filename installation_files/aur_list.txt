@@ -8,7 +8,9 @@
 
 # System administration
 #===============================================================================
-gotop
+gotop       # A better top alternative
+bat         # A better cat alternative
+procs       # A better ps alternative
 
 # Others
 #===============================================================================

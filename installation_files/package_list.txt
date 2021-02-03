@@ -19,6 +19,7 @@ cronie
 alacritty               # Preferred terminal
 screen                  # For launching apps in the background
 exa                     # Good replacement for ls and tree (exa -T)
+fd                      # Good replacement for find
 
 # Programming
 #===============================================================================
