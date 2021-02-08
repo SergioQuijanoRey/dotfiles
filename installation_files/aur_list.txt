@@ -8,8 +8,8 @@
 
 # System administration
 #===============================================================================
-gotop       # A better top alternative
 bat         # A better cat alternative
+bottom      # A better top alternative
 
 # Others
 #===============================================================================
