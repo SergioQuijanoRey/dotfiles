@@ -19,6 +19,7 @@
 "    v3.0 24/06/2020 - Replace YouCompleteMe with Coc.nvim
 "                      Configured Coc.nvim (I don't like the amount of config
 "                      code that I need to add to this file)
+" TODO -- add a plugin in order to make easier to comment out blocks of code
 
 
 " PLUGIN MANAGER

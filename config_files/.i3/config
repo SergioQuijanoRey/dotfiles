@@ -208,7 +208,7 @@ exec whatsapp-nativefier
 exec telegram-desktop
 exec nm-applet
 exec blueman-applet
-exec feh --bg-scale "/home/sergio/backgrounds/sudo.png"  # Set the wallpaper
+exec feh --bg-scale "/home/sergio/backgrounds/ghost.png"  # Set the wallpaper
 
 # Polybar launcher
 #===============================================================================

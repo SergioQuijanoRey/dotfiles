@@ -39,3 +39,6 @@ alias la="exa -a"
 
 # Some nice colors hex values
 alias palette_green="echo '#A6B290'"
+
+# Gaming aliases
+alias league_ready="sudo sysctl -w abi.vsyscall32=0"

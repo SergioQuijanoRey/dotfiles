@@ -14,4 +14,4 @@
 update_params="-Syyu"
 
 # Pacman and AUR upgrade
-yay $update_params
+paru $update_params

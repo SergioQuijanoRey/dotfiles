@@ -122,3 +122,6 @@ else
     echo "Missing ~/.bash_prompt, using default prompt"
     export PS1="\u at \h in \W\n$ "
 fi
+
+# Autojump needs this
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
