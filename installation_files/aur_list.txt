@@ -13,4 +13,4 @@ bottom      # A better top alternative
 
 # Others
 #===============================================================================
-spotify
+spotify-dev     # Standard spotify is deprecated and not working
