@@ -70,6 +70,7 @@ set backspace=indent,eol,start          " Normal backspace (for VI specially)
 set mouse=n                             " Allow mouse control
 set undofile                            " Persisten undos (I can undo even if I closed the file)
 set encoding=utf-8                      " Type of encoding
+set ignorecase                          " When searching, ignore upper or lower case
 
 " Four spaces instead of tab
 filetype plugin indent on
