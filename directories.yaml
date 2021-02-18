@@ -34,7 +34,6 @@ directories:
     - gitconfig:
         repo_path: ./config_files/.ssh/config
         system_path: /home/sergio/.ssh/config
-        sync_type: dir
 
     # I3 config
     - i3 config:
