@@ -93,11 +93,6 @@ pacman:
         - pandoc                  # For converting documents formats
         - texlive-core            # For writting basic latex documents
 
-        # TODO -- this is no longer needed as we are using polybar
-        # I3 blocks dependencies
-        #===============================================================================
-        - sysstat                 # For CPU Usage
-
         # Fonts
         #===============================================================================
         - community/ttf-jetbrains-mono        # Preferred font
