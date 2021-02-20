@@ -2,17 +2,6 @@
 repo_base: /home/sergio/GitProjects/dotfiles
 
 directories:
-    - file_descr:
-        # Default sync type is file
-        # Therefore, this field does not need to be specified
-        sync_type: file
-        repo_path: ./src/main.rs
-        system_path: /home/sergio/pruebas.rs
-    - dir_descr:
-        sync_type: dir
-        repo_path: ./src/
-        system_path: /home/sergio/codigo_de_pruebas
-
     # Bash config files
     - bash rc:
         repo_path: ./config_files/.bashrc
