@@ -31,4 +31,4 @@ parse_git_branch() {
 
 # Changing prompt
 #===============================================================================
-export PS1="$purple\u ${white}at $green$cyan\h ${white}in $WHITE$green\w $RED\$(parse_git_branch)\n$NC$ "
+export PS1="$purple\u ${white}at $green$cyan\h ${white}in $WHITE$green\w $red\$(parse_git_branch)\n$NC$ "
