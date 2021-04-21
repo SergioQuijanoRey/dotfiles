@@ -100,13 +100,15 @@ pacman:
         - community/nerd-fonts-noto-sans-mono # Font with icons - Select icons on https://www.nerdfonts.com/cheat-sheet
 
 aur:
-    install_command: paru -S --noconfirm
+    install_command: yay -S --noconfirm
     packages:
         # System administration
         #===============================================================================
         - gotop       # A better top alternative
         - bat         # A better cat alternative
+        - duf         # For seeing disk usage
 
         # Others
         #===============================================================================
         - spotify
+        - paru        # Rewrite of yay in Rust. Quite not stable
