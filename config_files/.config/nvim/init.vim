@@ -32,6 +32,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'junegunn/fzf.vim'             " Fuzzy Finder
     Plug 'tpope/vim-fugitive'           " Git Integration
     Plug 'jremmen/vim-ripgrep'          " Searching into multiple files
+    Plug 'psliwka/vim-smoothie'         " Smooth scrolling
 
     " Editor
     "===========================================================================
@@ -114,7 +115,7 @@ set hlsearch                        " Higlights what we searched
 set laststatus=2                    " For the lightline plugin
 set nowrap                          " Don't wrap long lines
 set listchars=extends:→             " Show arrow if line continues rightwards
-set colorcolumn=80                  " Show 80 col line
+set colorcolumn=100                 " Show 100 col line
 set splitbelow splitright           " Spliting on righ instead of below
 set guicursor=                      " Block cursor
 let loaded_matchparen= 1            " No matching parenthesis/brakets/... highlight

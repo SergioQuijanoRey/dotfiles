@@ -10,8 +10,9 @@
 # Descripción:
 #   Upgrades the packages of both pacman and AUR
 
-# Update parameters
+# Parameters
+package_manager="yay"
 update_params="-Syyu"
 
 # Pacman and AUR upgrade
-paru $update_params
+$package_manager $update_params

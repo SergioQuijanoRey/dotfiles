@@ -33,3 +33,6 @@ export COLORTERM="alacritty"
 
 # I3WM vars
 export BROWSER="firefox"
+
+# To force fzf.vim to ignore .gitignore files
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
