@@ -40,9 +40,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 
     " Visual
     "===========================================================================
-    Plug 'itchyny/lightline.vim'        " Status bar. Airline is to heavy for me
-    Plug 'junegunn/goyo.vim'            " Focus Mode
-    Plug 'ryanoasis/vim-devicons'       " Icons for NerdTree
+    Plug 'vim-airline/vim-airline'          " Status bar. Lightline is a lighter alternative
+    Plug 'vim-airline/vim-airline-themes'   " Status bar themes
+    Plug 'junegunn/goyo.vim'                " Focus Mode
+    Plug 'ryanoasis/vim-devicons'           " Icons for NerdTree
 
     " Autocompleters
     "===========================================================================
@@ -112,7 +113,6 @@ syntax on                           " Show syntax
 filetype on                         " Checks automatically for filetype
 filetype plugin on                  " Plugins dependent of filetype
 set hlsearch                        " Higlights what we searched
-set laststatus=2                    " For the lightline plugin
 set nowrap                          " Don't wrap long lines
 set listchars=extends:→             " Show arrow if line continues rightwards
 set colorcolumn=100                 " Show 100 col line
@@ -194,19 +194,25 @@ map <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " PLUGINS CONFIGURATION
 "=============================================================================
+" Set the airline theme
+let g:airline_theme='bubblegum'
 
-" Lightline Configuration
-"========================
-" Added Git Branch in the status bar
-let g:lightline = {
-    \ 'active': {
-    \   'left': [ [ 'mode', 'paste' ],
-    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-    \ },
-    \ 'component_function': {
-    \   'gitbranch': 'FugitiveHead'
-    \ },
-\ }
+" Allow powerline font (instead of straight borders, triangle borders)
+let g:airline_powerline_fonts = 1
+
+" Better tab display for airline
+" Got from https://www.reddit.com/r/vim/comments/crs61u/best_airline_settings/
+let g:airline#extensions#tabline#enabled = 1            " enable airline tabline
+let g:airline#extensions#tabline#show_close_button = 0  " remove 'X' at the end of the tabline
+let g:airline#extensions#tabline#tabs_label = ''        " can put text here like BUFFERS to denote buffers (I clear it so nothing is shown)
+let g:airline#extensions#tabline#buffers_label = ''     " can put text here like TABS to denote tabs (I clear it so nothing is shown)
+let g:airline#extensions#tabline#tab_min_count = 2      " minimum of 2 tabs needed to display the tabline
+let g:airline#extensions#tabline#show_buffers = 0       " dont show buffers in the tabline
+let g:airline#extensions#tabline#show_splits = 0        " disables the buffer name that displays on the right of the tabline
+let g:airline#extensions#tabline#show_tab_nr = 0        " disable tab numbers
+let g:airline#extensions#tabline#show_tab_type = 0      " disables the weird orange arrow on the tabline
+
+
 
 " COC Config
 "===============================================================================
