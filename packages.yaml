@@ -77,10 +77,13 @@ pacman:
         - xclip                   # Clipboard for communicating Neovim and the System
         - polybar                 # System bar
 
+        # Browsers
+        #===============================================================================
+        - firefox                 # Second browser
+        - brave                   # Primary browser
+
         # Others
         #===============================================================================
-        - firefox                 # Primary browser
-        - brave                   # Secondary browser
         - telegram-desktop        # Messaging app
         - discord                 # Messaging app
         - evince                  # PDF viewer of preference
@@ -96,8 +99,11 @@ pacman:
         # Fonts
         #===============================================================================
         - community/ttf-jetbrains-mono        # Preferred font
+        - community/ttf-fira-code             # Second preferred font
         - community/ttf-nerd-fonts-symbols    # Font with icons
         - community/nerd-fonts-noto-sans-mono # Font with icons - Select icons on https://www.nerdfonts.com/cheat-sheet
+        - community/nerd-fonts-noto-sans-mono # Font with icons - Select icons on https://www.nerdfonts.com/cheat-sheet
+        - community/nerd-fonts-roboto-mono    # Other nice font
 
 aur:
     install_command: yay -S --noconfirm
