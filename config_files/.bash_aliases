@@ -34,11 +34,14 @@ alias reload="source .bashrc; source .bash_aliases; source .profile"
 # Administration aliases
 alias ds="du -d0 -h"
 alias unterminal="bg %1 && disown %1"
-alias ls="exa"                          # Exa is a good replacement for ls
-alias la="exa -a"
 
 # Some nice colors hex values
 alias palette_green="echo '#A6B290'"
 
 # Gaming aliases
 alias league_ready="sudo sysctl -w abi.vsyscall32=0"
+
+# Replacements (change one command to use other)
+alias ls="exa"                          # Exa is a good replacement for ls
+alias la="exa -a"
+alias cat="bat -p"
