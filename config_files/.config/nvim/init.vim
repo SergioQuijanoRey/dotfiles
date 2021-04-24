@@ -3,24 +3,7 @@
 "     sergiquijano@gmail.com
 " Description:
 "     CONFIG FILE FOR NEOVIM
-" Version:
-"     v1.0 06/02/2019 - First functionally version of the configuration
-"     v1.1 08/02/2019 - More pulished configuration, better organized
-"     v1.2 02/05/2019 - Tabs changed by spaces and idention corrected
-"     v2.0 22/03/2020 - New commands for navigating tabs and splits
-"                       Deoplete removed, YouCompleteMe is used instead
-"                       YouCompleteMe added
-"                       NeoMake removed, I was not using it (ALE does all the work)
-"     v2.1 15/05/2020 - Added Vim Fugitive
-"                       Some keybindings added for changing vim working dir
-"                       and for Vim Fugitive
-"                       Lightline configured, now displaying git branch
-"                       auto-pairs instead of bloated smart-input
-"    v3.0 24/06/2020 - Replace YouCompleteMe with Coc.nvim
-"                      Configured Coc.nvim (I don't like the amount of config
-"                      code that I need to add to this file)
 " TODO -- add a plugin in order to make easier to comment out blocks of code
-
 
 " PLUGIN MANAGER
 "===============================================================================
@@ -80,13 +63,6 @@ set smarttab                            " Set smarttab
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
-" Remember folds made on a file
-" augroup remember_folds
-"   autocmd!
-"   autocmd BufWinLeave * mkview
-"   autocmd BufWinEnter * silent! loadview
-" augroup END
 
 " Remove trailing white spaces
 autocmd BufWritePre * %s/\s\+$//e
@@ -211,8 +187,6 @@ let g:airline#extensions#tabline#show_buffers = 0       " dont show buffers in t
 let g:airline#extensions#tabline#show_splits = 0        " disables the buffer name that displays on the right of the tabline
 let g:airline#extensions#tabline#show_tab_nr = 0        " disable tab numbers
 let g:airline#extensions#tabline#show_tab_type = 0      " disables the weird orange arrow on the tabline
-
-
 
 " COC Config
 "===============================================================================
