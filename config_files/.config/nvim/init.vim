@@ -61,6 +61,7 @@ set mouse=n                             " Allow mouse control
 set undofile                            " Persisten undos (I can undo even if I closed the file)
 set encoding=utf-8                      " Type of encoding
 set ignorecase                          " When searching, ignore upper or lower case
+set scrolloff=4                         " Start scrolling before getting to last line
 
 " Four spaces instead of tab
 filetype plugin indent on
@@ -140,6 +141,9 @@ tnoremap <leader><Esc> <C-\><C-n>>
 map <S-Up> <C-Up>
 map <S-Down> <C-Down>
 
+" Clears the search highlight
+map <leader>m :noh<CR>
+
 " Tab Navigation
 map <leader>t :tabnew<CR>
 map <leader>T :tabnew<CR>:terminal<CR>A
@@ -172,73 +176,3 @@ map <leader>G :vertical Git<CR>
 " Change NVIM Working Directory
 " Usefull when using fzf to open a file and instantly change NVIM working dir
 map <leader>cd :cd %:p:h<CR>:pwd<CR>
-
-" PLUGINS CONFIGURATION
-"=============================================================================
-" Set the airline theme
-let g:airline_theme='bubblegum'
-
-" Allow powerline font (instead of straight borders, triangle borders)
-let g:airline_powerline_fonts = 1
-
-" Better tab display for airline
-" Got from https://www.reddit.com/r/vim/comments/crs61u/best_airline_settings/
-let g:airline#extensions#tabline#enabled = 1            " enable airline tabline
-let g:airline#extensions#tabline#tab_min_count = 2      " minimum of 2 tabs needed to display the tabline
-let g:airline#extensions#tabline#show_buffers = 0       " dont show buffers in the tabline
-let g:airline#extensions#tabline#show_splits = 0        " disables the buffer name that displays on the right of the tabline
-let g:airline#extensions#tabline#show_tab_nr = 0        " disable tab numbers
-let g:airline#extensions#tabline#show_tab_type = 0      " disables the weird orange arrow on the tabline
-let g:airline#extensions#tabline#fnamemod = ':t'        " Show only filename in tab
-
-" Avoid giving terminal tabs a bad name
-let g:airline#extensions#tabline#ignore_bufadd_pat = 'defx|gundo|nerd_tree|startify|tagbar|undotree|vimfiler'
-
-" Formatter for tabnames
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-
-" COC Config
-"===============================================================================
-" TextEdit might fail if hidden is not set.
-set hidden
-
-" Give more space for displaying messages.
-set cmdheight=2
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=300
-
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
-
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
-
-" Go To
-map <leader>qd <Plug>(coc-definition)
-
-" show documentation in preview window.
-map <leader>qk :call <SID>show_documentation()<CR>
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
-
-" Renaming
-map <leader>qr <Plug>(coc-rename)
-
-" Autofix
-map <leader>qf  <Plug>(coc-fix-current)
-
-" Add `:Format` command to format current buffer.
-command! -nargs=0 Format :call CocAction('format')
