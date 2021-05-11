@@ -3,7 +3,6 @@
 "     sergiquijano@gmail.com
 " Description:
 "     CONFIG FILE FOR NEOVIM
-" TODO -- add a plugin in order to make easier to comment out blocks of code
 
 " PLUGIN MANAGER
 "===============================================================================
@@ -20,6 +19,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     " Editor
     "===========================================================================
     Plug 'jiangmiao/auto-pairs'         " Autoclose brackets, parenthesis...
+    Plug 'preservim/nerdcommenter'      " Commenting code
 
     " Visual
     "===========================================================================
@@ -28,17 +28,14 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'junegunn/goyo.vim'                " Focus Mode
     Plug 'ryanoasis/vim-devicons'           " Icons for NerdTree
 
-    " Autocompleters
+    " Language server protocols, codecompletions, ...
     "===========================================================================
-    Plug 'neoclide/coc.nvim'            " Code Autocompletion and other utils
-
-    " Linters
-    "===========================================================================
-    Plug 'w0rp/ale'                     " Real time linting
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Code Autocompletion and other utils
 
     " Color schemes
     "===========================================================================
     Plug 'gruvbox-community/gruvbox'    " Gruvbox Theme updated
+    Plug 'joshdick/onedark.vim'         " Secondary Theme
 
     " Weird language support
     "===========================================================================
@@ -70,7 +67,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" Remove trailing white spaces
+" Remove trailing white spaces when saving file
 autocmd BufWritePre * %s/\s\+$//e
 
 " PERFORMANCE
