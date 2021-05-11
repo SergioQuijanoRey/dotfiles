@@ -130,8 +130,6 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Resize windows
 mode "resize" {
@@ -195,6 +193,7 @@ bindsym $mod+Shift+p move workspace to left
 bindsym $mod+Shift+g exec rofi-websearch
 bindsym $mod+Shift+b exec brave
 bindsym $mod+t exec wallpaper
+bindsym $mod+Shift+e exec shutdown_menu # Shutdown menu
 
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
