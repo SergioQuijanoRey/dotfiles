@@ -50,6 +50,11 @@ directories:
         system_path: /home/sergio/.config/alacritty
         sync_type: dir
 
+    - kitty config:
+        repo_path: ./config_files/.config/kitty
+        system_path: /home/sergio/.config/kitty
+        sync_type: dir
+
     - ranger config:
         repo_path: ./config_files/.config/ranger
         system_path: /home/sergio/.config/ranger

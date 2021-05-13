@@ -21,7 +21,7 @@ font pango:Inconsolata-Regular 8
 floating_modifier $mod
 
 # Launch terminal
-bindsym $mod+Return exec alacritty --config-file ~/.config/alacritty/alacritty.yml
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -194,6 +194,7 @@ bindsym $mod+Shift+g exec rofi-websearch
 bindsym $mod+Shift+b exec brave
 bindsym $mod+t exec wallpaper
 bindsym $mod+Shift+e exec shutdown_menu # Shutdown menu
+bindsym $mod+p exec rofi -show emoji -modi emoji
 
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
