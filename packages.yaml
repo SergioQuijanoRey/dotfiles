@@ -53,6 +53,7 @@ pacman:
         - kdenlive                # Editing video
         - vlc                     # Playing videos
         - playerctl
+        - mpv                     # Play twitch on the terminal
 
         # i3 components
         #===============================================================================
