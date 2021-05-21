@@ -40,7 +40,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     " Weird language support
     "===========================================================================
     " TODO -- delete this pluging when uni homework is finished
-    Plug 'vale1410/vim-minizinc'
+    Plug 'PontusPersson/pddl.vim'
 
 call plug#end()
 
@@ -83,6 +83,10 @@ set noswapfile
 
 " Clipboard
 set clipboard+=unnamedplus
+
+" Avoid flashy terminal
+au TermEnter * setlocal scrolloff=0
+au TermLeave * setlocal scrolloff=10
 
 " VISUAL SETTINGS
 "==============================================================================
