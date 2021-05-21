@@ -54,6 +54,7 @@ pacman:
         - vlc                     # Playing videos
         - playerctl
         - mpv                     # Play twitch on the terminal
+        - youtube-dl              # Dowload videos from youtube & twitch
 
         # i3 components
         #===============================================================================
