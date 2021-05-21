@@ -28,11 +28,11 @@ PATH="$PATH:/home/sergio/.i3/scripts"
 # NVIM + URXVT Stack
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMCMD="alacritty"
-export COLORTERM="alacritty"
+export TERMCMD="kitty"
+export COLORTERM="kitty"
 
 # I3WM vars
-export BROWSER="firefox"
+export BROWSER="brave"
 
 # To force fzf.vim to ignore .gitignore files
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
