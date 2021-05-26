@@ -21,6 +21,7 @@ fi
 #==============================================================================
 PATH="$PATH:/home/sergio/bin"
 PATH="$PATH:/home/sergio/.i3/scripts"
+PATH="$PATH:/home/sergio/.local/bin"
 
 # Enviroment vars
 #===============================================================================

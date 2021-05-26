@@ -22,6 +22,9 @@ else
   set signcolumn=yes
 endif
 
+" Renaming -- Uses coc.nvim
+map<leader>qr <Plug>(coc-rename)
+
 " Go To
 map <leader>qd <Plug>(coc-definition)
 
@@ -39,7 +42,10 @@ endfunction
 map <leader>qr <Plug>(coc-rename)
 
 " Autofix
-map <leader>qf  <Plug>(coc-fix-current)
+map <leader>qf <Plug>(coc-fix-current)
+
+" Format selected" Format selected
+xmap <leader>q=  <Plug>(coc-format-selected)
 
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')

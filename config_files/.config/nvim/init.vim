@@ -3,6 +3,8 @@
 "     sergiquijano@gmail.com
 " Description:
 "     CONFIG FILE FOR NEOVIM
+" TODO:
+"   [ ] Move from CoC to builtin lsp
 
 " PLUGIN MANAGER
 "===============================================================================
@@ -37,7 +39,6 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'kyazdani42/nvim-web-devicons'     " Icons for the plugig
 
     " Treesitter -- Advance hightlighting
-    " {...}: Update when installing or updating plugin
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
     " Color schemes
@@ -168,12 +169,6 @@ map <leader><Left> :wincmd h<CR>
 map <leader><Right> :wincmd l<CR>
 map <leader><Up> :wincmd k<CR>
 map <leader><down> :wincmd j<CR>
-
-" Go to Definition -- uses coc.nvim
-map<leader>d <Plug>(coc-definition)
-
-" Renaming -- Uses coc.nvim
-map<leader>r <Plug>(coc-rename)
 
 " Git integration. Open Git Status in vertical split
 map <leader>g :Git<CR>
