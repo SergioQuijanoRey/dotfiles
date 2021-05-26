@@ -11,9 +11,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     " General purpose
     "===========================================================================
     Plug 'scrooloose/nerdtree'          " File exploring
-    Plug 'junegunn/fzf.vim'             " Fuzzy Finder
     Plug 'tpope/vim-fugitive'           " Git Integration
-    Plug 'jremmen/vim-ripgrep'          " Searching into multiple files
     Plug 'psliwka/vim-smoothie'         " Smooth scrolling
 
     " Editor
@@ -31,6 +29,16 @@ call plug#begin('~/.local/share/nvim/plugged')
     " Language server protocols, codecompletions, ...
     "===========================================================================
     Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Code Autocompletion and other utils
+
+    " Telescope
+    Plug 'nvim-lua/popup.nvim'              " Requirement for telescope
+    Plug 'nvim-lua/plenary.nvim'            " Requirement for telescope
+    Plug 'nvim-telescope/telescope.nvim'    " The plugin
+    Plug 'kyazdani42/nvim-web-devicons'     " Icons for the plugig
+
+    " Treesitter -- Advance hightlighting
+    " {...}: Update when installing or updating plugin
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
     " Color schemes
     "===========================================================================
@@ -129,9 +137,6 @@ map <leader>K :vsp<CR>:terminal<CR>A
 map <leader>f :Goyo 120x120<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>
 map <leader><S-f> :Goyo<CR>:set nowrap<CR>:set number<CR>
 
-" Fuzzy File Finder
-map <leader>p :FZF<CR>
-
 " Open Nerd Tree
 map <leader>o :NERDTreeToggle<CR>
 
@@ -177,3 +182,9 @@ map <leader>G :vertical Git<CR>
 " Change NVIM Working Directory
 " Usefull when using fzf to open a file and instantly change NVIM working dir
 map <leader>cd :cd %:p:h<CR>:pwd<CR>
+
+" Remaps for telescope
+nnoremap <leader>p <cmd>Telescope find_files<cr>
+nnoremap <leader>lg <cmd>Telescope live_grep<cr>
+nnoremap <leader>lb <cmd>Telescope buffers<cr>
+nnoremap <leader>lh <cmd>Telescope help_tags<cr>
