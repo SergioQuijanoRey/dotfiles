@@ -53,6 +53,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 call plug#end()
 
+" Load Lua config files
+"===============================================================================
+lua require("treesitter")
+
 " LEADER KEY
 "==============================================================================
 let mapleader = ","
@@ -183,3 +187,4 @@ nnoremap <leader>p <cmd>Telescope find_files<cr>
 nnoremap <leader>lg <cmd>Telescope live_grep<cr>
 nnoremap <leader>lb <cmd>Telescope buffers<cr>
 nnoremap <leader>lh <cmd>Telescope help_tags<cr>
+nnoremap <leader>lf <cmd>Telescope filetypes<cr>
