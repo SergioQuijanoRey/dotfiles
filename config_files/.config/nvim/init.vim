@@ -46,16 +46,12 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'gruvbox-community/gruvbox'    " Gruvbox Theme updated
     Plug 'joshdick/onedark.vim'         " Secondary Theme
 
-    " Weird language support
-    "===========================================================================
-    " TODO -- delete this pluging when uni homework is finished
-    Plug 'PontusPersson/pddl.vim'
-
 call plug#end()
 
 " Load Lua config files
 "===============================================================================
 lua require("treesitter")
+lua require("telescope_conf")
 
 " LEADER KEY
 "==============================================================================
