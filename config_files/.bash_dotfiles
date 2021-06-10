@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+# My personal configs for bash
+# Not the usual file to put the configs. In order to have the same config wether we source .bash_profile
+# or .bashrc
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+# Sourcing bash config files
+#==============================================================================
+
+# Bash aliases
+if [ -f ~/.bash_aliases ]
+then
+    source ~/.bash_aliases
+else
+    echo "Missing ~/.bash_aliases"
+fi
+
+# Bash functions
+if [ -f ~/.bash_functions ]
+then
+    source ~/.bash_functions
+else
+    echo "Missing ~/.bash_functions"
+fi
+
+# Bash Prompt
+if [ -f ~/.bash_prompt ]
+then
+    source ~/.bash_prompt
+else
+    echo "Missing ~/.bash_prompt, using default prompt"
+    export PS1="\u at \h in \W\n$ "
+fi
+
+# My personal paths
+#==============================================================================
+PATH="$PATH:/home/sergio/bin"
+PATH="$PATH:/home/sergio/.i3/scripts"
+PATH="$PATH:/home/sergio/.local/bin"
+
+# Enviroment vars
+#===============================================================================
+
+# NVIM + Terminal
+export EDITOR="nvim"
+export VISUAL="nvim"
+export TERMCMD="kitty"
+export COLORTERM="kitty"
+
+# I3WM vars
+export BROWSER="brave"
+
+# Other stuff
+#===============================================================================
+
+# Autojump needs this
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+
+# To force fzf.vim to ignore .gitignore files
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+

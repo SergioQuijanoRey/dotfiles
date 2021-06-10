@@ -9,6 +9,9 @@ directories:
     - bash profile:
         repo_path: ./config_files/.bash_profile
         system_path: /home/sergio/.bash_profile
+    - bash dotfiles:
+        repo_path: ./config_files/.bash_dotfiles
+        system_path: /home/sergio/.bash_dotfiles
     - bash aliases:
         repo_path: ./config_files/.bash_aliases
         system_path: /home/sergio/.bash_aliases

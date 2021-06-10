@@ -1,11 +1,3 @@
-# Author:
-# 		Sergio Quijano Rey
-# 		sergiquijano@gmail.com
-# Description:
-# 		My .bashrc
-# Version:
-# 		v1.0 - 18/04/2019: First well documented and clean version
-
 # Default section
 #===============================================================================
 # If not running interactively, don't do anything
@@ -89,39 +81,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Importing external files
+# Source my configs saved in other file
 #===============================================================================
 
-# Bash profile
-if [ -f "$HOME/.bash_profile" ]
+if [ -f "$HOME/.bash_dotfiles" ];
 then
-    source  "$HOME/.bash_profile"
-fi
-
-# Bash aliases
-if [ -f ~/.bash_aliases ]
-then
-		source ~/.bash_aliases
+    source ~/.bash_dotfiles
 else
-		echo "Missing ~/.bash_aliases"
+    echo "Missing ~/.bash_dotfiles"
 fi
-
-# Bash functions
-if [ -f ~/.bash_functions ]
-then
-		source ~/.bash_functions
-else
-		echo "Missing ~/.bash_functions"
-fi
-
-# Bash Prompt
-if [ -f ~/.bash_prompt ]
-then
-    source ~/.bash_prompt
-else
-    echo "Missing ~/.bash_prompt, using default prompt"
-    export PS1="\u at \h in \W\n$ "
-fi
-
-# Autojump needs this
-[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
