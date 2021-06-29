@@ -22,6 +22,7 @@ floating_modifier $mod
 
 # Launch terminal
 bindsym $mod+Return exec kitty
+bindsym $mod+Shift+Return exec kitty tmux-init
 
 # kill focused window
 bindsym $mod+Shift+q kill

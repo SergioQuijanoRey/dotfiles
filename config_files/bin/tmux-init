@@ -1,0 +1,3 @@
+# Attach to a tmux session
+# If not session exists, creates one
+tmux a || tmux
