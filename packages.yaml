@@ -45,6 +45,7 @@ pacman:
         - podman                  # Container technology
         - docker                  # Container technology
         - crun                    # Needed for running podman rootless
+        - tmux                    # Terminal multiplexer
 
         # Media
         #===============================================================================

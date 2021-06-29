@@ -67,3 +67,8 @@ directories:
         repo_path: ./config_files/.config/polybar
         system_path: /home/sergio/.config/polybar
         sync_type: dir
+
+    - tmux config:
+        repo_path: ./config_files/.config/.tmux.conf
+        system_path: /home/sergio/.tmux.conf
+
