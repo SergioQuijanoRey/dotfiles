@@ -31,6 +31,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     " Language server protocols, codecompletions, ...
     "===========================================================================
     Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Code Autocompletion and other utils
+    Plug 'fannheyward/telescope-coc.nvim'               " Integrate with telescope
 
     " Telescope
     Plug 'nvim-lua/popup.nvim'              " Requirement for telescope
@@ -182,5 +183,8 @@ map <leader>cd :cd %:p:h<CR>:pwd<CR>
 nnoremap <leader>p <cmd>Telescope find_files<cr>
 nnoremap <leader>lg <cmd>Telescope live_grep<cr>
 nnoremap <leader>lb <cmd>Telescope buffers<cr>
-nnoremap <leader>lh <cmd>Telescope help_tags<cr>
 nnoremap <leader>lf <cmd>Telescope filetypes<cr>
+nnoremap <leader>l/ <cmd> Telescope current_buffer_fuzzy_find<cr>
+
+" Source config
+nnoremap <F4> :source ~/.config/nvim/init.vim<cr>
