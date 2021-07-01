@@ -24,7 +24,7 @@ pacman:
         - htop
         - rsync
         - cronie
-        - alacritty               # Preferred terminal
+        - kitty                   # Preferred terminal
         - screen                  # For launching apps in the background
         - exa                     # Good replacement for ls and tree (exa -T)
         - fd                      # Good replacement for find
@@ -32,7 +32,6 @@ pacman:
         # Programming
         #===============================================================================
         - nvim                    # Main editor
-        - community/code          # VSCode
         - jupyter                 # Python Notebook framework
         - valgrind                # Mem debugging for C/C++
         - ranger                  # Nice CLI file manager
@@ -49,13 +48,9 @@ pacman:
 
         # Media
         #===============================================================================
-        - gimp                    # Image editor
-        - obs-studio              # Recording / Streaming
-        - kdenlive                # Editing video
         - vlc                     # Playing videos
         - playerctl
         - mpv                     # Play twitch on the terminal
-        - youtube-dl              # Dowload videos from youtube & twitch
 
         # i3 components
         #===============================================================================
@@ -113,7 +108,7 @@ aur:
     packages:
         # System administration
         #===============================================================================
-        - gotop       # A better top alternative
+        - bottom      # A better top alternative - like gotop but using rust
         - bat         # A better cat alternative
         - duf         # For seeing disk usage
 
@@ -121,3 +116,18 @@ aur:
         #===============================================================================
         - spotify
         - paru        # Rewrite of yay in Rust. Quite not stable
+
+# Optional packages, no need to install them for having an usable system
+optional:
+    install_command: sudo pacman -S --noconfirm
+    packages:
+        # Programming
+        # ===============================================================================
+        - community/code          # VSCode
+
+        # Media
+        # ===============================================================================
+        - gimp                    # Image editor
+        - obs-studio              # Recording / Streaming
+        - kdenlive                # Editing video
+        - youtube-dl              # Dowload videos from youtube & twitch
