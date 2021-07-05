@@ -5,54 +5,17 @@
 "     CONFIG FILE FOR NEOVIM
 " TODO:
 "   [ ] Move from CoC to builtin lsp
-
-" PLUGIN MANAGER
-"===============================================================================
-call plug#begin('~/.local/share/nvim/plugged')
-
-    " General purpose
-    "===========================================================================
-    Plug 'scrooloose/nerdtree'          " File exploring
-    Plug 'tpope/vim-fugitive'           " Git Integration
-    Plug 'psliwka/vim-smoothie'         " Smooth scrolling
-
-    " Editor
-    "===========================================================================
-    Plug 'jiangmiao/auto-pairs'         " Autoclose brackets, parenthesis...
-    Plug 'preservim/nerdcommenter'      " Commenting code
-
-    " Visual
-    "===========================================================================
-    Plug 'vim-airline/vim-airline'          " Status bar. Lightline is a lighter alternative
-    Plug 'vim-airline/vim-airline-themes'   " Status bar themes
-    Plug 'junegunn/goyo.vim'                " Focus Mode
-    Plug 'ryanoasis/vim-devicons'           " Icons for NerdTree
-
-    " Language server protocols, codecompletions, ...
-    "===========================================================================
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Code Autocompletion and other utils
-    Plug 'fannheyward/telescope-coc.nvim'               " Integrate with telescope
-
-    " Telescope
-    Plug 'nvim-lua/popup.nvim'              " Requirement for telescope
-    Plug 'nvim-lua/plenary.nvim'            " Requirement for telescope
-    Plug 'nvim-telescope/telescope.nvim'    " The plugin
-    Plug 'kyazdani42/nvim-web-devicons'     " Icons for the plugig
-
-    " Treesitter -- Advance hightlighting
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-    " Color schemes
-    "===========================================================================
-    Plug 'gruvbox-community/gruvbox'    " Gruvbox Theme updated
-    Plug 'joshdick/onedark.vim'         " Secondary Theme
-
-call plug#end()
+"   [ ] Move from Plug to packer.nvim
+"   [ ] Move init.vim to init.lua
+"           - Not sure because breaks backwards compabilities with old vim
 
 " Load Lua config files
 "===============================================================================
 lua require("treesitter")
 lua require("telescope_conf")
+
+" Where I manage plugins
+lua require("packer")
 
 " LEADER KEY
 "==============================================================================
