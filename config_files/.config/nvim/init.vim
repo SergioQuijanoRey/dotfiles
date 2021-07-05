@@ -16,9 +16,12 @@
 " Where I manage plugins
 " Has to be before the other requires in order to first install packages and
 " then configure them using lua
-lua require("plugin")
-lua require("treesitter")
+lua require("packer_conf")
+
+lua require("treesitter_conf")
 lua require("telescope_conf")
+lua require("lsp_conf")
+lua require("completion_conf")
 
 
 " LEADER KEY

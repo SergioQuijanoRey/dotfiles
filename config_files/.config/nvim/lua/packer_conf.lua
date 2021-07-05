@@ -23,13 +23,6 @@ return require('packer').startup(function()
     -- Language server protocols, codecompletions, ...
     -- ===============================================================================
 
-    -- Code autocompletions and other utils
-    use {
-        'neoclide/coc.nvim',
-        branch = "release",
-        requires = "fannheyward/telescope-coc.nvim" -- Integrate with telescope
-    }
-
     -- Telescope
     use {
         -- Main plugin
@@ -48,7 +41,26 @@ return require('packer').startup(function()
     }
 
     -- Treesitter -- Advance hightlighting
-    use {"vim-treesitter/nvim-treesitter", run = ':TSUpdate'}
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        branch = "master",
+        run = ':TSUpdate'
+    }
+
+    -- Builtin lsp
+    use {
+        -- Main plugin
+        "neovim/nvim-lspconfig",
+
+        -- Dependencies for the plugin
+        requires = {
+            -- Command for installing servers
+            "kabouzeid/nvim-lspinstall",
+
+            -- Completion plugin
+            "hrsh7th/nvim-compe",
+        }
+    }
 
     -- Color schemes
     -- ===============================================================================
