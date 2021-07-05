@@ -8,14 +8,18 @@
 "   [ ] Move from Plug to packer.nvim
 "   [ ] Move init.vim to init.lua
 "           - Not sure because breaks backwards compabilities with old vim
+"
 
 " Load Lua config files
 "===============================================================================
+
+" Where I manage plugins
+" Has to be before the other requires in order to first install packages and
+" then configure them using lua
+lua require("plugin")
 lua require("treesitter")
 lua require("telescope_conf")
 
-" Where I manage plugins
-lua require("packer")
 
 " LEADER KEY
 "==============================================================================

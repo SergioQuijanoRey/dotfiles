@@ -1,11 +1,12 @@
 -- Manage plugins using Packer
+
 return require('packer').startup(function()
-    use 'wbthomason/packer.nvim'
     -- General purpose
     -- ===============================================================================
     use 'scrooloose/nerdtree'          -- File exploring
     use 'tpope/vim-fugitive'           -- Git Integration
     use 'psliwka/vim-smoothie'         -- Smooth scrolling
+    use 'wbthomason/packer.nvim'       -- Manage the plugin manager
 
     -- Editor
     -- ===============================================================================
@@ -53,4 +54,5 @@ return require('packer').startup(function()
     -- ===============================================================================
     use 'gruvbox-community/gruvbox'    -- Gruvbox Theme updated
     use 'joshdick/onedark.vim'         -- Secondary Theme
+
 end)
