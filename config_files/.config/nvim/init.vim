@@ -4,10 +4,9 @@
 " Description:
 "     CONFIG FILE FOR NEOVIM
 " TODO:
-"   [ ] Move from CoC to builtin lsp
-"   [ ] Move from Plug to packer.nvim
 "   [ ] Move init.vim to init.lua
 "           - Not sure because breaks backwards compabilities with old vim
+"   [ ] Add a command! Format for using builtin lsp format my code
 "
 
 " Load Lua config files

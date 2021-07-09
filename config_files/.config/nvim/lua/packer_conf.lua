@@ -62,6 +62,13 @@ return require('packer').startup(function()
         }
     }
 
+    -- TODO -- include this into dependencias for lsp
+    -- TODO -- not working
+    use {
+        "ray-x/lsp_signature.nvim",
+        opt = false,
+    }
+
     -- Color schemes
     -- ===============================================================================
     use 'gruvbox-community/gruvbox'    -- Gruvbox Theme updated
