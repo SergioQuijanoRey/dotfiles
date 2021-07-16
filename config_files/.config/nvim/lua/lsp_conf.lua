@@ -18,10 +18,11 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', '<leader>qr', '<cmd>lua vim.lsp.buf.rename()<CR>', opts) -- rename
     buf_set_keymap('n', '<leader>qd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts) -- go to definition
     buf_set_keymap('n', '<leader>qa', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts) -- code actions
+    buf_set_keymap('n', '<leader>ql', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
     -- buf_set_keymap("n", "<leader>qf", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 
     --buf_set_keymap("n", "<space>qd", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-    --buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
+    -- buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
     --buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
     -- buf_set_keymap('n', '<leader>qs', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
     --buf_set_keymap('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
@@ -50,7 +51,7 @@ local on_attach = function(client, bufnr)
         hint_enable = true, -- virtual hint enable
         hint_prefix = "🐼 ",  -- Panda for parameter
         hint_scheme = "String",
-        use_lspsaga = false,  -- set to true if you want to use lspsaga popup
+        use_lspsaga = true,  -- set to true if you want to use lspsaga popup
         hi_parameter = "Search", -- how your parameter will be highlight
         max_height = 12, -- max height of signature floating_window, if content is more than max_height, you can scroll down
         -- to view the hiding contents
