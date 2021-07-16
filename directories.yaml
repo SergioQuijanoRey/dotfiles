@@ -1,74 +1,74 @@
 # Where the dotfiles repo is located
 repo_base: /home/sergio/GitProjects/dotfiles
+system_base: /home/sergio/
 
 directories:
     # Bash config files
     - bash rc:
         repo_path: ./config_files/.bashrc
-        system_path: /home/sergio/.bashrc
+        system_path: .bashrc
     - bash profile:
         repo_path: ./config_files/.bash_profile
-        system_path: /home/sergio/.bash_profile
+        system_path: .bash_profile
     - bash dotfiles:
         repo_path: ./config_files/.bash_dotfiles
-        system_path: /home/sergio/.bash_dotfiles
+        system_path: .bash_dotfiles
     - bash aliases:
         repo_path: ./config_files/.bash_aliases
-        system_path: /home/sergio/.bash_aliases
+        system_path: .bash_aliases
     - bash profile:
         repo_path: ./config_files/.bash_functions
-        system_path: /home/sergio/.bash_functions
+        system_path: .bash_functions
     - bash prompt:
         repo_path: ./config_files/.bash_prompt
-        system_path: /home/sergio/.bash_prompt
+        system_path: .bash_prompt
 
     # Git configs
     - gitconfig:
         repo_path: ./config_files/.ssh/config
-        system_path: /home/sergio/.ssh/config
+        system_path: .ssh/config
 
     # I3 config
     - i3 config:
         repo_path: ./config_files/.i3
-        system_path: /home/sergio/.i3
+        system_path: .i3
         sync_type: dir
 
     - my binaries:
         repo_path: ./config_files/bin
-        system_path: /home/sergio/bin
+        system_path: bin
         sync_type: dir
 
     - my backgrounds:
         repo_path: ./config_files/backgrounds
-        system_path: /home/sergio/backgrounds
+        system_path: backgrounds
         sync_type: dir
 
     - nvim config:
         repo_path: ./config_files/.config/nvim
-        system_path: /home/sergio/.config/nvim
+        system_path: .config/nvim
         sync_type: dir
 
     - alacritty config:
         repo_path: ./config_files/.config/alacritty
-        system_path: /home/sergio/.config/alacritty
+        system_path: .config/alacritty
         sync_type: dir
 
     - kitty config:
         repo_path: ./config_files/.config/kitty
-        system_path: /home/sergio/.config/kitty
+        system_path: .config/kitty
         sync_type: dir
 
     - ranger config:
         repo_path: ./config_files/.config/ranger
-        system_path: /home/sergio/.config/ranger
+        system_path: .config/ranger
         sync_type: dir
 
     - polybar config:
         repo_path: ./config_files/.config/polybar
-        system_path: /home/sergio/.config/polybar
+        system_path: .config/polybar
         sync_type: dir
 
     - tmux config:
         repo_path: ./config_files/.config/.tmux.conf
-        system_path: /home/sergio/.tmux.conf
-
+        system_path: .tmux.conf
