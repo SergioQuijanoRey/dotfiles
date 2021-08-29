@@ -1,21 +1,5 @@
 #!/usr/bin/env bash
 
-# Author:
-#     - Sergio Quijano Rey
-#     - sergiquijano@gmail.com
-# Description:
-#     - Script to push my local files to a cloud storage solution
-#     - In this case, I am using Google Drive
-#     - The cloud storage solution has to be previously configured in rclone
-# Version:
-#     - v1.0 - 17/04/2020 - First documented version
-#     - v2.0 - 30/09/2020 - Change Google Drive to Google Drive Encrypted
-#                           Slower but much safer
-#                           Some code is cleaned at displayInfo function
-#     - v2.1 - 19/10/2020 - Added another remote, in order to upload my password
-#                           database to other location. Also added async capabilities
-#     - v2.2 - 03/11/2020 - Added better display for async version
-
 # Remote name
 remote="DriveCrypt"         # Encrypted
 personal_remote="MyDrive"   # Not encrypted, personal usage
