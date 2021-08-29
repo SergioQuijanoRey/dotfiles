@@ -12,7 +12,8 @@ require'nvim-treesitter.configs'.setup {
   -- Indent feature
   indent = {
     enable = true,
-    disable = {"python"} -- Python indentation is not working well
+    disable = {"python", "java"} -- Python indentation is not working well
+                                 -- Also Java indentation is not workin well
   },
 }
 
