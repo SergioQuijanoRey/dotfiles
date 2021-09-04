@@ -1,6 +1,5 @@
 -- Config for builtin lsp
 -- Mostly copied from https://github.com/neovim/nvim-lspconfig#keybindings-and-completion
--- Also compe plugin is configured here
 
 -- Load the plugin (lua imports modules this way)
 local nvim_lsp = require('lspconfig')

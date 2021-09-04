@@ -81,3 +81,10 @@ setmap("n", "<leader>lg", "<cmd>Telescope live_grep<cr>", {noremap=true})
 setmap("n", "<leader>lb", "<cmd>Telescope buffers<cr>", {noremap=true})
 setmap("n", "<leader>lf", "<cmd>Telescope filetypes<cr>", {noremap=true})
 setmap("n", "<leader>l/", "<cmd> Telescope current_buffer_fuzzy_find<cr>", {noremap=true})
+
+--- Completion keybindings
+--- ======================================================================== ---
+setmap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
+setmap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
+setmap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+setmap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})

@@ -1,5 +1,17 @@
 -- Manage plugins using Packer
 
+
+-- Install packer if its not installed yet
+function install_if_not_installed()
+    local fn = vim.fn
+    local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+    if fn.empty(fn.glob(install_path)) > 0 then
+      fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+      vim.cmd 'packadd packer.nvim'
+    end
+end
+install_if_not_installed()
+
 return require('packer').startup(function()
     -- General purpose
     -- ===============================================================================
@@ -33,7 +45,6 @@ return require('packer').startup(function()
             -- Base code requirements
             {'nvim-lua/popup.nvim'},
             {'nvim-lua/plenary.nvim'},
-
             -- Nice icons for telescope display
             {'kyazdani42/nvim-web-devicons'}
         }
@@ -59,14 +70,13 @@ return require('packer').startup(function()
 
             -- Completion plugin
             "hrsh7th/nvim-compe",
-        }
-    }
 
-    -- TODO -- include this into dependencias for lsp
-    -- TODO -- not working
-    use {
-        "ray-x/lsp_signature.nvim",
-        opt = false,
+            -- Signature hint plugin
+            use {
+                "ray-x/lsp_signature.nvim",
+                opt = false,
+            },
+        }
     }
 
     -- Color schemes
