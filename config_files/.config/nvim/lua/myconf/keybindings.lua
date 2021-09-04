@@ -1,7 +1,7 @@
 --- General Keybindings
 
 --- Avoid long lines for the set command
-setmap = vim.api.nvim_set_keymap
+setmap = require("myconf/aux").setmap
 
 --- General Remaps
 --- ======================================================================== ---

@@ -1,7 +1,4 @@
 --- NeoVIM config written in lua
---- TODO:
---- [ ] Indent properly comments and clean this config file
-
 
 --- Leader key
 --- Set it first because other modules should need this keymap to be set beforehand
@@ -25,16 +22,8 @@ require("myconf/keybindings")
 --- Aux functions
 --- ======================================================================== ---
 
---- Executes a vim command
---- @param command a string containing the nvim command
----
---- This function does not return the str output of the vim command
---- TODO -- move to a aux.lua module
-function exec(command)
-    -- Second boolean parameter shows that we don't want the str output of
-    -- executing the command
-    vim.api.nvim_exec(command, false)
-end
+local aux = require("myconf/aux")
+local exec = aux.exec
 
 --- Editor settings
 --- ======================================================================== ---
