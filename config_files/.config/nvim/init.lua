@@ -78,8 +78,9 @@ vim.opt.listchars.extends=→         -- Show arrow if line continues rightwards
 vim.opt.colorcolumn={100}           -- Show 100 col line
 vim.opt.guicursor = ""              -- Block cursor
 vim.optloaded_matchparen = 1        -- No matching parenthesis/brakets/... highlight
+vim.opt.termguicolors = true        -- Colorschemes dont work well without this
 vim.opt.background="dark"           -- Dark background, does nothing with gruvbox colorscheme
-exec("colorscheme gruvbox")         -- No vim.opt or vim.g for this
+exec("colorscheme onedark")         -- No vim.opt or vim.g for this
 
 -- Splitting where i want
 vim.opt.splitbelow = true

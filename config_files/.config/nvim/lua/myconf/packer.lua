@@ -82,6 +82,6 @@ return require('packer').startup(function()
     -- Color schemes
     -- ===============================================================================
     use 'gruvbox-community/gruvbox'    -- Gruvbox Theme updated
-    --use 'joshdick/onedark.vim'         -- Secondary Theme
+    use 'joshdick/onedark.vim'         -- Secondary colorscheme
 
 end)
