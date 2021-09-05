@@ -22,8 +22,7 @@ require("myconf/keybindings")
 --- Aux functions
 --- ======================================================================== ---
 
-local aux = require("myconf/aux")
-local exec = aux.exec
+local exec = require("myconf/aux").exec
 
 --- Editor settings
 --- ======================================================================== ---

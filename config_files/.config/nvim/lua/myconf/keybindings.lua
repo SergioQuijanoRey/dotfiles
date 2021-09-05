@@ -69,7 +69,7 @@ setmap("n", "<leader>G", ":vertical Git<CR>", {})
 
 -- Change NVIM Working Directory
 -- Usefull when using fzf to open a file and instantly change NVIM working dir
-setmap("n", "<leader>cd", ":cd %:p:h<CR>:pwd<CR>", {})
+setmap("n", "<leader>cd", ":lua require('myconf/custom_funcs').cd_file_path()<CR>", {})
 
 -- Source the configuration
 setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", {noremap=true})
