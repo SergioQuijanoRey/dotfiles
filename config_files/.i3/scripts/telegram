@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# Executes telegram desktop app
-telegram-desktop
