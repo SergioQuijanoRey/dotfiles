@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-pandoc "$1" -o "$1.pdf" && evince "$1.pdf" && rm "$1.pdf"
