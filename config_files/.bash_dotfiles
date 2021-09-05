@@ -68,3 +68,15 @@ export BROWSER="brave"
 # To force fzf.vim to ignore .gitignore files
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 
+# McFly configuration
+#===============================================================================
+
+# Use mcfly program to replace default ctr-r
+eval "$(mcfly init bash)"
+
+# Vim mode instead of emacs mode
+export MCFLY_KEY_SCHEME=vim
+
+# Enable fuzzy finding
+export MCFLY_FUZZY=true
+
