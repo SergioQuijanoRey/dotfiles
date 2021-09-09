@@ -91,8 +91,6 @@ pacman:
         - community/ttf-jetbrains-mono        # Preferred font
         - community/ttf-fira-code             # Second preferred font
         - community/ttf-nerd-fonts-symbols    # Font with icons
-        - community/nerd-fonts-noto-sans-mono # Font with icons - Select icons on https://www.nerdfonts.com/cheat-sheet
-        - community/nerd-fonts-roboto-mono    # Other nice font
 
 # IMPORTANT -- yay has to be installed before running this yaml file
 # To do this, run pre_install.yaml
@@ -109,6 +107,11 @@ aur:
         # I3
         #===============================================================================
         - polybar                 # System bar
+
+        # Fonts
+        #===============================================================================
+        - community/nerd-fonts-noto-sans-mono # Font with icons - Select icons on https://www.nerdfonts.com/cheat-sheet
+        - community/nerd-fonts-roboto-mono    # Other nice font
 
         # Others
         #===============================================================================
