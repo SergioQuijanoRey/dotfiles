@@ -1,0 +1,9 @@
+# Script to run all pre-install tasks
+
+install yay:
+  description: Install yay from sources
+  quiet: false
+  commands:
+    - cd ~
+    - git clone https://aur.archlinux.org/yay.git
+    - makepkg -si
