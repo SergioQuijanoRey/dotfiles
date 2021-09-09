@@ -58,7 +58,9 @@ vim.g.nowritebackup = true
 vim.g.noswapfile = true
 
 --- Clipboard
-vim.opt.clipboard = vim.opt.clipboard + {unnamedplus = true}
+-- TODO --- FIXME
+-- vim.opt.clipboard = vim.opt.clipboard + {unnamedplus = true}
+exec(":set clipboard+=unnamedplus", false)
 
 -- Avoid flashy terminal
 exec("au TermEnter * setlocal scrolloff=0", false)
