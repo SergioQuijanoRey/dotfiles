@@ -67,6 +67,8 @@ pacman:
         - ntfs-3g             # Needed to mount hdd/usb using this file system
         - lightdm             # For having a graphic logging prompt
         - extra/lightdm-gtk-greeter # Custom logging prompt
+        - extra/pulseaudio          # Audio daemon
+        - extra/pulseaudio-bluetooth # Audio w/ bluetooth
 
         # Browsers
         #===============================================================================
