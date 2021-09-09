@@ -64,7 +64,6 @@ pacman:
                                 # Also using this for my custom scrot program
         - i3lock					# For locking the screen
         - xclip                   # Clipboard for communicating Neovim and the System
-        - polybar                 # System bar
         - ntfs-3g             # Needed to mount hdd/usb using this file system
         - lightdm             # For having a graphic logging prompt
         - extra/lightdm-gtk-greeter # Custom logging prompt
@@ -106,6 +105,10 @@ aur:
         - bottom      # A better top alternative - like gotop but using rust
         - bat         # A better cat alternative
         - duf         # For seeing disk usage
+
+        # I3
+        #===============================================================================
+        - polybar                 # System bar
 
         # Others
         #===============================================================================
