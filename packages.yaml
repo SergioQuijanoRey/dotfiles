@@ -22,10 +22,11 @@ pacman:
         - kitty                   # Preferred terminal
         - exa                     # Good replacement for ls and tree (exa -T)
         - fd                      # Good replacement for find
+        - rclone                  # For syncing with google drive
 
         # Programming
         #===============================================================================
-        - nvim                    # Main editor
+        - neovim                  # Main editor
         - jupyter                 # Python Notebook framework
         - valgrind                # Mem debugging for C/C++
         - ranger                  # Nice CLI file manager
@@ -64,11 +65,13 @@ pacman:
         - i3lock					# For locking the screen
         - xclip                   # Clipboard for communicating Neovim and the System
         - polybar                 # System bar
+        - ntfs-3g             # Needed to mount hdd/usb using this file system
+        - lightdm             # For having a graphic logging prompt
+        - extra/lightdm-gtk-greeter # Custom logging prompt
 
         # Browsers
         #===============================================================================
         - firefox                 # Second browser
-        - brave                   # Primary browser
 
         # Others
         #===============================================================================
@@ -92,6 +95,9 @@ pacman:
         - community/nerd-fonts-noto-sans-mono # Font with icons - Select icons on https://www.nerdfonts.com/cheat-sheet
         - community/nerd-fonts-roboto-mono    # Other nice font
 
+# IMPORTANT -- yay has to be installed before running this yaml file
+# To do this, run pre_install.yaml
+# TODO -- write the pre_install script
 aur:
     install_command: yay -S --noconfirm
     packages:
@@ -117,6 +123,9 @@ optional:
         # I3 components
         # ===============================================================================
         - neofetch				  # To show system information
+
+        # Browsers
+        - brave-bin               # Primary browser
 
         # Media
         # ===============================================================================
