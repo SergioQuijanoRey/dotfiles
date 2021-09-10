@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
+
 # My personal configs for bash
 # Not the usual file to put the configs. In order to have the same config wether we source .bash_profile
-# or .bashrc
+# or .bashrc or .profile
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then

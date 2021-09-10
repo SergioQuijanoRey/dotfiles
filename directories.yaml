@@ -10,6 +10,11 @@ directories:
     - bash profile:
         repo_path: ./config_files/.bash_profile
         system_path: .bash_profile
+    # i3 reads config from this file, so we source .bash_dotfiles from .profile
+    # Otherwise, $PATH is not available for neither i3 keybindings nor i3 exec commands
+    - profile:
+        repo_path: ./config_files/.profile
+        system_path: .profile
     - bash dotfiles:
         repo_path: ./config_files/.bash_dotfiles
         system_path: .bash_dotfiles
