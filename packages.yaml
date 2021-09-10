@@ -71,6 +71,11 @@ pacman:
         - extra/pulseaudio-bluetooth    # Audio w/ bluetooth
         - alsa-utils                    # Audio drivers
         - alsa-plugins                  # Need this for having volume keys working
+        - extra/xorg-xbacklight         # Control over screen brightness
+
+        # Themes
+        #===============================================================================
+        -
 
         # Browsers
         #===============================================================================
@@ -121,6 +126,11 @@ aur:
         #===============================================================================
         - spotify
         - paru        # Rewrite of yay in Rust. Quite not stable
+        - autojump    # Better to cd
+
+        # Themes
+        #===============================================================================
+
 
 # Optional packages, no need to install them for having an usable system
 optional:
