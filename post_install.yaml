@@ -1,6 +1,5 @@
 # Script to run all post-install tasks
 
-# Config github user/mail
 configure github:
   description: Configures github user and mail
   quiet: false
@@ -8,9 +7,14 @@ configure github:
     - git config --global user.email "sergiquijano@gmail.com"
     - git config --global user.name "Sergio Quijano"
 
-
 ranger devicons:
   description: Installs ranger devicons for ranger
   quiet: false
   commands:
     - git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+
+set local time:
+  description: set local time instead of using UTC
+  quiet: false
+  commands:
+    - sudo timedatectl set-local-rtc 1
