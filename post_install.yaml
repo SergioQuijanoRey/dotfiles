@@ -19,3 +19,11 @@ set local time:
   commands:
     - sudo timedatectl set-local-rtc 1
     - sudo timedatectl set-timezone Europe/Madrid
+
+rootless podman:
+  description: configures podman to run in rootless mode
+  quiet: false
+  commands:
+    - sudo touch /etc/subuid /etc/subgid
+    - sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 sergio
+    - podman system migrate
