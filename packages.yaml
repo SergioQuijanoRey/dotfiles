@@ -39,6 +39,7 @@ pacman:
         - docker                  # Container technology
         - crun                    # Needed for running podman rootless
         - tmux                    # Terminal multiplexer
+        - rustup                  # Rust ecosystem installer
 
         # Media
         #===============================================================================
@@ -52,6 +53,7 @@ pacman:
         - feh				# To set the background
         - compton			# i3 compositor
         - rofi					        # Program launcher
+        - rofi-emoji                    # Emoji selector
         - blueman					    # To use bluetooth
         - bluez-utils                   # For command line bluetooth administration ==> bluetoothctl
         - bluez-tools                   # For command line bluetooth administration ==> bluetooth
