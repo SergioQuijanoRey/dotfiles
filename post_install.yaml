@@ -18,3 +18,4 @@ set local time:
   quiet: false
   commands:
     - sudo timedatectl set-local-rtc 1
+    - sudo timedatectl set-timezone Europe/Madrid
