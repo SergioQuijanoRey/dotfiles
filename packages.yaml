@@ -78,7 +78,6 @@ pacman:
 
         # Themes
         #===============================================================================
-        -
 
         # Browsers
         #===============================================================================
@@ -133,6 +132,8 @@ aur:
 
         # Themes
         #===============================================================================
+        - aur/paper-icon-theme        # Icon package
+        - aur/arc-darkest-theme-git   # Theme for gkt-windows
 
 
 # Optional packages, no need to install them for having an usable system
