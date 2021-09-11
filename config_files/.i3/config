@@ -191,7 +191,6 @@ bindsym $mod+x exec lockscreen
 bindsym $mod+Shift+n exec kitty ranger
 bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to left
-bindsym $mod+Shift+g exec rofi-websearch
 bindsym $mod+Shift+b exec brave
 bindsym $mod+t exec wallpaper
 bindsym $mod+Shift+e exec shutdown_menu # Shutdown menu
