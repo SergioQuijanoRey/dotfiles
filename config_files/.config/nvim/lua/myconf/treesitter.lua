@@ -1,4 +1,4 @@
--- Enable treesitter hightlighting
+-- Configuration of treesitter
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
   ignore_install = {}, -- List of parsers to ignore installing
@@ -11,9 +11,8 @@ require'nvim-treesitter.configs'.setup {
 
   -- Indent feature
   indent = {
-    enable = true,
-    disable = {"python", "java"} -- Python indentation is not working well
-                                 -- Also Java indentation is not workin well
+    enable = false,              -- TODO -- indentation never works well, check in a few months
+    disable = {}
   },
 }
 
