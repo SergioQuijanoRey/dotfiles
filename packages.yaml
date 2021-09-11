@@ -65,6 +65,7 @@ pacman:
         - scrot					        # For locking the screen (makes the screenshot) and taking screenshots
                                         # Also using this for my custom scrot program
         - i3lock					    # For locking the screen
+        - imagemagick                   # For blurring the locking screen
         - xclip                         # Clipboard for communicating Neovim and the System
         - ntfs-3g                       # Needed to mount hdd/usb using this file system
         - lightdm                       # For having a graphic logging prompt
