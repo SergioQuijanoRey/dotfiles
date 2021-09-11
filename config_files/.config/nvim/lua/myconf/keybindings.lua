@@ -56,12 +56,22 @@ setmap("n", "<leader>7", "7gt", {})
 setmap("n", "<leader>8", "8gt", {})
 setmap("n", "<leader>9", "9gt", {})
 
--- Split navigation
--- TODO -- not using this, consider delete this
-setmap("n", "<leader><Left>", ":wincmd h<CR>", {})
-setmap("n", "<leader><Right>", ":wincmd l<CR>", {})
-setmap("n", "<leader><Up>", ":wincmd k<CR>", {})
-setmap("n", "<leader><down>", ":wincmd j<CR>", {})
+-- Yank capital letter is not having caps default behaviour
+setmap("n", "Y", "y$", {})
+
+-- Undo break points
+-- When writting a line, instead of undoing the whole line, just undo to the latest savepoint
+setmap("i", ",", ",<c-g>u", {noremap=true})
+setmap("i", ".", ".<c-g>u", {noremap=true})
+setmap("i", "!", "!<c-g>u", {noremap=true})
+setmap("i", "?", "?<c-g>u", {noremap=true})
+setmap("i", ":", ":<c-g>u", {noremap=true})
+setmap("i", "[", "[<c-g>u", {noremap=true})
+setmap("i", "]", "]<c-g>u", {noremap=true})
+setmap("i", "(", "(<c-g>u", {noremap=true})
+setmap("i", ")", ")<c-g>u", {noremap=true})
+setmap("i", "{", "{<c-g>u", {noremap=true})
+setmap("i", "}", "}<c-g>u", {noremap=true})
 
 -- Git integration
 setmap("n", "<leader>g", ":Git<CR>", {})

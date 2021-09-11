@@ -12,7 +12,6 @@ vim.g.mapleader = ","
 -- Has to be before the other requires in order to first install packages and
 -- then configure them using lua
 require("myconf/packer")
-
 require("myconf/treesitter")
 require("myconf/telescope")
 require("myconf/lsp")
