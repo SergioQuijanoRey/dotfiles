@@ -57,7 +57,7 @@ font-3 = "JetBrains Mono:style=Regular:size=8;1"
 
 modules-left = i3
 modules-center = xbacklight pulseaudio github
-modules-right = xkeyboard filesystem cpu wlan eth battery date
+modules-right = xkeyboard filesystem cpu memory wlan eth battery date
 ; modules sin usar = powermenu
 
 tray-position = right
@@ -178,10 +178,10 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
-label = %percentage_used%%
+format = <label>
+label =  %percentage_used%%
+format-prefix-foreground = #FFFFFF
+format-underline = #a166b3
 
 [module/wlan]
 type = internal/network
