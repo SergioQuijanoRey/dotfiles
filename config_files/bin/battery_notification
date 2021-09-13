@@ -7,7 +7,7 @@ charging=$(acpi | cut -d, -f1 | cut -d: -f2 | xargs )
 battery=$(acpi | cut -d, -f2 | cut -d% -f1 | xargs )
 
 # We are too low battery
-if [[ "${charging}"=="Discharging" && ${battery} -le 50 ]]; then
+if [[ "${charging}"=="Discharging" && ${battery} -le 20 && ${batter} ]]; then
     echo "Battery alert - ${battery}%"
     notify-send "Extremly low battery" "Remaining battery is $battery" --icon "xfce-battery-critical"
 
@@ -16,7 +16,7 @@ if [[ "${charging}"=="Discharging" && ${battery} -le 50 ]]; then
 fi
 
 # We are low battery
-if [[ "${charging}"=="Discharging" && ${battery} -le 30 ]]; then
+if [[ "${charging}"=="Discharging" && ${battery} -le 30 && ${battery} -ge 25 ]]; then
     echo "Battery alert - ${battery}%"
     notify-send "Low battery" "Remaining battery is $battery" --icon "xfce-battery-low"
 
@@ -25,7 +25,7 @@ if [[ "${charging}"=="Discharging" && ${battery} -le 30 ]]; then
 fi
 
 # We are at half battery
-if [[ "${charging}"=="Discharging" && ${battery} -le 50 ]]; then
+if [[ "${charging}"=="Discharging" && ${battery} -le 50 && ${battery} -ge 45 ]]; then
     echo "Battery alert - ${battery}%"
     notify-send "Half battery" "Remaining battery is $battery" --icon "battery-medium"
 
