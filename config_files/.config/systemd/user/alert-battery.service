@@ -1,0 +1,10 @@
+# Launchs battery script and popups notification when needed
+[Unit]
+Description=Alert in case of low remaining battery
+
+[Service]
+Type=oneshot
+ExecStart=/home/sergio/bin/battery_notification
+
+[Install]
+WantedBy=graphical.target

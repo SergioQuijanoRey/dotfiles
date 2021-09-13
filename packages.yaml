@@ -19,11 +19,13 @@ pacman:
         - htop
         - rsync
         - cronie
-        - kitty                   # Preferred terminal
-        - exa                     # Good replacement for ls and tree (exa -T)
-        - fd                      # Good replacement for find
-        - rclone                  # For syncing with google drive
-        - man                     # Should be installed by default
+        - kitty       # Preferred terminal
+        - exa         # Good replacement for ls and tree (exa -T)
+        - fd          # Good replacement for find
+        - rclone      # For syncing with google drive
+        - man         # Should be installed by default
+        - dunst       # Notifications
+        - acpi        # Check for battery status
 
         # Programming
         #===============================================================================

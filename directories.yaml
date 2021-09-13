@@ -77,3 +77,14 @@ directories:
     - tmux config:
         repo_path: ./config_files/.config/.tmux.conf
         system_path: .tmux.conf
+
+    # Battery Notifications
+    - dunst:
+        repo_path: ./config_files/.config/dunst
+        system_path: .config/dunst
+        sync_type: dir
+
+    - systemd:
+        repo_path: ./config_files/.config/systemd
+        system_path: .config/systemd
+        sync_type: dir

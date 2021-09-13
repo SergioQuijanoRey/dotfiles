@@ -27,3 +27,11 @@ rootless podman:
     - sudo touch /etc/subuid /etc/subgid
     - sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 sergio
     - podman system migrate
+
+battery service:
+  description: Configures the systemd daemon for checking for batter status
+  quiet: false
+  commands:
+    - systemctl --user service start alert-battery.timer
+    - systemctl --user service enable alert-battery.timer
+

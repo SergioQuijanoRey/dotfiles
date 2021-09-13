@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# Popup notification when running out of battery
+
+# Getting status and battery
+# xargs is used to remove whitespaces
+charging=$(acpi | cut -d, -f1 | cut -d: -f2 | xargs )
+battery=$(acpi | cut -d, -f2 | cut -d% -f1 | xargs )
+
+# We are too low battery
+if [[ "${charging}"=="Discharging" && ${battery} -le 50 ]]; then
+    echo "Battery alert - ${battery}%"
+    notify-send "Extremly low battery" "Remaining battery is $battery" --icon "xfce-battery-critical"
+
+    # Do not show more notifications for upper battery values
+    exit
+fi
+
+# We are low battery
+if [[ "${charging}"=="Discharging" && ${battery} -le 30 ]]; then
+    echo "Battery alert - ${battery}%"
+    notify-send "Low battery" "Remaining battery is $battery" --icon "xfce-battery-low"
+
+    # Do not show more notifications for upper battery values
+    exit
+fi
+
+# We are at half battery
+if [[ "${charging}"=="Discharging" && ${battery} -le 50 ]]; then
+    echo "Battery alert - ${battery}%"
+    notify-send "Half battery" "Remaining battery is $battery" --icon "battery-medium"
+
+    # Do not show more notifications for upper battery values
+    exit
+fi
