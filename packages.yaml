@@ -23,6 +23,7 @@ pacman:
         - exa                     # Good replacement for ls and tree (exa -T)
         - fd                      # Good replacement for find
         - rclone                  # For syncing with google drive
+        - man                     # Should be installed by default
 
         # Programming
         #===============================================================================
