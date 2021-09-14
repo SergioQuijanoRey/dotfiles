@@ -96,7 +96,6 @@ pacman:
         # Office
         #===============================================================================
         - libreoffice             # For writting documents
-        - onlyoffice              # For writting documents in Microsoft Office Format
         - pandoc                  # For converting documents formats
         - texlive-core            # For writting basic latex documents
 
@@ -121,6 +120,10 @@ aur:
         # I3
         #===============================================================================
         - polybar                 # System bar
+
+        # Office
+        #===============================================================================
+        - onlyoffice-bin          # For writting documents in Microsoft Office Format
 
         # Fonts
         #===============================================================================
