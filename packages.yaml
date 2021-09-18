@@ -78,6 +78,7 @@ pacman:
         - alsa-utils                    # Audio drivers
         - alsa-plugins                  # Need this for having volume keys working
         - extra/xorg-xbacklight         # Control over screen brightness
+        - unzip                         # For extracting zip files
 
         # Themes
         #===============================================================================
