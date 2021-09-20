@@ -79,6 +79,7 @@ pacman:
         - alsa-plugins                  # Need this for having volume keys working
         - extra/xorg-xbacklight         # Control over screen brightness
         - unzip                         # For extracting zip files
+        - engrampa                      # GUI for working with compressed files
 
         # Themes
         #===============================================================================
