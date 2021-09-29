@@ -32,9 +32,7 @@ setmap("n", "<leader><S-f>", ":Goyo<CR>:set nowrap<CR>:set number<CR>", {})
 setmap("n", "<leader>o", ":NERDTreeToggle<CR>", {})
 
 -- For exiting the terminal mode
--- TODO -- this remap is not working with lua functons
--- setmap("t", "<leader><Esc>", "<C-\><C-n>>", {noremap = true})
--- vim.api.nvim_exec("tnoremap <leader><Esc> <C-\><C-n>>", false)
+setmap("t", "<leader><Esc>", "<C-\\><C-n>>", {noremap = true})
 
 -- For avoid shifting
 setmap("n", "<S-Up>", "<C-Up>", {})
@@ -83,6 +81,12 @@ setmap("n", "<leader>cd", ":lua require('myconf/custom_funcs').cd_file_path()<CR
 
 -- Source the configuration
 setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", {noremap=true})
+
+-- Copies a visual block to a ipython shell
+-- This emulates spyder select & execute feature
+-- Uses "z" register to yank and paste the code selected
+-- Needs to have ipython opened in other split
+setmap("v", "<leader>hp", "\"zy<C-w><C-w>\"zpa<CR><CR>", {})
 
 --- Telescope remaps
 --- ======================================================================== ---
