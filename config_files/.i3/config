@@ -188,7 +188,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Personal KeyBindings
 bindsym $mod+x exec lockscreen
-bindsym $mod+Shift+n exec kitty tmux-init "ranger"
+bindsym $mod+Shift+n exec kitty tmux-init "ranger" "ranger"
 bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to left
 bindsym $mod+Shift+b exec brave

@@ -2,12 +2,23 @@
 # If not session exists, creates one
 # If no session name is given by parameter, we call it daily
 
-# Get parameters
-# If no parameter is given, we use "daily" for the session name
-sess_name="daily"
-if [[ $# -gt 0 ]]
+# User does not use parameters
+if [[ $# -eq 0 ]]
 then
-    sess_name="$1"
+    tmux attach -t daily || tmux new -s daily
 fi
 
-tmux attach -t "$sess_name" || tmux new -s "$sess_name"
+# User just pass session name
+if [[ $# -eq 1 ]]
+then
+    sess_name="$1"
+    tmux attach -t "$1" || tmux new -s "$1"
+fi
+
+# User passes session name and command to run
+if [[ $# -eq 2 ]]
+then
+    sess_name="$1"
+    command="$2"
+    tmux attach -t "$1" || tmux new -s "$1" "$2"
+fi
