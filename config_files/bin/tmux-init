@@ -1,3 +1,13 @@
 # Attach to a tmux session
 # If not session exists, creates one
-tmux attach -t daily || tmux new -s daily
+# If no session name is given by parameter, we call it daily
+
+# Get parameters
+# If no parameter is given, we use "daily" for the session name
+sess_name="daily"
+if [[ $# -gt 0 ]]
+then
+    sess_name="$1"
+fi
+
+tmux attach -t "$sess_name" || tmux new -s "$sess_name"

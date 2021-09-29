@@ -188,7 +188,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Personal KeyBindings
 bindsym $mod+x exec lockscreen
-bindsym $mod+Shift+n exec kitty ranger
+bindsym $mod+Shift+n exec kitty tmux-init "ranger"
 bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to left
 bindsym $mod+Shift+b exec brave
@@ -208,7 +208,7 @@ exec whatsapp-nativefier
 exec telegram-desktop
 exec nm-applet
 exec blueman-applet
-exec feh --bg-scale "/home/sergio/backgrounds/ghost.png"  # Set the wallpaper
+exec feh --bg-scale "/home/sergio/backgrounds/daft_punk_1.jpg"  # Set the wallpaper
 
 # Polybar launcher
 #===============================================================================
