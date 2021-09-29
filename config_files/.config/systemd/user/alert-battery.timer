@@ -1,11 +1,11 @@
-# Launchs battery script every minute
+# Launchs battery script every 3 minutes
 
 [Unit]
 Description=Check on battery every minute to warn the user in case of low battery
 
 [Timer]
-OnActiveSec=1m
-OnUnitActiveSec=1m
+OnActiveSec=3m
+OnUnitActiveSec=3m
 
 [Install]
 WantedBy=timers.target
