@@ -190,7 +190,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+x exec lockscreen
 bindsym $mod+Shift+n exec kitty tmux-init "ranger" "ranger"
 bindsym Print exec xfce4-screenshooter
-bindsym $mod+Shift+p move workspace to left
+bindsym $mod+Shift+p move workspace to output left
 bindsym $mod+Shift+b exec brave
 bindsym $mod+t exec wallpaper
 bindsym $mod+Shift+e exec shutdown_menu # Shutdown menu
