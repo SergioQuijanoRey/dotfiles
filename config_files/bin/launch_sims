@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Para temas de eficiencia
+sudo sysctl -w dev.i915.perf_stream_paranoid=0
+
+# Lanzamos el juego
+"/home/sergio/.wine/drive_c/Games/The Sims 4/Game/Bin/TS4_x64.exe"
