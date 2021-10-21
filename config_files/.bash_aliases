@@ -18,6 +18,7 @@ alias dasm="objdump -d"                                     # Useful for disasse
 alias getsyscall="cat /usr/include/asm/unistd_32.h | egrep "
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias compile="g++ -std=c++11 -lpthread"
+alias emulator="~/Android/Sdk/emulator/emulator @Galaxy_Nexus_API_30"
 
 # Git aliases
 alias gcommit="git add . ; git commit"
