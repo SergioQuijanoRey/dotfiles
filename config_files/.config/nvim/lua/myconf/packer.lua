@@ -24,6 +24,7 @@ return require('packer').startup(function()
     -- ===============================================================================
     use 'jiangmiao/auto-pairs'         -- Autoclose brackets, parenthesis...
     use 'preservim/nerdcommenter'      -- Commenting code
+    use 'dhruvasagar/vim-table-mode'   -- For writing markdown tables
 
     -- Visual
     -- ===============================================================================

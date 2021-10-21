@@ -91,6 +91,7 @@ setmap("v", "<leader>hp", "\"zy<C-w><C-w>\"zpa<CR><CR>", {})
 --- Telescope remaps
 --- ======================================================================== ---
 setmap("n", "<leader>p", "<cmd>Telescope find_files<cr>", {noremap=true})
+setmap("n", "<leader>ll", "<cmd>Telescope<CR>", {noremap=true})
 setmap("n", "<leader>lg", "<cmd>Telescope live_grep<cr>", {noremap=true})
 setmap("n", "<leader>lb", "<cmd>Telescope buffers<cr>", {noremap=true})
 setmap("n", "<leader>lf", "<cmd>Telescope filetypes<cr>", {noremap=true})
