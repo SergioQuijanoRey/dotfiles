@@ -94,6 +94,7 @@ pacman:
         - discord                 # Messaging app
         - evince                  # PDF viewer of preference
         - keepassxc               # Password Manager
+        - calibre                 # Manage my ebooks
 
         # Office
         #===============================================================================
