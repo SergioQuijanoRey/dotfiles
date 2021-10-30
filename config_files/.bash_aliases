@@ -45,4 +45,6 @@ alias league_ready="sudo sysctl -w abi.vsyscall32=0"
 # Replacements (change one command to use other)
 alias ls="exa"                          # Exa is a good replacement for ls
 alias la="exa -a"
+alias ll="exa -l"
+alias lla="exa -la"
 alias cat="bat -p"
