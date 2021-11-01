@@ -10,7 +10,7 @@ cmp.setup({
     snippet = {
         -- REQUIRED - you must specify a snippet engine
         expand = function(args)
-            vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+            -- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
             -- require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
             -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
             -- require'snippy'.expand_snippet(args.body) -- For `snippy` users.
@@ -25,24 +25,39 @@ cmp.setup({
             i = cmp.mapping.abort(),
             c = cmp.mapping.close(),
         }),
+
+        -- When doing ENTER, cmp talks with builtin lsp and let it do things like autoimport a module
         ['<CR>'] = cmp.mapping.confirm({ select = true }),
     },
+
+    -- Sources for autocmpletion
+    -- Order matters, because it gives the priority for autocompletion
     sources = cmp.config.sources({
-        { name = 'nvim_lsp' },
-        { name = 'vsnip' }, -- For vsnip users.
+        { name = 'nvim_lsp', keyword_length = 2 },
+        { name = 'buffer' , keyword_length = 2},
+        -- { name = 'vsnip' }, -- For vsnip users.
         -- { name = 'luasnip' }, -- For luasnip users.
         -- { name = 'ultisnips' }, -- For ultisnips users.
         -- { name = 'snippy' }, -- For snippy users.
-    }, {
-        { name = 'buffer' },
-    })
+    }),
+
+    -- Set the formatting for the menu
+    formatting = {
+        with_text = True,
+        menu = {
+            buffer = "[buf]",
+            nvim_lsp = "[LSP]",
+            path = "[path]",
+        },
+    },
 })
 
 -- This way we can autocomplete searches in vim
 -- Use buffer source for `/`.
 cmp.setup.cmdline('/', {
     sources = {
-        { name = 'buffer' }
+        { name = 'buffer', keyword_length = 2 }
+
     }
 })
 
@@ -50,9 +65,9 @@ cmp.setup.cmdline('/', {
 -- Use cmdline & path source for ':'.
 cmp.setup.cmdline(':', {
     sources = cmp.config.sources({
-        { name = 'path' }
+        { name = 'path', keyword_length = 2 }
     }, {
-        { name = 'cmdline' }
+        { name = 'cmdline', keyword_length = 2 }
     })
 })
 

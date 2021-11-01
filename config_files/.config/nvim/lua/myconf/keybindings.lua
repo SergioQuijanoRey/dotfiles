@@ -82,12 +82,6 @@ setmap("n", "<leader>cd", ":lua require('myconf/custom_funcs').cd_file_path()<CR
 -- Source the configuration
 setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", {noremap=true})
 
--- Copies a visual block to a ipython shell
--- This emulates spyder select & execute feature
--- Uses "z" register to yank and paste the code selected
--- Needs to have ipython opened in other split
-setmap("v", "<leader>hp", "\"zy<C-w><C-w>\"zpa<CR><CR>", {})
-
 --- Telescope remaps
 --- ======================================================================== ---
 setmap("n", "<leader>p", "<cmd>Telescope find_files<cr>", {noremap=true})
@@ -96,10 +90,3 @@ setmap("n", "<leader>lg", "<cmd>Telescope live_grep<cr>", {noremap=true})
 setmap("n", "<leader>lb", "<cmd>Telescope buffers<cr>", {noremap=true})
 setmap("n", "<leader>lf", "<cmd>Telescope filetypes<cr>", {noremap=true})
 setmap("n", "<leader>l/", "<cmd> Telescope current_buffer_fuzzy_find<cr>", {noremap=true})
-
---- Completion keybindings
---- ======================================================================== ---
-setmap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
-setmap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
-setmap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
-setmap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
