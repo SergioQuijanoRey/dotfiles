@@ -69,14 +69,30 @@ return require('packer').startup(function()
             -- Command for installing servers
             "kabouzeid/nvim-lspinstall",
 
-            -- Completion plugin
-            "hrsh7th/nvim-compe",
+            -- Completion engine
+            'hrsh7th/nvim-cmp',
 
             -- Signature hint plugin
             use {
                 "ray-x/lsp_signature.nvim",
                 opt = false,
             },
+        }
+    }
+
+    -- Completion engine
+    use {
+
+        -- Main plugin
+        'hrsh7th/nvim-cmp',
+
+        -- Dependencies of the main plugin
+        requires = {
+            'neovim/nvim-lspconfig',
+            'hrsh7th/cmp-nvim-lsp',
+            'hrsh7th/cmp-buffer',
+            'hrsh7th/cmp-path',
+            'hrsh7th/cmp-cmdline'
         }
     }
 
