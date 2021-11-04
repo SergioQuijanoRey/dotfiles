@@ -26,6 +26,8 @@ pacman:
         - man         # Should be installed by default
         - dunst       # Notifications
         - acpi        # Check for battery status
+        - tig         # ncurses terminal UI for git
+                      # Useful for view different branches
 
         # Programming
         #===============================================================================
