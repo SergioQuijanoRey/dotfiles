@@ -58,7 +58,7 @@ vim.g.noswapfile = true
 
 --- Clipboard
 -- TODO --- FIXME
--- vim.opt.clipboard = vim.opt.clipboard + {unnamedplus = true}
+-- Write this in the lua way
 exec(":set clipboard+=unnamedplus", false)
 
 -- Avoid flashy terminal

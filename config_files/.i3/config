@@ -208,7 +208,7 @@ exec whatsapp-nativefier
 exec telegram-desktop
 exec nm-applet
 exec blueman-applet
-exec feh --bg-scale "/home/sergio/backgrounds/daft_punk_1.jpg"  # Set the wallpaper
+exec feh --bg-scale "/home/sergio/backgrounds/color_penguin.jpg"  # Set the wallpaper
 
 # Polybar launcher
 #===============================================================================

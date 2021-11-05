@@ -1,6 +1,5 @@
 -- Manage plugins using Packer
 
-
 -- Install packer if its not installed yet
 function install_if_not_installed()
     local fn = vim.fn
@@ -12,6 +11,7 @@ function install_if_not_installed()
 end
 install_if_not_installed()
 
+-- Packages we are using
 return require('packer').startup(function()
     -- General purpose
     -- ===============================================================================
