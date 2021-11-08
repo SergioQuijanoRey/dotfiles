@@ -26,9 +26,10 @@ CYAN='\[\033[1;36m\]'
 NC='\[\033[0m\]'
 
 parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
 }
 
 # Changing prompt
 #===============================================================================
 export PS1="$purple\u ${white}at $green$cyan\h ${white}in $WHITE$green\w $red\$(parse_git_branch)\n$NC$ "
+
