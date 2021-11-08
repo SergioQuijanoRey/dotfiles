@@ -8,7 +8,7 @@
 
 # Script parameters
 #===============================================================================
-config_files_dir="$HOME/GitProjects/dotfiles/config_files/"
+config_files_dir="$HOME/GitRepos/dotfiles/config_files/"
 
 # Script running the instructions
 #===============================================================================

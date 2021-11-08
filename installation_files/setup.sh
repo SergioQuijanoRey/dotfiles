@@ -12,7 +12,7 @@
 
 # Script parameters
 #===============================================================================
-base_dir="$HOME/GitProjects/dotfiles/installation_files"
+base_dir="$HOME/GitRepos/dotfiles/installation_files"
 
 # Script process
 #===============================================================================

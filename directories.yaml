@@ -1,5 +1,5 @@
 # Where the dotfiles repo is located
-repo_base: /home/sergio/GitProjects/dotfiles
+repo_base: /home/sergio/GitRepos/dotfiles
 system_base: /home/sergio/
 
 directories:

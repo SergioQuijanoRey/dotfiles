@@ -11,8 +11,8 @@ echo "==========================================================================
 
 # Updating the changes
 rclone sync --progress ~/LinuxCloud ${remote}:LinuxCloud &
-rclone sync --progress ~/GitProjects/Universidad ${remote}:Universidad &
-rclone sync --progress ~/GitProjects/apuntesuniversidad ${remote}:apuntesuniversidad &
+rclone sync --progress ~/GitRepos/Universidad ${remote}:Universidad &
+rclone sync --progress ~/GitRepos/apuntesuniversidad ${remote}:apuntesuniversidad &
 rclone sync --progress ~/LinuxCloud/Passwords/Passwords.kdbx ${personal_remote}:LinuxCloud/Passwords/ &
 
 # Wait until all jobs are done
