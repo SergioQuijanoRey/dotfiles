@@ -113,9 +113,10 @@ bindsym $mod+Shift+y move scratchpad
 bindsym $mod+y scratchpad show
 
 # Forcing apps on workspaces
-assign [class="Firefox"] $workspace2                        # Web App
-assign [class="Brave"] $workspace2                          # Web App
-assign [class="brave-browser"] $workspace2                  # Web App
+assign [class="Firefox"] $workspace2                        # Web browser
+assign [class="Brave"] $workspace2                          # Web browser
+assign [class="brave-browser"] $workspace2                  # Web browser
+assign [class="Chromium"] $workspace2                       # Web browser
 for_window [title="Save As"] floating disable               # For fixing size problems
 assign [class="Nautilus"] $workspace4                       # Files
 assign [title="ranger"] $workspace4                         # Files
@@ -191,7 +192,7 @@ bindsym $mod+x exec lockscreen
 bindsym $mod+Shift+n exec kitty tmux-init "ranger" "ranger"
 bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to output left
-bindsym $mod+Shift+b exec brave
+bindsym $mod+Shift+b exec chromium
 bindsym $mod+t exec wallpaper
 bindsym $mod+Shift+e exec shutdown_menu # Shutdown menu
 bindsym $mod+p exec rofi -show emoji -modi emoji
