@@ -49,7 +49,6 @@ exec([[autocmd BufWritePre * %s/\s\+$//e]], false)
 --- ======================================================================== ---
 vim.opt.autoread = true                                    -- Auto reload changed files
 exec("autocmd! bufwritepost init.lua source %", false)     -- Auto compile when changing nvim config file
-exec("autocmd! bufwritepost .nvimrc source %", false)      -- Auto compile when changing nvim config file
 
 -- Get rid of swap/backup files
 vim.g.nobackup = true

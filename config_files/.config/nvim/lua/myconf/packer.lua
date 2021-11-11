@@ -22,7 +22,7 @@ return require('packer').startup(function()
 
     -- Editor
     -- ===============================================================================
-    use 'jiangmiao/auto-pairs'         -- Autoclose brackets, parenthesis...
+    use 'windwp/nvim-autopairs'        -- Autopairs certain chars as " or [
     use 'preservim/nerdcommenter'      -- Commenting code
     use 'dhruvasagar/vim-table-mode'   -- For writing markdown tables
 
@@ -46,6 +46,7 @@ return require('packer').startup(function()
             -- Base code requirements
             {'nvim-lua/popup.nvim'},
             {'nvim-lua/plenary.nvim'},
+
             -- Nice icons for telescope display
             {'kyazdani42/nvim-web-devicons'}
         }
@@ -100,5 +101,4 @@ return require('packer').startup(function()
     -- ===============================================================================
     use 'gruvbox-community/gruvbox'    -- Gruvbox Theme updated
     use 'joshdick/onedark.vim'         -- Secondary colorscheme
-
 end)
