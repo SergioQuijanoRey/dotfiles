@@ -28,10 +28,17 @@ return require('packer').startup(function()
 
     -- Visual
     -- ===============================================================================
-    use 'vim-airline/vim-airline'          -- Status bar. Lightline is a lighter alternative
-    use 'vim-airline/vim-airline-themes'   -- Status bar themes
     use 'junegunn/goyo.vim'                -- Focus Mode
     use 'ryanoasis/vim-devicons'           -- Icons for NerdTree
+
+    -- Display status line
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = {
+            'kyazdani42/nvim-web-devicons',
+            opt = true
+        }
+    }
 
     -- Language server protocols, codecompletions, ...
     -- ===============================================================================
@@ -101,4 +108,6 @@ return require('packer').startup(function()
     -- ===============================================================================
     use 'gruvbox-community/gruvbox'    -- Gruvbox Theme updated
     use 'joshdick/onedark.vim'         -- Secondary colorscheme
+
+
 end)

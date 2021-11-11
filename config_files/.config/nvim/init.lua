@@ -17,6 +17,8 @@ require("myconf/telescope")
 require("myconf/lsp")
 require("myconf/completion")
 require("myconf/keybindings")
+require("myconf/autopairs")
+require("myconf/status_line")
 
 --- Aux functions
 --- ======================================================================== ---
