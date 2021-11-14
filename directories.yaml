@@ -10,6 +10,7 @@ directories:
     - bash profile:
         repo_path: ./config_files/.bash_profile
         system_path: .bash_profile
+
     # i3 reads config from this file, so we source .bash_dotfiles from .profile
     # Otherwise, $PATH is not available for neither i3 keybindings nor i3 exec commands
     - profile:
@@ -27,6 +28,21 @@ directories:
     - bash prompt:
         repo_path: ./config_files/.bash_prompt
         system_path: .bash_prompt
+
+    # ZSH config files
+    # Some zsh config is shared with bash config, but certain files have to be diffeent
+    - zshrc:
+        repo_path: ./config_files/.zshrc
+        system_path: .zshrc
+    - zsh profile:
+        repo_path: ./config_files/.zprofile
+        system_path: .zprofile
+    - zsh prompt:
+        repo_path: ./config_files/.zsh_prompt
+        system_path: .zsh_prompt
+    - zsh dotfiles:
+        repo_path: ./config_files/.zsh_dotfiles
+        system_path: .zsh_dotfiles
 
     # Git configs
     - gitconfig:
