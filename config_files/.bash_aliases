@@ -18,7 +18,7 @@ alias dasm="objdump -d"                                     # Useful for disasse
 alias getsyscall="cat /usr/include/asm/unistd_32.h | egrep "
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias compile="g++ -std=c++11 -lpthread"
-alias emulator="~/Android/Sdk/emulator/emulator @Galaxy_Nexus_API_30"
+alias emulator="~/Android/Sdk/emulator/emulator @Pixel_5_API_30"
 
 # Git aliases
 alias gcommit="git add . ; git commit"
@@ -37,9 +37,6 @@ alias reload="source .bashrc; source .bash_aliases; source .profile"
 alias ds="du -d0 -h"
 alias unterminal="bg %1 && disown %1"
 
-# Some nice colors hex values
-alias palette_green="echo '#A6B290'"
-
 # Gaming aliases
 alias league_ready="sudo sysctl -w abi.vsyscall32=0"
 
@@ -49,3 +46,6 @@ alias la="exa -a"
 alias ll="exa -l"
 alias lla="exa -la"
 alias cat="bat -p"
+
+# Get my ip
+alias myip="curl http://ipecho.net/plain; echo"

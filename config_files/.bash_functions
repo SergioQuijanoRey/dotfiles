@@ -43,6 +43,12 @@ function vf(){
 		nvim "$file"
 }
 
+# Script para tener bat con fzf
+function bf(){
+    file=$(fzf)
+    bat "$file"
+}
+
 # Script para buscar procesos
 function findps(){
     ps aux | egrep $1 | egrep -v egrep | egrep -v grep | egrep $1

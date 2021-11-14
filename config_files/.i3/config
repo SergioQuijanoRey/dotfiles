@@ -196,6 +196,7 @@ bindsym $mod+Shift+b exec chromium
 bindsym $mod+t exec wallpaper
 bindsym $mod+Shift+e exec shutdown_menu # Shutdown menu
 bindsym $mod+p exec rofi -show emoji -modi emoji
+bindsym $mod+o exec open
 
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R

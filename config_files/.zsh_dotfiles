@@ -1,0 +1,36 @@
+# Source of all config, independent of using loging shell
+# or interactive shell (independent of sourcing .zshrc or .zprofile)
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+
+# Completion engine
+autoload -Uz compinit && compinit
+compinit
+
+zstyle ':completion:*' menu select
+setopt COMPLETE_ALIASES
+zstyle ':completion::complete:*' gain-privileges 1
+
+# Keybindings for fast movement
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+# Enable colors
+autoload -U colors && colors
+
+# Load fish-like hightlight and suggestions
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# This bash config files also work for zsh, so I am going to keep using them and
+# adding more content as I evolve my workflow
+source ~/.bash_aliases
+source ~/.bash_functions
+
+# This has to be configured in different file
+# Prompt in zsh is not configured the same as bash
+source ~/.zsh_prompt
