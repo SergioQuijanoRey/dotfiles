@@ -160,9 +160,6 @@ optional:
         # ===============================================================================
         - neofetch				  # To show system information
 
-        # Browsers
-        - brave-bin               # Primary browser
-
         # Media
         # ===============================================================================
         - gimp                    # Image editor
