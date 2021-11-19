@@ -34,3 +34,16 @@ source ~/.bash_functions
 # This has to be configured in different file
 # Prompt in zsh is not configured the same as bash
 source ~/.zsh_prompt
+
+# Env vars
+#===============================================================================
+
+# NVIM + Terminal
+export EDITOR="nvim"
+export VISUAL="nvim"
+export TERMCMD="kitty"
+export COLORTERM="kitty"
+export TERM="kitty"
+
+# I3WM vars
+export BROWSER="chromium"

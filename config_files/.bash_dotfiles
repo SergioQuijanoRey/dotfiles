@@ -59,7 +59,7 @@ export COLORTERM="kitty"
 export TERM="kitty"
 
 # I3WM vars
-export BROWSER="brave"
+export BROWSER="chromium"
 
 # Other stuff
 #===============================================================================
