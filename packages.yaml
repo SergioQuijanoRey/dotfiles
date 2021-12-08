@@ -122,6 +122,7 @@ aur:
         - bottom      # A better top alternative - like gotop but using rust
         - bat         # A better cat alternative
         - duf         # For seeing disk usage
+        - diffsitter  # Alternative to classic diff tool
 
         # I3
         #===============================================================================
