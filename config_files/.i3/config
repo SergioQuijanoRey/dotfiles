@@ -197,6 +197,7 @@ bindsym $mod+t exec wallpaper
 bindsym $mod+Shift+e exec shutdown_menu # Shutdown menu
 bindsym $mod+p exec rofi -show emoji -modi emoji
 bindsym $mod+o exec open
+bindsym $mod+c exec calculator
 
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
