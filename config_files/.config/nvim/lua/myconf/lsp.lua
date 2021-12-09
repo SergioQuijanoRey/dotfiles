@@ -19,7 +19,7 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', '<leader>qa', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts) -- code actions
     buf_set_keymap('n', '<leader>ql', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
     buf_set_keymap('n', '<leader>qs', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-    -- buf_set_keymap("n", "<leader>qf", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+    buf_set_keymap("n", "<leader>qf", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 
     --buf_set_keymap("n", "<space>qd", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts)
     -- buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
@@ -38,47 +38,56 @@ local on_attach = function(client, bufnr)
 
     -- Signature hint plugin
     cfg = {
-        bind = true, -- This is mandatory, otherwise border config won't get registered.
-        -- If you want to hook lspsaga or other signature handler, pls set to false
-        doc_lines = 2, -- will show two lines of comment/doc(if there are more than two lines in doc, will be truncated);
-        -- set to 0 if you DO NOT want any API comments be shown
-        -- This setting only take effect in insert mode, it does not affect signature help in normal
-        -- mode, 10 by default
+	bind = true, -- This is mandatory, otherwise border config won't get registered.
+	-- If you want to hook lspsaga or other signature handler, pls set to false
+	doc_lines = 2, -- will show two lines of comment/doc(if there are more than two lines in doc, will be truncated);
+	-- set to 0 if you DO NOT want any API comments be shown
+	-- This setting only take effect in insert mode, it does not affect signature help in normal
+	-- mode, 10 by default
 
-        floating_window = true, -- show hint in a floating window, set to false for virtual text only mode
-        fix_pos = false,  -- set to true, the floating window will not auto-close until finish all parameters
-        hint_enable = true, -- virtual hint enable
-        hint_prefix = "🐼 ",  -- Panda for parameter
-        hint_scheme = "String",
-        use_lspsaga = true,  -- set to true if you want to use lspsaga popup
-        hi_parameter = "Search", -- how your parameter will be highlight
-        max_height = 12, -- max height of signature floating_window, if content is more than max_height, you can scroll down
-        -- to view the hiding contents
-        max_width = 120, -- max_width of signature floating_window, line will be wrapped if exceed max_width
-        handler_opts = {
-            border = "shadow"   -- double, single, shadow, none
-        },
-        extra_trigger_chars = {} -- Array of extra characters that will trigger signature completion, e.g., {"(", ","}
+	floating_window = true, -- show hint in a floating window, set to false for virtual text only mode
+	fix_pos = false,  -- set to true, the floating window will not auto-close until finish all parameters
+	hint_enable = true, -- virtual hint enable
+	hint_prefix = "🐼 ",  -- Panda for parameter
+	hint_scheme = "String",
+	use_lspsaga = true,  -- set to true if you want to use lspsaga popup
+	hi_parameter = "Search", -- how your parameter will be highlight
+	max_height = 12, -- max height of signature floating_window, if content is more than max_height, you can scroll down
+	-- to view the hiding contents
+	max_width = 120, -- max_width of signature floating_window, line will be wrapped if exceed max_width
+	handler_opts = {
+	    border = "shadow"   -- double, single, shadow, none
+	},
+	extra_trigger_chars = {} -- Array of extra characters that will trigger signature completion, e.g., {"(", ","}
     }
 
     require'lsp_signature'.on_attach(cfg)
 end
 
--- Install command
-require'lspinstall'.setup()
+-- LSP installer
+-- We need this to query all the LSPs that we've installed using this package
+local lsp_installer = require("nvim-lsp-installer")
 
--- Attach on every installed language server
 -- Also, get capabilities of nvim-cmp for autocompletions
+-- We need to attach this autocomp capabilites to LSPs
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-local servers = require'lspinstall'.installed_servers()
-for _, server in pairs(servers) do
-    require'lspconfig'[server].setup{
+-- Same function of lsp setup used in lsp_config, but here we query all
+-- servers installed using lsp install package
+lsp_installer.on_server_ready(function(server)
+
+    -- Options to the lsp configuration
+    local opts = {
         -- For better performance
         flags = {
             debounce_text_changes = 500,
         },
+
         on_attach = on_attach,
         capabilities = capabilities
+
     }
-end
+
+    -- Call setup on current server we're configuring
+    server:setup(opts)
+end)

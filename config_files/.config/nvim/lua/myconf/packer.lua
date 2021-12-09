@@ -74,8 +74,8 @@ return require('packer').startup(function()
 
         -- Dependencies for the plugin
         requires = {
-            -- Command for installing servers
-            "kabouzeid/nvim-lspinstall",
+            -- For installing LSPs easily
+            'williamboman/nvim-lsp-installer',
 
             -- Completion engine
             'hrsh7th/nvim-cmp',
@@ -108,6 +108,4 @@ return require('packer').startup(function()
     -- ===============================================================================
     use 'gruvbox-community/gruvbox'    -- Gruvbox Theme updated
     use 'joshdick/onedark.vim'         -- Secondary colorscheme
-
-
 end)
