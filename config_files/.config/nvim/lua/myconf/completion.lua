@@ -38,7 +38,7 @@ cmp.setup({
     -- Order matters, because it gives the priority for autocompletion
     sources = cmp.config.sources({
         { name = 'nvim_lsp', keyword_length = min_keyword_length },
-        { name = 'buffer' , keyword_length = min_keyword_length},
+        { name = 'buffer' , keyword_length = min_keyword_length, option = { keyword_pattern = [[\k\+]]} },
         -- { name = 'vsnip' }, -- For vsnip users.
         -- { name = 'luasnip' }, -- For luasnip users.
         -- { name = 'ultisnips' }, -- For ultisnips users.
