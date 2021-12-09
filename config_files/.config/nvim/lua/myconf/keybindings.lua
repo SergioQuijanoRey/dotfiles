@@ -38,9 +38,6 @@ setmap("t", "<leader><Esc>", "<C-\\><C-n>>", {noremap = true})
 setmap("n", "<S-Up>", "<C-Up>", {})
 setmap("n", "<S-Down>", "<C-Down>", {})
 
--- Clears the search highlight
-setmap("n", "<leader>m", ":noh<CR>", {})
-
 -- Tab Navigation
 setmap("n", "<leader>t", ":tabnew<CR>", {})
 setmap("n", "<leader>T", ":tabnew<CR>:terminal<CR>A", {})
@@ -53,9 +50,6 @@ setmap("n", "<leader>6", "6gt", {})
 setmap("n", "<leader>7", "7gt", {})
 setmap("n", "<leader>8", "8gt", {})
 setmap("n", "<leader>9", "9gt", {})
-
--- Yank capital letter is not having caps default behaviour
-setmap("n", "Y", "y$", {})
 
 -- Undo break points
 -- When writting a line, instead of undoing the whole line, just undo to the latest savepoint
