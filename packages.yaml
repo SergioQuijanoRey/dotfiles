@@ -38,7 +38,7 @@ pacman:
         - w3m                     # Ranger needs this for displaying pdfs
         - fzf                     # For searching in the terminal
         - python3                 # TODO ==> Probably is a dependency for other packages, so no need to manually install it
-        - community/python-pipenv # Python package and enviroment management
+        - poetry                  # Python package and enviroment management
         - jq                      # Command line JSON pretty printer
         - podman                  # Container technology
         - docker                  # Container technology
@@ -119,10 +119,10 @@ aur:
     packages:
         # System administration
         #===============================================================================
-        - bottom      # A better top alternative - like gotop but using rust
-        - bat         # A better cat alternative
-        - duf         # For seeing disk usage
-        - diffsitter  # Alternative to classic diff tool
+        - bottom          # A better top alternative - like gotop but using rust
+        - bat             # A better cat alternative
+        - duf             # For seeing disk usage
+        - diffsitter-bin  # Alternative to classic diff tool
 
         # I3
         #===============================================================================
