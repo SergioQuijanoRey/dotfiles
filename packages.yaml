@@ -28,6 +28,7 @@ pacman:
         - acpi        # Check for battery status
         - tig         # ncurses terminal UI for git
                       # Useful for view different branches
+        - ripgrep     # Better grep
 
         # Programming
         #===============================================================================
@@ -123,6 +124,10 @@ aur:
         - bat             # A better cat alternative
         - duf             # For seeing disk usage
         - diffsitter-bin  # Alternative to classic diff tool
+
+        # Programming
+        #===============================================================================
+        - dvc     # Like git but for keeping track of datasets
 
         # I3
         #===============================================================================
