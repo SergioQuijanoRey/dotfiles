@@ -20,9 +20,9 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', '<leader>ql', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
     buf_set_keymap('n', '<leader>qs', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
     buf_set_keymap("n", "<leader>qf", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+    buf_set_keymap('n', '<leader>qk', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
 
     --buf_set_keymap("n", "<space>qd", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-    -- buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
     --buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
     --buf_set_keymap('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
     --buf_set_keymap('n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
@@ -91,3 +91,6 @@ lsp_installer.on_server_ready(function(server)
     -- Call setup on current server we're configuring
     server:setup(opts)
 end)
+
+-- Setup julia manually
+nvim_lsp.julials.setup{}

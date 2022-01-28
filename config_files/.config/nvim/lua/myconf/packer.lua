@@ -40,6 +40,9 @@ return require('packer').startup(function()
         }
     }
 
+    -- Show indentation guidelines
+    use 'lukas-reineke/indent-blankline.nvim'
+
     -- Language server protocols, codecompletions, ...
     -- ===============================================================================
 
@@ -103,6 +106,9 @@ return require('packer').startup(function()
             'hrsh7th/cmp-cmdline'
         }
     }
+
+    -- Latex to unicode for julia
+    use {"JuliaEditorSupport/julia-vim"}
 
     -- Color schemes
     -- ===============================================================================
