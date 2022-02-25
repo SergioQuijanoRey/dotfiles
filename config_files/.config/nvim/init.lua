@@ -53,9 +53,7 @@ vim.opt.autoread = true                                    -- Auto reload change
 exec("autocmd! bufwritepost init.lua source %", false)     -- Auto compile when changing nvim config file
 
 -- Get rid of swap/backup files
-vim.g.nobackup = true
-vim.g.nowritebackup = true
-vim.g.noswapfile = true
+exec("set noswapfile")
 
 --- Clipboard
 -- TODO --- FIXME
