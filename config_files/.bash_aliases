@@ -19,6 +19,7 @@ alias getsyscall="cat /usr/include/asm/unistd_32.h | egrep "
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias compile="g++ -std=c++11 -lpthread"
 alias emulator="~/Android/Sdk/emulator/emulator @Pixel_5_API_30"
+# alias conda="/opt/anaconda/bin/conda"   # Launch conda without having to change my $PATH
 
 # Git aliases
 alias gcommit="git add . ; git commit"
@@ -29,13 +30,9 @@ alias gw="git worktree"
 
 # System config aliases
 alias confi3="nvim .i3/config"
-alias vconf="nvim .config/nvim/init.vim"
-alias libinputconf="sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf"
-alias reload="source .bashrc; source .bash_aliases; source .profile"
 
 # Administration aliases
-alias ds="du -d0 -h"
-alias unterminal="bg %1 && disown %1"
+alias filesize="du -d0 -h"
 
 # Gaming aliases
 alias league_ready="sudo sysctl -w abi.vsyscall32=0"
