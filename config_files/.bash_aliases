@@ -35,7 +35,7 @@ alias confi3="nvim .i3/config"
 alias filesize="du -d0 -h"
 
 # Gaming aliases
-alias league_ready="sudo sysctl -w abi.vsyscall32=0"
+alias league_ready="sudo sysctl -w abi.vsyscall32=0; sudo sysctl dev.i915.perf_stream_paranoid=0"
 
 # Replacements (change one command to use other)
 alias ls="exa"                          # Exa is a good replacement for ls
