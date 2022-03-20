@@ -141,6 +141,7 @@ aur:
         #===============================================================================
         - community/nerd-fonts-noto-sans-mono # Font with icons - Select icons on https://www.nerdfonts.com/cheat-sheet
         - community/nerd-fonts-roboto-mono    # Other nice font
+        - community/ttf-cascadia-code         # Other nice font
 
         # Others
         #===============================================================================
