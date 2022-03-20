@@ -12,7 +12,7 @@
 
 # Parameters
 package_manager="yay"
-update_params="-Syyu"
+update_params="-Syyu --ignore=rofi"
 
 # Pacman and AUR upgrade
 $package_manager $update_params
