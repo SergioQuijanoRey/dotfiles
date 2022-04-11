@@ -68,6 +68,7 @@ pacman:
         - community/lxappearance	    # To set the system theme
         - pavucontrol				    # Volume control
         - pa-applet				        # Volume control (pavucontrol)
+        - kmix                          # Another volume control applet
         - extra/network-manager-applet  # Applet for connecting to wifi
         - scrot					        # For locking the screen (makes the screenshot) and taking screenshots
                                         # Also using this for my custom scrot program
