@@ -56,6 +56,7 @@ pacman:
         # i3 components
         #===============================================================================
         - i3-wm					# The preferred wm
+        - awesome               # Alternative to i3
         - feh				# To set the background
         - compton			# i3 compositor
         - rofi					        # Program launcher
