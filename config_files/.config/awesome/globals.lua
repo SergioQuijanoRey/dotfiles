@@ -16,16 +16,16 @@ package.terminal = "kitty"
 --
 -- Shared tags among two screens
 package.tags = sharedtags({
-    {name = "1", layout = awful.layout.layouts[1]},
-    {name = "2", layout = awful.layout.layouts[1]},
-    {name = "3", layout = awful.layout.layouts[1]},
-    {name = "4", layout = awful.layout.layouts[1]},
-    {name = "5", layout = awful.layout.layouts[1]},
-    {name = "6", layout = awful.layout.layouts[1]},
+    {name = "1: ", layout = awful.layout.layouts[1]},
+    {name = "2: ", layout = awful.layout.layouts[1]},
+    {name = "3: ", layout = awful.layout.layouts[1]},
+    {name = "4: ", layout = awful.layout.layouts[1]},
+    {name = "5: ", layout = awful.layout.layouts[1]},
+    {name = "6: ", layout = awful.layout.layouts[1]},
     {name = "7", layout = awful.layout.layouts[1]},
     {name = "8", layout = awful.layout.layouts[1]},
-    {name = "9", layout = awful.layout.layouts[1]},
-    {name = "0", layout = awful.layout.layouts[1]},
+    {name = "9: ", layout = awful.layout.layouts[1]},
+    {name = "10: ", layout = awful.layout.layouts[1]},
 })
 
 return package

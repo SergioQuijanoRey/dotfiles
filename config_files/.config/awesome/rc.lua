@@ -6,14 +6,18 @@ pcall(require, "luarocks.loader")
 local gears = require("gears")
 local awful = require("awful")
 require("awful.autofocus")
+
 -- Widget and layout library
 local wibox = require("wibox")
+
 -- Theme handling library
 local beautiful = require("beautiful")
+
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
+
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -112,8 +116,6 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- {{{ Wibar
--- Create a textclock widget
-mytextclock = wibox.widget.textclock()
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -136,7 +138,8 @@ local taglist_buttons = gears.table.join(
 local tasklist_buttons = gears.table.join(
                      awful.button({ }, 1, function (c)
                                               if c == client.focus then
-                                                  c.minimized = true
+                                                  -- I don't want minimizing features
+                                                  -- c.minimized = true
                                               else
                                                   c:emit_signal(
                                                       "request::activate",
@@ -174,6 +177,37 @@ local tasklist_buttons = gears.table.join(
 
 -- Shared tags among two screens
 tags = dofile("/home/sergio/.config/awesome/globals.lua").tags
+
+
+-- AwesomeWidgets that I use on wibox bar
+-- See https://github.com/streetturtle/awesome-wm-widgets for more documentation
+local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
+local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
+local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
+local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
+local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
+local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
+local fs_widget = require("awesome-wm-widgets.fs-widget.fs-widget")
+local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
+
+
+-- Calendar widget that we attach to textclock
+local cw = calendar_widget({
+    theme = 'nord',
+    placement = 'top_center',
+    start_sunday = false,
+    radius = 8,
+    previous_month_button = 1,
+    next_month_button = 3,
+})
+
+-- Create a textclock widget
+-- Attach prev calendar widget
+mytextclock = wibox.widget.textclock()
+mytextclock:connect_signal("button::press",
+    function(_, _, _, button)
+        if button == 1 then cw.toggle() end
+    end)
 
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
@@ -221,13 +255,59 @@ awful.screen.connect_for_each_screen(function(s)
             s.mytaglist,
             s.mypromptbox,
         },
-        s.mytasklist, -- Middle widget
+
+        {
+            layout = wibox.layout.align.horizontal,
+
+            mytextclock,
+            cpu_widget({
+                width = 70,
+                step_width = 2,
+                step_spacing = 0,
+                color = '#434c5e',
+                enable_kill_button = true,
+            }),
+
+
+		    ram_widget({
+                widget_show_buf	= false,
+                timeout = 10,
+            }),
+
+            fs_widget({
+                mounts = { '/', },
+            --     timeout = 60,
+            }),
+
+
+
+        },
+
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
-            mytextclock,
-            s.mylayoutbox,
+
+            batteryarc_widget({
+                show_current_level = true,
+                arc_thickness = 1,
+                size = 30,
+                enable_battery_warning = true,
+            }),
+
+            brightness_widget{
+                type = 'arc',
+                program = 'xbacklight',
+                percentage = true,
+                step = 2,
+            },
+
+            volume_widget{
+                widget_type = 'arc'
+            },
+
+            logout_menu_widget(),
+            -- s.mylayoutbox,
         },
     }
 end)
@@ -381,4 +461,3 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
-
