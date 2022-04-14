@@ -114,6 +114,10 @@ pacman:
         - community/ttf-fira-code             # Second preferred font
         - community/ttf-nerd-fonts-symbols    # Font with icons
 
+        # AwesomeWM extras
+
+        - community/arc-icon-theme # Icons for the bar
+
 # IMPORTANT -- yay has to be installed before running this yaml file
 # To do this, run pre_install.yaml
 # TODO -- write the pre_install script

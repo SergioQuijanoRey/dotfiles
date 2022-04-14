@@ -59,7 +59,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init("/home/sergio/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = dofile("/home/sergio/.config/awesome/globals.lua").terminal
@@ -306,7 +306,12 @@ awful.screen.connect_for_each_screen(function(s)
                 widget_type = 'arc'
             },
 
-            logout_menu_widget(),
+            logout_menu_widget({
+                onlock = function()
+                    -- Launch custom script to lock the screen
+                    awesome.spawn("/home/sergio/.i3/scripts/lockscreen")
+                end
+            }),
             -- s.mylayoutbox,
         },
     }
@@ -395,6 +400,30 @@ awful.rules.rules = {
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { screen = 1, tag = "2" } },
+
+
+    -- Bind programs to certain tags
+
+    { rule =
+        { instance = "chromium" },
+        properties = {
+            tag = tags[2]
+        }
+    },
+
+    { rule =
+        { instance = "evince" },
+        properties = {
+            tag = tags[6]
+        }
+    },
+
+    { rule =
+        { name = "ranger" },
+        properties = {
+            tag = tags[4]
+        }
+    },
 }
 -- }}}
 

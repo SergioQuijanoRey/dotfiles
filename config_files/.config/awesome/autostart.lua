@@ -8,7 +8,11 @@ awful.spawn("blueman-applet")
 awful.spawn("kmix")
 
 -- Set the wallpaper
-awful.spawn("feh --bg-scale '/home/sergio/backgrounds/color_penguin.jpg'")
+wallpaper = dofile("/home/sergio/.config/awesome/globals.lua").wallpaper
+awful.spawn("feh --bg-scale '" .. wallpaper .. "'")
 
 -- Set the screens
 awful.spawn("autodisplay")
+
+-- Other programs
+awful.spawn("telegram-desktop")
