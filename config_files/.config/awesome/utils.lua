@@ -6,9 +6,9 @@ local sharedtags = require("sharedtags")
 
 package = {}
 
-package.goto_tag = function(i)
-    -- The tag we want to go
-    local tag = tags[i]
+-- Move to a given tag, without changing the tag screen
+-- That's to say, if the tag is in other screen, go to that screen and focus it
+package.goto_tag = function(tag)
 
     -- The screen the tag is in
     -- This way, we can go to that screen

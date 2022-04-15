@@ -10,29 +10,14 @@ local sharedtags = require("sharedtags")
 
 -- The table we are going to return
 package = {}
-
-goto_tag = function(tag)
-
-    -- The screen the tag is in
-    -- This way, we can go to that screen
-    local screen = tag.screen
-
-    if tag then
-        -- View this tag in the screen is laying
-        -- Thus, no changing the screen where the tag was
-        sharedtags.viewonly(tag, screen)
-
-        -- Focus that screen, so the mouse is over that screen
-        awful.screen.focus(screen)
-    end
-
-end
-
+--
 -- Load some globals
 modkey = dofile("/home/sergio/.config/awesome/globals.lua").modkey
 terminal = dofile("/home/sergio/.config/awesome/globals.lua").terminal
 tags = dofile("/home/sergio/.config/awesome/globals.lua").tags
--- goto_tag = dofile("/home/sergio/.config/awesome/utils.lua").goto_tag
+goto_tag = dofile("/home/sergio/.config/awesome/utils.lua").goto_tag
+
+
 Shift = "Shift"
 
 -- Default global keybindings
@@ -220,7 +205,6 @@ clientkeys = gears.table.join(
         sharedtags.movetag(current_tag, next_screen)
 
         -- Move along the tag
-        awful.screen.focus(next_screen)
         goto_tag(current_tag)
 
 
@@ -270,18 +254,9 @@ for i = 1, 10 do
             -- The tag we want to go
             local tag = tags[i]
 
-            -- The screen the tag is in
-            -- This way, we can go to that screen
-            local screen = tag.screen
+            -- Custom function to move to that tag
+            goto_tag(tag)
 
-            if tag then
-                -- View this tag in the screen is laying
-                -- Thus, no changing the screen where the tag was
-                sharedtags.viewonly(tag, screen)
-
-                -- Focus that screen, so the mouse is over that screen
-                awful.screen.focus(screen)
-            end
         end,
         {description = "view tag #"..i, group = "tag"}),
 
