@@ -11,10 +11,28 @@ local sharedtags = require("sharedtags")
 -- The table we are going to return
 package = {}
 
+goto_tag = function(tag)
+
+    -- The screen the tag is in
+    -- This way, we can go to that screen
+    local screen = tag.screen
+
+    if tag then
+        -- View this tag in the screen is laying
+        -- Thus, no changing the screen where the tag was
+        sharedtags.viewonly(tag, screen)
+
+        -- Focus that screen, so the mouse is over that screen
+        awful.screen.focus(screen)
+    end
+
+end
+
 -- Load some globals
 modkey = dofile("/home/sergio/.config/awesome/globals.lua").modkey
 terminal = dofile("/home/sergio/.config/awesome/globals.lua").terminal
 tags = dofile("/home/sergio/.config/awesome/globals.lua").tags
+-- goto_tag = dofile("/home/sergio/.config/awesome/utils.lua").goto_tag
 Shift = "Shift"
 
 -- Default global keybindings
@@ -47,10 +65,6 @@ globalkeys = gears.table.join(
 
     awful.key({ modkey, "Shift"   }, "Left", function () awful.client.swap.byidx( -1)    end,
               {description = "swap with previous client by index", group = "client"}),
-
-    -- Change to other screen
-    -- awful.key({ modkey, Shift }, "p", function () awful.screen.focus_relative( 1) end,
-    --           {description = "focus the next screen", group = "screen"}),
 
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
               {description = "jump to urgent client", group = "client"}),
@@ -202,12 +216,16 @@ clientkeys = gears.table.join(
             next_screen = curr_screen:get_next_in_direction("left")
         end
 
-
-
         -- Move this tag to the other screen
         sharedtags.movetag(current_tag, next_screen)
+
+        -- Move along the tag
+        awful.screen.focus(next_screen)
+        goto_tag(current_tag)
+
+
     end,
-              {description = "change tag to screen", group = "client"})
+    {description = "Move tag to the other screen", group = "client"})
 
 
     -- TODO -- this is for minimizing / maximizing clients, and now i don't want that
@@ -248,16 +266,25 @@ for i = 1, 10 do
     globalkeys = gears.table.join(globalkeys,
         -- View tag only.
         awful.key({ modkey }, "#" .. i + 9,
-                  function ()
-                        -- local screen = awful.screen.focused()
-                        local tag = tags[i]
-                        local screen = tag.screen
-                        if tag then
-                           sharedtags.viewonly(tag, screen)
-                            awful.screen.focus(screen)
-                        end
-                  end,
-                  {description = "view tag #"..i, group = "tag"}),
+        function ()
+            -- The tag we want to go
+            local tag = tags[i]
+
+            -- The screen the tag is in
+            -- This way, we can go to that screen
+            local screen = tag.screen
+
+            if tag then
+                -- View this tag in the screen is laying
+                -- Thus, no changing the screen where the tag was
+                sharedtags.viewonly(tag, screen)
+
+                -- Focus that screen, so the mouse is over that screen
+                awful.screen.focus(screen)
+            end
+        end,
+        {description = "view tag #"..i, group = "tag"}),
+
         -- Toggle tag display.
         awful.key({ modkey, "Control" }, "#" .. i + 9,
                   function ()
