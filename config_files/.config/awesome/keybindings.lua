@@ -49,8 +49,8 @@ globalkeys = gears.table.join(
               {description = "swap with previous client by index", group = "client"}),
 
     -- Change to other screen
-    awful.key({ modkey, Shift }, "p", function () awful.screen.focus_relative( 1) end,
-              {description = "focus the next screen", group = "screen"}),
+    -- awful.key({ modkey, Shift }, "p", function () awful.screen.focus_relative( 1) end,
+    --           {description = "focus the next screen", group = "screen"}),
 
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
               {description = "jump to urgent client", group = "client"}),
@@ -180,8 +180,34 @@ clientkeys = gears.table.join(
         {description = "move to master", group = "client"}
     ),
 
-    awful.key({ modkey,           }, "o",      function (c) c:move_to_screen()               end,
-              {description = "move to screen", group = "client"})
+    awful.key({ modkey,           }, "o",
+    function (c) c:move_to_screen() end,
+    {description = "move to screen", group = "client"}),
+
+
+    awful.key({ modkey, "Shift"}, "p",
+    function (c)
+
+        -- Select current tag
+        local current_tag = awful.screen.focused().selected_tag
+
+        -- If no tag is selected, then do nothing
+        if current_tag == nil then return end
+
+        -- Select next screen (to the right)
+        -- We asume only two screens
+        local curr_screen = c.screen
+        local next_screen = curr_screen:get_next_in_direction("right")
+        if next_screen == nil then
+            next_screen = curr_screen:get_next_in_direction("left")
+        end
+
+
+
+        -- Move this tag to the other screen
+        sharedtags.movetag(current_tag, next_screen)
+    end,
+              {description = "change tag to screen", group = "client"})
 
 
     -- TODO -- this is for minimizing / maximizing clients, and now i don't want that
@@ -223,10 +249,12 @@ for i = 1, 10 do
         -- View tag only.
         awful.key({ modkey }, "#" .. i + 9,
                   function ()
-                        local screen = awful.screen.focused()
+                        -- local screen = awful.screen.focused()
                         local tag = tags[i]
+                        local screen = tag.screen
                         if tag then
                            sharedtags.viewonly(tag, screen)
+                            awful.screen.focus(screen)
                         end
                   end,
                   {description = "view tag #"..i, group = "tag"}),
@@ -269,4 +297,5 @@ end
 -- This way we can use this module in rc.lua using require syntax
 package.globalkeys = globalkeys
 package.clientkeys = clientkeys
+
 return package
