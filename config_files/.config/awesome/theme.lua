@@ -11,6 +11,7 @@ local themes_path = gfs.get_themes_dir()
 -- Custom color palette that I use to use same colors in all apps
 local color_palette = {}
 color_palette.blue = "#5DA8F4"
+color_palette.red = "#EE4B2B"
 
 -- Custom paths to the icons I am using
 local custom_icons = {}
@@ -23,7 +24,7 @@ theme.font          = "JetBrains Mono 9"
 
 theme.bg_normal     = "#222222"
 theme.bg_focus      = "#535d6c"
-theme.bg_urgent     = "#ff0000"
+theme.bg_urgent     = color_palette.red
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 

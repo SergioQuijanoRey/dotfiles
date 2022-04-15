@@ -181,7 +181,7 @@ tags = dofile("/home/sergio/.config/awesome/globals.lua").tags
 
 -- AwesomeWidgets that I use on wibox bar
 -- See https://github.com/streetturtle/awesome-wm-widgets for more documentation
-local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
+local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
 local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
 local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
@@ -288,12 +288,18 @@ awful.screen.connect_for_each_screen(function(s)
             mykeyboardlayout,
             wibox.widget.systray(),
 
-            batteryarc_widget({
+
+            battery_widget({
                 show_current_level = true,
-                arc_thickness = 1,
-                size = 30,
+                display_notinotification_positionfication = true,
+                notification_position = top_right,
                 enable_battery_warning = true,
+                margin_left = 10,
+                margin_rigth = 10,
             }),
+
+            -- Add space between widgets
+            wibox.widget.textbox(" "),
 
             brightness_widget{
                 type = 'arc',
@@ -302,8 +308,12 @@ awful.screen.connect_for_each_screen(function(s)
                 step = 2,
             },
 
+            -- Add space between widgets
+            wibox.widget.textbox(" "),
+
             volume_widget{
-                widget_type = 'arc'
+                widget_type = 'arc',
+                mute_color = beautiful.bg_urgent
             },
 
             logout_menu_widget({
