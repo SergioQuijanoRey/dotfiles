@@ -117,6 +117,7 @@ pacman:
         # AwesomeWM extras
 
         - community/arc-icon-theme # Icons for the bar
+        - aur/bibata-cursor-theme  # Cursor theme
 
 # IMPORTANT -- yay has to be installed before running this yaml file
 # To do this, run pre_install.yaml
