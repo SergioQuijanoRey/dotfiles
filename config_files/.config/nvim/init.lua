@@ -44,6 +44,9 @@ vim.opt.tabstop=4
 vim.opt.shiftwidth=4
 vim.opt.expandtab=true
 
+-- Spaces per tab, for certain filetypes
+exec("autocmd FileType dart setlocal shiftwidth=2 softtabstop=2 expandtab")
+
 -- Remove trailing white spaces when saving file
 exec([[autocmd BufWritePre * %s/\s\+$//e]], false)
 

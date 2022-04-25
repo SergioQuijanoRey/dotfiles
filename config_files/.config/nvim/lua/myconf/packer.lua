@@ -80,9 +80,6 @@ return require('packer').startup(function()
             -- For installing LSPs easily
             'williamboman/nvim-lsp-installer',
 
-            -- Completion engine
-            'hrsh7th/nvim-cmp',
-
             -- Signature hint plugin
             use {
                 "ray-x/lsp_signature.nvim",
@@ -92,18 +89,18 @@ return require('packer').startup(function()
     }
 
     -- Completion engine
+    -- Note that nivm-lsp does not have a completion engine by default
     use {
-
         -- Main plugin
         'hrsh7th/nvim-cmp',
 
-        -- Dependencies of the main plugin
+        -- Aux plugins for nvim-cmp
         requires = {
-            'neovim/nvim-lspconfig',
             'hrsh7th/cmp-nvim-lsp',
             'hrsh7th/cmp-buffer',
             'hrsh7th/cmp-path',
-            'hrsh7th/cmp-cmdline'
+            'hrsh7th/cmp-cmdline',
+            'hrsh7th/nvim-cmp'
         }
     }
 
@@ -114,4 +111,9 @@ return require('packer').startup(function()
     -- ===============================================================================
     use 'gruvbox-community/gruvbox'    -- Gruvbox Theme updated
     use 'joshdick/onedark.vim'         -- Secondary colorscheme
+
+    -- TODO
+    -- ===============================================================================
+    use 'dart-lang/dart-vim-plugin'
+
 end)
