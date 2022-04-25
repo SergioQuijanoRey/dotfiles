@@ -104,6 +104,9 @@ return require('packer').startup(function()
         }
     }
 
+    -- Snipet plugin. I use it almost exlusively for nvim-cmp
+    use {'L3MON4D3/LuaSnip'}
+
     -- Latex to unicode for julia
     use {"JuliaEditorSupport/julia-vim"}
 
