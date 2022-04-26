@@ -7,6 +7,10 @@
 -- Setup nvim-cmp.
 local cmp = require'cmp'
 
+-- Min word length to trigger autcompletion
+-- I use same min for all completion contexts
+local min_keyword_length = 3
+
 cmp.setup({
     -- This snipet configuration is required
     -- Some completion functionality relies on this
@@ -35,14 +39,18 @@ cmp.setup({
     }),
 
     sources = cmp.config.sources({
-        { name = 'nvim_lsp' },
+        { name = 'nvim_lsp', keyword_length = min_keyword_length },
         -- { name = 'vsnip' }, -- For vsnip users.
-        -- { name = 'luasnip' }, -- For luasnip users.
+        { name = 'luasnip', keyword_length = min_keyword_length  }, -- For luasnip users.
         -- { name = 'ultisnips' }, -- For ultisnips users.
         -- { name = 'snippy' }, -- For snippy users.
     }, {
-        { name = 'buffer' },
-    })
+        { name = 'buffer', keyword_length = min_keyword_length, option = { keyword_pattern = [[\k\+]]}  },
+    }
+
+
+
+    )
 })
 
 -- Set configuration for specific filetype.
