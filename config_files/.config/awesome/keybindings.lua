@@ -8,6 +8,9 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local sharedtags = require("sharedtags")
 
+-- For the capslock widget, that need to set some vars in globalkeys
+local capslock = require("awesome-capslock_widget.capslock")
+
 -- The table we are going to return
 package = {}
 --
@@ -153,7 +156,16 @@ globalkeys = gears.table.join(
             awful.spawn("wallpaper")
         end,
         {description = "Rofi selector for wallpapers", group = "app bindings"}
-    )
+    ),
+
+    -- VOLUME CONTROL
+    -- TODO -- this is not working
+    awful.key({}, "XF86AudioRaiseVolume", function() os.execute("amixer -D pulse sset Master 5%+") end),
+    awful.key({}, "XF86AudioLowerVolume", function() os.execute("amixer -D pulse sset Master 5%-") end),
+    awful.key({}, "XF86AudioMute", function() os.execute("amixer -D pulse set Master 1+ toggle") end),
+
+    -- This is required for the capslock widget
+    capslock.key
 )
 
 -- Default client keybindings
@@ -205,6 +217,7 @@ clientkeys = gears.table.join(
         sharedtags.movetag(current_tag, next_screen)
 
         -- Move along the tag
+        -- awful.screen.focus(next_screen)
         goto_tag(current_tag)
 
 

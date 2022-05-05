@@ -178,7 +178,6 @@ local tasklist_buttons = gears.table.join(
 -- Shared tags among two screens
 tags = dofile("/home/sergio/.config/awesome/globals.lua").tags
 
-
 -- AwesomeWidgets that I use on wibox bar
 -- See https://github.com/streetturtle/awesome-wm-widgets for more documentation
 local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
@@ -189,6 +188,13 @@ local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 local fs_widget = require("awesome-wm-widgets.fs-widget.fs-widget")
 local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
+
+-- Caps locks widget
+-- See https://github.com/stefano-m/awesome-capslock_widget for more documentation
+local capslock = require("awesome-capslock_widget.capslock")
+capslock.forced_width = 35
+capslock.activated = "<u> CAPS</u>"
+capslock.deactivated = "<u></u>"
 
 
 -- Calendar widget that we attach to textclock
@@ -203,11 +209,13 @@ local cw = calendar_widget({
 
 -- Create a textclock widget
 -- Attach prev calendar widget
-mytextclock = wibox.widget.textclock()
+-- Give nice format to the clock ouput
+mytextclock = wibox.widget.textclock("%R - %d/%m/%Y")
 mytextclock:connect_signal("button::press",
     function(_, _, _, button)
         if button == 1 then cw.toggle() end
     end)
+
 
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
@@ -260,6 +268,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.align.horizontal,
 
             mytextclock,
+            capslock,
             cpu_widget({
                 width = 70,
                 step_width = 2,
@@ -267,7 +276,6 @@ awful.screen.connect_for_each_screen(function(s)
                 color = '#434c5e',
                 enable_kill_button = true,
             }),
-
 
 		    ram_widget({
                 widget_show_buf	= false,
