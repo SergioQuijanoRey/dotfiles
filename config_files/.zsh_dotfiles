@@ -3,8 +3,8 @@
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=5000
+SAVEHIST=5000
 bindkey -e
 
 # Completion engine
@@ -47,3 +47,13 @@ export TERM="kitty"
 
 # I3WM vars
 export BROWSER="chromium"
+
+# This is needed so tmux respects nvim colorscheme when having multiple sessions
+alias tmux="TERM=screen-256color-bce tmux"
+
+# My personal paths
+#==============================================================================
+PATH="$PATH:/home/sergio/bin"
+PATH="$PATH:/home/sergio/.i3/scripts"
+PATH="$PATH:/home/sergio/.local/bin"
+PATH="$PATH:/home/sergio/.local/share/gem/ruby/3.0.0/bin"
