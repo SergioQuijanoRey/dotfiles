@@ -264,6 +264,7 @@ awful.screen.connect_for_each_screen(function(s)
             s.mypromptbox,
         },
 
+        -- Central widgets
         {
             layout = wibox.layout.align.horizontal,
 
@@ -291,7 +292,8 @@ awful.screen.connect_for_each_screen(function(s)
 
         },
 
-        { -- Right widgets
+        -- Right widgets
+        {
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
