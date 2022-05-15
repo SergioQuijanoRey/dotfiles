@@ -66,3 +66,15 @@ ls.add_snippets("lua", {
 }, {
     key = "lua",
 })
+
+
+ls.add_snippets("markdown", {
+
+    -- Easily require a function
+    s("mdtitle", fmt(
+        "---\ntitle: {}\nauthor: {}\ndate: {}\ngeometry: margin = 3.0cm\n---",
+        {i(1, "titulo"), i(2, "Sergio Quijano Rey"), i(3, "fecha")}
+    )),
+}, {
+    key = "markdown",
+})

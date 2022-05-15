@@ -4,6 +4,13 @@
 -- Load the plugin (lua imports modules this way)
 local nvim_lsp = require('lspconfig')
 
+-- Need to run this before configuring all of the servers
+local lspinstaller = require("nvim-lsp-installer")
+lspinstaller.setup {
+    -- Detect wich servers to install based on which servers are configured via lspconfig
+    automatic_installation = true,
+}
+
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
@@ -64,74 +71,32 @@ local on_attach = function(client, bufnr)
     require'lsp_signature'.on_attach(cfg)
 end
 
--- LSP installer
--- We need this to query all the LSPs that we've installed using this package
-local lsp_installer = require("nvim-lsp-installer")
-
 -- Also, get capabilities of nvim-cmp for autocompletions
 -- We need to provide lsp info to nvim-cmp config to get lsp autocompletion!
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
--- Same function of lsp setup used in lsp_config, but here we query all
--- servers installed using lsp install package
-lsp_installer.on_server_ready(function(server)
+-- We need to manually specify which servers we want to configure
+local servers = {"r_language_server", "rust_analyzer", "sumneko_lua"}
 
-    -- Options to the lsp configuration
-    local opts = {
-        -- For better performance
-        flags = {
-            debounce_text_changes = 500,
-        },
+-- Iterate over all installed servers and apply the config to them
+for _, server in ipairs(servers) do
 
+    -- Setup given server
+    require('lspconfig')[server].setup {
         on_attach = on_attach,
 
-        -- Capabilities that were modified to talk with nvim-cmp
-        capabilities = capabilities
-
-    }
-
-
-    -- Call setup on current server we're configuring
-    server:setup(opts)
-end)
-
-
--- Capabilites for julia lsp
-function julia_get_capabilites()
-    local capabilities = vim.lsp.protocol.make_client_capabilities()
-    capabilities.textDocument.completion.completionItem.snippetSupport = true
-    capabilities.textDocument.completion.completionItem.preselectSupport = true
-    capabilities.textDocument.completion.completionItem.tagSupport = { valueSet = { 1 } }
-    capabilities.textDocument.completion.completionItem.deprecatedSupport = true
-    capabilities.textDocument.completion.completionItem.insertReplaceSupport = true
-    capabilities.textDocument.completion.completionItem.labelDetailsSupport = true
-    capabilities.textDocument.completion.completionItem.commitCharactersSupport = true
-    capabilities.textDocument.completion.completionItem.resolveSupport = {
-        properties = { "documentation", "detail", "additionalTextEdits" },
-    }
-    capabilities.textDocument.completion.completionItem.documentationFormat = { "markdown" }
-    capabilities.textDocument.codeAction = {
-        dynamicRegistration = true,
-        codeActionLiteralSupport = {
-            codeActionKind = {
-                valueSet = (function()
-                    local res = vim.tbl_values(vim.lsp.protocol.CodeActionKind)
-                    table.sort(res)
-                    return res
-                end)(),
+        -- Options to the lsp configuration
+        settings = {
+            -- For better performance
+            flags = {
+                debounce_text_changes = 150,
             },
-        },
+
+
+            -- Capabilities that were modified to talk with nvim-cmp
+            capabilities = capabilities
+
+        }
     }
-    return capabilities
 end
 
--- Setup julia manually
-nvim_lsp.julials.setup{
-    on_attach = on_attach,
-    capabilities = julia_get_capabilites(),
-
-    -- For nvim-comp
-    require('lspconfig')['julials'].setup {
-        capabilities = capabilities
-    }
-}
