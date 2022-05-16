@@ -76,7 +76,16 @@ end
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 -- We need to manually specify which servers we want to configure
-local servers = {"r_language_server", "rust_analyzer", "sumneko_lua"}
+local servers = {
+    "clangd",
+    "dartls",
+    "jdtls",
+    "r_language_server",
+    "rust_analyzer",
+    "solargraph",
+    "sorbet",
+    "sumneko_lua"
+}
 
 -- Iterate over all installed servers and apply the config to them
 for _, server in ipairs(servers) do
@@ -85,16 +94,15 @@ for _, server in ipairs(servers) do
     require('lspconfig')[server].setup {
         on_attach = on_attach,
 
+        -- Capabilities that were modified to talk with nvim-cmp
+        capabilities = capabilities,
+
         -- Options to the lsp configuration
         settings = {
             -- For better performance
             flags = {
                 debounce_text_changes = 150,
             },
-
-
-            -- Capabilities that were modified to talk with nvim-cmp
-            capabilities = capabilities
 
         }
     }
