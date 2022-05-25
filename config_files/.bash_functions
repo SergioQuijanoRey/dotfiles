@@ -37,10 +37,18 @@ function cdf(){
   cd "$dir"
 }
 
+# Script para tener fzf con z
+function zf(){
+  local dir
+  dir=$(find ${1:-.} -path '*/\.*' -prune \
+                  -o -type d -print 2> /dev/null | fzf +m) &&
+  z "$dir"
+}
+
 # Script para tener fzf con neovim
 function vf(){
-		file=$(fzf)
-		nvim "$file"
+    file=$(fzf)
+    nvim "$file"
 }
 
 # Script para tener bat con fzf

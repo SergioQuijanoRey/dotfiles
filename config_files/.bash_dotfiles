@@ -64,8 +64,8 @@ export BROWSER="chromium"
 # Other stuff
 #===============================================================================
 
-# Autojump needs this
-[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+# Make zoxide work
+eval "$(zoxide init zsh)"
 
 # To force fzf.vim to ignore .gitignore files
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'

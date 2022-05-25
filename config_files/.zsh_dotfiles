@@ -35,6 +35,15 @@ source ~/.bash_functions
 # Prompt in zsh is not configured the same as bash
 source ~/.zsh_prompt
 
+# Evaluations
+#===============================================================================
+
+# Make zoxide work
+eval "$(zoxide init zsh)"
+
+# To force fzf.vim to ignore .gitignore files
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
 # Env vars
 #===============================================================================
 
