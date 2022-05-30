@@ -1,19 +1,26 @@
 #!/usr/bin/env bash
 
 # Remote name
-remote="DriveCrypt"         # Encrypted
+uni_remote="DriveCrypt"     # Encrypted, google drive provided by UGR
 personal_remote="MyDrive"   # Not encrypted, personal usage
-
 
 # Showing the header
 echo "Updating LinuxCloud, Universidad, apuntesuniversidad and Passwords"
 echo "================================================================================"
 
 # Updating the changes
-rclone sync --progress ~/LinuxCloud ${remote}:LinuxCloud &
-rclone sync --progress ~/GitRepos/Universidad ${remote}:Universidad &
-rclone sync --progress ~/GitRepos/apuntesuniversidad ${remote}:apuntesuniversidad &
+
+# Sync uni repo and uni notes repo to UGR google drive
+rclone sync --progress ~/GitRepos/Universidad ${uni_remote}:Universidad &
+rclone sync --progress ~/GitRepos/apuntesuniversidad ${uni_remote}:apuntesuniversidad &
+
+# Sync password file both to personal and uni drive
 rclone sync --progress ~/LinuxCloud/Passwords/Passwords.kdbx ${personal_remote}:LinuxCloud/Passwords/ &
+rclone sync --progress ~/LinuxCloud/Passwords/Passwords.kdbx ${uni_remote}:LinuxCloud/Passwords/ &
+
+# Sync obsidian notes both to personal and uni google drive
+rclone sync --progress ~/GitRepos/ObsidianNotes ${personal_remote}:ObsidianNotes &
+rclone sync --progress ~/GitRepos/ObsidianNotes ${uni_remote}:ObsidianNotes &
 
 # Wait until all jobs are done
 wait

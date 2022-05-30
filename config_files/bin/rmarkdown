@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Check if output format is given or not
+if [ -z "$2" ]
+then
+    format="html_document"
+else
+    format="$2"
+fi
+
+R -e "rmarkdown::render('$1', output_format = '$format')"

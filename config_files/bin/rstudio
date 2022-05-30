@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+rstudio-bin --no-sandbox
