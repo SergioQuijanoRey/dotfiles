@@ -28,6 +28,7 @@ pacman:
         - acpi        # Check for battery status
         - tig         # ncurses terminal UI for git
                       # Useful for view different branches
+        - ncdu        # To explore directories that take too much space
 
         # Programming
         #===============================================================================
