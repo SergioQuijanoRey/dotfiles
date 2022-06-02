@@ -112,8 +112,16 @@ return require('packer').startup(function()
 
     -- Color schemes
     -- ===============================================================================
-    use 'gruvbox-community/gruvbox'    -- Gruvbox Theme updated
-    use 'joshdick/onedark.vim'         -- Secondary colorscheme
+    use 'gruvbox-community/gruvbox'     -- Gruvbox Theme updated
+    use 'joshdick/onedark.vim'          -- Secondary colorscheme
+    use 'endel/vim-github-colorscheme'
+    use 'YorickPeterse/vim-paper'
+
+    -- Good pastel palette
+    use({
+        'catppuccin/nvim',
+        as = "catppuccin"
+    })
 
     -- TODO
     -- ===============================================================================

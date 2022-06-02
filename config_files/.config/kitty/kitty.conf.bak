@@ -111,6 +111,6 @@ confirm_os_window_close 0
 
 
 # BEGIN_KITTY_THEME
-# One Dark
+# Nord
 include current-theme.conf
 # END_KITTY_THEME

@@ -83,7 +83,20 @@ vim.opt.guicursor = ""              -- Block cursor
 vim.optloaded_matchparen = 1        -- No matching parenthesis/brakets/... highlight
 vim.opt.termguicolors = true        -- Colorschemes dont work well without this
 vim.opt.background="dark"           -- Dark background, does nothing with gruvbox colorscheme
-exec("colorscheme onedark")         -- No vim.opt or vim.g for this
+
+-- Use catppuccin frappe colorscheme
+vim.g.catppuccin_flavour = "frappe"
+vim.cmd[[colorscheme catppuccin]]
+
+-- Good settings for catpuccin
+-- TODO -- move this to own module
+local catppuccin = require("catppuccin")
+catppuccin.setup({
+    integrations = {
+        markdown = false,
+    }
+})
+
 
 -- Splitting where i want
 vim.opt.splitbelow = true

@@ -78,3 +78,35 @@ ls.add_snippets("markdown", {
 }, {
     key = "markdown",
 })
+
+
+ls.add_snippets("rmd", {
+
+    -- Easily require a function
+    s("cell", fmt(
+        "```{{r}}\n{}\n```",
+        {i(1, "<code>")}
+    )),
+
+    -- Header of the .Rmd file
+    s("header", fmt(
+[[---
+title: {}
+author:
+    - Sergio Quijano Rey
+    - sergioquijano@correo.ugr.es
+date: {}
+output:
+    html_document:
+        toc: true
+        toc_depth: 3
+        toc_float: true
+        collapsed: true
+        number_sections: true
+---]],
+        {i(1), i(2)}
+    )),
+
+}, {
+    key = "rmd",
+})
