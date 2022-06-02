@@ -29,6 +29,7 @@ pacman:
         - tig         # ncurses terminal UI for git
                       # Useful for view different branches
         - ncdu        # To explore directories that take too much space
+        - sshfs       # To code on servers with local editors
 
         # Programming
         #===============================================================================
