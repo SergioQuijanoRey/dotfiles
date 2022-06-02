@@ -30,7 +30,7 @@ local sharedtags = require("sharedtags")
 -- =============================================================================
 globalkeys = dofile("/home/sergio/.config/awesome/keybindings.lua").globalkeys
 clientkeys = dofile("/home/sergio/.config/awesome/keybindings.lua").clientkeys
-dofile "/home/sergio/.config/awesome/autostart.lua"
+autostart = dofile("/home/sergio/.config/awesome/autostart.lua").autostart
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -510,3 +510,6 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+
+-- The last thing I want to do is autostarting the apps
+autostart()

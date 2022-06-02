@@ -110,3 +110,9 @@ directories:
       repo_path: ./config_files/.config/awesome
       system_path: .config/awesome
       sync_type: dir
+
+    # Rofi config files
+    - rofi:
+      repo_path: ./config_files/.config/rofi
+      system_path: .config/rofi
+      sync_type: dir

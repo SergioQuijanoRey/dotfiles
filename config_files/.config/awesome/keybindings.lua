@@ -120,7 +120,8 @@ globalkeys = gears.table.join(
     awful.key(
         {modkey, }, "d",
         function()
-            awful.spawn("rofi -show run -config '/home/sergio/.i3/rofithemes/gruvbox.rasi'")
+            -- awful.spawn("rofi -show run -config '/home/sergio/.i3/rofithemes/gruvbox.rasi'")
+            awful.spawn("rofi -show run -config '/home/sergio/.config/rofi/catppuccin.rasi'")
         end,
         {description = "Launch rofi", group = "app bindings"}
     ),
@@ -163,6 +164,14 @@ globalkeys = gears.table.join(
     awful.key({}, "XF86AudioRaiseVolume", function() os.execute("amixer -D pulse sset Master 5%+") end),
     awful.key({}, "XF86AudioLowerVolume", function() os.execute("amixer -D pulse sset Master 5%-") end),
     awful.key({}, "XF86AudioMute", function() os.execute("amixer -D pulse set Master 1+ toggle") end),
+
+    -- Launch julia REPL as calculator
+    awful.key({ modkey, Shift}, "c",
+        function (c)
+            -- Launch terminal, with tmux initialized in custom session
+            awful.spawn(terminal.." -e tmux-init 'calc' 'julia'")
+        end,
+        {description = "Open a calculator", group = "app bindings"}),
 
     -- This is required for the capslock widget
     capslock.key
