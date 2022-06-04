@@ -16,7 +16,7 @@
 #===============================================================================
 source "/home/sergio/.bash_profile"
 wallpaper_folder="$HOME/backgrounds/"
-ROFI_THEME="/home/sergio/.i3/rofithemes/gruvbox.rasi"
+ROFI_THEME="/home/sergio/.config/rofi/catppuccin.rasi"
 
 # Script functions
 #===============================================================================
