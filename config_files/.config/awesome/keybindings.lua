@@ -121,7 +121,7 @@ globalkeys = gears.table.join(
         {modkey, }, "d",
         function()
             -- awful.spawn("rofi -show run -config '/home/sergio/.i3/rofithemes/gruvbox.rasi'")
-            awful.spawn("rofi -show run -config '/home/sergio/.config/rofi/catppuccin.rasi'")
+            awful.spawn("rofi -show drun -config '/home/sergio/.config/rofi/catppuccin.rasi'")
         end,
         {description = "Launch rofi", group = "app bindings"}
     ),
@@ -160,10 +160,16 @@ globalkeys = gears.table.join(
     ),
 
     -- VOLUME CONTROL
-    -- TODO -- this is not working
     awful.key({}, "XF86AudioRaiseVolume", function() os.execute("amixer -D pulse sset Master 5%+") end),
     awful.key({}, "XF86AudioLowerVolume", function() os.execute("amixer -D pulse sset Master 5%-") end),
     awful.key({}, "XF86AudioMute", function() os.execute("amixer -D pulse set Master 1+ toggle") end),
+
+    -- MEDIA CONTROLS
+    awful.key({}, "XF86AudioPlay", function() os.execute("playerctl play-pause") end),
+    awful.key({}, "XF86AudioPause", function() os.execute("playerctl play-pause") end),
+    awful.key({}, "XF86AudioNext", function() os.execute("playerctl next") end),
+    awful.key({}, "XF86AudioPrev", function() os.execute("playerctl previous") end),
+
 
     -- Launch julia REPL as calculator
     awful.key({ modkey, Shift}, "c",
