@@ -28,6 +28,6 @@ package.tags = sharedtags({
     {name = "10: ", layout = awful.layout.layouts[1]},
 })
 
-package.wallpaper = "/home/sergio/backgrounds/hollow_clean.png"
+package.wallpaper = "/home/sergio/backgrounds/catppuccin_pacman.png"
 
 return package

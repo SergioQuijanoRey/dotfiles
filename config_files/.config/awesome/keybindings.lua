@@ -126,6 +126,14 @@ globalkeys = gears.table.join(
         {description = "Launch rofi", group = "app bindings"}
     ),
 
+    awful.key(
+        {modkey, Shift}, "d",
+        function()
+            awful.spawn("rofi -show run -config '/home/sergio/.config/rofi/catppuccin.rasi'")
+        end,
+        {description = "Launch rofi in run mode, instead of drun", group = "app bindings"}
+    ),
+
 
     awful.key(
         {modkey, Shift}, "Return",
