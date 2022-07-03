@@ -99,6 +99,9 @@ local servers = {
 
     -- For lua
     "sumneko_lua",
+
+    -- For python
+    "jedi_language_server",
 }
 
 -- Iterate over all installed servers and apply the config to them
