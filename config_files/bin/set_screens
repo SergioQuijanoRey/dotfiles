@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Script to select, using Rofi, the screen layout
+# Screen layouts must be stored in ~/.screenlayout, using arandr program to generate them
 
 # Some parameters
 ROFI_THEME="/home/sergio/.config/rofi/catppuccin.rasi"
