@@ -17,7 +17,7 @@ package.autostart = function ()
     awful.spawn("feh --bg-scale '" .. wallpaper .. "'")
 
     -- Set the screens
-    awful.spawn("autodisplay")
+    awful.spawn("autodisplay.sh")
 
     -- Other programs
     awful.spawn("telegram-desktop")
