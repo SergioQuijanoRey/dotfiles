@@ -5,5 +5,8 @@ install yay:
   quiet: false
   commands:
     - cd ~
+    - mkdir tmp_install_yay ; cd tmp_install_yay
     - git clone https://aur.archlinux.org/yay.git
+    - cd yay
     - makepkg -si
+    - cd ~ ; rm -rf tmp_install_yay

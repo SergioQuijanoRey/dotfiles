@@ -44,3 +44,22 @@ config trackpad:
       - sudo mkdir -p /etc/X11/xorg.conf.d/
       - sudo cp ./config_files/touchpad.conf /etc/X11/xorg.conf.d/90-touchpad.conf/etc/X11/xorg.conf.d/90-touchpad.conf
       - sudo cp ./config_files/touchpad.conf /etc/X11/xorg.conf.d/90-touchpad.conf
+
+enable ligthdm launcher:
+    description: Enable lightdm so DE or WM can be selected on boot
+    quite: false
+    commands:
+      - sudo systemctl enable lightdm
+
+
+enable bluetooth:
+    description: Enable bluetooth service
+    quite: false
+    commands:
+      - sudo systemctl enable bluetooth
+
+enable network manager:
+    description: Enable network manager, to make wifi connections available
+    quite: false
+    commands:
+      - sudo systemctl enable NetworkManager

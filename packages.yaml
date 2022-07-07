@@ -57,21 +57,21 @@ pacman:
         - playerctl
         - mpv                     # Play twitch on the terminal
 
-        # i3 components
+        # WM components
         #===============================================================================
-        - i3-wm					# The preferred wm
-        - awesome               # Alternative to i3
+        - i3-wm				# The preferred wm
+        - awesome                       # Alternative to i3
         - feh				# To set the background
         - compton			# i3 compositor
         - rofi					        # Program launcher
         - rofi-emoji                    # Emoji selector
         - blueman					    # To use bluetooth
+        - bluez                         # Make bluetooth work
         - bluez-utils                   # For command line bluetooth administration ==> bluetoothctl
         - bluez-tools                   # For command line bluetooth administration ==> bluetooth
         - arandr					    # To control multiple displays
         - community/lxappearance	    # To set the system theme
         - pavucontrol				    # Volume control
-        - pa-applet				        # Volume control (pavucontrol)
         - extra/network-manager-applet  # Applet for connecting to wifi
         - scrot					        # For locking the screen (makes the screenshot) and taking screenshots
                                         # Also using this for my custom scrot program
@@ -88,6 +88,9 @@ pacman:
         - extra/xorg-xbacklight         # Control over screen brightness
         - unzip                         # For extracting zip files
         - engrampa                      # GUI for working with compressed files
+
+        # This is needed to have graphical display
+        - xorg-server
 
         # Themes
         #===============================================================================
@@ -134,6 +137,8 @@ aur:
         - bat             # A better cat alternative
         - duf             # For seeing disk usage
         - diffsitter-bin  # Alternative to classic diff tool
+        - downgrade       # To downgrade some packages
+        - pa-applet-git   # Applet to control the audio
 
         # Programming
         #===============================================================================
