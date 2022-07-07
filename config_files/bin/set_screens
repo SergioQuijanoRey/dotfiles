@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Some parameters
+ROFI_THEME="/home/sergio/.config/rofi/catppuccin.rasi"
+
+# User selects the layout
+layout="$(ls ~/.screenlayout | rofi -p "Choose a screen configuration: " -dmenu -config $ROFI_THEME )"
+~/.screenlayout/$layout
+
+# Then wallpaper is selected
+wallpaper
