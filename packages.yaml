@@ -31,6 +31,13 @@ pacman:
         - ncdu        # To explore directories that take too much space
         - sshfs       # To code on servers with local editors
 
+        # zsh package and plugins
+        - zsh
+        - community/zsh-syntax-highlighting
+        - community/zsh-autosuggestions
+
+
+
         # Programming
         #===============================================================================
         - neovim                  # Main editor
