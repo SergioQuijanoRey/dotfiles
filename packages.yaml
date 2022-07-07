@@ -34,7 +34,8 @@ pacman:
         # Programming
         #===============================================================================
         - neovim                  # Main editor
-        - jupyter                 # Python Notebook framework
+        - jupyter-notebook        # Vanilla jupyter notebooks
+        - jupyterlab              # I prefer jupyter lab over vanilla jupyter
         - valgrind                # Mem debugging for C/C++
         - ranger                  # Nice CLI file manager
         - w3m                     # Ranger needs this for displaying pdfs
@@ -165,8 +166,8 @@ aur:
 
         # Themes
         #===============================================================================
-        - aur/paper-icon-theme        # Icon package
         - aur/arc-darkest-theme-git   # Theme for gkt-windows
+        - aur/paper-icon-theme-git    # Cool icons
 
 
 # Optional packages, no need to install them for having an usable system
