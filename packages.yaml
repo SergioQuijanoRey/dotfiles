@@ -147,6 +147,7 @@ aur:
         - diffsitter-bin  # Alternative to classic diff tool
         - downgrade       # To downgrade some packages
         - pa-applet-git   # Applet to control the audio
+        - rar             # To extract winrar files
 
         # Programming
         #===============================================================================
