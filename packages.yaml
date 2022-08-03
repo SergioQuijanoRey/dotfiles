@@ -36,8 +36,6 @@ pacman:
         - community/zsh-syntax-highlighting
         - community/zsh-autosuggestions
 
-
-
         # Programming
         #===============================================================================
         - neovim                  # Main editor
@@ -64,6 +62,7 @@ pacman:
         - vlc                     # Playing videos
         - playerctl
         - mpv                     # Play twitch on the terminal
+        - syncthing               # To share files with my phone
 
         # WM components
         #===============================================================================
@@ -115,6 +114,7 @@ pacman:
         - evince                  # PDF viewer of preference
         - keepassxc               # Password Manager
         - calibre                 # Manage my ebooks
+        - obsidian                # Note-taking app
 
         # Office
         #===============================================================================
