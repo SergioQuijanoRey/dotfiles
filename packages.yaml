@@ -173,6 +173,7 @@ aur:
         #===============================================================================
         - spotify
         - paru        # Rewrite of yay in Rust. Quite not stable
+        - aur/ptxconf-git # For configuring my Huion graphic tablet
 
         # Themes
         #===============================================================================
