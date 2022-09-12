@@ -60,8 +60,7 @@ exec("autocmd! bufwritepost init.lua source %", false)     -- Auto compile when 
 exec("set noswapfile")
 
 --- Clipboard
--- TODO --- FIXME
--- Write this in the lua way
+-- TODO -- FIXME -- Write this in the lua way
 exec(":set clipboard+=unnamedplus", false)
 
 -- Avoid flashy terminal
@@ -96,7 +95,6 @@ catppuccin.setup({
         markdown = false,
     }
 })
-
 
 -- Splitting where i want
 vim.opt.splitbelow = true

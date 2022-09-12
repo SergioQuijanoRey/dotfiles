@@ -76,16 +76,18 @@ end
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 -- We need to manually specify which servers we want to configure
+-- Some languages are commented, because I am not using them now but might use them in the future
+-- As we have set `automatic_installation = true`, this servers are installed automatically
 local servers = {
 
     -- For C / C++
     "clangd",
 
     -- For dart
-    "dartls",
+    -- "dartls",
 
     -- For Java
-    "jdtls",
+    -- "jdtls",
 
     -- For R
     "r_language_server",
@@ -94,8 +96,8 @@ local servers = {
     "rust_analyzer",
 
     -- For Ruby
-    "sorbet",
-    "solargraph",
+    -- "sorbet",
+    -- "solargraph",
 
     -- For lua
     "sumneko_lua",
