@@ -48,3 +48,6 @@ alias myip="curl http://ipecho.net/plain; echo"
 
 # Connect to uni vpn
 alias vpnuni="sudo /opt/cisco/anyconnect/bin/vpnui"
+
+# Use zoxide to move fast between dirs
+alias cd="z"
