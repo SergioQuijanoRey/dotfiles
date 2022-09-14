@@ -89,7 +89,7 @@ ls.add_snippets("rmd", {
     )),
 
     -- Header of the .Rmd file
-    s("header", fmt(
+    s("mdtitle", fmt(
 [[---
 title: {}
 author:
@@ -109,30 +109,4 @@ output:
 
 }, {
     key = "rmd",
-})
-
-
-
-ls.add_snippets("jess", {
-
-    -- Easily require a function
-    s("print", fmt(
-        "(printout t \"{}\" crlf)",
-        {i(1)}
-    )),
-
-    -- Header of the .Rmd file
-    s("rule", fmt(
-[[(defrule {}
-    {}
-
-    =>
-
-    {}
-)]],
-        {i(1), i(2), i(3)}
-    )),
-
-}, {
-    key = "clp",
 })

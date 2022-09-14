@@ -19,6 +19,7 @@ return require('packer').startup(function()
     use 'tpope/vim-fugitive'           -- Git Integration
     use 'psliwka/vim-smoothie'         -- Smooth scrolling
     use 'wbthomason/packer.nvim'       -- Manage the plugin manager
+    use 'jpalardy/vim-slime'           -- Sending lines to a REPL
 
     -- Editor
     -- ===============================================================================

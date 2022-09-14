@@ -20,6 +20,7 @@ require("myconf/completion")
 require("myconf/keybindings")
 require("myconf/autopairs")
 require("myconf/status_line")
+require("myconf/slime")
 
 --- Aux functions
 --- ======================================================================== ---
