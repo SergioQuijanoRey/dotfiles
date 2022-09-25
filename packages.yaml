@@ -57,6 +57,7 @@ pacman:
         - ripgrep                 # Better grep
         - zoxide                  # Better cd
         - entr                    # Run automatically commands when some files change
+        - act                     # Run github actions locally
 
         # Media
         #===============================================================================
