@@ -74,6 +74,7 @@ pacman:
         - compton			# i3 compositor
         - rofi					        # Program launcher
         - rofi-emoji                    # Emoji selector
+        - extra/noto-fonts-emoji        # Font that support emojis
         - blueman					    # To use bluetooth
         - bluez                         # Make bluetooth work
         - bluez-utils                   # For command line bluetooth administration ==> bluetoothctl
