@@ -7,25 +7,27 @@
 ; Version:
 ;     v1.0 22/08/2020 - First documented version
 
+; Catppuccin colorscheme
+include-file = $HOME/.config/polybar/frappe.ini
+
 ; COLORS
 ;===============================================================================
 [colors]
-;background = ${xrdb:color0:#222}
-background = #222
-;background = #2F343F
-background-alt = #444
-;background-alt = #2F343F
-;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+
+background = ${frappe.base}
+background-alt = ${frappe.surface0}
+foreground = ${frappe.text}
+foreground-alt = ${frappe.subtext0}
+primary = ${frappe.blue}
+secondary = ${frappe.peach}
+alert = ${frappe.red}
+
 
 
 ; MY BAR
 ;===============================================================================
 [bar/mybar]
+
 monitor = ${env:MONITOR:HDMI2}
 width = 100%
 height = 2.0%
@@ -37,14 +39,12 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 line-size = 3
-line-color = #f00
+line-color = ${frappe.transparent}
 
-;border-size = 4
 border-size = 1
-border-color = #90000000
+border-color = ${frappe.transparent}
 
 padding-left = 0
-;padding-right = 2
 padding-right = 0
 
 module-margin-left = 1
@@ -54,6 +54,10 @@ font-0 = "JetBrains Mono:size=8;1"
 font-1 = "NotoSansMono Nerd Font:style=Regular:size=8;1"
 font-2 = "JetBrains Mono:style=Regular:size=8;1"
 font-3 = "JetBrains Mono:style=Regular:size=8;1"
+
+; This is needed for having symbols in the bar
+font-4 = "Symbols Nerd Font:style=Regular:size=8;1"
+
 
 modules-left = i3
 modules-center = xbacklight pulseaudio github
@@ -96,7 +100,7 @@ label-indicator-margin = 0
 label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.secondary}
 
-label-indicator-on-capslock = בּ CAPS
+label-indicator-on-capslock =  CAPS
 
 [module/filesystem]
 type = internal/fs
@@ -170,9 +174,8 @@ bar-empty-foreground = ${colors.foreground-alt}
 type = internal/cpu
 interval = 2
 format-prefix = " "
-;format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-foreground = #FFFFFF
-format-underline = #f90000
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = ${frappe.blue}
 label = %percentage:2%%
 
 [module/memory]
@@ -180,8 +183,8 @@ type = internal/memory
 interval = 2
 format = <label>
 label =  %percentage_used%%
-format-prefix-foreground = #FFFFFF
-format-underline = #a166b3
+format-prefix-foreground = ${frappe.sapphire}
+format-underline = ${frappe.sapphire}
 
 [module/wlan]
 type = internal/network
@@ -191,7 +194,7 @@ interval = 3.0
 ; I don't want to see the ramp indicator
 ;format-connected = <ramp-signal> <label-connected>
 format-connected = <label-connected>
-format-connected-underline = #9f78e1
+format-connected-underline = ${frappe.peach}
 ;label-connected = %essid%
 label-connected =   %local_ip%
 
@@ -214,7 +217,7 @@ type = internal/network
 interface = enp2s0f2
 interval = 3.0
 
-format-connected-underline = #55aa55
+format-connected-underline = ${frappe.sky}
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected =  %local_ip%
@@ -238,7 +241,7 @@ time-alt = %H:%M:%S
 format-prefix = 
 ;format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-foreground = #FFFFFF
-format-underline = #0a6cf5
+format-underline = ${frappe.pink}
 
 label = %date% %time%
 
@@ -283,7 +286,7 @@ adapter = ADP1
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline = ${frappe.peach}
 
 ;format-discharging = <animation-discharging> <label-discharging>
 format-discharging = <ramp-capacity> <label-discharging>
