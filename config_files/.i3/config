@@ -99,7 +99,7 @@ bindsym $mod+0 workspace $workspace10
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2
-bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+3 move container to workspace $workspace3captppuccin
 bindsym $mod+Shift+4 move container to workspace $workspace4
 bindsym $mod+Shift+5 move container to workspace $workspace5
 bindsym $mod+Shift+6 move container to workspace $workspace6
@@ -125,6 +125,9 @@ assign [class="TelegramDesktop"] $workspace5                # Texting
 assign [class="WhatsApp"] $workspace5                       # Texting
 assign [class="Evince"] $workspace6                         # Documents
 for_window [class="Spotify"] move to workspace $workspace10 # Media
+
+# Disable titles on Chromium
+for_window [class="Chromium"] border none                       # Web browser
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -197,7 +200,7 @@ bindsym $mod+t exec wallpaper
 bindsym $mod+Shift+e exec shutdown_menu # Shutdown menu
 bindsym $mod+p exec rofi -show emoji -modi emoji
 bindsym $mod+o exec open
-bindsym $mod+c exec calculator
+bindsym $mod+c exec kitty tmux-init 'calc' 'julia'
 
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
@@ -211,7 +214,7 @@ exec whatsapp-nativefier
 exec telegram-desktop
 exec nm-applet
 exec blueman-applet
-exec feh --bg-scale "/home/sergio/backgrounds/color_penguin.jpg"  # Set the wallpaper
+exec feh --bg-scale "/home/sergio/backgrounds/catppuccin_pacman.png"  # Set the wallpaper
 
 # Polybar launcher
 #===============================================================================
