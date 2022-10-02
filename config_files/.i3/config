@@ -29,8 +29,8 @@ bindsym $mod+Shift+q kill
 
 # Rofi menu launcher
 set $rofi_theme "/home/sergio/.config/rofi/catppuccin.rasi"
-bindsym $mod+d exec bash -c "rofi -show run -config $rofi_theme"
-bindsym $mod+Shitf+d exec bash -c "rofi -show drun -config $rofi_theme"
+bindsym $mod+d exec bash -c "rofi -show drun -config $rofi_theme"
+bindsym $mod+Shitf+d exec bash -c "rofi -show run -config $rofi_theme"
 
 # change focus
 bindsym $mod+j focus left
@@ -128,7 +128,7 @@ assign [class="Evince"] $workspace6                         # Documents
 for_window [class="Spotify"] move to workspace $workspace10 # Media
 
 # Disable titles on Chromium
-for_window [class="Chromium"] border none                       # Web browser
+# for_window [class="Chromium"] border none                       # Web browser
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -199,15 +199,17 @@ bindsym $mod+Shift+p move workspace to output left
 bindsym $mod+Shift+b exec chromium
 bindsym $mod+t exec wallpaper
 bindsym $mod+Shift+e exec shutdown_menu # Shutdown menu
-bindsym $mod+p exec rofi -show emoji -modi emoji
+bindsym $mod+p exec rofi -show emoji -modi emoji -config $rofi_theme
 bindsym $mod+o exec open
 bindsym $mod+c exec kitty tmux-init 'calc' 'julia'
 
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
 
-# Windows have a border pixel of 1
-new_window pixel 1
+# Border of 1 pixel to not show title bars
+default_border pixel 1
+default_floating_border pixel 1
+for_window [class="^.*"] border pixel 1
 
 # Apps on start
 exec autodisplay                                            # Set the display configuration at startup
