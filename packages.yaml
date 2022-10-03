@@ -30,6 +30,7 @@ pacman:
                       # Useful for view different branches
         - ncdu        # To explore directories that take too much space
         - sshfs       # To code on servers with local editors
+        - trash-cli   # To have a trash-like behaviour in the command line
 
         # zsh package and plugins
         - zsh
