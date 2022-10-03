@@ -1,42 +1,58 @@
 #!/usr/bin/env python3
 
-# Author:
-#   Sergio Quijano Rey
-#   sergiquijano@gmail.com
-# Version:
-#   v1.0 03/10/2018 - First functionally version
-# Description:
-#   Reverses a whole csv table
-#   I am using it for "Evo Banco" .xls file, which cannot be reversed properly by date
-
+# Reverses a .xls file by date
+# I am using it for "Evo Banco" .xls file, which cannot be reversed properly by date
+# Depends on modules xlrd, xlwt
 
 import os
 import sys
+import pandas as pd
 
-if __name__ == "__main__":
-    # Checking the terminal arguments
+def check_user_parameters() -> bool:
+    """
+    @returns True, if the parameters are the expected
+    @returns False, if the parameters are not valid
+    """
     if len(sys.argv) < 2:
         print("Error, no parameters passed")
         print("invertcsv csv_file_path {new_csv_path}")
-    else: 
-        # New file name is selected
-        if len(sys.argv) == 3:
-            new_file_name = sys.argv[2]
-        else:
-            new_file_name = "new_" + sys.argv[1]
+        return False
 
-        # Reading the lines of the csv
-        file_name = sys.argv[1]
-        with open(file_name, "r") as fileobj:
-            lines = fileobj.readlines()
-        
-        # Header deleted to invert the csv file
-        header = lines.pop(0)
+    return True
 
-        # The csv is changed and header is added
-        lines_inversed = lines[::-1]
-        lines_inversed.insert(0, header)
+def create_new_file_name() -> str:
+    if len(sys.argv) == 3:
+        return sys.argv[2]
+    else:
+        return "new_" + sys.argv[1]
 
-        # The inverted csv is written to a file
-        with open(new_file_name, "w") as fileobj:
-            fileobj.writelines(lines_inversed)
+def main():
+
+    # Checking the terminal arguments
+    if check_user_parameters() is False:
+        return
+
+    # New file name is selected
+    new_file_name = create_new_file_name()
+
+    # Reading the lines of the excel file
+    file_name = sys.argv[1]
+    df = pd.read_excel(file_name)
+
+    # Invert the pandas dataframe with ease
+    df = df.iloc[::-1]
+
+    # Saving dates to excel with pandas don't work the way I need
+    # So I change that types to string
+    # Also, apply the format I am using in my excel files
+    df["Fecha Contable"] = df["Fecha Contable"].dt.strftime("%d/%m/%Y")
+    df["Fecha Valor"] = df["Fecha Valor"].dt.strftime("%d/%m/%Y")
+
+    # Now save it to the new excel file
+    df.to_excel(new_file_name)
+
+
+if __name__ == "__main__":
+    main()
+
+# all_data['Order Day new'] = all_data['Order Day new'].dt.strftime('%Y-%m-%d')
