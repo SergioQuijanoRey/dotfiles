@@ -153,6 +153,7 @@ aur:
         - downgrade       # To downgrade some packages
         - pa-applet-git   # Applet to control the audio
         - rar             # To extract winrar files
+        - batify          # Show notifications related to battery
 
         # Programming
         #===============================================================================
