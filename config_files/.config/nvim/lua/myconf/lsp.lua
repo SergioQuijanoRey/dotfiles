@@ -41,8 +41,6 @@ local on_attach = function(client, bufnr)
     --buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
     --buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
 
-
-
     -- Signature hint plugin
     cfg = {
         bind = true, -- This is mandatory, otherwise border config won't get registered.
@@ -75,6 +73,10 @@ end
 -- We need to provide lsp info to nvim-cmp config to get lsp autocompletion!
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
+-- Rounded borders for hover and signature help
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
+
 -- We need to manually specify which servers we want to configure
 -- Some languages are commented, because I am not using them now but might use them in the future
 -- As we have set `automatic_installation = true`, this servers are installed automatically
@@ -104,6 +106,7 @@ local servers = {
 
     -- For python
     "jedi_language_server",
+    "pyright", -- Static type checking
 }
 
 -- Iterate over all installed servers and apply the config to them
@@ -123,7 +126,7 @@ for _, server in ipairs(servers) do
                 debounce_text_changes = 150,
             },
 
-        }
+        },
     }
 end
 
