@@ -108,6 +108,23 @@ return require('packer').startup(function()
     -- Snipet plugin. I use it almost exlusively for nvim-cmp
     use {'L3MON4D3/LuaSnip'}
 
+    -- Debugging
+    use {
+        "mfussenegger/nvim-dap",
+
+        requires = {
+            -- UI for debugging
+            "rcarriga/nvim-dap-ui",
+
+            -- Virtual text for debugging sessions
+            "theHamsta/nvim-dap-virtual-text",
+
+            -- Plugins for configuring debugging in different languages
+            -- We can configure languages ourselves but with this plugins is way easier
+            "mfussenegger/nvim-dap-python",
+        }
+    }
+
     -- Latex to unicode for julia
     use {"JuliaEditorSupport/julia-vim"}
 

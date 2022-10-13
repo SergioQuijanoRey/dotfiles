@@ -1,4 +1,6 @@
 --- General Keybindings
+--- Not all keybindings are defined here
+--- For example, "myconf/debugging" has keybindings defined there
 
 --- Avoid long lines for the set command
 setmap = require("myconf/aux").setmap
