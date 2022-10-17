@@ -98,8 +98,44 @@ setmap("n", "<leader>db", ":lua require'dap'.toggle_breakpoint()<CR>", {})
 setmap("n", "<leader>dB", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", {})
 setmap("n", "<leader>dl", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", {})
 setmap("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>", {})
-setmap("n", "<leader>td", ":lua require'dap-python'.test_method()<CR>", {})
+setmap("n", "<leader>dt", ":lua require'dap-python'.test_method()<CR>", {})
 
 -- Configuration for Python
 -- require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
 require('dap-python').setup('/usr/bin/python') -- Using global python and not venv python
+
+-- Configuration for C++ and rust
+dap.adapters.lldb = {
+  type = 'executable',
+  command = '/usr/bin/lldb-vscode', -- adjust as needed, must be absolute path
+  name = 'lldb'
+}
+
+dap.configurations.cpp = {
+    {
+        name = 'Launch',
+        type = 'lldb',
+        request = 'launch',
+        program = function()
+            return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+        end,
+        cwd = '${workspaceFolder}',
+        stopOnEntry = false,
+        args = {},
+
+        -- To allow debugger to inherit env vars
+        env = function()
+            local variables = {}
+            for k, v in pairs(vim.fn.environ()) do
+                table.insert(variables, string.format("%s=%s", k, v))
+            end
+            return variables
+        end,
+    }
+}
+
+-- Same configuration for C++ and Rust
+dap.configurations.c = dap.configurations.cpp
+dap.configurations.rust = dap.configurations.cpp
+
+
