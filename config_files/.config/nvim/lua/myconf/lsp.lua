@@ -105,7 +105,12 @@ local servers = {
     "sumneko_lua",
 
     -- For python
-    "jedi_language_server",
+
+    -- Main lsp component
+    -- Enables a lot of plugins, like flake8, mypy, import sorting, rope, that have to be installed manually:
+    --      https://github.com/williamboman/nvim-lsp-installer/blob/main/lua/nvim-lsp-installer/servers/pylsp/README.md
+    -- Includes jedi, so no need to use that lsp when using pylsp
+    "pylsp",
     "pyright", -- Static type checking
 }
 
