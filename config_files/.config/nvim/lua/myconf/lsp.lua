@@ -71,7 +71,7 @@ end
 
 -- Also, get capabilities of nvim-cmp for autocompletions
 -- We need to provide lsp info to nvim-cmp config to get lsp autocompletion!
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Rounded borders for hover and signature help
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
