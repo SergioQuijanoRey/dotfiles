@@ -20,6 +20,7 @@ return require('packer').startup(function()
     use 'psliwka/vim-smoothie'         -- Smooth scrolling
     use 'wbthomason/packer.nvim'       -- Manage the plugin manager
     use 'jpalardy/vim-slime'           -- Sending lines to a REPL
+    use 'lambdalisue/suda.vim'         -- For sudo writting a file
 
     -- Editor
     -- ===============================================================================
@@ -119,6 +120,9 @@ return require('packer').startup(function()
             -- Virtual text for debugging sessions
             "theHamsta/nvim-dap-virtual-text",
 
+            -- Having telescope utils
+            "nvim-telescope/telescope-dap.nvim",
+
             -- Plugins for configuring debugging in different languages
             -- We can configure languages ourselves but with this plugins is way easier
             "mfussenegger/nvim-dap-python",
@@ -140,9 +144,4 @@ return require('packer').startup(function()
         'catppuccin/nvim',
         as = "catppuccin"
     })
-
-    -- TODO
-    -- ===============================================================================
-    use 'dart-lang/dart-vim-plugin'
-
 end)
