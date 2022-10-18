@@ -21,6 +21,7 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'       -- Manage the plugin manager
     use 'jpalardy/vim-slime'           -- Sending lines to a REPL
     use 'lambdalisue/suda.vim'         -- For sudo writting a file
+    use 'lewis6991/impatient.nvim'     -- Speed up startup time
 
     -- Editor
     -- ===============================================================================
