@@ -30,7 +30,7 @@ bindsym $mod+Shift+q kill
 # Rofi menu launcher
 set $rofi_theme "/home/sergio/.config/rofi/catppuccin.rasi"
 bindsym $mod+d exec bash -c "rofi -show drun -config $rofi_theme"
-bindsym $mod+Shitf+d exec bash -c "rofi -show run -config $rofi_theme"
+bindsym $mod+Shift+d exec bash -c "rofi -show run -config $rofi_theme"
 
 # change focus
 bindsym $mod+j focus left
@@ -43,10 +43,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+ntilde move right
+# bindsym $mod+Shift+j move left
+# bindsym $mod+Shift+k move down
+# bindsym $mod+Shift+l move up
+# bindsym $mod+Shift+ntilde move right
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -131,7 +131,7 @@ for_window [class="Spotify"] move to workspace $workspace10 # Media
 # for_window [class="Chromium"] border none                       # Web browser
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -201,7 +201,7 @@ bindsym $mod+t exec wallpaper
 bindsym $mod+Shift+e exec shutdown_menu # Shutdown menu
 bindsym $mod+p exec rofi -show emoji -modi emoji -config $rofi_theme
 bindsym $mod+o exec open
-bindsym $mod+c exec kitty tmux-init 'calc' 'julia'
+bindsym $mod+Shift+c exec kitty tmux-init 'calc' 'julia'
 
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
@@ -217,7 +217,7 @@ exec whatsapp-nativefier
 exec telegram-desktop
 exec nm-applet
 exec blueman-applet
-exec feh --bg-scale "/home/sergio/backgrounds/catppuccin_pacman.png"  # Set the wallpaper
+exec feh --bg-scale "/home/sergio/backgrounds/zelda03.png"  # Set the wallpaper
 
 # Polybar launcher
 #===============================================================================

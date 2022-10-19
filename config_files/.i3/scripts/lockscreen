@@ -1,33 +1,18 @@
 #!/bin/bash
 
-# i3lock blurred screen inspired by /u/patopop007 and the blog post
-# http://plankenau.com/blog/post-10/gaussianlock
-
-# Timings are on an Intel i7-2630QM @ 2.00GHz
-
-# Dependencies:
-# imagemagick
-# i3lock
-# scrot (optional but default)
+# Take a screenshot of the display and use it as lockscreen
+# Betterlockscreen is used for locking the screen and blurring the image
 
 IMAGE=/tmp/i3lock.png
-SCREENSHOT="scrot $IMAGE" # 0.46s
 
-# Alternate screenshot method with imagemagick. NOTE: it is much slower
-# SCREENSHOT="import -window root $IMAGE" # 1.35s
+# Take the screenshot
+scrot "$IMAGE"
 
-# Here are some imagemagick blur types
-# Uncomment one to use, if you have multiple, the last one will be used
+# Set the lockscreen with some blur
+betterlockscreen -u "$IMAGE" --fx blur
 
-# All options are here: http://www.imagemagick.org/Usage/blur/#blur_args
-BLURTYPE="0x5" # 7.52s
-#BLURTYPE="0x2" # 4.39s
-#BLURTYPE="5x2" # 3.80s
-#BLURTYPE="2x8" # 2.90s
-#BLURTYPE="2x3" # 2.92s
+# Lock the screen using some blur
+betterlockscreen -l blur
 
-# Get the screenshot, add the blur and lock the screen with it
-$SCREENSHOT
-convert $IMAGE -blur $BLURTYPE $IMAGE
-i3lock -i $IMAGE -u
+# Remove the tmp image
 rm $IMAGE

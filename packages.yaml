@@ -59,6 +59,7 @@ pacman:
         - zoxide                  # Better cd
         - entr                    # Run automatically commands when some files change
         - act                     # Run github actions locally
+        - lldb                    # For debugging rust and c++ with nvim-dap
 
         # Media
         #===============================================================================
@@ -86,7 +87,7 @@ pacman:
         - extra/network-manager-applet  # Applet for connecting to wifi
         - scrot					        # For locking the screen (makes the screenshot) and taking screenshots
                                         # Also using this for my custom scrot program
-        - i3lock					    # For locking the screen
+        - betterlockscreen              # For locking the screen
         - imagemagick                   # For blurring the locking screen
         - xclip                         # Clipboard for communicating Neovim and the System
         - ntfs-3g                       # Needed to mount hdd/usb using this file system
