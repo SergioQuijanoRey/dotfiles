@@ -33,15 +33,6 @@ else
     echo "Missing ~/.bash_functions"
 fi
 
-# Bash Prompt
-if [ -f ~/.bash_prompt ]
-then
-    source ~/.bash_prompt
-else
-    echo "Missing ~/.bash_prompt, using default prompt"
-    export PS1="\u at \h in \W\n$ "
-fi
-
 # My personal paths
 #==============================================================================
 PATH="$PATH:/home/sergio/bin"
@@ -66,7 +57,11 @@ export BROWSER="chromium"
 #===============================================================================
 
 # Make zoxide work
-eval "$(zoxide init zsh)"
+eval "$(zoxide init bash)"
+
+# Use starship to configure the user prompt
+eval "$(starship init bash)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 # To force fzf.vim to ignore .gitignore files
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'

@@ -31,18 +31,22 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.bash_aliases
 source ~/.bash_functions
 
-# This has to be configured in different file
-# Prompt in zsh is not configured the same as bash
-source ~/.zsh_prompt
-
 # Evaluations
 #===============================================================================
 
 # Make zoxide work
 eval "$(zoxide init zsh)"
 
+# Use starship to define user prompt
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
 # To force fzf.vim to ignore .gitignore files
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
+# Make dunst notifications work with my config
+export $(dbus-launch)
+
 
 # Env vars
 #===============================================================================
@@ -65,4 +69,4 @@ alias tmux="TERM=screen-256color-bce tmux"
 PATH="$PATH:/home/sergio/bin"
 PATH="$PATH:/home/sergio/.i3/scripts"
 PATH="$PATH:/home/sergio/.local/bin"
-PATH="$PATH:/home/sergio/.local/share/gem/ruby/3.0.0/bin"
+PATH="$PATH:/home/sergio/.screenlayout"

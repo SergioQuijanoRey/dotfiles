@@ -1,0 +1,58 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+format = """$username at $hostname in$directory $git_branch $package\n$character"""
+
+# Use catppuccin inspired colorscheme
+palette = "catppuccin"
+
+[character]
+success_symbol = "\\$"
+error_symbol = "[\\$](bold red)"
+
+[username]
+style_user = "mauve bold"
+style_root = "red bold"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bold sapphire)"
+disabled = false
+
+[directory]
+truncate_to_repo = false
+format = "[$read_only]($read_only_style) [$path]($style)"
+style = "bold sky"
+read_only = ""
+read_only_style = "bold cyan"
+
+[git_branch]
+format = "on [$symbol$branch(:$remote_branch)]($style)"
+ignore_branches = []
+
+[package]
+disabled = false
+format = "[$symbol $version]($style)"
+symbol = ""
+style = "bold cyan"
+
+[palettes.catppuccin]
+blue = "#8caaee"
+lavender = "#babbf1"
+sapphire = "#85c1dc"
+sky = "#99d1db"
+teal = "#81c8be"
+green = "#a6d189"
+yellow = "#e5c890"
+peach = "#ef9f76"
+maroon = "#ea999c"
+red = "#e78284"
+mauve = "#ca9ee6"
+pink = "#f4b8e4"
+flamingo = "#eebebe"
+rosewater = "#f2d5cf"

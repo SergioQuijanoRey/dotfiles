@@ -4,11 +4,9 @@
 # Description:
 # 		Package description using my system punto
 
-common:
-    install_command: sudo pacman -S --noconfirm
-    packages:
 pacman:
-    install_command: sudo pacman -S --noconfirm
+    install_command: pacman -S --noconfirm
+    sudo: true
     packages:
         # System administration
         #===============================================================================
@@ -31,6 +29,7 @@ pacman:
         - ncdu        # To explore directories that take too much space
         - sshfs       # To code on servers with local editors
         - trash-cli   # To have a trash-like behaviour in the command line
+        - starship    # To configure terminal user prompt
 
         # zsh package and plugins
         - zsh
@@ -144,6 +143,7 @@ pacman:
 # TODO -- write the pre_install script
 aur:
     install_command: yay -S --noconfirm
+    sudo: false
     packages:
         # System administration
         #===============================================================================
@@ -188,7 +188,8 @@ aur:
 
 # Optional packages, no need to install them for having an usable system
 optional:
-    install_command: sudo pacman -S --noconfirm
+    install_command: pacman -S --noconfirm
+    sudo: true
     packages:
         # Programming
         # ===============================================================================
