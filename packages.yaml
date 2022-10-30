@@ -30,6 +30,7 @@ pacman:
         - sshfs       # To code on servers with local editors
         - trash-cli   # To have a trash-like behaviour in the command line
         - starship    # To configure terminal user prompt
+        - nix         # Second package manager
 
         # zsh package and plugins
         - zsh
@@ -38,7 +39,6 @@ pacman:
 
         # Programming
         #===============================================================================
-        - neovim                  # Main editor
         - jupyter-notebook        # Vanilla jupyter notebooks
         - jupyterlab              # I prefer jupyter lab over vanilla jupyter
         - valgrind                # Mem debugging for C/C++
@@ -137,6 +137,15 @@ pacman:
         - community/arc-icon-theme # Icons for the bar
         - aur/bibata-cursor-theme  # Cursor theme
         - community/cutefish-icons # Icons similar to MacOS
+
+
+# Dev tools that I've configured using nix package manager
+# This way, I can use this tools in other linux distros (even MAC, I think)
+dev_tools:
+  install_command: nix-env -iA
+  sudo: false
+  packages:
+    - nixpkgs.neovim    # Main code editor
 
 # IMPORTANT -- yay has to be installed before running this yaml file
 # To do this, run pre_install.yaml

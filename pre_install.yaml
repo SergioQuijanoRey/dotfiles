@@ -1,6 +1,6 @@
 # Script to run all pre-install tasks
 
-install yay:
+Install yay:
   description: Install yay from sources
   quiet: false
   commands:
@@ -10,3 +10,9 @@ install yay:
     - cd yay
     - makepkg -si
     - cd ~ ; rm -rf tmp_install_yay
+
+Install nix package manager:
+  description: Installs nix package manager, that we are going to use to install many packages
+  quiet: false
+  commands:
+    - sh <(curl -L https://nixos.org/nix/install) --daemon
