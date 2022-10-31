@@ -88,19 +88,17 @@ vim.optloaded_matchparen = 1        -- No matching parenthesis/brakets/... highl
 vim.opt.termguicolors = true        -- Colorschemes dont work well without this
 vim.opt.background="dark"           -- Dark background, does nothing with gruvbox colorscheme
 
--- Use catppuccin frappe colorscheme
-vim.g.catppuccin_flavour = "frappe"
-vim.cmd[[colorscheme catppuccin]]
+-- Splitting where i want
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 
--- Good settings for catpuccin
--- TODO -- move this to own module
+-- Set the colorscheme
 local catppuccin = require("catppuccin")
 catppuccin.setup({
+    flavour = "frappe",
     integrations = {
         markdown = false,
     }
 })
 
--- Splitting where i want
-vim.opt.splitbelow = true
-vim.opt.splitright = true
+vim.api.nvim_command "colorscheme catppuccin-frappe"
