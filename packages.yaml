@@ -60,6 +60,7 @@ pacman:
         - entr                    # Run automatically commands when some files change
         - act                     # Run github actions locally
         - lldb                    # For debugging rust and c++ with nvim-dap
+        - just                    # Better version of makefile
 
         # Media
         #===============================================================================
