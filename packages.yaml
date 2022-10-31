@@ -31,6 +31,7 @@ pacman:
         - trash-cli   # To have a trash-like behaviour in the command line
         - starship    # To configure terminal user prompt
         - nix         # Second package manager
+        - neovim      # Main editor
 
         # zsh package and plugins
         - zsh
@@ -138,14 +139,6 @@ pacman:
         - aur/bibata-cursor-theme  # Cursor theme
         - community/cutefish-icons # Icons similar to MacOS
 
-
-# Dev tools that I've configured using nix package manager
-# This way, I can use this tools in other linux distros (even MAC, I think)
-dev_tools:
-  install_command: nix-env -iA
-  sudo: false
-  packages:
-    - nixpkgs.neovim    # Main code editor
 
 # IMPORTANT -- yay has to be installed before running this yaml file
 # To do this, run pre_install.yaml
