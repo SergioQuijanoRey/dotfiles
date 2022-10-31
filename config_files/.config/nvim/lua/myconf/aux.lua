@@ -13,10 +13,12 @@ function export_table.exec(command)
     vim.api.nvim_exec(command, false)
 end
 
---- Function to set maps
+--- Function to set maps. This is handy because the api for this might change
+--- (nvim is not quite stable yet), and thus we can have single change affect
+--- all maps
 --- Example: setmap("n", "<Tab>", ":echo hello", {})
 function export_table.setmap(...)
-    return vim.api.nvim_set_keymap(...)
+    return vim.keymap.set(...)
 end
 
 return export_table

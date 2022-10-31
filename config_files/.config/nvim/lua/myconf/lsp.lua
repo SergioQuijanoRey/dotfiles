@@ -11,35 +11,56 @@ lspinstaller.setup {
     automatic_installation = true,
 }
 
+-- Use our custom function to set keymaps
+local setmap = require("myconf/aux").setmap
+
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
     local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
-    -- Options for the mappings
-    local opts = { noremap=true, silent=true }
+    -- Options for the mappings that work with buffers
+    local bufopts = { noremap=true, silent=true, buffer=bufnr }
 
     -- Keymappings
-    buf_set_keymap('n', '<leader>qr', '<cmd>lua vim.lsp.buf.rename()<CR>', opts) -- rename
-    buf_set_keymap('n', '<leader>qd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts) -- go to definition
-    buf_set_keymap('n', '<leader>qa', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts) -- code actions
-    buf_set_keymap('n', '<leader>ql', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
-    buf_set_keymap('n', '<leader>qs', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-    buf_set_keymap('n', "<leader>qf", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
-    buf_set_keymap('n', '<leader>qk', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
+    setmap('n', '<leader>qr', vim.lsp.buf.rename, bufopts)
+    setmap('n', '<leader>qd', vim.lsp.buf.definition, bufopts)
+    setmap('n', '<leader>qi', vim.lsp.buf.implementation, bufopts)
+    setmap('n', '<leader>qa', vim.lsp.buf.code_action, bufopts)
+    setmap('n', '<leader>ql', vim.lsp.buf.references, bufopts)
+    setmap('n', '<leader>qs', vim.lsp.buf.signature_help, bufopts)
+    setmap('n', '<leader>qh', vim.lsp.buf.hover, bufopts)
 
-    --buf_set_keymap("n", "<space>qd", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-    --buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
-    --buf_set_keymap('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
-    --buf_set_keymap('n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
-    --buf_set_keymap('n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
-    --buf_set_keymap('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
-    --buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
-    --buf_set_keymap('n', '<space>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
-    --buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
-    --buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
-    --buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
+    -- All keymaps are:
+    -- local opts = { noremap=true, silent=true }
+    -- vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
+    -- vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
+    -- vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
+    -- vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
+
+    -- local bufopts = { noremap=true, silent=true, buffer=bufnr }
+    -- vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
+    -- vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
+    -- vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
+    -- vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
+    -- vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
+    -- vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
+    -- vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
+    -- vim.keymap.set('n', '<space>wl', function()
+    --     print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+    --     end, bufopts)
+    -- vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
+    -- vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
+    -- vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
+    -- vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
+    -- vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
+
+    -- Options for keymaps that work globally
+    local opts = { noremap=true, silent=true }
+
+    setmap('n', '<leader>qe', vim.diagnostic.open_float, opts)
+    setmap('n', '<leader>qc', vim.diagnostic.setloclist, opts)
 
     -- Signature hint plugin
     cfg = {
@@ -82,24 +103,17 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 -- As we have set `automatic_installation = true`, this servers are installed automatically
 local servers = {
 
+    -- For markdown
+    "marksman",
+
     -- For C / C++
     "clangd",
-
-    -- For dart
-    -- "dartls",
-
-    -- For Java
-    -- "jdtls",
 
     -- For R
     "r_language_server",
 
     -- For Rust
     "rust_analyzer",
-
-    -- For Ruby
-    -- "sorbet",
-    -- "solargraph",
 
     -- For lua
     "sumneko_lua",
