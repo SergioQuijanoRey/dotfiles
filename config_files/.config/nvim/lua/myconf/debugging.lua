@@ -137,5 +137,3 @@ dap.configurations.cpp = {
 -- Same configuration for C++ and Rust
 dap.configurations.c = dap.configurations.cpp
 dap.configurations.rust = dap.configurations.cpp
-
-
