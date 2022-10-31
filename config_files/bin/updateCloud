@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Remote name
-uni_remote="DriveCrypt"     # Encrypted, google drive provided by UGR
+uni_remote="UniCrypt"     # Encrypted, google drive provided by UGR
 personal_remote="MyDrive"   # Not encrypted, personal usage
 
 # Showing the header

@@ -16,3 +16,8 @@ update_params="-Syyu --ignore=rofi"
 
 # Pacman and AUR upgrade
 $package_manager $update_params
+
+# Nix packages update
+echo ""
+echo "❄️ Updating nix packages"
+nix-env -u
