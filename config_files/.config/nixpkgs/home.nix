@@ -1,5 +1,13 @@
 { config, pkgs, ... }:
 
+let
+
+    # Custom channels
+    # nix-channel --add https://github.com/guibou/nixGL/archive/main.tar.gz nixgl
+    nixgl = import <nixgl> {};
+
+in
+
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -19,8 +27,11 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-    # Packages that I want to manage with home
+    # Videogames packages
     home.packages = [
-        pkgs.nvim_unwrap
+        pkgs.openspades
+        nixgl.auto.nixGLDefault
     ];
+
+
 }
