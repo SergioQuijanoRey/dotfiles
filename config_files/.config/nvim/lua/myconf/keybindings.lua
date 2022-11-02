@@ -28,7 +28,7 @@ setmap("n", "<leader>K", ":vsp<CR>:terminal<CR>A", {})
 
 -- Focus mode for writting
 setmap("n", "<leader>f", ":Goyo 120x120<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>:lua require('lualine').hide()<CR>", {})
-setmap("n", "<leader><S-f>", ":Goyo<CR>:set nowrap<CR>:set number<CR>:lua require('lualine').hide({unhide = true})<CR>", {})
+setmap("n", "<leader><S-f>", ":Goyo<CR>:set nowrap<CR>:set number<CR>:lua require('lualine').hide({unhide = true})<CR>:Catppuccin frappe<CR>", {})
 
 -- Open Nerd tree
 setmap("n", "<leader>o", ":NERDTreeToggle<CR>", {})
