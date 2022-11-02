@@ -31,7 +31,6 @@ pacman:
         - trash-cli   # To have a trash-like behaviour in the command line
         - starship    # To configure terminal user prompt
         - nix         # Second package manager
-        - neovim      # Main editor
 
         # zsh package and plugins
         - zsh

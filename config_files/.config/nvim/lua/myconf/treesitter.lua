@@ -19,3 +19,6 @@ require'nvim-treesitter.configs'.setup {
 -- Enable treesitter identation
 require'nvim-treesitter.configs'.setup {
 }
+
+-- This is required when using nvim installed with nix package manager
+require 'nvim-treesitter.install'.compilers = { 'zig' }
