@@ -39,12 +39,18 @@ in
         pkgs.tmux       # Terminal multiplexer
         pkgs.ripgrep    # Better grep
         pkgs.just       # Better version of makefile
+        pkgs.rsync
         pkgs.act        # Run github actions locally
         pkgs.entr       # Run automatically commands when some file changes
         pkgs.jq         # Command line JSON pretty printer
         pkgs.lldb       # For debugging rust and c++ with nvim-dap
         pkgs.fzf        # Searching and piping in the terminal
         pkgs.rclone     # For syncing with google drive
+        pkgs.rustup     # Rust ecosystem installer
+        pkgs.git
+        pkgs.tig        # ncurses terminal UI for git
+                        # Useful for view different branches
+        pkgs.acpi       # Check for battery status
     ] ++
 
     # System packages
@@ -57,12 +63,22 @@ in
         pkgs.ranger     # CLI file manager
             pkgs.w3m        # For displaying images in ranger
         pkgs.starship   # To configure terminal prompt
+        pkgs.htop
         pkgs.bottom     # A better top alternative - like gotop but using rust
         pkgs.bat        # Better cat alternative
         pkgs.duf        # For seeing disk usage
         pkgs.rar        # To extract winrar files
         pkgs.exa        # Good replacement for ls and tree (exa -T)
         pkgs.fd         # Good replacement for find
+        pkgs.ncdu       # To explore directories that take too much space
+        pkgs.dunst      # Notifications
+        pkgs.kitty      # Preferred terminal
+        pkgs.trash-cli  # To have a trash-like behaviour in the command line
+        pkgs.chromium   # Main web browser
+        pkgs.sshfs      # To code on servers with local editors
+        pkgs.docker     # Container technology
+        pkgs.podman     # Container technology
+        pkgs.crun       # Needed for running podman rootless
 
     ] ++
 
@@ -77,21 +93,4 @@ in
     nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
         "rar"
     ];
-
-
-    programs.zsh = {
-      plugins = [
-        {
-          # will source zsh-autosuggestions.plugin.zsh
-          name = "zsh-autosuggestions";
-          src = pkgs.fetchFromGitHub {
-            owner = "zsh-users";
-            repo = "zsh-autosuggestions";
-            rev = "v0.4.0";
-            sha256 = "0z6i9wjjklb4lvr7zjhbphibsyx51psv50gm07mbb0kj9058j6kc";
-          };
-        }
-
-      ];
-    };
 }

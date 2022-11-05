@@ -10,22 +10,11 @@ pacman:
     packages:
         # System administration
         #===============================================================================
-        - git
         - yay
         - sudo
         - base-devel
-        - htop
-        - rsync
         - cronie
-        - kitty       # Preferred terminal
         - man         # Should be installed by default
-        - dunst       # Notifications
-        - acpi        # Check for battery status
-        - tig         # ncurses terminal UI for git
-                      # Useful for view different branches
-        - ncdu        # To explore directories that take too much space
-        - sshfs       # To code on servers with local editors
-        - trash-cli   # To have a trash-like behaviour in the command line
         - nix         # Second package manager
 
         # Plugins for zsh
@@ -42,9 +31,7 @@ pacman:
         - julia                   # Nice programming lang that usually is not installed by default
         - poetry                  # Python package and enviroment management
         - podman                  # Container technology
-        - docker                  # Container technology
         - crun                    # Needed for running podman rootless
-        - rustup                  # Rust ecosystem installer
 
         # Media
         #===============================================================================
@@ -95,7 +82,6 @@ pacman:
         # Browsers
         #===============================================================================
         - firefox                 # Second browser
-        - chromium                # Alternative to brave browser
 
         # Others
         #===============================================================================
