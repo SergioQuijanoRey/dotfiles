@@ -19,5 +19,5 @@ $package_manager $update_params
 
 # Nix packages update
 echo ""
-echo "❄️ Updating nix packages"
-nix-env -u
+echo "❄️🏡 Updating nix packagess through home managerr"
+home-manager switch

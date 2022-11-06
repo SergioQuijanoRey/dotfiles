@@ -57,13 +57,14 @@ font:
     y: 0
   use_thin_strokes: true
   normal:
-      family: JetBrains Mono
+      # family: JetBrains Mono
+      family: Cascadia Code
       style: Regular
   bold:
-      family: JetBrains Mono
+      family: Cascadia Cod
       style: Bold
   italic:
-      family: JetBrains Mono
+      family: Cascadia Code
       style: Italic
 
 # If `true`, bold text is drawn using the bright color variants.

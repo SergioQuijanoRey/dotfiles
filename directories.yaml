@@ -46,8 +46,8 @@ directories:
 
     # Git configs
     - gitconfig:
-        repo_path: ./config_files/.ssh/config
-        system_path: .ssh/config
+        repo_path: ./config_files/.gitconfig
+        system_path: .config
 
     # I3 config
     - i3 config:

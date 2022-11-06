@@ -1,33 +1,8 @@
-# Author:
-#     Sergio Quijano Rey
-#     sergiquijano@gmail.com
-# Description:
-#     Git configuration file
-# Version:
-#     v1.0 - 26/05/2019 - First documented and personalized version
-
 [user]
 	email = sergiquijano@gmail.com
-	name = Sergio Quijano Rey
-
-# Store the passwords
-[credential]
-	helper = store
-
-[core]
-    editor = nvim
-
-[diff]
-    tool = vimdiff
-
-[merge]
-    tool = vimdiff
-    conflictstyle = diff3
-
-[difftool]
-    #prompt = 0
-[pull]
-	rebase = false
-[filesystem "N/A|11.0.8|/dev/sda2"]
-	timestampResolution = 16000 nanoseconds
-	minRacyThreshold = 5320 microseconds
+	name = Sergio Quijano
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

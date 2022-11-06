@@ -39,6 +39,7 @@ PATH="$PATH:/home/sergio/bin"
 PATH="$PATH:/home/sergio/.i3/scripts"
 PATH="$PATH:/home/sergio/.local/bin"
 PATH="$PATH:/home/sergio/.screenlayout"
+PATH="$PATH:/home/sergio/.nix-profile/bin"
 
 # Enviroment vars
 #===============================================================================

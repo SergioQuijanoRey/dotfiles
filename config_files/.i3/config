@@ -100,7 +100,7 @@ bindsym $mod+0 workspace $workspace10
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2
-bindsym $mod+Shift+3 move container to workspace $workspace3captppuccin
+bindsym $mod+Shift+3 move container to workspace $workspace3
 bindsym $mod+Shift+4 move container to workspace $workspace4
 bindsym $mod+Shift+5 move container to workspace $workspace5
 bindsym $mod+Shift+6 move container to workspace $workspace6
@@ -212,7 +212,7 @@ default_floating_border pixel 1
 for_window [class="^.*"] border pixel 1
 
 # Apps on start
-exec autodisplay                                            # Set the display configuration at startup
+exec autodisplay.sh                                            # Set the display configuration at startup
 exec whatsapp-nativefier
 exec telegram-desktop
 exec nm-applet
