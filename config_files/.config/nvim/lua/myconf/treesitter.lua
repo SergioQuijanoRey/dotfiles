@@ -1,7 +1,18 @@
 -- Configuration of treesitter
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = "all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  -- All can be used to install all mantained languages
+  -- Bad idea because it will install approx 127 langs and might crash the computer
+  ensure_installed = {
+    "lua",
+    "rust",
+    "python",
+    "bash",
+  }, 
+
   ignore_install = {}, -- List of parsers to ignore installing
+
+  -- Install the lang we are editing if not installed yet
+  auto_install = true,
 
   -- Highlight feature
   highlight = {
@@ -17,8 +28,7 @@ require'nvim-treesitter.configs'.setup {
 }
 
 -- Enable treesitter identation
-require'nvim-treesitter.configs'.setup {
-}
+require'nvim-treesitter.configs'.setup {}
 
 -- This is required when using nvim installed with nix package manager
-require 'nvim-treesitter.install'.compilers = { 'zig' }
+-- require 'nvim-treesitter.install'.compilers = { 'zig' }
