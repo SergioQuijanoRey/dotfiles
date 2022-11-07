@@ -22,9 +22,11 @@ bindkey "^[[1;5D" backward-word
 # Enable colors
 autoload -U colors && colors
 
-# Load fish-like hightlight and suggestions
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Use zplug to configure some plugins
+source ~/.nix-profile/init.zsh
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug load
 
 # This bash config files also work for zsh, so I am going to keep using them and
 # adding more content as I evolve my workflow
