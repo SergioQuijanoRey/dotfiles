@@ -153,8 +153,11 @@ in
         };
     };
 
-    # Enable touchpad
-    services.xserver.libinput.enable = true;
+    # Enable touchpad with natural scroll
+    services.xserver.libinput = {
+        enable = true;
+        touchpad.naturalScrolling = true;
+    };
 
     # Some packages as i3blocks try to read from /usr/bin
     # This way we avoid problems with that
@@ -247,8 +250,14 @@ in
             pkgs.arc-theme # Preferred theme
             pkgs.bibata-cursors # Preferred cursor theme
             pkgs.youtube-dl  # Download music
-            pkgs.jsoncpp
             pkgs.rofi
+            pkgs.nodePackages.npm # Some programns need this to build
+            pkgs.libnotify # To have access to notify-send with dunst
+        ] ++
+
+        # WM packages
+        [
+            pkgs.polybarFull
         ] ++
 
         # Messaging
@@ -259,9 +268,18 @@ in
         # Videogame packages
         [
             pkgs.openspades
+            pkgs.steam
+        ] ++
+
+        # Others
+        [
+            pkgs.calibre
         ];
 
     };
+
+    # Enable dconf so gtk2 apps display properly
+    programs.dconf.enable = true;
 
     # Automatically garbage collection
     nix = {
