@@ -63,3 +63,13 @@ enable network manager:
     quite: false
     commands:
       - sudo systemctl enable NetworkManager
+
+Install catppuccin rofi theme:
+  description: Installs the catppuccin theme for rofi
+  quiet: false
+  commands:
+    - mkdir -p -f ~/GitRepos
+    - cd ~/GitRepos
+    - git clone https://github.com/catppuccin/rofi/
+    - cd rofi/basic
+    - bash install.sh
