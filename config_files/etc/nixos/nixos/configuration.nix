@@ -20,7 +20,7 @@ in
         (import "${home-manager}/nixos")
 
         # Home manager is configured in different file
-        ./home.nix
+        # ./home.nix
     ];
 
     # Bootloader
@@ -106,6 +106,9 @@ in
         gcc
     ];
 
+    # Home manager configuration is stored in user config files
+    home-manager.users.sergio = import /home/${user}/.config/nixpkgs/home.nix;
+
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
     # programs.mtr.enable = true;
@@ -185,5 +188,7 @@ in
             options = "--delete-older-than 7d";
         };
     };
+
+
 }
 
