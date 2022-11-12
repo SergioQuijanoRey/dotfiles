@@ -158,10 +158,11 @@ in
         };
     };
 
-    # Enable touchpad with natural scroll
+    # Enable touchpad with natural scroll, disable while typing
     services.xserver.libinput = {
         enable = true;
         touchpad.naturalScrolling = true;
+        touchpad.disableWhileTyping = true;
     };
 
     # Some packages as i3blocks try to read from /usr/bin
@@ -171,6 +172,9 @@ in
     # Enable audio using Pulse
     hardware.pulseaudio.enable = true;
     hardware.pulseaudio.support32Bit = true;
+
+    # Enable audio using ALSA, for media keys in i3
+    sound.enable = true;
 
     # Enable bluetooth
     hardware.bluetooth.enable = true;

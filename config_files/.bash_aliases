@@ -58,5 +58,10 @@ alias cd="z"
 # Also, avoid typing nixpkgs again and again
 alias nixsearch="nix --extra-experimental-features nix-command --extra-experimental-features flakes search nixpkgs "
 
+# List all installed packages, both using nix config and home manager
+alias nixls="nix-store --query --requisites /run/current-system"
+
 # Home manager is too long to type
 alias hm="home-manager"
+alias rebuild="sudo nixos-rebuild switch -I ~/.config/nixos/configuration.nix"
+alias nixconf="nvim /etc/nixos/configuration.nix"
