@@ -63,5 +63,5 @@ alias nixls="nix-store --query --requisites /run/current-system"
 
 # Home manager is too long to type
 alias hm="home-manager"
-alias rebuild="sudo nixos-rebuild switch -I ~/.config/nixos/configuration.nix"
+alias rebuild="sudo nixos-rebuild switch -I nixos-config=/home/sergio/.config/nixos/configuration.nix"
 alias nixconf="nvim /etc/nixos/configuration.nix"
