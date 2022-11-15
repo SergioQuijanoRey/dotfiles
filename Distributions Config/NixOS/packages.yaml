@@ -1,0 +1,8 @@
+
+# Some packages are really hard to install using NixOS and nixpkgs
+# So flatpak works really well for solving that problem
+Flatpak packages:
+    install_command: flatpak install
+    sudo: false
+    packages:
+        - parsec # For gaming in a remote PC

@@ -1,0 +1,26 @@
+# Script to run all post-install tasks
+
+configure github:
+  description: Configures github user and mail
+  quiet: false
+  commands:
+    - git config --global user.email "sergiquijano@gmail.com"
+    - git config --global user.name "Sergio Quijano"
+
+Install catppuccin rofi theme:
+  description: Installs the catppuccin theme for rofi
+  quiet: false
+  commands:
+    - mkdir -p -f ~/GitRepos
+    - cd ~/GitRepos
+    - git clone https://github.com/catppuccin/rofi/
+    - cd rofi/basic
+    - bash install.sh
+
+Configure flatpak channels:
+  description: NixOS has no way of setting the flatpak channels that we want to use, so we have \
+               to configure them here
+  quiet: false
+  commands:
+    - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    - flatpak update
