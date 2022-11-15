@@ -18,9 +18,6 @@ in
 
         # To use home manager as nixos module
         (import "${home-manager}/nixos")
-
-        # Home manager is configured in different file
-        # ./home.nix
     ];
 
     # Bootloader
@@ -73,7 +70,8 @@ in
         description = "Sergio";
 
         # "audio" group is needed to work with pulse audio
-        extraGroups = [ "networkmanager" "wheel" "audio"];
+        # "docker" is needed to interact with docker commands
+        extraGroups = [ "networkmanager" "wheel" "audio" "docker"];
         packages = with pkgs; [];
         shell = pkgs.zsh;
     };
@@ -106,8 +104,8 @@ in
         gcc
     ];
 
-    # Home manager configuration is stored in user config files
-    home-manager.users.sergio = import /home/${user}/.config/nixpkgs/home.nix;
+    # Load user home manager configuration
+    home-manager.users.sergio = import ./home.nix;
 
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
@@ -183,6 +181,27 @@ in
     # Enable dconf so gtk2 apps display properly
     programs.dconf.enable = true;
 
+    # Enable docker
+    virtualisation.docker = {
+        enable = true;
+        rootless.enable = true;
+    };
+
+    # Without this, steam does not work
+    hardware.opengl.driSupport32Bit = true;
+    programs.steam = {
+        enable = true;
+        remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+        dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    };
+
+    # I want to install some packages using flatpack
+    services.flatpak.enable = true;
+    xdg.portal = { # Desktop integration
+        extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+        enable = true;
+    };
+
     # Automatically garbage collection
     nix = {
         settings.auto-optimise-store = true;
@@ -192,7 +211,5 @@ in
             options = "--delete-older-than 7d";
         };
     };
-
-
 }
 
