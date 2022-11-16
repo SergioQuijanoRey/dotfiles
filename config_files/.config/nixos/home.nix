@@ -19,27 +19,32 @@
     # Dev packages
     [
         pkgs.neovim             # Main editor
-        pkgs.tree-sitter    # Neovim relies heavily on treesitter
+        pkgs.tree-sitter        # Neovim relies heavily on treesitter
 
-        pkgs.tmux       # Terminal multiplexer
-        pkgs.ripgrep    # Better grep
-        pkgs.just       # Better version of makefile
+        pkgs.tmux               # Terminal multiplexer
+        pkgs.ripgrep            # Better grep
+        pkgs.just               # Better version of makefile
         pkgs.rsync
-        pkgs.act        # Run github actions locally
-        pkgs.entr       # Run automatically commands when some file changes
-        pkgs.jq         # Command line JSON pretty printer
-        pkgs.lldb       # For debugging rust and c++ with nvim-dap
-        pkgs.fzf        # Searching and piping in the terminal
-        pkgs.rclone     # For syncing with google drive
-        pkgs.rustup     # Rust ecosystem installer
+        pkgs.act                # Run github actions locally
+        pkgs.entr               # Run automatically commands when some file changes
+        pkgs.jq                 # Command line JSON pretty printer
+        pkgs.lldb               # For debugging rust and c++ with nvim-dap
+        pkgs.fzf                # Searching and piping in the terminal
+        pkgs.rclone             # For syncing with google drive
+        pkgs.rustup             # Rust ecosystem installer
         pkgs.git
-        pkgs.tig        # ncurses terminal UI for git
-                        # Useful for view different branches
-        pkgs.acpi       # Check for battery status
-        pkgs.R          # R programming language
-        pkgs.rstudio    # Needed for some uni classes
-        pkgs.gfortran   # Many R packages need fortran to compile
-        pkgs.gnumake    # R lsp needs this package
+        pkgs.tig                # ncurses terminal UI for git
+                                # Useful for view different branches
+        pkgs.acpi               # Check for battery status
+        pkgs.gfortran           # Many R packages need fortran to compile
+        pkgs.gnumake            # R lsp needs this package
+        pkgs.pandoc             # Tools like rmarkdown need this
+
+
+        # R and their packages
+        pkgs.R                          # R programming language
+        pkgs.rstudio                    # Needed for some uni classes
+        pkgs.rPackages.languageserver
     ] ++
 
     # System packages
@@ -52,52 +57,51 @@
         pkgs.zsh-autosuggestions        # Plugin for zsh
         pkgs.zsh-syntax-highlighting    # Plugin for zsh
 
-        pkgs.zoxide     # Better cd command
-        pkgs.ranger     # CLI file manager
-        pkgs.w3m        # For displaying images in ranger
-        pkgs.starship   # To configure terminal prompt
+        pkgs.zoxide                     # Better cd command
+        pkgs.ranger                     # CLI file manager
+        pkgs.w3m                        # For displaying images in ranger
+        pkgs.starship                   # To configure terminal prompt
         pkgs.htop
-        pkgs.bottom     # A better top alternative - like gotop but using rust
-        pkgs.bat        # Better cat alternative
-        pkgs.duf        # For seeing disk usage
-        pkgs.rar        # To extract winrar files
-        pkgs.exa        # Good replacement for ls and tree (exa -T)
-        pkgs.fd         # Good replacement for find
-        pkgs.ncdu       # To explore directories that take too much space
-        pkgs.dunst      # Notifications
-        pkgs.kitty      # Preferred terminal
-        pkgs.trash-cli  # To have a trash-like behaviour in the command line
-        pkgs.chromium   # Main web browser
-        pkgs.firefox    # Secondary web browser
-        pkgs.sshfs      # To code on servers with local editors
-        pkgs.docker     # Container technology
-        pkgs.podman     # Container technology
-        pkgs.crun       # Needed for running podman rootless
-        pkgs.nerdfonts  # Icon font
-        pkgs.jetbrains-mono # Preferred fonts
-        pkgs.noto-fonts-emoji # Font that supports emojis
-        pkgs.cascadia-code # Second preferred font
-        pkgs.arandr     # To control multiple displays
-        pkgs.lxappearance   # Set the system theme
-        pkgs.networkmanagerapplet # Applet to connect to wifi
-        pkgs.scrot # To take screenshots
-        pkgs.betterlockscreen # For locking the screen
-        pkgs.imagemagick # For blurring the lock screen
-        pkgs.xclip # Sharing system and nvim clipboard
-        pkgs.ntfs3g  # Mounting hdd with ntfs file format
-        pkgs.alsa-utils # Having volume control keys
-        pkgs.alsa-lib   # Having volume control keys
-        pkgs.alsa-plugins # Having volume control keys
-        pkgs.mate.engrampa # Working with compressed and zipped files
-        pkgs.arc-theme # Preferred theme
-        pkgs.bibata-cursors # Preferred cursor theme
-        pkgs.youtube-dl  # Download music
+        pkgs.bottom                     # A better top alternative - like gotop but using rust
+        pkgs.bat                        # Better cat alternative
+        pkgs.duf                        # For seeing disk usage
+        pkgs.rar                        # To extract winrar files
+        pkgs.exa                        # Good replacement for ls and tree (exa -T)
+        pkgs.fd                         # Good replacement for find
+        pkgs.ncdu                       # To explore directories that take too much space
+        pkgs.dunst                      # Notifications
+        pkgs.kitty                      # Preferred terminal
+        pkgs.trash-cli                  # To have a trash-like behaviour in the command line
+        pkgs.chromium                   # Main web browser
+        pkgs.firefox                    # Secondary web browser
+        pkgs.sshfs                      # To code on servers with local editors
+        pkgs.docker                     # Container technology
+        pkgs.podman                     # Container technology
+        pkgs.crun                       # Needed for running podman rootless
+        pkgs.arandr                     # To control multiple displays
+        pkgs.lxappearance               # Set the system theme
+        pkgs.networkmanagerapplet       # Applet to connect to wifi
+        pkgs.scrot                      # To take screenshots
+        pkgs.betterlockscreen           # For locking the screen
+        pkgs.imagemagick                # For blurring the lock screen
+        pkgs.xclip                      # Sharing system and nvim clipboard
+        pkgs.ntfs3g                     # Mounting hdd with ntfs file format
+        pkgs.alsa-utils                 # Having volume control keys
+        pkgs.alsa-lib                   # Having volume control keys
+        pkgs.alsa-plugins               # Having volume control keys
+        pkgs.mate.engrampa              # Working with compressed and zipped files
+        pkgs.arc-theme                  # Preferred theme
+        pkgs.bibata-cursors             # Preferred cursor theme
+        pkgs.youtube-dl                 # Download music
         pkgs.rofi
-        pkgs.rofi-emoji # Have a rofi emoji selector
-        pkgs.nodePackages.npm # Some programns need this to build
-        pkgs.libnotify # To have access to notify-send with dunst
+        pkgs.rofi-emoji                 # Have a rofi emoji selector
+        pkgs.nodePackages.npm           # Some programns need this to build
+        pkgs.libnotify                  # To have access to notify-send with dunst
         pkgs.evince
         pkgs.dpkg
+        pkgs.unzip                      # Some nvim LSPs need this to install
+        pkgs.gnome.nautilus             # Graphic file explorer
+        pkgs.nodejs                     # Some nvim LSPs need this
 
         # Python and their lsp packages
         pkgs.python310
@@ -108,9 +112,6 @@
         pkgs.python310Packages.pyls-flake8        # Pylsp plugin
         pkgs.python310Packages.flake8
         pkgs.nodePackages.pyright                 # Pyright for nvim lps
-        pkgs.nodejs                               # Some nvim LSPs need this
-        pkgs.unzip  # Some nvim LSPs need this to install
-        pkgs.gnome.nautilus # Graphic file explorer
     ] ++
 
     # WM packages
@@ -129,9 +130,16 @@
         pkgs.steam
         pkgs.lutris
 
-
         # Without this package, steam fails to open
         pkgs.xorg.libxcb
+    ] ++
+
+    # Fonts
+    [
+        pkgs.nerdfonts                  # Icon font
+        pkgs.jetbrains-mono             # Preferred fonts
+        pkgs.noto-fonts-emoji           # Font that supports emojis
+        pkgs.cascadia-code              # Second preferred font
     ] ++
 
     # Others
@@ -139,7 +147,12 @@
         pkgs.calibre
         pkgs.spotify
         pkgs.keepassxc
+        pkgs.syncthing
     ];
+
+    # Fonts cannot be installed as normal packages
+    # We need to specify this to reload font cache
+    fonts.fontconfig.enable = true;
 
     # Declare which chromium extension we are using
     programs.chromium = {
@@ -154,6 +167,9 @@
 
             # Ad blocker
             { id = "gighmmpiobklfepjocnamgkkbiglidom"; }
+
+            # Preview markdown files in the browser
+            { id = "ckkdlimhmcjmikdlpkmbgfkaikojcbjk"; }
         ];
     };
 }
