@@ -118,6 +118,9 @@ local servers = {
     -- For lua
     "sumneko_lua",
 
+    -- For nix
+    "rnix",
+
     -- For python
 
     -- Main lsp component

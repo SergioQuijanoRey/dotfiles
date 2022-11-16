@@ -7,7 +7,7 @@ require'nvim-treesitter.configs'.setup {
     "rust",
     "python",
     "bash",
-  }, 
+  },
 
   ignore_install = {}, -- List of parsers to ignore installing
 
@@ -17,18 +17,17 @@ require'nvim-treesitter.configs'.setup {
   -- Highlight feature
   highlight = {
     enable = true,
-    disable = {}, -- list of languages not to use hightlighting
+    disable = {"markdown"}, -- list of languages not to use hightlighting
+                            -- Markdown hightlighting is not working properly
   },
 
   -- Indent feature
   indent = {
-    enable = false,              -- TODO -- indentation never works well, check in a few months
+    -- TODO -- prev was false, because it never worked
+    enable = true,
     disable = {}
   },
 }
 
 -- Enable treesitter identation
 require'nvim-treesitter.configs'.setup {}
-
--- This is required when using nvim installed with nix package manager
--- require 'nvim-treesitter.install'.compilers = { 'zig' }
