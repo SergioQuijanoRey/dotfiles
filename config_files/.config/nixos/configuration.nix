@@ -83,7 +83,6 @@ in
     # $ nix search wget
     # TODO -- I need to clean this to left only system-critic packages
     environment.systemPackages = with pkgs; [
-        neovim
         git
         kitty
         chromium
@@ -201,6 +200,9 @@ in
         extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
         enable = true;
     };
+
+    # I want neovim as the default editor
+    environment.variables.EDITOR = "nvim";
 
     # Automatically garbage collection
     nix = {
