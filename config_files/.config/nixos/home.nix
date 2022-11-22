@@ -4,6 +4,52 @@
 # Instead, do regular nixos-rebuild switch
 
 { config, pkgs, ... }:
+
+with pkgs;
+let
+    # Specify R packages
+    R-with-my-packages = rWrapper.override {
+        packages = with rPackages; [
+            # LSP and packages required
+            languageserver
+            languageserversetup
+            xml2
+
+            # Stats packages
+            ggpubr
+        ];
+    };
+
+    # Specify python packages
+    my-python-packages = python-packages: with python-packages; [
+        # Normal packages
+        matplotlib
+        numpy
+        scikit-learn
+        tqdm
+        snakeviz
+        pytorch
+        torchvision
+        jupyterlab
+        seaborn
+        wandb
+        pip
+
+        # pylsp is the main LSP for python
+        python-lsp-server
+
+        # pylsp modules
+        pylsp-mypy
+        pyls-isort          # Pylsp plugin
+        pyls-flake8         # Pylsp plugin
+
+        # Dependencies for python lsp modules
+        mypy
+        isort
+    ];
+    python_my_packages = python39.withPackages my-python-packages;
+in
+
 {
 
     # Home manager needs this info to move around config files
@@ -22,6 +68,7 @@
 
     # Dev packages
     [
+        # TODO -- uncomment
         pkgs.neovim             # Main editor
         pkgs.tree-sitter        # Neovim relies heavily on treesitter
 
@@ -43,18 +90,6 @@
         pkgs.gfortran           # Many R packages need fortran to compile
         pkgs.gnumake            # R lsp needs this package
         pkgs.pandoc             # Tools like rmarkdown need this
-
-        # Packages that I use for machine learning with python
-        pkgs.python310Packages.jupyterlab
-        pkgs.python310Packages.pytorch
-        pkgs.python310Packages.torchvision
-        pkgs.python310Packages.matplotlib
-        pkgs.python310Packages.numpy
-        pkgs.python310Packages.seaborn
-        pkgs.python310Packages.wandb
-        pkgs.python310Packages.scikit-learn
-        pkgs.python310Packages.tqdm
-        pkgs.python310Packages.snakeviz
 
     ] ++
 
@@ -119,26 +154,16 @@
 
     # Programming languages and their LSPs
     [
-        # Python
-        pkgs.python310
-        pkgs.python310Packages.pip
-        pkgs.python310Packages.python-lsp-server  # Pylsp for nvim lsp
-        pkgs.python310Packages.pylsp-mypy
-        pkgs.mypy
-
-        pkgs.python310Packages.pyls-isort         # Pylsp plugin
-        pkgs.python310Packages.isort
-
-        pkgs.python310Packages.pyls-flake8        # Pylsp plugin
-        pkgs.nodePackages.pyright                 # Pyright for nvim lps
+        # Python, with the packages for development (ie. pandas) and LSP packages
+        python_my_packages
 
         # Nix
         pkgs.rnix-lsp
 
-        # R
-        pkgs.R                          # R programming language
+        # R with the packages specified at the start
+        R-with-my-packages
+        pkgs.xml2                       # Needed for LSP to work
         pkgs.rstudio                    # Needed for some uni classes
-        pkgs.rPackages.languageserver   # LSP for R
 
         # Lua
         pkgs.lua53Packages.lua-lsp
@@ -181,6 +206,7 @@
         pkgs.spotify
         pkgs.keepassxc
         pkgs.syncthing
+        pkgs.xournalpp      # For writting docs using the HUION tablet
     ];
 
     # Fonts cannot be installed as normal packages

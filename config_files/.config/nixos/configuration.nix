@@ -91,7 +91,6 @@ in
         starship
         pavucontrol
         pkgs.vimPlugins.packer-nvim
-        python3
         feh
         tmux
         exa
