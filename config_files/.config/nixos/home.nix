@@ -148,6 +148,7 @@ in
         pkgs.unzip                      # Some nvim LSPs need this to install
         pkgs.gnome.nautilus             # Graphic file explorer
         pkgs.nodejs                     # Some nvim LSPs need this
+        pkgs.playerctl                  # To have play pause
 
 
     ] ++
@@ -170,6 +171,9 @@ in
 
         # Rust
         pkgs.rust-analyzer
+
+        # Julia
+        pkgs.julia-bin
     ] ++
 
     # WM components packages
