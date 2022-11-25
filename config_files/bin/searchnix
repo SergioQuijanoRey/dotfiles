@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Search for packages in search.nixos.org through rofi
+
+BROWSER="chromium"
+
+# Select the package name using rofi
+package_input=$(rofi -dmenu -e "Package name to search: ")
+
+# If no package name is given, stop
+if [ -z "$package_input" ]
+then
+    echo "No package name was given"
+    exit 1
+fi
+
+# Build the url and open it on the browser
+url="https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=$package_input"
+$BROWSER "$url" &
