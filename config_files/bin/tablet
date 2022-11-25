@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# The screen we want to map the tablet
+screen_name="HDMI-2"
+
+# Takes a $1 indicating the name of the device that we are going to map
+function map_devices () {
+    # First, get the ids we're interested in
+    IDs="$(xinput | grep -i $1 | cut -d '=' -f2 | cut -f1 -d$'\t')"
+
+    # Map the devices to the screen
+    for id in $IDs
+    do
+        echo "Mapping device $id to $screen_name"
+        xinput map-to-output $id "$screen_name" || echo "Could not map device with id $id"
+    done
+}
+
+# Map devices that have pad or pen
+map_devices "pad"
+map_devices "pen"
+
