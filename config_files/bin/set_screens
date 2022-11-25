@@ -2,11 +2,8 @@
 # Script to select, using Rofi, the screen layout
 # Screen layouts must be stored in ~/.screenlayout, using arandr program to generate them
 
-# Some parameters
-ROFI_THEME="/home/sergio/.config/rofi/catppuccin.rasi"
-
 # User selects the layout
-layout="$(ls ~/.screenlayout | rofi -p "Choose a screen configuration: " -dmenu -config $ROFI_THEME )"
+layout="$(ls ~/.screenlayout | rofi -p "Choose a screen configuration: " -dmenu ) "
 ~/.screenlayout/$layout
 
 # Then wallpaper is selected

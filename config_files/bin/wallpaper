@@ -16,7 +16,6 @@
 #===============================================================================
 source "/home/sergio/.bash_profile"
 wallpaper_folder="$HOME/backgrounds/"
-ROFI_THEME="/home/sergio/.config/rofi/catppuccin.rasi"
 
 # Script functions
 #===============================================================================
@@ -32,7 +31,7 @@ function show_help() {
 if [ $# == 0 ]
 then
     # The image is selected from the wallpaper folder
-    image=$(ls $wallpaper_folder | rofi -p "Choose a wallpaper:" -dmenu -config $ROFI_THEME)
+    image=$(ls $wallpaper_folder | rofi -p "Choose a wallpaper:" -dmenu )
 else
     # We have a parameter, so we process it
     case "$1" in
