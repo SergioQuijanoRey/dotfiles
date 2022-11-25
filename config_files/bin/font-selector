@@ -1,0 +1,2 @@
+
+awk -F: '{print $2}' <<< $(fc-list) | fzf
