@@ -39,7 +39,8 @@ let
         python-lsp-server
 
         # pylsp modules
-        pylsp-mypy
+        # TODO -- uncomment, this package was not working
+        # pylsp-mypy
         pyls-isort          # Pylsp plugin
         pyls-flake8         # Pylsp plugin
 
@@ -48,6 +49,26 @@ let
         isort
     ];
     python_my_packages = python39.withPackages my-python-packages;
+
+    # Latex enviroment
+    custom_tex_env = (pkgs.texlive.combine {
+        # Base latex env
+        inherit (pkgs.texlive) scheme-medium
+
+        # Extra packages that we want
+        amsmath
+        hyperref
+
+        # Packages that I need for my thesis template to compile
+        koma-script
+        xpatch
+        cabin
+        fontaxes
+        inconsolata
+        xurl
+        upquote
+        ;
+    });
 in
 
 {
@@ -90,6 +111,7 @@ in
         pkgs.gfortran           # Many R packages need fortran to compile
         pkgs.gnumake            # R lsp needs this package
         pkgs.pandoc             # Tools like rmarkdown need this
+        custom_tex_env          # Latex enviroment that we've defined before
 
     ] ++
 
@@ -171,6 +193,10 @@ in
 
         # Rust
         pkgs.rust-analyzer
+
+        # Rust webdev
+        pkgs.trunk      # For serving yew.rs apps
+        pkgs.diesel-cli # For starting diesel ORM
 
         # Julia
         pkgs.julia-bin

@@ -59,6 +59,10 @@ in
     services.xserver = {
         layout = "es";
         xkbVariant = "";
+
+        # Enable HUION tablet utilities
+        # For example, xsetwacom command
+        wacom.enable = true;
     };
 
     # Configure console keymap
