@@ -34,13 +34,17 @@ let
         seaborn
         wandb
         pip
+        pandas
+
+        # Managing Excel files
+        xlrd
+        xlwt
 
         # pylsp is the main LSP for python
         python-lsp-server
 
         # pylsp modules
-        # TODO -- uncomment, this package was not working
-        # pylsp-mypy
+        pylsp-mypy
         pyls-isort          # Pylsp plugin
         pyls-flake8         # Pylsp plugin
 
@@ -200,6 +204,9 @@ in
 
         # Julia
         pkgs.julia-bin
+
+        # Latex
+        pkgs.texlab
     ] ++
 
     # WM components packages
@@ -237,6 +244,7 @@ in
         pkgs.keepassxc
         pkgs.syncthing
         pkgs.xournalpp      # For writting docs using the HUION tablet
+        pkgs.onlyoffice-bin # Alternative to MS Office
     ];
 
     # Fonts cannot be installed as normal packages
