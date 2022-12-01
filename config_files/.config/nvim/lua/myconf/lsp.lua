@@ -106,6 +106,9 @@ local servers = {
     -- For markdown
     "marksman",
 
+    -- For latex
+    "/texlab",
+
     -- For C / C++
     "clangd",
 

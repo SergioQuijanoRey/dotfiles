@@ -45,17 +45,6 @@ local fmta = require("luasnip.extras.fmt").fmta
 local types = require("luasnip.util.types")
 local conds = require("luasnip.extras.expand_conditions")
 
-ls.add_snippets("all", {
-    -- trigger is `fn`, second argument to snippet-constructor are the nodes to insert into the buffer on expansion.
-    s("expand", fmt(
-        "-- Sergio says: {}\n-- Category is {}\n--Then {} says {}",
-        {i(1, "default comment"), i(2, "category"), rep(1), rep(2)}
-    )),
-}, {
-    key = "all",
-})
-
-
 ls.add_snippets("lua", {
 
     -- Easily require a function
@@ -109,4 +98,59 @@ output:
 
 }, {
     key = "rmd",
+})
+
+
+ls.add_snippets("tex", {
+
+    -- Create a bullet list
+    s("list", fmt(
+[[
+\begin{itemize}
+    \item <>
+    \item <>
+    \item <>
+\end{itemize}
+]],
+        {i(1), i(2), i(3)},
+        {delimiters = "<>"}
+    )),
+
+    -- Create an enumerate list
+    s("elist", fmt(
+[[
+\begin{enumerate}
+    \item <>
+    \item <>
+    \item <>
+\end{enumerate}
+]],
+        {i(1), i(2), i(3)},
+        {delimiters = "<>"}
+    )),
+
+    -- Bold certain text
+    s("bold", fmt("\\textbf{<>}",
+        {i(1)},
+        {delimiters = "<>"}
+    )),
+
+    -- Italic certain text
+    s("it", fmt("\\textit{<>}",
+        {i(1)},
+        {delimiters = "<>"}
+    )),
+
+
+    -- Make a cite
+    s("cite", fmt("\\cite{<>}",
+        {i(1)},
+        {delimiters = "<>"}
+    )),
+
+
+
+
+}, {
+    key = "tex",
 })
