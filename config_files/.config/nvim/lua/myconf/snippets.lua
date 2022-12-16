@@ -129,6 +129,63 @@ ls.add_snippets("tex", {
         {delimiters = "<>"}
     )),
 
+    -- Create a definition
+    s("def", fmt(
+[[
+\begin{definicion}[<>]
+    <>
+\end{definicion}
+]],
+        {i(1), i(2)},
+        {delimiters = "<>"}
+    )),
+
+    -- Create a proposition
+    s("prop", fmt(
+[[
+\begin{proposicion}[<>]
+    <>
+\end{proposicion}
+]],
+        {i(1), i(2)},
+        {delimiters = "<>"}
+    )),
+
+    -- Create a theorem
+    s("teor", fmt(
+[[
+\begin{teorema}[<>]
+    <>
+\end{teorema}
+]],
+        {i(1), i(2)},
+        {delimiters = "<>"}
+    )),
+
+    -- Create an equation
+    s("eq", fmt(
+[[
+\begin{equation}
+    <>
+\end{equation}
+]],
+        {i(1)},
+        {delimiters = "<>"}
+    )),
+
+    -- Create an equation with split
+    s("eqs", fmt(
+[[
+\begin{equation}
+\begin{split}
+    <>
+\end{split}
+\end{equation}
+]],
+        {i(1)},
+        {delimiters = "<>"}
+    )),
+
     -- Bold certain text
     s("bold", fmt("\\textbf{<>}",
         {i(1)},
