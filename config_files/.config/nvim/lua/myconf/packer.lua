@@ -73,6 +73,9 @@ return require('packer').startup(function()
         run = ':TSUpdate'
     }
 
+    -- Treesitter for just files
+    use "IndianBoy42/tree-sitter-just"
+
     -- Builtin lsp
     use {
         -- Main plugin

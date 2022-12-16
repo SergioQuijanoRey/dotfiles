@@ -23,7 +23,6 @@ require'nvim-treesitter.configs'.setup {
 
   -- Indent feature
   indent = {
-    -- TODO -- prev was false, because it never worked
     enable = true,
     disable = {}
   },
@@ -31,3 +30,6 @@ require'nvim-treesitter.configs'.setup {
 
 -- Enable treesitter identation
 require'nvim-treesitter.configs'.setup {}
+
+-- Add tree sitter grammar for justfiles
+require("tree-sitter-just").setup({})
