@@ -1,4 +1,4 @@
-# Home manager configuration
+# Home manager onfiguration
 # This is imported from /etc/nixos/configuration.nix
 # So don't use home-manager switch
 # Instead, do regular nixos-rebuild switch
@@ -62,6 +62,8 @@ let
         # Extra packages that we want
         amsmath
         hyperref
+        cancel
+        esvect
 
         # Packages that I need for my thesis template to compile
         koma-script
@@ -116,6 +118,7 @@ in
         pkgs.gnumake            # R lsp needs this package
         pkgs.pandoc             # Tools like rmarkdown need this
         custom_tex_env          # Latex enviroment that we've defined before
+        pkgs.sqlite             # Database engine that I use in some backends
 
     ] ++
 
@@ -193,6 +196,7 @@ in
         pkgs.rstudio                    # Needed for some uni classes
 
         # Lua
+        pkgs.sumneko-lua-language-server
         pkgs.lua53Packages.lua-lsp
 
         # Rust
@@ -224,6 +228,7 @@ in
         pkgs.openspades
         pkgs.steam
         pkgs.lutris
+        pkgs.spicy
 
         # Without this package, steam fails to open
         pkgs.xorg.libxcb
@@ -267,6 +272,9 @@ in
 
             # Preview markdown files in the browser
             { id = "ckkdlimhmcjmikdlpkmbgfkaikojcbjk"; }
+
+            # Twitch ad blocker
+            { id = "lehcglgkjkamolcflammloedahjocbbg"; }
         ];
     };
 }
