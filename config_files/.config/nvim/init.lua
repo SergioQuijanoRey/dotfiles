@@ -44,7 +44,7 @@ vim.opt.ignorecase = true                       -- When searching, ignore upper 
 vim.opt.scrolloff=4                             -- Start scrolling before getting to last line
 
 -- Four spaces instead of tab
-exec("filetype plugin indent on", false)
+exec("filetype plugin indent on")
 vim.opt.smarttab=true                           -- Set smarttab
 vim.opt.tabstop=4
 vim.opt.shiftwidth=4
@@ -59,26 +59,17 @@ exec([[autocmd BufWritePre * %s/\s\+$//e]], false)
 --- Performance
 --- ======================================================================== ---
 vim.opt.autoread = true                                    -- Auto reload changed files
-exec("autocmd! bufwritepost init.lua source %", false)     -- Auto compile when changing nvim config file
+exec("autocmd! bufwritepost init.lua source %")     -- Auto compile when changing nvim config file
 
 -- Get rid of swap/backup files
 exec("set noswapfile")
 
---- Clipboard
--- TODO -- FIXME -- Write this in the lua way
-exec(":set clipboard+=unnamedplus", false)
-
--- Avoid flashy terminal
-exec("au TermEnter * setlocal scrolloff=0", false)
-exec("au TermLeave * setlocal scrolloff=10", false)
+--- Use system clipboard instead of nvim registers
+vim.opt.clipboard = 'unnamedplus'
 
 --- Visual Settings
 --- ======================================================================== ---
 vim.opt.number = true               -- Show numbers
-exec("syntax enable", false)        -- Show syntax
-exec("syntax on", false)            -- Show syntax
-exec("filetype on", false)          -- Checks automatically for filetype
-exec("filetype plugin on", false)   -- Plugins dependent of filetype
 vim.opt.hlsearch = true             -- Higlights what we searched
 vim.opt.wrap = false                -- Don't wrap long lines
 vim.opt.listchars.extends=→         -- Show arrow if line continues rightwards
