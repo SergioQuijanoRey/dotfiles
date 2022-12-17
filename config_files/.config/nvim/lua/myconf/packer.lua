@@ -11,7 +11,7 @@ function install_if_not_installed()
 end
 install_if_not_installed()
 
--- Packages we are using
+--- Packages we are using
 return require('packer').startup(function()
     -- General purpose
     -- ===============================================================================
@@ -111,7 +111,15 @@ return require('packer').startup(function()
     }
 
     -- Snipet plugin. I use it almost exlusively for nvim-cmp
-    use {'L3MON4D3/LuaSnip'}
+    use {
+        'L3MON4D3/LuaSnip',
+
+        requires = {
+            -- For having autocompletion of the snippets trigger keywords
+            'saadparwaiz1/cmp_luasnip'
+        }
+
+    }
 
     -- Debugging
     use {
