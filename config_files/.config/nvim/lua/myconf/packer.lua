@@ -15,13 +15,22 @@ install_if_not_installed()
 return require('packer').startup(function()
     -- General purpose
     -- ===============================================================================
-    use 'scrooloose/nerdtree'          -- File exploring
     use 'tpope/vim-fugitive'           -- Git Integration
     use 'psliwka/vim-smoothie'         -- Smooth scrolling
     use 'wbthomason/packer.nvim'       -- Manage the plugin manager
     use 'jpalardy/vim-slime'           -- Sending lines to a REPL
     use 'lambdalisue/suda.vim'         -- For sudo writting a file
     use 'lewis6991/impatient.nvim'     -- Speed up startup time
+
+    -- File exploring
+    use {
+        'nvim-tree/nvim-tree.lua',
+
+        requires = {
+            -- File icons
+            'nvim-tree/nvim-web-devicons',
+        }
+    }
 
     -- Editor
     -- ===============================================================================
@@ -32,7 +41,6 @@ return require('packer').startup(function()
     -- Visual
     -- ===============================================================================
     use 'junegunn/goyo.vim'                -- Focus Mode
-    use 'ryanoasis/vim-devicons'           -- Icons for NerdTree
 
     -- Display status line
     use {

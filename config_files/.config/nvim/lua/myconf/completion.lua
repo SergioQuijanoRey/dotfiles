@@ -73,10 +73,7 @@ cmp.setup({
 
     sources = cmp.config.sources({
         { name = 'nvim_lsp', keyword_length = min_keyword_length },
-        -- { name = 'vsnip' }, -- For vsnip users.
         { name = 'luasnip', keyword_length = min_keyword_length }, -- For luasnip users.
-        -- { name = 'ultisnips' }, -- For ultisnips users.
-        -- { name = 'snippy' }, -- For snippy users.
     }, {
         { name = 'buffer', keyword_length = min_keyword_length, option = {
             keyword_pattern = [[\k\+]]

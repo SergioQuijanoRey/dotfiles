@@ -5,10 +5,10 @@
 local exec = require("myconf/aux").exec
 
 -- Local table to export the functions we are writing
-local exports = {}
+local M = {}
 
 --- Goes to the cwd of the file we are editing
-function exports.cd_file_path()
+function M.cd_file_path()
     -- Move to dir of current file
     exec(":cd %:p:h", false)
 
@@ -18,4 +18,4 @@ function exports.cd_file_path()
 end
 
 -- Return the exported functions
-return exports
+return M

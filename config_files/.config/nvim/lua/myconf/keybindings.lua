@@ -31,7 +31,7 @@ setmap("n", "<leader>f", ":Goyo 120x120<CR>:set wrap<CR>:set linebreak<CR>:set b
 setmap("n", "<leader><S-f>", ":Goyo<CR>:set nowrap<CR>:set number<CR>:lua require('lualine').hide({unhide = true})<CR>:Catppuccin frappe<CR>", {})
 
 -- Open Nerd tree
-setmap("n", "<leader>o", ":NERDTreeToggle<CR>", {})
+setmap("n", "<leader>o", ":NvimTreeToggle<CR>", {})
 
 -- For exiting the terminal mode
 setmap("t", "<leader><Esc>", "<C-\\><C-n>>", {noremap = true})
@@ -85,5 +85,5 @@ setmap("n", "<leader>ll", "<cmd>Telescope<CR>", {noremap=true})
 setmap("n", "<leader>lg", "<cmd>Telescope live_grep<cr>", {noremap=true})
 setmap("n", "<leader>lb", "<cmd>Telescope buffers<cr>", {noremap=true})
 setmap("n", "<leader>lf", "<cmd>Telescope filetypes<cr>", {noremap=true})
-setmap("n", "<leader>l/", "<cmd> Telescope current_buffer_fuzzy_find<cr>", {noremap=true})
-setmap("n", "<leader>ld", "<cmd> Telescope diagnostics<cr>", {noremap=true})
+setmap("n", "<leader>l/", "<cmd>Telescope current_buffer_fuzzy_find<cr>", {noremap=true})
+setmap("n", "<leader>ld", "<cmd>Telescope diagnostics<cr>", {noremap=true})

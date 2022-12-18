@@ -25,6 +25,7 @@ require("myconf/autopairs")
 require("myconf/status_line")
 require("myconf/slime")
 require("myconf/debugging")
+require("myconf/file_explorer")
 
 --- Aux functions
 --- ======================================================================== ---
