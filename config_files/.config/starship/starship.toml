@@ -3,7 +3,7 @@
 
 # Inserts a blank line between shell prompts
 add_newline = false
-format = """$username at $hostname in$directory $git_branch $package\n$character"""
+format = """$nix_shell$username at $hostname in$directory $git_branch $package\n$character"""
 
 # Use catppuccin inspired colorscheme
 palette = "catppuccin"
@@ -40,6 +40,12 @@ disabled = false
 format = "[$symbol $version]($style)"
 symbol = ""
 style = "bold cyan"
+
+[nix_shell]
+disabled = false
+impure_msg = '[ﰕ](bold blue)'
+pure_msg = '[ﰕ ﰕ](bold blue)'
+format = '[\[$state\]](bold blue) '
 
 [palettes.catppuccin]
 blue = "#8caaee"
