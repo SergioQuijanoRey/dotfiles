@@ -73,3 +73,13 @@ Install catppuccin rofi theme:
     - git clone https://github.com/catppuccin/rofi/
     - cd rofi/basic
     - bash install.sh
+
+Add ranger plugins:
+  description: Ranger plugins need to be installed using a simple git clone
+  quiet: false
+  commands:
+    # Add devicons to ranger
+    - git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+
+    # Add zoxide command to ranger
+    - git clone git@github.com:jchook/ranger-zoxide.git ~/.config/ranger/plugins/zoxide
