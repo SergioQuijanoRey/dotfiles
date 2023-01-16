@@ -53,6 +53,9 @@ let
         isort
     ];
     python_my_packages = python39.withPackages my-python-packages;
+
+    # Custom build of this go package
+    timer = (import ./custom_packages/timer.nix);
 in
 
 {
@@ -157,6 +160,9 @@ in
         pkgs.playerctl                  # To have play pause
         pkgs.patchelf                   # To work with mason.nvim
 
+        # Timer, custom build
+        timer
+
 
     ] ++
 
@@ -189,7 +195,6 @@ in
 
         # Latex
         pkgs.texlab
-        pkgs.ltex-ls
 
         # Markdown lsp
         marksman
@@ -281,4 +286,5 @@ in
             { id = "phidhnmbkbkbkbknhldmpmnacgicphkf"; }
         ];
     };
+
 }
