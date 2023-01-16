@@ -53,28 +53,6 @@ let
         isort
     ];
     python_my_packages = python39.withPackages my-python-packages;
-
-    # Latex enviroment
-    custom_tex_env = (pkgs.texlive.combine {
-        # Base latex env
-        inherit (pkgs.texlive) scheme-medium
-
-        # Extra packages that we want
-        amsmath
-        hyperref
-        cancel
-        esvect
-
-        # Packages that I need for my thesis template to compile
-        koma-script
-        xpatch
-        cabin
-        fontaxes
-        inconsolata
-        xurl
-        upquote
-        ;
-    });
 in
 
 {
@@ -95,10 +73,8 @@ in
 
     # Dev packages
     [
-        # TODO -- uncomment
-        pkgs.neovim             # Main editor
+        pkgs.neovim-unwrapped   # Main editor
         pkgs.tree-sitter        # Neovim relies heavily on treesitter
-
         pkgs.tmux               # Terminal multiplexer
         pkgs.ripgrep            # Better grep
         pkgs.just               # Better version of makefile
@@ -117,7 +93,6 @@ in
         pkgs.gfortran           # Many R packages need fortran to compile
         pkgs.gnumake            # R lsp needs this package
         pkgs.pandoc             # Tools like rmarkdown need this
-        custom_tex_env          # Latex enviroment that we've defined before
         pkgs.sqlite             # Database engine that I use in some backends
 
     ] ++
@@ -135,6 +110,7 @@ in
         pkgs.zoxide                     # Better cd command
         pkgs.ranger                     # CLI file manager
         pkgs.w3m                        # For displaying images in ranger
+        pkgs.wget                       # A lot of tools rely on this package
         pkgs.starship                   # To configure terminal prompt
         pkgs.htop
         pkgs.bottom                     # A better top alternative - like gotop but using rust
@@ -174,10 +150,12 @@ in
         pkgs.libnotify                  # To have access to notify-send with dunst
         pkgs.evince
         pkgs.dpkg
+        pkgs.zip                        # To archive files
         pkgs.unzip                      # Some nvim LSPs need this to install
         pkgs.gnome.nautilus             # Graphic file explorer
         pkgs.nodejs                     # Some nvim LSPs need this
         pkgs.playerctl                  # To have play pause
+        pkgs.patchelf                   # To work with mason.nvim
 
 
     ] ++
@@ -211,6 +189,10 @@ in
 
         # Latex
         pkgs.texlab
+        pkgs.ltex-ls
+
+        # Markdown lsp
+        marksman
     ] ++
 
     # WM components packages
@@ -236,10 +218,17 @@ in
 
     # Fonts
     [
-        pkgs.nerdfonts                  # Icon font
         pkgs.jetbrains-mono             # Preferred fonts
         pkgs.noto-fonts-emoji           # Font that supports emojis
         pkgs.cascadia-code              # Second preferred font
+
+        # Do not install all nerd fonts, which takes a long time
+        # (pkgs.nerdfonts.override {
+        #     fonts = [
+        #         "FiraCode"
+        #     ];
+        # })
+        pkgs.nerdfonts
     ] ++
 
     # Desktop packages
@@ -250,6 +239,15 @@ in
         pkgs.syncthing
         pkgs.xournalpp      # For writting docs using the HUION tablet
         pkgs.onlyoffice-bin # Alternative to MS Office
+        pkgs.obs-studio     # Streaming and recording
+        pkgs.obsidian       # Notes
+    ] ++
+
+    # Other packages
+    [
+        taskwarrior     # For managing tasks through the terminal
+        vit             # CLI Frontend for taskwarrior
+
     ];
 
     # Fonts cannot be installed as normal packages
@@ -275,6 +273,12 @@ in
 
             # Twitch ad blocker
             { id = "lehcglgkjkamolcflammloedahjocbbg"; }
+
+            # Dark mode
+            { id = "dmghijelimhndkbmpgbldicpogfkceaj"; }
+
+            # Generate bibtex references from webpages
+            { id = "phidhnmbkbkbkbknhldmpmnacgicphkf"; }
         ];
     };
 }
