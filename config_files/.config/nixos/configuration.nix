@@ -91,6 +91,7 @@ in
     # TODO -- I need to clean this to left only system-critic packages
     environment.systemPackages = with pkgs; [
         git
+        file
         kitty
         chromium
         zoxide
@@ -210,14 +211,17 @@ in
     # I want neovim as the default editor
     environment.variables.EDITOR = "nvim";
 
+    # TODO -- disabled because it messes with all my shell.nix'es and makes my
+    # computer very slow when its cleaning
+    #
     # Automatically garbage collection
-    nix = {
-        settings.auto-optimise-store = true;
-        gc = {
-            automatic = true;
-            dates = "weekly";
-            options = "--delete-older-than 7d";
-        };
-    };
+    # nix = {
+    #     settings.auto-optimise-store = true;
+    #     gc = {
+    #         automatic = true;
+    #         dates = "weekly";
+    #         options = "--delete-older-than 7d";
+    #     };
+    # };
 }
 
