@@ -53,15 +53,7 @@ alias vpnuni="sudo /opt/cisco/anyconnect/bin/vpnui"
 alias cd="z"
 
 # Nix aliases
-
-# This alias is needed because nix search now use experimental features
-# Also, avoid typing nixpkgs again and again
-alias nixsearch="nix --extra-experimental-features nix-command --extra-experimental-features flakes search nixpkgs "
-
-# List all installed packages, both using nix config and home manager
 alias nixls="nix-store --query --requisites /run/current-system"
-
-# Home manager is too long to type
-alias hm="home-manager"
 alias rebuild="sudo nixos-rebuild switch -I nixos-config=/home/sergio/.config/nixos/configuration.nix"
-alias nixconf="nvim /etc/nixos/configuration.nix"
+alias nixclean="nix-store --gc; nix-collect-garbage --delete-older-than 7d; nix-store --optimise"
+alias nixsize='x=$(filesize /nix/store); notify-send "Nix store is $x"; echo "Nix store is $x"'
