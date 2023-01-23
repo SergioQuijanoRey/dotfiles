@@ -13,12 +13,18 @@
 bar_name="mybar"
 
 # Terminate already running bar instances
-killall -r polybar
+# || because if there was no polybar running, the process would fail
+killall -r polybar || echo "No bar was running before"
 
 # Launch polybar on all monitors
 for m in $(polybar --list-monitors | cut -d":" -f1); do
-    # -r means that changes to the config file are applied without the need of reloading the program
+    # -r means othat changes to the config file are applied without the need of reloading the program
+    # We are overriding the monitor so we have dynamic monitors
     MONITOR=$m polybar -r $bar_name >>/tmp/mybar.log 2>&1 & disown
+
+
+    # Do some logging
+    echo "Polybar launched with monitor: $m"
 done
 
 echo "Finished executing at $(date)" >> /home/sergio/.config/polybar/trace.log
