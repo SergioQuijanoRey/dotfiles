@@ -88,26 +88,20 @@ in
 
     # List packages installed in system profile. To search, run:
     # $ nix search wget
-    # TODO -- I need to clean this to left only system-critic packages
     environment.systemPackages = with pkgs; [
-        git
-        file
-        kitty
-        chromium
-        zoxide
-        lua
-        starship
-        pavucontrol
-        pkgs.vimPlugins.packer-nvim
-        feh
+        # Really basic packages
         tmux
-        exa
         zsh
-        blueman
-        networkmanager
-        dunst
+        git
+        kitty
+        file
         killall
         gcc
+
+        # WM packages
+        pavucontrol
+        blueman
+        networkmanager
     ];
 
     # Load user home manager configuration
