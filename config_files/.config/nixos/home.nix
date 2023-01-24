@@ -20,8 +20,8 @@ let
         ];
     };
 
-    # Specify python packages
-    my-python-packages = python-packages: with python-packages; [
+    # Specify custom Python enviroment
+    custom_python_packages = python-packages: with python-packages; [
         # Normal packages
         matplotlib
         numpy
@@ -51,8 +51,14 @@ let
         # Dependencies for python lsp modules
         mypy
         isort
+
     ];
-    python_my_packages = python39.withPackages my-python-packages;
+    custom_python_enviroment = python39.withPackages custom_python_packages;
+
+    # Polybar needs to set an i3 attribute
+    custom_polybar = pkgs.polybar.override {
+        i3Support = true;
+    };
 
     # Custom build of this go package
     timer = (import ./custom_packages/timer.nix);
@@ -102,6 +108,7 @@ in
 
     # System packages
     [
+
         pkgs.zsh        # Shell enviroment
                         # Plugins need to be installed through normal package manager in order
                         # to be put in /usr/share/...
@@ -140,12 +147,16 @@ in
         pkgs.imagemagick                # For blurring the lock screen
         pkgs.xclip                      # Sharing system and nvim clipboard
         pkgs.ntfs3g                     # Mounting hdd with ntfs file format
+        pkgs.feh                        # For setting the wallpaper
         pkgs.alsa-utils                 # Having volume control keys
         pkgs.alsa-lib                   # Having volume control keys
         pkgs.alsa-plugins               # Having volume control keys
         pkgs.mate.engrampa              # Working with compressed and zipped files
         pkgs.arc-theme                  # Preferred theme
-        pkgs.bibata-cursors             # Preferred cursor theme
+
+        # TODO -- this package is failing
+        # pkgs.bibata-cursors             # Preferred cursor theme
+
         pkgs.youtube-dl                 # Download music
         pkgs.rofi
         pkgs.rofi-emoji                 # Have a rofi emoji selector
@@ -168,8 +179,12 @@ in
 
     # Programming languages and their LSPs
     [
-        # Python, with the packages for development (ie. pandas) and LSP packages
-        python_my_packages
+        # TODO -- this package fails to build
+        # Python with some packages installed
+        # custom_python_enviroment
+
+        # Python linter
+        ruff
 
         # Nix
         pkgs.rnix-lsp
@@ -202,7 +217,8 @@ in
 
     # WM components packages
     [
-        pkgs.polybarFull
+        # Using a custom version of polybar with support for i3
+        custom_polybar
     ] ++
 
     # Messaging
@@ -215,7 +231,9 @@ in
         pkgs.openspades
         pkgs.steam
         pkgs.lutris
-        pkgs.spicy
+
+        # Minecraft launcher
+        pkgs.prismlauncher
 
         # Without this package, steam fails to open
         pkgs.xorg.libxcb
