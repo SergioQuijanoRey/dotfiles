@@ -179,7 +179,7 @@ in
 
     # Programming languages and their LSPs
     [
-        # TODO -- this package fails to build
+        # TODO -- uncomment
         # Python with some packages installed
         # custom_python_enviroment
 
@@ -305,4 +305,21 @@ in
         ];
     };
 
+
+
+    programs.zsh = {
+        enable = true;
+
+        # Manage plugins here
+        zplug = {
+            enable = true;
+            plugins = [
+            { name = "zsh-users/zsh-autosuggestions"; }
+            { name = "zsh-users/zsh-syntax-highlighting"; }
+            ];
+        };
+
+        # So we source ~/.zsh_dotfiles where the rest of the config is
+        initExtra = "source ~/.zsh_dotfiles";
+    };
 }
