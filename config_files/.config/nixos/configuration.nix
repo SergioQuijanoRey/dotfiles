@@ -2,12 +2,6 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 let
-  # To use home manager as nixos module
-  home-manager = builtins.fetchTarball {
-    url = "https://github.com/nix-community/home-manager/archive/master.tar.gz";
-    sha256 = "05msmzfa45l9sr9ngd2cfxw66kw0x76d68gp29v5ilrakf8nc90w";
-  };
-
   # My username
   user = "sergio";
 in
@@ -18,9 +12,6 @@ in
     [
         # Include the results of the hardware scan.
         ./hardware-configuration.nix
-
-        # To use home manager as nixos module
-        (import "${home-manager}/nixos")
     ];
 
     # Bootloader
@@ -106,9 +97,6 @@ in
         blueman
         networkmanager
     ];
-
-    # Load user home manager configuration
-    home-manager.users.sergio = import ./home.nix;
 
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.

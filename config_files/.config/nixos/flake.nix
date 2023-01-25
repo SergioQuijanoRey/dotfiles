@@ -17,14 +17,16 @@
     let
         # Architecture of the system
         system = "x86_64-linux";
+
+        # Package repo
         pkgs = import nixpkgs {
             inherit system;
             config.allowUnfree = true;
         };
-        lib = nixpkgs.lib;
+
     in {
         nixosConfigurations = {
-            asus-laptop = lib.nixosSystem {
+            asus-laptop = nixpkgs.lib.nixosSystem {
                 inherit system;
                 modules = [
                     # Load the base NixOS configuration
