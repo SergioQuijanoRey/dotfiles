@@ -24,9 +24,12 @@
             config.allowUnfree = true;
         };
 
+        username = "sergio";
+        hostname = "asus-laptop";
+
     in {
         nixosConfigurations = {
-            asus-laptop = nixpkgs.lib.nixosSystem {
+            ${hostname} = nixpkgs.lib.nixosSystem {
                 inherit system;
                 modules = [
                     # Load the base NixOS configuration
@@ -38,7 +41,7 @@
                         # So we can use nixpkgs instead of home manager packages
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
-                        home-manager.users.sergio = {
+                        home-manager.users.${username} = {
                             imports = [ ./home.nix ];
                         };
                     }
