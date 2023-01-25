@@ -18,13 +18,13 @@
         # Architecture of the system
         system = "x86_64-linux";
 
-        # Package repo
+        # Packages repo
         pkgs = import nixpkgs {
             inherit system;
             config.allowUnfree = true;
         };
 
-        username = "sergio";
+        user = "sergio";
         hostname = "asus-laptop";
 
     in {
@@ -32,16 +32,19 @@
             ${hostname} = nixpkgs.lib.nixosSystem {
                 inherit system;
                 modules = [
-                    # Load the base NixOS configuration
+
+                    # Import the base NixOS configuration
                     ./configuration.nix
 
-                    # Load the home manager configuration
+                    # Set up home manager
                     home-manager.nixosModules.home-manager {
 
                         # So we can use nixpkgs instead of home manager packages
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
-                        home-manager.users.${username} = {
+
+                        # Import the home manager configuration
+                        home-manager.users.${user} = {
                             imports = [ ./home.nix ];
                         };
                     }
