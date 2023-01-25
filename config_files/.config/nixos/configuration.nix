@@ -3,7 +3,10 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 let
   # To use home manager as nixos module
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz";
+  home-manager = builtins.fetchTarball {
+    url = "https://github.com/nix-community/home-manager/archive/master.tar.gz";
+    sha256 = "05msmzfa45l9sr9ngd2cfxw66kw0x76d68gp29v5ilrakf8nc90w";
+  };
 
   # My username
   user = "sergio";
@@ -216,6 +219,13 @@ in
     #         dates = "weekly";
     #         options = "--delete-older-than 7d";
     #     };
+    # };
+
+
+    # Enable nix flakes in NixOS and home manager
+    # nix = {
+    #     package = pkgs.nixFlakes;
+    #     extraOptions = "experimental-features = nix-command flakes";
     # };
 }
 
