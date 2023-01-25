@@ -61,7 +61,7 @@ let
     };
 
     # Custom build of this go package
-    # timer = (import ./custom_packages/timer.nix);
+    timer = (import ./custom_packages/timer.nix);
 in
 
 {
@@ -171,9 +171,8 @@ in
         pkgs.playerctl                  # To have play pause
         pkgs.patchelf                   # To work with mason.nvim
 
-        # TODO -- uncomment
         # Timer, custom build
-        # timer
+        timer
 
 
     ] ++
