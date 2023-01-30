@@ -3,6 +3,7 @@
 
     # Dependencies of the flake
     inputs = {
+        # TODO -- change to stable branch but keep the unstable
         nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
         home-manager = {
