@@ -22,36 +22,13 @@ let
 
     # Specify custom Python enviroment
     custom_python_packages = python-packages: with python-packages; [
-        # Normal packages
-        matplotlib
         numpy
-        scikit-learn
-        tqdm
-        snakeviz
-        pytorch
-        torchvision
-        jupyterlab
-        seaborn
-        wandb
         pip
         pandas
 
         # Managing Excel files
         xlrd
         xlwt
-
-        # pylsp is the main LSP for python
-        python-lsp-server
-
-        # pylsp modules
-        pylsp-mypy
-        pyls-isort          # Pylsp plugin
-        pyls-flake8         # Pylsp plugin
-
-        # Dependencies for python lsp modules
-        mypy
-        isort
-
     ];
     custom_python_enviroment = python39.withPackages custom_python_packages;
 
@@ -181,7 +158,7 @@ in
     [
         # TODO -- uncomment
         # Python with some packages installed
-        # custom_python_enviroment
+        custom_python_enviroment
 
         # Python linter
         ruff
