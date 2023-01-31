@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Take a screenshot of the display and use it as lockscreen
 # Betterlockscreen is used for locking the screen and blurring the image
