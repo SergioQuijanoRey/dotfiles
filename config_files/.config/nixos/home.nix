@@ -131,7 +131,7 @@ in
 
         pkgs.youtube-dl                 # Download music
         pkgs.rofi
-        pkgs.rofi-emoji                 # Have a rofi emoji selector
+        pkgs.rofimoji                   # Have a rofi emoji selector
         pkgs.nodePackages.npm           # Some programns need this to build
         pkgs.libnotify                  # To have access to notify-send with dunst
         pkgs.evince
