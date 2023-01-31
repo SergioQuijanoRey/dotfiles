@@ -32,11 +32,6 @@ let
     ];
     custom_python_enviroment = python39.withPackages custom_python_packages;
 
-    # Polybar needs to set an i3 attribute
-    custom_polybar = pkgs.polybar.override {
-        i3Support = true;
-    };
-
     # Custom build of this go package
     timer = (import ./custom_packages/timer.nix);
 in
@@ -194,8 +189,8 @@ in
 
     # WM components packages
     [
-        # Using a custom version of polybar with support for i3
-        custom_polybar
+        # Using polybar instead of polybarFull makes some components fail
+        polybarFull
     ] ++
 
     # Messaging
