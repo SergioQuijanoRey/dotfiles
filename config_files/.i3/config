@@ -28,9 +28,8 @@ bindsym $mod+Shift+Return exec kitty tmux-init
 bindsym $mod+Shift+q kill
 
 # Rofi menu launcher
-set $rofi_theme "/home/sergio/.config/rofi/catppuccin.rasi"
-bindsym $mod+d exec bash -c "rofi -show drun -config $rofi_theme"
-bindsym $mod+Shift+d exec bash -c "rofi -show run -config $rofi_theme"
+bindsym $mod+d exec bash -c "rofi -show drun"
+bindsym $mod+Shift+d exec bash -c "rofi -show run"
 
 # change focus
 bindsym $mod+j focus left
