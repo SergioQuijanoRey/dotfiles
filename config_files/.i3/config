@@ -11,6 +11,7 @@
 #                           Blue borders on focused windows
 #                           pactl changed to amixer, whichs works with bluetooth audio properly
 
+
 # Windows modkey
 set $mod Mod4
 
@@ -217,13 +218,12 @@ default_floating_border pixel 1
 for_window [class="^.*"] border pixel 1
 
 # Apps on start
-exec autodisplay.sh                                            # Set the display configuration at startup
-exec whatsapp-nativefier
+exec autodisplay.sh       # Set the display configuration at startup
 exec telegram-desktop
 exec nm-applet
 exec blueman-applet
-exec feh --bg-scale "/home/sergio/backgrounds/zelda03.png"  # Set the wallpaper
+exec feh --bg-scale "/home/sergio/backgrounds/led_zeppelin01.jpg"  # Set the wallpaper
 
 # Polybar launcher
 #===============================================================================
-exec_always --no-startup-id $HOME/.config/polybar/launcher
+exec_always --no-startup-id ~/.config/polybar/launcher
