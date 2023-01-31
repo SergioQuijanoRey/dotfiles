@@ -176,9 +176,15 @@ client.urgent           $blue-color         $blue-color         $text-color     
 # Pulse Audio controls
 # Using amixer because works nice when using bluetooth headphones
 # When using pactl, keys won't change bluetooth headphones volume
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+   # Increase volume
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-   # Lower volume
-bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle     # Mute sound
+# bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+   # Increase volume
+# bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-   # Lower volume
+# bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle # Mute sound
+
+# Using pactl
+# @DEFAULT_SINK@ for working with bluetooth headsets
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20        # increase screen brightness
