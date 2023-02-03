@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 echo "Official Angular Guidelines Git Tags:"
 echo "====================================="
 echo "  build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)"
