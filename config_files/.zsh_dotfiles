@@ -23,10 +23,11 @@ bindkey "^[[1;5D" backward-word
 autoload -U colors && colors
 
 # Use zplug to configure some plugins
-source ~/.nix-profile/init.zsh
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-syntax-highlighting"
-zplug load
+# NOTE: we're using home.manager to manage this plugins
+# source ~/.nix-profile/init.zsh
+# zplug "zsh-users/zsh-autosuggestions"
+# zplug "zsh-users/zsh-syntax-highlighting"
+# zplug load
 
 # This bash config files also work for zsh, so I am going to keep using them and
 # adding more content as I evolve my workflow
@@ -56,15 +57,11 @@ export $(dbus-launch)
 # NVIM + Terminal
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMCMD="kitty"
-export COLORTERM="kitty"
-export TERM="kitty"
+export TERMCMD="screen-256color"
+export COLORTERM="screen-256color"
 
 # I3WM vars
 export BROWSER="chromium"
-
-# This is needed so tmux respects nvim colorscheme when having multiple sessions
-alias tmux="TERM=screen-256color-bce tmux"
 
 # My personal paths
 #==============================================================================
@@ -73,3 +70,6 @@ PATH="$PATH:/home/sergio/.i3/scripts"
 PATH="$PATH:/home/sergio/.local/bin"
 PATH="$PATH:/home/sergio/.screenlayout"
 PATH="$PATH:~/.nix-profile/bin"
+
+# For using mason.nvim properly
+PATH="$PATH:~/.local/share/nvim/mason/bin"
