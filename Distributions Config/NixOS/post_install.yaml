@@ -34,3 +34,10 @@ Add ranger plugins:
 
     # Add zoxide command to ranger
     - git clone git@github.com:jchook/ranger-zoxide.git ~/.config/ranger/plugins/zoxide
+
+Add TPM package manager for tmux:
+  description: Adds the TPM package manager for TMUX. NixOS has no nice \
+               alternative for packages that are not in nixpkgs repo
+  quiet: false
+  commands:
+    - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
