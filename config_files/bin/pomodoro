@@ -4,5 +4,5 @@
 # Sleep for a given time, and show a given message as a notification
 # Example: `pomodoro 30m "Take a break :smile:"`
 
-echo "Pomodoro started at $(date)"
-sleep $1; notify-send --urgency=critical "$2"
+echo "⏳ Pomodoro started at $(date)"
+timer -n "⏳ Pomodoro" "$1"; notify-send --urgency=critical "$2"
