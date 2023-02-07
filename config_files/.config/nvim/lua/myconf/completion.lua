@@ -16,7 +16,7 @@ end
 
 -- Min word length to trigger autcompletion
 -- I use same min for all completion contexts
-local min_keyword_length = 3
+local min_keyword_length = 2
 
 cmp.setup({
     -- This snipet configuration is required

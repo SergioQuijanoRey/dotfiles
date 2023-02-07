@@ -1,15 +1,9 @@
 -- Config for builtin lsp
 -- Mostly copied from https://github.com/neovim/nvim-lspconfig#keybindings-and-completion
+-- Has to be runned after configuring mason
 
 -- Load the plugin (lua imports modules this way)
 local nvim_lsp = require('lspconfig')
-
--- Need to run this before configuring all of the servers
-local lspinstaller = require("nvim-lsp-installer")
-lspinstaller.setup {
-    -- Detect wich servers to install based on which servers are configured via lspconfig
-    automatic_installation = true,
-}
 
 -- Use our custom function to set keymaps
 local setmap = require("myconf/aux").setmap
@@ -124,11 +118,18 @@ local servers = {
     -- For nix
     "rnix",
 
+    -- TODO -- could not manage to install this package in NixOS
+    -- For python
+    -- Really fast because its written in Rust
+    -- Replaces some functionality of pylsp
+    -- "ruff_lsp",
+
     -- For python
     -- Enables a lot of plugins, like flake8, mypy, import sorting, rope, that have to be installed manually:
     --      https://github.com/williamboman/nvim-lsp-installer/blob/main/lua/nvim-lsp-installer/servers/pylsp/README.md
     -- Includes jedi, so no need to use that lsp when using pylsp
     "pylsp",
+
 }
 
 -- Iterate over all installed servers and apply the config to them
@@ -152,3 +153,5 @@ for _, server in ipairs(servers) do
     }
 end
 
+-- Show the LSP setup progress with a nice UI
+require"fidget".setup{}

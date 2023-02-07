@@ -1,3 +1,5 @@
+local aux = require("myconf/aux")
+
 -- Configuration for debugging UI
 require("dapui").setup({
     icons = { expanded = "▾", collapsed = "▸", current_frame = "▸" },
@@ -101,7 +103,20 @@ setmap("n", "<leader>dt", ":lua require'dap-python'.test_method()<CR>", {})
 
 -- Configuration for Python
 -- require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
-require('dap-python').setup('/usr/bin/python') -- Using global python and not venv python
+
+-- We are using nixos so the path changes over time
+python_path = aux.runcommand("whereis python", false)
+
+-- If we're running inside a nix shell, more of one results will pop up
+-- Consider only the first result
+-- Also, we get the string python: <path1> <path2>
+-- So always, get the second element in the table
+python_path_splitted = aux.strsplit(python_path, " ")
+python_path = python_path_splitted[2]
+
+-- Using global python and not venv python
+-- Getting that glob path dynamically
+require('dap-python').setup(python_path)
 
 -- Configuration for C++ and rust
 dap.adapters.lldb = {

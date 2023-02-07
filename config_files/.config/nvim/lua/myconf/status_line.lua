@@ -1,5 +1,6 @@
 -- Config for the status line that i am using
 
+-- Show the lsp server that is attached to current buffer
 -- Inspired by https://github.com/nvim-lualine/lualine.nvim/blob/master/examples/evil_lualine.lua
 -- Changed a little bit the function and added some symbols. Also not using ins_left function
 local function lsp_server_names()

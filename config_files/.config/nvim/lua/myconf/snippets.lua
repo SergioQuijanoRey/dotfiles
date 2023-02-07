@@ -56,13 +56,17 @@ ls.add_snippets("lua", {
     key = "lua",
 })
 
-
 ls.add_snippets("markdown", {
 
     -- Easily require a function
     s("mdtitle", fmt(
         "---\ntitle: {}\nauthor: {}\ndate: {}\ngeometry: margin = 3.0cm\n---",
         {i(1, "titulo"), i(2, "Sergio Quijano Rey"), i(3, "fecha")}
+    )),
+
+    s("task", fmt(
+        "- [ ] {}",
+        {i(1)}
     )),
 }, {
     key = "markdown",
@@ -205,9 +209,62 @@ ls.add_snippets("tex", {
         {delimiters = "<>"}
     )),
 
+    -- Create a figure
+    s("image", fmt(
+[[
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{<>}
+    \caption{<>}
+\end{figure}
+]],
+        {i(1), i(2)},
+        {delimiters = "<>"}
+    )),
 
+    -- Create figure with images side by side
+    s("imagedoble", fmt(
+[[
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=1.0\textwidth]{<>}
+        \caption{<>}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=1.0\textwidth]{<>}
+        \caption{<>}
+    \end{subfigure}
 
+    \caption{<>}
+\end{figure}
+]],
+        {i(1), i(2), i(3), i(4), i(5)},
+        {delimiters = "<>"}
+    )),
 
+    -- Create a basic table structure
+    s("tabla", fmt(
+[[
+
+\begin{table}[H]
+\centering
+\begin{tabular}{<>}
+    \hline
+    <> \\
+    \hline
+
+    <> \\
+
+    \hline
+
+\end{tabular}
+\caption{<>}
+\end{table}
+]],
+        {i(1, "|l|l|l|l"), i(2, "Title1 & Title2 & Title3 & Title 4 "), i(3, "data1 & data2 & data3 & data4"), i(4)},
+        {delimiters = "<>"}
+    )),
 }, {
     key = "tex",
 })

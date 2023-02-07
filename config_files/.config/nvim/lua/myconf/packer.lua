@@ -34,9 +34,9 @@ return require('packer').startup(function()
 
     -- Editor
     -- ===============================================================================
-    use 'windwp/nvim-autopairs'        -- Autopairs certain chars as " or [
-    use 'preservim/nerdcommenter'      -- Commenting code
-    use 'dhruvasagar/vim-table-mode'   -- For writing markdown tables
+    use 'windwp/nvim-autopairs'             -- Autopairs certain chars as " or [
+    use 'preservim/nerdcommenter'           -- Commenting code
+    use 'dhruvasagar/vim-table-mode'        -- For writing markdown tables
 
     -- Visual
     -- ===============================================================================
@@ -53,6 +53,19 @@ return require('packer').startup(function()
 
     -- Show indentation guidelines
     use 'lukas-reineke/indent-blankline.nvim'
+
+    -- Color schemes
+    -- ===============================================================================
+    use 'gruvbox-community/gruvbox'     -- Gruvbox Theme updated
+    use 'joshdick/onedark.vim'          -- Secondary colorscheme
+    use 'endel/vim-github-colorscheme'
+    use 'YorickPeterse/vim-paper'
+
+    -- Good pastel palette
+    use({
+        'catppuccin/nvim',
+        as = "catppuccin"
+    })
 
     -- Language server protocols, codecompletions, ...
     -- ===============================================================================
@@ -74,7 +87,7 @@ return require('packer').startup(function()
 
     }
 
-    -- Treesitter -- Advance hightlighting
+    -- Treesitter -- Advance hightlighting and other capabilities
     use {
         "nvim-treesitter/nvim-treesitter",
         branch = "master",
@@ -84,6 +97,18 @@ return require('packer').startup(function()
     -- Treesitter for just files
     use "IndianBoy42/tree-sitter-just"
 
+
+    -- Manages installation of LSPs, linters, DAPs...
+    use {
+        "williamboman/mason.nvim",
+
+        requires = {
+            -- Adapter to use both mason and lspconfig
+            "williamboman/mason-lspconfig.nvim",
+            "neovim/nvim-lspconfig",
+        }
+    }
+
     -- Builtin lsp
     use {
         -- Main plugin
@@ -91,8 +116,6 @@ return require('packer').startup(function()
 
         -- Dependencies for the plugin
         requires = {
-            -- For installing LSPs easily
-            'williamboman/nvim-lsp-installer',
 
             -- Signature hint plugin
             use {
@@ -101,6 +124,11 @@ return require('packer').startup(function()
             },
         }
     }
+
+    -- Linter snippet
+    -- Useful when the language server does not have linting
+    -- Or when a separate linter is more useful (i.e. python with ruff)
+    use 'mfussenegger/nvim-lint'
 
     -- Completion engine
     -- Note that nivm-lsp does not have a completion engine by default
@@ -149,19 +177,9 @@ return require('packer').startup(function()
         }
     }
 
+    -- UI for showing the LSP init progress
+    use "j-hui/fidget.nvim"
+
     -- Latex to unicode for julia
     use {"JuliaEditorSupport/julia-vim"}
-
-    -- Color schemes
-    -- ===============================================================================
-    use 'gruvbox-community/gruvbox'     -- Gruvbox Theme updated
-    use 'joshdick/onedark.vim'          -- Secondary colorscheme
-    use 'endel/vim-github-colorscheme'
-    use 'YorickPeterse/vim-paper'
-
-    -- Good pastel palette
-    use({
-        'catppuccin/nvim',
-        as = "catppuccin"
-    })
 end)
