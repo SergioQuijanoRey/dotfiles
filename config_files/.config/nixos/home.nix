@@ -203,6 +203,7 @@ in
         pkgs.openspades
         pkgs.steam
         pkgs.lutris
+        pkgs.anydesk
 
         # Minecraft launcher
         pkgs.prismlauncher
