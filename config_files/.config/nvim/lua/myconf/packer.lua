@@ -36,7 +36,7 @@ return require('packer').startup(function()
     -- ===============================================================================
     use 'windwp/nvim-autopairs'             -- Autopairs certain chars as " or [
     use 'preservim/nerdcommenter'           -- Commenting code
-    use 'dhruvasagar/vim-table-mode'        -- For writing markdown tables
+    use 'junegunn/vim-easy-align'           -- Align plugin
 
     -- Visual
     -- ===============================================================================
@@ -175,6 +175,12 @@ return require('packer').startup(function()
             -- We can configure languages ourselves but with this plugins is way easier
             "mfussenegger/nvim-dap-python",
         }
+    }
+
+    -- Show a list with all the diagnostics
+    use {
+        "folke/trouble.nvim",
+        requires = "nvim-tree/nvim-web-devicons",
     }
 
     -- UI for showing the LSP init progress

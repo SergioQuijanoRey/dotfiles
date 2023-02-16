@@ -78,6 +78,10 @@ setmap("n", "<leader>cd", ":lua require('myconf/custom_funcs').cd_file_path()<CR
 -- Source the configuration
 setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", {noremap=true})
 
+-- Maps for easy align
+setmap("n", "<leader>a", "<Plug>(EasyAlign)", {})
+setmap("x", "<leader>a", "<Plug>(EasyAlign)", {})
+
 --- Telescope remaps
 --- ======================================================================== ---
 setmap("n", "<leader>p", "<cmd>Telescope find_files<cr>", {noremap=true})

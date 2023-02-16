@@ -113,7 +113,7 @@ local servers = {
     "rust_analyzer",
 
     -- For lua
-    "sumneko_lua",
+    "lua_ls",
 
     -- For nix
     "rnix",

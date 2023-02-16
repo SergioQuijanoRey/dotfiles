@@ -28,6 +28,7 @@ require("myconf/status_line")
 require("myconf/slime")
 require("myconf/debugging")
 require("myconf/file_explorer")
+require("myconf/diagnostics_list")
 
 --- Aux functions
 --- ======================================================================== ---
