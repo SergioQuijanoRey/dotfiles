@@ -5,16 +5,13 @@
 --- ======================================================================== ---
 vim.g.mapleader = ","
 
--- Speed startup time
-require("impatient")
-
 --- Load other lua config files
 --- ======================================================================== ---
 
 -- Where I manage plugins
 -- Has to be before the other requires in order to first install packages and
 -- then configure them using lua
-require("myconf/packer")
+require("myconf/plugin_manager")
 require("myconf/treesitter")
 require("myconf/telescope")
 require("myconf/mason") -- has to be configured before lspconfig
