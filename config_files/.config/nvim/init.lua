@@ -55,7 +55,10 @@ vim.opt.expandtab=true
 exec("autocmd FileType dart setlocal shiftwidth=2 softtabstop=2 expandtab")
 
 -- Remove trailing white spaces when saving file
-exec([[autocmd BufWritePre * %s/\s\+$//e]], false)
+exec([[autocmd BufWritePre * %s/\s\+$//e]])
+
+-- Add spaces after comment delimiters by default
+exec([[let g:NERDSpaceDelims = 1]])
 
 --- Performance
 --- ======================================================================== ---
