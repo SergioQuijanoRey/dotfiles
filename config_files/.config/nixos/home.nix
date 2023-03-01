@@ -21,16 +21,17 @@ let
     };
 
     # Specify custom Python enviroment
+    # TODO -- uncomment certain packages
     custom_python_packages = python-packages: with python-packages; [
         numpy
-        pip
-        pandas
+        # pip
+        # pandas
 
         # Managing Excel files
         xlrd
         xlwt
     ];
-    custom_python_enviroment = python39.withPackages custom_python_packages;
+    custom_python_enviroment = python310.withPackages custom_python_packages;
 
     # Custom build of this go package
     timer = (import ./custom_packages/timer.nix);
@@ -126,6 +127,12 @@ in
         pkgs.mate.engrampa              # Working with compressed and zipped files
         pkgs.arc-theme                  # Preferred theme
 
+        # Disk usage utilities
+        # duf shows how hard drives are used
+        # dust shows disk usage of a specific dir
+        pkgs.duf                        # For seeing disk usage
+        pkgs.du-dust                    # Replacement for du written in Rust
+
         # TODO -- this package is failing
         # pkgs.bibata-cursors             # Preferred cursor theme
 
@@ -145,13 +152,10 @@ in
 
         # Timer, custom build
         timer
-
-
     ] ++
 
     # Programming languages and their LSPs
     [
-        # TODO -- uncomment
         # Python with some packages installed
         custom_python_enviroment
 
@@ -201,9 +205,9 @@ in
     # Videogame packages
     [
         pkgs.openspades
-        pkgs.steam
         pkgs.lutris
-        pkgs.anydesk
+
+        pkgs.moonlight-qt
 
         # Minecraft launcher
         pkgs.prismlauncher
@@ -214,17 +218,23 @@ in
 
     # Fonts
     [
-        pkgs.jetbrains-mono             # Preferred fonts
-        pkgs.noto-fonts-emoji           # Font that supports emojis
-        pkgs.cascadia-code              # Second preferred font
+        # Font that supports emojis
+        pkgs.noto-fonts-emoji          # Cascadia code through nerd # Font that supports emojis
+
+        # This font through nerdfonts is not working well
+        pkgs.cascadia-code
 
         # Do not install all nerd fonts, which takes a long time
-        # (pkgs.nerdfonts.override {
-        #     fonts = [
-        #         "FiraCode"
-        #     ];
-        # })
-        pkgs.nerdfonts
+        # Pick specific fonts I want
+        # Names for this fonts can be looked up at:
+        #   https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts
+        (pkgs.nerdfonts.override {
+            fonts = [
+                "FiraCode"
+                "Inconsolata"
+                "JetBrainsMono"
+            ];
+        })
     ] ++
 
     # Desktop packages
