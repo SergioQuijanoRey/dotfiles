@@ -1,12 +1,3 @@
-# Description:
-# 	Bash aliases
-# Author:
-# 	Sergio Quijano Rey
-# 	sergiquijano@gmail.com
-# Version:
-# 	v1.0 04/12/2018 - First documented version
-#   v2.0 24/06/2020 - Cleaned unused aliases
-
 # Programming aliases
 alias val="valgrind --leak-check=full"
 alias hval="valgrind --tool=helgrind --leak-check=full"
@@ -54,6 +45,8 @@ alias cd="z"
 
 # Nix aliases
 alias nixls="nix-store --query --requisites /run/current-system"
-alias rebuild="sudo nixos-rebuild switch -I nixos-config=/home/sergio/.config/nixos/configuration.nix"
-alias nixclean="nix-store --gc; nix-collect-garbage --delete-older-than 7d; nix-store --optimise"
+alias rebuild="sudo nixos-rebuild switch --flake /home/sergio/.config/nixos/.#asus-laptop"
 alias nixsize='x=$(filesize /nix/store); notify-send "Nix store is $x"; echo "Nix store is $x"'
+
+# Trash aliases
+alias trashsize='x=$(filesize ~/.local/share/Trash); notify-send "Trash size is $x"; echo "Trash size is $x"'

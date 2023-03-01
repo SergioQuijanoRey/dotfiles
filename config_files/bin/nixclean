@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Command to clean nix store
+# Could be an alias, but because this cleaning is so slow, we want to do some
+# echo's of the process
+
+echo ""
+echo "♻️ Started nix-store --gc at $(date)"
+nix-store --gc
+
+echo ""
+echo "♻️ Started nix-collect-garbage --delete-older-than 7d at $(date)"
+nix-collect-garbage --delete-older-than 7d;
+
+echo ""
+echo "♻️ Started nix-store --optimise at $(date)"
+nix-store --optimise
