@@ -97,13 +97,13 @@ in
         pkgs.htop
         pkgs.bottom                     # A better top alternative - like gotop but using rust
         pkgs.bat                        # Better cat alternative
-        pkgs.duf                        # For seeing disk usage
         pkgs.rar                        # To extract winrar files
         pkgs.exa                        # Good replacement for ls and tree (exa -T)
         pkgs.fd                         # Good replacement for find
         pkgs.ncdu                       # To explore directories that take too much space
         pkgs.dunst                      # Notifications
         pkgs.kitty                      # Preferred terminal
+        pkgs.wezterm                    # Alternative terminal
         pkgs.trash-cli                  # To have a trash-like behaviour in the command line
         pkgs.chromium                   # Main web browser
         pkgs.firefox                    # Secondary web browser

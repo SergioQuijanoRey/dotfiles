@@ -1,19 +1,9 @@
-# i3wm config filesd
-# Autor:
-#       Sergio Quijano Rey
-#       sergiquijano@gmail.com
-#       https://github.com/SergioQuijanoRey
-# Version:
-#       v1.0: 04/09/2018 - First little rice. The config file is uncleaned
-#       v1.1: 04/09/2018 - Cleaning the config file
-#       v1.2: 29/10/2018 - Manjaro support added
-#       v2.0: 29/09/2020 -  Elegant way of solving green border problem (changing color config)
-#                           Blue borders on focused windows
-#                           pactl changed to amixer, whichs works with bluetooth audio properly
-
-
 # Windows modkey
 set $mod Mod4
+
+# Terminal emulator
+set $termemulator wezterm
+set $termemulatorexec wezterm start
 
 # Fonts
 font pango:Inconsolata-Regular 8
@@ -22,8 +12,8 @@ font pango:Inconsolata-Regular 8
 floating_modifier $mod
 
 # Launch terminal
-bindsym $mod+Return exec kitty
-bindsym $mod+Shift+Return exec kitty tmux-init
+bindsym $mod+Return exec $termemulator
+bindsym $mod+Shift+Return exec $termemulatorexec tmux-init
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -199,7 +189,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Personal KeyBindings
 bindsym $mod+x exec lockscreen
-bindsym $mod+Shift+n exec kitty tmux-init "ranger" "ranger"
+bindsym $mod+Shift+n exec $termemulatorexec tmux-init "ranger" "ranger"
 bindsym Print exec xfce4-screenshooter
 bindsym $mod+Shift+p move workspace to output left
 bindsym $mod+Shift+b exec chromium
@@ -207,7 +197,7 @@ bindsym $mod+t exec wallpaper
 bindsym $mod+Shift+e exec shutdown_menu # Shutdown menu
 bindsym $mod+p exec rofimoji --clipboarder xclip --action copy
 bindsym $mod+o exec open
-bindsym $mod+Shift+c exec kitty tmux-init 'calc' 'julia'
+bindsym $mod+Shift+c exec $termemulatorexec tmux-init 'calc' 'julia'
 
 # Disable tap while typing
 exec syndaemon -i 0.3 -t -K -R
