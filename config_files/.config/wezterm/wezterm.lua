@@ -5,8 +5,9 @@ return {
     launch_menu = {},
     hide_tab_bar_if_only_one_tab = true,
     font = wezterm.font(
-        "Cascadia Code PL",
+        "CaskaydiaCove NF Mono",
         {
+            -- weight = "Medium",
             weight = "Medium",
             italic = false,
             style = "Normal",

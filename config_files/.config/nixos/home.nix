@@ -219,10 +219,7 @@ in
     # Fonts
     [
         # Font that supports emojis
-        pkgs.noto-fonts-emoji          # Cascadia code through nerd # Font that supports emojis
-
-        # This font through nerdfonts is not working well
-        pkgs.cascadia-code
+        pkgs.noto-fonts-emoji
 
         # Do not install all nerd fonts, which takes a long time
         # Pick specific fonts I want
@@ -233,6 +230,7 @@ in
                 "FiraCode"
                 "Inconsolata"
                 "JetBrainsMono"
+                "CascadiaCode"
             ];
         })
     ] ++
