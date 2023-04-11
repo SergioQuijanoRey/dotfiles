@@ -76,6 +76,7 @@ in
         pkgs.gnumake            # R lsp needs this package
         pkgs.pandoc             # Tools like rmarkdown need this
         pkgs.sqlite             # Database engine that I use in some backends
+        pkgs.xh                 # Good alternative to curl
 
     ] ++
 
@@ -245,6 +246,7 @@ in
         pkgs.onlyoffice-bin # Alternative to MS Office
         pkgs.obs-studio     # Streaming and recording
         pkgs.obsidian       # Notes
+        pkgs.thunderbird    # Email client
     ] ++
 
     # Other packages
@@ -293,8 +295,8 @@ in
         zplug = {
             enable = true;
             plugins = [
-            { name = "zsh-users/zsh-autosuggestions"; }
-            { name = "zsh-users/zsh-syntax-highlighting"; }
+                { name = "zsh-users/zsh-autosuggestions"; }
+                { name = "zsh-users/zsh-syntax-highlighting"; }
             ];
         };
 
