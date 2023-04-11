@@ -2,6 +2,11 @@
 set $mod Mod4
 
 # Terminal emulator
+#
+# $termemulatorexec is because some terminals have a custom command for
+# launching a terminal with a custom command
+# For example:
+# set $termemulatorexec wezterm start
 set $termemulator wezterm
 set $termemulatorexec wezterm start
 

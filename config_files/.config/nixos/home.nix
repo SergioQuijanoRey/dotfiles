@@ -103,7 +103,7 @@ in
         pkgs.fd                         # Good replacement for find
         pkgs.ncdu                       # To explore directories that take too much space
         pkgs.dunst                      # Notifications
-        pkgs.kitty                      # Preferred terminal
+        pkgs.alacritty                  # Preferred terminal
         pkgs.wezterm                    # Alternative terminal
         pkgs.trash-cli                  # To have a trash-like behaviour in the command line
         pkgs.chromium                   # Main web browser
