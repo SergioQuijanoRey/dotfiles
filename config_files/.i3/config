@@ -212,7 +212,7 @@ exec autodisplay.sh       # Set the display configuration at startup
 exec telegram-desktop
 exec nm-applet
 exec blueman-applet
-exec feh --bg-scale "/home/sergio/backgrounds/led_zeppelin01.jpg"  # Set the wallpaper
+exec feh --bg-scale "/home/sergio/backgrounds/material01.jpeg"  # Set the wallpaper
 
 # Polybar launcher
 #===============================================================================
