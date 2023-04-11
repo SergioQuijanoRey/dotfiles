@@ -186,6 +186,11 @@ in
         dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
     };
 
+    # This is setup in `Home Manager`, but as we specify
+    #   `users.users.sergio.shell = zsh`
+    # we need this line too
+    programs.zsh.enable = true;
+
     # I want to install some packages using flatpack
     services.flatpak.enable = true;
     xdg.portal = { # Desktop integration
