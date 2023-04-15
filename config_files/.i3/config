@@ -7,8 +7,14 @@ set $mod Mod4
 # launching a terminal with a custom command
 # For example:
 # set $termemulatorexec wezterm start
+#
+# $multiplexer is the command we want to use to attach to a multiplexer session
+# If that session does not exist, the command should create the session and
+# attach to it
+
 set $termemulator wezterm
 set $termemulatorexec wezterm start
+set $multiplexer zellij attach --create daily
 
 # Fonts
 font pango:Inconsolata-Regular 8
@@ -18,7 +24,7 @@ floating_modifier $mod
 
 # Launch terminal
 bindsym $mod+Return exec $termemulator
-bindsym $mod+Shift+Return exec $termemulatorexec tmux-init
+bindsym $mod+Shift+Return exec $termemulatorexec $multiplexer
 
 # kill focused window
 bindsym $mod+Shift+q kill

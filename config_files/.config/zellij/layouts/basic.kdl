@@ -1,0 +1,25 @@
+layout {
+    pane_template name="upper_bar" size=1 borderless=true {
+        plugin location="zellij:tab-bar"
+    }
+
+    // Basic tab with the upper bar
+    tab_template name="basic_tab" {
+        upper_bar
+        pane
+    }
+
+    basic_tab name="pomodoro" {
+
+        // Pomodoro command
+        pane {
+            command "pomodoro"
+            args "30m" "Tomate un descanso 😄"
+            start_suspended true
+        }
+    }
+
+    basic_tab name="working" {
+        pane
+    }
+}

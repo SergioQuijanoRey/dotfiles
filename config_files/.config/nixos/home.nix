@@ -58,6 +58,7 @@ in
         pkgs.neovim-unwrapped   # Main editor
         pkgs.tree-sitter        # Neovim relies heavily on treesitter
         pkgs.tmux               # Terminal multiplexer
+        pkgs.zellij             # Good alternative for zellij
         pkgs.ripgrep            # Better grep
         pkgs.just               # Better version of makefile
         pkgs.rsync
