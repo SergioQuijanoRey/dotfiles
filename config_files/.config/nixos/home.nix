@@ -134,10 +134,6 @@ in
         # dust shows disk usage of a specific dir
         pkgs.duf                        # For seeing disk usage
         pkgs.du-dust                    # Replacement for du written in Rust
-
-        # TODO -- this package is failing
-        # pkgs.bibata-cursors             # Preferred cursor theme
-
         pkgs.youtube-dl                 # Download music
         pkgs.rofi
         pkgs.rofimoji                   # Have a rofi emoji selector
