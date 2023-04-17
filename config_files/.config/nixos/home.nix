@@ -7,19 +7,6 @@
 
 with pkgs;
 let
-    # Specify R packages
-    R-with-my-packages = rWrapper.override {
-        packages = with rPackages; [
-            # LSP and packages required
-            languageserver
-            languageserversetup
-            xml2
-
-            # Stats packages
-            ggpubr
-        ];
-    };
-
     # Specify custom Python enviroment
     # TODO -- uncomment certain packages
     custom_python_packages = python-packages: with python-packages; [
@@ -70,11 +57,7 @@ in
         pkgs.rclone             # For syncing with google drive
         pkgs.rustup             # Rust ecosystem installer
         pkgs.git
-        pkgs.tig                # ncurses terminal UI for git
-                                # Useful for view different branches
         pkgs.acpi               # Check for battery status
-        pkgs.gfortran           # Many R packages need fortran to compile
-        pkgs.gnumake            # R lsp needs this package
         pkgs.pandoc             # Tools like rmarkdown need this
         pkgs.sqlite             # Database engine that I use in some backends
         pkgs.xh                 # Good alternative to curl
@@ -84,20 +67,15 @@ in
     # System packages
     [
 
-        pkgs.zsh        # Shell enviroment
-                        # Plugins need to be installed through normal package manager in order
-                        # to be put in /usr/share/...
-
-        pkgs.zplug                      # Plugin manager for zsh
-        pkgs.zsh-autosuggestions        # Plugin for zsh
-        pkgs.zsh-syntax-highlighting    # Plugin for zsh
-
+        # Shell enviroment
+        # Later in this file, zsh is configured
+        pkgs.zsh
         pkgs.zoxide                     # Better cd command
         pkgs.ranger                     # CLI file manager
         pkgs.w3m                        # For displaying images in ranger
         pkgs.wget                       # A lot of tools rely on this package
         pkgs.starship                   # To configure terminal prompt
-        pkgs.htop
+        pkgs.htop                       # Monitoring tool
         pkgs.bottom                     # A better top alternative - like gotop but using rust
         pkgs.bat                        # Better cat alternative
         pkgs.rar                        # To extract winrar files
@@ -112,8 +90,6 @@ in
         pkgs.firefox                    # Secondary web browser
         pkgs.sshfs                      # To code on servers with local editors
         pkgs.docker                     # Container technology
-        pkgs.podman                     # Container technology
-        pkgs.crun                       # Needed for running podman rootless
         pkgs.arandr                     # To control multiple displays
         pkgs.lxappearance               # Set the system theme
         pkgs.networkmanagerapplet       # Applet to connect to wifi
@@ -128,12 +104,6 @@ in
         pkgs.alsa-plugins               # Having volume control keys
         pkgs.mate.engrampa              # Working with compressed and zipped files
         pkgs.arc-theme                  # Preferred theme
-
-        # Disk usage utilities
-        # duf shows how hard drives are used
-        # dust shows disk usage of a specific dir
-        pkgs.duf                        # For seeing disk usage
-        pkgs.du-dust                    # Replacement for du written in Rust
         pkgs.youtube-dl                 # Download music
         pkgs.rofi
         pkgs.rofimoji                   # Have a rofi emoji selector
@@ -147,6 +117,12 @@ in
         pkgs.nodejs                     # Some nvim LSPs need this
         pkgs.playerctl                  # To have play pause
         pkgs.patchelf                   # To work with mason.nvim
+
+        # Disk usage utilities
+        # duf shows how hard drives are used
+        # dust shows disk usage of a specific dir
+        pkgs.duf                        # For seeing disk usage
+        pkgs.du-dust                    # Replacement for du written in Rust
 
         # Timer, custom build
         timer
@@ -163,21 +139,12 @@ in
         # Nix
         pkgs.rnix-lsp
 
-        # R with the packages specified at the start
-        R-with-my-packages
-        pkgs.xml2                       # Needed for LSP to work
-        pkgs.rstudio                    # Needed for some uni classes
-
         # Lua
         pkgs.sumneko-lua-language-server
         pkgs.lua53Packages.lua-lsp
 
         # Rust
         pkgs.rust-analyzer
-
-        # Rust webdev
-        pkgs.trunk      # For serving yew.rs apps
-        pkgs.diesel-cli # For starting diesel ORM
 
         # Julia
         pkgs.julia-bin
@@ -204,14 +171,9 @@ in
     [
         pkgs.openspades
         pkgs.lutris
-
-        pkgs.moonlight-qt
-
-        # Minecraft launcher
-        pkgs.prismlauncher
-
-        # Without this package, steam fails to open
-        pkgs.xorg.libxcb
+        pkgs.moonlight-qt   # Connecting to other pc to game
+        pkgs.prismlauncher  # Minecraft launcher
+        pkgs.xorg.libxcb    # Without this package, steam fails to open
     ] ++
 
     # Fonts
@@ -250,7 +212,6 @@ in
     [
         taskwarrior     # For managing tasks through the terminal
         vit             # CLI Frontend for taskwarrior
-
     ];
 
     # Fonts cannot be installed as normal packages
