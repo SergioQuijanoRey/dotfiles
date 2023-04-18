@@ -23,15 +23,7 @@ layout {
         // }
     }
 
-    tab name="pomodoro" {
-        pane {
-            command "pomodoro"
-            args "30m" "Tomate un descanso 😄"
-            start_suspended true
-        }
-    }
-
-    tab name="working" {
+    tab{
         pane
     }
 }

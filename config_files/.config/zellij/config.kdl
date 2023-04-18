@@ -256,6 +256,9 @@ theme "catppuccin-frappe"
 //
 // default_layout "compact"
 
+// This is a layout file stored in our dotfiles that we want to use as the default
+default_layout "owndefault"
+
 // Choose the mode that zellij uses when starting up.
 // Default: normal
 //

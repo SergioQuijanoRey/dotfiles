@@ -26,12 +26,23 @@ layout {
     tab name="pomodoro" {
         pane {
             command "pomodoro"
-            args "30m" "Tomate un descanso 😄"
+            args "50m" "Tomate un descanso 😄"
             start_suspended true
         }
     }
 
-    tab name="working" {
-        pane
+    tab name="code" {
+        pane {
+            command "nix"
+            args "develop" "--command" "nvim"
+            cwd "/home/sergio/GitProjects/TFG/"
+        }
+    }
+
+    tab name="ssh" {
+        pane {
+            command "ssh"
+            args "ugr"
+        }
     }
 }
