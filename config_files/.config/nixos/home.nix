@@ -212,6 +212,11 @@ in
     [
         taskwarrior     # For managing tasks through the terminal
         vit             # CLI Frontend for taskwarrior
+    ] ++
+
+    # Flakes fetched from github
+    [
+        nurl    # Fetch data for custom packages
     ];
 
     # Fonts cannot be installed as normal packages
