@@ -27,7 +27,7 @@ setmap("n", "<leader>k", ":sp<CR>:terminal<CR>A", {})
 setmap("n", "<leader>K", ":vsp<CR>:terminal<CR>A", {})
 
 -- Focus mode for writting
-setmap("n", "<leader>f", ":Goyo 120x120<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>:lua require('lualine').hide()<CR>", {})
+setmap("n", "<leader>f", ":Goyo 95%x100%<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>:lua require('lualine').hide()<CR>", {})
 setmap("n", "<leader><S-f>", ":Goyo<CR>:set nowrap<CR>:set number<CR>:lua require('lualine').hide({unhide = true})<CR>:Catppuccin frappe<CR>", {})
 
 -- Open Nerd tree
@@ -85,6 +85,7 @@ setmap("x", "<leader>a", "<Plug>(EasyAlign)", {})
 -- keymap for enabling or disabling gitsigns
 -- Sometimes It can clutter the UI
 setmap('n', '<leader>uig', ":Gitsign toggle_signs<CR>", {})
+
 --- Telescope remaps
 --- ======================================================================== ---
 setmap("n", "<leader>p", "<cmd>Telescope find_files<cr>", {noremap=true})
