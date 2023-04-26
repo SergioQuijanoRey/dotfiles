@@ -82,6 +82,9 @@ setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", {noremap=true})
 setmap("n", "<leader>a", "<Plug>(EasyAlign)", {})
 setmap("x", "<leader>a", "<Plug>(EasyAlign)", {})
 
+-- keymap for enabling or disabling gitsigns
+-- Sometimes It can clutter the UI
+setmap('n', '<leader>uig', ":Gitsign toggle_signs<CR>", {})
 --- Telescope remaps
 --- ======================================================================== ---
 setmap("n", "<leader>p", "<cmd>Telescope find_files<cr>", {noremap=true})
