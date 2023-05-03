@@ -107,15 +107,15 @@ directories:
 
     # AwesomeWM configuration
     - awesome:
-      repo_path: ./config_files/.config/awesome
-      system_path: .config/awesome
-      sync_type: dir
+        repo_path: ./config_files/.config/awesome
+        system_path: .config/awesome
+        sync_type: dir
 
     # Rofi config files
     - rofi:
-      repo_path: ./config_files/.config/rofi
-      system_path: .config/rofi
-      sync_type: dir
+        repo_path: ./config_files/.config/rofi
+        system_path: .config/rofi
+        sync_type: dir
 
     - zellij config:
         repo_path: ./config_files/.config/zellij
