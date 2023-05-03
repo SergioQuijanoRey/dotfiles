@@ -68,6 +68,61 @@ ls.add_snippets("markdown", {
         "- [ ] {}",
         {i(1)}
     )),
+
+    -- I use markdown to organize my life
+    s("weekorg", fmt(
+[[---
+# Lunes
+
+- Mañana
+    - [ ]
+- Tarde
+    - [ ]
+
+# Martes
+
+- Mañana
+    - [ ]
+- Tarde
+    - [ ]
+
+# Miércoles
+
+- Mañana
+    - [ ]
+- Tarde
+    - [ ]
+
+# Jueves
+
+- Mañana
+    - [ ]
+- Tarde
+    - [ ]
+
+# Viernes
+
+- Mañana
+    - [ ]
+- Tarde
+    - [ ]
+
+# Sábado
+
+- Mañana
+    - [ ]
+- Tarde
+    - [ ]
+
+# Domingo
+
+- Mañana
+    - [ ]
+- Tarde
+    - [ ]
+---]],
+        {}
+    )),
 }, {
     key = "markdown",
 })
