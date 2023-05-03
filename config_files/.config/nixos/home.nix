@@ -8,15 +8,8 @@
 with pkgs;
 let
     # Specify custom Python enviroment
-    # TODO -- uncomment certain packages
     custom_python_packages = python-packages: with python-packages; [
         numpy
-        # pip
-        # pandas
-
-        # Managing Excel files
-        xlrd
-        xlwt
     ];
     custom_python_enviroment = python310.withPackages custom_python_packages;
 
@@ -171,7 +164,6 @@ in
     [
         pkgs.openspades
         pkgs.lutris
-        pkgs.moonlight-qt   # Connecting to other pc to game
         pkgs.prismlauncher  # Minecraft launcher
         pkgs.xorg.libxcb    # Without this package, steam fails to open
     ] ++
@@ -216,7 +208,7 @@ in
 
     # Flakes fetched from github
     [
-        nurl    # Fetch data for custom packages
+        nurl       # Fetch data for custom packages
     ];
 
     # Fonts cannot be installed as normal packages

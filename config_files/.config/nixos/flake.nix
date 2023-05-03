@@ -17,9 +17,19 @@
         nurl = {
             url = "github:nix-community/nurl";
         };
+
+        zerospades = {
+            url = "github:siecvi/zerospades";
+        };
     };
 
-    outputs = { self, nixpkgs, home-manager, nurl }:
+    outputs = {
+        self, nixpkgs, home-manager,
+
+        # Flakes that I added from github
+        nurl,
+        zerospades
+    }:
     let
         # Architecture of the system
         system = "x86_64-linux";
@@ -28,7 +38,10 @@
         pkgs = import nixpkgs {
             inherit system;
             config.allowUnfree = true;
-            overlays = [ nurl.overlay ];
+            overlays = [
+                nurl.overlay
+                zerospades.overlay
+            ];
         };
 
         user = "sergio";
@@ -46,6 +59,7 @@
                     # Set up home manager
                     home-manager.nixosModules.home-manager {
 
+
                         # So we can use nixpkgs instead of home manager packages
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
@@ -58,5 +72,6 @@
                 ];
             };
         };
+
     };
 }
