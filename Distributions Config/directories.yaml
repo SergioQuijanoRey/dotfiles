@@ -116,3 +116,7 @@ directories:
       repo_path: ./config_files/.config/rofi
       system_path: .config/rofi
       sync_type: dir
+
+    - zellij config:
+        repo_path: ./config_files/.config/zellij
+        system_path: .config/zellij
