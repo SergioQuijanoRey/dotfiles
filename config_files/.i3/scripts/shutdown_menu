@@ -181,6 +181,6 @@ if [[ $? -eq 0 && ! -z ${selection} ]]; then
         ${menu_confirm} =~ (^|[[:space:]])"${selection}"($|[[:space:]]) ]]; then
     ask_confirmation
   else
-    kitty -e "${menu[${selection}]}"
+    alacritty -e "${menu[${selection}]}"
   fi
 fi
