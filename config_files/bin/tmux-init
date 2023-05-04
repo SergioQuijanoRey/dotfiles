@@ -3,6 +3,7 @@
 # If no session name is given by parameter, we call it daily
 
 # User does not use parameters
+#
 if [[ $# -eq 0 ]]
 then
     tmux attach -t daily || tmux new -s daily
