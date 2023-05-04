@@ -2,7 +2,7 @@
 
 # Reverses a .xls file by date
 # I am using it for "Evo Banco" .xls file, which cannot be reversed properly by date
-# Depends on modules xlrd, xlwt
+# Depends on modules pandas, xlrd, xlwt
 
 import os
 import sys
