@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-nvim ~/Notes.md
+cd /home/sergio/GitRepos/ObsidianNotes/
+nvim Generic\ Notes.md
