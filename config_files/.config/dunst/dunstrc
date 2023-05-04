@@ -2,7 +2,7 @@
 # # Original config can be found at /etc/dunst/dunstrc
 
 [global]
-    font = JetBrainsMono 12
+    font = JetBrainsMono Nerd Font 12
 
     # Allow a small subset of html markup:
     #   <b>bold</b>
