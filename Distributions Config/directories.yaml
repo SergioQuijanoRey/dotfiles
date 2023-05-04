@@ -63,6 +63,11 @@ directories:
         repo_path: ./config_files/.config/nvim
         system_path: .config/nvim
         sync_type: dir
+        ignore_files:
+          - spell/es.utf-8.add
+          - spell/es.utf-8.add.spl
+          - spell/en.utf-8.add
+          - spell/en.utf-8.add.spl
 
     - alacritty config:
         repo_path: ./config_files/.config/alacritty
