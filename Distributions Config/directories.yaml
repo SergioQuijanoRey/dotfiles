@@ -82,6 +82,7 @@ directories:
     - ranger config:
         repo_path: ./config_files/.config/ranger
         system_path: .config/ranger
+        ignore_files: plugins/
         sync_type: dir
 
     - polybar config:
