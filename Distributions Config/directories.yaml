@@ -126,3 +126,8 @@ directories:
         repo_path: ./config_files/.config/starship
         system_path: .config/starship
         sync_type: dir
+
+    - NixOS config:
+        repo_path: ./config_files/.config/nixos
+        system_path: .config/nixos
+        sync_type: dir
