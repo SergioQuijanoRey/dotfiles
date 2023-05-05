@@ -59,10 +59,6 @@ in
 
     # System packages
     [
-
-        # Shell enviroment
-        # Later in this file, zsh is configured
-        pkgs.zsh
         pkgs.zoxide                     # Better cd command
         pkgs.ranger                     # CLI file manager
         pkgs.w3m                        # For displaying images in ranger
@@ -164,7 +160,10 @@ in
     [
         pkgs.openspades
         pkgs.lutris
-        pkgs.prismlauncher  # Minecraft launcher
+
+        # TODO -- uncomment
+        # pkgs.prismlauncher  # Minecraft launcher
+
         pkgs.xorg.libxcb    # Without this package, steam fails to open
     ] ++
 
@@ -243,6 +242,8 @@ in
         ];
     };
 
+    # We can configure zsh using home manager
+    # So we specify the installation this way
     programs.zsh = {
         enable = true;
 

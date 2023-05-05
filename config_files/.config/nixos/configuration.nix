@@ -85,7 +85,6 @@ in
     environment.systemPackages = with pkgs; [
         # Really basic packages
         tmux
-        zsh
         git
         kitty
         file

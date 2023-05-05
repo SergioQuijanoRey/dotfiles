@@ -17,10 +17,6 @@
         nurl = {
             url = "github:nix-community/nurl";
         };
-
-        zerospades = {
-            url = "github:siecvi/zerospades";
-        };
     };
 
     outputs = {
@@ -28,7 +24,6 @@
 
         # Flakes that I added from github
         nurl,
-        zerospades
     }:
     let
         # Architecture of the system
@@ -40,7 +35,6 @@
             config.allowUnfree = true;
             overlays = [
                 nurl.overlay
-                zerospades.overlay
             ];
         };
 
