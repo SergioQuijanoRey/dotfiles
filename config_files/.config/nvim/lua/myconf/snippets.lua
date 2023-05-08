@@ -71,7 +71,7 @@ ls.add_snippets("markdown", {
 
     -- I use markdown to organize my life
     s("weekorg", fmt(
-[[---
+[[
 # Lunes
 
 - Mañana
@@ -120,7 +120,7 @@ ls.add_snippets("markdown", {
     - [ ]
 - Tarde
     - [ ]
----]],
+]],
         {}
     )),
 }, {
