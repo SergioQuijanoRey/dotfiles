@@ -160,11 +160,18 @@ in
     [
         pkgs.openspades
         pkgs.lutris
+        pkgs.dolphin-emu
 
         # TODO -- uncomment
         # pkgs.prismlauncher  # Minecraft launcher
 
         pkgs.xorg.libxcb    # Without this package, steam fails to open
+
+        # Installing wine can enhance performance on other videogames
+        # Mostly videogames installed through lutris
+        wineWowPackages.stable
+        winetricks
+
     ] ++
 
     # Fonts
