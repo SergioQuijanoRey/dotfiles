@@ -204,6 +204,7 @@ in
         pkgs.obs-studio     # Streaming and recording
         pkgs.obsidian       # Notes
         pkgs.thunderbird    # Email client
+        pkgs.vlc            # Video client
     ] ++
 
     # Other packages
