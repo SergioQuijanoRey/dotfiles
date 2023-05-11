@@ -1,5 +1,5 @@
 {
-    description = "Flake where I describe the configuration of my system";
+    description = "Flake where I describe the configuration of my different machines (laptop and home server)";
 
     # Dependencies of the flake
     inputs = {
