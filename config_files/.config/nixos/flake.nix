@@ -38,12 +38,14 @@
             ];
         };
 
+        # In all my machines I use the same username
         user = "sergio";
-        hostname = "asus-laptop";
 
     in {
         nixosConfigurations = {
-            ${hostname} = nixpkgs.lib.nixosSystem {
+
+            # Config for my laptop
+            asus-laptop = nixpkgs.lib.nixosSystem {
                 inherit system;
                 modules = [
 
@@ -61,6 +63,29 @@
                         # Import the home manager configuration
                         home-manager.users.${user} = {
                             imports = [ ./home.nix ];
+                        };
+                    }
+                ];
+            };
+
+            # Config for my home server
+            lenovo-server = nixpkgs.lib.nixosSystem {
+                inherit system;
+                modules = [
+
+                    # Import the base NixOS configuration
+                    ./server/configuration.nix
+
+                    # Set up home manager
+                    home-manager.nixosModules.home-manager {
+
+                        # So we can use nixpkgs instead of home manager packages
+                        home-manager.useGlobalPkgs = true;
+                        home-manager.useUserPackages = true;
+
+                        # Import the home manager configuration
+                        home-manager.users.${user} = {
+                            imports = [ ./server/home.nix ];
                         };
                     }
                 ];
