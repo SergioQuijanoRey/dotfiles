@@ -163,7 +163,7 @@ in
         pkgs.dolphin-emu
 
         # TODO -- uncomment
-        # pkgs.prismlauncher  # Minecraft launcher
+        pkgs.prismlauncher  # Minecraft launcher
 
         pkgs.xorg.libxcb    # Without this package, steam fails to open
 
@@ -247,6 +247,9 @@ in
 
             # Generate bibtex references from webpages
             { id = "phidhnmbkbkbkbknhldmpmnacgicphkf"; }
+
+            # Catppuccin theme
+            { id = "olhelnoplefjdmncknfphenjclimckaf"; }
         ];
     };
 
