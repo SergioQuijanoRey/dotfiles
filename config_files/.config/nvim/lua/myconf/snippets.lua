@@ -64,6 +64,17 @@ ls.add_snippets("markdown", {
         {i(1, "titulo"), i(2, "Sergio Quijano Rey"), i(3, "fecha")}
     )),
 
+    s("obsidianheader", fmt(
+	[[
+	---
+	title: {}
+	type: {}
+	tags: {}
+	---
+	]],
+        {i(1, ""), i(2, "note"), i(3, "")}
+    )),
+
     s("task", fmt(
         "- [ ] {}",
         {i(1)}
