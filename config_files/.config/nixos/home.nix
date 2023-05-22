@@ -161,9 +161,8 @@ in
         pkgs.openspades
         pkgs.lutris
         pkgs.dolphin-emu
-
-        # TODO -- uncomment
         pkgs.prismlauncher  # Minecraft launcher
+        pkgs.openjdk17      # OpenJDK, required by Prism Launcher
 
         pkgs.xorg.libxcb    # Without this package, steam fails to open
 
