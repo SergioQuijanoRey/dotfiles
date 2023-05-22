@@ -128,7 +128,7 @@ sync_type = "dir"
 
 [Nix-local-preferences]
 repo_path = "./config_files/.config/nix"
-system_path = "./config_files/.config/nix"
+system_path = ".config/nix"
 sync_type = "dir"
 
 [More-Nix-local-preferences]
