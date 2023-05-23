@@ -86,6 +86,9 @@ ignore_paths = [
 repo_path = "./config_files/.config/polybar"
 system_path = ".config/polybar"
 sync_type = "dir"
+ignore_paths = [
+    "trace.log"
+]
 
 [tmux-config]
 repo_path = "./config_files/.config/.tmux.conf"
