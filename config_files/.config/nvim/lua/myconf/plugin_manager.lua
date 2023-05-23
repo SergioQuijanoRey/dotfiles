@@ -23,7 +23,7 @@ local package_conf = {
 
     'tpope/vim-fugitive',           -- Git integration
     'lewis6991/gitsigns.nvim',      -- Git signs
-    'psliwka/vim-smoothie',         -- Smooth scrolling
+    'karb94/neoscroll.nvim',        -- Smooth scrolling
     'jpalardy/vim-slime',           -- Sending lines to a REPL
     'lambdalisue/suda.vim',         -- For sudo writting a file
 

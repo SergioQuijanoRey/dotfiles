@@ -27,6 +27,7 @@ require("myconf/debugging")
 require("myconf/file_explorer")
 require("myconf/diagnostics_list")
 require("myconf/git")
+require("myconf/smooth_scrolling")
 
 --- Aux functions
 --- ======================================================================== ---
