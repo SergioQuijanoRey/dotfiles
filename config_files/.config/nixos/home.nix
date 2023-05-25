@@ -133,7 +133,8 @@ in
         pkgs.lua53Packages.lua-lsp
 
         # Rust
-        pkgs.rust-analyzer
+        # TODO -- uncomment
+        # pkgs.rust-analyzer
 
         # Julia
         pkgs.julia-bin
