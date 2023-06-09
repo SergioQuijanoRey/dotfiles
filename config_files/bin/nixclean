@@ -5,8 +5,20 @@
 # echo's of the process
 
 echo ""
+echo "♻️ Started 'nix-env --delete-generations 7d' at $(date)"
+nix-env --delete-generations 7d
+
+echo ""
 echo "♻️ Started nix-store --gc at $(date)"
 nix-store --gc
+
+""
+echo "♻️ Started deleting gcroots at $(date)"
+for link in /nix/var/nix/gcroots/auto/*
+do
+    echo "  🔗 Removing link $link"
+    sudo rm $(readlink "$link")
+done
 
 echo ""
 echo "♻️ Started nix-collect-garbage --delete-older-than 7d at $(date)"
