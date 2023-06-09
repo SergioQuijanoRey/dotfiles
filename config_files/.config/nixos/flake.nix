@@ -38,6 +38,9 @@
             ];
         };
 
+        # Sometimes we want to use lib functions
+        lib = pkgs.lib;
+
         # In all my machines I use the same username
         user = "sergio";
 
@@ -50,7 +53,7 @@
                 modules = [
 
                     # Import the base NixOS configuration
-                    ./configuration.nix
+                    ./laptop/configuration.nix
 
                     # Set up home manager
                     home-manager.nixosModules.home-manager {
@@ -62,7 +65,7 @@
 
                         # Import the home manager configuration
                         home-manager.users.${user} = {
-                            imports = [ ./home.nix ];
+                            imports = [ ./laptop/home.nix ];
                         };
                     }
                 ];

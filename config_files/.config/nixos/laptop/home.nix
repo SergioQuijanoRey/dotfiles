@@ -49,7 +49,8 @@ in
         pkgs.fzf                # Searching and piping in the terminal
         pkgs.rclone             # For syncing with google drive
         pkgs.rustup             # Rust ecosystem installer
-        pkgs.git
+        pkgs.git                # VCS
+        pkgs.lazygit            # TUI client for git
         pkgs.acpi               # Check for battery status
         pkgs.pandoc             # Tools like rmarkdown need this
         pkgs.sqlite             # Database engine that I use in some backends
@@ -98,7 +99,8 @@ in
         pkgs.rofimoji                   # Have a rofi emoji selector
         pkgs.nodePackages.npm           # Some programns need this to build
         pkgs.libnotify                  # To have access to notify-send with dunst
-        pkgs.evince
+        pkgs.evince                     # PDF Reader from Ubunut
+        pkgs.zathura                    # PDF Reader for advanced users
         pkgs.dpkg
         pkgs.zip                        # To archive files
         pkgs.unzip                      # Some nvim LSPs need this to install
