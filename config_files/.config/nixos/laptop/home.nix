@@ -13,8 +13,6 @@ let
     ];
     custom_python_enviroment = python310.withPackages custom_python_packages;
 
-    # Custom build of this go package
-    timer = (import ./custom_packages/timer.nix);
 in
 
 {
@@ -108,6 +106,7 @@ in
         pkgs.nodejs                     # Some nvim LSPs need this
         pkgs.playerctl                  # To have play pause
         pkgs.patchelf                   # To work with mason.nvim
+        timer                           # To have a TUI timer for my pomodoro sessions
 
         # Disk usage utilities
         # duf shows how hard drives are used
@@ -115,8 +114,6 @@ in
         pkgs.duf                        # For seeing disk usage
         pkgs.du-dust                    # Replacement for du written in Rust
 
-        # Timer, custom build
-        timer
     ] ++
 
     # Programming languages and their LSPs
