@@ -1,0 +1,14 @@
+
+# Open PDFs maximized (no space in the borders)
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+
+# Spacing between pages
+set page-padding 5
+
+# Mappings
+map i recolor
+
+# Use catppuccin color scheme
+include catppuccin-frappe
+

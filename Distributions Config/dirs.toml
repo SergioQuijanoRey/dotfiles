@@ -138,3 +138,8 @@ sync_type = "dir"
 repo_path = "./config_files/.config/nixpkgs"
 system_path = ".config/nixpkgs"
 sync_type = "dir"
+
+[Zathura]
+repo_path = "./config_files/.config/zathura"
+system_path = ".config/zathura"
+sync_type = "dir"
