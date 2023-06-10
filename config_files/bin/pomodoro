@@ -5,4 +5,4 @@
 # Example: `pomodoro 30m "Take a break :smile:"`
 
 echo "⏳ Pomodoro started at $(date)"
-timer -n "⏳ Pomodoro" "$1"; notify-send --urgency=critical "$2"
+timer -n "⏳ Pomodoro" "$1"; notify-send --urgency=critical "⏳Pomodoro" "$2"
