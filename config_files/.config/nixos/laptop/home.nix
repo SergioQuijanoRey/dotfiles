@@ -107,6 +107,7 @@ in
         pkgs.playerctl                  # To have play pause
         pkgs.patchelf                   # To work with mason.nvim
         timer                           # To have a TUI timer for my pomodoro sessions
+        kanata-with-cmd                 # Remap keyboard
 
         # Disk usage utilities
         # duf shows how hard drives are used
