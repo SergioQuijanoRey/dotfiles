@@ -1,27 +1,89 @@
 (defcfg
-  #|
-  This configuration will process all keys pressed inside of kanata, even if
-  they are not mapped in defsrc. This is so that certain actions can activate
-  at the right time for certain input sequences. By default, unmapped keys are
-  not processed through kanata due to a Windows issue related to AltGr. If you
-  use AltGr in your keyboard, you will likely want to follow the simple.kbd
-  file while unmapping lctl and ralt from defsrc.
-  |#
-  process-unmapped-keys yes
+    #|
+    This configuration will process all keys pressed inside of kanata, even if
+    they are not mapped in defsrc. This is so that certain actions can activate
+    at the right time for certain input sequences. By default, unmapped keys are
+    not processed through kanata due to a Windows issue related to AltGr. If you
+    use AltGr in your keyboard, you will likely want to follow the simple.kbd
+    file while unmapping lctl and ralt from defsrc.
+    |#
+    process-unmapped-keys yes
 )
 
-;; defsrc defines the keys that will be intercepted by kanata. The order of the
-;; keys matches with deflayer declarations and all deflayer declarations must
-;; have the same number of keys as defsrc. Any keys not listed in defsrc will
-;; be passed straight to the operating system.
+
+#|
+All key combos are going to have the same tap and hold timeout
+Two types of situations:
+    - Combos that behave differently when tapped or held
+    - Combos that only have tap behaviour
+|#
+(defvar
+    ; Timeouts for actions that have different behaviours when tapped and held
+    tap-timeout   100
+    hold-timeout  200
+    tt $tap-timeout
+    ht $hold-timeout
+
+    #| Timeouts for actions that only have tap behaviour |#
+    onlytap-tap-timeout 1
+    onlytap-hold-timeout 1
+    ott $onlytap-tap-timeout
+    oth $onlytap-hold-timeout
+)
+
+#|
+defsrc defines the keys that will be intercepted by kanata. The order of the
+keys matches with deflayer declarations and all deflayer declarations must
+have the same number of keys as defsrc. Any keys not listed in defsrc will
+be passed straight to the operating system.
+|#
 (defsrc
-  caps
+           r
+  caps a              l
 )
 
+
+#| Default layer
+#| -------------------------------------------------------------------------- |#
+
+#|
+Define the mappings of the keys specified in `defsrc`
+|#
 (deflayer default
-  @cap
+           r
+  @cap  a           @l
 )
 
+#| Remappings for the standard layer |#
 (defalias
-  cap (tap-hold 1 1 lctl lctl)
+    cap (tap-hold $ott $oth lctl lctl)
+    l (tap-hold $tt $ht l (layer-while-held l_layer))
+)
+
+#| 'l' layer
+#| -------------------------------------------------------------------------- |#
+
+#|
+Layer that is triggered when holding 'l' key
+|#
+(deflayer l_layer
+           @lr
+    @lcaps @la             l
+)
+
+#|
+Remappings for the 'l' layer
+|#
+(defalias
+    #| In this layer, use caps as normal caps |#
+    lcaps (tap-hold $ott $oth caps caps)
+
+    #| Live reload the configuration |#
+    lr (tap-hold $ott $oth lrld lrld)
+
+    #|
+    Using Shitf-7 instead of / because kanata outputs '-' instead
+    Maybe because some problem with US-International instead of Spanish layout
+    |#
+    la (tap-hold $ott $oth S-7 S-7)
 )
