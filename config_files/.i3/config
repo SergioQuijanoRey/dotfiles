@@ -126,6 +126,7 @@ assign [title="Nemo"] $workspace4                           # Files
 assign [class="TelegramDesktop"] $workspace5                # Texting
 assign [class="WhatsApp"] $workspace5                       # Texting
 assign [class="Evince"] $workspace6                         # Documents
+assign [class="Zathura"] $workspace6                        # Documents
 for_window [class="Spotify"] move to workspace $workspace10 # Media
 
 # Disable titles on Chromium

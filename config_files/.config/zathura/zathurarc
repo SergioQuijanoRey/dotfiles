@@ -1,10 +1,12 @@
 
-# Open PDFs maximized (no space in the borders)
-set statusbar-h-padding 0
-set statusbar-v-padding 0
+# Use sorter file paths in the status bar
+set statusbar-home-tilde true
 
 # Spacing between pages
 set page-padding 5
+
+# When selecting text, don't display the notification which is annoying
+set selection-notification false
 
 # Mappings
 map i recolor
