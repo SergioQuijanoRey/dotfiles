@@ -161,20 +161,41 @@ mode "resize" {
 # Resize binding
 bindsym $mod+r mode "resize"
 
-# Color config
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
-#set $blue-color          #5DA8F4
-set $blue-color          #5DA8F4
-set $preview-color       $blue-color
+# Catppuccin colorscheme
+# See https://github.com/catppuccin/i3/
+set $rosewater #f2d5cf
+set $flamingo  #eebebe
+set $pink      #f4b8e4
+set $mauve     #ca9ee6
+set $red       #e78284
+set $maroon    #ea999c
+set $peach     #ef9f76
+set $green     #a6d189
+set $teal      #81c8be
+set $sky       #99d1db
+set $sapphire  #85c1dc
+set $blue      #8caaee
+set $lavender  #babbf1
+set $text      #c6d0f5
+set $subtext1  #b5bfe2
+set $subtext0  #a5adce
+set $overlay2  #949cbb
+set $overlay1  #838ba7
+set $overlay0  #737994
+set $surface2  #626880
+set $surface1  #51576d
+set $surface0  #414559
+set $base      #303446
+set $mantle    #292c3c
+set $crust     #232634
 
-client.focused          $bg-color           $blue-color         $text-color             $preview-color
-client.unfocused        $inactive-bg-color  $inactive-bg-color  $inactive-text-color    $preview-color
-client.focused_inactive $inactive-bg-color  $inactive-bg-color  $inactive-text-color    $preview-color
-client.urgent           $blue-color         $blue-color         $text-color             $preview-color
+# Color configuration for windows
+# target           title     bg    text   indicator  border
+client.focused     $pink     $base $text  $rosewater $sapphire
+client.unfocused   $base     $base $base  $base      $base
+client.urgent      $peach    $base $peach $overlay0  $peach
+client.placeholder $overlay0 $base $text  $overlay0  $overlay0
+client.background  $base
 
 # Pulse Audio controls
 # Using amixer because works nice when using bluetooth headphones
