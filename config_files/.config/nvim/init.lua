@@ -28,6 +28,7 @@ require("myconf/file_explorer")
 require("myconf/diagnostics_list")
 require("myconf/git")
 require("myconf/smooth_scrolling")
+require("myconf/visuals")
 
 --- Aux functions
 --- ======================================================================== ---
@@ -73,29 +74,10 @@ exec("set noswapfile")
 --- Use system clipboard instead of nvim registers
 vim.opt.clipboard = 'unnamedplus'
 
---- Visual Settings
+--- Others
 --- ======================================================================== ---
-vim.opt.number = true               -- Show numbers
-vim.opt.hlsearch = true             -- Higlights what we searched
-vim.opt.wrap = false                -- Don't wrap long lines
-vim.opt.listchars.extends=→         -- Show arrow if line continues rightwards
-vim.opt.colorcolumn={80}            -- Show column line
-vim.opt.guicursor = ""              -- Block cursor
-vim.optloaded_matchparen = 1        -- No matching parenthesis/brakets/... highlight
-vim.opt.termguicolors = true        -- Colorschemes dont work well without this
-vim.opt.background="dark"           -- Dark background, does nothing with gruvbox colorscheme
 
 -- Splitting where i want
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
--- Set the colorscheme
-local catppuccin = require("catppuccin")
-catppuccin.setup({
-    flavour = "frappe",
-    integrations = {
-        markdown = false,
-    }
-})
-
-vim.api.nvim_command "colorscheme catppuccin-frappe"

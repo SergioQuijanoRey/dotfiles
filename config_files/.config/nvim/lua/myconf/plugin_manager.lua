@@ -61,6 +61,19 @@ local package_conf = {
     -- Show indentation guidelines
     'lukas-reineke/indent-blankline.nvim',
 
+    -- Change commands and outputs with nice views
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        dependencies = {
+            "MunifTanjim/nui.nvim",
+
+            -- This is the plugin that adds the proper views
+            -- noice.nvim just adds better behavior on top of this plugin
+            "rcarriga/nvim-notify",
+        }
+    },
+
     -- Color schemes
     -- ===============================================================================
     'gruvbox-community/gruvbox',     -- Gruvbox Theme updated
