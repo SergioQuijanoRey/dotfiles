@@ -148,3 +148,18 @@ sync_type = "dir"
 repo_path = "./config_files/.config/kanata"
 system_path = ".config/kanata"
 sync_type = "dir"
+
+[Bat]
+repo_path = "./config_files/.config/bat"
+system_path = ".config/bat"
+sync_type = "dir"
+
+[Bottom]
+repo_path = "./config_files/.config/bottom"
+system_path = ".config/bottom"
+sync_type = "dir"
+
+[LazyGit]
+repo_path = "./config_files/.config/lazygit"
+system_path = ".config/lazygit"
+sync_type = "dir"
