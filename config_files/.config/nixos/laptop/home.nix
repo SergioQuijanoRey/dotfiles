@@ -1,9 +1,13 @@
-# Home manager onfiguration
-# This is imported from /etc/nixos/configuration.nix
-# So don't use home-manager switch
-# Instead, do regular nixos-rebuild switch
+# Imported from `flake.nix` so no need to do a Home Manager rebuild
+{
+    config, pkgs,
 
-{ config, pkgs, ... }:
+    # Github flakes imported from `flake.nix` using special args
+    zerospades,
+    nixgl,
+
+    ...
+}:
 
 with pkgs;
 let
@@ -159,7 +163,7 @@ in
 
     # Videogame packages
     [
-        pkgs.openspades
+        # pkgs.openspades
         pkgs.lutris
         pkgs.dolphin-emu
         pkgs.prismlauncher  # Minecraft launcher
@@ -213,9 +217,11 @@ in
         vit             # CLI Frontend for taskwarrior
     ] ++
 
-    # Flakes fetched from github
+    # Packages that are imported as github flakes
+    # These are inherited from `flake.nix` using special args
     [
-        nurl       # Fetch data for custom packages
+        nixgl       # Some videogames need this for working with hardware acceleration
+        zerospades  # Alternative client for openspades videogame
     ];
 
     # Fonts cannot be installed as normal packages

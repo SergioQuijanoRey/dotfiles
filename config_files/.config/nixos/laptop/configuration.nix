@@ -97,9 +97,6 @@ in
         pavucontrol
         blueman
         networkmanager
-
-        # Github flakes
-        nurl
     ];
 
     # Some programs need SUID wrappers, can be configured further or are

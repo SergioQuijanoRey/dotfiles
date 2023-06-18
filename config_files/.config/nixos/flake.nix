@@ -13,9 +13,14 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        # Flake that I install from github
-        nurl = {
-            url = "github:nix-community/nurl";
+        # Videogame that I want to install from Github Flake
+        zerospades_flake = {
+            url = "github:siecvi/zerospades";
+        };
+
+        # Some videogames need this package to run with hardware acceleration
+        nixgl_flake  = {
+            url = "github:guibou/nixGL";
         };
     };
 
@@ -23,33 +28,36 @@
         self, nixpkgs, home-manager,
 
         # Flakes that I added from github
-        nurl,
+        zerospades_flake,
+        nixgl_flake,
     }:
     let
         # Architecture of the system
         system = "x86_64-linux";
 
-        # Packages repo
-        pkgs = import nixpkgs {
-            inherit system;
-            config.allowUnfree = true;
-            overlays = [
-                nurl.overlay
-            ];
-        };
-
         # Sometimes we want to use lib functions
-        lib = pkgs.lib;
+        lib = nixpkgs.lib;
 
         # In all my machines I use the same username
         user = "sergio";
+
+        # Get the parts from the flakes that I want to keep
+        # Flakes usually ship more than one thing: packages (different versions
+        # for each system), overlays, ...
+        zerospades = zerospades_flake.packages.${system}.default;
+        nixgl = nixgl_flake;
+
+        # Pass this flakes to home-manager using special args
+        specialArgs = {
+            inherit zerospades nixgl;
+        };
 
     in {
         nixosConfigurations = {
 
             # Config for my laptop
-            asus-laptop = nixpkgs.lib.nixosSystem {
-                inherit system;
+            asus-laptop = lib.nixosSystem {
+                inherit system ;
                 modules = [
 
                     # Import the base NixOS configuration
@@ -62,6 +70,7 @@
                         # So we can use nixpkgs instead of home manager packages
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
+                        home-manager.extraSpecialArgs = specialArgs;
 
                         # Import the home manager configuration
                         home-manager.users.${user} = {
@@ -72,7 +81,7 @@
             };
 
             # Config for my home server
-            lenovo-server = nixpkgs.lib.nixosSystem {
+            lenovo-server = lib.nixosSystem {
                 inherit system;
                 modules = [
 

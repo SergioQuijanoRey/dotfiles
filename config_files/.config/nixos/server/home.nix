@@ -129,12 +129,8 @@ in
                 "CascadiaCode"
             ];
         })
-    ] ++
-
-    # Flakes fetched from github
-    [
-        nurl       # Fetch data for custom packages
     ];
+
 
     # Fonts cannot be installed as normal packages
     # We need to specify this to reload font cache
