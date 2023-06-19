@@ -4,7 +4,6 @@
 
     # Github flakes imported from `flake.nix` using special args
     zerospades,
-    nixgl,
 
     ...
 }:
@@ -112,6 +111,7 @@ in
         pkgs.patchelf                   # To work with mason.nvim
         timer                           # To have a TUI timer for my pomodoro sessions
         kanata-with-cmd                 # Remap keyboard
+        pkgs.neofetch                   # Display some system info in the terminal
 
         # Disk usage utilities
         # duf shows how hard drives are used
@@ -220,7 +220,6 @@ in
     # Packages that are imported as github flakes
     # These are inherited from `flake.nix` using special args
     [
-        nixgl       # Some videogames need this for working with hardware acceleration
         zerospades  # Alternative client for openspades videogame
     ];
 

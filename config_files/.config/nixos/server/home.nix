@@ -104,6 +104,7 @@ in
         pkgs.nodejs                     # Some nvim LSPs need this
         pkgs.playerctl                  # To have play pause
         pkgs.patchelf                   # To work with mason.nvim
+        pkgs.neofetch                   # Display some system info in the terminal
 
         # Disk usage utilities
         # duf shows how hard drives are used
