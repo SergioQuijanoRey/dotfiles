@@ -113,19 +113,19 @@ env:
 # Font configuration
 font:
   normal:
-    family: CaskaydiaCove NF Mono
+    family: CaskaydiaCove NF
     style: Regular
 
   bold:
-    family: CaskaydiaCove NF Mono
+    family: CaskaydiaCove NF
     style: Bold
 
   italic:
-    family: CaskaydiaCove NF Mono
+    family: CaskaydiaCove NF
     style: Italic
 
   bold_italic:
-    family: CaskaydiaCove NF Mono
+    family: CaskaydiaCove NF
     style: Bold Italic
 
   # Point size
