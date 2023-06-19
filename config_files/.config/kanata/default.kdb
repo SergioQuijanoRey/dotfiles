@@ -38,7 +38,7 @@ have the same number of keys as defsrc. Any keys not listed in defsrc will
 be passed straight to the operating system.
 |#
 (defsrc
-           r
+       q    r
   caps a              l
 )
 
@@ -50,7 +50,7 @@ be passed straight to the operating system.
 Define the mappings of the keys specified in `defsrc`
 |#
 (deflayer default
-           r
+        q   r
   @cap  a           @l
 )
 
@@ -67,7 +67,7 @@ Define the mappings of the keys specified in `defsrc`
 Layer that is triggered when holding 'l' key
 |#
 (deflayer l_layer
-           @lr
+           @lq  @lr
     @lcaps @la             l
 )
 
@@ -86,4 +86,10 @@ Remappings for the 'l' layer
     Maybe because some problem with US-International instead of Spanish layout
     |#
     la (tap-hold $ott $oth S-7 S-7)
+
+    #|
+    Same as before, Shift-8 is easier to specify than using special characters
+    for outputing "("
+    |#
+    lq (tap-hold $tt $ht S-8 S-9)
 )
