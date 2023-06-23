@@ -107,8 +107,12 @@
       unitConfig = {
           Type = "simple";
       };
+
+      # The package that we use is installed with this declaration
+      # So no need to install it in other place, such as `home.nix`
       serviceConfig = {
           ExecStart = "${pkgs.kanata-with-cmd}/bin/kanata -c /home/sergio/.config/kanata/default.kdb";
+          Restart = "always";
       };
       wantedBy = [ "multi-user.target" ];
   };
