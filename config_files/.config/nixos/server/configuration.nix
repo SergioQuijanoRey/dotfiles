@@ -99,6 +99,20 @@
   # I want neovim as the default editor
   environment.variables.EDITOR = "nvim";
 
+  # Systemd service to run kanata as a demon
+  # NixOS has a custom module for Kanata but this way is easier to use
+  systemd.services.customKanata = {
+      enable = true;
+      description = "Custom Kanata service, to run the remappings in the background";
+      unitConfig = {
+          Type = "simple";
+      };
+      serviceConfig = {
+          ExecStart = "${pkgs.kanata-with-cmd}/bin/kanata -c /home/sergio/.config/kanata/default.kdb";
+      };
+      wantedBy = [ "multi-user.target" ];
+  };
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];

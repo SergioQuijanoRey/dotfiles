@@ -202,19 +202,22 @@ in
     # I want neovim as the default editor
     environment.variables.EDITOR = "nvim";
 
-    # TODO -- disabled because it messes with all my shell.nix'es and makes my
-    # computer very slow when its cleaning
-    #
-    # Automatically garbage collection
-    # nix = {
-    #     settings.auto-optimise-store = true;
-    #     gc = {
-    #         automatic = true;
-    #         dates = "weekly";
-    #         options = "--delete-older-than 7d";
-    #     };
-    # };
+    # Systemd service to run kanata as a demon
+    # NixOS has a custom module for Kanata but this way is easier to use
+    systemd.services.customKanata = {
+        enable = true;
+        description = "Custom Kanata service, to run the remappings in the background";
+        unitConfig = {
+            Type = "simple";
+        };
 
+        # The package that we use is installed with this declaration
+        # So no need to install it in other place, such as `home.nix`
+        serviceConfig = {
+            ExecStart = "${pkgs.kanata-with-cmd}/bin/kanata -c /home/sergio/.config/kanata/default.kdb";
+        };
+        wantedBy = [ "multi-user.target" ];
+    };
 
     # Enable nix flakes in NixOS and home manager
     # nix = {
