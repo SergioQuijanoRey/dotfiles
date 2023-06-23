@@ -90,6 +90,7 @@ in
         pkgs.xclip                      # Sharing system and nvim clipboard
         pkgs.ntfs3g                     # Mounting hdd with ntfs file format
         pkgs.feh                        # For setting the wallpaper
+        pkgs.shotwell                   # Useful when viewing a lot of images
         pkgs.alsa-utils                 # Having volume control keys
         pkgs.alsa-lib                   # Having volume control keys
         pkgs.alsa-plugins               # Having volume control keys
