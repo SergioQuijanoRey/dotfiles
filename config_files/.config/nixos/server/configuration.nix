@@ -113,6 +113,7 @@
       serviceConfig = {
           ExecStart = "${pkgs.kanata-with-cmd}/bin/kanata -c /home/sergio/.config/kanata/default.kdb";
           Restart = "always";
+          RestartSec = 10;
       };
       wantedBy = [ "multi-user.target" ];
   };
