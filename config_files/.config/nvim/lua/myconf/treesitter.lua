@@ -17,8 +17,11 @@ require'nvim-treesitter.configs'.setup {
     -- Highlight feature
     highlight = {
         enable = true,
-        disable = {"markdown"}, -- list of languages not to use hightlighting
-                                -- Markdown hightlighting is not working properly
+
+        -- Markdown highlighting seems to be working well
+        -- disable = {"markdown"},
+        disable = {},
+
     },
 
     -- Indent feature
