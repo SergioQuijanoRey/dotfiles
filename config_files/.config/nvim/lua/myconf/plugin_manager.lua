@@ -207,7 +207,10 @@ local package_conf = {
     },
 
     -- UI for showing the LSP init progress
-    "j-hui/fidget.nvim",
+    {
+        "j-hui/fidget.nvim",
+        tag = "legacy",
+    },
 
     -- Latex to unicode for julia
     "JuliaEditorSupport/julia-vim",
