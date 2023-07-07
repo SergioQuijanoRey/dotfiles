@@ -15,9 +15,6 @@ vim.opt.background="dark"           -- Dark background, does nothing with gruvbo
 local catppuccin = require("catppuccin")
 catppuccin.setup({
     flavour = "frappe",
-    integrations = {
-        markdown = false,
-    }
 })
 vim.api.nvim_command "colorscheme catppuccin-frappe"
 
