@@ -7,6 +7,31 @@
 # is also set here.
 
 [flags]
+
+# Custom layout
+# I am not interested in disk and temperature monitoring
+[[row]]
+    ratio=70
+
+    [[row.child]]
+        ratio = 60
+        type="cpu"
+
+    [[row.child]]
+        ratio = 40
+        type="mem"
+[[row]]
+    ratio = 30
+
+    [[row.child]]
+        ratio = 70
+        type="proc"
+        default=true
+
+    [[row.child]]
+        ratio = 30
+        type="net"
+
 # Whether to hide the average cpu entry.
 #hide_avg_cpu = false
 # Whether to use dot markers rather than braille.
