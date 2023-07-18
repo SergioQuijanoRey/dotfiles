@@ -8,12 +8,18 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot = {
-      initrd.availableKernelModules = [ "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" "sr_mod" "rtsx_pci_sdmmc" ];
-      initrd.kernelModules = [ ];
-      kernelModules = [ "kvm-intel" ];
-      extraModulePackages = [ ];
-  };
+    boot = {
+        initrd.availableKernelModules = [ "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" "sr_mod" "rtsx_pci_sdmmc" ];
+        initrd.kernelModules = [ ];
+        kernelModules = [ "kvm-intel" ];
+
+        extraModulePackages = [
+            # This kernel package has the drivers needed to use the WIFI adaptor
+            # 'TP-Link Archer T3U AC1300'
+            # config.boot.kernelPackages.rtl8192eu
+            config.boot.kernelPackages.rtl88x2bu
+        ];
+    };
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/e5f0e0d6-e859-433d-acd8-857ca06f3cb2";
