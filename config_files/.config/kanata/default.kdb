@@ -10,7 +10,6 @@
     process-unmapped-keys yes
 )
 
-
 #|
 All key combos are going to have the same tap and hold timeout
 Two types of situations:
@@ -38,7 +37,7 @@ have the same number of keys as defsrc. Any keys not listed in defsrc will
 be passed straight to the operating system.
 |#
 (defsrc
-       q    r
+       q w  r         p
   caps a              l
 )
 
@@ -50,7 +49,7 @@ be passed straight to the operating system.
 Define the mappings of the keys specified in `defsrc`
 |#
 (deflayer default
-        q   r
+        q w r       p
   @cap  a           @l
 )
 
@@ -67,7 +66,7 @@ Define the mappings of the keys specified in `defsrc`
 Layer that is triggered when holding 'l' key
 |#
 (deflayer l_layer
-           @lq  @lr
+           @lq @lw @lr        p
     @lcaps @la             l
 )
 
@@ -91,5 +90,6 @@ Remappings for the 'l' layer
     Same as before, Shift-8 is easier to specify than using special characters
     for outputing "("
     |#
-    lq (tap-hold $tt $ht S-8 S-9)
+    lq (tap-hold $ott $oth S-8 S-8)
+    lw (tap-hold $ott $oth S-9 S-9)
 )
