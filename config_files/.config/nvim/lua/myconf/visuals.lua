@@ -17,32 +17,3 @@ catppuccin.setup({
     flavour = "frappe",
 })
 vim.api.nvim_command "colorscheme catppuccin-frappe"
-
--- Use noice to enhance NeoVIM UI
-require("noice").setup({
-    -- you can enable a preset for easier configuration
-    presets = {
-        command_palette = true, -- position the cmdline and popupmenu together
-        long_message_to_split = true, -- long messages will be sent to a split
-        lsp_doc_border = true, -- add a border to hover docs and signature help
-    },
-
-    -- Don't collide with our lsp configuration
-    lsp = {
-        signature = {
-            enabled = false
-        },
-    },
-
-    -- I like the new command line popup
-    -- But I want it in the lower-left corner
-    -- This also affects the search popup!, which I like
-    views = {
-        cmdline_popup = {
-            position = {
-                row = "100%",
-                col = "0%",
-            }
-        }
-    }
-})
