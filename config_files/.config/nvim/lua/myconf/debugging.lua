@@ -101,8 +101,7 @@ setmap("n", "<leader>dl", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.inp
 setmap("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>", {})
 setmap("n", "<leader>dt", ":lua require'dap-python'.test_method()<CR>", {})
 
--- Configuration for Python
--- require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
+-- == Configuration for Python ==
 
 -- We are using nixos so the path changes over time
 python_path = aux.runcommand("whereis python", false)
@@ -118,7 +117,8 @@ python_path = python_path_splitted[2]
 -- Getting that glob path dynamically
 require('dap-python').setup(python_path)
 
--- Configuration for C++ and rust
+
+-- == Configuration for C++ and Rust ==
 dap.adapters.lldb = {
   type = 'executable',
   command = '/usr/bin/lldb-vscode', -- adjust as needed, must be absolute path
