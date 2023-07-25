@@ -91,7 +91,7 @@ in
         pkgs.alsa-plugins               # Having volume control keys
         pkgs.mate.engrampa              # Working with compressed and zipped files
         pkgs.arc-theme                  # Preferred theme
-        pkgs.youtube-dl                 # Download music
+        pkgs.yt-dlp                     # Download music. Original `youtube-dl` is not working
         pkgs.rofi
         pkgs.rofimoji                   # Have a rofi emoji selector
         pkgs.nodePackages.npm           # Some programns need this to build
