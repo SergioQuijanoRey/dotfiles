@@ -38,7 +38,7 @@ be passed straight to the operating system.
 |#
 (defsrc
        q w  r         p
-  caps a              l
+  caps a    c v       l
 )
 
 
@@ -50,7 +50,7 @@ Define the mappings of the keys specified in `defsrc`
 |#
 (deflayer default
         q w r       p
-  @cap  a           @l
+  @cap  a   c v     @l
 )
 
 #| Remappings for the standard layer |#
@@ -67,7 +67,7 @@ Layer that is triggered when holding 'l' key
 |#
 (deflayer l_layer
            @lq @lw @lr        p
-    @lcaps @la             l
+    @lcaps @la     @lc @lv    l
 )
 
 #|
@@ -92,4 +92,7 @@ Remappings for the 'l' layer
     |#
     lq (tap-hold $ott $oth S-8 S-8)
     lw (tap-hold $ott $oth S-9 S-9)
+
+    lc (tap-hold $ott $oth C-c C-c)
+    lv (tap-hold $ott $oth C-v C-v)
 )
