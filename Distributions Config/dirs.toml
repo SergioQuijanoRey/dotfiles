@@ -159,4 +159,7 @@ repo_path = "./config_files/.config/bottom"
 system_path = ".config/bottom"
 sync_type = "dir"
 
+[Atuin]
+repo_path = "./config_files/.config/atuin"
+system_path = ".config/atuin"
 sync_type = "dir"
