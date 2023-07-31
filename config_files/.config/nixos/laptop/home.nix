@@ -112,6 +112,7 @@ in
         pkgs.patchelf                   # To work with mason.nvim
         timer                           # To have a TUI timer for my pomodoro sessions
         pkgs.neofetch                   # Display some system info in the terminal
+        pkgs.atuin                      # Better shell history
 
         # Disk usage utilities
         # duf shows how hard drives are used
@@ -269,6 +270,10 @@ in
             plugins = [
                 { name = "zsh-users/zsh-autosuggestions"; }
                 { name = "zsh-users/zsh-syntax-highlighting"; }
+
+                # This plugin is used to use `atuin` program, that changes
+                # the shell history search
+                { name = "atuinsh/atuin"; }
             ];
         };
 

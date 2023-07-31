@@ -50,6 +50,11 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 # Make dunst notifications work with my config
 export $(dbus-launch)
 
+# Make atuin work with zsh and zellij
+# zsh works well with the NixOS config but zellij cannot work without this line
+eval "$(atuin init zsh --disable-up-arrow)"
+
+
 
 # Env vars
 #===============================================================================
