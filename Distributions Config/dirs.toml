@@ -159,7 +159,4 @@ repo_path = "./config_files/.config/bottom"
 system_path = ".config/bottom"
 sync_type = "dir"
 
-[LazyGit]
-repo_path = "./config_files/.config/lazygit"
-system_path = ".config/lazygit"
 sync_type = "dir"
