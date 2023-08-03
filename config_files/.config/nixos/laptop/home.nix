@@ -233,9 +233,6 @@ in
         enable = true;
         extensions = [
 
-            # Notion web clipper
-            { id = "knheggckgoiihginacbkhaalnibhilkk"; }
-
             # Vimium
             { id = "dbepggeogbaibhgnhhndojpepiihcmeb"; }
 
@@ -256,6 +253,9 @@ in
 
             # Catppuccin theme
             { id = "olhelnoplefjdmncknfphenjclimckaf"; }
+
+            # Keepass integration for Chrome
+            { id = "oboonakemofpalcgghocfoadofidjkkk"; }
         ];
     };
 
