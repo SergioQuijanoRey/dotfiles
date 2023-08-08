@@ -239,6 +239,7 @@ exec syndaemon -i 0.3 -t -K -R
 default_border pixel 1
 default_floating_border pixel 1
 for_window [class="^.*"] border pixel 1
+smart_borders on
 
 # Apps on start
 exec autodisplay.sh       # Set the display configuration at startup
