@@ -7,6 +7,7 @@ require'nvim-treesitter.configs'.setup {
         "rust",
         "python",
         "bash",
+        "comment"
     },
 
     ignore_install = {}, -- List of parsers to ignore installing
