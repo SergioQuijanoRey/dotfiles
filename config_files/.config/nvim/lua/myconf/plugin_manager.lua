@@ -198,10 +198,6 @@ local package_conf = {
         "j-hui/fidget.nvim",
         tag = "legacy",
     },
-
-    -- Latex to unicode for julia
-    "JuliaEditorSupport/julia-vim",
-
 }
 
 --- Options for lazy.nvim
