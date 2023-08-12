@@ -38,13 +38,13 @@ ignore_branches = []
 [package]
 disabled = false
 format = "[$symbol $version]($style)"
-symbol = ""
+symbol = ""
 style = "bold cyan"
 
 [nix_shell]
 disabled = false
-impure_msg = '[ﰕ](bold blue)'
-pure_msg = '[ﰕ ﰕ](bold blue)'
+impure_msg = '[󰜗](bold blue)'
+pure_msg = '[󰜗 󰜗](bold blue)'
 format = '[\[$state\]](bold blue) '
 
 [palettes.catppuccin]
