@@ -17,6 +17,7 @@ alias glog="git log | nvim"
 alias glogone="git log --oneline | nvim"
 alias gw="git worktree"
 alias ggraph="git log --graph"
+alias ng="nvim -c 'Git | only'"
 
 # System config aliases
 alias confi3="nvim .i3/config"
