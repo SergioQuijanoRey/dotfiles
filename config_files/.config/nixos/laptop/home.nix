@@ -36,7 +36,7 @@ in
 
     # Dev packages
     [
-        pkgs.neovim-unwrapped   # Main editor
+        pkgs.neovim             # Main editor
         pkgs.tree-sitter        # Neovim relies heavily on treesitter
         pkgs.tmux               # Terminal multiplexer
         pkgs.zellij             # Good alternative for zellij
@@ -113,6 +113,7 @@ in
         timer                           # To have a TUI timer for my pomodoro sessions
         pkgs.neofetch                   # Display some system info in the terminal
         pkgs.atuin                      # Better shell history
+        pkgs.loc                        # Display lines of code
 
         # Disk usage utilities
         # duf shows how hard drives are used
@@ -151,10 +152,16 @@ in
         marksman
     ] ++
 
-    # WM components packages
+    # I3 components packages
     [
         # Using polybar instead of polybarFull makes some components fail
         polybarFull
+    ] ++
+
+    # Wayland packages
+    [
+        pkgs.waybar
+        pkgs.swaybg
     ] ++
 
     # Messaging
@@ -280,4 +287,5 @@ in
         # So we source ~/.zsh_dotfiles where the rest of the config is
         initExtra = "source ~/.zsh_dotfiles";
     };
+
 }

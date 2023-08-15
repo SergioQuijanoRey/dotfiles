@@ -22,6 +22,7 @@
         nixgl_flake  = {
             url = "github:guibou/nixGL";
         };
+
     };
 
     outputs = {

@@ -48,3 +48,6 @@ fi
 
 # The wallpaper is set using feh
 feh --bg-scale $wallpaper_folder/$image
+
+# Also using swaybg in case we are in hyprland
+swaybg --image $wallpaper_folder/$image

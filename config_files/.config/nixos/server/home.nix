@@ -33,7 +33,7 @@ in
 
     # Dev packages
     [
-        pkgs.neovim-unwrapped   # Main editor
+        pkgs.neovim             # Main editor
         pkgs.tree-sitter        # Neovim relies heavily on treesitter
         pkgs.tmux               # Terminal multiplexer
         pkgs.zellij             # Good alternative for zellij
@@ -106,6 +106,7 @@ in
         pkgs.patchelf                   # To work with mason.nvim
         pkgs.neofetch                   # Display some system info in the terminal
         pkgs.atuin                      # Better shell history
+        pkgs.loc                        # Display lines of code
 
         # Disk usage utilities
         # duf shows how hard drives are used

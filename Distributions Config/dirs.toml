@@ -163,3 +163,8 @@ sync_type = "dir"
 repo_path = "./config_files/.config/atuin"
 system_path = ".config/atuin"
 sync_type = "dir"
+
+[Hyprland]
+repo_path = "./config_files/.config/hypr"
+system_path = ".config/hypr"
+sync_type = "dir"

@@ -148,6 +148,9 @@ in
         };
     };
 
+    # Try out hyprland
+    programs.hyprland.enable = true;
+
     # Enable touchpad with natural scroll, disable while typing
     services.xserver.libinput = {
         enable = true;
