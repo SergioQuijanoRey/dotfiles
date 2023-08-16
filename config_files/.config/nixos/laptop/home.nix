@@ -185,8 +185,8 @@ in
         pkgs.dolphin-emu
         pkgs.prismlauncher  # Minecraft launcher
         pkgs.openjdk17      # OpenJDK, required by Prism Launcher
-
         pkgs.xorg.libxcb    # Without this package, steam fails to open
+        pkgs.moonlight-qt
 
         # Installing wine can enhance performance on other videogames
         # Mostly videogames installed through lutris
