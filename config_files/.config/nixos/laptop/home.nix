@@ -158,10 +158,19 @@ in
         polybarFull
     ] ++
 
-    # Wayland packages
+    # Hyprland packages
     [
-        pkgs.waybar
-        pkgs.swaybg
+        # We customize waybar, otherwise workspaces won't be displayed
+        (pkgs.waybar.overrideAttrs (oldAttrs: {
+            mesonFlags = oldAttrs.mesonFlags ++ ["-Dexperimental=true"];
+        }))
+
+        pkgs.swaybg         # feh replacement for wayland (set the background)
+        pkgs.wdisplays      # arandr replacement for wayland
+        pkgs.cliphist       # Clipboard manager
+        pkgs.wl-clipboard   # Needed for clipboards to work!
+        pkgs.pipewire       # For screen sharing
+        pkgs.wireplumber    # For screen sharing
     ] ++
 
     # Messaging

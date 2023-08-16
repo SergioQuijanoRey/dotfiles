@@ -1,0 +1,132 @@
+{
+    "layer": "top", // Waybar at top layer
+    "height": 10, // Waybar height (to be removed for auto height)
+    "spacing": 8, // Gaps between modules (4px)
+
+    // Choose the order of the modules
+    "modules-left": ["wlr/workspaces", "wlr/mode", "wlr/scratchpad", "custom/media"],
+    "modules-center": ["clock", "pulseaudio", "keyboard-state"],
+    "modules-right": ["network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "tray"],
+
+    // Modules configuration
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}: {icon}  ",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "󰒋",
+            "10": "",
+            "urgent": "",
+            "default": "",
+        },
+        "on-click": "activate",
+        "sort-by-number": true,
+    },
+
+    "keyboard-state": {
+        "numlock": false,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+
+    "wlr/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+
+    "wlr/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{:%H:%M :: %Y-%m-%d}",
+        "format-alt": "{%Y-%m-%d}"
+    },
+
+    "cpu": {
+        "format": "💪🏻 {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "🧠 {}%"
+    },
+
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "🌡️{temperatureC}°C",
+    },
+
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
+    "battery": {
+        "states": {
+            "charged": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "🔋 {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "📡  {essid} ({signalStrength}%)",
+        "format-ethernet": "🔌 {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": " {icon} {volume}% {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": "" ,
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": "" ,
+            "default": ["", "", ""]
+        },
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-righ": "pulseaudio",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+
+    },
+}

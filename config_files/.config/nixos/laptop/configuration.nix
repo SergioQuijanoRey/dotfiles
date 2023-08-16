@@ -147,15 +147,31 @@ in
             ];
         };
     };
-
-    # Try out hyprland
-    programs.hyprland.enable = true;
-
     # Enable touchpad with natural scroll, disable while typing
     services.xserver.libinput = {
         enable = true;
         touchpad.naturalScrolling = true;
         touchpad.disableWhileTyping = true;
+    };
+
+
+    # Try out hyprland
+    programs.hyprland = {
+        enable = true;
+        xwayland.enable = true;  # For running some X applications
+    };
+
+    # Some configs for wayland
+    environment.sessionVariables = {
+
+        # Avoid cursor becoming invisible
+        WLR_NO_HARDWARE_CURSOS = "1";
+
+        # Allow software graphics acceleration
+        WLR_RENDERER_ALLOW_SOFTWARE = "1";
+
+        # Tell electron apps to use wayland
+        NIXOS_OZONE_WL = "1";
     };
 
     # Some packages as i3blocks try to read from /usr/bin

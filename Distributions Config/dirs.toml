@@ -168,3 +168,8 @@ sync_type = "dir"
 repo_path = "./config_files/.config/hypr"
 system_path = ".config/hypr"
 sync_type = "dir"
+
+[Waybar]
+repo_path = "./config_files/.config/waybar"
+system_path = ".config/waybar"
+sync_type = "dir"
