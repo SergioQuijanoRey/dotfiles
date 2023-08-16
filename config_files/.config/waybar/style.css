@@ -72,7 +72,7 @@ button:hover {
 
 /* Mark the current workspace in other color! */
 #workspaces button.active {
-    background-color: alpha(@blue, 0.9);
+    background-color: alpha(@lavender, 0.7);
 }
 
 #workspaces button.urgent {
@@ -124,7 +124,8 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: @sky;
+    color: @pureblack;
 }
 
 #battery {
@@ -175,7 +176,8 @@ label:focus {
 }
 
 #disk {
-    background-color: #964B00;
+    background-color: @yellow;
+    color: @pureblack;
 }
 
 #backlight {
@@ -230,7 +232,7 @@ label:focus {
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    background-color: @red;
 }
 
 #tray {
@@ -302,4 +304,13 @@ label:focus {
 
 #scratchpad.empty {
 	background-color: transparent;
+}
+
+#custom-osicon {
+    background-color: @blue;
+}
+
+#submap {
+    background-color: @red;
+
 }

@@ -4,9 +4,9 @@
     "spacing": 8, // Gaps between modules (4px)
 
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces", "wlr/mode", "wlr/scratchpad", "custom/media"],
-    "modules-center": ["clock", "pulseaudio", "keyboard-state"],
-    "modules-right": ["network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "tray"],
+    "modules-left": ["custom/osicon", "wlr/workspaces", "wlr/scratchpad"],
+    "modules-center": ["clock", "pulseaudio", "keyboard-state", "hyprland/submap", "hyprland/window"],
+    "modules-right": ["network", "cpu", "memory", "disk", "temperature", "backlight", "battery", "tray"],
 
     // Modules configuration
     "wlr/workspaces": {
@@ -33,17 +33,13 @@
     },
 
     "keyboard-state": {
-        "numlock": false,
+        "numlock": true,
         "capslock": true,
         "format": "{name} {icon}",
         "format-icons": {
             "locked": "",
             "unlocked": ""
         }
-    },
-
-    "wlr/mode": {
-        "format": "<span style=\"italic\">{}</span>"
     },
 
     "wlr/scratchpad": {
@@ -54,14 +50,19 @@
         "tooltip-format": "{app}: {title}"
     },
 
+    "hyprland/submap": {
+        "format": "🎴 {} ",
+        "tooltip": false
+    },
+
     "tray": {
-        // "icon-size": 21,
-        "spacing": 10
+        "spacing": 10,
+        "show-passive-items": "true",
     },
 
     "clock": {
-        "format": "{:%H:%M :: %Y-%m-%d}",
-        "format-alt": "{%Y-%m-%d}"
+        "format": "{:%H:%M 🕐 :: 📅 %d/%m/%Y}",
+        "format-alt": "{%d/%m/%Y}"
     },
 
     "cpu": {
@@ -79,7 +80,7 @@
     },
 
     "backlight": {
-        // "device": "acpi_video1",
+        "device": "intel_backlight",
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
@@ -111,7 +112,7 @@
         "format": "{icon} {volume}% {format_source}",
         "format-bluetooth": " {icon} {volume}% {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-muted": " {volume}% {format_source}",
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
@@ -127,6 +128,22 @@
         "on-click-righ": "pulseaudio",
         "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    },
+
+    "disk": {
+        "interval": 30,
+        "format": "💾 {percentage_free}% | {free} free",
+        "path": "/"
+
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 20,
+    },
+
+    "custom/osicon": {
+        "format": "   ",
 
     },
 }
