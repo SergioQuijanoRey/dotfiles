@@ -46,7 +46,7 @@ button {
     box-shadow: inset 0 -3px transparent;
     /* Avoid rounded borders under each button name */
     border: none;
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -126,22 +126,26 @@ button:hover {
 #clock {
     background-color: @sky;
     color: @pureblack;
+    border-radius: 25px;
 }
 
 #battery {
     background-color: @green;
     color: @pureblack;
+    border-radius: 25px;
 }
 
 #battery.charged {
     background-color: @green;
     color: @pureblack;
+    border-radius: 25px;
 }
 
 
 #battery.charging, #battery.plugged {
     color: @pureblack;
     background-color: @teal;
+    border-radius: 25px;
 }
 
 @keyframes blink {
@@ -168,25 +172,30 @@ label:focus {
 #cpu {
     background-color: @peach;
     color: @pureblack;
+    border-radius: 25px;
 }
 
 #memory {
     background-color: @sky;
     color: @pureblack;
+    border-radius: 25px;
 }
 
 #disk {
     background-color: @yellow;
     color: @pureblack;
+    border-radius: 25px;
 }
 
 #backlight {
     background-color: #90b1b1;
+    border-radius: 25px;
 }
 
 #network {
     background-color: @lavender;
     color: @pureblack;
+    border-radius: 25px;
 }
 
 #network.disconnected {
@@ -196,20 +205,24 @@ label:focus {
 #pulseaudio {
     background-color: @blue;
     color: @pureblack;
+    border-radius: 25px;
 }
 
 #pulseaudio.muted {
     background-color: @red;
     color: @pureblack;
+    border-radius: 25px;
 }
 
 #wireplumber {
     background-color: #fff0f5;
     color: #000000;
+    border-radius: 25px;
 }
 
 #wireplumber.muted {
     background-color: #f53c3c;
+    border-radius: 25px;
 }
 
 #custom-media {
@@ -229,14 +242,17 @@ label:focus {
 #temperature {
     background-color: @flamingo;
     color: @pureblack;
+    border-radius: 25px;
 }
 
 #temperature.critical {
     background-color: @red;
+    border-radius: 25px;
 }
 
 #tray {
     background-color: #2980b9;
+    border-radius: 25px;
 }
 
 #tray > .passive {
@@ -280,6 +296,7 @@ label:focus {
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;
+    border-radius: 25px;
 }
 
 #keyboard-state {
@@ -288,6 +305,7 @@ label:focus {
     padding: 0 0px;
     margin: 0 5px;
     min-width: 16px;
+    border-radius: 25px;
 }
 
 #keyboard-state > label {
@@ -300,6 +318,7 @@ label:focus {
 
 #scratchpad {
     background: rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
 }
 
 #scratchpad.empty {
@@ -308,9 +327,11 @@ label:focus {
 
 #custom-osicon {
     background-color: @blue;
+    border-radius: 25px;
 }
 
 #submap {
     background-color: @red;
+    border-radius: 25px;
 
 }
