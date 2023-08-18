@@ -62,7 +62,6 @@
 
     "clock": {
         "format": "{:%H:%M 🕐 :: 📅 %d/%m/%Y}",
-        "format-alt": "{%d/%m/%Y}"
     },
 
     "cpu": {
@@ -110,9 +109,9 @@
 
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",
-        "format-bluetooth": " {icon} {volume}% {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {volume}% {format_source}",
+        "format-bluetooth": "{icon} {volume}% {format_source}",
+        "format-bluetooth-muted": "󰖁 {icon} {volume}% {format_source}",
+        "format-muted": "󰖁 {volume}% {format_source}",
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
