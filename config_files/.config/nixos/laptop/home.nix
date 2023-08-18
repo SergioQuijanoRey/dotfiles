@@ -171,6 +171,8 @@ in
         pkgs.wl-clipboard   # Needed for clipboards to work!
         pkgs.pipewire       # For screen sharing
         pkgs.wireplumber    # For screen sharing
+        pkgs.grim           # For taking screenshots
+        pkgs.slurp          # For taking screenshots
     ] ++
 
     # Messaging

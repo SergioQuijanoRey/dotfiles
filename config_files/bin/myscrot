@@ -11,5 +11,10 @@
 # The destination file
 dest_file="$HOME/Scrots/%d-%m-%Y::%H:%M:%S.png"
 
-# The command
-scrot -s "$dest_file"
+# Execute one command or the other depending on wether we are using Xorg or Wayland
+if [[ $XDG_SESSION_TYPE = "wayland" ]]
+then
+    grim -g "$(slurp)" "$dest_file"
+else
+    scrot -s "$dest_file"
+fi
