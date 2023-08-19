@@ -129,13 +129,13 @@ button:hover {
 }
 
 #battery {
-    background-color: @green;
+    background-color: @teal;
     color: @pureblack;
     border-radius: 25px;
 }
 
 #battery.charged {
-    background-color: @green;
+    background-color: @teal;
     color: @pureblack;
     border-radius: 25px;
 }
