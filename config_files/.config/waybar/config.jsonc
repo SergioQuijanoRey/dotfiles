@@ -143,6 +143,7 @@
 
     "custom/osicon": {
         "format": "   ",
-        "on-click": "~/.i3/scripts/shutdown_menu",
+        "on-click": "wezterm start neofetch",
+        "on-right-click": "~/.i3/scripts/shutdown_menu",
     },
 }
