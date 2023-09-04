@@ -39,6 +39,8 @@
         # Sometimes we want to use lib functions
         lib = nixpkgs.lib;
 
+        pkgs = nixpkgs.legacyPackages.${system};
+
         # In all my machines I use the same username
         user = "sergio";
 
@@ -51,6 +53,7 @@
         # Useful for flakes that does not expose an overlay
         specialArgs = {
             inherit zerospades;
+            shared_packages = import ./shared/dev_packages.nix pkgs;
         };
 
     in {
@@ -71,12 +74,15 @@
                         # So we can use nixpkgs instead of home manager packages
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
-                        home-manager.extraSpecialArgs = specialArgs;
 
                         # Import the home manager configuration
                         home-manager.users.${user} = {
                             imports = [ ./laptop/home.nix ];
                         };
+
+                        # We are using this for passing nix flakes from github
+                        # and also using the shared list of packages
+                        home-manager.extraSpecialArgs = specialArgs;
                     }
                 ];
             };
@@ -100,6 +106,10 @@
                         home-manager.users.${user} = {
                             imports = [ ./server/home.nix ];
                         };
+
+                        # We are using this for passing nix flakes from github
+                        # and also using the shared list of packages
+                        home-manager.extraSpecialArgs = specialArgs;
                     }
                 ];
             };
