@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
 
-# Author:
-#   - Sergio Quijano Rey
-#   - sergiquijano@gmail.com
-# Description:
-#   - Custom command to launch scrot
-# Version:
-#   - v0.1 - 29/12/2020 - First documented version
-
 # The destination file
-dest_file="$HOME/Scrots/%d-%m-%Y::%H:%M:%S.png"
+dest_file="$HOME/Scrots/$(date +'%d-%m-%Y::%H:%M:%S').png"
+echo "$dest_file"
 
 # Execute one command or the other depending on wether we are using Xorg or Wayland
 if [[ $XDG_SESSION_TYPE = "wayland" ]]
