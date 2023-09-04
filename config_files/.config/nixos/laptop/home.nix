@@ -50,6 +50,12 @@ with pkgs;
         pkgs.wireplumber    # For screen sharing
         pkgs.grim           # For taking screenshots
         pkgs.slurp          # For taking screenshots
+        pkgs.libsForQt5.qt5.qtwayland  # QT support for wayland
+        pkgs.qt6.qtwayland             # QT support for wayland
+
+        # Portals package
+        # This is needed for screen sharing, opening file pickers, ...
+        pkgs.xdg-desktop-portal-hyprland
     ] ++
 
     # Messaging
@@ -66,6 +72,7 @@ with pkgs;
         pkgs.openjdk17      # OpenJDK, required by Prism Launcher
         pkgs.xorg.libxcb    # Without this package, steam fails to open
         pkgs.moonlight-qt
+        pkgs.zeroadPackages.zeroad-unwrapped
 
         # Installing wine can enhance performance on other videogames
         # Mostly videogames installed through lutris
@@ -109,8 +116,8 @@ with pkgs;
 
     # Other packages
     [
-        taskwarrior     # For managing tasks through the terminal
-        vit             # CLI Frontend for taskwarrior
+        taskwarrior      # For managing tasks through the terminal
+        taskwarrior-tui  # CLI Frontend for taskwarrior
     ] ++
 
     # Packages that are imported as github flakes
@@ -152,6 +159,12 @@ with pkgs;
             # Keepass integration for Chrome
             { id = "oboonakemofpalcgghocfoadofidjkkk"; }
         ];
+
+        # Make sure that chromium works nice in hyprland
+        commandLineArgs = [
+            "--enable-features=UseOzonePlatform"
+            "--ozone-platform=wayland"
+        ];
     };
 
     # We can configure zsh using home manager
@@ -176,4 +189,35 @@ with pkgs;
         initExtra = "source ~/.zsh_dotfiles";
     };
 
+
+    # In hyprland lxappearence is not working, so this way we can configure
+    # the looking of our system
+    gtk = {
+        enable = true;
+
+        font = {
+            name = "JetBrainsMono Nerd Font Mono";
+            package = null;
+            size = 12;
+        };
+
+        iconTheme = {
+            name = "Papirus-Dark";
+            package = pkgs.papirus-icon-theme;
+        };
+
+        theme = {
+            name = "Catppuccin-Mocha-Standard-Mauve-Dark";
+            package = pkgs.catppuccin-gtk.override {
+                accents = [ "mauve" ];
+                variant = "mocha";
+            };
+        };
+
+        cursorTheme = {
+            name = "Bibata-Modern-Ice";
+            package = pkgs.bibata-cursors;
+            size = 16;
+        };
+    };
 }
