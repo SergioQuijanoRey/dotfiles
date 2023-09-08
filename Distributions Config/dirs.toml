@@ -173,3 +173,8 @@ sync_type = "dir"
 repo_path = "./config_files/.config/waybar"
 system_path = ".config/waybar"
 sync_type = "dir"
+
+[Nushell]
+repo_path = "./config_files/.config/nushell"
+system_path = ".config/nushell"
+sync_type = "dir"
