@@ -120,4 +120,9 @@ in
 
     # Markdown lsp
     pkgs.marksman
+] ++
+
+# Accessing android devices
+[
+    pkgs.jmtpfs
 ]
