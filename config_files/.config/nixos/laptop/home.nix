@@ -112,12 +112,13 @@ with pkgs;
         pkgs.obsidian       # Notes
         pkgs.thunderbird    # Email client
         pkgs.vlc            # Video client
+        pkgs.shotwell       # Useful when viewing a lot of images
     ] ++
 
     # Other packages
     [
         taskwarrior      # For managing tasks through the terminal
-        taskwarrior-tui  # CLI Frontend for taskwarrior
+        vit              # CLI Frontend for taskwarrior
     ] ++
 
     # Packages that are imported as github flakes
