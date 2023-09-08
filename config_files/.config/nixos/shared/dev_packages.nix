@@ -88,6 +88,7 @@ in
     pkgs.neofetch                   # Display some system info in the terminal
     pkgs.atuin                      # Better shell history
     pkgs.loc                        # Display lines of code
+    pkgs.nushell                    # Alternative to zsh and bash
 
     # Disk usage utilities
     # duf shows how hard drives are used

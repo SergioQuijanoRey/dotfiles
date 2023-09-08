@@ -76,7 +76,7 @@ in
         # "docker" is needed to interact with docker commands
         extraGroups = [ "networkmanager" "wheel" "audio" "docker"];
         packages = with pkgs; [];
-        shell = pkgs.zsh;
+        shell = pkgs.nushell;
     };
 
     # Allow unfree packages

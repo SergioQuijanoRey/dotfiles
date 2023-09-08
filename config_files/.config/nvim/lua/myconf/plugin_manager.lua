@@ -198,6 +198,17 @@ local package_conf = {
         "j-hui/fidget.nvim",
         tag = "legacy",
     },
+
+    -- Certain languages support
+    -- ===============================================================================
+    {
+        "LhKipp/nvim-nu",
+        config = function ()
+            require'nu'.setup{
+                use_lsp_features = false,
+            }
+        end
+    }
 }
 
 --- Options for lazy.nvim
