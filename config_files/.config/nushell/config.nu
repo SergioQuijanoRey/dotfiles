@@ -772,3 +772,6 @@ source ~/.config/nushell/setup_integrations.nu
 
 # My aliases
 source ~/.config/nushell/aliases.nu
+
+# My functions
+source ~/.config/nushell/functions.nu
