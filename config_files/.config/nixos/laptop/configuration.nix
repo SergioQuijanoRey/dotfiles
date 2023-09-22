@@ -74,7 +74,8 @@ in
 
         # "audio" group is needed to work with pulse audio
         # "docker" is needed to interact with docker commands
-        extraGroups = [ "networkmanager" "wheel" "audio" "docker"];
+        # "input" is needed for having caps marker in the bar
+        extraGroups = [ "networkmanager" "wheel" "audio" "docker" "input"];
         packages = with pkgs; [];
         shell = pkgs.nushell;
     };
@@ -161,29 +162,22 @@ in
         xwayland.enable = true;  # For running some X applications
     };
 
-    # Some configs for wayland
-    environment.sessionVariables = {
-
-        # Avoid cursor becoming invisible
-        WLR_NO_HARDWARE_CURSOS = "1";
-
-        # Allow software graphics acceleration
-        WLR_RENDERER_ALLOW_SOFTWARE = "1";
-
-        # Tell electron apps to use wayland
-        NIXOS_OZONE_WL = "1";
-    };
-
     # Some packages as i3blocks try to read from /usr/bin
     # This way we avoid problems with that
     environment.pathsToLink = [ "/share" "/bin" "/libexec" "/usr/bin"];
 
-    # Enable audio using Pulse
-    hardware.pulseaudio.enable = true;
-    hardware.pulseaudio.support32Bit = true;
+    # Enable audio using pipewire instead of pulseaudoo
+    security.rtkit.enable = true;
+    services.pipewire = {
+        enable = true;
+        alsa.enable = true;
+        alsa.support32Bit = true;
+        pulse.enable = true;
+    };
 
-    # Enable audio using ALSA, for media keys in i3
-    sound.enable = true;
+    # Pulseaudio does not work with pipewire
+    sound.enable = false;
+    hardware.pulseaudio.enable = false;
 
     # Enable bluetooth
     hardware.bluetooth.enable = true;
@@ -213,9 +207,19 @@ in
 
     # I want to install some packages using flatpack
     services.flatpak.enable = true;
-    xdg.portal = { # Desktop integration
-        extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-        enable = true;
+
+    # XDG Portals
+    xdg = {
+        autostart.enable = true;
+        portal = {
+            # wlr.enable = true;
+            enable = true;
+            extraPortals = [
+                pkgs.xdg-desktop-portal
+                pkgs.xdg-desktop-portal-gtk
+                pkgs.xdg-desktop-portal-hyprland
+            ];
+        };
     };
 
     # I want neovim as the default editor
@@ -238,6 +242,31 @@ in
             RestartSec = 10;
         };
         wantedBy = [ "multi-user.target" ];
+    };
+
+    # For better wayland behaviour
+    environment.sessionVariables = {
+        # Copied from https://www.reddit.com/r/NixOS/comments/137j18j/need_guide_on_installing_hyprland/
+        XDG_SESSION_TYPE = "wayland";
+        WLR_NO_HARDWARE_CURSORS = "1";
+        MOZ_ENABLE_WAYLAND = "1";
+        SDL_VIDEODRIVER = "wayland";
+        _JAVA_AWT_WM_NONREPARENTING = "1";
+        CLUTTER_BACKEND = "wayland";
+        WLR_RENDERER = "vulkan";
+        XDG_CURRENT_DESKTOP = "Hyprland";
+        XDG_SESSION_DESKTOP = "Hyprland";
+        GTK_USE_PORTAL = "1";
+        NIXOS_XDG_OPEN_USE_PORTAL = "1";
+
+        # Avoid cursor becoming invisible
+        WLR_NO_HARDWARE_CURSOS = "1";
+
+        # Allow software graphics acceleration
+        WLR_RENDERER_ALLOW_SOFTWARE = "1";
+
+        # Tell electron apps to use wayland
+        NIXOS_OZONE_WL = "1";
     };
 
     # Enable nix flakes in NixOS and home manager
