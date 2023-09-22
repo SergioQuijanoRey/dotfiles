@@ -25,9 +25,6 @@ mason_registry:on("package:install:success", function(pkg)
         for _, rel_path in pairs(receipt.links.bin) do
             local bin_abs_path = pkg:get_install_path() .. "/" .. rel_path
 
-            print("TODO -- bin_abs_path is " .. bin_abs_path)
-            print("TODO -- interpreter is " .. interpreter)
-
             -- Set the interpreter on the binary
             local result = os.execute(
                 'patchelf --set-interpreter ' .. interpreter .. " " .. bin_abs_path

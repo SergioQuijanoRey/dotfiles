@@ -275,6 +275,25 @@ ls.add_snippets("tex", {
         {delimiters = "<>"}
     )),
 
+    -- Use my custom command for writing references
+    s("ref", fmt("\\customref{<>}",
+        {i(1)},
+        {delimiters = "<>"}
+    )),
+
+
+    -- Use my custom command for writing vectors
+    s("vec", fmt("\\nv{<>}",
+        {i(1)},
+        {delimiters = "<>"}
+    )),
+
+    -- Inline code
+    s("inline", fmt("\\lstinline{<>}",
+        {i(1)},
+        {delimiters = "<>"}
+    )),
+
     -- Create a figure
     s("image", fmt(
 [[
@@ -328,9 +347,33 @@ ls.add_snippets("tex", {
 \caption{<>}
 \end{table}
 ]],
-        {i(1, "|l|l|l|l"), i(2, "Title1 & Title2 & Title3 & Title 4 "), i(3, "data1 & data2 & data3 & data4"), i(4)},
+        {i(1, "|l|l|l|l|"), i(2, "Title1 & Title2 & Title3 & Title 4 "), i(3, "data1 & data2 & data3 & data4"), i(4)},
         {delimiters = "<>"}
     )),
+
+    -- I use a lot multiple figures in one
+    s("doblefigura", fmt(
+[[
+\begin{figure}
+\centering
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{<>}
+        \caption{<>}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{<>}
+        \caption{<>}
+    \end{subfigure}
+\caption{<>}
+\end{figure}
+]],
+        {i(1), i(2), i(3), i(4), i(5)},
+        {delimiters = "<>"}
+    )),
+
+
 }, {
     key = "tex",
 })
