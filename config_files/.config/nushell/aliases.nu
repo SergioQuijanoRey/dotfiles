@@ -9,3 +9,7 @@ alias filesize = du
 
 alias ll = exa -l
 alias lla = exa -la
+
+alias uncommit = git reset --soft HEAD~1
+
+alias py = python3

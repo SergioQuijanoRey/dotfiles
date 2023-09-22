@@ -14,7 +14,7 @@ $env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
 $env.PROMPT_INDICATOR = {|| "" }
 $env.PROMPT_INDICATOR_VI_INSERT = {|| "vi: " }
 $env.PROMPT_INDICATOR_VI_NORMAL = {|| "vi " }
-$env.PROMPT_MULTILINE_INDICATOR = {|| ":::" }
+$env.PROMPT_MULTILINE_INDICATOR = {|| "> " }
 
 # Specifies how environment variables are:
 # - converted from a string to a value on Nushell startup (from_string)
