@@ -9,11 +9,15 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, JetBrainsMono Nerd Font;
     font-size: 12px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 window#waybar {
-    background-color: alpha(@base, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    /* Full transparent background  */
+    background-color: alpha(@base, 0.0);
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    border-bottom: 0px alpha(@base, 0.0);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -56,8 +60,10 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
-    background-color: transparent;
-    color: @purewhite;
+    /* background-color: transparent; */
+    background-color: alpha(@lavender, 0.2);
+    color: @pureblack;
+    margin-left: 5;
 }
 
 #workspaces button:hover {
@@ -71,7 +77,7 @@ button:hover {
 
 /* Mark the current workspace in other color! */
 #workspaces button.active {
-    background-color: alpha(@lavender, 0.7);
+    background-color: alpha(@lavender, 1.0);
 }
 
 #workspaces button.urgent {
@@ -79,7 +85,7 @@ button:hover {
 }
 
 #workspaces button.current_output.visible {
-    background: @red;
+    background: alpha(@red, 0.8);
 }
 
 #mode {
@@ -110,6 +116,7 @@ button:hover {
 #window,
 #workspaces {
     margin: 0 4px;
+    background-color: alpha(@blue, 0.0);
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -250,7 +257,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: @blue;
     border-radius: 25px;
 }
 
