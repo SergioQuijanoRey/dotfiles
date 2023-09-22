@@ -48,11 +48,12 @@
         # Flakes usually ship more than one thing: packages (different versions
         # for each system), overlays, ...
         zerospades = zerospades_flake.packages.${system}.default;
+        nixgl = nixgl_flake.packages.${system}.default;
 
         # Pass this flakes to home-manager using special args
         # Useful for flakes that does not expose an overlay
         specialArgs = {
-            inherit zerospades;
+            inherit zerospades nixgl;
             shared_packages = import ./shared/dev_packages.nix pkgs;
         };
 

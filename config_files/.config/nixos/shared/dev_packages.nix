@@ -25,7 +25,6 @@ in
     pkgs.lldb               # For debugging rust and c++ with nvim-dap
     pkgs.fzf                # Searching and piping in the terminal
     pkgs.rclone             # For syncing with google drive
-    pkgs.rustup             # Rust ecosystem installer
     pkgs.git                # VCS
     pkgs.lazygit            # TUI client for git
     pkgs.acpi               # Check for battery status
@@ -55,6 +54,7 @@ in
     pkgs.firefox                    # Secondary web browser
     pkgs.sshfs                      # To code on servers with local editors
     pkgs.docker                     # Container technology
+    pkgs.docker-compose             # Really simple docker orchestration
     pkgs.arandr                     # To control multiple displays
     pkgs.lxappearance               # Set the system theme
     pkgs.networkmanagerapplet       # Applet to connect to wifi
@@ -65,9 +65,6 @@ in
     pkgs.ntfs3g                     # Mounting hdd with ntfs file format
     pkgs.feh                        # For setting the wallpaper
     pkgs.shotwell                   # Useful when viewing a lot of images
-    pkgs.alsa-utils                 # Having volume control keys
-    pkgs.alsa-lib                   # Having volume control keys
-    pkgs.alsa-plugins               # Having volume control keys
     pkgs.mate.engrampa              # Working with compressed and zipped files
     pkgs.arc-theme                  # Preferred theme
     pkgs.yt-dlp                     # Download music. Original `youtube-dl` is not working
@@ -99,6 +96,9 @@ in
 
 # Programming languages and their LSPs
 [
+    # To work with rust projects
+    pkgs.cargo
+
     # Python with some packages installed
     custom_python_enviroment
 
