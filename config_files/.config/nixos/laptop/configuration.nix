@@ -1,6 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
 let
   # My username
   user = "sergio";
@@ -27,11 +24,6 @@ in
     boot.supportedFilesystems = [ "ntfs" ];
 
     networking.hostName = "asus-laptop";  # Define your hostname.
-    # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-    # Configure network proxy if necessary
-    # networking.proxy.default = "http://user:password@proxy:port/";
-    # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
     # Enable networking
     networking.networkmanager.enable = true;
@@ -84,7 +76,6 @@ in
     nixpkgs.config.allowUnfree = true;
 
     # List packages installed in system profile. To search, run:
-    # $ nix search wget
     environment.systemPackages = with pkgs; [
         # Really basic packages
         tmux
@@ -99,25 +90,6 @@ in
         blueman
         networkmanager
     ];
-
-    # Some programs need SUID wrappers, can be configured further or are
-    # started in user sessions.
-    # programs.mtr.enable = true;
-    # programs.gnupg.agent = {
-    #   enable = true;
-    #   enableSSHSupport = true;
-    # };
-
-    # List services that you want to enable:
-
-    # Enable the OpenSSH daemon.
-    # services.openssh.enable = true;
-
-    # Open ports in the firewall.
-    # networking.firewall.allowedTCPPorts = [ ... ];
-    # networking.firewall.allowedUDPPorts = [ ... ];
-    # Or disable the firewall altogether.
-    # networking.firewall.enable = false;
 
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions
@@ -175,10 +147,6 @@ in
         pulse.enable = true;
     };
 
-    # Pulseaudio does not work with pipewire
-    sound.enable = false;
-    hardware.pulseaudio.enable = false;
-
     # Enable bluetooth
     hardware.bluetooth.enable = true;
     services.blueman.enable = true;
@@ -208,20 +176,6 @@ in
     # I want to install some packages using flatpack
     services.flatpak.enable = true;
 
-    # XDG Portals
-    xdg = {
-        autostart.enable = true;
-        portal = {
-            # wlr.enable = true;
-            enable = true;
-            extraPortals = [
-                pkgs.xdg-desktop-portal
-                pkgs.xdg-desktop-portal-gtk
-                pkgs.xdg-desktop-portal-hyprland
-            ];
-        };
-    };
-
     # I want neovim as the default editor
     environment.variables.EDITOR = "nvim";
 
@@ -246,18 +200,6 @@ in
 
     # For better wayland behaviour
     environment.sessionVariables = {
-        # Copied from https://www.reddit.com/r/NixOS/comments/137j18j/need_guide_on_installing_hyprland/
-        XDG_SESSION_TYPE = "wayland";
-        WLR_NO_HARDWARE_CURSORS = "1";
-        MOZ_ENABLE_WAYLAND = "1";
-        SDL_VIDEODRIVER = "wayland";
-        _JAVA_AWT_WM_NONREPARENTING = "1";
-        CLUTTER_BACKEND = "wayland";
-        WLR_RENDERER = "vulkan";
-        XDG_CURRENT_DESKTOP = "Hyprland";
-        XDG_SESSION_DESKTOP = "Hyprland";
-        GTK_USE_PORTAL = "1";
-        NIXOS_XDG_OPEN_USE_PORTAL = "1";
 
         # Avoid cursor becoming invisible
         WLR_NO_HARDWARE_CURSOS = "1";

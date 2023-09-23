@@ -46,7 +46,6 @@ with pkgs;
         pkgs.wdisplays      # arandr replacement for wayland
         pkgs.cliphist       # Clipboard manager
         pkgs.wl-clipboard   # Needed for clipboards to work!
-        pkgs.pipewire       # For screen sharing
         pkgs.wireplumber    # For screen sharing
         pkgs.grim           # For taking screenshots
         pkgs.slurp          # For taking screenshots
@@ -56,10 +55,6 @@ with pkgs;
         # We want to have access to pactl, which is provided by pulseaudio
         # But we don't want to enable the service, so just install the package
         pkgs.pulseaudio
-
-        # Portals package
-        # This is needed for screen sharing, opening file pickers, ...
-        pkgs.xdg-desktop-portal-hyprland
     ] ++
 
     # Messaging
