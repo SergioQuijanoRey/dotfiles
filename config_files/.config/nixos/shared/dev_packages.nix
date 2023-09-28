@@ -37,6 +37,7 @@ in
 [
     pkgs.zoxide                     # Better cd command
     pkgs.ranger                     # CLI file manager
+    pkgs.yazi                       # Ranger alternative
     pkgs.w3m                        # For displaying images in ranger
     pkgs.wget                       # A lot of tools rely on this package
     pkgs.starship                   # To configure terminal prompt
