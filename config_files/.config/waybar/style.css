@@ -63,7 +63,7 @@ button:hover {
     /* background-color: transparent; */
     background-color: alpha(@lavender, 0.2);
     color: @pureblack;
-    margin-left: 5;
+    margin-left: 5px;
 }
 
 #workspaces button:hover {
