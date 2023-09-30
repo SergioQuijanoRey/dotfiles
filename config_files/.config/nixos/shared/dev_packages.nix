@@ -45,7 +45,7 @@ in
     pkgs.bottom                     # A better top alternative - like gotop but using rust
     pkgs.bat                        # Better cat alternative
     # pkgs.rar                        # To extract winrar files
-    pkgs.exa                        # Good replacement for ls and tree (exa -T)
+    pkgs.eza                        # Good replacement for ls and tree (exa -T)
     pkgs.fd                         # Good replacement for find
     pkgs.ncdu                       # To explore directories that take too much space
     pkgs.dunst                      # Notifications
