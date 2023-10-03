@@ -14,7 +14,6 @@ vim.g.mapleader = ","
 require("myconf/plugin_manager")
 require("myconf/treesitter")
 require("myconf/telescope")
-require("myconf/mason") -- has to be configured before lspconfig
 require("myconf/lsp")
 require("myconf/linter")
 require("myconf/snippets")

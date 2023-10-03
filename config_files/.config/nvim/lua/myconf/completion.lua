@@ -74,21 +74,19 @@ cmp.setup({
     sources = cmp.config.sources({
         { name = 'nvim_lsp', keyword_length = min_keyword_length },
         { name = 'luasnip', keyword_length = min_keyword_length }, -- For luasnip users.
-    }, {
-        { name = 'buffer', keyword_length = min_keyword_length, option = {
-            keyword_pattern = [[\k\+]]
-        }  },
-    }
-
-
-
+    }, {{
+            name = 'buffer', keyword_length = min_keyword_length, option = {
+                keyword_pattern = [[\k\+]]
+            }
+        }}
     )
 })
 
 -- Set configuration for specific filetype.
 cmp.setup.filetype('gitcommit', {
     sources = cmp.config.sources({
-        { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
+        -- TODO -- previously was 'cmp_git'
+        { name = 'git' }, -- You can specify the `cmp_git` source if you were installed it.
     }, {
         { name = 'buffer' },
     })

@@ -107,18 +107,6 @@ local package_conf = {
     -- Treesitter for just files
     "IndianBoy42/tree-sitter-just",
 
-
-    -- Manages installation of LSPs, linters, DAPs...
-    {
-        "williamboman/mason.nvim",
-
-        dependencies = {
-            -- Adapter to use both mason and lspconfig
-            "williamboman/mason-lspconfig.nvim",
-            "neovim/nvim-lspconfig",
-        }
-    },
-
     -- Builtin lsp
     {
         -- Main plugin
