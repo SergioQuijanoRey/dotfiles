@@ -8,6 +8,9 @@ keybinds {
     // But now we are using "Ctrl m"
     unbind "Ctrl o"
 
+    // Many times I quit zellij without wanting it
+    unbind "Ctrl q"
+
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
@@ -169,7 +172,9 @@ keybinds {
     }
     shared_except "locked" {
         bind "Ctrl g" { SwitchToMode "Locked"; }
-        bind "Ctrl q" { Quit; }
+        // NOTE: Usually I quit zellij without wanting it
+        // bind "Ctrl q" { Quit; }
+        unbind "Ctrl q"
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
         bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
