@@ -71,8 +71,11 @@ vim.keymap.set("i", "{", "{<c-g>u", {noremap=true})
 vim.keymap.set("i", "}", "}<c-g>u", {noremap=true})
 
 -- Git integration
-setmap("n", "<leader>g", ":Git<CR>", {}, "Open git in horizontal")
-setmap("n", "<leader>G", ":vertical Git<CR>", {}, "Open git in vertical")
+setmap_group_name("<leader>g", "Git")
+setmap("n", "<leader>gg", ":Git<CR>", {}, "Open git status in horizontal")
+setmap("n", "<leader>gG", ":vertical Git<CR>", {}, "Open git status in vertical")
+setmap("n", "<leader>gl", ":Git log<CR>", {}, "Git log")
+setmap('n', '<leader>gi', ":Gitsign toggle_signs<CR>", {}, "Toggle git signs")
 
 -- Change NVIM Working Directory
 -- Usefull when using fzf to open a file and instantly change NVIM working dir
@@ -85,10 +88,6 @@ setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", {noremap=true}, "Sour
 setmap_group_name("<leader>a", "Easy align")
 setmap("n", "<leader>a", "<Plug>(EasyAlign)", {})
 setmap("x", "<leader>a", "<Plug>(EasyAlign)", {})
-
--- keymap for enabling or disabling gitsigns
--- Sometimes It can clutter the UI
-setmap('n', '<leader>ig', ":Gitsign toggle_signs<CR>", {}, "Toggle git signs")
 
 --- Telescope remaps
 --- ======================================================================== ---

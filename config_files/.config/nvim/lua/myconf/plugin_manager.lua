@@ -54,6 +54,7 @@ local package_conf = {
     'windwp/nvim-autopairs',             -- Autopairs certain chars as " or [
     'preservim/nerdcommenter',           -- Commenting code
     'junegunn/vim-easy-align',           -- Align plugin
+    'mbbill/undotree',                    -- Undo tree
 
     -- Visual
     -- =========================================================================

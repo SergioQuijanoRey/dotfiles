@@ -29,6 +29,7 @@ require("myconf/git")
 require("myconf/smooth_scrolling")
 require("myconf/visuals")
 require("myconf/whichkey")
+require("myconf/undotree")
 
 --- Aux functions
 --- ======================================================================== ---

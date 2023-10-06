@@ -38,9 +38,11 @@
   "telescope.nvim": { "branch": "master", "commit": "8c69f58427f98b2ca39a90a36db830c06e30351c" },
   "tree-sitter-just": { "branch": "main", "commit": "4e5f5f3ff37b12a1bbf664eb3966b3019e924594" },
   "trouble.nvim": { "branch": "main", "commit": "3f85d8ed30e97ceeddbbcf80224245d347053711" },
+  "undotree": { "branch": "master", "commit": "0e11ba7325efbbb3f3bebe06213afa3e7ec75131" },
   "vim-easy-align": { "branch": "master", "commit": "12dd6316974f71ce333e360c0260b4e1f81169c3" },
   "vim-fugitive": { "branch": "master", "commit": "99db68d9b3304580bd383da7aaee05c7a954a344" },
   "vim-github-colorscheme": { "branch": "master", "commit": "0a660059cae852c7f90951dea7474cfb1485558e" },
   "vim-paper": { "branch": "master", "commit": "93e06e7066b3e0f609e5cfc75d0589f0599e9fad" },
-  "vim-slime": { "branch": "main", "commit": "3c523dd9d12f96703d07fa35e75d1afe45eecd96" }
+  "vim-slime": { "branch": "main", "commit": "3c523dd9d12f96703d07fa35e75d1afe45eecd96" },
+  "which-key.nvim": { "branch": "main", "commit": "7ccf476ebe0445a741b64e36c78a682c1c6118b7" }
 }
