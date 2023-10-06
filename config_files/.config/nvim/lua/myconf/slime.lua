@@ -1,6 +1,7 @@
 -- Config for the slime plugin
 
 local setmap = require("myconf/aux").setmap
+local setmap_group_name = require("myconf/aux").setmap_group_name
 local nvim_exec = require("myconf/aux").exec
 
 -- Set tmux as the target
@@ -13,6 +14,7 @@ vim.g.slime_paste_file = HOME .. "/.zellij_slime"
 
 -- Disable default mappings and set custom ones
 vim.g.slime_no_mappings = 1
+setmap_group_name("<leader>s", "Slime send comamnds")
 setmap("v", "<leader>s", ":SlimeSend<CR>", {})
 setmap("n", "<leader>s", ":SlimeSend<CR>", {})
 

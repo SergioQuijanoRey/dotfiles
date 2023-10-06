@@ -6,6 +6,7 @@ local nvim_lsp = require('lspconfig')
 
 -- Use our custom function to set keymaps
 local setmap = require("myconf/aux").setmap
+local setmap_group_name = require("myconf/aux").setmap_group_name
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -17,13 +18,14 @@ local on_attach = function(client, bufnr)
     local bufopts = { noremap=true, silent=true, buffer=bufnr }
 
     -- Keymappings
-    setmap('n', '<leader>qr', vim.lsp.buf.rename, bufopts)
-    setmap('n', '<leader>qd', vim.lsp.buf.definition, bufopts)
-    setmap('n', '<leader>qi', vim.lsp.buf.implementation, bufopts)
-    setmap('n', '<leader>qa', vim.lsp.buf.code_action, bufopts)
-    setmap('n', '<leader>ql', vim.lsp.buf.references, bufopts)
-    setmap('n', '<leader>qs', vim.lsp.buf.signature_help, bufopts)
-    setmap('n', '<leader>qh', vim.lsp.buf.hover, bufopts)
+    setmap_group_name('<leader>q', 'LSP commands')
+    setmap('n', '<leader>qr', vim.lsp.buf.rename, bufopts, 'Rename')
+    setmap('n', '<leader>qd', vim.lsp.buf.definition, bufopts, 'Go to definition')
+    setmap('n', '<leader>qi', vim.lsp.buf.implementation, bufopts, 'Go to implementation')
+    setmap('n', '<leader>qa', vim.lsp.buf.code_action, bufopts, 'Code action')
+    setmap('n', '<leader>ql', vim.lsp.buf.references, bufopts, 'List references')
+    setmap('n', '<leader>qs', vim.lsp.buf.signature_help, bufopts, 'Signature help')
+    setmap('n', '<leader>qh', vim.lsp.buf.hover, bufopts, 'Hover (docs)')
 
     -- All keymaps are:
     -- local opts = { noremap=true, silent=true }
@@ -52,8 +54,8 @@ local on_attach = function(client, bufnr)
     -- Options for keymaps that work globally
     local opts = { noremap=true, silent=true }
 
-    setmap('n', '<leader>qe', vim.diagnostic.open_float, opts)
-    setmap('n', '<leader>qc', vim.diagnostic.setloclist, opts)
+    setmap('n', '<leader>qe', vim.diagnostic.open_float, opts, 'Open float')
+    setmap('n', '<leader>qc', vim.diagnostic.setloclist, opts, 'Set location list')
 
     -- Signature hint plugin
     require'lsp_signature'.on_attach({

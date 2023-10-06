@@ -38,6 +38,17 @@ local package_conf = {
         }
     },
 
+
+    -- Register and display keybindings
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        init = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end,
+    },
+
     -- Editor
     -- =========================================================================
     'windwp/nvim-autopairs',             -- Autopairs certain chars as " or [

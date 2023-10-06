@@ -91,15 +91,17 @@ require("nvim-dap-virtual-text").setup()
 
 -- Keymaps
 local setmap = require("myconf/aux").setmap
-setmap("n", "<leader>dc", ":lua require'dap'.continue()<CR>", {})
-setmap("n", "<leader>do", ":lua require'dap'.step_over()<CR>", {})
-setmap("n", "<leader>di", ":lua require'dap'.step_into()<CR>", {})
-setmap("n", "<leader>dx", ":lua require'dap'.step_out()<CR>", {})
-setmap("n", "<leader>db", ":lua require'dap'.toggle_breakpoint()<CR>", {})
-setmap("n", "<leader>dB", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", {})
-setmap("n", "<leader>dl", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", {})
-setmap("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>", {})
-setmap("n", "<leader>dt", ":lua require'dap-python'.test_method()<CR>", {})
+local setmap_group_name = require("myconf/aux").setmap_group_name
+setmap_group_name("<leader>d", "Debugging")
+setmap("n", "<leader>dc", ":lua require'dap'.continue()<CR>", {}, "Continue")
+setmap("n", "<leader>do", ":lua require'dap'.step_over()<CR>", {}, "Step over")
+setmap("n", "<leader>di", ":lua require'dap'.step_into()<CR>", {}, "Step into")
+setmap("n", "<leader>dx", ":lua require'dap'.step_out()<CR>", {}, "Step out")
+setmap("n", "<leader>db", ":lua require'dap'.toggle_breakpoint()<CR>", {}, "Toggle Breakpoint")
+setmap("n", "<leader>dB", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", {}, "Set breakpoint with condition")
+setmap("n", "<leader>dl", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", {}, "Set breakpoint with log message")
+setmap("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>", {}, "Open the REPL")
+setmap("n", "<leader>dt", ":lua require'dap-python'.test_method()<CR>", {}, "Test method for python")
 
 -- == Configuration for Python ==
 

@@ -28,6 +28,7 @@ require("myconf/diagnostics_list")
 require("myconf/git")
 require("myconf/smooth_scrolling")
 require("myconf/visuals")
+require("myconf/whichkey")
 
 --- Aux functions
 --- ======================================================================== ---
