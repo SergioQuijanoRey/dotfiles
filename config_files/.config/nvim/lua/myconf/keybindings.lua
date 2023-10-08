@@ -70,10 +70,10 @@ vim.keymap.set("i", ")", ")<c-g>u", {noremap=true})
 vim.keymap.set("i", "{", "{<c-g>u", {noremap=true})
 vim.keymap.set("i", "}", "}<c-g>u", {noremap=true})
 
--- Git integration
+-- Git integrations
 setmap_group_name("<leader>g", "Git")
-setmap("n", "<leader>gg", ":Git<CR>", {}, "Open git status in horizontal")
-setmap("n", "<leader>gG", ":vertical Git<CR>", {}, "Open git status in vertical")
+setmap("n", "<leader>gg", ":vertical Git<CR>", {}, "Open git status in vertical split")
+setmap("n", "<leader>gG", ":Git | only<CR>", {}, "Open git status in single buffer")
 setmap("n", "<leader>gl", ":Git log<CR>", {}, "Git log")
 setmap('n', '<leader>gi', ":Gitsign toggle_signs<CR>", {}, "Toggle git signs")
 
