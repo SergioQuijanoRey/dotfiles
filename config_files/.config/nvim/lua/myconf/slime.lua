@@ -15,8 +15,8 @@ vim.g.slime_paste_file = HOME .. "/.zellij_slime"
 -- Disable default mappings and set custom ones
 vim.g.slime_no_mappings = 1
 setmap_group_name("<leader>s", "Slime send comamnds")
-setmap("v", "<leader>s", ":SlimeSend<CR>", {})
-setmap("n", "<leader>s", ":SlimeSend<CR>", {})
+setmap("v", "<leader>s", ":SlimeSend<CR>", {}, "Send slime command")
+setmap("n", "<leader>s", ":SlimeSend<CR>", {}, "Send slime command")
 
 -- With zellij we cannot automatically choose some pane (its really buggy)
 -- But we can fill the prompt with the most probable config that we will want

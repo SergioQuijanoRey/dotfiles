@@ -27,11 +27,17 @@ end
 --- Example: `setmap("n", "<Tab>", ":echo hello", {noremap = True}, 'Just print hello world')`
 function M.setmap(mode, keymap, command, opts, description)
 
+    -- NOTE -- whichkey does not work well in visual mode
+    --      -- see https://github.com/folke/which-key.nvim/issues/458
+    --      -- So in this case register this command also with stdlib map
+    if mode == "v" then
+        M.stdlib_map(mode, keymap, command, opts, description)
+        return
+    end
+
     -- Sanitize input
     description = description or ""
-
     if opts == nil then
-	print('opts was nil, so giving default value')
     	opts = {}
     end
 
@@ -52,6 +58,13 @@ function M.setmap_group_name(keymap, groupname)
     wk.register({
         [keymap] = {name = groupname}
     })
+end
+
+--- VIM way of setting maps. This is used for cases where whichkey cannot set
+--- properly some maps in `M.setmap`
+--- NOTE: `description` is not used, so don't hesitate to put proper values there
+function M.stdlib_map(mode, keymap, command, opts, description)
+    vim.api.nvim_set_keymap(mode, keymap, command, opts)
 end
 
 
