@@ -55,6 +55,10 @@ with pkgs;
         # We want to have access to pactl, which is provided by pulseaudio
         # But we don't want to enable the service, so just install the package
         pkgs.pulseaudio
+
+        # Controlling screen brightness
+        pkgs.brightnessctl
+        pkgs.gammastep
     ] ++
 
     # Messaging

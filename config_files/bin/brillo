@@ -1,0 +1,17 @@
+#!/usr/bin/env nu
+
+# To kill previous gammastep process
+def kill_prev [ ] {
+    let name = "gammastep"
+    ps | where name =~ $name | get pid | each -k {|pid| kill -9 $pid}
+}
+
+# Set new value for the brightness using gammastep
+def "brillo set" [value: float] {
+    kill_prev
+    gammastep -l 40.416775:-3.703790 -m wayland -b $"($value):($value)"
+}
+
+def main [value: float] {
+    brillo set $value
+}
