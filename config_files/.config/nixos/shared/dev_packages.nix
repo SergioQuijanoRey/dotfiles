@@ -89,6 +89,7 @@ in
     pkgs.atuin                      # Better shell history
     pkgs.loc                        # Display lines of code
     pkgs.nushell                    # Alternative to zsh and bash
+    pkgs.sd                         # Friendly alternative to sed
 
     # Disk usage utilities
     # duf shows how hard drives are used
@@ -101,6 +102,9 @@ in
 [
     # To work with rust projects
     pkgs.cargo
+
+    # To work with OCaml
+    pkgs.opam
 
     # Python with some packages installed
     custom_python_enviroment
