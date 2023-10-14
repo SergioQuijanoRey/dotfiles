@@ -3,8 +3,10 @@
 
 let
     # Specify custom Python enviroment
-    custom_python_packages = python-packages: with python-packages; [
-        numpy
+    # `pp` is the passed python packages object
+    custom_python_packages = pp: [
+        pp.numpy
+        pp.pytest
     ];
     custom_python_enviroment = pkgs.python310.withPackages custom_python_packages;
 
