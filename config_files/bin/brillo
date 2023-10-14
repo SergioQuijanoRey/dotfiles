@@ -1,5 +1,8 @@
 #!/usr/bin/env nu
 
+let normal_temperature = 6500
+let lat_long = "40.416775:-3.703790"
+
 # To kill previous gammastep process
 def kill_prev [ ] {
     let name = "gammastep"
@@ -7,11 +10,13 @@ def kill_prev [ ] {
 }
 
 # Set new value for the brightness using gammastep
-def "brillo set" [value: float] {
+# Also set new color temperature value
+def "brillo set" [bright_perc: float, color_perc] {
     kill_prev
-    gammastep -l 40.416775:-3.703790 -m wayland -b $"($value):($value)"
+    let new_tmp = $color_perc * $normal_temperature
+    gammastep -l $lat_long -m wayland -b $"($bright_perc):($bright_perc)" -t $"($new_tmp):($new_tmp)"
 }
 
-def main [value: float] {
-    brillo set $value
+def main [bright_perc: float, color_perc: float] {
+    brillo set $bright_perc $color_perc
 }
