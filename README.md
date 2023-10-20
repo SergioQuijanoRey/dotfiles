@@ -5,6 +5,7 @@
 
 # Description
 
+> [Note!]
 > This description was last revised in October 20th 2023, so it might be inaccurate
 
 - **OS**: `NixOS`
