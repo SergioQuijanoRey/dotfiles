@@ -104,11 +104,6 @@ repo_path = "./config_files/.config/systemd"
 system_path = ".config/systemd"
 sync_type = "dir"
 
-[awesome]
-repo_path = "./config_files/.config/awesome"
-system_path = ".config/awesome"
-sync_type = "dir"
-
 [rofi]
 repo_path = "./config_files/.config/rofi"
 system_path = ".config/rofi"
