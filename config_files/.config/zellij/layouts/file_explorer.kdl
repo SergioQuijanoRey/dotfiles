@@ -18,9 +18,9 @@ layout {
         children
     }
 
-    tab name="yazi" {
+    tab name="ranger" {
         pane {
-            command "yazi"
+            command "ranger"
         }
     }
 }

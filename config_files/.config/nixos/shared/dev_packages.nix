@@ -39,13 +39,13 @@ in
 [
     pkgs.zoxide                     # Better cd command
     pkgs.ranger                     # CLI file manager
-    pkgs.yazi                       # Ranger alternative
     pkgs.w3m                        # For displaying images in ranger
     pkgs.wget                       # A lot of tools rely on this package
     pkgs.starship                   # To configure terminal prompt
     pkgs.htop                       # Monitoring tool
     pkgs.bottom                     # A better top alternative - like gotop but using rust
     pkgs.bat                        # Better cat alternative
+    # TODO -- remove or bring it back
     # pkgs.rar                        # To extract winrar files
     pkgs.eza                        # Good replacement for ls and tree (exa -T)
     pkgs.fd                         # Good replacement for find
