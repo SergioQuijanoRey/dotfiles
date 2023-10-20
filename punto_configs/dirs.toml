@@ -173,8 +173,3 @@ sync_type = "dir"
 repo_path = "./config_files/.config/nushell"
 system_path = ".config/nushell"
 sync_type = "dir"
-
-[Yazi]
-repo_path = "./config_files/.config/yazi"
-system_path = ".config/yazi"
-sync_type = "dir"
