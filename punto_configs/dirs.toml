@@ -99,11 +99,6 @@ repo_path = "./config_files/.config/dunst"
 system_path = ".config/dunst"
 sync_type = "dir"
 
-[systemd]
-repo_path = "./config_files/.config/systemd"
-system_path = ".config/systemd"
-sync_type = "dir"
-
 [rofi]
 repo_path = "./config_files/.config/rofi"
 system_path = ".config/rofi"
