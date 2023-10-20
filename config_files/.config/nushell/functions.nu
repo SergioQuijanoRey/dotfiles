@@ -31,3 +31,9 @@ def try-notify [command: string, exitmsg: string, failuremsg: string] {
         notify-send -u critical $failuremsg
     }
 }
+
+# Kills all processes that match with `ps_name`
+def killall [ps_name: string] {
+    findps $ps_name | get pid | each -k {|id| kill -9 $id}
+
+}
