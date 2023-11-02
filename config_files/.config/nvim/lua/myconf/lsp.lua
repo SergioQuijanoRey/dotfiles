@@ -138,3 +138,6 @@ end
 
 -- Show the LSP setup progress with a nice UI
 require"fidget".setup{}
+
+-- Setup mason for installing things
+require("mason").setup()

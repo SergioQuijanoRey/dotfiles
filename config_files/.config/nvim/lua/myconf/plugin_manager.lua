@@ -199,6 +199,9 @@ local package_conf = {
         tag = "legacy",
     },
 
+    -- Install LSPs, linters, debuggers, ... really easily
+    "williamboman/mason.nvim",
+
     -- Certain languages support
     -- ===============================================================================
     {
