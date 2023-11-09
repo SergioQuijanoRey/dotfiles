@@ -87,7 +87,7 @@ setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", {noremap=true}, "Sour
 -- Maps for easy align
 setmap_group_name("<leader>a", "Easy align")
 setmap("n", "<leader>a", "<Plug>(EasyAlign)", {})
-setmap("x", "<leader>a", "<Plug>(EasyAlign)", {})
+setmap("v", "<leader>a", "<Plug>(EasyAlign)", {})
 
 --- Telescope remaps
 --- ======================================================================== ---
