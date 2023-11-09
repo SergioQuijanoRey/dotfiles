@@ -113,6 +113,9 @@ local servers = {
     -- Includes jedi, so no need to use that lsp when using pylsp
     "pylsp",
 
+    -- For writing some Ocaml
+    "ocamllsp",
+
 }
 
 -- Iterate over all installed servers and apply the config to them
