@@ -1,11 +1,11 @@
--- Configure nvim-cmp plugin
+-- Configure completion plugin
 -- Bultin LSP has no autocompletion so it delegates to nvim-cmp
-
+--
 -- Capabilites for lps are set in lsp configuration
 -- This way is easier to pass nvim-cmp
 
--- Setup nvim-cmp.
 local cmp = require'cmp'
+local lspkind = require('lspkind')
 
 -- Integration with luasnip
 local luasnip = require("luasnip")
@@ -35,6 +35,11 @@ cmp.setup({
     window = {
         completion = cmp.config.window.bordered(),
         documentation = cmp.config.window.bordered(),
+    },
+
+    -- Add icons to the completion source indicator (like VSCode)
+    formatting = {
+        format = lspkind.cmp_format(),
     },
 
     mapping = cmp.mapping.preset.insert({
