@@ -14,7 +14,11 @@ def kill_prev [ ] {
 def "brillo set" [bright_perc: float, color_perc] {
     kill_prev
     let new_tmp = $color_perc * $normal_temperature
-    gammastep -l $lat_long -m wayland -b $"($bright_perc):($bright_perc)" -t $"($new_tmp):($new_tmp)"
+    try {
+        gammastep -l $lat_long -m wayland -b $"($bright_perc):($bright_perc)" -t $"($new_tmp):($new_tmp)"
+    } catch {
+        notify-send -u critical "Failed to set new brightness and color temp"
+    }
 }
 
 def main [bright_perc: float, color_perc: float] {
