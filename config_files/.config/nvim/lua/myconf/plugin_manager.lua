@@ -56,6 +56,13 @@ local package_conf = {
     'junegunn/vim-easy-align',           -- Align plugin
     'mbbill/undotree',                    -- Undo tree
 
+    -- For editing the file system from nvim itself
+    {
+        'stevearc/oil.nvim',
+        opts = {},
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
+
     -- Visual
     -- =========================================================================
 
