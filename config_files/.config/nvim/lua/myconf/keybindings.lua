@@ -31,8 +31,10 @@ setmap("n", "<leader>K", ":vsp<CR>:terminal<CR>A", {}, "Open vertical terminal")
 setmap("n", "<leader>f", ":Goyo 95%x100%<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>:lua require('lualine').hide()<CR>", {}, "Set Zen mode")
 setmap("n", "<leader><S-f>", ":Goyo<CR>:set nowrap<CR>:set number<CR>:lua require('lualine').hide({unhide = true})<CR>:Catppuccin frappe<CR>", {}, "Unset Zen mode")
 
--- Open Nerd tree
-setmap("n", "<leader>o", ":NvimTreeToggle<CR>", {}, "Nvim tree")
+-- File tree manipulation
+setmap_group_name("<leader>o", "File tree management")
+setmap("n", "<leader>oo", ":NvimTreeToggle<CR>", {}, "Nvim tree")
+setmap("n", "<leader>oO", ":Oil<CR>", {}, "Nvim tree")
 
 -- For exiting the terminal mode
 setmap("t", "<leader><Esc>", "<C-\\><C-n>>", {noremap = true}, "Needed for exiting terminal mode")
