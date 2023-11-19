@@ -120,7 +120,7 @@ local package_conf = {
     {
         "nvim-treesitter/nvim-treesitter",
         branch = "master",
-        cmd = 'TSUpdate',
+        build = ":TSUpdate",
     },
 
     -- Treesitter for just files
