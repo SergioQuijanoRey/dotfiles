@@ -41,7 +41,8 @@
 
     "cpu": {
         "format": "💪🏻 {usage}%",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "wezterm start btm"
     },
 
     "memory": {
@@ -79,7 +80,8 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click-right": "wezterm start nmtui",
     },
 
     "pulseaudio": {
@@ -99,7 +101,7 @@
             "default": ["", "", ""]
         },
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "on-click-righ": "pulseaudio",
+        "on-click-right": "pulseaudio",
         "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
     },
@@ -107,7 +109,7 @@
     "disk": {
         "interval": 30,
         "format": "💾 {percentage_free}% | {free} free",
-        "path": "/"
+        "path": "/",
 
     },
 
@@ -119,6 +121,6 @@
     "custom/osicon": {
         "format": "   ",
         "on-click": "wezterm start neofetch",
-        "on-right-click": "~/.i3/scripts/shutdown_menu",
+        "on-click-right": "~/.i3/scripts/shutdown_menu",
     },
 }
