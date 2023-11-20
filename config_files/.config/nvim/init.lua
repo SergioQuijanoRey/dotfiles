@@ -30,6 +30,7 @@ require("myconf/smooth_scrolling")
 require("myconf/visuals")
 require("myconf/whichkey")
 require("myconf/undotree")
+require("myconf/autoformatter")
 
 --- Aux functions
 --- ======================================================================== ---

@@ -6,7 +6,7 @@ require('lint').linters_by_ft = {
     -- Also, configured that way, they consume a lot of resources
     python = {
         "ruff",
-        "mypy",
+        "mypy"
     },
 }
 

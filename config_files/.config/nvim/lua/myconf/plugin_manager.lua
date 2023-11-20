@@ -139,10 +139,17 @@ local package_conf = {
         }
     },
 
-    -- Linter snippet
+    -- Linter plugin
     -- Useful when the language server does not have linting
     -- Or when a separate linter is more useful (i.e. python with ruff)
     'mfussenegger/nvim-lint',
+
+
+    -- Autoformater
+    -- With the lsp we can do manual formats, but sometimes we want to
+    -- autoformat our code
+    -- Also, sometimes we want autoformating without lsp (i.e. isort in python)
+    'stevearc/conform.nvim',
 
     -- Completion engine
     -- Note that nivm-lsp does not have a completion engine by default
