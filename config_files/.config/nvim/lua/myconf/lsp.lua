@@ -26,6 +26,7 @@ local on_attach = function(client, bufnr)
     setmap('n', '<leader>ql', vim.lsp.buf.references, bufopts, 'List references')
     setmap('n', '<leader>qs', vim.lsp.buf.signature_help, bufopts, 'Signature help')
     setmap('n', '<leader>qh', vim.lsp.buf.hover, bufopts, 'Hover (docs)')
+    setmap('n', '<leader>qf', function() vim.lsp.buf.format { async = true } end, bufopts, 'Manual Format')
 
     -- All keymaps are:
     -- local opts = { noremap=true, silent=true }
@@ -49,7 +50,6 @@ local on_attach = function(client, bufnr)
     -- vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
     -- vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
     -- vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-    -- vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 
     -- Options for keymaps that work globally
     local opts = { noremap=true, silent=true }
@@ -101,16 +101,6 @@ local servers = {
     -- For nix
     "rnix",
 
-    -- TODO -- could not manage to install this package in NixOS
-    -- For python
-    -- Really fast because its written in Rust
-    -- Replaces some functionality of pylsp
-    -- "ruff_lsp",
-
-    -- For python
-    -- Enables a lot of plugins, like flake8, mypy, import sorting, rope, that have to be installed manually:
-    --      https://github.com/williamboman/nvim-lsp-installer/blob/main/lua/nvim-lsp-installer/servers/pylsp/README.md
-    -- Includes jedi, so no need to use that lsp when using pylsp
     "pylsp",
 
     -- For writing some Ocaml
@@ -134,9 +124,10 @@ for _, server in ipairs(servers) do
             flags = {
                 debounce_text_changes = 150,
             },
-
         },
     }
+
+
 end
 
 -- Show the LSP setup progress with a nice UI
