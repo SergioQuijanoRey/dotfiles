@@ -3,7 +3,7 @@
 
 # Inserts a blank line between shell prompts
 add_newline = false
-format = """$nix_shell$username at $hostname in$directory $git_branch $package\n$character"""
+format = """$nix_shell$username at $hostname in$directory $git_branch $package $python\n$character"""
 
 # Use catppuccin inspired colorscheme
 palette = "catppuccin"
@@ -62,3 +62,9 @@ mauve = "#ca9ee6"
 pink = "#f4b8e4"
 flamingo = "#eebebe"
 rosewater = "#f2d5cf"
+
+[python]
+disabled = false
+symbol = '🐍 '
+pyenv_version_name = true
+python_binary = "python3"
