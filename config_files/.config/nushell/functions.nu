@@ -7,7 +7,7 @@ def sizels [path: string = "."] {
     }
     | sort-by -r realsize
     | reject size
-    | rename -c [realsize size]
+    | rename --column {realsize: size}
 }
 
 # Search for a given process
@@ -35,7 +35,6 @@ def try-notify [command: string, exitmsg: string, failuremsg: string] {
 # Kills all processes that match with `ps_name`
 def killall [ps_name: string] {
     findps $ps_name | get pid | each -k {|id| kill -9 $id}
-
 }
 
 # Open up my notes repo from everywhere
