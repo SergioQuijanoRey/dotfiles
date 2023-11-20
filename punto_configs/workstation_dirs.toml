@@ -1,0 +1,30 @@
+repo_base = "/home/sergio/GitRepos/dotfiles/"
+system_base = "/home/sergio/"
+
+[nvim-config]
+repo_path = "./config_files/.config/nvim"
+system_path = ".config/nvim"
+sync_type = "dir"
+ignore_paths = [
+    "spell"
+]
+
+[zellij-config]
+repo_path = "./config_files/.config/zellij"
+system_path = ".config/zellij"
+sync_type = "dir"
+
+[starship-config]
+repo_path = "./config_files/.config/starship"
+system_path = ".config/starship"
+sync_type = "dir"
+
+[Atuin]
+repo_path = "./config_files/.config/atuin"
+system_path = ".config/atuin"
+sync_type = "dir"
+
+[Nushell]
+repo_path = "./config_files/.config/nushell"
+system_path = ".config/nushell"
+sync_type = "dir"
