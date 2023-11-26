@@ -116,6 +116,7 @@ with pkgs;
         pkgs.thunderbird    # Email client
         pkgs.vlc            # Video client
         pkgs.shotwell       # Useful when viewing a lot of images
+        pkgs.krita          # For some kick drawings
     ] ++
 
     # Other packages
