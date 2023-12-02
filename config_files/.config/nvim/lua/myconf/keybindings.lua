@@ -16,8 +16,8 @@ setmap("n", "<C-j>", "3j", {}, "Go three down")
 setmap("n", "<C-k>", "3k", {}, "Go three up")
 
 -- Whole block identation
-setmap("v", "<", "<gv", {noremap = true}, "Ident block left")
-setmap("v", ">", ">gv", {noremap = true}, "Ident block right")
+setmap("v", "<", "<gv", { noremap = true }, "Ident block left")
+setmap("v", ">", ">gv", { noremap = true }, "Ident block right")
 
 -- Spell checking
 setmap("n", "<F5>", ":setlocal spell! spelllang=es<CR>", {}, "Spanish spell check")
@@ -28,8 +28,12 @@ setmap("n", "<leader>k", ":sp<CR>:terminal<CR>A", {}, "Open horizontal terminal"
 setmap("n", "<leader>K", ":vsp<CR>:terminal<CR>A", {}, "Open vertical terminal")
 
 -- Focus mode for writting
-setmap("n", "<leader>f", ":Goyo 95%x100%<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>:lua require('lualine').hide()<CR>", {}, "Set Zen mode")
-setmap("n", "<leader><S-f>", ":Goyo<CR>:set nowrap<CR>:set number<CR>:lua require('lualine').hide({unhide = true})<CR>:Catppuccin frappe<CR>", {}, "Unset Zen mode")
+setmap("n", "<leader>f",
+    ":Goyo 95%x100%<CR>:set wrap<CR>:set linebreak<CR>:set breakindent<CR>:lua require('lualine').hide()<CR>", {},
+    "Set Zen mode")
+setmap("n", "<leader><S-f>",
+    ":Goyo<CR>:set nowrap<CR>:set number<CR>:lua require('lualine').hide({unhide = true})<CR>:Catppuccin frappe<CR>", {},
+    "Unset Zen mode")
 
 -- File tree manipulation
 setmap_group_name("<leader>o", "File tree management")
@@ -37,7 +41,7 @@ setmap("n", "<leader>oo", ":NvimTreeToggle<CR>", {}, "Nvim tree")
 setmap("n", "<leader>oO", ":Oil<CR>", {}, "Nvim tree")
 
 -- For exiting the terminal mode
-setmap("t", "<leader><Esc>", "<C-\\><C-n>>", {noremap = true}, "Needed for exiting terminal mode")
+setmap("t", "<leader><Esc>", "<C-\\><C-n>>", { noremap = true }, "Needed for exiting terminal mode")
 
 -- For avoid shifting
 setmap("n", "<S-Up>", "<C-Up>", {})
@@ -60,17 +64,17 @@ setmap("n", "<leader>t9", "9gt", {}, "Go to tab 9")
 -- Undo break points
 -- When writting a line, instead of undoing the whole line, just undo to the latest savepoint
 -- NOTE -- for some reason, they need the normal vim API, they fail when using our API
-vim.keymap.set("i", ",", ",<c-g>u", {noremap=true})
-vim.keymap.set("i", ".", ".<c-g>u", {noremap=true})
-vim.keymap.set("i", "!", "!<c-g>u", {noremap=true})
-vim.keymap.set("i", "?", "?<c-g>u", {noremap=true})
-vim.keymap.set("i", ":", ":<c-g>u", {noremap=true})
-vim.keymap.set("i", "[", "[<c-g>u", {noremap=true})
-vim.keymap.set("i", "]", "]<c-g>u", {noremap=true})
-vim.keymap.set("i", "(", "(<c-g>u", {noremap=true})
-vim.keymap.set("i", ")", ")<c-g>u", {noremap=true})
-vim.keymap.set("i", "{", "{<c-g>u", {noremap=true})
-vim.keymap.set("i", "}", "}<c-g>u", {noremap=true})
+vim.keymap.set("i", ",", ",<c-g>u", { noremap = true })
+vim.keymap.set("i", ".", ".<c-g>u", { noremap = true })
+vim.keymap.set("i", "!", "!<c-g>u", { noremap = true })
+vim.keymap.set("i", "?", "?<c-g>u", { noremap = true })
+vim.keymap.set("i", ":", ":<c-g>u", { noremap = true })
+vim.keymap.set("i", "[", "[<c-g>u", { noremap = true })
+vim.keymap.set("i", "]", "]<c-g>u", { noremap = true })
+vim.keymap.set("i", "(", "(<c-g>u", { noremap = true })
+vim.keymap.set("i", ")", ")<c-g>u", { noremap = true })
+vim.keymap.set("i", "{", "{<c-g>u", { noremap = true })
+vim.keymap.set("i", "}", "}<c-g>u", { noremap = true })
 
 -- Git integrations
 setmap_group_name("<leader>g", "Git")
@@ -84,7 +88,7 @@ setmap('n', '<leader>gi', ":Gitsign toggle_signs<CR>", {}, "Toggle git signs")
 setmap("n", "<leader>cd", ":lua require('myconf/custom_funcs').cd_file_path()<CR>", {}, "Change nvim dir to cwd")
 
 -- Source the configuration
-setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", {noremap=true}, "Source the configuration")
+setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", { noremap = true }, "Source the configuration")
 
 -- Maps for easy align
 setmap_group_name("<leader>a", "Easy align")
@@ -94,10 +98,10 @@ setmap("v", "<leader>a", "<Plug>(EasyAlign)", {})
 --- Telescope remaps
 --- ======================================================================== ---
 setmap_group_name("<leader>l", "Telescope")
-setmap("n", "<leader>p", "<cmd>Telescope find_files<cr>", {noremap=true}, "Telescope find files")
-setmap("n", "<leader>ll", "<cmd>Telescope<CR>", {noremap=true}, "All telescope options")
-setmap("n", "<leader>lg", "<cmd>Telescope live_grep<cr>", {noremap=true}, "Live grep")
-setmap("n", "<leader>lb", "<cmd>Telescope buffers<cr>", {noremap=true}, "Buffers")
-setmap("n", "<leader>lf", "<cmd>Telescope filetypes<cr>", {noremap=true}, "Filetypes")
-setmap("n", "<leader>l/", "<cmd>Telescope current_buffer_fuzzy_find<cr>", {noremap=true}, "Current buffer fuzzy find")
-setmap("n", "<leader>ld", "<cmd>Telescope diagnostics<cr>", {noremap=true}, "Diagnostics")
+setmap("n", "<leader>p", "<cmd>Telescope find_files<cr>", { noremap = true }, "Telescope find files")
+setmap("n", "<leader>ll", "<cmd>Telescope<CR>", { noremap = true }, "All telescope options")
+setmap("n", "<leader>lg", "<cmd>Telescope live_grep<cr>", { noremap = true }, "Live grep")
+setmap("n", "<leader>lb", "<cmd>Telescope buffers<cr>", { noremap = true }, "Buffers")
+setmap("n", "<leader>lf", "<cmd>Telescope filetypes<cr>", { noremap = true }, "Filetypes")
+setmap("n", "<leader>l/", "<cmd>Telescope current_buffer_fuzzy_find<cr>", { noremap = true }, "Current buffer fuzzy find")
+setmap("n", "<leader>ld", "<cmd>Telescope diagnostics<cr>", { noremap = true }, "Diagnostics")

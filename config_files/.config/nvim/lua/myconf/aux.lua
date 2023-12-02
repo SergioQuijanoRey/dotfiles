@@ -26,7 +26,6 @@ end
 ---
 --- Example: `setmap("n", "<Tab>", ":echo hello", {noremap = True}, 'Just print hello world')`
 function M.setmap(mode, keymap, command, opts, description)
-
     -- NOTE -- whichkey does not work well in visual mode
     --      -- see https://github.com/folke/which-key.nvim/issues/458
     --      -- So in this case register this command also with stdlib map
@@ -38,7 +37,7 @@ function M.setmap(mode, keymap, command, opts, description)
     -- Sanitize input
     description = description or ""
     if opts == nil then
-    	opts = {}
+        opts = {}
     end
 
     -- WhichKey puts the mode inside the opts table
@@ -47,16 +46,16 @@ function M.setmap(mode, keymap, command, opts, description)
 
     -- Construct the whichkey mapping
     local mapping = {
-        [keymap] = {command, description}
+        [keymap] = { command, description }
     }
 
-    wk.register({mapping, myopts})
+    wk.register({ mapping, myopts })
 end
 
 --- Define a group name for a set of mappings using whichkey
 function M.setmap_group_name(keymap, groupname)
     wk.register({
-        [keymap] = {name = groupname}
+        [keymap] = { name = groupname }
     })
 end
 
@@ -67,36 +66,35 @@ function M.stdlib_map(mode, keymap, command, opts, description)
     vim.api.nvim_set_keymap(mode, keymap, command, opts)
 end
 
-
 -- Run a command and capture the output of the command
 function M.runcommand(cmd, raw)
-  local f = assert(io.popen(cmd, 'r'))
-  local s = assert(f:read('*a'))
-  f:close()
-  if raw then return s end
-  s = string.gsub(s, '^%s+', '')
-  s = string.gsub(s, '%s+$', '')
-  s = string.gsub(s, '[\n\r]+', ' ')
-  return s
+    local f = assert(io.popen(cmd, 'r'))
+    local s = assert(f:read('*a'))
+    f:close()
+    if raw then return s end
+    s = string.gsub(s, '^%s+', '')
+    s = string.gsub(s, '%s+$', '')
+    s = string.gsub(s, '[\n\r]+', ' ')
+    return s
 end
 
 -- Splits a string, the results are returned in a table
 function M.strsplit(inputstr, sep)
-        if sep == nil then
-                sep = "%s"
-        end
-        local t={}
-        for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
-                table.insert(t, str)
-        end
-        return t
+    if sep == nil then
+        sep = "%s"
+    end
+    local t = {}
+    for str in string.gmatch(inputstr, "([^" .. sep .. "]+)") do
+        table.insert(t, str)
+    end
+    return t
 end
 
 -- Get the length of a table
 function M.tablelength(T)
-  local count = 0
-  for _ in pairs(T) do count = count + 1 end
-  return count
+    local count = 0
+    for _ in pairs(T) do count = count + 1 end
+    return count
 end
 
 return M

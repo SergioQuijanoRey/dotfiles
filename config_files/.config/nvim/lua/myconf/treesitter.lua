@@ -1,5 +1,5 @@
 -- Configuration of treesitter
-require'nvim-treesitter.configs'.setup {
+require 'nvim-treesitter.configs'.setup {
     -- All can be used to install all mantained languages
     -- Bad idea because it will install approx 127 langs and might crash the computer
     ensure_installed = {
@@ -33,7 +33,7 @@ require'nvim-treesitter.configs'.setup {
 }
 
 -- Enable treesitter identation
-require'nvim-treesitter.configs'.setup {}
+require 'nvim-treesitter.configs'.setup {}
 
 -- Add tree sitter grammar for justfiles
 require("tree-sitter-just").setup({})

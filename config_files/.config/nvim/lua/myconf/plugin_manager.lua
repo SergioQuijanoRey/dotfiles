@@ -4,14 +4,14 @@
 --- Install lazy.nvim if it is not already installed
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
+    vim.fn.system({
+        "git",
+        "clone",
+        "--filter=blob:none",
+        "https://github.com/folke/lazy.nvim.git",
+        "--branch=stable", -- latest stable release
+        lazypath,
+    })
 end
 vim.opt.rtp:prepend(lazypath)
 
@@ -21,11 +21,11 @@ local package_conf = {
     -- General purpose
     -- =========================================================================
 
-    'tpope/vim-fugitive',           -- Git integration
-    'lewis6991/gitsigns.nvim',      -- Git signs
-    'karb94/neoscroll.nvim',        -- Smooth scrolling
-    'jpalardy/vim-slime',           -- Sending lines to a REPL
-    'lambdalisue/suda.vim',         -- For sudo writting a file
+    'tpope/vim-fugitive',      -- Git integration
+    'lewis6991/gitsigns.nvim', -- Git signs
+    'karb94/neoscroll.nvim',   -- Smooth scrolling
+    'jpalardy/vim-slime',      -- Sending lines to a REPL
+    'lambdalisue/suda.vim',    -- For sudo writting a file
 
     -- File exploring
     {
@@ -51,10 +51,10 @@ local package_conf = {
 
     -- Editor
     -- =========================================================================
-    'windwp/nvim-autopairs',             -- Autopairs certain chars as " or [
-    'preservim/nerdcommenter',           -- Commenting code
-    'junegunn/vim-easy-align',           -- Align plugin
-    'mbbill/undotree',                    -- Undo tree
+    'windwp/nvim-autopairs',   -- Autopairs certain chars as " or [
+    'preservim/nerdcommenter', -- Commenting code
+    'junegunn/vim-easy-align', -- Align plugin
+    'mbbill/undotree',         -- Undo tree
 
     -- For editing the file system from nvim itself
     {
@@ -66,7 +66,7 @@ local package_conf = {
     -- Visual
     -- =========================================================================
 
-    'junegunn/goyo.vim',  -- Focus mode
+    'junegunn/goyo.vim', -- Focus mode
 
     -- Display status line
     {
@@ -82,8 +82,8 @@ local package_conf = {
 
     -- Color schemes
     -- ===============================================================================
-    'gruvbox-community/gruvbox',     -- Gruvbox Theme updated
-    'joshdick/onedark.vim',          -- Secondary colorscheme
+    'gruvbox-community/gruvbox', -- Gruvbox Theme updated
+    'joshdick/onedark.vim',      -- Secondary colorscheme
     'endel/vim-github-colorscheme',
     'YorickPeterse/vim-paper',
 
@@ -104,8 +104,8 @@ local package_conf = {
         -- Requirements for telescope in order to run properly
         dependencies = {
             -- Base code requirements
-            {'nvim-lua/popup.nvim'},
-            {'nvim-lua/plenary.nvim'},
+            { 'nvim-lua/popup.nvim' },
+            { 'nvim-lua/plenary.nvim' },
 
             -- Nice icons for telescope display
             {
@@ -223,8 +223,8 @@ local package_conf = {
     -- ===============================================================================
     {
         "LhKipp/nvim-nu",
-        config = function ()
-            require'nu'.setup{
+        config = function()
+            require 'nu'.setup {
                 use_lsp_features = false,
             }
         end

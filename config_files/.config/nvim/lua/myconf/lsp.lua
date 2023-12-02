@@ -15,7 +15,7 @@ local on_attach = function(client, bufnr)
     local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
     -- Options for the mappings that work with buffers
-    local bufopts = { noremap=true, silent=true, buffer=bufnr }
+    local bufopts = { noremap = true, silent = true, buffer = bufnr }
 
     -- Keymappings
     setmap_group_name('<leader>q', 'LSP commands')
@@ -52,13 +52,13 @@ local on_attach = function(client, bufnr)
     -- vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
 
     -- Options for keymaps that work globally
-    local opts = { noremap=true, silent=true }
+    local opts = { noremap = true, silent = true }
 
     setmap('n', '<leader>qe', vim.diagnostic.open_float, opts, 'Open float')
     setmap('n', '<leader>qc', vim.diagnostic.setloclist, opts, 'Set location list')
 
     -- Signature hint plugin
-    require'lsp_signature'.on_attach({
+    require 'lsp_signature'.on_attach({
         bind = true, -- Mandatory for registring border config
         hint_prefix = "🐼 ",
         handler_opts = {
@@ -110,7 +110,6 @@ local servers = {
 
 -- Iterate over all installed servers and apply the config to them
 for _, server in ipairs(servers) do
-
     -- Setup given server
     require('lspconfig')[server].setup {
         on_attach = on_attach,
@@ -126,12 +125,10 @@ for _, server in ipairs(servers) do
             },
         },
     }
-
-
 end
 
 -- Show the LSP setup progress with a nice UI
-require"fidget".setup{}
+require "fidget".setup {}
 
 -- Setup mason for installing things
 require("mason").setup()

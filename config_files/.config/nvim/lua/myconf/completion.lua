@@ -4,14 +4,14 @@
 -- Capabilites for lps are set in lsp configuration
 -- This way is easier to pass nvim-cmp
 
-local cmp = require'cmp'
+local cmp = require 'cmp'
 local lspkind = require('lspkind')
 
 -- Integration with luasnip
 local luasnip = require("luasnip")
 local has_words_before = function()
-  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+    local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+    return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
 
 -- Min word length to trigger autcompletion
@@ -52,25 +52,25 @@ cmp.setup({
         -- Luasnip keybindings
         -- Previous these two were <Tab> and <S-Tab>
         ["<C-Space>"] = cmp.mapping(function(fallback)
-          if cmp.visible() then
-            cmp.select_next_item()
-          elseif luasnip.expand_or_jumpable() then
-            luasnip.expand_or_jump()
-          elseif has_words_before() then
-            cmp.complete()
-          else
-            fallback()
-          end
+            if cmp.visible() then
+                cmp.select_next_item()
+            elseif luasnip.expand_or_jumpable() then
+                luasnip.expand_or_jump()
+            elseif has_words_before() then
+                cmp.complete()
+            else
+                fallback()
+            end
         end, { "i", "s" }),
 
         ["<C-S-Space>"] = cmp.mapping(function(fallback)
-          if cmp.visible() then
-            cmp.select_prev_item()
-          elseif luasnip.jumpable(-1) then
-            luasnip.jump(-1)
-          else
-            fallback()
-          end
+            if cmp.visible() then
+                cmp.select_prev_item()
+            elseif luasnip.jumpable(-1) then
+                luasnip.jump(-1)
+            else
+                fallback()
+            end
         end, { "i", "s" }),
 
 
@@ -78,12 +78,14 @@ cmp.setup({
 
     sources = cmp.config.sources({
         { name = 'nvim_lsp', keyword_length = min_keyword_length },
-        { name = 'luasnip', keyword_length = min_keyword_length }, -- For luasnip users.
-    }, {{
-            name = 'buffer', keyword_length = min_keyword_length, option = {
-                keyword_pattern = [[\k\+]]
-            }
-        }}
+        { name = 'luasnip',  keyword_length = min_keyword_length }, -- For luasnip users.
+    }, { {
+        name = 'buffer',
+        keyword_length = min_keyword_length,
+        option = {
+            keyword_pattern = [[\k\+]]
+        }
+    } }
     )
 })
 

@@ -5,24 +5,24 @@ local ls = require("luasnip")
 local types = require "luasnip.util.types"
 
 ls.config.set_config {
-  -- This tells LuaSnip to remember to keep around the last snippet.
-  -- You can jump back into it even if you move outside of the selection
-  history = true,
+    -- This tells LuaSnip to remember to keep around the last snippet.
+    -- You can jump back into it even if you move outside of the selection
+    history = true,
 
-  -- This one is cool cause if you have dynamic snippets, it updates as you type!
-  updateevents = "TextChanged,TextChangedI",
+    -- This one is cool cause if you have dynamic snippets, it updates as you type!
+    updateevents = "TextChanged,TextChangedI",
 
-  -- Autosnippets:
-  enable_autosnippets = true,
+    -- Autosnippets:
+    enable_autosnippets = true,
 
-  -- Good highlights!!
-  ext_opts = {
-    [types.choiceNode] = {
-      active = {
-        virt_text = { { " <- Current Choice", "NonTest" } },
-      },
+    -- Good highlights!!
+    ext_opts = {
+        [types.choiceNode] = {
+            active = {
+                virt_text = { { " <- Current Choice", "NonTest" } },
+            },
+        },
     },
-  },
 }
 
 -- Shorthands for defining snippets
@@ -50,7 +50,7 @@ ls.add_snippets("lua", {
     -- Easily require a function
     s("require", fmt(
         "local {} = require(\"{}\")",
-        {i(1, "plug_name"), rep(1)}
+        { i(1, "plug_name"), rep(1) }
     )),
 }, {
     key = "lua",
@@ -61,28 +61,28 @@ ls.add_snippets("markdown", {
     -- Easily require a function
     s("mdtitle", fmt(
         "---\ntitle: {}\nauthor: {}\ndate: {}\ngeometry: margin = 3.0cm\n---",
-        {i(1, "titulo"), i(2, "Sergio Quijano Rey"), i(3, "fecha")}
+        { i(1, "titulo"), i(2, "Sergio Quijano Rey"), i(3, "fecha") }
     )),
 
     s("obsidianheader", fmt(
-	[[
+        [[
 	---
 	title: {}
 	type: {}
 	tags: {}
 	---
 	]],
-        {i(1, ""), i(2, "note"), i(3, "")}
+        { i(1, ""), i(2, "note"), i(3, "") }
     )),
 
     s("task", fmt(
         "- [ ] {}",
-        {i(1)}
+        { i(1) }
     )),
 
     -- I use markdown to organize my life
     s("weekorg", fmt(
-[[
+        [[
 # Lunes
 
 - Mañana
@@ -144,12 +144,12 @@ ls.add_snippets("rmd", {
     -- Easily require a function
     s("cell", fmt(
         "```{{r}}\n{}\n```",
-        {i(1, "<code>")}
+        { i(1, "<code>") }
     )),
 
     -- Header of the .Rmd file
     s("mdtitle", fmt(
-[[---
+        [[---
 title: {}
 author:
     - Sergio Quijano Rey
@@ -163,7 +163,7 @@ output:
         collapsed: true
         number_sections: true
 ---]],
-        {i(1), i(2)}
+        { i(1), i(2) }
     )),
 
 }, {
@@ -175,141 +175,141 @@ ls.add_snippets("tex", {
 
     -- Create a bullet list
     s("list", fmt(
-[[
+        [[
 \begin{itemize}
     \item <>
     \item <>
     \item <>
 \end{itemize}
 ]],
-        {i(1), i(2), i(3)},
-        {delimiters = "<>"}
+        { i(1), i(2), i(3) },
+        { delimiters = "<>" }
     )),
 
     -- Create an enumerate list
     s("elist", fmt(
-[[
+        [[
 \begin{enumerate}
     \item <>
     \item <>
     \item <>
 \end{enumerate}
 ]],
-        {i(1), i(2), i(3)},
-        {delimiters = "<>"}
+        { i(1), i(2), i(3) },
+        { delimiters = "<>" }
     )),
 
     -- Create a definition
     s("def", fmt(
-[[
+        [[
 \begin{definicion}[<>]
     <>
 \end{definicion}
 ]],
-        {i(1), i(2)},
-        {delimiters = "<>"}
+        { i(1), i(2) },
+        { delimiters = "<>" }
     )),
 
     -- Create a proposition
     s("prop", fmt(
-[[
+        [[
 \begin{proposicion}[<>]
     <>
 \end{proposicion}
 ]],
-        {i(1), i(2)},
-        {delimiters = "<>"}
+        { i(1), i(2) },
+        { delimiters = "<>" }
     )),
 
     -- Create a theorem
     s("teor", fmt(
-[[
+        [[
 \begin{teorema}[<>]
     <>
 \end{teorema}
 ]],
-        {i(1), i(2)},
-        {delimiters = "<>"}
+        { i(1), i(2) },
+        { delimiters = "<>" }
     )),
 
     -- Create an equation
     s("eq", fmt(
-[[
+        [[
 \begin{equation}
     <>
 \end{equation}
 ]],
-        {i(1)},
-        {delimiters = "<>"}
+        { i(1) },
+        { delimiters = "<>" }
     )),
 
     -- Create an equation with split
     s("eqs", fmt(
-[[
+        [[
 \begin{equation}
 \begin{split}
     <>
 \end{split}
 \end{equation}
 ]],
-        {i(1)},
-        {delimiters = "<>"}
+        { i(1) },
+        { delimiters = "<>" }
     )),
 
     -- Bold certain text
     s("bold", fmt("\\textbf{<>}",
-        {i(1)},
-        {delimiters = "<>"}
+        { i(1) },
+        { delimiters = "<>" }
     )),
 
     -- Italic certain text
     s("it", fmt("\\textit{<>}",
-        {i(1)},
-        {delimiters = "<>"}
+        { i(1) },
+        { delimiters = "<>" }
     )),
 
 
     -- Make a cite
     s("cite", fmt("\\cite{<>}",
-        {i(1)},
-        {delimiters = "<>"}
+        { i(1) },
+        { delimiters = "<>" }
     )),
 
     -- Use my custom command for writing references
     s("ref", fmt("\\customref{<>}",
-        {i(1)},
-        {delimiters = "<>"}
+        { i(1) },
+        { delimiters = "<>" }
     )),
 
 
     -- Use my custom command for writing vectors
     s("vec", fmt("\\nv{<>}",
-        {i(1)},
-        {delimiters = "<>"}
+        { i(1) },
+        { delimiters = "<>" }
     )),
 
     -- Inline code
     s("inline", fmt("\\lstinline{<>}",
-        {i(1)},
-        {delimiters = "<>"}
+        { i(1) },
+        { delimiters = "<>" }
     )),
 
     -- Create a figure
     s("image", fmt(
-[[
+        [[
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{<>}
     \caption{<>}
 \end{figure}
 ]],
-        {i(1), i(2)},
-        {delimiters = "<>"}
+        { i(1), i(2) },
+        { delimiters = "<>" }
     )),
 
     -- Create figure with images side by side
     s("imagedoble", fmt(
-[[
+        [[
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.45\textwidth}
@@ -324,13 +324,13 @@ ls.add_snippets("tex", {
     \caption{<>}
 \end{figure}
 ]],
-        {i(1), i(2), i(3), i(4), i(5)},
-        {delimiters = "<>"}
+        { i(1), i(2), i(3), i(4), i(5) },
+        { delimiters = "<>" }
     )),
 
     -- Create a basic table structure
     s("tabla", fmt(
-[[
+        [[
 
 \begin{table}[H]
 \centering
@@ -347,13 +347,13 @@ ls.add_snippets("tex", {
 \caption{<>}
 \end{table}
 ]],
-        {i(1, "|l|l|l|l|"), i(2, "Title1 & Title2 & Title3 & Title 4 "), i(3, "data1 & data2 & data3 & data4"), i(4)},
-        {delimiters = "<>"}
+        { i(1, "|l|l|l|l|"), i(2, "Title1 & Title2 & Title3 & Title 4 "), i(3, "data1 & data2 & data3 & data4"), i(4) },
+        { delimiters = "<>" }
     )),
 
     -- I use a lot multiple figures in one
     s("doblefigura", fmt(
-[[
+        [[
 \begin{figure}
 \centering
     \begin{subfigure}{.5\textwidth}
@@ -369,8 +369,8 @@ ls.add_snippets("tex", {
 \caption{<>}
 \end{figure}
 ]],
-        {i(1), i(2), i(3), i(4), i(5)},
-        {delimiters = "<>"}
+        { i(1), i(2), i(3), i(4), i(5) },
+        { delimiters = "<>" }
     )),
 
 

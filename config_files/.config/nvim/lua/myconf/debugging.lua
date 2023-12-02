@@ -60,8 +60,8 @@ require("dapui").setup({
         },
     },
     floating = {
-        max_height = nil, -- These can be integers or a float between 0 and 1.
-        max_width = nil, -- Floats will be treated as percentage of your screen.
+        max_height = nil,  -- These can be integers or a float between 0 and 1.
+        max_width = nil,   -- Floats will be treated as percentage of your screen.
         border = "single", -- Border style. Can be "single", "double" or "rounded"
         mappings = {
             close = { "q", "<Esc>" },
@@ -77,13 +77,13 @@ require("dapui").setup({
 -- Open the UI elements automatically when a debugging session starts
 local dap, dapui = require("dap"), require("dapui")
 dap.listeners.after.event_initialized["dapui_config"] = function()
-  dapui.open()
+    dapui.open()
 end
 dap.listeners.before.event_terminated["dapui_config"] = function()
-  dapui.close()
+    dapui.close()
 end
 dap.listeners.before.event_exited["dapui_config"] = function()
-  dapui.close()
+    dapui.close()
 end
 
 -- Allow virtual text on debugging sessions
@@ -98,8 +98,10 @@ setmap("n", "<leader>do", ":lua require'dap'.step_over()<CR>", {}, "Step over")
 setmap("n", "<leader>di", ":lua require'dap'.step_into()<CR>", {}, "Step into")
 setmap("n", "<leader>dx", ":lua require'dap'.step_out()<CR>", {}, "Step out")
 setmap("n", "<leader>db", ":lua require'dap'.toggle_breakpoint()<CR>", {}, "Toggle Breakpoint")
-setmap("n", "<leader>dB", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", {}, "Set breakpoint with condition")
-setmap("n", "<leader>dl", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", {}, "Set breakpoint with log message")
+setmap("n", "<leader>dB", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", {},
+    "Set breakpoint with condition")
+setmap("n", "<leader>dl", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", {},
+    "Set breakpoint with log message")
 setmap("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>", {}, "Open the REPL")
 setmap("n", "<leader>dt", ":lua require'dap-python'.test_method()<CR>", {}, "Test method for python")
 
@@ -122,9 +124,9 @@ require('dap-python').setup(python_path)
 
 -- == Configuration for C++ and Rust ==
 dap.adapters.lldb = {
-  type = 'executable',
-  command = '/usr/bin/lldb-vscode', -- adjust as needed, must be absolute path
-  name = 'lldb'
+    type = 'executable',
+    command = '/usr/bin/lldb-vscode', -- adjust as needed, must be absolute path
+    name = 'lldb'
 }
 
 dap.configurations.cpp = {

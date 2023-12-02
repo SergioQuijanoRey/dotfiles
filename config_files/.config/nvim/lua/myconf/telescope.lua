@@ -7,10 +7,10 @@ table.insert(vimgrep_arguments, "--hidden")                                    -
 table.insert(vimgrep_arguments, "--glob")
 table.insert(vimgrep_arguments, "!**/.git/*")                                  -- But don't search in .git folder
 
-telescope.setup{
+telescope.setup {
     defaults = {
         -- We are using the default sorter, that now works better than the rest
-        file_sorter = require'telescope.sorters'.get_fuzzy_file,
+        file_sorter = require 'telescope.sorters'.get_fuzzy_file,
 
         -- Live grep also searches in hidden files (dotfiles in Unix)
         vimgrep_arguments = vimgrep_arguments,

@@ -39,22 +39,22 @@ local exec = require("myconf/aux").exec
 
 --- Editor settings
 --- ======================================================================== ---
-vim.opt.autoindent = true                       -- Sets autoindent
-vim.opt.smartindent = true                      -- Set smartindent
-vim.opt.incsearch = true                        -- Shows results while searching
-vim.opt.backspace = {"indent", "eol", "start"}  -- Normal backspace (for VI specially)
-vim.opt.mouse="a"                               -- Allow mouse control
-vim.opt.undofile = true                         -- Persisten undos (I can undo even if I closed the file)
-vim.opt.encoding="utf-8"                        -- Type of encoding
-vim.opt.ignorecase = true                       -- When searching, ignore upper or lower case
-vim.opt.scrolloff=4                             -- Start scrolling before getting to last line
+vim.opt.autoindent = true                        -- Sets autoindent
+vim.opt.smartindent = true                       -- Set smartindent
+vim.opt.incsearch = true                         -- Shows results while searching
+vim.opt.backspace = { "indent", "eol", "start" } -- Normal backspace (for VI specially)
+vim.opt.mouse = "a"                              -- Allow mouse control
+vim.opt.undofile = true                          -- Persisten undos (I can undo even if I closed the file)
+vim.opt.encoding = "utf-8"                       -- Type of encoding
+vim.opt.ignorecase = true                        -- When searching, ignore upper or lower case
+vim.opt.scrolloff = 4                            -- Start scrolling before getting to last line
 
 -- Four spaces instead of tab
 exec("filetype plugin indent on")
-vim.opt.smarttab=true                           -- Set smarttab
-vim.opt.tabstop=4
-vim.opt.shiftwidth=4
-vim.opt.expandtab=true
+vim.opt.smarttab = true -- Set smarttab
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 
 -- Spaces per tab, for certain filetypes
 exec("autocmd FileType dart setlocal shiftwidth=2 softtabstop=2 expandtab")
@@ -73,8 +73,8 @@ exec([[xnoremap <expr> P 'Pgv"'.v:register.'y`>']])
 
 --- Performance
 --- ======================================================================== ---
-vim.opt.autoread = true                                    -- Auto reload changed files
-exec("autocmd! bufwritepost init.lua source %")     -- Auto compile when changing nvim config file
+vim.opt.autoread = true                         -- Auto reload changed files
+exec("autocmd! bufwritepost init.lua source %") -- Auto compile when changing nvim config file
 
 -- Get rid of swap/backup files
 exec("set noswapfile")
@@ -88,4 +88,3 @@ vim.opt.clipboard = 'unnamedplus'
 -- Splitting where i want
 vim.opt.splitbelow = true
 vim.opt.splitright = true
-
