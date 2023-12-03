@@ -39,6 +39,7 @@ setmap("n", "<leader><S-f>",
 setmap_group_name("<leader>o", "File tree management")
 setmap("n", "<leader>oo", ":NvimTreeToggle<CR>", {}, "Nvim tree")
 setmap("n", "<leader>oO", ":Oil<CR>", {}, "Nvim tree")
+setmap("n", "<leader>-", ":Oil .<CR>", {}, "Nvim tree")
 
 -- For exiting the terminal mode
 setmap("t", "<leader><Esc>", "<C-\\><C-n>>", { noremap = true }, "Needed for exiting terminal mode")
