@@ -22,5 +22,9 @@ rclone sync --progress ~/LinuxCloud/Passwords/Passwords.kdbx ${uni_remote}:Linux
 rclone sync --progress --exclude=.git/** ~/GitRepos/ObsidianNotes ${personal_remote}:ObsidianNotes &
 rclone sync --progress --exclude=.git/** ~/GitRepos/ObsidianNotes ${uni_remote}:ObsidianNotes &
 
+# Sync adulting documents
+rclone sync --progress --exclude=.git/** ~/GitRepos/Adulting ${personal_remote}:Adulting &
+rclone sync --progress --exclude=.git/** ~/GitRepos/Adulting ${uni_remote}:Adulting &
+
 # Wait until all jobs are done
 wait
