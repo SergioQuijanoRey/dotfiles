@@ -78,7 +78,8 @@ cmp.setup({
 
     sources = cmp.config.sources({
         { name = 'nvim_lsp', keyword_length = min_keyword_length },
-        { name = 'luasnip',  keyword_length = min_keyword_length }, -- For luasnip users.
+        { name = 'luasnip',  keyword_length = min_keyword_length },
+        { name = 'emoji',    keyword_length = min_keyword_length },
     }, { {
         name = 'buffer',
         keyword_length = min_keyword_length,
