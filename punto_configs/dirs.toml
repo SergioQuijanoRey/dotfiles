@@ -168,3 +168,8 @@ sync_type = "dir"
 repo_path = "./config_files/.config/nushell"
 system_path = ".config/nushell"
 sync_type = "dir"
+
+[Wezterm]
+repo_path = "./config_files/.config/wezterm"
+system_path = ".config/wezterm"
+sync_type = "dir"
