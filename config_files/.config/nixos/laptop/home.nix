@@ -5,8 +5,10 @@
 , # Github flakes imported from `flake.nix` using special args
   zerospades
 
-  # List of shared packages that I want installed in all my machines
-, shared_packages
+  # Shared packages
+, dev_packages
+, wm_packages
+
 , ...
 }:
 
@@ -27,8 +29,9 @@ with pkgs;
   # List of packages
   home.packages =
 
-    # Packages that I have installed across all my machines
-    shared_packages ++
+    # Shared packages
+    dev_packages ++
+    wm_packages ++
 
     # I3 components packages
     [

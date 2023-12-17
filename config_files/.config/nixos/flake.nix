@@ -51,14 +51,6 @@
       # for each system), overlays, ...
       zerospades = zerospades_flake.packages.${system}.default;
       nixgl = nixgl_flake.packages.${system}.default;
-
-      # Pass this flakes to home-manager using special args
-      # Useful for flakes that does not expose an overlay
-      specialArgs = {
-        inherit zerospades nixgl;
-        shared_packages = import ./shared/dev_packages.nix pkgs;
-      };
-
     in
     {
       nixosConfigurations = {
@@ -87,7 +79,11 @@
 
               # We are using this for passing nix flakes from github
               # and also using the shared list of packages
-              home-manager.extraSpecialArgs = specialArgs;
+              home-manager.extraSpecialArgs = {
+                inherit zerospades nixgl;
+                dev_packages = import ./shared/dev_packages.nix pkgs;
+                wm_packages = import ./shared/wm_packages.nix pkgs;
+              };
             }
           ];
         };
@@ -113,9 +109,10 @@
                 imports = [ ./server/home.nix ];
               };
 
-              # We are using this for passing nix flakes from github
-              # and also using the shared list of packages
-              home-manager.extraSpecialArgs = specialArgs;
+              # In the server I don't want neither videogame flakes nor wm packages
+              home-manager.extraSpecialArgs = {
+                dev_packages = import ./shared/dev_packages.nix pkgs;
+              };
             }
           ];
         };
