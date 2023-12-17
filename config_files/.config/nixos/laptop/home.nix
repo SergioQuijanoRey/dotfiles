@@ -1,8 +1,11 @@
 # Imported from `flake.nix` so no need to do a Home Manager rebuild
 { config
 , pkgs
+
 , # Github flakes imported from `flake.nix` using special args
   zerospades
+
+  # List of shared packages that I want installed in all my machines
 , shared_packages
 , ...
 }:
@@ -24,6 +27,7 @@ with pkgs;
   # List of packages
   home.packages =
 
+    # Packages that I have installed across all my machines
     shared_packages ++
 
     # I3 components packages
@@ -32,7 +36,7 @@ with pkgs;
       polybarFull
     ] ++
 
-    # Hyprland packages
+    # WM packages (we are using Hyprland)
     [
       # We customize waybar, otherwise workspaces won't be displayed
       (pkgs.waybar.overrideAttrs (oldAttrs: {
@@ -48,6 +52,7 @@ with pkgs;
       pkgs.slurp # For taking screenshots
       pkgs.libsForQt5.qt5.qtwayland # QT support for wayland
       pkgs.qt6.qtwayland # QT support for wayland
+      pkgs.dunst # Notifications
 
       # We want to have access to pactl, which is provided by pulseaudio
       # But we don't want to enable the service, so just install the package
@@ -65,7 +70,6 @@ with pkgs;
 
     # Videogame packages
     [
-      # pkgs.openspades
       pkgs.lutris
       pkgs.dolphin-emu
       pkgs.prismlauncher # Minecraft launcher
@@ -78,6 +82,10 @@ with pkgs;
       # Mostly videogames installed through lutris
       wineWowPackages.stable
       winetricks
+
+      # Alternative client for openspades video game
+      # Installed through a flake
+      zerospades
 
     ] ++
 
@@ -112,20 +120,13 @@ with pkgs;
       pkgs.obsidian # Notes
       pkgs.thunderbird # Email client
       pkgs.vlc # Video client
-      pkgs.shotwell # Useful when viewing a lot of images
       pkgs.krita # For some kick drawings
-    ] ++
-
-    # Other packages
-    [
-      taskwarrior # For managing tasks through the terminal
-      vit # CLI Frontend for taskwarrior
-    ] ++
-
-    # Packages that are imported as github flakes
-    # These are inherited from `flake.nix` using special args
-    [
-      zerospades # Alternative client for openspades videogame
+      pkgs.evince # PDF Reader from Ubunut
+      pkgs.zathura # PDF Reader for advanced users
+      pkgs.firefox # Secondary web browser
+      pkgs.shotwell # Useful when viewing a lot of images
+      pkgs.mate.engrampa # Working with compressed and zipped files
+      pkgs.gnome.nautilus # Graphic file explorer
     ];
 
   # Fonts cannot be installed as normal packages
