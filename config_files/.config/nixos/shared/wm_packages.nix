@@ -8,6 +8,7 @@
   pkgs.networkmanagerapplet # Applet to connect to wifi
   pkgs.scrot # To take screenshots
   pkgs.betterlockscreen # For locking the screen
+  pkgs.dunst # Notifications
   pkgs.libnotify # To have access to notify-send with dunst
   pkgs.imagemagick # For blurring the lock screen
   pkgs.feh # For setting the wallpaper
@@ -16,4 +17,5 @@
   pkgs.rofimoji # Have a rofi emoji selector
   pkgs.playerctl # To have play pause
   pkgs.acpi # Check for battery status
+  pkgs.polybarFull
 ]

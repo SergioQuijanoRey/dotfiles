@@ -33,12 +33,6 @@ with pkgs;
     dev_packages ++
     wm_packages ++
 
-    # I3 components packages
-    [
-      # Using polybar instead of polybarFull makes some components fail
-      polybarFull
-    ] ++
-
     # WM packages (we are using Hyprland)
     [
       # We customize waybar, otherwise workspaces won't be displayed
