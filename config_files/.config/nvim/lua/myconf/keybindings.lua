@@ -37,8 +37,8 @@ setmap("n", "<leader><S-f>",
 
 -- File tree manipulation
 setmap_group_name("<leader>o", "File tree management")
-setmap("n", "<leader>oo", ":NvimTreeToggle<CR>", {}, "Nvim tree")
-setmap("n", "<leader>oO", ":Oil<CR>", {}, "Nvim tree")
+setmap("n", "<leader>oo", ":Oil<CR>", {}, "Nvim tree")
+setmap("n", "<leader>oO", ":NvimTreeToggle<CR>", {}, "Nvim tree")
 setmap("n", "<leader>-", ":Oil .<CR>", {}, "Nvim tree")
 
 -- For exiting the terminal mode
