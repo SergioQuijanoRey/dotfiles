@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 cd /home/sergio/GitRepos/ObsidianNotes/
-nvim Generic\ Notes.md
+nvim README.md
