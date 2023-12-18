@@ -10,3 +10,6 @@ source ~/.config/nushell/aliases.nu
 
 # My functions
 source ~/.config/nushell/functions.nu
+
+# Work-specific configuration
+source ~/.config/nushell/work_machine.nu

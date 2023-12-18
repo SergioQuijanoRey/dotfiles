@@ -37,20 +37,6 @@ def killall [ps_name: string] {
     findps $ps_name | get pid | each -k {|id| kill -9 $id}
 }
 
-# Open up my notes repo from everywhere
-def notes [] {
-    cd ~/GitRepos/Notes
-    nvim .
-}
-
 def fastman [command: string] {
     curl $"cheat.sh/($command)"
-}
-
-# Check that we are connected to Stratesys VPN
-def check_vpn [] {
-    # `do {}` syntax to avoid printing stderr (curl uses stderr to show
-    # http progress)
-    let got_ip = (do {curl ifconfig.me} )
-    $"($got_ip)" == "194.224.182.250" or $"($got_ip)" == "217.111.220.70"
 }
