@@ -24,4 +24,14 @@ telescope.setup {
             find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
         },
     },
+
+    extensions = {
+        -- Nvim Choices using telescope
+        ["ui-select"] = {
+            require("telescope.themes").get_dropdown()
+        }
+    },
 }
+
+-- Load the extensions into lua
+require("telescope").load_extension("ui-select")

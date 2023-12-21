@@ -220,6 +220,9 @@ local package_conf = {
     -- Install LSPs, linters, debuggers, ... really easily
     "williamboman/mason.nvim",
 
+    -- Change selection UI to use telescope
+    "nvim-telescope/telescope-ui-select.nvim",
+
     -- Certain languages support
     -- ===============================================================================
     {
