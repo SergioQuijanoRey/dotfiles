@@ -70,9 +70,11 @@ ls.add_snippets("markdown", {
 	title: {}
 	type: {}
 	tags: {}
+    created_at: {}
+    last_modified: {}
 	---
 	]],
-        { i(1, ""), i(2, "note"), i(3, "") }
+        { i(1, ""), i(2, "note"), i(3, ""), i(4, ""), i(5, "") }
     )),
 
     s("task", fmt(
