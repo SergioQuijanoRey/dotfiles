@@ -66,7 +66,7 @@ local package_conf = {
     -- Visual
     -- =========================================================================
 
-    'junegunn/goyo.vim', -- Focus mode
+    'folke/zen-mode.nvim', -- Zen mode
 
     -- Display status line
     {
