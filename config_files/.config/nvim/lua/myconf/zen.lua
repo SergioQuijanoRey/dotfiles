@@ -11,17 +11,21 @@ local custom_zen = function()
             width = 0.95,
             options = {
                 number = false, -- Disable numbers in zen mode
-            }
+                foldcolumn = "0",
+            },
         },
 
         -- Wrap lines when entering zen mode
         on_open = function(window)
             exec(':set wrap linebreak')
+            vim.opt.colorcolumn = nil
         end,
 
-        -- Unwrap lines when exiting zen mode
+        -- Run changes when toggling off zen mode
+        --
+        -- Note that visual modifications done in `on_open` are lost when exiting
+        -- zen mode, so no need to manually undoing changes
         on_close = function()
-            exec(':set nowrap')
         end
     })
 end
