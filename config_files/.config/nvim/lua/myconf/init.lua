@@ -8,7 +8,8 @@ require("myconf/plugin_manager")
 -- The rest of the plugins don't require an specific order
 -- So import them automatically
 
-local dir = "lua/myconf"
+local home = require("os").getenv("HOME") .. "/"
+local dir = home .. ".config/nvim/lua/myconf"
 local all_files = require("myconf.aux").scandir(dir)
 
 for _, file in ipairs(all_files) do
