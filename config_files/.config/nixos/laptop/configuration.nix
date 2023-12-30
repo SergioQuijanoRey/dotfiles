@@ -72,8 +72,11 @@ in
     shell = pkgs.nushell;
   };
 
-  # Allow unfree packages
+  # Allow unfree packages and some insecure packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-25.9.0"
+  ];
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
