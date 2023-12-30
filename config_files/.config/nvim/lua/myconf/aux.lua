@@ -14,7 +14,7 @@ local wk = require("which-key")
 function M.exec(command)
     -- Second boolean parameter shows that we don't want the str output of
     -- executing the command
-    vim.api.nvim_exec(command, false)
+    vim.cmd(command)
 end
 
 --- Function to set maps. This is handy because the api for this might change
