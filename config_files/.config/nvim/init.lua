@@ -5,32 +5,9 @@
 --- ======================================================================== ---
 vim.g.mapleader = ","
 
---- Load other lua config files
+--- Load all my config files
 --- ======================================================================== ---
-
--- Where I manage plugins
--- Has to be before the other requires in order to first install packages and
--- then configure them using lua
-require("myconf/plugin_manager")
-require("myconf/treesitter")
-require("myconf/telescope")
-require("myconf/lsp")
-require("myconf/linter")
-require("myconf/snippets")
-require("myconf/completion")
-require("myconf/keybindings")
-require("myconf/autopairs")
-require("myconf/status_line")
-require("myconf/slime")
-require("myconf/debugging")
-require("myconf/file_explorer")
-require("myconf/diagnostics_list")
-require("myconf/git")
-require("myconf/smooth_scrolling")
-require("myconf/visuals")
-require("myconf/whichkey")
-require("myconf/undotree")
-require("myconf/autoformatter")
+require("myconf")
 
 --- Aux functions
 --- ======================================================================== ---
