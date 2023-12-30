@@ -2,29 +2,24 @@
 -- So in the root `init.lua` we can simpy do a `require("lua/myconf")`, instead
 -- of manually loading all the plugins
 
--- Where I manage plugins
--- Has to be before the other requires in order to first install packages and
--- then configure them using lua
+-- Where I manage plugins. Therefore, it has to be required before the other files
 require("myconf/plugin_manager")
 
 -- The rest of the plugins don't require an specific order
-require("myconf/treesitter")
-require("myconf/telescope")
-require("myconf/lsp")
-require("myconf/linter")
-require("myconf/snippets")
-require("myconf/completion")
-require("myconf/keybindings")
-require("myconf/autopairs")
-require("myconf/status_line")
-require("myconf/slime")
-require("myconf/debugging")
-require("myconf/file_explorer")
-require("myconf/diagnostics_list")
-require("myconf/git")
-require("myconf/smooth_scrolling")
-require("myconf/visuals")
-require("myconf/whichkey")
-require("myconf/undotree")
-require("myconf/autoformatter")
-require("myconf/zen")
+-- So import them automatically
+
+local dir = "lua/myconf"
+local all_files = require("myconf.aux").scandir(dir)
+
+for _, file in ipairs(all_files) do
+    if file == "." or file == ".." or file == "init.lua" or file == "plugin_manager.lua" then
+        goto continue
+    end
+
+    local basename = file:match("(.+)%..+") -- Remove the `.lua` file extension
+    local module_path = "myconf/" .. basename
+
+    require(module_path)
+
+    ::continue::
+end

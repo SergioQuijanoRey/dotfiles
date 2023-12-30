@@ -97,4 +97,16 @@ function M.tablelength(T)
     return count
 end
 
+-- Returns all the files stored in a dir
+function M.scandir(directory)
+    local i, t, popen = 0, {}, io.popen
+    local pfile = popen('ls -a "' .. directory .. '"')
+    for filename in pfile:lines() do
+        i = i + 1
+        t[i] = filename
+    end
+    pfile:close()
+    return t
+end
+
 return M
