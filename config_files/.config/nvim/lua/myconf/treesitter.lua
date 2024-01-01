@@ -7,7 +7,9 @@ require 'nvim-treesitter.configs'.setup {
         "rust",
         "python",
         "bash",
-        "comment"
+        "comment",
+        "markdown",
+        "markdown_inline"
     },
 
     ignore_install = {}, -- List of parsers to ignore installing
@@ -20,7 +22,6 @@ require 'nvim-treesitter.configs'.setup {
         enable = true,
 
         -- Markdown highlighting seems to be working well
-        -- disable = {"markdown"},
         disable = {},
 
     },
