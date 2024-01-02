@@ -4,6 +4,7 @@
 # Inserts a blank line between shell prompts
 add_newline = false
 format = """$nix_shell$username at $hostname in$directory $git_branch $package $python\n$character"""
+right_format = """$custom $time $battery"""
 
 # Use catppuccin inspired colorscheme
 palette = "catppuccin"
@@ -47,6 +48,32 @@ impure_msg = '[󰜗](bold blue)'
 pure_msg = '[󰜗 󰜗](bold blue)'
 format = '[\[$state\]](bold blue) '
 
+[time]
+disabled = false
+format = "🕓$time"
+
+[custom.date]
+disabled = false
+command = "date now | format date '%d/%m/%Y'"
+when = true
+symbol = "📆"
+format = "$symbol$output"
+
+[python]
+disabled = false
+symbol = '🐍 '
+pyenv_version_name = true
+python_binary = "python3"
+
+[battery]
+disabled = false
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+
+[[battery.display]]
+threshold = 100
+style = "bold green"
+
 [palettes.catppuccin]
 blue = "#8caaee"
 lavender = "#babbf1"
@@ -62,9 +89,3 @@ mauve = "#ca9ee6"
 pink = "#f4b8e4"
 flamingo = "#eebebe"
 rosewater = "#f2d5cf"
-
-[python]
-disabled = false
-symbol = '🐍 '
-pyenv_version_name = true
-python_binary = "python3"
