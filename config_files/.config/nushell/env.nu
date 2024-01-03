@@ -13,14 +13,12 @@ def create_left_prompt [] {
     starship prompt
 }
 
-# Display date time in the right promp, no need for starship
-def curr_date [] {$"📅(date now | format date '%d/%m/%Y')"}
-def curr_time [] {$"🕐(date now | format date '%H:%M')"}
-def create_right_prompt [] {$"(curr_date) (curr_time)"}
+# Right prompt is also going to be set using `starship`
+def create_right_prompt [] {|| $"(starship prompt --right)"}
 
 # Use that functions to display the prompt
 $env.PROMPT_COMMAND = {|| create_left_prompt }
-$env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
+$env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt}
 
 # How the prompt is shown depending on the prompt mode
 $env.PROMPT_INDICATOR = {|| "" }
