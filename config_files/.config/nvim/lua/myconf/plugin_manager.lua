@@ -223,6 +223,10 @@ local package_conf = {
     -- Change selection UI to use telescope
     "nvim-telescope/telescope-ui-select.nvim",
 
+    -- Presentations inside neovim
+    -- ===============================================================================
+    "sotte/presenting.nvim",
+
     -- Certain languages support
     -- ===============================================================================
     {

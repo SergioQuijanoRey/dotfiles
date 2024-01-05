@@ -53,3 +53,8 @@ end
 setmap_group_name("<leader>f", "Zen mode")
 setmap("n", "<leader>ff", function() custom_zen(0.8) end, {}, "Toggle on and off zen mode, small mode")
 setmap("n", "<leader>fF", function() custom_zen(0.95) end, {}, "Toggle on and off zen mode, big mode")
+
+-- We are using our `custom_zen` function in other places
+local M = {}
+M.custom_zen = custom_zen
+return M
