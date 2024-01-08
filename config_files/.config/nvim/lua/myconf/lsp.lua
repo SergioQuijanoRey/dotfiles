@@ -51,11 +51,6 @@ local on_attach = function(client, bufnr)
     -- vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
     -- vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
 
-    -- Options for keymaps that work globally
-    local opts = { noremap = true, silent = true }
-
-    setmap('n', '<leader>qe', vim.diagnostic.open_float, opts, 'Open float')
-    setmap('n', '<leader>qc', vim.diagnostic.setloclist, opts, 'Set location list')
 
     -- Signature hint plugin
     require 'lsp_signature'.on_attach({
@@ -66,6 +61,11 @@ local on_attach = function(client, bufnr)
         },
     })
 end
+
+-- Keymaps that I want to have even when there is no running LSP
+local opts = { noremap = true, silent = true }
+setmap('n', '<leader>qe', vim.diagnostic.open_float, opts, 'Open float')
+setmap('n', '<leader>qc', vim.diagnostic.setloclist, opts, 'Set location list')
 
 -- Also, get capabilities of nvim-cmp for autocompletions
 -- We need to provide lsp info to nvim-cmp config to get lsp autocompletion!
