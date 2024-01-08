@@ -4,7 +4,7 @@
 -- Inspired by https://github.com/nvim-lualine/lualine.nvim/blob/master/examples/evil_lualine.lua
 -- Changed a little bit the function and added some symbols. Also not using ins_left function
 local function lsp_server_names()
-    local msg = "Unactive"
+    local msg = "Inactive"
     local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
     local clients = vim.lsp.get_active_clients()
     if next(clients) == nil then
@@ -24,7 +24,7 @@ end
 local function linter_names()
     local linters = require("lint").get_running()
     if #linters == 0 then
-        return "🔍 Unactive"
+        return "🔍 Inactive"
     end
     return "🔍 " .. linters[1]
 end
@@ -34,7 +34,7 @@ local function formatter_names()
     local formatters = require("conform").list_formatters()
 
     if #formatters == 0 then
-        return "🍓 Unactive"
+        return "🍓 Inactive"
     end
 
     return "🍓 Active"
