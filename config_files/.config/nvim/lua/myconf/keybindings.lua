@@ -88,6 +88,10 @@ setmap_group_name("<leader>a", "Easy align")
 setmap("n", "<leader>a", "<Plug>(EasyAlign)", {})
 setmap("v", "<leader>a", "<Plug>(EasyAlign)", {})
 
+-- Maps for some macro utilities
+setmap_group_name("<leader>m", "Macro utilities")
+setmap("v", "<leader>mm", ":norm @q<CR>", {}, "Apply @q macro in selection mode")
+
 --- Telescope remaps
 --- ======================================================================== ---
 setmap_group_name("<leader>l", "Telescope")

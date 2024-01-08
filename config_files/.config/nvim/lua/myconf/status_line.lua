@@ -4,20 +4,40 @@
 -- Inspired by https://github.com/nvim-lualine/lualine.nvim/blob/master/examples/evil_lualine.lua
 -- Changed a little bit the function and added some symbols. Also not using ins_left function
 local function lsp_server_names()
-    local msg = 'No Active Lsp'
+    local msg = "Unactive"
     local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
     local clients = vim.lsp.get_active_clients()
     if next(clients) == nil then
-        return " " .. msg
+        return "🧠 " .. msg
     end
     for _, client in ipairs(clients) do
         local filetypes = client.config.filetypes
         if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
-            return " " .. client.name
+            return "🧠 " .. client.name
         end
     end
-    msg = " " .. msg
+    msg = "🧠 " .. msg
     return msg
+end
+
+-- Show the configured linters
+local function linter_names()
+    local linters = require("lint").get_running()
+    if #linters == 0 then
+        return "🔍 Unactive"
+    end
+    return "🔍 " .. linters[1]
+end
+
+-- Show the configured formatters
+local function formatter_names()
+    local formatters = require("conform").list_formatters()
+
+    if #formatters == 0 then
+        return "🍓 Unactive"
+    end
+
+    return "🍓 Active"
 end
 
 local config = {
@@ -34,7 +54,7 @@ local config = {
         lualine_b = { 'branch', 'diff',
             { 'diagnostics', sources = { 'nvim_diagnostic', 'coc' } } },
         lualine_c = { 'filename' },
-        lualine_x = { lsp_server_names,
+        lualine_x = { lsp_server_names, linter_names, formatter_names,
 
 
             'encoding', 'fileformat', 'filetype'

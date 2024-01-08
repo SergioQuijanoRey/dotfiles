@@ -8,6 +8,10 @@ require('lint').linters_by_ft = {
         "ruff",
         "mypy"
     },
+
+    sql = {
+        "sqlfluff",
+    }
 }
 
 -- Run the linter when saving the file
