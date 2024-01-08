@@ -17,4 +17,4 @@ local custom_presenting = function()
     vim.opt.conceallevel = 2
 end
 
-setmap("n", "<leader>fp", function() custom_presenting() end, {}, "Toggle on and off presenting mode" )
+setmap("n", "<leader>fp", function() custom_presenting() end, {}, "Toggle on and off presenting mode")
