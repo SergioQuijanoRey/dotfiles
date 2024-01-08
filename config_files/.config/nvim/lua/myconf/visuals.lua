@@ -17,6 +17,3 @@ catppuccin.setup({
     flavour = "frappe",
 })
 vim.api.nvim_command "colorscheme catppuccin-frappe"
-
--- Allow conealing
-vim.opt.conceallevel = 1
