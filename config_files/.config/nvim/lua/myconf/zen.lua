@@ -35,6 +35,7 @@ local template_config = function()
         },
 
         on_open = function(window)
+            base_on_open(window)
         end,
 
         -- Run changes when toggling off zen mode
@@ -42,7 +43,6 @@ local template_config = function()
         -- Note that visual modifications done in `on_open` are lost when exiting
         -- zen mode, so no need to manually undoing changes
         on_close = function(window)
-            base_on_open(window)
         end
     }
 end
