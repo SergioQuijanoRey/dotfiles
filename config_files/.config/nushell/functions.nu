@@ -40,3 +40,13 @@ def killall [ps_name: string] {
 def fastman [command: string] {
     curl $"cheat.sh/($command)"
 }
+
+# Nushell uses `watch` for other purpose so create a function that replicates
+# bash `watch` behaviour
+def bashwatch [command: closure, duration: duration] {
+    loop {
+        do $command;
+        sleep $duration
+
+    }
+}
