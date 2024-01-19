@@ -23,9 +23,9 @@ def short_url [url: string] {
 
 # Tries to run a `command`. If it goes right, notifies `exitmsg`, otherwise
 # it notifies `failuremsg`
-def try-notify [command: string, exitmsg: string, failuremsg: string] {
+def try-notify [command: closure, exitmsg: string, failuremsg: string] {
     try {
-        ^$command
+        do $command;
         notify-send $exitmsg
     } catch {
         notify-send -u critical $failuremsg
