@@ -20,10 +20,7 @@ require 'nvim-treesitter.configs'.setup {
     -- Highlight feature
     highlight = {
         enable = true,
-
-        -- Markdown highlighting seems to be working well
         disable = {},
-
     },
 
     -- Indent feature
