@@ -201,6 +201,9 @@ in
     wantedBy = [ "multi-user.target" ];
   };
 
+  # Avoid shutting down laptop when lid is closed
+  services.logind.lidSwitchExternalPower = "ignore";
+
   # For better wayland behaviour
   environment.sessionVariables = {
 

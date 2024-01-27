@@ -41,7 +41,9 @@
   # networking.interfaces.enp2s0f2.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp3s0.useDHCP = lib.mkDefault true;
 
-  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+  # TODO -- manually commented by me, I think I am loosing performance with this
+  # powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
   # Enable opengl for some videogames
