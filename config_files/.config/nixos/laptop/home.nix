@@ -49,6 +49,7 @@ with pkgs;
       pkgs.slurp # For taking screenshots
       pkgs.libsForQt5.qt5.qtwayland # QT support for wayland
       pkgs.qt6.qtwayland # QT support for wayland
+      pkgs.xdg-desktop-portal-hyprland # For having portals (wireplumber, pulseaudio benefit from this)
 
       # We want to have access to pactl, which is provided by pulseaudio
       # But we don't want to enable the service, so just install the package
