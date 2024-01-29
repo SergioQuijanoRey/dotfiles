@@ -82,8 +82,8 @@ end
 
 -- Keybinding that uses our custom configuration
 setmap_group_name("<leader>f", "Zen mode")
-setmap("n", "<leader>ff", function() custom_zen(0.8) end, {}, "Toggle on and off zen mode, small mode")
-setmap("n", "<leader>fF", function() custom_zen(0.90) end, {}, "Toggle on and off zen mode, big mode")
+setmap("n", "<leader>ff", function() custom_zen(0.90) end, {}, "Toggle on and off zen mode, big mode")
+setmap("n", "<leader>fF", function() custom_zen(0.8) end, {}, "Toggle on and off zen mode, small mode")
 setmap("n", "<leader>fP", function() fake_presentation(0.90) end, {}, "Fake presentation")
 
 -- We are using our `custom_zen` function in other places
