@@ -20,7 +20,6 @@ require("nvim-tree").setup({
     },
 })
 
-
 -- We also use oil nvim for accessing the file system
 require("oil").setup({
     delete_to_trash = true,
