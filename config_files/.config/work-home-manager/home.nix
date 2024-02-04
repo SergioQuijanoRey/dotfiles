@@ -18,12 +18,16 @@
     [
       pkgs.just
       pkgs.neovim
-      pkgs.megatools
       pkgs.trash-cli
     ] ++
 
     # System packages
     [
       pkgs.bottom
+    ] ++
+
+    # Desktop packages
+    [
+      pkgs.firefox
     ];
 }
