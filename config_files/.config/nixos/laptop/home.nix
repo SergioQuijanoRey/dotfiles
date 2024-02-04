@@ -47,9 +47,8 @@ with pkgs;
       pkgs.wireplumber # For screen sharing
       pkgs.grim # For taking screenshots
       pkgs.slurp # For taking screenshots
-      pkgs.libsForQt5.qt5.qtwayland # QT support for wayland
-      pkgs.qt6.qtwayland # QT support for wayland
       pkgs.xdg-desktop-portal-hyprland # For having portals (wireplumber, pulseaudio benefit from this)
+      pkgs.xdg-desktop-portal-gtk # File picker, that the portal is not implementing
 
       # We want to have access to pactl, which is provided by pulseaudio
       # But we don't want to enable the service, so just install the package
@@ -58,6 +57,10 @@ with pkgs;
       # Controlling screen brightness
       pkgs.brightnessctl
       pkgs.gammastep
+
+      # Support for QT in Wayland
+      pkgs.libsForQt5.qt5.qtwayland # QT support for wayland
+      pkgs.qt6.qtwayland # QT support for wayland
     ] ++
 
     # Messaging
@@ -218,5 +221,11 @@ with pkgs;
       package = pkgs.bibata-cursors;
       size = 16;
     };
+  };
+
+  # Configure QT under hyprland window manager
+  qt = {
+    enable = true;
+    platformTheme = "qtct";
   };
 }

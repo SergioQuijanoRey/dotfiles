@@ -215,12 +215,9 @@ in
 
     # Tell electron apps to use wayland
     NIXOS_OZONE_WL = "1";
+
+    # Configure QT under hyprland
+    QT_QPA_PLATFORM = "qtct";
+    QT_QPA_PLATFORMTHEME = "qtct";
   };
-
-  # Enable nix flakes in NixOS and home manager
-  # nix = {
-  #     package = pkgs.nixFlakes;
-  #     extraOptions = "experimental-features = nix-command flakes";
-  # };
 }
-
