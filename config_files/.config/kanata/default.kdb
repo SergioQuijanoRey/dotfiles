@@ -38,7 +38,7 @@ be passed straight to the operating system.
 |#
 (defsrc
        q w  r         p
-  caps a    c v       l
+  caps a s  c v       l
 )
 
 
@@ -50,7 +50,7 @@ Define the mappings of the keys specified in `defsrc`
 |#
 (deflayer default
         q w r       p
-  @cap  a   c v     @l
+  @cap  a s c v     @l
 )
 
 #| Remappings for the standard layer |#
@@ -67,7 +67,7 @@ Layer that is triggered when holding 'l' key
 |#
 (deflayer l_layer
            @lq @lw @lr        p
-    @lcaps @la     @lc @lv    l
+    @lcaps @la s   @lc @lv    l
 )
 
 #|
@@ -85,6 +85,7 @@ Remappings for the 'l' layer
     Maybe because some problem with US-International instead of Spanish layout
     |#
     la (tap-hold $ott $oth S-7 S-7)
+
 
     #|
     Same as before, Shift-8 is easier to specify than using special characters
