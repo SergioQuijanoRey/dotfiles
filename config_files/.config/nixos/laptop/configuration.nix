@@ -217,7 +217,7 @@ in
     NIXOS_OZONE_WL = "1";
 
     # Configure QT under hyprland
-    QT_QPA_PLATFORM = "qtct";
-    QT_QPA_PLATFORMTHEME = "qtct";
+    QT_QPA_PLATFORM = "wayland";
+    QT_QPA_PLATFORMTHEME = "wayland";
   };
 }
