@@ -12,7 +12,6 @@
 , ...
 }:
 
-with pkgs;
 {
 
   # Home manager needs this info to move around config files
@@ -79,8 +78,8 @@ with pkgs;
 
       # Installing wine can enhance performance on other videogames
       # Mostly videogames installed through lutris
-      wineWowPackages.stable
-      winetricks
+      pkgs.wineWowPackages.stable
+      pkgs.winetricks
 
       # Alternative client for openspades video game
       # Installed through a flake
