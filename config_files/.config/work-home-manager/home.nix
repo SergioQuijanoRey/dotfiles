@@ -12,6 +12,7 @@
     [
       pkgs.zellij
       pkgs.zoxide
+      pkgs.nushell
     ] ++
 
     # Dev packages
