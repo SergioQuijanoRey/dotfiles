@@ -3,8 +3,10 @@
 
   # Dependencies of the flake
   inputs = {
-    # TODO -- change to stable branch but keep the unstable
+    # We have two versions of nixpkgs so we can update more frequently one input
+    # on which only relies a subset of bleeding-edge packages
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    latestnixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -32,7 +34,7 @@
     , # Flakes that I added from github
       zerospades_flake
     , nixgl_flake
-    ,
+    , latestnixpkgs
     }:
     let
       # Architecture of the system
@@ -42,6 +44,8 @@
       lib = nixpkgs.lib;
 
       pkgs = nixpkgs.legacyPackages.${system};
+      latestpkgs = latestnixpkgs.legacyPackages.${system};
+
 
       # In all my machines I use the same username
       user = "sergio";
@@ -83,39 +87,41 @@
                 inherit zerospades nixgl;
                 dev_packages = import ./shared/dev_packages.nix pkgs;
                 wm_packages = import ./shared/wm_packages.nix pkgs;
+                latestpkgs = latestpkgs;
               };
             }
           ];
         };
 
         # Config for my home server
-        lenovo-server = lib.nixosSystem {
-          inherit system;
-          modules = [
+        lenovo-server = lib.nixosSystem
+          {
+            inherit system;
+            modules = [
 
-            # Import the base NixOS configuration
-            ./server/configuration.nix
+              # Import the base NixOS configuration
+              ./server/configuration.nix
 
-            # Set up home manager
-            home-manager.nixosModules.home-manager
-            {
+              # Set up home manager
+              home-manager.nixosModules.home-manager
+              {
 
-              # So we can use nixpkgs instead of home manager packages
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
+                # So we can use nixpkgs instead of home manager packages
+                home-manager.useGlobalPkgs = true;
+                home-manager.useUserPackages = true;
 
-              # Import the home manager configuration
-              home-manager.users.${user} = {
-                imports = [ ./server/home.nix ];
-              };
+                # Import the home manager configuration
+                home-manager.users.${user} = {
+                  imports = [ ./server/home.nix ];
+                };
 
-              # In the server I don't want neither videogame flakes nor wm packages
-              home-manager.extraSpecialArgs = {
-                dev_packages = import ./shared/dev_packages.nix pkgs;
-              };
-            }
-          ];
-        };
+                # In the server I don't want neither videogame flakes nor wm packages
+                home-manager.extraSpecialArgs = {
+                  dev_packages = import ./shared/dev_packages.nix pkgs;
+                };
+              }
+            ];
+          };
       };
 
     };
