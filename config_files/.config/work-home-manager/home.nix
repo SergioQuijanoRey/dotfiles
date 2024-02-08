@@ -25,6 +25,7 @@
     # System packages
     [
       pkgs.bottom
+      pkgs.sqlite
     ] ++
 
     # Desktop packages
