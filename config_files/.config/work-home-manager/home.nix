@@ -13,6 +13,7 @@
       pkgs.zellij
       pkgs.zoxide
       pkgs.nushell
+      pkgs.ranger
     ] ++
 
     # Dev packages
@@ -31,5 +32,6 @@
     # Desktop packages
     [
       pkgs.firefox
+      pkgs.filezilla
     ];
 }
