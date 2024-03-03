@@ -25,6 +25,10 @@
       url = "github:guibou/nixGL";
     };
 
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
+    };
+
   };
 
   outputs =
@@ -35,6 +39,7 @@
       zerospades_flake
     , nixgl_flake
     , latestnixpkgs
+    , hyprland
     }:
     let
       # Architecture of the system
@@ -90,6 +95,9 @@
                 latestpkgs = latestpkgs;
               };
             }
+
+            # Setup hyprland
+            hyprland.nixosModules.default
           ];
         };
 

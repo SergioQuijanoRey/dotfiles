@@ -131,12 +131,6 @@ in
   };
 
 
-  # Try out hyprland
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true; # For running some X applications
-  };
-
   # Some packages as i3blocks try to read from /usr/bin
   # This way we avoid problems with that
   environment.pathsToLink = [ "/share" "/bin" "/libexec" "/usr/bin" ];
@@ -177,7 +171,9 @@ in
   programs.zsh.enable = true;
 
   # I want to install some packages using flatpack
-  services.flatpak.enable = true;
+  # TODO -- re enable
+  # services.flatpak.enable = true;
+
 
   # I want neovim as the default editor
   environment.variables.EDITOR = "nvim";
@@ -203,6 +199,11 @@ in
 
   # Avoid shutting down laptop when lid is closed
   services.logind.lidSwitchExternalPower = "ignore";
+
+  # Setup hyrpland
+  programs.hyprland = {
+    enable = true;
+  };
 
   # For better wayland behaviour
   environment.sessionVariables = {
