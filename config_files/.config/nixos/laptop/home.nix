@@ -1,19 +1,6 @@
 # Imported from `flake.nix` so no need to do a Home Manager rebuild
-{ config
-, pkgs
-
-, # Github flakes imported from `flake.nix` using special args
-  zerospades
-
-  # Shared packages
-, dev_packages
-, wm_packages
-
-, ...
-}:
-
+{ config, pkgs, zerospades, dev_packages, wm_packages, latestpkgs, ... }:
 {
-
   # Home manager needs this info to move around config files
   home.username = "sergio";
   home.homeDirectory = "/home/sergio";
