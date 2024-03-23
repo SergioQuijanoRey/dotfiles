@@ -16,5 +16,10 @@ require('gitsigns').setup {
 -- Neogit
 -- =============================================================================
 require('neogit').setup({
-
+    graph_style = "ascii",
+    kind = "vsplit",
+    integrations = {
+        telescope = "true",
+        diffview = "true",
+    }
 })
