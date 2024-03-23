@@ -190,7 +190,7 @@ local package_conf = {
 
         dependencies = {
             -- UI for debugging
-            "rcarriga/nvim-dap-ui",
+            {"rcarriga/nvim-dap-ui", dependencies = {"nvim-neotest/nvim-nio"}},
 
             -- Virtual text for debugging sessions
             "theHamsta/nvim-dap-virtual-text",
