@@ -12,3 +12,9 @@ require('gitsigns').setup {
         untracked    = { text = '┆' },
     },
 }
+
+-- Neogit
+-- =============================================================================
+require('neogit').setup({
+
+})

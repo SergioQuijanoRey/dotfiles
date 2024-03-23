@@ -25,11 +25,9 @@ local package_conf = {
     -- General purpose
     -- =========================================================================
 
-    'tpope/vim-fugitive',      -- Git integration
-    'lewis6991/gitsigns.nvim', -- Git signs
-    'karb94/neoscroll.nvim',   -- Smooth scrolling
-    'jpalardy/vim-slime',      -- Sending lines to a REPL
-    'lambdalisue/suda.vim',    -- For sudo writting a file
+    'karb94/neoscroll.nvim', -- Smooth scrolling
+    'jpalardy/vim-slime',    -- Sending lines to a REPL
+    'lambdalisue/suda.vim',  -- For sudo writting a file
 
     -- File exploring
     {
@@ -249,6 +247,19 @@ local package_conf = {
         cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
         ft = { "markdown" },
         build = function() vim.fn["mkdp#util#install"]() end,
+    },
+
+    -- Git integrations
+    -- ===============================================================================
+    'lewis6991/gitsigns.nvim', -- Git signs
+
+    -- Neogit + Diffview
+    {
+        "NeogitOrg/neogit",
+        dependencies = {
+            "sindrets/diffview.nvim",
+            "nvim-lua/plenary.nvim",
+        },
     },
 }
 

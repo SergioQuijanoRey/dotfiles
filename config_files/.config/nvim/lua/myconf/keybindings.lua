@@ -72,10 +72,10 @@ vim.keymap.set("i", "}", "}<c-g>u", { noremap = true })
 
 -- Git integrations
 setmap_group_name("<leader>g", "Git")
-setmap("n", "<leader>gg", ":vertical Git<CR>", {}, "Open git status in vertical split")
-setmap("n", "<leader>gG", ":Git | only<CR>", {}, "Open git status in single buffer")
-setmap("n", "<leader>gl", ":vertical Git log<CR>", {}, "Git log")
-setmap('n', '<leader>gi', ":Gitsign toggle_signs<CR>", {}, "Toggle git signs")
+-- setmap("n", "<leader>gg", ":vertical Git<CR>", {}, "Open git status in vertical split")
+-- setmap("n", "<leader>gG", ":Git | only<CR>", {}, "Open git status in single buffer")
+-- setmap("n", "<leader>gl", ":vertical Git log<CR>", {}, "Git log")
+-- setmap('n', '<leader>gi', ":Gitsign toggle_signs<CR>", {}, "Toggle git signs")
 
 -- Change NVIM Working Directory
 -- Usefull when using fzf to open a file and instantly change NVIM working dir
