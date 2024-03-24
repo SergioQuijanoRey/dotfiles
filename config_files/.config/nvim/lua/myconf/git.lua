@@ -36,4 +36,12 @@ require('neogit').setup({
             ["B"] = "BranchPopup",
         },
     },
+
+    -- Better visual chars
+    signs = {
+        -- { CLOSED, OPENED }
+        hunk = { "󱞩", "" },
+        item = { "󱞩", "󰁅" },
+        section = { "󱞩", "󰁅" },
+    },
 })
