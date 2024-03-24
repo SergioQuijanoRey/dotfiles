@@ -17,9 +17,23 @@ require('gitsigns').setup {
 -- =============================================================================
 require('neogit').setup({
     graph_style = "ascii",
-    kind = "vsplit",
+    kind = "auto",
     integrations = {
         telescope = "true",
         diffview = "true",
-    }
+    },
+
+    -- I want to be able to use "w" and "b" for navigating
+    -- So change these sortcuts to "Shift-w" and "Shift-b"
+    mappings = {
+        popup = {
+            -- Disable default mappings
+            ["w"] = false,
+            ["b"] = false,
+
+            -- And set them with new things
+            ["W"] = "WorktreePopup",
+            ["B"] = "BranchPopup",
+        },
+    },
 })
