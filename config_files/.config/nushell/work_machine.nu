@@ -17,3 +17,6 @@ def notes [] {
 # WSL specific config
 $env.PATH = ($env.PATH | split row (char esep) | append "/home/sergio/.local/bin")
 $env.GDK_DPI_SCALE = 1.0 # This is needed for WSL apps to render properly
+
+# Home of the windows user
+$env.WINHOME = "/mnt/d/Users/sergio.quijano"
