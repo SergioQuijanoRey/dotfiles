@@ -23,6 +23,9 @@ require('neogit').setup({
     -- Vertical or horizontal split are chosen automatically
     kind = "auto",
 
+    -- I don't like this visuals
+    disable_context_highlighting = true,
+
     -- I want to open the commit editor in normal mode instead of insert mode
     disable_insert_on_commit = true,
 
