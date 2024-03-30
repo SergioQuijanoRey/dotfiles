@@ -2,7 +2,7 @@ let
   # My username
   user = "sergio";
 in
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -48,8 +48,10 @@ in
 
   # Configure keymap in X11
   services.xserver = {
-    layout = "es";
-    xkbVariant = "";
+    xkb = {
+        layout = "es";
+        variant = "";
+    };
 
     # Enable HUION tablet utilities
     # For example, xsetwacom command
@@ -135,13 +137,14 @@ in
   # This way we avoid problems with that
   environment.pathsToLink = [ "/share" "/bin" "/libexec" "/usr/bin" ];
 
-  # Enable audio using pipewire instead of pulseaudoo
+  # Enable audio using pipewire instead of pulseaudio
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    jack.enable = true;
   };
 
   # Enable bluetooth
@@ -157,8 +160,14 @@ in
     rootless.enable = true;
   };
 
-  # Without this, steam does not work
-  hardware.opengl.driSupport32Bit = true;
+  # Setup opengl
+  hardware.opengl = {
+    enable = true;
+
+    # Steam needs this
+    driSupport32Bit = true;
+  };
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
@@ -203,6 +212,17 @@ in
   # Setup hyrpland
   programs.hyprland = {
     enable = true;
+    xwayland.enable = true;
+
+    # Make sure we are using the packages from the flake
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    portalPackage = inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
+  };
+
+  # Use cachix to avoid building from scratch all hyprland related stuff
+  nix.settings = {
+      substituters = ["https://hyprland.cachix.org"];
+      trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
   };
 
   # For better wayland behaviour
@@ -221,4 +241,10 @@ in
     QT_QPA_PLATFORM = "wayland";
     QT_QPA_PLATFORMTHEME = "wayland";
   };
+
+  # Most wayland compositors need this
+  hardware.nvidia = {
+    modesetting.enable = true;
+  };
 }
+

@@ -28,7 +28,6 @@
     hyprland = {
       url = "github:hyprwm/Hyprland";
     };
-
   };
 
   outputs =
@@ -40,7 +39,7 @@
     , nixgl_flake
     , latestnixpkgs
     , hyprland
-    }:
+    } @ inputs:
     let
       # Architecture of the system
       system = "x86_64-linux";
@@ -67,6 +66,8 @@
         # Config for my laptop
         asus-laptop = lib.nixosSystem {
           inherit system;
+          specialArgs = {inherit inputs; };
+
           modules = [
 
             # Import the base NixOS configuration

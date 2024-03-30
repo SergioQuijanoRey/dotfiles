@@ -99,7 +99,7 @@ local servers = {
     "lua_ls",
 
     -- For nix
-    "rnix",
+    "nixd",
 
     "pylsp",
 

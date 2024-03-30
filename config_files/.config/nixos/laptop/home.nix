@@ -1,5 +1,5 @@
 # Imported from `flake.nix` so no need to do a Home Manager rebuild
-{ config, pkgs, zerospades, dev_packages, wm_packages, latestpkgs, ... }:
+{ config, pkgs, zerospades, dev_packages, wm_packages, latestpkgs, nur, ... }:
 {
   # Home manager needs this info to move around config files
   home.username = "sergio";
@@ -33,8 +33,7 @@
       pkgs.wireplumber # For screen sharing
       pkgs.grim # For taking screenshots
       pkgs.slurp # For taking screenshots
-      pkgs.xdg-desktop-portal-hyprland # For having portals (wireplumber, pulseaudio benefit from this)
-      pkgs.xdg-desktop-portal-gtk # File picker, that the portal is not implementing
+      # pkgs.xdg-desktop-portal-hyprland # For having portals (wireplumber, pulseaudio benefit from this)
 
       # We want to have access to pactl, which is provided by pulseaudio
       # But we don't want to enable the service, so just install the package
@@ -47,6 +46,10 @@
       # Support for QT in Wayland
       pkgs.libsForQt5.qt5.qtwayland # QT support for wayland
       pkgs.qt6.qtwayland # QT support for wayland
+      # TODO -- wireplumber and pipewire are installed but not running (dead)
+      # TODO -- I cannot run `xdg-desktop-portal` program
+      # TODO -- I don't have installed an `xdph`
+      # TODO -- `systemctl --user status xdg-desktop-portal-hyprland` shows good results
     ] ++
 
     # Messaging
@@ -99,6 +102,7 @@
       pkgs.spotify
       pkgs.keepassxc
       pkgs.syncthing
+      pkgs.firefox
       pkgs.xournalpp # For writting docs using the HUION tablet
       pkgs.onlyoffice-bin # Alternative to MS Office
       pkgs.obs-studio # Streaming and recording
@@ -108,7 +112,6 @@
       pkgs.krita # For some kick drawings
       pkgs.evince # PDF Reader from Ubunut
       pkgs.zathura # PDF Reader for advanced users
-      pkgs.firefox # Secondary web browser
       pkgs.shotwell # Useful when viewing a lot of images
       pkgs.mate.engrampa # Working with compressed and zipped files
       pkgs.gnome.nautilus # Graphic file explorer

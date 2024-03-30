@@ -87,7 +87,7 @@ in
   custom_python_enviroment
   pkgs.cargo
   pkgs.ruff
-  pkgs.rnix-lsp
+  pkgs.nixd
   pkgs.sumneko-lua-language-server
   pkgs.lua53Packages.lua-lsp
   pkgs.julia-bin
