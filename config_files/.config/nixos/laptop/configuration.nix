@@ -238,8 +238,13 @@ in
     NIXOS_OZONE_WL = "1";
 
     # Configure QT under hyprland
-    QT_QPA_PLATFORM = "wayland";
-    QT_QPA_PLATFORMTHEME = "wayland";
+    QT_QPA_PLATFORM = "wayland;xcb";
+    QT_QPA_PLATFORMTHEME="qt6ct";
+
+    # Try to fix some problems with file pickers
+    XDG_CURRENT_DESKTOP="Hyprland";
+    XDG_SESSION_TYPE="wayland";
+    XDG_SESSION_DESKTOP="Hyprland";
   };
 
   # Most wayland compositors need this

@@ -33,7 +33,8 @@
       pkgs.wireplumber # For screen sharing
       pkgs.grim # For taking screenshots
       pkgs.slurp # For taking screenshots
-      # pkgs.xdg-desktop-portal-hyprland # For having portals (wireplumber, pulseaudio benefit from this)
+      pkgs.xdg-desktop-portal # TODO -- needed for interacting with portals
+      pkgs.xdg-desktop-portal-gtk # TODO -- for the file picker
 
       # We want to have access to pactl, which is provided by pulseaudio
       # But we don't want to enable the service, so just install the package
