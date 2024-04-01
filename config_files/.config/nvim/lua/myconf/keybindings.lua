@@ -72,8 +72,8 @@ vim.keymap.set("i", "}", "}<c-g>u", { noremap = true })
 
 -- Git integrations
 setmap_group_name("<leader>g", "Git")
-setmap("n", "<leader>gg", ":Neogit kind=vsplit<CR>", {}, "Open git status in vertical split")
-setmap("n", "<leader>gG", ":Neogit kind=replace<CR>", {}, "Open git status in single buffer")
+setmap("n", "<leader>gg", ":Neogit kind=tab<CR>", {}, "Open git status in a new tab")
+setmap("n", "<leader>gG", ":Neogit kind=auto<CR>", {}, "Open git status in a split")
 setmap('n', '<leader>gi', ":Gitsign toggle_signs<CR>", {}, "Toggle git signs")
 
 -- Change NVIM Working Directory
