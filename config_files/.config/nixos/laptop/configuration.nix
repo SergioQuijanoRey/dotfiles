@@ -251,5 +251,17 @@ in
   hardware.nvidia = {
     modesetting.enable = true;
   };
+
+  # Portals
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
+
+  # Fix problems with portals
+  systemd.user.services.xdg-desktop-portal-gtk = {
+    wantedBy = ["xdg-desktop-portal.service"];
+    before = ["xdg-desktop-portal.service"];
+  };
 }
 

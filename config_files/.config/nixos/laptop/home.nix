@@ -33,8 +33,6 @@
       pkgs.wireplumber # For screen sharing
       pkgs.grim # For taking screenshots
       pkgs.slurp # For taking screenshots
-      pkgs.xdg-desktop-portal # TODO -- needed for interacting with portals
-      pkgs.xdg-desktop-portal-gtk # TODO -- for the file picker
 
       # We want to have access to pactl, which is provided by pulseaudio
       # But we don't want to enable the service, so just install the package
@@ -47,10 +45,6 @@
       # Support for QT in Wayland
       pkgs.libsForQt5.qt5.qtwayland # QT support for wayland
       pkgs.qt6.qtwayland # QT support for wayland
-      # TODO -- wireplumber and pipewire are installed but not running (dead)
-      # TODO -- I cannot run `xdg-desktop-portal` program
-      # TODO -- I don't have installed an `xdph`
-      # TODO -- `systemctl --user status xdg-desktop-portal-hyprland` shows good results
     ] ++
 
     # Messaging
