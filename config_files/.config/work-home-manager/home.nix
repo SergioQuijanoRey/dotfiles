@@ -27,6 +27,7 @@
     [
       pkgs.bottom
       pkgs.sqlite
+      pkgs.mate.engrampa
     ] ++
 
     # Desktop packages
