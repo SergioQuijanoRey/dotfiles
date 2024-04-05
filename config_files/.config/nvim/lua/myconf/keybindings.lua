@@ -27,12 +27,6 @@ setmap("n", "<F6>", ":setlocal spell! spelllang=en<CR>", {}, "English spell chec
 setmap("n", "<leader>k", ":sp<CR>:terminal<CR>A", {}, "Open horizontal terminal")
 setmap("n", "<leader>K", ":vsp<CR>:terminal<CR>A", {}, "Open vertical terminal")
 
--- File tree manipulation
-setmap_group_name("<leader>o", "File tree management")
-setmap("n", "<leader>oo", ":Oil<CR>", {}, "Oil file manager")
-setmap("n", "<leader>of", require("oil").toggle_float, {}, "Oil file manager floating window")
-setmap("n", "<leader>oO", ":NvimTreeToggle<CR>", {}, "Nvim tree")
-setmap("n", "<leader>-", ":Oil .<CR>", {}, "Oil file manager")
 
 -- For exiting the terminal mode
 setmap("t", "<leader><Esc>", "<C-\\><C-n>>", { noremap = true }, "Needed for exiting terminal mode")

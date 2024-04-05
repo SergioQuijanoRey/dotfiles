@@ -10,14 +10,3 @@ vim.opt.guicursor = "" -- Block cursor
 vim.optloaded_matchparen = 1 -- No matching parenthesis/brakets/... highlight
 vim.opt.termguicolors = true -- Colorschemes dont work well without this
 vim.opt.background = "dark" -- Dark background, does nothing with gruvbox colorscheme
-
--- Set the colorscheme
-local catppuccin = require("catppuccin")
-catppuccin.setup({
-    flavour = "frappe",
-    integrations = {
-        lsp_trouble = true,
-        which_key = true
-    }
-})
-vim.api.nvim_command "colorscheme catppuccin-frappe"
