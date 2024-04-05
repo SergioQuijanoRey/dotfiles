@@ -12,9 +12,11 @@ return {
                 repl = "r",
                 toggle = "t",
             },
+
             -- Expand lines larger than the window
             -- Requires >= 0.7
             expand_lines = vim.fn.has("nvim-0.7") == 1,
+
             -- Layouts define sections of the screen to place windows.
             -- The position can be "left", "right", "top" or "bottom".
             -- The size specifies the height/width depending on position. It can be an Int
@@ -74,8 +76,6 @@ return {
             }
         },
         config = function(opts)
-            local aux = require("myconf/aux")
-
             -- Configuration for debugging UI
             require("dapui").setup(opts)
 
@@ -97,20 +97,20 @@ return {
             -- Keymaps
             local setmap = require("myconf/aux").setmap
             local setmap_group_name = require("myconf/aux").setmap_group_name
+
             setmap_group_name("<leader>d", "Debugging")
-            setmap("n", "<leader>dc", ":lua require'dap'.continue()<CR>", {}, "Continue")
-            setmap("n", "<leader>do", ":lua require'dap'.step_over()<CR>", {}, "Step over")
-            setmap("n", "<leader>di", ":lua require'dap'.step_into()<CR>", {}, "Step into")
-            setmap("n", "<leader>dx", ":lua require'dap'.step_out()<CR>", {}, "Step out")
-            setmap("n", "<leader>db", ":lua require'dap'.toggle_breakpoint()<CR>", {}, "Toggle Breakpoint")
-            setmap("n", "<leader>dB", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", {},
+            setmap("n", "<leader>dc", require 'dap'.continue(), {}, "Continue")
+            setmap("n", "<leader>do", require 'dap'.step_over(), {}, "Step over")
+            setmap("n", "<leader>di", require 'dap'.step_into(), {}, "Step into")
+            setmap("n", "<leader>dx", require 'dap'.step_out(), {}, "Step out")
+            setmap("n", "<leader>db", require 'dap'.toggle_breakpoint(), {}, "Toggle Breakpoint")
+            setmap("n", "<leader>dB", require 'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: ')), {},
                 "Set breakpoint with condition")
             setmap("n", "<leader>dl",
-                ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>",
+                require 'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: ')),
                 {},
                 "Set breakpoint with log message")
-            setmap("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>", {}, "Open the REPL")
-            setmap("n", "<leader>dt", ":lua require'dap-python'.test_method()<CR>", {}, "Test method for python")
+            setmap("n", "<leader>dr", require 'dap'.repl.open(), {}, "Open the REPL")
 
             -- == Configuration for C++ and Rust ==
             dap.adapters.lldb = {
@@ -175,6 +175,10 @@ return {
                 -- Using global python and not venv python
                 -- Getting that glob path dynamically
                 require('dap-python').setup(python_path)
+
+                -- Set a special keybinding for python
+                local setmap = require("myconf.aux").setmap
+                setmap("n", "<leader>dt", require 'dap-python'.test_method(), {}, "Test method for python")
             end
         },
     },

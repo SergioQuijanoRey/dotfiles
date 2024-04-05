@@ -29,28 +29,29 @@ function M.setmap(mode, keymap, command, opts, description)
     -- TODO -- BUG -- whichkey is not working for the moment
     M.stdlib_map(mode, keymap, command, opts, description)
 
-    -- NOTE -- whichkey does not work well in visual mode
-    --      -- see https://github.com/folke/which-key.nvim/issues/458
-    --      -- So in this case register this command also with stdlib map
-    if mode == "v" then
-        M.stdlib_map(mode, keymap, command, opts, description)
-        return
-    end
+    -- TODO -- BUG -- uncomment
+    -- -- NOTE -- whichkey does not work well in visual mode
+    -- --      -- see https://github.com/folke/which-key.nvim/issues/458
+    -- --      -- So in this case register this command also with stdlib map
+    -- if mode == "v" then
+    --     M.stdlib_map(mode, keymap, command, opts, description)
+    --     return
+    -- end
 
-    -- Sanitize input
-    description = description or ""
-    if opts == nil then
-        opts = {}
-    end
+    -- -- Sanitize input
+    -- description = description or ""
+    -- if opts == nil then
+    --     opts = {}
+    -- end
 
-    -- WhichKey puts the mode inside the opts table
-    local myopts = opts
-    myopts.mode = mode
+    -- -- WhichKey puts the mode inside the opts table
+    -- local myopts = opts
+    -- myopts.mode = mode
 
-    -- Construct the whichkey mapping
-    local mapping = {
-        [keymap] = { command, description }
-    }
+    -- -- Construct the whichkey mapping
+    -- local mapping = {
+    --     [keymap] = { command, description }
+    -- }
 
     -- wk.register({ mapping, myopts })
 end
@@ -66,7 +67,7 @@ end
 --- properly some maps in `M.setmap`
 --- NOTE: `description` is not used, so don't hesitate to put proper values there
 function M.stdlib_map(mode, keymap, command, opts, description)
-    vim.api.nvim_set_keymap(mode, keymap, command, opts)
+    vim.keymap.set(mode, keymap, command, opts)
 end
 
 -- Run a command and capture the output of the command

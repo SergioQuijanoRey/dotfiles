@@ -14,12 +14,13 @@ return {
         },
         dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function(opts)
-            require("oil").setup(opts)
+            local oil = require("oil")
+            oil.setup(opts)
 
             -- File tree manipulation
             setmap_group_name("<leader>o", "File tree management")
             setmap("n", "<leader>oo", ":Oil<CR>", {}, "Oil file manager")
-            setmap("n", "<leader>of", require("oil").toggle_float, {}, "Oil file manager floating window")
+            setmap("n", "<leader>of", oil.toggle_float, {}, "Oil file manager floating window")
             setmap("n", "<leader>oO", ":NvimTreeToggle<CR>", {}, "Nvim tree")
             setmap("n", "<leader>-", ":Oil .<CR>", {}, "Oil file manager")
         end

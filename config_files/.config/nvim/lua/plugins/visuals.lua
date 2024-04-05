@@ -1,7 +1,6 @@
 return {
 
     -- General visual plugins
-    'folke/zen-mode.nvim',                 -- Zen mode
     'lukas-reineke/indent-blankline.nvim', -- Identation guidelines
 
     -- Good pastel palette
