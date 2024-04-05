@@ -4,7 +4,7 @@
 local M = {}
 
 -- Libraries that we are going to use
-local wk = require("which-key")
+-- local wk = require("which-key")
 
 
 --- Executes a vim command
@@ -26,6 +26,9 @@ end
 ---
 --- Example: `setmap("n", "<Tab>", ":echo hello", {noremap = True}, 'Just print hello world')`
 function M.setmap(mode, keymap, command, opts, description)
+    -- TODO -- BUG -- whichkey is not working for the moment
+    M.stdlib_map(mode, keymap, command, opts, description)
+
     -- NOTE -- whichkey does not work well in visual mode
     --      -- see https://github.com/folke/which-key.nvim/issues/458
     --      -- So in this case register this command also with stdlib map
@@ -49,14 +52,14 @@ function M.setmap(mode, keymap, command, opts, description)
         [keymap] = { command, description }
     }
 
-    wk.register({ mapping, myopts })
+    -- wk.register({ mapping, myopts })
 end
 
 --- Define a group name for a set of mappings using whichkey
 function M.setmap_group_name(keymap, groupname)
-    wk.register({
-        [keymap] = { name = groupname }
-    })
+    -- wk.register({
+    --     [keymap] = { name = groupname }
+    -- })
 end
 
 --- VIM way of setting maps. This is used for cases where whichkey cannot set

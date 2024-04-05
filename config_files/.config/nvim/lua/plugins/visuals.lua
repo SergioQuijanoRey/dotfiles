@@ -1,8 +1,8 @@
 return {
-    'gruvbox-community/gruvbox', -- Gruvbox Theme updated
-    'joshdick/onedark.vim',      -- Secondary colorscheme
-    'endel/vim-github-colorscheme',
-    'YorickPeterse/vim-paper',
+
+    -- General visual plugins
+    'folke/zen-mode.nvim',                 -- Zen mode
+    'lukas-reineke/indent-blankline.nvim', -- Identation guidelines
 
     -- Good pastel palette
     {
@@ -21,4 +21,6 @@ return {
             vim.api.nvim_command "colorscheme catppuccin-frappe"
         end
     },
+
+
 }
