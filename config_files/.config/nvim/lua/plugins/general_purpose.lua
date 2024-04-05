@@ -1,11 +1,10 @@
 return {
-    'windwp/nvim-autopairs',   -- Autopairs certain chars as " or [
     'preservim/nerdcommenter', -- Commenting code
     'junegunn/vim-easy-align', -- Align plugin
     'lambdalisue/suda.vim',    -- For sudo writting a file
     {                          -- Undoo tree
         'mbbill/undotree',
-        config = function ()
+        config = function()
             local setmap = require("myconf/aux").setmap
             setmap('n', '<F3>', vim.cmd.UndotreeToggle, {}, "Toggle undo tree")
         end
@@ -15,7 +14,7 @@ return {
         opts = {
             -- All these keys will be mapped to their corresponding default scolling animation
             mappings = { '<C-u>', '<C-d>', '<C-b>', '<C-f>',
-            '<C-y>', '<C-e>', 'zt', 'zz', 'zb' },
+                '<C-y>', '<C-e>', 'zt', 'zz', 'zb' },
             hide_cursor = true,          -- Hide cursor while scrolling
             stop_eof = true,             -- Stop at <EOF> when scrolling downwards
             respect_scrolloff = false,   -- Stop scrolling when the cursor reaches the scrolloff margin of the file
@@ -24,6 +23,10 @@ return {
             pre_hook = nil,              -- Function to run before the scrolling animation starts
             post_hook = nil,             -- Function to run after the scrolling animation ends
             performance_mode = false,    -- Disable "Performance Mode" on all buffers.
-}
+        }
+    },
+    { -- Autopairs certain chars as " or [
+        'windwp/nvim-autopairs',
+        config = true
     }
 }

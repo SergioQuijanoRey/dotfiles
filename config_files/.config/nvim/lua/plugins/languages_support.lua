@@ -7,6 +7,6 @@ return {
     },
 
     -- Treesitter for just files
-    { "IndianBoy42/tree-sitter-just", opts = {} },
+    { "IndianBoy42/tree-sitter-just", config = true, },
 
 }

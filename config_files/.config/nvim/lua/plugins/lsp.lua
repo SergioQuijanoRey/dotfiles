@@ -118,9 +118,9 @@ return {
     {
         "j-hui/fidget.nvim",
         tag = "legacy",
-        opts = {}
+        config = true,
     },
 
     -- Install LSPs, linters, debuggers, ... really easily
-    { "williamboman/mason.nvim", opts = {} },
+    { "williamboman/mason.nvim", config = true, },
 }
