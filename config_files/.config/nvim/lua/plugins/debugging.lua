@@ -105,11 +105,11 @@ return {
         setmap("n", "<leader>dx", dap.step_out, {}, "Step out")
         setmap("n", "<leader>db", dap.toggle_breakpoint, {}, "Toggle Breakpoint")
         setmap("n", "<leader>dB", function() dap.set_breakpoint(vim.fn.input('Breakpoint condition: ')) end, {},
-        "Set breakpoint with condition")
+            "Set breakpoint with condition")
         setmap("n", "<leader>dl",
-        function ()dap.set_breakpoint(nil, nil, vim.fn.input('Log point message: ')) end,
-        {},
-        "Set breakpoint with log message")
+            function() dap.set_breakpoint(nil, nil, vim.fn.input('Log point message: ')) end,
+            {},
+            "Set breakpoint with log message")
         setmap("n", "<leader>dr", dap.repl.open, {}, "Open the REPL")
 
         -- == Configuration for C++ and Rust ==
@@ -159,7 +159,7 @@ return {
         -- Easily configure python debugging
         {
             "mfussenegger/nvim-dap-python",
-            ft = {"python"},
+            ft = { "python" },
             config = function()
                 local runcommand = require("myconf.aux").runcommand
                 local setmap = require("myconf.aux").setmap
