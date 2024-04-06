@@ -93,8 +93,6 @@ return {
                             fallback()
                         end
                     end, { "i", "s" }),
-
-
                 }),
 
                 sources = cmp.config.sources({

@@ -2,6 +2,7 @@
 return {
     -- Main plugin
     'nvim-telescope/telescope.nvim',
+    lazy = false,
 
     -- Requirements for telescope in order to run properly
     dependencies = {

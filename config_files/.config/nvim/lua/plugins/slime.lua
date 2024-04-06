@@ -1,8 +1,8 @@
 -- Sends selected lines to another tmux / zellij pane
 return {
     'jpalardy/vim-slime',
-    config = function ()
-
+    lazy = true,
+    config = function()
         local setmap = require("myconf/aux").setmap
         local setmap_group_name = require("myconf/aux").setmap_group_name
         local nvim_exec = require("myconf/aux").exec
@@ -24,6 +24,5 @@ return {
         -- With zellij we cannot automatically choose some pane (its really buggy)
         -- But we can fill the prompt with the most probable config that we will want
         nvim_exec('let g:slime_default_config = {"session_id": "current", "relative_pane": "right"}')
-
     end
 }

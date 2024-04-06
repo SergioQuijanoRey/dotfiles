@@ -1,7 +1,8 @@
 return {
 
     'folke/zen-mode.nvim',
-    config = function ()
+    lazy = true,
+    config = function()
         local setmap = require("myconf.aux").setmap
         local setmap_group_name = require("myconf.aux").setmap_group_name
         local exec = require("myconf/aux").exec
@@ -94,6 +95,5 @@ return {
         local M = {}
         M.custom_zen = custom_zen
         return M
-
     end
 }

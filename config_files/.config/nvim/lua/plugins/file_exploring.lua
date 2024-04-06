@@ -29,7 +29,7 @@ return {
     -- Classic file tree
     {
         'nvim-tree/nvim-tree.lua',
-
+        lazy = true,
         dependencies = {
             -- File icons
             'nvim-tree/nvim-web-devicons',

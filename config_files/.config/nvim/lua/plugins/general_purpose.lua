@@ -1,9 +1,10 @@
 return {
-    'preservim/nerdcommenter', -- Commenting code
-    'junegunn/vim-easy-align', -- Align plugin
-    'lambdalisue/suda.vim',    -- For sudo writting a file
-    {                          -- Undoo tree
+    { 'preservim/nerdcommenter', config = true, lazy = true }, -- Commenting code
+    { 'junegunn/vim-easy-align', config = true, lazy = true }, -- Align plugin
+    { 'lambdalisue/suda.vim',    config = true, lazy = true }, -- For sudo writting a file
+    {                                                          -- Undoo tree
         'mbbill/undotree',
+        lazy = true,
         config = function()
             local setmap = require("myconf/aux").setmap
             setmap('n', '<F3>', vim.cmd.UndotreeToggle, {}, "Toggle undo tree")
