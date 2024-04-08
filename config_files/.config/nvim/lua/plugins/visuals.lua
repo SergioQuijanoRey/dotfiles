@@ -28,7 +28,7 @@ return {
                 which_key = true
             }
         },
-        config = function(opts)
+        config = function(_, opts)
             require("catppuccin").setup(opts)
             vim.api.nvim_command "colorscheme catppuccin-frappe"
         end

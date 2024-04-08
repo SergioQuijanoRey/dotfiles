@@ -74,7 +74,7 @@ return {
             max_value_lines = 100, -- Can be integer or nil.
         }
     },
-    config = function(opts)
+    config = function(_, opts)
         -- Configuration for debugging UI
         require("dapui").setup(opts)
 

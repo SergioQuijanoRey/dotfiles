@@ -21,7 +21,7 @@ return {
     },
 
 
-    config = function(opts)
+    config = function()
         local telescope = require("telescope")
         local telescopeConfig = require("telescope.config")
 
