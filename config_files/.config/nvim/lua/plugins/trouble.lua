@@ -2,7 +2,6 @@
 -- Also, to quickly iterate over quickfix list
 return {
     "folke/trouble.nvim",
-    lazy = true,
     dependencies = {
         "nvim-tree/nvim-web-devicons",
         name = "nvim-web-devicons_nvim-tree"

@@ -3,7 +3,6 @@ return {
     -- Nushell support
     {
         "LhKipp/nvim-nu",
-        lazy = true,
         opts = { use_lsp_features = false },
     },
 

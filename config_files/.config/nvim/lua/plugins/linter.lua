@@ -3,7 +3,6 @@ return {
     -- Useful when the language server does not have linting
     -- Or when a separate linter is more useful (i.e. python with ruff)
     'mfussenegger/nvim-lint',
-    lazy = true,
     config = function()
         local lint = require("lint")
         -- Configure linters by filetype

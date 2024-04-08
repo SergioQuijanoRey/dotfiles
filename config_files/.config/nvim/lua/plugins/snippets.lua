@@ -1,6 +1,5 @@
 return {
     'L3MON4D3/LuaSnip',
-    lazy = true,
 
     dependencies = {
         -- For having autocompletion of the snippets trigger keywords

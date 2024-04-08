@@ -4,7 +4,6 @@ return {
     { 'lambdalisue/suda.vim',    config = true, lazy = true }, -- For sudo writting a file
     {                                                          -- Undoo tree
         'mbbill/undotree',
-        lazy = true,
         config = function()
             local setmap = require("myconf/aux").setmap
             setmap('n', '<F3>', vim.cmd.UndotreeToggle, {}, "Toggle undo tree")

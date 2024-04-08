@@ -1,6 +1,5 @@
 return {
     "mfussenegger/nvim-dap",
-    lazy = true,
     opts = {
         icons = { expanded = "▾", collapsed = "▸", current_frame = "▸" },
         mappings = {
