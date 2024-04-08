@@ -28,7 +28,6 @@ vim.api.nvim_create_user_command(
     }
 )
 
-
 --- Goes to the cwd of the file we are editing
 local cd_file_path = function()
     -- Move to dir of current file
