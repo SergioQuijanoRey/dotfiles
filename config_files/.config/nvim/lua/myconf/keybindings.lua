@@ -70,10 +70,6 @@ setmap("n", "<leader>gg", ":Neogit kind=tab<CR>", {}, "Open git status in a new 
 setmap("n", "<leader>gG", ":Neogit kind=auto<CR>", {}, "Open git status in a split")
 setmap('n', '<leader>gi', ":Gitsign toggle_signs<CR>", {}, "Toggle git signs")
 
--- Change NVIM Working Directory
--- Usefull when using fzf to open a file and instantly change NVIM working dir
-setmap("n", "<leader>cd", ":lua require('myconf/custom_funcs').cd_file_path()<CR>", {}, "Change nvim dir to cwd")
-
 -- Source the configuration
 setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", { noremap = true }, "Source the configuration")
 

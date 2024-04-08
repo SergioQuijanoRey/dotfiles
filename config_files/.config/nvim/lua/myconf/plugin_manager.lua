@@ -1,10 +1,3 @@
---- Plugin manager
---- We're using lazy.nvim, but that can change over time
-
-
---- TODO -- check out this plugins
---- 1. https://github.com/iamcco/markdown-preview.nvim
-
 --- Install lazy.nvim if it is not already installed
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -19,6 +12,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Setup some options for lazy nvim and take all configs from `lua/plugins/`
 local conf = {
     defaults = {
         lazy = false,

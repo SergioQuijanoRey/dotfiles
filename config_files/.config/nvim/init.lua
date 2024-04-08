@@ -1,18 +1,9 @@
---- NeoVIM config written in lua
+local exec = require("myconf/aux").exec
 
 --- Leader key
 --- Set it first because other modules should need this keymap to be set beforehand
 --- ======================================================================== ---
 vim.g.mapleader = ","
-
---- Load all my config files
---- ======================================================================== ---
-require("myconf")
-
---- Aux functions
---- ======================================================================== ---
-
-local exec = require("myconf/aux").exec
 
 --- Editor settings
 --- ======================================================================== ---
@@ -29,16 +20,16 @@ vim.opt.cursorline = true                        -- Highlight the current line
 
 -- Four spaces instead of tab
 exec("filetype plugin indent on")
-vim.opt.smarttab = true -- Set smarttab
+vim.opt.smarttab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
--- Spaces per tab, for certain filetypes
-exec("autocmd FileType dart setlocal shiftwidth=2 softtabstop=2 expandtab")
-
 -- Remove trailing white spaces when saving file
-exec([[autocmd BufWritePre * %s/\s\+$//e]])
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+    pattern = { "*" },
+    command = [[%s/\s\+$//e]],
+})
 
 -- Without this, when pasting in visual mode, what we got on the clipboard gets lost
 -- This way we can paste in visual mode multiple times without the need t
@@ -46,10 +37,15 @@ exec([[autocmd BufWritePre * %s/\s\+$//e]])
 exec([[xnoremap <expr> p 'pgv"'.v:register.'y`>']])
 exec([[xnoremap <expr> P 'Pgv"'.v:register.'y`>']])
 
+-- Splitting where i want
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+
 --- Performance
 --- ======================================================================== ---
-vim.opt.autoread = true                         -- Auto reload changed files
-exec("autocmd! bufwritepost init.lua source %") -- Auto compile when changing nvim config file
+
+-- Auto reload changed files
+vim.opt.autoread = true
 
 -- Get rid of swap/backup files
 exec("set noswapfile")
@@ -57,9 +53,20 @@ exec("set noswapfile")
 --- Use system clipboard instead of nvim registers
 vim.opt.clipboard = 'unnamedplus'
 
---- Others
+--- Visual settings
 --- ======================================================================== ---
 
--- Splitting where i want
-vim.opt.splitbelow = true
-vim.opt.splitright = true
+-- Basic neovim visual settings
+vim.opt.number = true -- Show numbers
+vim.opt.hlsearch = true -- Higlights what we searched
+vim.opt.wrap = false -- Don't wrap long lines
+vim.opt.listchars.extends = → -- Show arrow if line continues rightwards
+vim.opt.colorcolumn = { 80 } -- Show column line
+vim.opt.guicursor = "" -- Block cursor
+vim.optloaded_matchparen = 1 -- No matching parenthesis/brakets/... highlight
+vim.opt.termguicolors = true -- Colorschemes dont work well without this
+vim.opt.background = "dark" -- Dark background, does nothing with gruvbox colorscheme
+
+--- Load all my config files
+--- ======================================================================== ---
+require("myconf")
