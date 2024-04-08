@@ -3,10 +3,6 @@
 -- Methods we are going to export
 local M = {}
 
--- Libraries that we are going to use
--- local wk = require("which-key")
-
-
 --- Executes a vim command
 --- @param command string containing the nvim command
 ---
@@ -26,41 +22,47 @@ end
 ---
 --- Example: `setmap("n", "<Tab>", ":echo hello", {noremap = True}, 'Just print hello world')`
 function M.setmap(mode, keymap, command, opts, description)
-    -- TODO -- BUG -- whichkey is not working for the moment
-    M.stdlib_map(mode, keymap, command, opts, description)
+    -- NOTE: we have to import inside the function instead of in the start of
+    -- the file in order to whichkey to be loaded into lazy nvim before executing
+    -- the `require` statement
+    local wk = require("which-key")
 
-    -- TODO -- BUG -- uncomment
-    -- -- NOTE -- whichkey does not work well in visual mode
-    -- --      -- see https://github.com/folke/which-key.nvim/issues/458
-    -- --      -- So in this case register this command also with stdlib map
-    -- if mode == "v" then
-    --     M.stdlib_map(mode, keymap, command, opts, description)
-    --     return
-    -- end
+    -- NOTE -- whichkey does not work well in visual mode
+    --      -- see https://github.com/folke/which-key.nvim/issues/458
+    --      -- So in this case register this command also with stdlib map
+    if mode == "v" then
+        M.stdlib_map(mode, keymap, command, opts, description)
+        return
+    end
 
-    -- -- Sanitize input
-    -- description = description or ""
-    -- if opts == nil then
-    --     opts = {}
-    -- end
+    -- Sanitize input
+    description = description or ""
+    if opts == nil then
+        opts = {}
+    end
 
-    -- -- WhichKey puts the mode inside the opts table
-    -- local myopts = opts
-    -- myopts.mode = mode
+    -- WhichKey puts the mode inside the opts table
+    local myopts = opts
+    myopts.mode = mode
 
-    -- -- Construct the whichkey mapping
-    -- local mapping = {
-    --     [keymap] = { command, description }
-    -- }
+    -- Construct the whichkey mapping
+    local mapping = {
+        [keymap] = { command, description }
+    }
 
-    -- wk.register({ mapping, myopts })
+    wk.register({ mapping, myopts })
 end
 
 --- Define a group name for a set of mappings using whichkey
 function M.setmap_group_name(keymap, groupname)
-    -- wk.register({
-    --     [keymap] = { name = groupname }
-    -- })
+    -- NOTE: we have to import inside the function instead of in the start of
+    -- the file in order to whichkey to be loaded into lazy nvim before executing
+    -- the `require` statement
+    local wk = require("which-key")
+
+    wk.register({
+        [keymap] = { name = groupname }
+    })
 end
 
 --- VIM way of setting maps. This is used for cases where whichkey cannot set
