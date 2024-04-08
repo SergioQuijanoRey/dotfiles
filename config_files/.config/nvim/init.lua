@@ -40,9 +40,6 @@ exec("autocmd FileType dart setlocal shiftwidth=2 softtabstop=2 expandtab")
 -- Remove trailing white spaces when saving file
 exec([[autocmd BufWritePre * %s/\s\+$//e]])
 
--- Add spaces after comment delimiters by default
-exec([[let g:NERDSpaceDelims = 1]])
-
 -- Without this, when pasting in visual mode, what we got on the clipboard gets lost
 -- This way we can paste in visual mode multiple times without the need t
 -- recopying it again and again

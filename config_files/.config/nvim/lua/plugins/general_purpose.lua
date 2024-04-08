@@ -1,5 +1,4 @@
 return {
-    { 'preservim/nerdcommenter', config = true, lazy = true }, -- Commenting code
     { 'junegunn/vim-easy-align', config = true, lazy = true }, -- Align plugin
     { 'lambdalisue/suda.vim',    config = true, lazy = true }, -- For sudo writting a file
     {                                                          -- Undoo tree
@@ -28,5 +27,19 @@ return {
     { -- Autopairs certain chars as " or [
         'windwp/nvim-autopairs',
         config = true
-    }
+    },
+
+    -- Commenting code
+    {
+        'preservim/nerdcommenter',
+        config = function()
+            local exec = require("myconf/aux").exec
+
+            -- Add spaces after comment delimiters by default
+            exec([[let g:NERDSpaceDelims = 1]])
+
+            -- Use the default mappings
+            exec([[let g:NERDCreateDefaultMappings = 1]])
+        end
+    },
 }
