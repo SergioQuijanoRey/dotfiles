@@ -1,3 +1,6 @@
+local setmap = require("myconf/aux").setmap
+local setmap_group_name = require("myconf/aux").setmap_group_name
+
 -- Telescope
 return {
     -- Main plugin
@@ -64,5 +67,16 @@ return {
 
         -- Load the extensions into lua
         telescope.load_extension("ui-select")
+
+        -- Setup some mappings
+        setmap_group_name("<leader>l", "Telescope")
+        setmap("n", "<leader>p", "<cmd>Telescope find_files<cr>", { noremap = true }, "Telescope find files")
+        setmap("n", "<leader>ll", "<cmd>Telescope<CR>", { noremap = true }, "All telescope options")
+        setmap("n", "<leader>lg", "<cmd>Telescope live_grep<cr>", { noremap = true }, "Live grep")
+        setmap("n", "<leader>lb", "<cmd>Telescope buffers<cr>", { noremap = true }, "Buffers")
+        setmap("n", "<leader>lf", "<cmd>Telescope filetypes<cr>", { noremap = true }, "Filetypes")
+        setmap("n", "<leader>l/", "<cmd>Telescope current_buffer_fuzzy_find<cr>", { noremap = true },
+            "Current buffer fuzzy find")
+        setmap("n", "<leader>ld", "<cmd>Telescope diagnostics<cr>", { noremap = true }, "Diagnostics")
     end
 }

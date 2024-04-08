@@ -1,11 +1,13 @@
+local setmap = require("myconf/aux").setmap
+local setmap_group_name = require("myconf/aux").setmap_group_name
+
 return {
-    { 'junegunn/vim-easy-align', config = true, lazy = true }, -- Align plugin
-    { 'lambdalisue/suda.vim',    config = true, lazy = true }, -- For sudo writting a file
-    {                                                          -- Undoo tree
+    { 'lambdalisue/suda.vim', config = true, lazy = true }, -- For sudo writting a file
+    {                                                       -- Undoo tree
         'mbbill/undotree',
         config = function()
             local setmap = require("myconf/aux").setmap
-            setmap('n', '<F3>', vim.cmd.UndotreeToggle, {}, "Toggle undo tree")
+            setmap('n', '<F4>', vim.cmd.UndotreeToggle, {}, "Toggle undo tree")
         end
     },
     { -- Smooth scrolling
@@ -41,6 +43,15 @@ return {
 
             -- Use the default mappings
             exec([[let g:NERDCreateDefaultMappings = 1]])
+        end
+    },
+    -- Align plugin
+    {
+        'junegunn/vim-easy-align',
+        config = function()
+            setmap_group_name("<leader>a", "Easy align")
+            setmap("n", "<leader>a", "<Plug>(EasyAlign)", {})
+            setmap("v", "<leader>a", "<Plug>(EasyAlign)", {})
         end
     },
 }

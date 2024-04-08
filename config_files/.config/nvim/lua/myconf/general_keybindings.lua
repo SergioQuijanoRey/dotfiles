@@ -1,13 +1,6 @@
---- General Keybindings
---- Not all keybindings are defined here
---- For example, "myconf/debugging" has keybindings defined there
-
---- Avoid long lines for the set command
+--- General Keybindings that we do not define in a certain plugin configuration
 local setmap = require("myconf/aux").setmap
 local setmap_group_name = require("myconf/aux").setmap_group_name
-
---- General Remaps
---- ======================================================================== ---
 
 -- Fast movement
 setmap("n", "<C-Down>", "3j", {}, "Go three down")
@@ -23,17 +16,9 @@ setmap("v", ">", ">gv", { noremap = true }, "Ident block right")
 setmap("n", "<F5>", ":setlocal spell! spelllang=es<CR>", {}, "Spanish spell check")
 setmap("n", "<F6>", ":setlocal spell! spelllang=en<CR>", {}, "English spell check")
 
--- Open a terminal in a split
-setmap("n", "<leader>k", ":sp<CR>:terminal<CR>A", {}, "Open horizontal terminal")
-setmap("n", "<leader>K", ":vsp<CR>:terminal<CR>A", {}, "Open vertical terminal")
-
-
--- For exiting the terminal mode
-setmap("t", "<leader><Esc>", "<C-\\><C-n>>", { noremap = true }, "Needed for exiting terminal mode")
-
 -- For avoid shifting
-setmap("n", "<S-Up>", "<C-Up>", {})
-setmap("n", "<S-Down>", "<C-Down>", {})
+setmap("n", "<S-Up>", "3k", {})
+setmap("n", "<S-Down>", "3j", {})
 
 -- Tab Navigation
 setmap_group_name("<leader>t", "Tab management")
@@ -48,6 +33,8 @@ setmap("n", "<leader>t6", "6gt", {}, "Go to tab 6")
 setmap("n", "<leader>t7", "7gt", {}, "Go to tab 7")
 setmap("n", "<leader>t8", "8gt", {}, "Go to tab 8")
 setmap("n", "<leader>t9", "9gt", {}, "Go to tab 9")
+setmap("n", "<leader>t<Left>", ":tabprevious<CR>", {}, "Go to previous tab")
+setmap("n", "<leader>t<Right>", ":tabnext<CR>", {}, "Go to next tab")
 
 -- Undo break points
 -- When writting a line, instead of undoing the whole line, just undo to the latest savepoint
@@ -64,25 +51,6 @@ vim.keymap.set("i", ")", ")<c-g>u", { noremap = true })
 vim.keymap.set("i", "{", "{<c-g>u", { noremap = true })
 vim.keymap.set("i", "}", "}<c-g>u", { noremap = true })
 
--- Source the configuration
-setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", { noremap = true }, "Source the configuration")
-
--- Maps for easy align
-setmap_group_name("<leader>a", "Easy align")
-setmap("n", "<leader>a", "<Plug>(EasyAlign)", {})
-setmap("v", "<leader>a", "<Plug>(EasyAlign)", {})
-
 -- Maps for some macro utilities
 setmap_group_name("<leader>m", "Macro utilities")
 setmap("v", "<leader>mm", ":norm @q<CR>", {}, "Apply @q macro in selection mode")
-
---- Telescope remaps
---- ======================================================================== ---
-setmap_group_name("<leader>l", "Telescope")
-setmap("n", "<leader>p", "<cmd>Telescope find_files<cr>", { noremap = true }, "Telescope find files")
-setmap("n", "<leader>ll", "<cmd>Telescope<CR>", { noremap = true }, "All telescope options")
-setmap("n", "<leader>lg", "<cmd>Telescope live_grep<cr>", { noremap = true }, "Live grep")
-setmap("n", "<leader>lb", "<cmd>Telescope buffers<cr>", { noremap = true }, "Buffers")
-setmap("n", "<leader>lf", "<cmd>Telescope filetypes<cr>", { noremap = true }, "Filetypes")
-setmap("n", "<leader>l/", "<cmd>Telescope current_buffer_fuzzy_find<cr>", { noremap = true }, "Current buffer fuzzy find")
-setmap("n", "<leader>ld", "<cmd>Telescope diagnostics<cr>", { noremap = true }, "Diagnostics")
