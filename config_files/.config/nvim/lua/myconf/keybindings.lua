@@ -64,12 +64,6 @@ vim.keymap.set("i", ")", ")<c-g>u", { noremap = true })
 vim.keymap.set("i", "{", "{<c-g>u", { noremap = true })
 vim.keymap.set("i", "}", "}<c-g>u", { noremap = true })
 
--- Git integrations
-setmap_group_name("<leader>g", "Git")
-setmap("n", "<leader>gg", ":Neogit kind=tab<CR>", {}, "Open git status in a new tab")
-setmap("n", "<leader>gG", ":Neogit kind=auto<CR>", {}, "Open git status in a split")
-setmap('n', '<leader>gi', ":Gitsign toggle_signs<CR>", {}, "Toggle git signs")
-
 -- Source the configuration
 setmap("n", "<F4>", ":source ~/.config/nvim/init.lua<cr>", { noremap = true }, "Source the configuration")
 

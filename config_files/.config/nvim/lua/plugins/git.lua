@@ -1,17 +1,26 @@
+local setmap = require("myconf.aux").setmap
+local setmap_group_name = require("myconf.aux").setmap_group_name
+
 return {
     -- Git signs
     {
         "lewis6991/gitsigns.nvim",
-        opts = {
-            signs = {
-                add          = { text = '│' },
-                change       = { text = '│' },
-                delete       = { text = '-' },
-                topdelete    = { text = '‾' },
-                changedelete = { text = '~' },
-                untracked    = { text = '┆' },
-            },
-        },
+        config = function()
+            local opts = {
+                signs = {
+                    add          = { text = '│' },
+                    change       = { text = '│' },
+                    delete       = { text = '-' },
+                    topdelete    = { text = '‾' },
+                    changedelete = { text = '~' },
+                    untracked    = { text = '┆' },
+                },
+            }
+            require("gitsigns").setup(opts)
+
+            setmap_group_name("<leader>g", "Git")
+            setmap('n', '<leader>gi', ":Gitsign toggle_signs<CR>", {}, "Toggle git signs")
+        end
     },
 
     -- Neogit + Diffview
@@ -22,7 +31,6 @@ return {
             "nvim-lua/plenary.nvim",
         },
         opts = {
-
             -- This makes some parts look better
             graph_style = "unicode",
 
@@ -63,6 +71,15 @@ return {
                 item = { "󱞩", "󰁅" },
                 section = { "󱞩", "󰁅" },
             },
-        }
+        },
+        config = function(_, opts)
+            require("neogit").setup(opts)
+
+            -- Git integrations
+            setmap_group_name("<leader>g", "Git")
+            setmap("n", "<leader>gg", ":Neogit kind=tab<CR>", {}, "Open git status in a new tab")
+            setmap("n", "<leader>gG", ":Neogit kind=auto<CR>", {}, "Open git status in a split")
+            setmap('n', '<leader>gi', ":Gitsign toggle_signs<CR>", {}, "Toggle git signs")
+        end
     },
 }
