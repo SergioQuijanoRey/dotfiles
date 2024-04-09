@@ -23,7 +23,6 @@ return {
                     -- For having autocompletion of the snippets trigger keywords
                     'saadparwaiz1/cmp_luasnip'
                 }
-
             },
 
         },
