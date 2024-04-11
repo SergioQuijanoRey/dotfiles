@@ -21,6 +21,7 @@
       pkgs.just
       pkgs.neovim
       pkgs.trash-cli
+      pkgs.bat
     ] ++
 
     # System packages
