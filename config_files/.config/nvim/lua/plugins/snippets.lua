@@ -74,127 +74,6 @@ return {
             key = "lua",
         })
 
-        ls.add_snippets("markdown", {
-
-            -- Easily require a function
-            s("mdtitle", fmt(
-                "---\ntitle: {}\nauthor: {}\ndate: {}\ngeometry: margin = 3.0cm\n---",
-                { i(1, "titulo"), i(2, "Sergio Quijano Rey"), i(3, "fecha") }
-            )),
-
-            s("obsidianheader", fmt(
-[[
----
-title: {}
-type: {}
-tags: {}
-created_at: {}
-last_modified: {}
----
-]],
-                {
-                    i(1, ""),
-                    i(2, "note"), i(3, ""),
-                    d(4, date_input, {}, { user_args = { "%d/%m/%Y" } }),
-                    d(5, date_input, {}, { user_args = { "%d/%m/%Y" } }),
-                }
-            )),
-
-            s("task", fmt(
-                "- [ ] {}",
-                { i(1) }
-            )),
-
-            -- I use markdown to organize my life
-            s("weekorg", fmt(
-                [[
-# Lunes
-
-- Mañana
-    - [ ]
-- Tarde
-    - [ ]
-
-# Martes
-
-- Mañana
-    - [ ]
-- Tarde
-    - [ ]
-
-# Miércoles
-
-- Mañana
-    - [ ]
-- Tarde
-    - [ ]
-
-# Jueves
-
-- Mañana
-    - [ ]
-- Tarde
-    - [ ]
-
-# Viernes
-
-- Mañana
-    - [ ]
-- Tarde
-    - [ ]
-
-# Sábado
-
-- Mañana
-    - [ ]
-- Tarde
-    - [ ]
-
-# Domingo
-
-- Mañana
-    - [ ]
-- Tarde
-    - [ ]
-]],
-                {}
-            )),
-
-            -- Code sections inside markdown
-            --
-            s("code", fmt(
-                [[
-```{}
-{}
-```
-]],
-                { i(1, "python"), i(2, "") }
-            )),
-            s("codepy", fmt(
-                [[
-```python
-{}
-```
-]],
-                { i(1, "") }
-            )),
-
-            s("codecsharp", fmt(
-                [[
-```c_sharp
-{}
-```
-]],
-                { i(1, "") }
-            )),
-
-
-        }, {
-            key = "markdown",
-        })
-
-
-
         ls.add_snippets("rmd", {
 
             -- Easily require a function
@@ -434,5 +313,9 @@ output:
         }, {
             key = "tex",
         })
+
+
+        -- Finally, require all the snippet files in the `snippets` folder
+        require("snippets")
     end
 }
