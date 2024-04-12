@@ -144,9 +144,40 @@ return {
 ]],
                 {}
             )),
+
+            -- Code sections inside markdown
+            --
+            s("code", fmt(
+                [[
+```{}
+{}
+```
+]],
+                { i(1, "python"), i(2, "") }
+            )),
+            s("codepy", fmt(
+                [[
+```python
+{}
+```
+]],
+                { i(1, "") }
+            )),
+
+            s("codecsharp", fmt(
+                [[
+```c_sharp
+{}
+```
+]],
+                { i(1, "") }
+            )),
+
+
         }, {
             key = "markdown",
         })
+
 
 
         ls.add_snippets("rmd", {
