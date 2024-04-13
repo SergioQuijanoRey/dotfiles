@@ -70,7 +70,6 @@ return {
                     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 
                     -- Luasnip keybindings
-                    -- Previous these two were <Tab> and <S-Tab>
                     ["<C-Space>"] = cmp.mapping(function(fallback)
                         if cmp.visible() then
                             cmp.select_next_item()
