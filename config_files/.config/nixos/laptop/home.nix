@@ -63,8 +63,7 @@
 
       # Installing wine can enhance performance on other videogames
       # Mostly videogames installed through lutris
-      pkgs.wineWowPackages.stable
-      pkgs.winetricks
+      pkgs.wineWowPackages.waylandFull
 
       # Alternative client for openspades video game
       # Installed through a flake
