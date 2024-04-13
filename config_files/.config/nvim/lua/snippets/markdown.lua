@@ -20,47 +20,19 @@ local date_input = function(args, snip, old_state, fmt)
     return sn(nil, i(1, os.date(fmt)))
 end
 
---
+-- Make adding new snippets easier, instead of having a gigantic table
 local add_snippet = function(snippets, snippet_name, snippet_format)
-    local new_snippet = {
-        s(
-            snippet_name,
-            snippet_format
-        )
-    }
-
-
-    table.insert(snippets, new_snippet)
+    local new_snippet = s(
+        snippet_name,
+        snippet_format
+    )
+    return table.insert(snippets, new_snippet)
 end
-
 
 local md_snippets = {}
 
-add_snippet(
-    md_snippets,
-    "obsidianheader",
-    fmt(
-        [[
----
-title: {}
-type: {}
-tags: {}
-created_at: {}
-last_modified: {}
----
-]],
-        {
-            i(1, ""),
-            i(2, "note"), i(3, ""),
-            d(4, date_input, {}, { user_args = { "%d/%m/%Y" } }),
-            d(5, date_input, {}, { user_args = { "%d/%m/%Y" } }),
-        }
-    )
-)
-
-add_snippet(
-    md_snippets,
-    "weekorg",
+-- Week organization
+add_snippet(md_snippets, "weekorg",
     fmt(
         [[
 # Lunes
@@ -111,10 +83,33 @@ add_snippet(
     - [ ]
 - Tarde
     - [ ]
-]],
-        {}
-    ))
+]], {}, {}))
 
+-- Header that I use in all my obsidian notes
+add_snippet(
+    md_snippets,
+    "obsidianheader",
+    fmt(
+        [[
+---
+title: {}
+type: {}
+tags: {}
+created_at: {}
+last_modified: {}
+---
+]],
+        {
+            i(1, ""),
+            i(2, "note"), i(3, ""),
+            d(4, date_input, {}, { user_args = { "%d/%m/%Y" } }),
+            d(5, date_input, {}, { user_args = { "%d/%m/%Y" } }),
+        },
+        {}
+    )
+)
+
+-- I use code sections a lot in my notes
 add_snippet(
     md_snippets,
     "code",
@@ -127,7 +122,18 @@ add_snippet(
         { i(1, "python"), i(2, "") }
     )
 )
-
+add_snippet(
+    md_snippets,
+    "codecsharp",
+    fmt(
+        [[
+```c_sharp
+{}
+```
+]],
+        { i(1, "") }, {}
+    )
+)
 
 -- Finally, inform lua snip that we want to set this snippets
 ls.add_snippets(FILETYPE, md_snippets, {
