@@ -78,5 +78,6 @@ return {
         setmap("n", "<leader>l/", "<cmd>Telescope current_buffer_fuzzy_find<cr>", { noremap = true },
             "Current buffer fuzzy find")
         setmap("n", "<leader>ld", "<cmd>Telescope diagnostics<cr>", { noremap = true }, "Diagnostics")
+        setmap("n", "<leader>lr", "<cmd>Telescope lsp_document_symbols<cr>", { noremap = true }, "LSP Document symbols")
     end
 }
