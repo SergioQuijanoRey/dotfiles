@@ -152,6 +152,9 @@
     # Using my custom icons
     icon_folders=/usr/share/icons/Paper/32x32/devices/:/usr/share/icons/Paper/32x32/status/
 
+    # I want to have rounded corners
+    corner_radius = 5
+
 # Catppuccin frape theme
 # This can be found in https://github.com/catppuccin/dunst
 [global]
