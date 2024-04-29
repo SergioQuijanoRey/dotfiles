@@ -35,5 +35,13 @@
     [
       pkgs.firefox
       pkgs.filezilla
+    ] ++
+
+    # Document writing
+    [
+      pkgs.typst
+      pkgs.typstfmt
+      pkgs.typst-lsp
+    ] ++
     ];
 }
