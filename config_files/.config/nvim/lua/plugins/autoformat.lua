@@ -6,7 +6,8 @@ return {
         formatters_by_ft = {
             lua = { "stylua" },
             python = { "ruff_format", "isort" },
-            sql = { "sql-formatter" }
+            sql = { "sql-formatter" },
+            typst = { "typstfmt" }
         },
 
         -- To utilize our user-defined functions to enable/disable autoformating

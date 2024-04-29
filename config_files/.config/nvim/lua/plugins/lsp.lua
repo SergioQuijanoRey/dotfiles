@@ -91,6 +91,9 @@ return {
                 -- For writing some Ocaml
                 "ocamllsp",
 
+                -- For writing typst documents
+                "typst_lsp"
+
             }
 
             -- Iterate over all installed servers and apply the config to them
