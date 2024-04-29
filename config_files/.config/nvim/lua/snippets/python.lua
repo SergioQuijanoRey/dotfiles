@@ -53,6 +53,25 @@ add_snippet(
     )
 )
 
+-- Way of setting up main function
+add_snippet(
+    python_snippets,
+    "main",
+    fmt(
+        [[
+def main():
+    {}
+
+if __name__ == "__main__":
+    main()
+]],
+        {
+            i(1, "pass")
+        },
+        {}
+    )
+)
+
 -- Finally, inform lua snip that we want to set this snippets
 ls.add_snippets(FILETYPE, python_snippets, {
     key = FILETYPE,
