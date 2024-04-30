@@ -14,6 +14,13 @@ def notes [] {
     nvim .
 }
 
+# Run jupyter lab with an IP that can be accessed through windows web browser
+def wsllab [] {
+    let dinip = (python3 -c "import subprocess; subprocess.run(['hostname', '-I'], text=True).stdout") | str trim
+    echo $"Running jupyter lab on IP: ($dinip)"
+    jupyter lab --ip $"($dinip)" .
+}
+
 # WSL specific config
 $env.PATH = ($env.PATH | split row (char esep) | append "/home/sergio/.local/bin")
 $env.GDK_DPI_SCALE = 1.0 # This is needed for WSL apps to render properly
