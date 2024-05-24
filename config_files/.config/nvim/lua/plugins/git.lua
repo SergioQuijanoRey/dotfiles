@@ -71,6 +71,15 @@ return {
                 item = { "󱞩", "󰁅" },
                 section = { "󱞩", "󰁅" },
             },
+
+            -- Configure the commit message view
+            -- I want it to be opened in a vsplit, with the diff opened below in
+            -- an horizontal split
+            commit_editor = {
+                kind = "vsplit",
+                show_staged_diff = true,
+                staged_diff_split_kind = "split"
+            },
         },
         config = function(_, opts)
             require("neogit").setup(opts)
