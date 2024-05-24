@@ -71,6 +71,14 @@ return {
                 item = { "󱞩", "󰁅" },
                 section = { "󱞩", "󰁅" },
             },
+
+            -- I want my commit editor to open in a vertical split with a
+            -- horizontal split with the diffview
+            commit_editor = {
+                kind = "vsplit",
+                show_staged_diff = true,
+                staged_diff_split_kind = "split"
+            },
         },
         config = function(_, opts)
             require("neogit").setup(opts)
