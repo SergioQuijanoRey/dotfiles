@@ -33,3 +33,8 @@ sync_type = "dir"
 repo_path = "./config_files/.config/work-home-manager"
 system_path = ".config/home-manager"
 sync_type = "dir"
+
+[Yazi]
+repo_path = "./config_files/.config/yazi"
+system_path = ".config/yazi"
+sync_type = "dir"
