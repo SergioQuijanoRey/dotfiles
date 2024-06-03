@@ -72,9 +72,8 @@ return {
                 section = { "󱞩", "󰁅" },
             },
 
-            -- Configure the commit message view
-            -- I want it to be opened in a vsplit, with the diff opened below in
-            -- an horizontal split
+            -- I want my commit editor to open in a vertical split with a
+            -- horizontal split with the diffview
             commit_editor = {
                 kind = "vsplit",
                 show_staged_diff = true,

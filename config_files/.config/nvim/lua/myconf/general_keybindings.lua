@@ -54,3 +54,7 @@ vim.keymap.set("i", "}", "}<c-g>u", { noremap = true })
 -- Maps for some macro utilities
 setmap_group_name("<leader>m", "Macro utilities")
 setmap("v", "<leader>mm", ":norm @q<CR>", {}, "Apply @q macro in selection mode")
+
+-- Manage size of window splits
+setmap("n", "<leader><", "10<C-w><", {}, "Make split bigger")
+setmap("n", "<leader>>", "10<C-w>>", {}, "Make split smaller")
