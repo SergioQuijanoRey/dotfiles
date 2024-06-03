@@ -1,6 +1,17 @@
 return {
 
     'folke/zen-mode.nvim',
+    dependencies = {
+        -- It allows us to go up and down one virtual line when wrapping
+        -- Otherwise, up and down can take us a few virtual lines away, when
+        -- a single actual line expands in a few virtual lines
+        "preservim/vim-pencil",
+        config = function()
+            -- I don't want the concealing feature
+            require("myconf/aux").exec("let g:pencil#conceallevel = 0")
+        end
+
+    },
     config = function()
         local setmap = require("myconf.aux").setmap
         local setmap_group_name = require("myconf.aux").setmap_group_name
@@ -12,13 +23,8 @@ return {
 
         local base_on_open = function(window)
             -- Wrap lines when entering zen mode.
-            exec(':set wrap')
-
-            -- Make wrapping preservecode identation
-            exec(':set breakindent')
-
-            -- Don't add a newline in the middle of a word when wrapping
-            exec(':set linebreak')
+            -- For that, we are using vim pencil
+            exec(":SoftPencil")
 
             -- Disable 80 char column line
             vim.opt.colorcolumn = nil
