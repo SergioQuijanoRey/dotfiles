@@ -1,9 +1,0 @@
-[[manager.prepend_keymap]]
-on   = [ "<C-s>" ]
-run  = 'shell "$SHELL" --block --confirm'
-desc = "Open shell here"
-
-[[manager.prepend_keymap]]
-on   = [ "Enter" ]
-run  = "plugin --sync smart-enter"
-desc = "Enter the child directory, or open the file"

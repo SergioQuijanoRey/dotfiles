@@ -17,3 +17,8 @@ desc = "Delete a bookmark"
 on = [ "'", "D" ]
 exec = "plugin bookmarks-persistence --args=delete_all"
 desc = "Delete all bookmarks"
+
+[[manager.prepend_keymap]]
+on   = [ "<C-s>" ]
+run  = 'shell "$SHELL" --block --confirm'
+desc = "Open shell here"
