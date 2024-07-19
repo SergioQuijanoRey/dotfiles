@@ -17,7 +17,13 @@ return {
                 z = true,
                 g = true,
             }
-        }
+        },
+        -- Helix windows
+        preset = "helix",
+        win = {
+            width = { min = 10, max = 100 },
+            height = { min = 50, max = 100 },
+        },
     },
     init = function()
         vim.o.timeout = true

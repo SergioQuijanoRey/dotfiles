@@ -27,14 +27,6 @@ function M.setmap(mode, keymap, command, opts, description)
     -- the `require` statement
     local wk = require("which-key")
 
-    -- NOTE -- whichkey does not work well in visual mode
-    --      -- see https://github.com/folke/which-key.nvim/issues/458
-    --      -- So in this case register this command also with stdlib map
-    if mode == "v" then
-        M.stdlib_map(mode, keymap, command, opts, description)
-        return
-    end
-
     -- Sanitize input
     description = description or ""
     if opts == nil then
@@ -50,7 +42,7 @@ function M.setmap(mode, keymap, command, opts, description)
         [keymap] = { command, description }
     }
 
-    wk.register({ mapping, myopts })
+    wk.add({ lhs = keymap, rhs = command, desc = description, mode = mode, opts })
 end
 
 --- Define a group name for a set of mappings using whichkey
@@ -60,8 +52,8 @@ function M.setmap_group_name(keymap, groupname)
     -- the `require` statement
     local wk = require("which-key")
 
-    wk.register({
-        [keymap] = { name = groupname }
+    wk.add({
+        { keymap, group = groupname }
     })
 end
 
