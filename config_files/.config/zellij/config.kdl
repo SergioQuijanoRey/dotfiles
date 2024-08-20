@@ -95,7 +95,7 @@ keybinds {
 
         // New tab but using our custom layout
         bind "N" {
-            NewTab { layout "floating_layout"; }
+            NewTab { layout "owndefault"; }
         }
     }
     scroll {
