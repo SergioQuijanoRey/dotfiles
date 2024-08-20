@@ -39,9 +39,10 @@
 
     # Document writing
     [
-      pkgs.typst
-      pkgs.typstfmt
-      pkgs.typst-lsp
+      stablepkgs.typst
+      stablepkgs.typstfmt
+      stablepkgs.typst-lsp
+      pkgs.pandoc
     ] ++
     ];
 }
