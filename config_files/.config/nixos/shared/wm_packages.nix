@@ -1,6 +1,6 @@
 # List of shared packages that we are going to use in WM enviroments
 # No matter which window manager we are using, we might want this packages
-{ pkgs, ... }:
+{ pkgs, latestpkgs, ... }:
 
 [
   pkgs.arandr # To control multiple displays
@@ -17,5 +17,4 @@
   pkgs.rofimoji # Have a rofi emoji selector
   pkgs.playerctl # To have play pause
   pkgs.acpi # Check for battery status
-  pkgs.polybarFull
 ]

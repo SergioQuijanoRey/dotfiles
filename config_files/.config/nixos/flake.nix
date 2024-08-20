@@ -5,7 +5,7 @@
   inputs = {
     # We have two versions of nixpkgs so we can update more frequently one input
     # on which only relies a subset of bleeding-edge packages
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     latestnixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {

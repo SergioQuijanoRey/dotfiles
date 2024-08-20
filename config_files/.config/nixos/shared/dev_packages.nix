@@ -1,5 +1,5 @@
 # List of the dev and system packages that we want to have installed in all of our systems
-{ pkgs, ... }:
+{ pkgs, latestpkgs, ... }:
 
 let
   # Specify custom Python enviroment
@@ -21,10 +21,11 @@ in
 
 # Dev packages
 [
-  pkgs.neovim # Main editor
+  latestpkgs.neovim # Main editor
+  latestpkgs.zellij # Good alternative for zellij
+
   pkgs.tree-sitter # Neovim relies heavily on treesitter
   pkgs.tmux # Terminal multiplexer
-  pkgs.zellij # Good alternative for zellij
   pkgs.ripgrep # Better grep
   pkgs.just # Better version of makefile
   pkgs.rsync # Sync files among machines or inside the same machine
@@ -35,12 +36,15 @@ in
   pkgs.fzf # Searching and piping in the terminal
   pkgs.rclone # For syncing with google drive
   pkgs.git # VCS
+  pkgs.lazygit # Useful for interacting with git without neovim
   pkgs.pandoc # Tools like rmarkdown need this
   pkgs.sqlite # Database engine that I use in some backends
 ] ++
 
 # CLI apps
 [
+  latestpkgs.yazi # Alternative to ranger
+
   pkgs.zoxide # Better cd command
   pkgs.ranger # CLI file manager
   pkgs.atuin # Better shell history
