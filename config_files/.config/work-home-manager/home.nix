@@ -1,18 +1,4 @@
 { config, pkgs, stablepkgs, ... }:
-
-let
-  # Specify custom Python enviroment
-  # `pp` is the passed python packages object
-  custom_python_packages = pp: [
-    pp.numpy
-    pp.pandas
-    pp.pytest
-    pp.oscrypto
-    pp.virtualenv
-  ];
-  custom_python_enviroment = pkgs.python310.withPackages custom_python_packages;
-
-in
 {
   # Home manager needed info
   home.username = "sergio";
@@ -42,9 +28,6 @@ in
       pkgs.snowsql
       pkgs.lazygit
       pkgs.docker_26
-
-      # Custom packages for python
-      custom_python_enviroment
     ] ++
 
     # System packages
