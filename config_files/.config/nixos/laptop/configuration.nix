@@ -209,20 +209,10 @@ in
   # Avoid shutting down laptop when lid is closed
   services.logind.lidSwitchExternalPower = "ignore";
 
-  # Setup hyrpland
+  # Setup hyprland
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-
-    # Make sure we are using the packages from the flake
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    portalPackage = inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
-  };
-
-  # Use cachix to avoid building from scratch all hyprland related stuff
-  nix.settings = {
-      substituters = ["https://hyprland.cachix.org"];
-      trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
   };
 
   # For better wayland behaviour

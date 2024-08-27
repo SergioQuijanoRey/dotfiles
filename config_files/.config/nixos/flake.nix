@@ -5,7 +5,7 @@
   inputs = {
     # We have two versions of nixpkgs so we can update more frequently one input
     # on which only relies a subset of bleeding-edge packages
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     latestnixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
@@ -24,10 +24,6 @@
     nixgl_flake = {
       url = "github:guibou/nixGL";
     };
-
-    hyprland = {
-      url = "github:hyprwm/Hyprland";
-    };
   };
 
   outputs =
@@ -38,7 +34,6 @@
       zerospades_flake
     , nixgl_flake
     , latestnixpkgs
-    , hyprland
     } @ inputs:
     let
       # Architecture of the system
@@ -49,7 +44,6 @@
 
       pkgs = nixpkgs.legacyPackages.${system};
       latestpkgs = latestnixpkgs.legacyPackages.${system};
-
 
       # In all my machines I use the same username
       user = "sergio";
@@ -91,14 +85,17 @@
               # and also using the shared list of packages
               home-manager.extraSpecialArgs = {
                 inherit zerospades nixgl;
-                dev_packages = import ./shared/dev_packages.nix pkgs;
-                wm_packages = import ./shared/wm_packages.nix pkgs;
+                dev_packages = import ./shared/dev_packages.nix {
+                    pkgs = pkgs;
+                    latestpkgs = latestpkgs;
+                };
+                wm_packages = import ./shared/wm_packages.nix {
+                    pkgs = pkgs;
+                    latestpkgs = latestpkgs;
+                };
                 latestpkgs = latestpkgs;
               };
             }
-
-            # Setup hyprland
-            hyprland.nixosModules.default
           ];
         };
 
