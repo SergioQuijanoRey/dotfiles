@@ -30,6 +30,7 @@ in
       pkgs.yazi
       pkgs.taskwarrior3
       pkgs.vit
+      pkgs.direnv
     ] ++
 
     # Dev packages

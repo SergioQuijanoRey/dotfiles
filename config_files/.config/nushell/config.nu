@@ -13,3 +13,5 @@ source ~/.config/nushell/functions.nu
 
 # Work-specific configuration
 # source ~/.config/nushell/work_machine.nu
+# Hooks
+source ~/.config/nushell/hooks.nu
