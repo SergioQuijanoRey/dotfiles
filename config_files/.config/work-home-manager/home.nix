@@ -35,6 +35,8 @@
       pkgs.bottom
       pkgs.sqlite
       pkgs.mate.engrampa
+      pkgs.duf
+      pkgs.du-dust
     ] ++
 
     # Desktop packages
