@@ -14,7 +14,7 @@ in
 
 # Terminal emulators and shells
 [
-  pkgs.wezterm # Preferred terminal
+  latestpkgs.wezterm # Preferred terminal
   pkgs.alacritty # Fallback terminal
   pkgs.nushell # Alternative to zsh and bash
 ] ++
