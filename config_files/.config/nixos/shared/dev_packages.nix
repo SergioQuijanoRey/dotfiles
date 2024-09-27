@@ -16,6 +16,7 @@ in
 [
   latestpkgs.wezterm # Preferred terminal
   pkgs.alacritty # Fallback terminal
+  pkgs.kitty # Another fallback terminal
   pkgs.nushell # Alternative to zsh and bash
 ] ++
 
@@ -84,6 +85,7 @@ in
   pkgs.unzip # Some nvim LSPs need this to install
   pkgs.patchelf # To work with mason.nvim
   pkgs.jmtpfs # Accessing Android devices
+  pkgs.gcc
 ] ++
 
   # Programming languages tooling
