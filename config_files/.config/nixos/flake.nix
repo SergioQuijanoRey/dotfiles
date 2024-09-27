@@ -22,7 +22,7 @@
 
     # Some videogames need this package to run with hardware acceleration
     nixgl_flake = {
-      url = "github:guibou/nixGL";
+        url = "github:guibou/nixGL";
     };
   };
 
@@ -79,6 +79,48 @@
               # Import the home manager configuration
               home-manager.users.${user} = {
                 imports = [ ./laptop/home.nix ];
+              };
+
+              # We are using this for passing nix flakes from github
+              # and also using the shared list of packages
+              home-manager.extraSpecialArgs = {
+                inherit zerospades nixgl;
+                dev_packages = import ./shared/dev_packages.nix {
+                    pkgs = pkgs;
+                    latestpkgs = latestpkgs;
+                };
+                wm_packages = import ./shared/wm_packages.nix {
+                    pkgs = pkgs;
+                    latestpkgs = latestpkgs;
+                };
+                latestpkgs = latestpkgs;
+              };
+            }
+          ];
+        };
+
+        # Config my workstation
+        workstation = lib.nixosSystem {
+          inherit system;
+          specialArgs = {inherit inputs; };
+
+          modules = [
+
+            # Import the base NixOS configuration
+            ./workstation/configuration.nix
+
+            # Set up home manager
+            home-manager.nixosModules.home-manager
+            {
+
+
+              # So we can use nixpkgs instead of home manager packages
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+
+              # Import the home manager configuration
+              home-manager.users.${user} = {
+                imports = [ ./workstation/home.nix ];
               };
 
               # We are using this for passing nix flakes from github
