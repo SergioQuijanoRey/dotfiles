@@ -58,6 +58,11 @@
     [
       pkgs.glibc
       pkgs.libcxx
+    ] ++
+
+    # Code intelligence
+    [
+      pkgs.sleek
     ];
 
   # Set the mime types
