@@ -8,6 +8,7 @@ $env.config = {
 }
 
 # Left prompt is going to be set using `starship`
+$env.STARSHIP_CONFIG = "~/.config/starship/starship.toml"
 $env.STARSHIP_SHELL = "nu"
 def create_left_prompt [] {
     starship prompt
