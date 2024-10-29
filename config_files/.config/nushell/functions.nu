@@ -61,3 +61,12 @@ def --env yy [...args] {
 	}
 	rm -fp $tmp
 }
+
+# We need to run jupyter in a very concrete way inside wsl to be consumed from
+# the windows host machine
+def jupyterwsl [] {
+    do {
+        let value = (python3 -c "import subprocess; value = subprocess.run(['hostname', '-I'], text=True).stdout") | split column " " | get column1 | first
+        jupyter lab --ip $"($value)" --no-browser .
+    }
+}
