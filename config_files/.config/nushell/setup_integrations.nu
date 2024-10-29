@@ -7,7 +7,7 @@ atuin init nu --disable-up-arrow | save -f ~/.local/share/atuin/init.nu
 source ~/.local/share/atuin/init.nu
 
 # Setup zoxide
-zoxide init nushell | save -f ~/.zoxide.nu
+zoxide init nushell | str replace --all "-- $rest" "-- ...$rest" | str replace --all "def-env" "def --env" | save -f ~/.zoxide.nu
 source ~/.zoxide.nu
 
 # Setup starship
