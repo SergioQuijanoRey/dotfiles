@@ -25,6 +25,10 @@ return {
                 }
             },
 
+            -- Use ripgrep as another source
+            {
+                "lukas-reineke/cmp-rg"
+            },
         },
         config = function()
             local cmp = require 'cmp'
@@ -97,14 +101,13 @@ return {
                     { name = 'nvim_lsp', keyword_length = min_keyword_length },
                     { name = 'luasnip',  keyword_length = min_keyword_length },
                     { name = 'emoji',    keyword_length = min_keyword_length },
-                }, { {
-                    name = 'buffer',
-                    keyword_length = min_keyword_length,
-                    option = {
-                        keyword_pattern = [[\k\+]]
+                    { name = "rg",       keyword_length = min_keyword_length, option = { additional_arguments = "--smart-case" } },
+                    {
+                        name = 'buffer',
+                        keyword_length = min_keyword_length,
+                        option = { keyword_pattern = [[\k\+]] },
                     }
-                } }
-                )
+                })
             })
 
             -- Set configuration for specific filetype.
