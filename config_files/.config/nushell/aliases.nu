@@ -1,9 +1,8 @@
 alias cd = z
-
 alias v = nvim .
 alias ng = nvim -c 'Neogit kind=replace'
 
-alias rebuild = sudo nixos-rebuild switch --flake /home/sergio/.config/nixos/.#asus-laptop
+alias rebuild = sudo nixos-rebuild switch --flake /home/sergio/.config/nixos/.#workstation
 
 alias filesize = du
 

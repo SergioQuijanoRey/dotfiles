@@ -1,18 +1,41 @@
-# Integrations with other programs
-# Do this first as other places rely on this setup
-source ~/.config/nushell/setup_integrations.nu
+# Changes to the default config
+# There are a lot of more config values, but I was not interested in changing everything
+$env.config = {
+    show_banner: false
 
-# Source the enviroment variable
-# There we config the nushell configs and the prompt look
-source ~/.config/nushell/env.nu
+    completions: {
+        # I prefer the fuzzy algorithm instead of the classic
+        algorithm: "fuzzy"    # prefix or fuzzy
+    }
 
-# My aliases
-source ~/.config/nushell/aliases.nu
+    edit_mode: "emacs"
 
-# My functions
-source ~/.config/nushell/functions.nu
+    # I want my cursor to be always a block
+    cursor_shape: {
+        emacs: block
+        vi_insert: block
+        vi_normal: block
+    }
 
-# Work-specific configuration
-# source ~/.config/nushell/work_machine.nu
-# Hooks
-source ~/.config/nushell/hooks.nu
+    hooks: {
+        # Run before the prompt is show
+        # NOTE: Allow direnv to work with nushell
+        pre_prompt: [{ ||
+          if (which direnv | is-empty) {
+            return
+          }
+
+          direnv export json | from json | default {} | load-env
+        }]
+    }
+}
+
+
+# Load third party integrations
+source ($nu.default-config-dir | path join 'integrations_load.nu')
+
+# Load the aliases
+source ($nu.default-config-dir | path join 'aliases.nu')
+
+# Load custom functions
+source ($nu.default-config-dir | path join 'functions.nu')
