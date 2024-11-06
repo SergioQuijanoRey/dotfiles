@@ -13,6 +13,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.supportedFilesystems = [ "ntfs" ];
 
   networking.hostName = "workstation"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -72,8 +73,9 @@
   # Setup opengl
   hardware.opengl = {
     enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
   };
-
 
   services.xserver = {
     # Configure keymap in X11
@@ -189,9 +191,9 @@
 
   programs.steam = {
     enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    gamescopeSession.enable = true;
   };
+  programs.gamemode.enable = true;
 
   # I want neovim as the default editor
   environment.variables.EDITOR = "nvim";
@@ -200,10 +202,9 @@
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 
-
-  # For better wayland behaviour
   environment.sessionVariables = {
 
+    # == For better wayland behaviour ==
     # Avoid cursor becoming invisible
     WLR_NO_HARDWARE_CURSOS = "1";
 

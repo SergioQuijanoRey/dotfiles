@@ -14,6 +14,7 @@
   pkgs.feh # For setting the wallpaper
   pkgs.arc-theme # Preferred theme
   pkgs.rofi # App launcher
+  pkgs.wofi # Rofi substitute for waybar
   pkgs.rofimoji # Have a rofi emoji selector
   pkgs.playerctl # To have play pause
   pkgs.acpi # Check for battery status

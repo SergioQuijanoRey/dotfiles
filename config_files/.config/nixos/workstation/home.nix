@@ -33,6 +33,7 @@
       pkgs.wireplumber # For screen sharing
       pkgs.grim # For taking screenshots
       pkgs.slurp # For taking screenshots
+      pkgs.pavucontrol # For managing audio
 
       # We want to have access to pactl, which is provided by pulseaudio
       # But we don't want to enable the service, so just install the package
@@ -71,6 +72,8 @@
       # Installed through a flake
       zerospades
 
+      # To install and manage `proton ge` that works better than normal proton
+      pkgs.protonup-qt
     ] ++
 
     # Fonts
@@ -111,7 +114,16 @@
       pkgs.shotwell # Useful when viewing a lot of images
       pkgs.mate.engrampa # Working with compressed and zipped files
       pkgs.gnome.nautilus # Graphic file explorer
+    ]
+
+
+    ++
+    # Nvidia packages
+    [
+        # Compatibility layer between nvidia and wayland
+        pkgs.egl-wayland
     ];
+
 
   # Fonts cannot be installed as normal packages
   # We need to specify this to reload font cache
