@@ -74,6 +74,7 @@
       pkgs.alejandra
       pkgs.sleek
       pkgs.stylua
+      pkgs.ruff
     ]
     ++
     # Font packages
