@@ -15,9 +15,9 @@ system_path = ".config/zellij"
 sync_type = "dir"
 
 [starship-config]
-repo_path = "./config_files/.config/starship"
-system_path = ".config/starship"
-sync_type = "dir"
+repo_path = "./config_files/.config/starship.toml"
+system_path = ".config/starship.toml"
+sync_type = "file"
 
 [Atuin]
 repo_path = "./config_files/.config/atuin"
