@@ -7,7 +7,8 @@ return {
             lua = { "stylua" },
             python = { "ruff_format", "isort" },
             sql = { "sleek" },
-            typst = { "typstfmt" }
+            typst = { "typstfmt" },
+            nix = { "alejandra" }
         },
 
         -- To utilize our user-defined functions to enable/disable autoformating

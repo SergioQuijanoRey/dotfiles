@@ -1,5 +1,9 @@
-{ config, pkgs, stablepkgs, ... }:
 {
+  config,
+  pkgs,
+  stablepkgs,
+  ...
+}: {
   # Home manager needed info
   home.username = "sergio";
   home.homeDirectory = "/home/sergio";
@@ -17,8 +21,8 @@
       pkgs.taskwarrior3
       pkgs.vit
       pkgs.direnv
-    ] ++
-
+    ]
+    ++
     # Dev packages
     [
       pkgs.just
@@ -27,9 +31,9 @@
       pkgs.bat
       pkgs.snowsql
       pkgs.lazygit
-      pkgs.docker_26
-    ] ++
-
+      pkgs.podman
+    ]
+    ++
     # System packages
     [
       pkgs.bottom
@@ -37,45 +41,55 @@
       pkgs.mate.engrampa
       pkgs.duf
       pkgs.du-dust
-    ] ++
-
+    ]
+    ++
     # Desktop packages
     [
       pkgs.firefox
       pkgs.filezilla
       pkgs.zathura
-    ] ++
-
+    ]
+    ++
     # Document writing
     [
       stablepkgs.typst
       stablepkgs.typstfmt
       stablepkgs.typst-lsp
       pkgs.pandoc
-    ] ++
-
+    ]
+    ++
     # Lib packages
     [
       pkgs.glibc
       pkgs.libcxx
-    ] ++
-
-    # Code intelligence
+    ]
+    ++
+    # Language LSPs
     [
+      pkgs.nixd
+    ]
+    ++
+    # Code formatters
+    [
+      pkgs.alejandra
       pkgs.sleek
+      pkgs.stylua
+    ]
+    ++
+    # Font packages
+    [
+      pkgs.nerd-font-patcher
     ];
 
   # Set the mime types
-  xdg.mimeApps =
-  let
+  xdg.mimeApps = let
     # Don't repeat the same mappings over and over
     xdg_mime_mappings = {
-        "application/pdf" = ["zathura.desktop"];
+      "application/pdf" = ["zathura.desktop"];
     };
-  in
-  {
-      enable = true;
-      associations.added = xdg_mime_mappings;
-      defaultApplications = xdg_mime_mappings;
+  in {
+    enable = true;
+    associations.added = xdg_mime_mappings;
+    defaultApplications = xdg_mime_mappings;
   };
 }
