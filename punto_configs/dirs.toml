@@ -177,3 +177,8 @@ sync_type = "dir"
 repo_path = "./config_files/.config/yazi"
 system_path = ".config/yazi"
 sync_type = "dir"
+
+[Wofi]
+repo_path = "./config_files/.config/wofi"
+system_path = ".config/wofi"
+sync_type = "dir"
