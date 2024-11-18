@@ -67,6 +67,7 @@
     # Language LSPs
     [
       pkgs.nixd
+      pkgs.mypy
     ]
     ++
     # Code formatters
