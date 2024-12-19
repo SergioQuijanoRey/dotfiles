@@ -61,3 +61,9 @@ def --env yy [...args] {
 	}
 	rm -fp $tmp
 }
+
+# Change directory to the notes repo and open neovim
+def notes [] {
+    cd ~/GitRepos/ObsidianNotes
+    nvim .
+}
