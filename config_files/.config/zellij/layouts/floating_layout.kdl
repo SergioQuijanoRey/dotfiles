@@ -1,0 +1,29 @@
+// When coding, I always use the same tab layout:
+// One normal pane, with the code. A floating pane, in the top right corner,
+// which size I augment manually, to launch commands / actions
+// So this layout automates that process
+
+
+layout {
+    // Default zellij tab bar
+    pane size=1 borderless=true {
+        // plugin location="zellij:tab-bar"
+        plugin location="zellij:compact-bar"
+    }
+
+    // Normal pane
+    pane focus=true
+
+    // Floating pane
+    floating_panes {
+        pane {
+            // In the top right corner
+            x "100%"
+            y "0%"
+
+            // Full height, not all width
+            width "70%"
+            height "100%"
+        }
+    }
+}
