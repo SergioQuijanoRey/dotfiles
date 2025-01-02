@@ -15,6 +15,7 @@ in
 # Terminal emulators and shells
 [
   latestpkgs.wezterm # Preferred terminal
+  latestpkgs.ghostty # New terminal
   pkgs.alacritty # Fallback terminal
   pkgs.kitty # Another fallback terminal
   pkgs.nushell # Alternative to zsh and bash

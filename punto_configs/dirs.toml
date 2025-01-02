@@ -182,3 +182,8 @@ sync_type = "dir"
 repo_path = "./config_files/.config/wofi"
 system_path = ".config/wofi"
 sync_type = "dir"
+
+[Ghostty]
+repo_path = "./config_files/.config/ghostty"
+system_path = ".config/ghostty"
+sync_type = "dir"
