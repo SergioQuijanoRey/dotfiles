@@ -66,6 +66,7 @@ def --env yy [...args] {
 def notes [] {
     cd ~/GitRepos/ObsidianNotes
     nvim .
+}
 
 # We need to run jupyter in a very concrete way inside wsl to be consumed from
 # the windows host machine
