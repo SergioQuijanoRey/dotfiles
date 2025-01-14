@@ -21,6 +21,10 @@
       pkgs.taskwarrior3
       pkgs.vit
       pkgs.direnv
+      pkgs.atuin
+      pkgs.starship
+      pkgs.ripgrep
+      pkgs.fd
     ]
     ++
     # Dev packages
@@ -29,9 +33,9 @@
       pkgs.neovim
       pkgs.trash-cli
       pkgs.bat
-      pkgs.snowsql
       pkgs.lazygit
       pkgs.podman
+      pkgs.marksman
     ]
     ++
     # System packages
@@ -41,6 +45,7 @@
       pkgs.mate.engrampa
       pkgs.duf
       pkgs.du-dust
+      pkgs.gcc
     ]
     ++
     # Desktop packages
