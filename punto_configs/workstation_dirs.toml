@@ -38,3 +38,8 @@ sync_type = "dir"
 repo_path = "./config_files/.config/yazi"
 system_path = ".config/yazi"
 sync_type = "dir"
+
+[Git-Config]
+repo_path = "./config_files/.gitconfig"
+system_path = ".gitconfig"
+sync_type = "file"
