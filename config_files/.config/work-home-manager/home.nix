@@ -15,7 +15,6 @@
     [
       pkgs.zellij
       pkgs.zoxide
-      pkgs.nushell
       pkgs.ranger
       pkgs.yazi
       pkgs.taskwarrior3
@@ -24,6 +23,7 @@
       pkgs.atuin
       pkgs.starship
       pkgs.ripgrep
+      pkgs.television
       pkgs.fd
     ]
     ++
@@ -36,6 +36,8 @@
       pkgs.lazygit
       pkgs.podman
       pkgs.marksman
+      pkgs.delta
+      pkgs.cargo
     ]
     ++
     # System packages
@@ -98,5 +100,9 @@
     enable = true;
     associations.added = xdg_mime_mappings;
     defaultApplications = xdg_mime_mappings;
+  };
+
+  programs.nushell = {
+    enable = true;
   };
 }
