@@ -90,6 +90,7 @@ return {
 				-- For nix
 				"nixd",
 
+				-- For python
 				"pylsp",
 
 				-- For writing some Ocaml
