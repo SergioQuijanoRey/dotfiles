@@ -231,5 +231,8 @@ default_layout "owndefault"
 layout_dir "/home/sergio/.config/zellij/layouts"
 mouse_mode true
 
+// Zellij is not using properly $env.EDITOR or $env.VISUAL
+scrollback_editor "/home/sergio/.nix-profile/bin/nvim"
+
 // This is needed in hyprland / wayland
 copy_command "wl-copy"
