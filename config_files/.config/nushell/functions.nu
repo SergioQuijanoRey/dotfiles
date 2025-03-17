@@ -80,5 +80,5 @@ def jupyterwsl [] {
 # Same as jupyterwsl but using uw
 def uvjupywsl [] {
     let value = (uv run python3 -c "import subprocess; value = subprocess.run(['hostname', '-I'], text=True).stdout") | split column " " | get column1 | first
-    uv run jupyter lab --ip $"($value)" --no-browser .
+    uv run jupyter lab --ip $"($value)" --no-browser --NotebookApp.token='jp' .
 }
