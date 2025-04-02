@@ -64,6 +64,10 @@ return {
 			vim.lsp.handlers["textDocument/signatureHelp"] =
 				vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
 
+			-- Diagnostic configuration
+			vim.diagnostic.config({ virtual_text = true })
+			vim.diagnostic.config({ virtual_lines = { current_line = true } })
+
 			-- We need to manually specify which servers we want to configure
 			-- Some languages are commented, because I am not using them now but might use them in the future
 			-- As we have set `automatic_installation = true`, this servers are installed automatically
@@ -107,6 +111,7 @@ return {
 			for _, server in ipairs(servers) do
 				-- Setup given server
 				require("lspconfig")[server].setup({
+
 					on_attach = on_attach,
 
 					-- Capabilities that were modified to talk with nvim-cmp
@@ -131,6 +136,7 @@ return {
 		config = true,
 	},
 
-	-- Install LSPs, linters, debuggers, ... really easily
-	{ "williamboman/mason.nvim", config = true },
+	-- TODO -- I am not using this
+	-- -- Install LSPs, linters, debuggers, ... really easily
+	-- { "williamboman/mason.nvim", config = true },
 }
