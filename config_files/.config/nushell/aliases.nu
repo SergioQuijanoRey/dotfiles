@@ -14,3 +14,5 @@ alias uncommit = git reset --soft HEAD~1
 alias py = python3
 
 alias myip = curl ifconfig.me
+
+alias uvim = uv run nvim

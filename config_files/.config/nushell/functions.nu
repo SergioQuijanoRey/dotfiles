@@ -82,7 +82,3 @@ def uvjupywsl [] {
     let value = (uv run python3 -c "import subprocess; value = subprocess.run(['hostname', '-I'], text=True).stdout") | split column " " | get column1 | first
     uv run jupyter lab --ip $"($value)" --no-browser --NotebookApp.token='jp' .
 }
-
-def uvim [] {
-    uv run nvim
-}
