@@ -13,14 +13,14 @@ local dir = home .. ".config/nvim/lua/myconf"
 local all_files = require("myconf.aux").scandir(dir)
 
 for _, file in ipairs(all_files) do
-    if file == "." or file == ".." or file == "init.lua" or file == "plugin_manager.lua" then
-        goto continue
-    end
+	if file == "." or file == ".." or file == "init.lua" or file == "plugin_manager.lua" then
+		goto continue
+	end
 
-    local basename = file:match("(.+)%..+") -- Remove the `.lua` file extension
-    local module_path = "myconf/" .. basename
+	local basename = file:match("(.+)%..+") -- Remove the `.lua` file extension
+	local module_path = "myconf/" .. basename
 
-    require(module_path)
+	require(module_path)
 
-    ::continue::
+	::continue::
 end
