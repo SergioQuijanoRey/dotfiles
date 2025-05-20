@@ -1,6 +1,6 @@
-alias cd = z
 alias v = nvim .
 alias ng = nvim -c 'Neogit kind=replace'
+alias uvim = uv run nvim
 
 alias rebuild = sudo nixos-rebuild switch --flake /home/sergio/.config/nixos/.#workstation
 
@@ -15,4 +15,5 @@ alias py = python3
 
 alias myip = curl ifconfig.me
 
-alias uvim = uv run nvim
+alias wo = wsl-open
+alias wcode = /home/sergio/.nix-profile/bin/code

@@ -4,7 +4,4 @@
 
 # Create the files that are required for the integrations
 # NOTE: this step must be executed here and not in `config.nu`
-source ($nu.default-config-dir | path join 'integrations_create_files.nu')
-
-# First change the look of the prompt
-source ($nu.default-config-dir | path join 'prompt.nu')
+# source ($nu.default-config-dir | path join 'integrations_create_files.nu')
