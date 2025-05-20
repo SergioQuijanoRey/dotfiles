@@ -5,7 +5,6 @@ return {
 	opts = {
 		formatters_by_ft = {
 			lua = { "stylua" },
-			python = { "ruff_format", "isort" },
 			sql = { "sleek" },
 			typst = { "typstfmt" },
 			nix = { "alejandra" },

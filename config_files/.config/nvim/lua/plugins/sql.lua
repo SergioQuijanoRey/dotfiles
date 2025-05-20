@@ -21,7 +21,6 @@ return {
 		init = function()
 			vim.g.db_ui_use_nerd_fonts = 1
 			vim.g.dbs = {
-				{ name = "dev", url = "sqlite:///~/pruebas.sqlite" },
 				{
 					name = "Escuela de Ventas",
 					url = "duckdb:////mnt/c/Users/squijanr/OneDrive - NTT DATA EMEAL/Projects/03 - EDV Sharepoint Privado/6. Data Warehouse/warehouse.duckdb",

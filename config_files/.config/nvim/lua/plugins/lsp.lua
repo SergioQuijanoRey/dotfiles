@@ -95,7 +95,9 @@ return {
 				"nixd",
 
 				-- For python
-				"pylsp",
+				"pylsp", -- General purpose lsp
+				"ruff", -- Linter and formatter
+				"ty", -- Static checking
 
 				-- For writing some Ocaml
 				"ocamllsp",
@@ -103,6 +105,9 @@ return {
 				-- For writing typst documents
 				"tinymist",
 			}
+
+			-- This server is experimental and has to be manually enabled
+			vim.lsp.enable("ty")
 
 			-- Capabilities that blink completion engine needs to inform about
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
@@ -135,8 +140,4 @@ return {
 		tag = "legacy",
 		config = true,
 	},
-
-	-- TODO -- I am not using this
-	-- -- Install LSPs, linters, debuggers, ... really easily
-	-- { "williamboman/mason.nvim", config = true },
 }
