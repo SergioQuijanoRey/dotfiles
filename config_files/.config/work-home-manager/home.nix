@@ -7,7 +7,7 @@
   # Home manager needed info
   home.username = "sergio";
   home.homeDirectory = "/home/sergio";
-  home.stateVersion = "23.11";
+  home.stateVersion = "24.11";
   programs.home-manager.enable = true;
 
   home.packages =
@@ -17,20 +17,22 @@
       pkgs.zoxide
       pkgs.ranger
       pkgs.yazi
-      pkgs.taskwarrior3
-      pkgs.vit
       pkgs.direnv
       pkgs.atuin
       pkgs.starship
       pkgs.ripgrep
       pkgs.television
       pkgs.fd
+      pkgs.unzip
+      pkgs.xdg-utils
+      pkgs.wsl-open
     ]
     ++
     # Dev packages
     [
       pkgs.just
       pkgs.neovim
+      pkgs.vscode
       pkgs.trash-cli
       pkgs.bat
       pkgs.lazygit
@@ -38,23 +40,27 @@
       pkgs.marksman
       pkgs.delta
       pkgs.cargo
+      pkgs.duckdb
+      pkgs.uv
     ]
     ++
     # System packages
     [
+      stablepkgs.nushell
       pkgs.bottom
       pkgs.sqlite
       pkgs.mate.engrampa
       pkgs.duf
       pkgs.du-dust
       pkgs.gcc
+      pkgs.speedtest-cli
     ]
     ++
     # Desktop packages
     [
-      pkgs.firefox
       pkgs.filezilla
       pkgs.zathura
+      pkgs.obsidian
     ]
     ++
     # Document writing
@@ -75,6 +81,7 @@
     [
       pkgs.nixd
       pkgs.mypy
+      pkgs.lua-language-server
     ]
     ++
     # Code formatters
@@ -83,26 +90,5 @@
       pkgs.sleek
       pkgs.stylua
       pkgs.ruff
-    ]
-    ++
-    # Font packages
-    [
-      pkgs.nerd-font-patcher
     ];
-
-  # Set the mime types
-  xdg.mimeApps = let
-    # Don't repeat the same mappings over and over
-    xdg_mime_mappings = {
-      "application/pdf" = ["zathura.desktop"];
-    };
-  in {
-    enable = true;
-    associations.added = xdg_mime_mappings;
-    defaultApplications = xdg_mime_mappings;
-  };
-
-  programs.nushell = {
-    enable = true;
-  };
 }
