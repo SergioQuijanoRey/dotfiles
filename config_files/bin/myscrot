@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # The destination file
+mkdir -p "$HOME/Scrots/"
 dest_file="$HOME/Scrots/$(date +'%d-%m-%Y::%H:%M:%S').png"
 echo "$dest_file"
 
