@@ -51,6 +51,9 @@ return {
 				-- For latex
 				"/texlab",
 
+				-- For typst
+				"tinymist",
+
 				-- For C / C++
 				"clangd",
 

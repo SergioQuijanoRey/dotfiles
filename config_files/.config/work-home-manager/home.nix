@@ -82,6 +82,7 @@
       pkgs.nixd
       pkgs.mypy
       pkgs.lua-language-server
+      pkgs.tinymist
     ]
     ++
     # Code formatters
