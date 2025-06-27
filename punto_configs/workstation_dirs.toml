@@ -43,3 +43,8 @@ sync_type = "dir"
 repo_path = "./config_files/.gitconfig"
 system_path = ".gitconfig"
 sync_type = "file"
+
+[Wezterm]
+repo_path = "./config_files/.config/wezterm/wezterm.lua"
+system_path = "../../mnt/c/Users/squijanr/.wezterm.lua"
+sync_type = "file"
