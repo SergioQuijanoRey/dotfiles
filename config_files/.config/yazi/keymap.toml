@@ -1,24 +1,41 @@
-[[manager.prepend_keymap]]
-on = [ "'", "a" ]
-run = "plugin bookmarks-persistence --args=save"
+# ===================== Configuration for bookmarks plugin =====================
+[[mgr.prepend_keymap]]
+on = [ "m" ]
+run = "plugin bookmarks save"
 desc = "Save current position as a bookmark"
 
-[[manager.prepend_keymap]]
-on = [ "'", "g" ]
-run = "plugin bookmarks-persistence --args=jump"
+[[mgr.prepend_keymap]]
+on = [ "'" ]
+run = "plugin bookmarks jump"
 desc = "Jump to a bookmark"
 
-[[manager.prepend_keymap]]
-on = [ "'", "d" ]
-run = "plugin bookmarks-persistence --args=delete"
+[[mgr.prepend_keymap]]
+on = [ "b", "d" ]
+run = "plugin bookmarks delete"
 desc = "Delete a bookmark"
 
-[[manager.prepend_keymap]]
-on = [ "'", "D" ]
-run = "plugin bookmarks-persistence --args=delete_all"
+[[mgr.prepend_keymap]]
+on = [ "b", "D" ]
+run = "plugin bookmarks delete_all"
 desc = "Delete all bookmarks"
 
+# ==================== Configuration for the duckdb plugin = ===================
 [[manager.prepend_keymap]]
-on   = [ "<C-s>" ]
-run  = 'shell "$SHELL" --block --confirm'
-desc = "Open shell here"
+on = "H"
+run = "plugin duckdb -1"
+desc = "Scroll one column to the left"
+
+[[manager.prepend_keymap]]
+on = "L"
+run = "plugin duckdb +1"
+desc = "Scroll one column to the right"
+
+[[manager.prepend_keymap]]
+on = ["g", "o"]
+run = "plugin duckdb -open"
+desc = "open with duckdb"
+
+[[manager.prepend_keymap]]
+on = ["g", "u"]
+run = "plugin duckdb -ui"
+desc = "open with duckdb ui"

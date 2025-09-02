@@ -1,5 +1,5 @@
 # Start of catppuccin frappe theme ==>
-[manager]
+[mgr]
 cwd = { fg = "#81c8be" }
 
 # Hovered
