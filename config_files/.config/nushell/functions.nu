@@ -63,8 +63,18 @@ def --env yy [...args] {
 }
 
 # Change directory to the notes repo and open neovim
+# NOTE: we are checking if we are inside the working machine because in that
+# case we must use other path
+# NOTE: we are using `notes_path` because we cannot put the `def notes` declaration
+# inside the if else block
+let notes_path = if ($env.WORKING_MACHINE? | default false) {
+    "~/GitRepos/Notes"
+} else {
+    "~/GitRepos/ObsidianNotes"
+}
+
 def notes [] {
-    cd ~/GitRepos/ObsidianNotes
+    cd ~/GitRepos/Notes
     nvim .
 }
 

@@ -1,11 +1,5 @@
 # Specific configurations used in the work machine
 
-# Open up my notes repo from everywhere
-def notes [] {
-    cd ~/GitRepos/Notes
-    nvim .
-}
-
 # WSL specific config
 $env.PATH = ($env.PATH | split row (char esep) | append "/home/sergio/.local/bin")
 $env.PATH = $env.PATH | append "/home/sergio/.nix-profile/bin"
@@ -21,3 +15,7 @@ $env.ORANGE_PRIVADO = ($env.ONEDRIVE | path join "Projects/03 - EDV Sharepoint P
 
 # Add ZScaler CA perms to python requests library
 $env.REQUESTS_CA_BUNDLE = "/home/sergio/CA_CERTIFICATES/Zscaler_Root_CA.pem"
+
+# This is useful to apply custom behaviour in other parts of the configuration when in working machine
+# For example, in the `functions.nu` file
+$env.WORKING_MACHINE = true
