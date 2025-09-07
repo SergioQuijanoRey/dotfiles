@@ -92,3 +92,12 @@ def uvjupywsl [] {
     let value = (uv run python3 -c "import subprocess; value = subprocess.run(['hostname', '-I'], text=True).stdout") | split column " " | get column1 | first
     uv run jupyter lab --ip $"($value)" --no-browser --NotebookApp.token='jp' .
 }
+
+# Syncronize my local files to google drive
+# Requires rclone to have access to my gdrive account
+def gdrive_upload [] {
+    # NOTE: we use `copy` instead of `sync` because `sync` can delete files in
+    # the destination folder, and I do not want to accidentally remove gdrive files
+    rclone copy --progress /home/sergio/LinuxCloud/Fotografias/ "Google Drive:/LinuxCloud/Fotografias/"
+    rclone copy --progress /home/sergio/LinuxCloud/Video/ "Google Drive:/LinuxCloud/Video/"
+}
