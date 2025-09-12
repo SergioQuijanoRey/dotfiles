@@ -21,7 +21,6 @@
       pkgs.atuin
       pkgs.starship
       pkgs.ripgrep
-      pkgs.television
       pkgs.fd
       pkgs.unzip
       pkgs.xdg-utils
@@ -32,7 +31,6 @@
     [
       pkgs.just
       pkgs.neovim
-      pkgs.vscode
       pkgs.trash-cli
       pkgs.bat
       pkgs.lazygit
@@ -58,9 +56,9 @@
     ++
     # Desktop packages
     [
-      pkgs.filezilla
       pkgs.zathura
       pkgs.obsidian
+      pkgs.dbeaver-bin
     ]
     ++
     # Document writing
