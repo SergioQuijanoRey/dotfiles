@@ -1,6 +1,6 @@
 # List of shared packages that we are going to use in WM enviroments
 # No matter which window manager we are using, we might want this packages
-{ pkgs, latestpkgs, ... }:
+{ pkgs, ... }:
 
 [
   pkgs.arandr # To control multiple displays

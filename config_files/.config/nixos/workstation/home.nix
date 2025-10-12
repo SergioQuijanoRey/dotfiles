@@ -1,5 +1,5 @@
 # Imported from `flake.nix` so no need to do a Home Manager rebuild
-{ config, pkgs, dev_packages, wm_packages, latestpkgs, nur, ... }:
+{ config, pkgs, dev_packages, wm_packages,  ... }:
 {
   # Home manager needs this info to move around config files
   home.username = "sergio";

@@ -1,10 +1,10 @@
 # List of the dev and system packages that we want to have installed in all of our systems
-{ pkgs, latestpkgs, ... }:
+{ pkgs, ... }:
 
 # Terminal emulators and shells
 [
-  latestpkgs.wezterm # Preferred terminal
-  latestpkgs.ghostty # New terminal
+  pkgs.wezterm # Preferred terminal
+  pkgs.ghostty # New terminal
   pkgs.alacritty # Fallback terminal
   pkgs.kitty # Another fallback terminal
   pkgs.nushell # Alternative to zsh and bash
@@ -12,8 +12,8 @@
 
 # Dev packages
 [
-  latestpkgs.neovim # Main editor
-  latestpkgs.zellij # Good alternative for zellij
+  pkgs.neovim # Main editor
+  pkgs.zellij # Good alternative for zellij
 
   pkgs.tree-sitter # Neovim relies heavily on treesitter
   pkgs.ripgrep # Better grep
@@ -30,7 +30,7 @@
 
 # CLI apps
 [
-  latestpkgs.yazi # Alternative to ranger
+  pkgs.yazi # Alternative to ranger
 
   pkgs.zoxide # Better cd command
   pkgs.ranger # CLI file manager
