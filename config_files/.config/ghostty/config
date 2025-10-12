@@ -1,8 +1,9 @@
-font-family = "CaskaydiaCove NF SemiBold"
-font-family-bold = "CaskaydiaCove NF Bold"
-font-family-italic = "CaskaydiaCove NF SemiBold"
-font-family-bold-italic = "CaskaydiaCove NF SemiBold"
-theme = "catppuccin-frappe"
+font-family = "CaskaydiaMono NF SemiBold"
+font-family-bold = "CaskaydiaMono NF Bold"
+font-family-italic = "CaskaydiaMono NF SemiBold"
+font-family-bold-italic = "CaskaydiaMono NF SemiBold"
+
+theme = Catppuccin Frappe
 background-opacity = 0.9
 background-blur-radius = 20
 window-decoration = false
