@@ -100,4 +100,5 @@ def gdrive_upload [] {
     # the destination folder, and I do not want to accidentally remove gdrive files
     rclone copy --progress /home/sergio/LinuxCloud/Fotografias/ "Google Drive:/LinuxCloud/Fotografias/"
     rclone copy --progress /home/sergio/LinuxCloud/Video/ "Google Drive:/LinuxCloud/Video/"
+    rclone copy --progress /home/sergio/LinuxCloud/Passwords/ "Google Drive:/LinuxCloud/Passwords/"
 }
