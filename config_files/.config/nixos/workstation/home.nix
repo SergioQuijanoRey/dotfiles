@@ -1,5 +1,5 @@
 # Imported from `flake.nix` so no need to do a Home Manager rebuild
-{ config, pkgs, zerospades, dev_packages, wm_packages, latestpkgs, nur, ... }:
+{ config, pkgs, dev_packages, wm_packages, latestpkgs, nur, ... }:
 {
   # Home manager needs this info to move around config files
   home.username = "sergio";
@@ -35,10 +35,6 @@
       pkgs.slurp # For taking screenshots
       pkgs.pavucontrol # For managing audio
 
-      # We want to have access to pactl, which is provided by pulseaudio
-      # But we don't want to enable the service, so just install the package
-      pkgs.pulseaudio
-
       # Controlling screen brightness
       pkgs.brightnessctl
       pkgs.gammastep
@@ -55,44 +51,16 @@
       pkgs.unetbootin
     ] ++
 
-    # Videogame packages
-    [
-      pkgs.lutris
-      pkgs.dolphin-emu
-      pkgs.prismlauncher # Minecraft launcher
-      pkgs.openjdk17 # OpenJDK, required by Prism Launcher
-      pkgs.xorg.libxcb # Without this package, steam fails to open
-      pkgs.moonlight-qt
-
-      # Installing wine can enhance performance on other videogames
-      # Mostly videogames installed through lutris
-      pkgs.wineWowPackages.waylandFull
-
-      # Alternative client for openspades video game
-      # Installed through a flake
-      zerospades
-
-      # To install and manage `proton ge` that works better than normal proton
-      pkgs.protonup-qt
-    ] ++
-
     # Fonts
     [
       # Font that supports emojis
       pkgs.noto-fonts-emoji
 
-      # Do not install all nerd fonts, which takes a long time
-      # Pick specific fonts I want
-      # Names for this fonts can be looked up at:
-      #   https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts
-      (pkgs.nerdfonts.override {
-        fonts = [
-          "FiraCode"
-          "Inconsolata"
-          "JetBrainsMono"
-          "CascadiaCode"
-        ];
-      })
+      # Nerd fonts
+      pkgs.nerd-fonts.fira-code
+      pkgs.nerd-fonts.inconsolata
+      pkgs.nerd-fonts.jetbrains-mono
+      pkgs.nerd-fonts.caskaydia-mono
     ] ++
 
     # Desktop packages
@@ -103,17 +71,15 @@
       pkgs.syncthing
       pkgs.firefox
       pkgs.xournalpp # For writting docs using the HUION tablet
-      pkgs.onlyoffice-bin # Alternative to MS Office
       pkgs.obs-studio # Streaming and recording
       pkgs.obsidian # Notes
-      pkgs.thunderbird # Email client
       pkgs.vlc # Video client
       pkgs.krita # For some kick drawings
       pkgs.evince # PDF Reader from Ubunut
       pkgs.zathura # PDF Reader for advanced users
       pkgs.shotwell # Useful when viewing a lot of images
       pkgs.mate.engrampa # Working with compressed and zipped files
-      pkgs.gnome.nautilus # Graphic file explorer
+      pkgs.nautilus # Graphic file explorer
     ]
 
 
@@ -166,29 +132,6 @@
     ];
   };
 
-  # We can configure zsh using home manager
-  # So we specify the installation this way
-  programs.zsh = {
-    enable = true;
-
-    # Manage plugins here
-    zplug = {
-      enable = true;
-      plugins = [
-        { name = "zsh-users/zsh-autosuggestions"; }
-        { name = "zsh-users/zsh-syntax-highlighting"; }
-
-        # This plugin is used to use `atuin` program, that changes
-        # the shell history search
-        { name = "atuinsh/atuin"; }
-      ];
-    };
-
-    # So we source ~/.zsh_dotfiles where the rest of the config is
-    initExtra = "source ~/.zsh_dotfiles";
-  };
-
-
   # In hyprland lxappearence is not working, so this way we can configure
   # the looking of our system
   gtk = {
@@ -223,6 +166,6 @@
   # Configure QT under hyprland window manager
   qt = {
     enable = true;
-    platformTheme = "qtct";
+    platformTheme.name = "qtct";
   };
 }

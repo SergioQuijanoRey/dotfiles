@@ -71,10 +71,8 @@
   # };
 
   # Setup opengl
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
   };
 
   services.xserver = {
@@ -96,7 +94,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
