@@ -86,8 +86,8 @@
     ++
     # Nvidia packages
     [
-        # Compatibility layer between nvidia and wayland
-        pkgs.egl-wayland
+      # Compatibility layer between nvidia and wayland
+      pkgs.egl-wayland
     ];
 
 
@@ -167,5 +167,40 @@
   qt = {
     enable = true;
     platformTheme.name = "qtct";
+  };
+
+  # Configure vscode
+  # I am using this mainly to edit jupyter notebooks
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscode.fhs;
+    extensions = [
+      pkgs.vscode-extensions.ms-python.python
+      pkgs.vscode-extensions.catppuccin.catppuccin-vsc
+      pkgs.vscode-extensions.catppuccin.catppuccin-vsc-icons
+      pkgs.vscode-extensions.ms-toolsai.jupyter
+      pkgs.vscode-extensions.vscodevim.vim
+      pkgs.vscode-extensions.charliermarsh.ruff
+    ];
+    userSettings = {
+      # Visual configs
+      "editor.fontFamily" = "CaskaydiaMono NF SemiBold";
+      "workbench.colorTheme" = "Catppuccin Frappé";
+      # Ruff configuration
+      "[python]"= {
+        "editor.formatOnSave"= true;
+        "editor.codeActionsOnSave"= {
+          "source.fixAll"= "explicit";
+          "source.organizeImports"= "explicit";
+        };
+        "editor.defaultFormatter"= "charliermarsh.ruff";
+      };
+
+      "notebook.formatOnSave.enabled"= true;
+      "notebook.codeActionsOnSave"= {
+        "notebook.source.fixAll"= "explicit";
+        "notebook.source.organizeImports"= "explicit";
+      };
+    };
   };
 }
