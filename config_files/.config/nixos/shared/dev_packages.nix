@@ -26,6 +26,10 @@
   pkgs.git # VCS
   pkgs.lazygit # Useful for interacting with git without neovim
   pkgs.pandoc # Tools like rmarkdown need this
+  pkgs.direnv # Automatically load enviroments
+  pkgs.devenv # Trying to run uv in nixos is a nightmare
+  pkgs.dbeaver-bin # Tool to admin all kind of databases
+  pkgs.duckdb # My current fav OLAP in process database
 ] ++
 
 # CLI apps
@@ -61,6 +65,7 @@
 
   # Programming languages tooling
 [
+  pkgs.uv
   pkgs.cargo
   pkgs.ruff
   pkgs.nixd

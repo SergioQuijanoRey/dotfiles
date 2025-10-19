@@ -133,6 +133,7 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nix.settings.trusted-users =  ["root" "sergio"];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
