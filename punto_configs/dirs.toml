@@ -187,3 +187,8 @@ sync_type = "dir"
 repo_path = "./config_files/.config/ghostty"
 system_path = ".config/ghostty"
 sync_type = "dir"
+
+[LazyGit]
+repo_path = "./config_files/.config/lazygit"
+system_path = ".config/lazygit"
+sync_type = "dir"

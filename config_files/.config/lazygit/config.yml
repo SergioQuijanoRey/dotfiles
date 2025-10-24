@@ -1,0 +1,35 @@
+# Catppuccin frappe with blue accents
+gui:
+  theme:
+    activeBorderColor:
+      - '#8caaee'
+      - bold
+    inactiveBorderColor:
+      - '#a5adce'
+    optionsTextColor:
+      - '#8caaee'
+    selectedLineBgColor:
+      - '#414559'
+    cherryPickedCommitBgColor:
+      - '#51576d'
+    cherryPickedCommitFgColor:
+      - '#8caaee'
+    unstagedChangesColor:
+      - '#e78284'
+    defaultFgColor:
+      - '#c6d0f5'
+    searchingActiveBorderColor:
+      - '#e5c890'
+
+  # I want my commits to be in this nice color. The rest of the authors can
+  # have a random color
+  authorColors:
+    'SergioQuijanoNTT': '#babbf1'
+    # NOTE: in case we want all authors to have this color
+    #'*': '#babbf1'
+
+  # I want to get icons in the lazygit ui
+  nerdFontsVersion: "3"
+
+  # I prefer fuzzy searchs when using `/`
+  filterMode: substring
