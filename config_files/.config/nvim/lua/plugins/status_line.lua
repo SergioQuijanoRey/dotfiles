@@ -59,7 +59,7 @@ local function formatter_names()
     local formatters = require("conform").list_formatters()
 
     if #formatters == 0 then
-        return "🍓 Inactive"
+        return "🚰 Inactive"
     end
 
     local first_formatter = formatters[1].name
@@ -76,7 +76,7 @@ local function formatter_names()
     end
 
 
-    return "🍓 " .. acc_name
+    return "🚰 " .. acc_name
 end
 
 return {
