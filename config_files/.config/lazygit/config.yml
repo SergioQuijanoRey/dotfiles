@@ -25,6 +25,8 @@ gui:
   # have a random color
   authorColors:
     'SergioQuijanoNTT': '#babbf1'
+    'Sergio Quijano': '#babbf1'
+    'Sergio Quijano Rey': '#babbf1'
     # NOTE: in case we want all authors to have this color
     #'*': '#babbf1'
 
