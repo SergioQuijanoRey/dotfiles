@@ -24,7 +24,7 @@ return {
 				default = { "lsp", "path", "snippets", "buffer" },
 				-- optionally disable cmdline completions
 				-- cmdline = {},
-				min_keyword_length = 3,
+				min_keyword_length = 2,
 			},
 
 			snippets = { preset = "luasnip" },
