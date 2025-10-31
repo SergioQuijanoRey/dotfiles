@@ -40,6 +40,9 @@
       pkgs.cargo
       pkgs.duckdb
       pkgs.uv
+      pkgs.devenv
+      # Dependencies for neovim plugins
+      pkgs.lua54Packages.luarocks # Nvim dap relies on this
     ]
     ++
     # System packages
@@ -49,9 +52,10 @@
       pkgs.sqlite
       pkgs.mate.engrampa
       pkgs.duf
-      pkgs.du-dust
+      pkgs.dust
       pkgs.gcc
       pkgs.speedtest-cli
+      pkgs.eza
     ]
     ++
     # Desktop packages
