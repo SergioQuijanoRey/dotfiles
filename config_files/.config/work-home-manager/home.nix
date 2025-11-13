@@ -34,6 +34,7 @@
       pkgs.trash-cli
       pkgs.bat
       pkgs.lazygit
+      pkgs.git-graph
       pkgs.podman
       pkgs.marksman
       pkgs.delta
