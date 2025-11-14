@@ -36,3 +36,7 @@ gui:
 git:
   allBranchesLogCmds:
     - git-graph --no-pager --model simple --color always
+  paging:
+    colorArg: never
+    pager: delta --dark --paging=never
+    useConfig: false
