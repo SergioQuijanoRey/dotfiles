@@ -35,4 +35,4 @@ gui:
 
 git:
   allBranchesLogCmds:
-    - git-graph --no-pager
+    - git-graph --no-pager --model simple --color always
