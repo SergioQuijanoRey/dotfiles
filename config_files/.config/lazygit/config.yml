@@ -32,11 +32,13 @@ gui:
   nerdFontsVersion: "3"
   # I prefer fuzzy searchs when using `/`
   filterMode: substring
-
 git:
   allBranchesLogCmds:
     - git-graph --no-pager --model simple --color always
-  paging:
-    colorArg: never
-    pager: delta --dark --paging=never
-    useConfig: false
+  # I want to have the default git command and then difftastic and delta
+  # These can be cycled using `|`
+  # NOTE: must have lazygit version >= 0.56.0
+  pagers:
+    - externalDiffCommand: ""
+    - externalDiffCommand: difft --color=always
+    - pager: delta --dark --paging=never
