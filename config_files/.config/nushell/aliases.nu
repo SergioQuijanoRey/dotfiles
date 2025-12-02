@@ -18,5 +18,6 @@ alias myip = curl ifconfig.me
 alias wo = wsl-open
 alias wcode = /home/sergio/.nix-profile/bin/code
 
-alias gl = git log --oneline --graph --parents --decorate --all
+#alias gl = git log --oneline --graph --parents --decorate --all
+alias gl = git-graph --model simple --no-pager
 alias lg = lazygit
