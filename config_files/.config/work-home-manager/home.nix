@@ -35,6 +35,7 @@
       pkgs.bat
       pkgs.lazygit
       pkgs.git-graph
+      pkgs.difftastic
       pkgs.podman
       pkgs.marksman
       pkgs.delta
