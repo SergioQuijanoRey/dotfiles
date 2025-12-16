@@ -19,5 +19,5 @@ alias wo = wsl-open
 alias wcode = /home/sergio/.nix-profile/bin/code
 
 #alias gl = git log --oneline --graph --parents --decorate --all
-alias gl = git-graph --model simple --no-pager
+alias gl = git-graph --model simple --no-pager --format "%h %d %s ==> %an %as"
 alias lg = lazygit
