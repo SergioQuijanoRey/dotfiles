@@ -30,6 +30,9 @@ $env.config = {
     }
 }
 
+$env.EDITOR = "nvim"
+$env.VISUAL = "nvim"
+
 # Load the work enviroment
 # NOTE: this must be before third party integrations so we have properly set $env.PATH
 source ($nu.default-config-dir | path join 'work_machine.nu')
