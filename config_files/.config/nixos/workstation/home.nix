@@ -46,7 +46,7 @@
 
     # Messaging
     [
-      pkgs.tdesktop
+      pkgs.telegram-desktop
       # TODO -- remove -- this is not a messaging app
       pkgs.unetbootin
     ] ++
@@ -54,7 +54,7 @@
     # Fonts
     [
       # Font that supports emojis
-      pkgs.noto-fonts-emoji
+      pkgs.noto-fonts-color-emoji
 
       # Nerd fonts
       pkgs.nerd-fonts.fira-code

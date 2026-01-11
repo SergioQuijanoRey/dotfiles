@@ -25,6 +25,7 @@
   pkgs.rclone # For syncing with google drive
   pkgs.git # VCS
   pkgs.lazygit # Useful for interacting with git without neovim
+  pkgs.git-graph # Better git graph using nerd fonts
   pkgs.pandoc # Tools like rmarkdown need this
   pkgs.direnv # Automatically load enviroments
   pkgs.devenv # Trying to run uv in nixos is a nightmare
@@ -46,7 +47,7 @@
   pkgs.eza # Good replacement for ls and tree (exa -T)
   pkgs.fd # Good replacement for find
   pkgs.duf # Show how hard drives are used
-  pkgs.du-dust # Show disk usage of specific dir
+  pkgs.dust # Show disk usage of specific dir
 ] ++
 
 # System packages
@@ -69,7 +70,7 @@
   pkgs.cargo
   pkgs.ruff
   pkgs.nixd
-  pkgs.sumneko-lua-language-server
+  pkgs.lua-language-server
   pkgs.lua53Packages.lua-lsp
   pkgs.julia-bin
   pkgs.texlab
