@@ -22,6 +22,7 @@
       pkgs.starship
       pkgs.ripgrep
       pkgs.fd
+      pkgs.zip
       pkgs.unzip
       pkgs.xdg-utils
       pkgs.wsl-open
