@@ -7,7 +7,14 @@
     use AltGr in your keyboard, you will likely want to follow the simple.kbd
     file while unmapping lctl and ralt from defsrc.
     |#
-    process-unmapped-keys yes
+
+    #|
+    NOTE: Setting this value to yes introduces problems in Windows systems, and
+    provides no aparent advantages. So that is why we are setting this value to
+    no
+    |#
+
+    process-unmapped-keys no
 )
 
 #|
