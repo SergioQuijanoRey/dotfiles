@@ -34,6 +34,7 @@
       pkgs.grim # For taking screenshots
       pkgs.slurp # For taking screenshots
       pkgs.pavucontrol # For managing audio
+      pkgs.pulseaudio # For having pactl commands to manage audio volumes
 
       # Controlling screen brightness
       pkgs.brightnessctl
