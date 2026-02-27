@@ -40,6 +40,10 @@
       pkgs.brightnessctl
       pkgs.gammastep
 
+      # Experimental launch menu
+      pkgs.walker
+      pkgs.elephant
+
       # Support for QT in Wayland
       pkgs.libsForQt5.qt5.qtwayland # QT support for wayland
       pkgs.qt6.qtwayland # QT support for wayland

@@ -16,7 +16,6 @@
     };
 
     helium = {url = "github:FKouhai/helium2nix/main";};
-
   };
 
   outputs =
