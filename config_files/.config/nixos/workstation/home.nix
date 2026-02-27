@@ -1,5 +1,5 @@
 # Imported from `flake.nix` so no need to do a Home Manager rebuild
-{ config, pkgs, dev_packages, wm_packages,  ... }:
+{ config, pkgs, dev_packages, wm_packages,  helium, system, ... }:
 {
   # Home manager needs this info to move around config files
   home.username = "sergio";
@@ -71,6 +71,7 @@
       pkgs.keepassxc
       pkgs.syncthing
       pkgs.firefox
+      helium.defaultPackage.${system}
       pkgs.xournalpp # For writting docs using the HUION tablet
       pkgs.obs-studio # Streaming and recording
       pkgs.obsidian # Notes

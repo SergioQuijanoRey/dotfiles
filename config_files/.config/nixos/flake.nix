@@ -15,12 +15,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    helium = {url = "github:FKouhai/helium2nix/main";};
+
   };
 
   outputs =
     { self
     , nixpkgs
     , home-manager
+    , helium
     } @ inputs:
     let
       # Architecture of the system
@@ -65,6 +68,9 @@
                 wm_packages = import ./shared/wm_packages.nix {
                     pkgs = pkgs;
                 };
+
+                helium = helium;
+                system = system;
               };
             }
           ];
