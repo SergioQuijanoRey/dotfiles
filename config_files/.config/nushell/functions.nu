@@ -102,3 +102,10 @@ def gdrive_upload [] {
     rclone copy --progress /home/sergio/LinuxCloud/Video/ "Google Drive:/LinuxCloud/Video/"
     rclone copy --progress /home/sergio/LinuxCloud/Passwords/ "Google Drive:/LinuxCloud/Passwords/"
 }
+
+# We are having a lot of problems when updating nixos because we keep track of too much versions
+# This command does a good job at cleaning old versions
+def nixclean [] {
+    sudo nix profile wipe-history --profile /nix/var/nix/profiles/system --older-than 14d --extra-experimental-features nix-command
+    sudo nix-collect-garbage -d
+}
