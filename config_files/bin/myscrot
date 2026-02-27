@@ -5,10 +5,4 @@ mkdir -p "$HOME/Scrots/"
 dest_file="$HOME/Scrots/$(date +'%d-%m-%Y::%H:%M:%S').png"
 echo "$dest_file"
 
-# Execute one command or the other depending on wether we are using Xorg or Wayland
-if [[ $XDG_SESSION_TYPE = "wayland" ]]
-then
-    grim -g "$(slurp)" "$dest_file"
-else
-    scrot -s "$dest_file"
-fi
+grim -g "$(slurp)" - | wl-copy && wl-paste > $dest_file | dunstify "Screenshot of the region taken" -t 1000
