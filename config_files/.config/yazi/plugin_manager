@@ -1,6 +1,10 @@
 #!/usr/bin/env nu
 # Install all required third party plugins
 
+# Declare the list of packages to install
 try { ya pkg add dedukun/bookmarks }
 try { ya pkg add yazi-rs/plugins:git }
 try { ya pkg add wylie102/duckdb }
+
+# And install all packages
+try {ya pkg install}
