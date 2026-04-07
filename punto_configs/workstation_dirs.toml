@@ -16,7 +16,7 @@ sync_type = "dir"
 
 [starship-config]
 repo_path = "./config_files/.config/starship/starship.toml"
-system_path = ".config/starship/starship.toml"
+system_path = ".config/starship.toml"
 sync_type = "file"
 
 [Atuin]
@@ -46,10 +46,15 @@ sync_type = "file"
 
 [Wezterm]
 repo_path = "./config_files/.config/wezterm/wezterm.lua"
-system_path = "../../mnt/c/Users/squijanr/.wezterm.lua"
+system_path = "../../mnt/c/Users/sergio.q.quijano/.wezterm.lua"
 sync_type = "file"
 
 [LazyGit]
 repo_path = "./config_files/.config/lazygit"
 system_path = ".config/lazygit"
+sync_type = "dir"
+
+[Claude]
+repo_path = "./config_files/.claude"
+system_path = ".claude"
 sync_type = "dir"
