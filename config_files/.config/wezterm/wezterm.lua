@@ -7,12 +7,11 @@ if IS_WSL then
 	wezterm.on("gui-startup", function()
 		local _, first_pane, window = mux.spawn_window({
 			args = {
-				"C:\\Users\\squijanr\\OneDrive - NTT DATA EMEAL\\Desktop\\kanata\\kanata.exe",
-				"--cfg",
-				"C:\\Users\\squijanr\\OneDrive - NTT DATA EMEAL\\Desktop\\kanata\\kanata.kbd",
+				"C:\\Users\\sergio.q.quijano\\OneDrive - Accenture\\Desktop\\kanata\\kanata.exe",
+				"-c",
+				"C:\\Users\\sergio.q.quijano\\OneDrive - Accenture\\Desktop\\kanata\\default.kdb",
 			},
 		})
-
 		local _, _, _ = window:spawn_tab({ args = { "wsl" } })
 	end)
 end
