@@ -101,7 +101,8 @@ return {
 				"nixd",
 
 				-- For python
-				"pyright", -- General purpose lsp
+				-- "pyright", -- General purpose lsp
+				"pylsp",
 				"ty", -- Static checking
 
 				-- For writing some Ocaml
