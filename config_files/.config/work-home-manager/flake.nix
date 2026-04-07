@@ -4,7 +4,7 @@
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    stablenixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    stablenixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -18,8 +18,16 @@
     ...
   }: let
     system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
-    stablepkgs = stablenixpkgs.legacyPackages.${system};
+    pkgs = import nixpkgs {
+      inherit system;
+      legacyPackages = system;
+      config.allowUnfree = true;
+    };
+    stablepkgs = import stablenixpkgs {
+      inherit system;
+      legacyPackages = system;
+      config.allowUnfree = true;
+    };
   in {
     homeConfigurations."sergio" = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;

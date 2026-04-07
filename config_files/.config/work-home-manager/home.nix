@@ -46,11 +46,11 @@
       pkgs.devenv
       # Dependencies for neovim plugins
       pkgs.lua54Packages.luarocks # Nvim dap relies on this
+      pkgs.typst
     ]
     ++
     # System packages
     [
-      stablepkgs.nushell
       pkgs.bottom
       pkgs.sqlite
       pkgs.mate.engrampa
@@ -59,6 +59,7 @@
       pkgs.gcc
       pkgs.speedtest-cli
       pkgs.eza
+      pkgs.kanata
     ]
     ++
     # Desktop packages
@@ -66,13 +67,11 @@
       pkgs.zathura
       pkgs.obsidian
       pkgs.dbeaver-bin
+      pkgs.keepassxc
     ]
     ++
     # Document writing
     [
-      stablepkgs.typst
-      stablepkgs.typstfmt
-      stablepkgs.typst-lsp
       pkgs.pandoc
     ]
     ++
@@ -96,5 +95,12 @@
       pkgs.sleek
       pkgs.stylua
       pkgs.ruff
-    ];
+    ]
+    ++
+    # AI Tools
+    [pkgs.claude-code];
+
+  programs.nushell = {
+    enable = true;
+  };
 }
