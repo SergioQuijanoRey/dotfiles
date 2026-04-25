@@ -1,38 +1,27 @@
 return {
     "nvim-treesitter/nvim-treesitter",
-    branch = "master",
+    branch = "main",
     build = ":TSUpdate",
-    opts = {
-        -- All can be used to install all mantained languages
-        -- Bad idea because it will install approx 127 langs and might crash the computer
-        ensure_installed = {
+    config = function(_, opts)
+        -- Make sure this treesitter grammars are always installed
+        require('nvim-treesitter').install {
             "lua",
+            "just",
             "rust",
             "python",
             "bash",
             "comment",
             "markdown",
-            "markdown_inline"
-        },
+            "markdown_inline",
+        }
 
-        ignore_install = {}, -- List of parsers to ignore installing
+        -- Enable format using treesitter for all filetypes
+        vim.api.nvim_create_autocmd('FileType', {
+            pattern = { '<filetype>' },
+            callback = function() vim.treesitter.start() end,
+        })
 
-        -- Install the lang we are editing if not installed yet
-        auto_install = true,
-
-        -- Highlight feature
-        highlight = {
-            enable = true,
-            disable = {},
-        },
-
-        -- Indent feature
-        indent = {
-            enable = true,
-            disable = {}
-        },
-    },
-    config = function(_, opts)
-        require("nvim-treesitter.configs").setup(opts)
+        -- Enable identation based on treesitter
+        vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
     end
 }
