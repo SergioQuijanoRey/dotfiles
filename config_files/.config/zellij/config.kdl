@@ -30,6 +30,8 @@ keybinds clear-defaults=true {
             LaunchOrFocusPlugin "session-manager" {
                 floating true
                 move_to_focused_tab true
+                // NOTE: I prefer the old UI instead of the new one
+                multi_screen true
             }
             SwitchToMode "normal"
         }
