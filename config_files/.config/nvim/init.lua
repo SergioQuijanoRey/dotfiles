@@ -64,6 +64,9 @@ vim.opt.listchars.extends = → -- Show arrow if line continues rightwards
 vim.opt.colorcolumn = { 80 } -- Show column line
 vim.opt.guicursor = "" -- Block cursor
 
+-- Enable the new ui
+require('vim._core.ui2').enable()
+
 --- Load all my config files
 --- ======================================================================== ---
 require("myconf")
