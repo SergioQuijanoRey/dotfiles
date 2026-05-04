@@ -2,6 +2,7 @@ local wezterm = require("wezterm")
 local mux = wezterm.mux
 
 local IS_WSL = true
+local padding_size = 10
 
 if IS_WSL then
 	wezterm.on("gui-startup", function()
@@ -47,4 +48,14 @@ return {
 	-- There is a bug with wezterm in wayland, issued: https://github.com/wez/wezterm/issues/4483
 	-- This is a quickfix that will need to be removed
 	enable_wayland = false,
+
+	window_decorations = "INTEGRATED_BUTTONS",
+	notification_handling = "AlwaysShow",
+
+	window_padding = {
+		left = padding_size,
+		right = padding_size,
+		top = padding_size,
+		bottom = padding_size,
+	},
 }
