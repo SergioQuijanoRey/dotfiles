@@ -7,13 +7,6 @@
     use AltGr in your keyboard, you will likely want to follow the simple.kbd
     file while unmapping lctl and ralt from defsrc.
     |#
-
-    #|
-    NOTE: Setting this value to yes introduces problems in Windows systems, and
-    provides no aparent advantages. So that is why we are setting this value to
-    no
-    |#
-
     process-unmapped-keys no
 )
 
@@ -44,10 +37,9 @@ have the same number of keys as defsrc. Any keys not listed in defsrc will
 be passed straight to the operating system.
 |#
 (defsrc
-       q w  r         p
+       q w  e r         p
   caps a s  c v       l
 )
-
 
 #| Default layer
 #| -------------------------------------------------------------------------- |#
@@ -56,7 +48,7 @@ be passed straight to the operating system.
 Define the mappings of the keys specified in `defsrc`
 |#
 (deflayer default
-        q w r       p
+        q w e r       p
   @cap  a s c v     @l
 )
 
@@ -73,7 +65,7 @@ Define the mappings of the keys specified in `defsrc`
 Layer that is triggered when holding 'l' key
 |#
 (deflayer l_layer
-           @lq @lw @lr        p
+           @lq @lw @le @lr        p
     @lcaps @la s   @lc @lv    l
 )
 
@@ -103,4 +95,7 @@ Remappings for the 'l' layer
 
     lc (tap-hold $ott $oth C-c C-c)
     lv (tap-hold $ott $oth C-v C-v)
+
+
+    le (tap-hold $ott $oth (unicode `) (unicode `))
 )
