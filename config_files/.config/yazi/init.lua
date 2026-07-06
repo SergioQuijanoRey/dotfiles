@@ -6,6 +6,3 @@ require("bookmarks"):setup({
 
 -- Configuration for the git plugin
 require("git"):setup()
-
--- Configuration for the duckdb plugin
-require("duckdb"):setup()

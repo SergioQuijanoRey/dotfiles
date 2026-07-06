@@ -105,8 +105,8 @@ rules = [
 	{ mime = "application/x-rar",           fg = "#f4b8e4" },
 
 	# Fallback
-	{ name = "*", fg = "#c6d0f5" },
-	{ name = "*/", fg = "#8caaee" }
+	{ url = "*", fg = "#c6d0f5" },
+	{ url = "*/", fg = "#8caaee" }
 ]
 
 # End of catppuccin frappe theme <==
