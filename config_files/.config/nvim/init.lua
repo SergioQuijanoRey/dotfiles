@@ -15,7 +15,6 @@ vim.opt.mouse = "a"                              -- Allow mouse control
 vim.opt.undofile = true                          -- Persisten undos (I can undo even if I closed the file)
 vim.opt.encoding = "utf-8"                       -- Type of encoding
 vim.opt.ignorecase = true                        -- When searching, ignore upper or lower case
-vim.opt.scrolloff = 4                            -- Start scrolling before getting to last line
 vim.opt.cursorline = true                        -- Highlight the current line
 
 -- Four spaces instead of tab
