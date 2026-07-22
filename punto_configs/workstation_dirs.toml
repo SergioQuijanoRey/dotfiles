@@ -59,3 +59,27 @@ sync_type = "dir"
 repo_path = "./config_files/.claude"
 system_path = ".claude"
 sync_type = "dir"
+ignore_paths = [
+    "backups/",
+    "cache/",
+    "daemon/",
+    "daemon.*",
+    "debug/",
+    "file-history/",
+    "history.jsonl",
+    "jobs/",
+    "paste-cache/",
+    "plans/",
+    "plugins/",
+    "projects/",
+    "sessions/",
+    "shell-snapshots/",
+    "tasks/",
+    "todos/",
+    ".credentials.json",
+    ".last-cleanup",
+    "policy-limits.json",
+    "stats-cache.json",
+    "remote-settings.json",
+    "mcp-needs-auth-cache.json",
+]
