@@ -49,19 +49,25 @@
       pkgs.qt6.qtwayland # QT support for wayland
     ] ++
 
-    # Messaging
+    # Music
     [
-      pkgs.telegram-desktop
-      # TODO -- remove -- this is not a messaging app
+      pkgs.nicotine-plus
+      pkgs.ffmpeg
+    ] ++
+
+# Messaging
+    [
+    pkgs.telegram-desktop
+# TODO -- remove -- this is not a messaging app
       pkgs.unetbootin
     ] ++
 
-    # Fonts
+# Fonts
     [
-      # Font that supports emojis
-      pkgs.noto-fonts-color-emoji
+# Font that supports emojis
+    pkgs.noto-fonts-color-emoji
 
-      # Nerd fonts
+# Nerd fonts
       pkgs.nerd-fonts.fira-code
       pkgs.nerd-fonts.inconsolata
       pkgs.nerd-fonts.jetbrains-mono
@@ -70,7 +76,6 @@
 
     # Desktop packages
     [
-      pkgs.calibre
       pkgs.spotify
       pkgs.keepassxc
       pkgs.syncthing
@@ -80,7 +85,6 @@
       pkgs.obs-studio # Streaming and recording
       pkgs.obsidian # Notes
       pkgs.vlc # Video client
-      pkgs.krita # For some kick drawings
       pkgs.evince # PDF Reader from Ubunut
       pkgs.zathura # PDF Reader for advanced users
       pkgs.shotwell # Useful when viewing a lot of images
@@ -94,6 +98,12 @@
     [
       # Compatibility layer between nvidia and wayland
       pkgs.egl-wayland
+    ] ++
+
+    # LLM packages
+    [
+      pkgs.claude-code
+      pkgs.pi-coding-agent
     ];
 
 

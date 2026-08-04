@@ -31,6 +31,7 @@
   pkgs.devenv # Trying to run uv in nixos is a nightmare
   pkgs.dbeaver-bin # Tool to admin all kind of databases
   pkgs.duckdb # My current fav OLAP in process database
+  pkgs.gnumake
 ] ++
 
 # CLI apps
@@ -67,7 +68,7 @@
   # Programming languages tooling
 [
   pkgs.uv
-  pkgs.cargo
+  pkgs.rustup
   pkgs.ruff
   pkgs.nixd
   pkgs.lua-language-server

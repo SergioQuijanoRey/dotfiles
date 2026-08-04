@@ -221,5 +221,8 @@
     XDG_CURRENT_DESKTOP="Hyprland";
     XDG_SESSION_TYPE="wayland";
     XDG_SESSION_DESKTOP="Hyprland";
+
+    # Otherwise, ghostty does not register accents
+    GTK_IM_MODULE="ibus";
   };
 }
