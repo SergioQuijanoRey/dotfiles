@@ -15,7 +15,7 @@ system_path = ".config/zellij"
 sync_type = "dir"
 
 [starship-config]
-repo_path = "./config_files/.config/starship/starship.toml"
+repo_path = "./config_files/.config/starship.toml"
 system_path = ".config/starship.toml"
 sync_type = "file"
 
@@ -38,6 +38,7 @@ sync_type = "dir"
 repo_path = "./config_files/.config/yazi"
 system_path = ".config/yazi"
 sync_type = "dir"
+ignore_paths = ["plugins"]
 
 [Git-Config]
 repo_path = "./config_files/.gitconfig"
@@ -58,3 +59,27 @@ sync_type = "dir"
 repo_path = "./config_files/.claude"
 system_path = ".claude"
 sync_type = "dir"
+ignore_paths = [
+    "backups/",
+    "cache/",
+    "daemon/",
+    "daemon.*",
+    "debug/",
+    "file-history/",
+    "history.jsonl",
+    "jobs/",
+    "paste-cache/",
+    "plans/",
+    "plugins/",
+    "projects/",
+    "sessions/",
+    "shell-snapshots/",
+    "tasks/",
+    "todos/",
+    ".credentials.json",
+    ".last-cleanup",
+    "policy-limits.json",
+    "stats-cache.json",
+    "remote-settings.json",
+    "mcp-needs-auth-cache.json",
+]

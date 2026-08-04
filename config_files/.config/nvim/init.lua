@@ -15,7 +15,6 @@ vim.opt.mouse = "a"                              -- Allow mouse control
 vim.opt.undofile = true                          -- Persisten undos (I can undo even if I closed the file)
 vim.opt.encoding = "utf-8"                       -- Type of encoding
 vim.opt.ignorecase = true                        -- When searching, ignore upper or lower case
-vim.opt.scrolloff = 4                            -- Start scrolling before getting to last line
 vim.opt.cursorline = true                        -- Highlight the current line
 
 -- Four spaces instead of tab
@@ -63,6 +62,9 @@ vim.opt.wrap = false -- Don't wrap long lines
 vim.opt.listchars.extends = → -- Show arrow if line continues rightwards
 vim.opt.colorcolumn = { 80 } -- Show column line
 vim.opt.guicursor = "" -- Block cursor
+
+-- Enable the new ui
+require('vim._core.ui2').enable()
 
 --- Load all my config files
 --- ======================================================================== ---
