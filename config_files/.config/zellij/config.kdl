@@ -167,7 +167,10 @@ keybinds clear-defaults=true {
         bind "Alt o" { MoveTab "right"; }
         bind "Alt p" { TogglePaneInGroup; }
         bind "Alt Shift p" { ToggleGroupMarking; }
-        bind "Ctrl q" { Quit; }
+        // NOTE: by default, this was quit. I do not want to have a keybinding
+        // that quits zellij and that I can press by mistake. Also, default
+        // keybinding for resize collides with important keybinding in neovim
+        bind "Ctrl q" { SwitchToMode "resize"; }
     }
     shared_except "locked" "move" {
         bind "Ctrl h" { SwitchToMode "move"; }
@@ -187,9 +190,10 @@ keybinds clear-defaults=true {
     shared_except "locked" "pane" {
         bind "Ctrl p" { SwitchToMode "pane"; }
     }
-    shared_except "locked" "resize" {
-        bind "Ctrl n" { SwitchToMode "resize"; }
-    }
+    // NOTE: this is an important keybinding in neovim, and I am using Ctrl-q for this
+    // shared_except "locked" "resize" {
+    //     bind "Ctrl n" { SwitchToMode "resize"; }
+    // }
     shared_except "normal" "locked" "entersearch" {
         bind "enter" { SwitchToMode "normal"; }
     }
