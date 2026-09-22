@@ -52,6 +52,9 @@ exec("set noswapfile")
 --- Use system clipboard instead of nvim registers
 vim.opt.clipboard = 'unnamedplus'
 
+-- <C-q> as fallback for Visual Block mode, for terminals that intercept <C-v>
+vim.keymap.set({ 'n', 'x', 'o' }, '<C-q>', '<C-v>', { desc = 'Visual Block mode' })
+
 --- Visual settings
 --- ======================================================================== ---
 
