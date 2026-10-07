@@ -19,7 +19,20 @@ keybinds clear-defaults=true {
         bind "k" { MoveFocus "up"; }
         bind "l" { MoveFocus "right"; }
         bind "n" { NewPane; SwitchToMode "normal"; }
-        bind "p" { SwitchFocus; }
+
+
+        // NOTE: control o w opens normal session manager, I want control p p
+        // to open the old ui that is better for intra-session switching
+        bind "p" {
+            LaunchOrFocusPlugin "session-manager" {
+                floating true
+                move_to_focused_tab true
+                // NOTE: I prefer the old UI instead of the new one
+                multi_screen true
+            }
+            SwitchToMode "normal"
+        }
+
         bind "Ctrl p" { SwitchToMode "normal"; }
         bind "r" { NewPane "right"; SwitchToMode "normal"; }
         bind "s" { NewPane "stacked"; SwitchToMode "normal"; }
