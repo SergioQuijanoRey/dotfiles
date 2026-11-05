@@ -21,6 +21,7 @@ Follow a **literate programming style** when writing or modifying code:
 - This comments are better put in higher-level constructs (functions, modules, CTEs, pipelines, classes) but for certain decisions can be place inside the constructs.
     - Line-level comments are fine for non-obvious logic, but they should explain implementation detail, not restate what the code obviously does.
 - The goal is that a reader can understand the intent and domain context from the high-level comments, and the mechanics from the low-level ones.
+- **You must be as concise as possible while mantaining completeness**. One or two lines is the best, but if you really need a paragraph to explain something please do so and do not loose completeness
 
 Examples of what to capture at the high level:
 - Why this CTE or function exists in the business flow
