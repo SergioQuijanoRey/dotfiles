@@ -5,9 +5,9 @@ return {
 	opts = {
 		formatters_by_ft = {
 			lua = { "stylua" },
-			sql = { "sleek" },
 			typst = { "typstfmt" },
 			nix = { "alejandra" },
+			sql = { "sqruff" },
 			python = {
 				-- To fix auto-fixable lint errors.
 				"ruff_fix",
@@ -28,5 +28,17 @@ return {
 			-- formatter is configured here
 			return { timeout_ms = 500, lsp_fallback = true }
 		end,
+
+		-- Format just a range of code
+		vim.keymap.set("", "<leader>qf", function()
+			require("conform").format({ async = true }, function(err)
+				if not err then
+					local mode = vim.api.nvim_get_mode().mode
+					if vim.startswith(string.lower(mode), "v") then
+						vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "n", true)
+					end
+				end
+			end)
+		end, { desc = "Format range of code using conform.nvim" }),
 	},
 }
